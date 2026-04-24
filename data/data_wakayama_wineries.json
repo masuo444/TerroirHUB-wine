@@ -1,0 +1,61 @@
+[
+  {
+    "id": "wakayama-winery",
+    "name": "和歌山ワイナリー",
+    "company": "和歌山ワイナリー",
+    "brand": "",
+    "winery_type": "estate",
+    "founded": "2015",
+    "founded_era": "平成27年",
+    "address": "和歌山県有田郡有田川町川口1054-24",
+    "tel": "0737-85-3888",
+    "url": "http://wakayama-wine.jp/",
+    "area": "有田川町",
+    "desc": "有田川町と有田市の自社畑で育てた欧州系品種を中心に、天然酵母・無濾過・非加熱で瓶詰めする和歌山県初のワイナリー。",
+    "visit": "営業状況は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "ピノ・グリ", "メルロー", "カベルネ・フラン"],
+    "brands": [
+      {
+        "name": "TOA200",
+        "type": "赤・白ワイン",
+        "specs": "自社畑ぶどうを生かした代表シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": ["和歌山県初のワイナリー（2015年創業）", "有田川町・有田市に自社畑約1ha", "天然酵母・無ろ過・非加熱で瓶詰め", "減農薬栽培"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/16300010273/",
+    "lat": 34.0770,
+    "lng": 135.3680,
+    "name_en": "Wakayama Winery"
+  },
+  {
+    "id": "wakayama-yuasa-winery",
+    "name": "和歌山湯浅ワイナリー",
+    "company": "株式会社TOA",
+    "brand": "TOA200",
+    "winery_type": "winery",
+    "founded": "2019",
+    "founded_era": "令和元年",
+    "address": "和歌山県有田郡湯浅町栖原332",
+    "tel": "0737-63-0061",
+    "url": "https://yuasa-winery.jp/",
+    "area": "有田郡湯浅町",
+    "desc": "しょう油発祥の地・湯浅町にある観光型ワイナリー。和歌山産フルーツの果実酒も含め、幅広いラインアップを展開する。",
+    "visit": "試飲室あり・見学可。営業時間要確認。",
+    "wine_style": "red,white,sparkling",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "カベルネ・フラン"],
+    "brands": ["TOA200", "勹果（ほうか）"],
+    "features": ["醸造歴約40年のベテラン醸造家が指揮", "年間生産量約8万本（720ml換算）", "和歌山産フルーツを使ったリキュール「勹果（ほうか）」も展開", "しょう油発祥の地・湯浅町に位置"],
+    "nearest_station": "",
+    "source": "https://nihonwine.jp/winery_intro/yuasa-winery/",
+    "lat": 34.0240,
+    "lng": 135.1680,
+    "name_en": "Wakayama Yuasa Winery"
+  }
+]

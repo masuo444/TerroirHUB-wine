@@ -1,0 +1,446 @@
+[
+  {
+    "id": "cave-docci",
+    "name": "カーブドッチワイナリー",
+    "company": "カーブドッチ株式会社",
+    "brand": "CAVE D'OCCI",
+    "winery_type": "estate",
+    "founded": "1992",
+    "founded_era": "平成4年",
+    "address": "新潟県新潟市西蒲区角田浜1661",
+    "tel": "0256-77-2288",
+    "url": "https://www.docci.com/",
+    "area": "新潟市西蒲区（角田浜）",
+    "desc": "角田浜の砂丘地に広がる新潟ワインコーストの中心的ワイナリー。畑・温泉・宿・食を組み合わせた滞在型リゾートを形成する。",
+    "visit": "ワイナリーショップ・レストラン・スパ・宿泊施設を併設。「滞在するワイナリー」として、醸造所見学も可能。営業時間9:00〜17:00（施設により異なる）。",
+    "wine_style": "red,white,rose,sparkling",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [],
+    "brands": [
+      {
+        "name": "アルバリーニョ",
+        "type": "白ワイン",
+        "specs": "新潟ワインコーストを代表する白。",
+        "grapes": "アルバリーニョ"
+      },
+      {
+        "name": "どうぶつシリーズ",
+        "type": "赤・白ワイン",
+        "specs": "食卓向けの人気シリーズ。",
+        "grapes": ""
+      },
+      {
+        "name": "サブル",
+        "type": "スパークリングワイン",
+        "specs": "砂地の個性を映す泡。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "新潟ワインコーストを牽引するリーダー的ワイナリー",
+      "1992年設立、国産生ぶどう100%・欧州系品種100%を掲げる",
+      "宿泊・レストラン・スパを備えた「滞在するワイナリー」"
+    ],
+    "nearest_station": "",
+    "source": "https://www.docci.com/",
+    "lat": 37.5774,
+    "lng": 138.7673,
+    "name_en": "Cave d'Occi Winery"
+  },
+  {
+    "id": "fermier",
+    "name": "フェルミエ",
+    "company": "フェルミエ株式会社",
+    "brand": "FERMIER",
+    "winery_type": "small",
+    "founded": "2006",
+    "founded_era": "平成18年",
+    "address": "新潟県新潟市西蒲区越前浜4501",
+    "tel": "0256-70-2646",
+    "url": "https://fermier.jp/",
+    "area": "新潟市西蒲区（越前浜）",
+    "desc": "越前浜で海風と砂地の個性を生かし、アルバリーニョなどで新潟らしい清涼感あるワインを追求する小規模ワイナリー。",
+    "visit": "レストランを併設。ワインツーリズムプログラムあり。要事前確認。",
+    "wine_style": "white,red",
+    "main_grape": "albarino",
+    "gi": "",
+    "grapes": [
+      "アルバリーニョ"
+    ],
+    "brands": ["アルバリーニョ", "ケルナー"],
+    "features": [
+      "カーブドッチで修行した本多孝氏が2006年に独立",
+      "「海と砂のテロワールが育む新潟の個性溢れるワイン」をコンセプト",
+      "フレンチレストランを併設"
+    ],
+    "nearest_station": "",
+    "source": "https://fermier.jp/",
+    "lat": 37.5612,
+    "lng": 138.7862,
+    "name_en": "Fermier"
+  },
+  {
+    "id": "domaine-chaud",
+    "name": "ドメーヌ・ショオ",
+    "company": "ドメーヌ・ショオ",
+    "brand": "Domaine Chaud",
+    "winery_type": "small",
+    "founded": "2011",
+    "founded_era": "平成23年",
+    "address": "新潟県新潟市西蒲区角田浜1700-1",
+    "tel": "0256-70-2266",
+    "url": "https://domainechaud.net/",
+    "area": "新潟市西蒲区（角田浜）",
+    "desc": "国産ぶどう100%で少量生産を行う家族経営のワイナリー。「土から考えてシンプルにワインを造る」がコンセプト。",
+    "visit": "11:00〜16:00（月・金・土・日・祝）。火・水・木休。",
+    "wine_style": "red,white",
+    "main_grape": "cabernet-sauvignon",
+    "gi": "",
+    "grapes": [
+      "カベルネ・ソーヴィニヨン",
+      "シャルドネ",
+      "カベルネ・フラン",
+      "プティ・ヴェルド",
+      "メルロー",
+      "シラー",
+      "ピノ・ノワール"
+    ],
+    "brands": ["Domaine Chaud Cabernet Sauvignon", "Domaine Chaud Chardonnay"],
+    "features": [
+      "夫婦で営む小規模ワイナリー",
+      "無除草剤・減農薬・減肥料の栽培",
+      "基本的に亜硫酸無添加・無濾過の自然な醸造"
+    ],
+    "nearest_station": "",
+    "source": "https://domainechaud.thebase.in/about",
+    "lat": 37.5774,
+    "lng": 138.768,
+    "name_en": "Domaine Chaud"
+  },
+  {
+    "id": "cantina-ziosetto",
+    "name": "セトワイナリー",
+    "company": "株式会社セトワイナリー",
+    "brand": "ZIO SETTO",
+    "winery_type": "small",
+    "founded": "2013",
+    "founded_era": "平成25年",
+    "address": "新潟県新潟市西蒲区角田浜1697-1",
+    "tel": "0256-78-8065",
+    "url": "http://ziosetto.com/",
+    "area": "新潟市西蒲区（角田浜）",
+    "desc": "新潟ワインコーストの中でイタリア品種に特化したワイナリー。果実味と酸を大切にしたフードフレンドリーなワインを目指す。",
+    "visit": "事前予約制（有料）11:00〜16:00、月曜定休。試飲無料。",
+    "wine_style": "red",
+    "main_grape": "zweigelt",
+    "gi": "",
+    "grapes": [
+      "ツヴァイゲルトレーベ",
+      "ネッビオーロ",
+      "バルベーラ",
+      "ランブルスコ"
+    ],
+    "brands": ["ZIO SETTO Zweigeltrebe", "ZIO SETTO Nebbiolo"],
+    "features": [
+      "2011年創業",
+      "イタリア品種に特化",
+      "新潟ワインコースト3番目のワイナリー"
+    ],
+    "nearest_station": "",
+    "source": "https://www.winery.or.jp/winery-map/609/",
+    "lat": 37.5772,
+    "lng": 138.7678,
+    "name_en": "Cantina Zio Setto"
+  },
+  {
+    "id": "le-cinq-winery",
+    "name": "ルサンクワイナリー",
+    "company": "ルサンクワイナリー株式会社",
+    "brand": "Le CINQ",
+    "winery_type": "small",
+    "founded": "2015",
+    "founded_era": "平成27年",
+    "address": "新潟県新潟市西蒲区角田浜1693",
+    "tel": "0256-78-8490",
+    "url": "https://lecinqwinery.com/",
+    "area": "新潟市西蒲区（角田浜）",
+    "desc": "新潟ワインコーストの5番目として誕生した小規模ワイナリー。砂地の畑で育てた欧州系品種を中心に丁寧な少量醸造を行う。",
+    "visit": "営業日・見学対応は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "メルロー", "カベルネ・ソーヴィニヨン"],
+    "brands": ["Le CINQ Chardonnay", "Le CINQ Merlot"],
+    "features": [
+      "新潟ワインコースト5番目のワイナリー（「サンク＝5」が名前の由来）",
+      "2015年10月1日設立"
+    ],
+    "nearest_station": "",
+    "source": "https://lecinqwinery.com/",
+    "lat": 37.5773,
+    "lng": 138.7675,
+    "name_en": "Le Cinq Winery"
+  },
+  {
+    "id": "tainai-winery",
+    "name": "胎内高原ワイン",
+    "company": "胎内市",
+    "brand": "胎内高原ワイン",
+    "winery_type": "estate",
+    "founded": "2007",
+    "founded_era": "平成19年",
+    "address": "新潟県胎内市宮久1454",
+    "tel": "0254-48-2220",
+    "url": "https://tainaiwinery.stores.jp/",
+    "area": "胎内市",
+    "desc": "胎内市の自社農園ぶどうを使う公営ワイナリー。飯豊連峰を望む高原で欧州系品種を中心に栽培・醸造している。",
+    "visit": "売店あり。見学・営業状況は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": [
+      "メルロー",
+      "ツヴァイゲルトレーベ",
+      "シャルドネ",
+      "ソーヴィニヨン・ブラン"
+    ],
+    "brands": ["胎内高原メルロー", "胎内高原シャルドネ"],
+    "features": [
+      "胎内市が運営する公営ワイナリー",
+      "交流人口増加と地域活性化を目的として設立"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/14150010105/",
+    "lat": 38.0712,
+    "lng": 139.4326,
+    "name_en": "Tainai Winery"
+  },
+  {
+    "id": "cantina-zio-paris",
+    "name": "カンティーナ・ジーオ・パリ",
+    "company": "（株）中川屋",
+    "brand": "カンティーナ・ジーオ・パリ",
+    "winery_type": "small",
+    "founded": "1997",
+    "founded_era": "平成9年",
+    "address": "新潟県南魚沼市浦佐5144-1",
+    "tel": "",
+    "url": "https://cantinazioparis.com/",
+    "area": "南魚沼市",
+    "desc": "南魚沼でレストランと連携しながら展開する小規模ワイナリー。料理に寄り添うマスカット・ベーリーA主体のワインを造る。",
+    "visit": "営業日・試飲対応は事前確認推奨。",
+    "wine_style": "red",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA"
+    ],
+    "brands": ["Cantina Zio Pari Rosso", "MBA"],
+    "features": [
+      "内陸・南魚沼に位置するワイナリー"
+    ],
+    "nearest_station": "",
+    "source": "https://cantinazioparis.com/",
+    "lat": 37.2,
+    "lng": 138.9,
+    "name_en": "Cantina Zio Paris"
+  },
+  {
+    "id": "echigo-winery",
+    "name": "アグリコア越後ワイナリー",
+    "company": "株式会社アグリコア 越後ワイナリー",
+    "brand": "越後ワイン",
+    "winery_type": "winery",
+    "founded": "1975",
+    "founded_era": "昭和50年",
+    "address": "新潟県南魚沼市浦佐5531-1",
+    "tel": "025-777-5877",
+    "url": "https://www.echigowinery.com/",
+    "area": "南魚沼市",
+    "desc": "雪国・南魚沼で新潟県産ぶどうにこだわり、雪室貯蔵で熟成させるワイナリー。",
+    "visit": "9:30〜17:00、元旦休。見学可。レストラン併設。",
+    "wine_style": "red,white,rose,sparkling",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": [
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "シャルドネ",
+      "ケルナー"
+    ],
+    "brands": [
+      {
+        "name": "越後メルロー",
+        "type": "赤ワイン",
+        "specs": "日本ワインコンクール受賞歴あり。",
+        "grapes": "メルロー"
+      },
+      {
+        "name": "越後シャルドネ",
+        "type": "白ワイン",
+        "specs": "雪室熟成の定番白。",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "雪季",
+        "type": "赤・白ワイン",
+        "specs": "雪室貯蔵シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1975年創業",
+      "雪室貯蔵による熟成",
+      "レストラン葡萄の花を併設"
+    ],
+    "nearest_station": "JR浦佐駅",
+    "source": "https://www.echigowinery.com/publics/index/62/",
+    "lat": 37.166,
+    "lng": 138.922,
+    "name_en": "Echigo Winery"
+  },
+  {
+    "id": "lescargot",
+    "name": "レスカルゴ",
+    "company": "株式会社l'escargot",
+    "brand": "l'escargot",
+    "winery_type": "natural",
+    "founded": "2012",
+    "founded_era": "平成24年",
+    "address": "新潟県新潟市西蒲区越前浜4477",
+    "tel": "0256-77-2268",
+    "url": "https://www.lescargot.jp/",
+    "area": "新潟市西蒲区（越前浜）",
+    "desc": "角田山と日本海に囲まれた越前浜で、自然な造りの無濾過ワインを目指す小規模ワイナリー。",
+    "visit": "見学は基本不可。試飲無料。",
+    "wine_style": "red,white,rose",
+    "main_grape": "pinot_noir",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "ピノ・ノワール",
+      "カベルネ・ソーヴィニヨン",
+      "ピノ・ブラン",
+      "マスカット・ベーリーA"
+    ],
+    "brands": [
+      {
+        "name": "レスカルゴ ピノ・ノワール",
+        "type": "赤ワイン",
+        "specs": "自社畑産ピノ・ノワール。",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "ソーヴィニヨン・ブラン",
+        "type": "白ワイン",
+        "specs": "生成りワインの思想を体現。",
+        "grapes": "ソーヴィニヨン・ブラン"
+      }
+    ],
+    "features": [
+      "2007年植樹、2012年醸造開始",
+      "無濾過を重視した自然派スタイル",
+      "新潟ワインコーストの一角"
+    ],
+    "nearest_station": "",
+    "source": "https://www.winery.or.jp/winery-map/931/",
+    "lat": 37.561,
+    "lng": 138.786,
+    "name_en": "Lescargot"
+  },
+  {
+    "id": "iwanohara-budouen",
+    "name": "岩の原ワイン",
+    "company": "株式会社岩の原葡萄園",
+    "brand": "深雪花",
+    "winery_type": "large",
+    "founded": "1890",
+    "founded_era": "明治23年",
+    "address": "新潟県上越市大字北方1223",
+    "tel": "025-528-4002",
+    "url": "https://www.iwanohara.sgn.ne.jp/",
+    "area": "上越市",
+    "desc": "川上善兵衛が1890年に創業した、日本ワイン史を代表する老舗ワイナリー。マスカット・ベーリーAのふるさと。",
+    "visit": "営業時間9:30〜16:30。見学無料（団体は要予約）、試飲有料。",
+    "wine_style": "red,white,rose,sparkling",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "ブラック・クイーン",
+      "ベーリー・アリカントA",
+      "ローズ・シオター",
+      "レッド・ミルレンニューム"
+    ],
+    "brands": [
+      {
+        "name": "深雪花",
+        "type": "赤・白・ロゼワイン",
+        "specs": "代表ブランド。",
+        "grapes": ""
+      },
+      {
+        "name": "善",
+        "type": "赤・白・ロゼワイン",
+        "specs": "日常向けの主力シリーズ。",
+        "grapes": ""
+      },
+      {
+        "name": "善スパークリングワイン",
+        "type": "スパークリングワイン",
+        "specs": "白・ロゼを展開。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1890年創業",
+      "川上善兵衛が22品種を育成",
+      "雪室と石蔵を生かした熟成環境"
+    ],
+    "nearest_station": "",
+    "source": "https://jwine.net/winery/iwanohara/",
+    "lat": 37.111,
+    "lng": 138.311,
+    "name_en": "Iwanohara Vineyard"
+  },
+  {
+    "id": "wine-farm-tochio",
+    "name": "ワインファームとちお",
+    "company": "とちお農園株式会社",
+    "brand": "T100",
+    "winery_type": "small",
+    "founded": "2019",
+    "founded_era": "",
+    "address": "新潟県長岡市栃尾本町3-11",
+    "tel": "0258-89-8960",
+    "url": "https://www.tochio-wine.com/",
+    "area": "長岡市栃尾",
+    "desc": "長岡市栃尾で栽培したぶどうを生かし、小規模に個性あるワインを醸す新潟県ワイナリー協会会員のワイナリー。",
+    "visit": "営業・見学は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": [
+      "メルロー"
+    ],
+    "brands": [
+      {
+        "name": "T100 Merlot",
+        "type": "赤ワイン",
+        "specs": "栃尾産メルロー100%。",
+        "grapes": "メルロー"
+      }
+    ],
+    "features": [
+      "長岡市栃尾の小規模ワイナリー",
+      "新潟県ワイナリー協会会員",
+      "地元産ぶどうを生かした少量生産"
+    ],
+    "nearest_station": "",
+    "source": "https://www.winery.or.jp/winery-map/15260/",
+    "lat": 37.476,
+    "lng": 138.995,
+    "name_en": "Wine Farm Tochio"
+  }
+]

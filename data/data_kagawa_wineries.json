@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sanuki-winery",
+    "name": "さぬきワイナリー",
+    "company": "株式会社さぬき市SA公社",
+    "brand": "さぬきワイン",
+    "winery_type": "medium",
+    "founded": "1988",
+    "founded_era": "昭和63年",
+    "address": "香川県さぬき市小田2671-13",
+    "tel": "087-895-1133",
+    "url": "https://wine.sanuki-sa.jp/",
+    "area": "さぬき市",
+    "desc": "瀬戸内海を見渡す大串自然公園内にある四国初のワイン工場。香川県オリジナル品種を含む県産ぶどうで、地元食材に合うワインを造る。",
+    "visit": "工場見学無料。試飲・売店あり。営業時間9:00〜17:00（火曜定休・年末年始休）。",
+    "wine_style": "red,dry_white,rose",
+    "main_grape": "kagadainou_r1",
+    "gi": "",
+    "grapes": ["香大農R-1"],
+    "brands": [
+      {
+        "name": "さぬきワイン",
+        "type": "赤・白・ロゼ",
+        "specs": "香川県産ぶどうを使う主力シリーズ。",
+        "grapes": ""
+      },
+      {
+        "name": "さぬきRED",
+        "type": "赤ワイン",
+        "specs": "香大農R-1を活かした赤。",
+        "grapes": "香大農R-1"
+      },
+      {
+        "name": "ソヴァジョーヌ・サヴルーズ",
+        "type": "白ワイン",
+        "specs": "香川県独自開発品種を用いた個性派白。",
+        "grapes": "香大農R-1"
+      }
+    ],
+    "features": ["四国初のワイン工場として1988年設立", "瀬戸内海を見渡す大串自然公園内のワイナリー", "香川県独自開発品種「香大農R-1」を使用", "2006年より「ソヴァジョーヌ・サヴルーズ」醸造開始"],
+    "nearest_station": "",
+    "source": "https://wine.sanuki-sa.jp/view/page/about",
+    "lat": 34.2843,
+    "lng": 134.2218,
+    "name_en": "Sanuki Winery"
+  }
+]

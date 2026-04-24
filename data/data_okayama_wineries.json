@@ -1,0 +1,392 @@
+[
+  {
+    "id": "domaine-tetta",
+    "name": "ドメーヌ・テッタ",
+    "company": "ドメーヌ・テッタ",
+    "brand": "domaine tetta",
+    "winery_type": "estate",
+    "founded": "2009",
+    "founded_era": "平成21年",
+    "address": "岡山県新見市哲多矢戸3136",
+    "tel": "0867-96-3658",
+    "url": "http://tetta.jp/",
+    "area": "新見市哲多町",
+    "desc": "岡山県新見市哲多町の標高400m、石灰質土壌の畑で育てた自社ぶどうのみを使うドメーヌスタイルのワイナリー。2016年に自社醸造を開始。",
+    "visit": "cafe営業日にガラス越し見学可。テラスから畑を一望できる。アクセスは車推奨。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "ピノ・ノワール"
+    ],
+    "brands": [
+      {
+        "name": "Chardonnay Barrique",
+        "type": "白ワイン",
+        "specs": "樽熟成のシャルドネ。",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "Merlot Barrique",
+        "type": "赤ワイン",
+        "specs": "自社畑産メルローを使用。",
+        "grapes": "メルロー"
+      },
+      {
+        "name": "Muscat Bailey A Barrique",
+        "type": "赤ワイン",
+        "specs": "果実味と樽香を備えた赤。",
+        "grapes": "マスカット・ベーリーA"
+      }
+    ],
+    "features": [
+      "標高400mの石灰質土壌の自社畑",
+      "2016年完成の自社ワイナリーで重力移動方式を採用",
+      "ショップ&カフェ併設、テラスから畑を一望できる"
+    ],
+    "nearest_station": "",
+    "source": "https://tetta.jp/",
+    "lat": 34.934,
+    "lng": 133.462,
+    "name_en": "Domaine Tetta"
+  },
+  {
+    "id": "funao-winery",
+    "name": "ふなおワイナリー",
+    "company": "ふなおワイナリー",
+    "brand": "",
+    "winery_type": "winery",
+    "founded": "1989",
+    "founded_era": "",
+    "address": "岡山県倉敷市船穂町水江611-2",
+    "tel": "086-552-9789",
+    "url": "http://www.funaowinery.com/",
+    "area": "倉敷市船穂町",
+    "desc": "倉敷市船穂町のマスカット・オブ・アレキサンドリア産地にあるワイナリー。栽培から搾汁・発酵・瓶詰めまで一貫して手がける。",
+    "visit": "施設内でワイン造りや栽培の歴史を見学可。試飲コーナーあり。季節限定で収穫体験開催あり。",
+    "wine_style": "white,sparkling",
+    "main_grape": "muscat_of_alexandria",
+    "gi": "",
+    "grapes": [
+      "マスカット・オブ・アレキサンドリア"
+    ],
+    "brands": [
+      {
+        "name": "マスカット・オブ・アレキサンドリア スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "マスカット100%の代表銘柄。",
+        "grapes": "マスカット・オブ・アレキサンドリア"
+      },
+      {
+        "name": "マスカット・オブ・アレキサンドリア やや辛口",
+        "type": "白ワイン",
+        "specs": "芳醇な香りと上品な余韻。",
+        "grapes": "マスカット・オブ・アレキサンドリア"
+      },
+      {
+        "name": "特醸辛口",
+        "type": "白ワイン",
+        "specs": "シュール・リー製法で熟成した辛口。",
+        "grapes": "マスカット・オブ・アレキサンドリア"
+      }
+    ],
+    "features": [
+      "倉敷市船穂町のマスカット・オブ・アレキサンドリア産地に立地",
+      "栽培から瓶詰めまで一貫製造",
+      "収穫体験や試飲で産地体験ができる"
+    ],
+    "nearest_station": "",
+    "source": "https://www.kurashiki-tabi.jp/rm_experience/rm-experience15/",
+    "lat": 34.586,
+    "lng": 133.732,
+    "name_en": "Funao Winery"
+  },
+  {
+    "id": "hiruzen-wine",
+    "name": "ひるぜんワイン",
+    "company": "ひるぜんワイン",
+    "brand": "ひるぜんワイン",
+    "winery_type": "winery",
+    "founded": "1987",
+    "founded_era": "昭和62年",
+    "address": "岡山県真庭市蒜山上福田1205-32",
+    "tel": "0867-66-4424",
+    "url": "https://hiruzenwine.com/",
+    "area": "真庭市蒜山",
+    "desc": "蒜山高原の冷涼な気候を生かし、山ぶどうや岡山県産果実を使ったワインを造るワイナリー。",
+    "visit": "電話受付時間10:00〜17:00。売店利用・来訪は事前確認推奨。",
+    "wine_style": "red,white,rose",
+    "main_grape": "yamabudo",
+    "gi": "",
+    "grapes": [
+      "山ぶどう",
+      "ピオーネ",
+      "マスカット・ベーリーA"
+    ],
+    "brands": [
+      {
+        "name": "山ぶどうワイン",
+        "type": "赤ワイン",
+        "specs": "蒜山の定番赤ワイン。",
+        "grapes": "山ぶどう"
+      },
+      {
+        "name": "ピオーネワイン",
+        "type": "ロゼワイン",
+        "specs": "岡山産ピオーネの果実味を生かした一本。",
+        "grapes": "ピオーネ"
+      }
+    ],
+    "features": [
+      "1987年設立",
+      "蒜山高原の冷涼な気候を生かした醸造",
+      "山ぶどうと岡山県産果実を生かしたラインアップ"
+    ],
+    "nearest_station": "",
+    "source": "https://hiruzenwine.com/en/about-us/",
+    "lat": 35.207,
+    "lng": 133.532,
+    "name_en": "Hiruzen Wine"
+  },
+  {
+    "id": "sapporo-wine-okayama",
+    "name": "サッポロワイン岡山ワイナリー",
+    "company": "サッポロビール株式会社",
+    "brand": "グランポレール",
+    "winery_type": "winery",
+    "founded": "",
+    "founded_era": "",
+    "address": "岡山県赤磐市東軽部1556",
+    "tel": "086-957-3838",
+    "url": "https://www.sapporobeer.jp/brewery/okayama/",
+    "area": "赤磐市",
+    "desc": "赤磐市にあるサッポロビールのワイン製造拠点。国産ぶどうを使った日本ワインの仕込みと大規模な製造を担う岡山工場。",
+    "visit": "工場見学可。実施状況は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "マスカット・ベーリーA"
+    ],
+    "brands": [
+      "グランポレール"
+    ],
+    "features": [
+      "日本ワインコンクール最高金賞受賞（極甘口2015年）"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17330010282/",
+    "lat": 34.815,
+    "lng": 134.0,
+    "name_en": "Sapporo Wine Okayama Winery"
+  },
+  {
+    "id": "korezato-winery",
+    "name": "是里ワイン醸造場",
+    "company": "是里ワイン醸造場",
+    "brand": "",
+    "winery_type": "winery",
+    "founded": "1986",
+    "founded_era": "",
+    "address": "岡山県赤磐市仁堀中1356-1",
+    "tel": "086-958-2888",
+    "url": "https://koresato-wine.jp/",
+    "area": "赤磐市是里地区",
+    "desc": "赤磐市是里地区のぶどうにこだわり、キャンベルやリースリング、ピオーネなど多彩な品種でワインを造る歴史あるワイナリー。",
+    "visit": "見学無料。試飲は7種200円。",
+    "wine_style": "red,white",
+    "main_grape": "campbell",
+    "gi": "",
+    "grapes": [
+      "キャンベル",
+      "リースリング",
+      "ピオーネ",
+      "マスカット"
+    ],
+    "brands": ["是里ワイン 赤", "是里ワイン 白"],
+    "features": [
+      "是里地区産ぶどうに特化",
+      "フルーティーなラインアップ",
+      "見学無料・有料試飲あり"
+    ],
+    "nearest_station": "",
+    "source": "https://www.winery.or.jp/winery-map/1046/",
+    "lat": 34.821,
+    "lng": 134.07,
+    "name_en": "Korezato Winery"
+  },
+  {
+    "id": "la-grande-colline-japon",
+    "name": "ラ・グランド・コリーヌ・ジャポン",
+    "company": "ラ・グランド・コリーヌ・ジャポン",
+    "brand": "La Grande Colline Japon",
+    "winery_type": "estate",
+    "founded": "",
+    "founded_era": "",
+    "address": "岡山県岡山市北区富吉1819",
+    "tel": "",
+    "url": "http://www.lagrandecolline.fr/j_okayama.html",
+    "area": "岡山市北区",
+    "desc": "フランス・ローヌで活動する醸造家が岡山で手がける自然派ワイナリー。野生酵母と低介入の醸造で土地の個性を表現する。",
+    "visit": "通常は一般見学なし。イベント時のみ要確認。",
+    "wine_style": "red,white,sparkling",
+    "main_grape": "shokoshi",
+    "gi": "",
+    "grapes": [
+      "小公子"
+    ],
+    "brands": [
+      "ル・カノン",
+      "ヴィノーブル・ド・ナカ"
+    ],
+    "features": [
+      "自然派ワイン",
+      "フランス・ローヌ出身のオーナーが岡山に開設"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17330010318/",
+    "lat": 34.723,
+    "lng": 133.889,
+    "name_en": "La Grande Colline Japon"
+  },
+  {
+    "id": "coltrada",
+    "name": "コルトラーダ",
+    "company": "コルトラーダ",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "",
+    "founded_era": "",
+    "address": "岡山県新見市哲多町",
+    "tel": "",
+    "url": "https://shop.coltrada.com/",
+    "area": "新見市哲多町",
+    "desc": "新見市哲多町で微発泡のペティアンに特化し、自社畑と地域のぶどうを使って少量生産するワイナリー。",
+    "visit": "通常は見学非公開。営業日や受取対応は事前確認推奨。",
+    "wine_style": "red,white,sparkling",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [],
+    "brands": [
+      "ル ピオニエ ペティアン"
+    ],
+    "features": [
+      "微発泡ワイン専門"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17330010332/",
+    "lat": 34.93,
+    "lng": 133.46,
+    "name_en": "Coltrada"
+  },
+  {
+    "id": "kurokamiyama-budoen",
+    "name": "黒髪山葡萄園",
+    "company": "黒髪山葡萄園",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "2014",
+    "founded_era": "平成26年",
+    "address": "岡山県新見市上熊谷7606",
+    "tel": "0867-71-5055",
+    "url": "http://www.kurokamiyama.sakura.ne.jp/",
+    "area": "新見市",
+    "desc": "自社畑のブドウを滋賀県のヒトミワイナリーさんに委託醸造しています。自然発酵、無濾過のワインで、ブドウ本来の味わいが楽しめるワイン",
+    "visit": "見学可（予約）。試飲不可。",
+    "wine_style": "white,sparkling",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "ソーヴィニヨン・ブラン"
+    ],
+    "brands": [],
+    "features": [
+      "自然発酵・無濾過",
+      "年間生産量約1,200本",
+      "委託醸造（ヒトミワイナリー）"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17330010319/",
+    "lat": 34.98,
+    "lng": 133.52,
+    "name_en": "Kurokamiyama Vineyard"
+  },
+  {
+    "id": "okayama-wine-valley",
+    "name": "岡山ワインバレー",
+    "company": "岡山ワインバレー",
+    "brand": "HAKUBI",
+    "winery_type": "winery",
+    "founded": "2018",
+    "founded_era": "平成30年",
+    "address": "岡山県新見市哲多町田淵72",
+    "tel": "080-1052-7683",
+    "url": "https://okayamawine.jp/",
+    "area": "新見市哲多町",
+    "desc": "新見市哲多町の保育所跡地をリノベーションして開設した小規模ワイナリー。栽培から醸造まで一貫し、ぶどうの繊細な風味を生かす。",
+    "visit": "不定期・要予約。普段は畑作業中心のため事前連絡必須。",
+    "wine_style": "red,white,sparkling",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "サンジョヴェーゼ",
+      "ネッビオーロ"
+    ],
+    "brands": [
+      {
+        "name": "HAKUBI",
+        "type": "白ワイン",
+        "specs": "自社醸造のシャルドネ。",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "QAUGURA",
+        "type": "赤ワイン",
+        "specs": "哲多町産ぶどうを用いた赤。",
+        "grapes": "サンジョヴェーゼ、ネッビオーロ"
+      }
+    ],
+    "features": [
+      "2018年開設の小規模ワイナリー",
+      "保育所跡地をリノベーションした施設",
+      "アートスペース&ギャラリー併設"
+    ],
+    "nearest_station": "",
+    "source": "https://okayamawine.jp/winery/",
+    "lat": 34.928,
+    "lng": 133.435,
+    "name_en": "Okayama Wine Valley"
+  },
+  {
+    "id": "grapeship",
+    "name": "グレープシップ",
+    "company": "グレープシップ",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "",
+    "founded_era": "",
+    "address": "岡山県倉敷市船穂町船穂7153-1",
+    "tel": "",
+    "url": "https://www.grapeship.jp/",
+    "area": "倉敷市船穂町",
+    "desc": "倉敷市船穂町で発泡性ワインを中心に展開する小規模ワイナリー。岡山特産の果実感を生かした軽やかなスタイルが持ち味。",
+    "visit": "見学不可",
+    "wine_style": "sparkling",
+    "main_grape": "muscat_of_alexandria",
+    "gi": "",
+    "grapes": ["マスカット・オブ・アレキサンドリア", "ピオーネ"],
+    "brands": ["グレープシップ スパークリング"],
+    "features": [
+      "発泡性ワイン"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17330010378/",
+    "lat": 34.587,
+    "lng": 133.726,
+    "name_en": "Grapeship"
+  }
+]

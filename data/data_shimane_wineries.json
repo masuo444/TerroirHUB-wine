@@ -1,0 +1,74 @@
+[
+  {
+    "id": "shimane-winery",
+    "name": "島根ワイナリー",
+    "company": "株式会社島根ワイナリー",
+    "brand": "島根わいん",
+    "winery_type": "winery",
+    "founded": "1959",
+    "founded_era": "昭和34年",
+    "address": "島根県出雲市大社町菱根264-2",
+    "tel": "0853-53-5577",
+    "url": "https://www.shimane-winery.jp/",
+    "area": "出雲市大社町",
+    "desc": "出雲大社近くの観光型ワイナリー。島根ぶどうから造る島根わいんの製造と、工場見学・試飲・食の発信を担う拠点施設。",
+    "visit": "9:30〜17:00（年中無休）。工場見学無料。試飲・バーベキューハウス・土産店あり。",
+    "wine_style": "red,white",
+    "main_grape": "delaware",
+    "gi": "",
+    "grapes": ["デラウェア", "甲州", "マスカット・ベーリーA"],
+    "brands": [
+      {
+        "name": "島根わいん",
+        "type": "白・赤・ロゼ・甘味果実酒",
+        "specs": "島根ぶどうの果実味を生かした基幹ブランド。",
+        "grapes": ""
+      }
+    ],
+    "features": ["出雲大社から車5分", "無料工場見学可", "バーベキューハウス（最大500名）", "日本ワイナリーアワード2025 4つ星", "日本ワインコンクール2025 金賞受賞"],
+    "nearest_station": "",
+    "source": "https://www.shimane-winery.jp/",
+    "lat": 35.4000,
+    "lng": 132.6840,
+    "name_en": "Shimane Winery"
+  },
+  {
+    "id": "okuizumo-budoen",
+    "name": "奥出雲葡萄園",
+    "company": "有限会社奥出雲葡萄園",
+    "brand": "",
+    "winery_type": "estate",
+    "founded": "2007",
+    "founded_era": "平成19年",
+    "address": "島根県雲南市木次町寺領2273-1",
+    "tel": "0854-42-3480",
+    "url": "https://okuizumo.com/",
+    "area": "雲南市木次町",
+    "desc": "ここだけの土、水、空気　ここだからできるものを",
+    "visit": "ガーデンカフェ・ショップ併設。営業日時は季節変動のため事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "ソーヴィニヨン・ブラン", "メルロー", "カベルネ・ソーヴィニヨン", "小公子"],
+    "brands": [
+      {
+        "name": "小公子",
+        "type": "赤ワイン",
+        "specs": "奥出雲葡萄園を代表する赤。",
+        "grapes": "小公子"
+      },
+      {
+        "name": "シャルドネ",
+        "type": "白ワイン",
+        "specs": "冷涼な山間地らしい酸を生かした白。",
+        "grapes": "シャルドネ"
+      }
+    ],
+    "features": ["広島との県境・山間部に位置", "自然との共生を目指したワイン造り", "年間収穫イベントを開催", "ガーデンカフェ・ショップ併設"],
+    "nearest_station": "",
+    "source": "https://okuizumo.com/",
+    "lat": 35.1880,
+    "lng": 132.9400,
+    "name_en": "Okuizumo Vineyard"
+  }
+]

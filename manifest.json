@@ -1,0 +1,12 @@
+{
+  "name": "Terroir HUB WINE",
+  "short_name": "THUB WINE",
+  "description": "日本ワイン検索の決定版。全国880+ワイナリーのデータベース。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#722F37",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ワイナリー検索 — 日本全国880+ワイナリー | Terroir HUB WINE</title>
+<meta name="description" content="日本全国880以上のワイナリーを地域・品種・キーワードで検索。北海道から九州まで、日本ワインの造り手をTerroir HUB WINEで探せます。">
+<link rel="canonical" href="https://wine.terroirhub.com/wine/search/">
+<link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/search/">
+<link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/en/wine/search/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "ワイナリー検索 | Terroir HUB WINE",
+  "description": "日本全国880以上のワイナリーを地域・品種・キーワードで検索できるページです。",
+  "url": "https://wine.terroirhub.com/wine/search/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Terroir HUB WINE",
+    "url": "https://wine.terroirhub.com/"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased;}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.06);}
+.nav-top{display:flex;align-items:center;height:54px;padding:0 28px;max-width:1280px;margin:0 auto;}
+.nav-logo{font-family:'Shippori Mincho',serif;font-size:18px;font-weight:700;color:#1a1a1a;text-decoration:none;letter-spacing:0.04em;}
+.nav-back{font-size:13px;color:#722F37;text-decoration:none;margin-left:auto;padding:6px 16px;border:1px solid rgba(114,47,55,0.3);border-radius:20px;transition:all 0.2s;}
+.nav-back:hover{background:#722F37;color:#fff;}
+.nav-hamburger{display:none;background:none;border:none;font-size:22px;cursor:pointer;padding:4px 8px;color:#333;margin-left:auto;}
+@media(max-width:700px){.nav-back{display:none;}.nav-hamburger{display:block;}}
+.search-header{margin-top:54px;background:linear-gradient(135deg,#3d0c12 0%,#722F37 60%,#8B3A42 100%);color:#fff;padding:48px 28px 40px;}
+.search-header-inner{max-width:900px;margin:0 auto;}
+.search-header h1{font-family:'Shippori Mincho',serif;font-size:clamp(22px,4vw,34px);font-weight:700;margin-bottom:8px;}
+.search-header p{font-size:14px;opacity:0.85;}
+.search-box-wrap{background:#fff;border-radius:16px;padding:32px;max-width:900px;margin:-28px auto 0;position:relative;z-index:10;box-shadow:0 4px 32px rgba(114,47,55,0.12);}
+.search-row{display:flex;gap:12px;margin-bottom:16px;}
+.search-input{flex:1;height:48px;border:1.5px solid #e0d0d2;border-radius:10px;padding:0 16px;font-size:15px;font-family:'Noto Sans JP',sans-serif;outline:none;transition:border-color 0.2s;}
+.search-input:focus{border-color:#722F37;}
+.search-btn{height:48px;padding:0 24px;background:#722F37;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;font-family:'Noto Sans JP',sans-serif;cursor:pointer;transition:background 0.2s;white-space:nowrap;}
+.search-btn:hover{background:#5a1e25;}
+.filter-row{display:flex;gap:10px;flex-wrap:wrap;}
+.filter-select{height:40px;border:1.5px solid #e0d0d2;border-radius:8px;padding:0 14px;font-size:14px;font-family:'Noto Sans JP',sans-serif;color:#444;background:#fff;outline:none;cursor:pointer;transition:border-color 0.2s;}
+.filter-select:focus{border-color:#722F37;}
+.content{max-width:900px;margin:0 auto;padding:40px 28px 80px;}
+.results-info{font-size:14px;color:#888;margin-bottom:20px;}
+.results-info span{color:#722F37;font-weight:600;}
+.result-grid{display:flex;flex-direction:column;gap:12px;}
+.result-card{background:#fff;border:1px solid #f0e0e2;border-radius:12px;padding:20px 24px;display:flex;align-items:flex-start;gap:16px;transition:box-shadow 0.2s;cursor:pointer;}
+.result-card:hover{box-shadow:0 4px 20px rgba(114,47,55,0.1);border-color:#d0a0a8;}
+.result-icon{width:44px;height:44px;background:rgba(114,47,55,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.result-body{flex:1;}
+.result-body h3{font-size:16px;font-weight:600;color:#2a0a0e;margin-bottom:4px;}
+.result-body .result-meta{font-size:13px;color:#888;display:flex;gap:10px;flex-wrap:wrap;}
+.result-body .result-meta span{background:#f5eded;padding:2px 10px;border-radius:10px;color:#722F37;font-size:12px;}
+.empty-state{text-align:center;padding:64px 24px;color:#999;}
+.empty-state p{font-size:15px;margin-bottom:8px;}
+.region-shortcuts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.region-tag{background:rgba(114,47,55,0.06);border:1px solid rgba(114,47,55,0.15);color:#722F37;border-radius:20px;padding:6px 16px;font-size:13px;font-weight:500;cursor:pointer;transition:all 0.2s;}
+.region-tag:hover,.region-tag.active{background:#722F37;color:#fff;border-color:#722F37;}
+.loading{text-align:center;padding:40px;color:#999;font-size:14px;}
+.footer{background:#1a0508;padding:48px 24px 32px;color:rgba(255,255,255,0.5);font-size:13px;text-align:center;}
+.footer-logo{font-family:'Shippori Mincho',serif;font-size:24px;color:#fff;font-weight:600;margin-bottom:16px;}
+.footer-logo .accent{color:#722F37;}
+.footer-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:0;margin-bottom:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);}
+.footer-nav a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:13px;padding:0 16px;border-right:1px solid rgba(255,255,255,0.2);line-height:1;transition:color 0.2s;}
+.footer-nav a:last-child{border-right:none;}
+.footer-nav a:hover{color:#fff;}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.3);}
+@media(max-width:600px){
+  .search-row{flex-direction:column;}
+  .search-box-wrap{padding:20px 16px;}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-top">
+    <a href="/" class="nav-logo">Terroir HUB <span style="color:#722F37">WINE</span></a>
+    <a href="/" class="nav-back">&#8592; トップへ</a>
+    <button class="nav-hamburger">&#9776;</button>
+  </div>
+</nav>
+
+<div class="search-header">
+  <div class="search-header-inner">
+    <h1>ワイナリー検索</h1>
+    <p>日本全国880以上のワイナリーをキーワード・地域・品種で探す</p>
+  </div>
+</div>
+
+<div style="max-width:900px;margin:0 28px;position:relative;z-index:10;box-shadow:0 4px 32px rgba(114,47,55,0.12);background:#fff;border-radius:16px;padding:32px;margin:-28px auto 0;">
+  <div class="search-row">
+    <input type="text" id="searchInput" class="search-input" placeholder="ワイナリー名・地名・品種で検索…" autocomplete="off">
+    <button class="search-btn" onclick="doSearch()">検索</button>
+  </div>
+  <div class="filter-row">
+    <select id="regionFilter" class="filter-select" onchange="doSearch()">
+      <option value="">すべての地域</option>
+      <option value="北海道">北海道</option>
+      <option value="東北">東北（山形・岩手・青森）</option>
+      <option value="山梨">山梨</option>
+      <option value="長野">長野</option>
+      <option value="新潟">新潟</option>
+      <option value="近畿">近畿（大阪・京都・兵庫）</option>
+      <option value="中国">中国（島根・岡山・広島・山口）</option>
+      <option value="四国">四国</option>
+      <option value="九州">九州（宮崎・熊本・大分）</option>
+    </select>
+    <select id="varietyFilter" class="filter-select" onchange="doSearch()">
+      <option value="">すべての品種</option>
+      <option value="甲州">甲州</option>
+      <option value="マスカット・ベーリーA">マスカット・ベーリーA</option>
+      <option value="ピノ・ノワール">ピノ・ノワール</option>
+      <option value="シャルドネ">シャルドネ</option>
+      <option value="メルロー">メルロー</option>
+      <option value="カベルネ・ソーヴィニヨン">カベルネ・ソーヴィニヨン</option>
+      <option value="ケルナー">ケルナー</option>
+      <option value="デラウェア">デラウェア</option>
+    </select>
+  </div>
+  <div style="margin-top:16px;">
+    <div style="font-size:12px;color:#aaa;margin-bottom:8px;">地域で絞り込む</div>
+    <div class="region-shortcuts" id="regionShortcuts">
+      <span class="region-tag" onclick="setRegion('北海道')">北海道</span>
+      <span class="region-tag" onclick="setRegion('東北')">東北</span>
+      <span class="region-tag" onclick="setRegion('山梨')">山梨</span>
+      <span class="region-tag" onclick="setRegion('長野')">長野</span>
+      <span class="region-tag" onclick="setRegion('新潟')">新潟</span>
+      <span class="region-tag" onclick="setRegion('近畿')">近畿</span>
+      <span class="region-tag" onclick="setRegion('中国')">中国</span>
+      <span class="region-tag" onclick="setRegion('四国')">四国</span>
+      <span class="region-tag" onclick="setRegion('九州')">九州</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="results-info" id="resultsInfo">キーワードを入力するか、地域タグを選択してください</div>
+  <div class="result-grid" id="resultGrid">
+    <div class="empty-state">
+      <p>&#127863; 検索してワイナリーを見つけましょう</p>
+      <p style="font-size:13px;">880以上のワイナリーから探せます</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-logo">Terroir HUB <span class="accent">WINE</span></div>
+  <nav class="footer-nav">
+    <a href="/">ホーム</a>
+    <a href="/wine/region/hokkaido.html">北海道</a>
+    <a href="/wine/region/kanto.html">山梨・長野</a>
+    <a href="/wine/region/kyushu.html">九州</a>
+    <a href="/privacy.html">プライバシー</a>
+    <a href="/terms.html">利用規約</a>
+    <a href="/tokushoho.html">特商法</a>
+  </nav>
+  <p class="footer-copy">&copy; 2026 合同会社FOMUS — Terroir HUB WINE</p>
+</footer>
+
+<script>
+let allData = [];
+let filtered = [];
+
+async function loadData() {
+  try {
+    const res = await fetch('/wine/search_index.json');
+    if (!res.ok) throw new Error('fetch failed');
+    allData = await res.json();
+  } catch(e) {
+    allData = [];
+  }
+}
+
+function doSearch() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const region = document.getElementById('regionFilter').value;
+  const variety = document.getElementById('varietyFilter').value;
+
+  // Update region shortcut highlight
+  document.querySelectorAll('.region-tag').forEach(t => {
+    t.classList.toggle('active', t.textContent === region);
+  });
+
+  if (!q && !region && !variety) {
+    document.getElementById('resultsInfo').textContent = 'キーワードを入力するか、地域タグを選択してください';
+    document.getElementById('resultGrid').innerHTML = '<div class="empty-state"><p>&#127863; 検索してワイナリーを見つけましょう</p><p style="font-size:13px;">880以上のワイナリーから探せます</p></div>';
+    return;
+  }
+
+  filtered = allData.filter(w => {
+    const name = (w.name || '').toLowerCase();
+    const pref = (w.prefecture || w.region || '').toLowerCase();
+    const varieties = (w.varieties || []).join(' ').toLowerCase();
+    const desc = (w.desc || '').toLowerCase();
+    const matchQ = !q || name.includes(q) || pref.includes(q) || varieties.includes(q) || desc.includes(q);
+    const matchRegion = !region || pref.includes(region.toLowerCase()) || (w.region_label || '').includes(region);
+    const matchVariety = !variety || varieties.includes(variety.toLowerCase());
+    return matchQ && matchRegion && matchVariety;
+  });
+
+  renderResults(filtered);
+}
+
+function renderResults(data) {
+  const grid = document.getElementById('resultGrid');
+  const info = document.getElementById('resultsInfo');
+
+  if (data.length === 0) {
+    info.innerHTML = '検索結果: <span>0件</span>';
+    grid.innerHTML = '<div class="empty-state"><p>該当するワイナリーが見つかりませんでした</p><p style="font-size:13px;">別のキーワードや地域でお試しください</p></div>';
+    return;
+  }
+
+  info.innerHTML = '検索結果: <span>' + data.length + '件</span>';
+  grid.innerHTML = data.slice(0, 60).map(w => {
+    const tags = (w.varieties || []).slice(0,3).map(v => '<span>' + v + '</span>').join('');
+    return '<div class="result-card"><div class="result-icon">&#127863;</div><div class="result-body"><h3>' + (w.name || '—') + '</h3><div class="result-meta"><span>' + (w.prefecture || w.region || '不明') + '</span>' + tags + '</div></div></div>';
+  }).join('');
+}
+
+function setRegion(r) {
+  document.getElementById('regionFilter').value = r;
+  doSearch();
+}
+
+document.getElementById('searchInput').addEventListener('input', debounce(doSearch, 250));
+document.getElementById('searchInput').addEventListener('keydown', e => { if(e.key === 'Enter') doSearch(); });
+
+function debounce(fn, ms) {
+  let t;
+  return function(...args) { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+}
+
+loadData();
+</script>
+</body>
+</html>

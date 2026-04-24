@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sakura-farms-winery",
+    "name": "さくら農園ワイン製造所",
+    "company": "株式会社さくら農園",
+    "brand": "Sakura Farm & Winery",
+    "winery_type": "estate",
+    "founded": "2020",
+    "founded_era": "令和2年",
+    "address": "鹿児島県霧島市国分重久6029-3",
+    "tel": "0995-73-3900",
+    "url": "https://sakurafarms.jp/",
+    "area": "霧島市国分",
+    "desc": "霧島連峰を望む果樹園内に2020年誕生した鹿児島県初のワイナリー。自社農園の多品種ぶどうを使い、霧島産ワインを醸造する。",
+    "visit": "9:00〜17:00、火曜定休。ワイン試飲500円。7〜10月はぶどう棚の下でバーベキューも楽しめる。",
+    "wine_style": "red,white,rose",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": ["メルロー"],
+    "brands": [
+      {
+        "name": "Sakura Farm Merlot",
+        "type": "赤ワイン",
+        "specs": "県産メルロー主体の赤。樽熟成版も展開。",
+        "grapes": "メルロー"
+      },
+      {
+        "name": "Sakura Farm White Sweet",
+        "type": "甘口白ワイン",
+        "specs": "自社農園デラウェア100%をアイスワイン製法で仕上げた白。",
+        "grapes": "デラウェア"
+      },
+      {
+        "name": "Sakura Farm Rose",
+        "type": "ロゼワイン",
+        "specs": "BKシードレスとメルローをブレンドしたやや甘口ロゼ。",
+        "grapes": "BKシードレス、メルロー"
+      }
+    ],
+    "features": ["鹿児島県初のワイン醸造所（2020年完成）", "敷地42,000㎡に35品種以上・2,000本以上のぶどうを栽培", "赤・白（甘口・辛口）・ロゼを展開"],
+    "nearest_station": "",
+    "source": "https://sakurafarms.jp/",
+    "lat": 31.7200,
+    "lng": 130.7600,
+    "name_en": "Sakura Farms Winery"
+  }
+]

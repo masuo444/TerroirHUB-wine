@@ -1,0 +1,61 @@
+[
+  {
+    "id": "uchiko-winery",
+    "name": "内子ワイナリー",
+    "company": "内子ワイナリー",
+    "brand": "内子夢わいん",
+    "winery_type": "winery",
+    "founded": "2000",
+    "founded_era": "平成12年",
+    "address": "愛媛県喜多郡内子町151番地",
+    "tel": "0893-44-5650",
+    "url": "http://www.uchiko-winery151.co.jp/",
+    "area": "喜多郡内子町",
+    "desc": "内子町の果樹産地で、巨峰やピオーネなど愛媛の生食用品種を活かしたやさしい味わいのワインを造るワイナリー。",
+    "visit": "見学可・売店あり。営業日は事前確認推奨。",
+    "wine_style": "red,white,rose",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": ["マスカット・ベーリーA", "ピオーネ", "巨峰"],
+    "brands": ["内子夢わいん"],
+    "features": ["ふるさと納税返礼品に展開"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/18380010290/",
+    "lat": 33.5430,
+    "lng": 132.6600,
+    "name_en": "Uchiko Winery"
+  },
+  {
+    "id": "omishima-minna-winery",
+    "name": "大三島みんなのワイナリー",
+    "company": "大三島みんなのワイナリー",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "2022",
+    "founded_era": "令和4年",
+    "address": "愛媛県今治市大三島町宗方5208-1",
+    "tel": "",
+    "url": "http://www.ohmishimawine.com/",
+    "area": "今治市大三島町",
+    "desc": "しまなみ海道・大三島で、島の農家や住民と連携しながら柑橘の島に新しいワイン文化を根づかせることを目指す小規模ワイナリー。",
+    "visit": "販売所「大三島みんなの家」（今治市大三島町宮浦5562、10:00〜16:00、月曜定休）。醸造所見学要問合せ。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA"],
+    "brands": [
+      {
+        "name": "大三島みんなのワイン",
+        "type": "赤・白ワイン",
+        "specs": "島の果実味を生かした少量生産シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": ["しまなみ海道・大三島に位置"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/18380010426/",
+    "lat": 34.2380,
+    "lng": 133.0000,
+    "name_en": "Omishima Minna no Winery"
+  }
+]

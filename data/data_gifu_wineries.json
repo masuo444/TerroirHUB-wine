@@ -1,0 +1,67 @@
+[
+  {
+    "id": "tajimi-shudoin",
+    "name": "神言会多治見修道院",
+    "company": "神言修道会多治見修道院",
+    "brand": "多治見修道院ワイン",
+    "winery_type": "estate",
+    "founded": "1933",
+    "founded_era": "昭和8年",
+    "address": "岐阜県多治見市緑ケ丘38",
+    "tel": "",
+    "url": "https://svdtajimi.com/",
+    "area": "多治見市",
+    "desc": "1933年から修道院の敷地で醸造を続ける歴史ある修道院ワイン。多治見の丘に広がる畑とバロック建築が象徴的な存在。",
+    "visit": "修道院内のぶどう畑・施設は見学可能（要確認）。毎年11月に「多治見修道院ワインフェスタ」開催。",
+    "wine_style": "red,white",
+    "main_grape": "concord",
+    "gi": "",
+    "grapes": ["コンコード", "セイベル", "メルロー"],
+    "brands": ["多治見修道院ワイン"],
+    "features": ["1930年（昭和5年）神言修道会（神言会）設立の修道院", "1933年よりぶどうを醸造し「多治見修道院ワイン」として親しまれる", "修道院周辺3千坪の畑でぶどうを栽培", "中世ヨーロッパを思わせるバロック建築の施設"],
+    "nearest_station": "JR中央本線多治見駅",
+    "source": "https://svdtajimi.com/",
+    "lat": 35.3447,
+    "lng": 137.1314,
+    "name_en": "Society of the Divine Word Tajimi Monastery (Wine)"
+  },
+  {
+    "id": "nagara-natural-wine",
+    "name": "長良天然ワイン醸造",
+    "company": "長良天然ワイン醸造",
+    "brand": "Le Bois（長良ワイン）",
+    "winery_type": "estate",
+    "founded": "1930",
+    "founded_era": "昭和初期",
+    "address": "岐阜県岐阜市長良志段見106",
+    "tel": "058-232-4750",
+    "url": "",
+    "area": "岐阜市",
+    "desc": "岐阜市長良で昭和初期から続く家族経営の自然派ワイン醸造所。天然酵母・酸化防止剤無添加を基本に、やさしい味わいのワインを造る。",
+    "visit": "営業状況は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": ["マスカット・ベーリーA", "デラウェア"],
+    "brands": [
+      {
+        "name": "Le Bois",
+        "type": "赤・白ワイン",
+        "specs": "自然派スタイルの主力ブランド。",
+        "grapes": ""
+      },
+      {
+        "name": "NAGARAワイン",
+        "type": "赤・白ワイン",
+        "specs": "地元で親しまれる定番シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": ["昭和初期開業の3代続く家族経営ワイン醸造所", "自園や山梨産などの有機栽培葡萄を使用", "蔵に住み着く天然酵母でゆっくり発酵・酸化防止剤不使用の自然派"],
+    "nearest_station": "",
+    "source": "https://nihonwine.jp/winery_intro/nagarawinery/",
+    "lat": 35.4447,
+    "lng": 136.7428,
+    "name_en": "Nagara Natural Wine Brewery"
+  }
+]

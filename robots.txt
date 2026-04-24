@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wine.terroirhub.com/sitemap.xml

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "azucca-e-azucco",
+    "name": "アズッカ・エ・アズッコ 風の丘のワイナリー",
+    "company": "アズッカ・エ・アズッコ",
+    "brand": "アズッカ・エ・アズッコ",
+    "winery_type": "estate",
+    "founded": "2014",
+    "founded_era": "平成26年",
+    "address": "愛知県豊田市太平町七曲12-691",
+    "tel": "0565-42-2236",
+    "url": "https://azu-azu.sakura.ne.jp/",
+    "area": "豊田市",
+    "desc": "豊田市の丘陵地で夫婦が営むエステートワイナリー。イタリアでの修業経験を生かし、多品種少量生産で土地の個性を引き出す。",
+    "visit": "ショップ営業あり。営業日は公式案内を要確認。",
+    "wine_style": "red,white",
+    "main_grape": "petit-verdot",
+    "gi": "",
+    "grapes": ["プティ・ヴェルド", "カベルネ・ソーヴィニヨン", "メルロー", "ランブルスコ", "テンプラニーリョ", "シャルドネ", "ソーヴィニヨン・ブラン", "ゲヴュルツトラミネール"],
+    "brands": [
+      {
+        "name": "風の丘",
+        "type": "赤・白ワイン",
+        "specs": "多品種少量生産の代表シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": ["愛知県初のワイナリー（2014年自社醸造所完成）", "イタリア・トスカーナ＆シチリアで修行した夫婦が設立", "2006年よりぶどう栽培を開始"],
+    "nearest_station": "",
+    "source": "https://azu-azu.sakura.ne.jp/",
+    "lat": 35.1081,
+    "lng": 137.2638,
+    "name_en": "Azucca e Azucco Winery of the Wind Hill"
+  },
+  {
+    "id": "komaki-winery",
+    "name": "小牧ワイナリー",
+    "company": "社会福祉法人AJU自立の家",
+    "brand": "小牧ワイナリー",
+    "winery_type": "estate",
+    "founded": "2015",
+    "founded_era": "平成27年",
+    "address": "愛知県小牧市大字野口字大洞2325番地2",
+    "tel": "0568-79-3001",
+    "url": "https://komakiwinery.com/",
+    "area": "小牧市",
+    "desc": "障がいのある人の働く場づくりから生まれた福祉型ワイナリー。栽培から醸造、販売までを一体で行い、地域に開かれたワイナリーを目指す。",
+    "visit": "ショップ営業時間10:00〜16:00、月・火定休。見学申込フォームあり。カフェ併設。",
+    "wine_style": "red,white",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": ["マスカット・ベーリーA", "ブラック・クイーン", "ヤマ・ソーヴィニヨン", "ローズ・シオター", "モンドブリエ"],
+    "brands": [
+      {
+        "name": "ななつぼし",
+        "type": "赤・白ワイン",
+        "specs": "小牧ワイナリー醸造ワインの中心ブランド。",
+        "grapes": ""
+      }
+    ],
+    "features": ["障がいのある人たちの経済的自立を支援する福祉法人運営のワイナリー", "2015年4月オープン"],
+    "nearest_station": "",
+    "source": "https://komakiwinery.com/",
+    "lat": 35.3075,
+    "lng": 136.9997,
+    "name_en": "Komaki Winery"
+  },
+  {
+    "id": "tokoname-winery",
+    "name": "常滑ワイナリー",
+    "company": "株式会社ヴェレゾン",
+    "brand": "常滑ワイナリー ネイバーフッド",
+    "winery_type": "estate",
+    "founded": "2021",
+    "founded_era": "令和3年",
+    "address": "愛知県常滑市金山上白田130",
+    "tel": "0569-47-9478",
+    "url": "https://tokonamewinery.jp/",
+    "area": "常滑市",
+    "desc": "温暖な知多半島・常滑で、オレゴンの思想を継ぐフレッシュで飲みやすいワインを造る国家戦略特区ワイナリー。",
+    "visit": "ワイナリーツアー（要予約）。見学14:00〜17:00。定休日不定休。",
+    "wine_style": "red,white,rose",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["ピノ・ブラン", "ピノ・ノワール", "シャルドネ", "アルバリーニョ", "メルロー", "デラウェア", "巨峰"],
+    "brands": [
+      {
+        "name": "ネイバーフッド",
+        "type": "赤・白・ロゼ",
+        "specs": "自社農園ぶどうの個性をまっすぐ表現するシリーズ。",
+        "grapes": ""
+      },
+      {
+        "name": "デリバリング・ハピネス",
+        "type": "赤・白ワイン",
+        "specs": "より親しみやすいスタイルのライン。",
+        "grapes": ""
+      }
+    ],
+    "features": ["知多半島・常滑の太平洋側の温暖な気候を活かしたワイナリー", "絶景レストラン「サンセットウォーカーヒル」に併設"],
+    "nearest_station": "",
+    "source": "https://tokonamewinery.jp/",
+    "lat": 34.8882,
+    "lng": 136.8485,
+    "name_en": "Tokoname Winery Neighborhood"
+  }
+]

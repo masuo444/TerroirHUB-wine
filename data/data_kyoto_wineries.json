@@ -1,0 +1,67 @@
+[
+  {
+    "id": "tamba-wine",
+    "name": "丹波ワイン",
+    "company": "丹波ワイン株式会社",
+    "brand": "丹波ワイン",
+    "winery_type": "winery",
+    "founded": "1979",
+    "founded_era": "昭和54年",
+    "address": "京都府船井郡京丹波町豊田鳥居野96",
+    "tel": "0771-82-2002",
+    "url": "https://www.tambawine.co.jp/",
+    "area": "船井郡京丹波町",
+    "desc": "歴史都市京都の食文化の一端を担うワインを永続的につくること。質素でシンプルでありながら、心の豊かさや喜びを感じる、世界唯一のワインを目標としています。",
+    "visit": "ワイナリーツアー（約60分）、ぶどう畑見学、試飲可。レストランduTamba・ヴィンヤードグリル、ショップあり。",
+    "wine_style": "red,white,rose,sparkling",
+    "main_grape": "pinot_noir",
+    "gi": "",
+    "grapes": ["ピノ・ノワール"],
+    "brands": ["京都丹波ワイン", "京都ワイン"],
+    "features": ["京都初のワイナリー（1979年創業）", "50種類以上のブドウを栽培", "レストランduTamba併設"],
+    "nearest_station": "",
+    "source": "https://www.tambawine.co.jp/",
+    "lat": 35.1330,
+    "lng": 135.4110,
+    "name_en": "Tamba Wine"
+  },
+  {
+    "id": "amanohashidate-winery",
+    "name": "天橋立ワイナリー",
+    "company": "天橋立ワイナリー",
+    "brand": "天橋立ワイン",
+    "winery_type": "winery",
+    "founded": "2000",
+    "founded_era": "平成12年",
+    "address": "京都府宮津市字国分123",
+    "tel": "0772-27-2222",
+    "url": "http://www.amanohashidate.org/wein/",
+    "area": "宮津市",
+    "desc": "天橋立を望むロケーションで、京都・丹後のぶどうを中心に醸造する観光型ワイナリー。地元食材と合わせやすいやわらかな味わいを目指す。",
+    "visit": "ワインショップ・レストラン併設。ガラス越しに醸造設備見学可。営業時間は施設案内を要確認。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA", "セイベル"],
+    "brands": [
+      {
+        "name": "天橋立ワイン",
+        "type": "赤・白・ロゼ",
+        "specs": "京都北部産ぶどうを生かした主力シリーズ。",
+        "grapes": ""
+      },
+      {
+        "name": "丹後セイベル",
+        "type": "白ワイン",
+        "specs": "丹後の冷涼さを生かしたやや辛口白。",
+        "grapes": "セイベル"
+      }
+    ],
+    "features": ["日本ワインコンクール受賞歴あり", "京都産・京丹後産ぶどう使用", "天橋立観光圏の立地でレストラン併設"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/16260010261/",
+    "lat": 35.5580,
+    "lng": 135.1950,
+    "name_en": "Amanohashidate Winery"
+  }
+]

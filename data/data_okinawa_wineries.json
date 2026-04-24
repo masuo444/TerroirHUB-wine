@@ -1,0 +1,28 @@
+[
+  {
+    "id": "wine-kobo-raout",
+    "name": "ワイン工房ラウー",
+    "company": "農業生産法人 沖縄葡萄",
+    "brand": "涙（NADA）",
+    "winery_type": "small",
+    "founded": "2023",
+    "founded_era": "令和5年",
+    "address": "沖縄県国頭郡恩納村字真栄田61-1",
+    "tel": "098-965-3205",
+    "url": "https://raout.com/winery/",
+    "area": "国頭郡恩納村",
+    "desc": "恩納村でリュウキュウガネブ100%のワインを自社栽培・自社醸造する、日本最南端の小規模ワイナリー。沖縄のテロワールをそのまま表現することを目指す。",
+    "visit": "レストラン『La Table de Raout』で自家醸造ワインとのペアリングを提供。ディナーは18:30〜21:30、予約推奨。",
+    "wine_style": "natural",
+    "main_grape": "mango",
+    "gi": "",
+    "grapes": ["リュウキュウガネブ（沖縄在来種山葡萄）"],
+    "brands": ["涙（NADA）"],
+    "features": ["日本最南端のワイナリー（2023年誕生）", "沖縄在来種山葡萄『リュウキュウガネブ』100%使用", "恩納村ワイン特区を活用して設立", "栽培から醸造まで自社一貫の沖縄初の小規模ワイナリー"],
+    "nearest_station": "",
+    "source": "https://raout.com/winery/",
+    "lat": 26.4463,
+    "lng": 127.8228,
+    "name_en": "Wine Kobo RAOUT"
+  }
+]

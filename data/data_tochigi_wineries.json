@@ -1,0 +1,326 @@
+[
+  {
+    "id": "coco-farm-winery",
+    "name": "ココ・ファーム・ワイナリー",
+    "company": "有限会社ココ・ファーム・ワイナリー",
+    "brand": "COCO FARM & WINERY",
+    "winery_type": "estate",
+    "founded": "1980",
+    "founded_era": "昭和55年",
+    "address": "栃木県足利市田島町611",
+    "tel": "0284-42-1194",
+    "url": "https://cocowine.com/",
+    "area": "足利市",
+    "desc": "1950年代に開かれた急斜面の畑を母体に、1980年に誕生したワイナリー。野生酵母を中心に100%日本のぶどうで醸造する。",
+    "visit": "ワイナリーショップ・カフェ併設。見学ツアー（¥500〜）、テイスティング（¥1,000〜）可。要事前確認。",
+    "wine_style": "red,white,sparkling",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [],
+    "brands": [
+      {
+        "name": "農民ロッソ",
+        "type": "赤ワイン",
+        "specs": "果実味豊かな代表赤。",
+        "grapes": ""
+      },
+      {
+        "name": "農民ドライ",
+        "type": "白ワイン",
+        "specs": "食事に寄り添う定番白。",
+        "grapes": ""
+      },
+      {
+        "name": "北ののぼ",
+        "type": "スパークリングワイン",
+        "specs": "サミット採用実績のある瓶内二次発酵。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "こころみ学園を母体とする",
+      "除草剤・化学肥料不使用の急斜面畑",
+      "国際会議・航空会社でも採用実績"
+    ],
+    "nearest_station": "JR両毛線富田駅",
+    "source": "https://www.verygoodlocal-tochigi.jp/news/page.php?id=272",
+    "lat": 36.3082,
+    "lng": 139.4617,
+    "name_en": "Coco Farm & Winery"
+  },
+  {
+    "id": "nasu-wine",
+    "name": "渡邊葡萄園醸造",
+    "company": "渡邊葡萄園醸造",
+    "brand": "NASU WINE",
+    "winery_type": "estate",
+    "founded": "1884",
+    "founded_era": "明治17年",
+    "address": "栃木県那須塩原市共墾社1-9-8",
+    "tel": "0287-62-0548",
+    "url": "https://nasuwine.com/",
+    "area": "那須塩原市",
+    "desc": "1884年創業。那須山麓でボルドー系品種を自社栽培し、少量高品質のワインを造る老舗ワイナリー。",
+    "visit": "9:00〜17:00、火曜休。試飲可。",
+    "wine_style": "red,white",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": [
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "カベルネ・フラン"
+    ],
+    "brands": [
+      {
+        "name": "NASU WINE",
+        "type": "赤・白ワイン",
+        "specs": "那須ワインの主力シリーズ。",
+        "grapes": "メルロー、カベルネ・ソーヴィニヨン他"
+      },
+      {
+        "name": "ブラックマホガニー",
+        "type": "赤ワイン",
+        "specs": "フラッグシップ。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1884年創業",
+      "那須山麓の自社畑でボルドー品種を栽培",
+      "年間生産量約17,000本"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/13090010088/",
+    "lat": 36.9205,
+    "lng": 140.0484,
+    "name_en": "Watanabe Vineyard Winery (NASU WINE)"
+  },
+  {
+    "id": "cfa-backyard-winery",
+    "name": "cfaバックヤード・ワイナリー",
+    "company": "株式会社マルキョー",
+    "brand": "Cfa Backyard Winery",
+    "winery_type": "small",
+    "founded": "2012",
+    "founded_era": "平成24年",
+    "address": "栃木県足利市島田町607-1",
+    "tel": "050-7503-6457",
+    "url": "https://www.winemaker.jp/",
+    "area": "足利市",
+    "desc": "足利市の飲料メーカー工場内にあるガレージ型ワイナリー。日本固有品種から国際水準の品質を目指す少量醸造を行う。",
+    "visit": "営業日・見学対応は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [],
+    "brands": [
+      {
+        "name": "オープニングアクト",
+        "type": "赤ワイン",
+        "specs": "代表銘柄。",
+        "grapes": "甲州、マスカット・ベーリーA系"
+      }
+    ],
+    "features": [
+      "70年続く清涼飲料水製造会社「マルキョー」の工場内に建てられた小さな醸造所",
+      "「日本固有のぶどうからワールドスタンダードなクオリティの日本ワインを」がコンセプト",
+      "父娘3人で手掛けるガレージワイナリー"
+    ],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/13090010089/",
+    "lat": 36.3311,
+    "lng": 139.4832,
+    "name_en": "Cfa Backyard Winery"
+  },
+  {
+    "id": "kanuma-satoyama-wine",
+    "name": "かぬま里山わいん",
+    "company": "宇賀神緑販株式会社",
+    "brand": "かぬま里山わいん",
+    "winery_type": "estate",
+    "founded": "2018",
+    "founded_era": "平成30年",
+    "address": "栃木県鹿沼市下奈良部町1-110",
+    "tel": "0289-77-8180",
+    "url": "http://www.bc9.jp/~ryokuhan/",
+    "area": "鹿沼市",
+    "desc": "鹿沼市の自社農園ぶどうだけで仕込むエステート型ワイナリー。里山の景観と一体になった素朴な味わいを目指す。",
+    "visit": "直売店あり。営業時間11:00〜17:00（平日）、10:00〜17:00（土日祝）。定休日：水曜日。",
+    "wine_style": "red,white",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": ["マスカット・ベーリーA", "シャルドネ"],
+    "brands": ["かぬま里山わいん 赤", "かぬま里山わいん 白"],
+    "features": [
+      "自社農園産ぶどうのみで丁寧に醸造",
+      "2003年からブドウ栽培を開始"
+    ],
+    "nearest_station": "",
+    "source": "https://kanuma-kanko.jp/purpose/%E3%81%8B%E3%81%AC%E3%81%BE%E9%87%8C%E5%B1%B1%E3%82%8F%E3%81%84%E3%82%93/",
+    "lat": 36.5505,
+    "lng": 139.7124,
+    "name_en": "Kanuma Satoyama Wine"
+  },
+  {
+    "id": "kusaka-vineyards",
+    "name": "Kusaka Vineyards",
+    "company": "Kusaka Vineyards",
+    "brand": "Kusaka Vineyards",
+    "winery_type": "estate",
+    "founded": "2016",
+    "founded_era": "平成28年",
+    "address": "栃木県芳賀郡市貝町市塙3388-3",
+    "tel": "",
+    "url": "https://www.kusakavineyards.com/",
+    "area": "芳賀郡市貝町",
+    "desc": "芳賀郡市貝町で栽培から醸造、加工品づくりまで行う小規模ヴィンヤード。地域の農産物と連動した運営が特徴。",
+    "visit": "営業日・見学対応は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": ["メルロー", "シャルドネ"],
+    "brands": ["Kusaka Merlot", "Kusaka Chardonnay"],
+    "features": [
+      "農家が栽培した美味しいぶどうで赤白ワイン製造",
+      "ぶどう園でレーズン・ぶどうジュースも生産"
+    ],
+    "nearest_station": "",
+    "source": "https://www.kusakavineyards.com/",
+    "lat": 36.5215,
+    "lng": 140.2196,
+    "name_en": "Kusaka Vineyards"
+  },
+  {
+    "id": "nasu-661-wine-hills",
+    "name": "Nasu 661 WINE HILLS",
+    "company": "農業生産法人ロイヤルベリーズファーム有限会社",
+    "brand": "NASU 661 WINE HILLS",
+    "winery_type": "estate",
+    "founded": "2022",
+    "founded_era": "令和4年",
+    "address": "栃木県那須郡那須町高久丙字海道下4515-13",
+    "tel": "0287-73-0661",
+    "url": "https://www.nasu661winehills.net/",
+    "area": "那須郡那須町",
+    "desc": "那須高原初の大規模サステナブルワイナリー。耕作放棄地や別荘跡地を活用し、那須の自然と共存するワイン造りを目指す。",
+    "visit": "10:00〜17:00、不定休。テイスティングコーナー・ショップ・BBQ併設。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA"],
+    "brands": ["NASU 661 Chardonnay", "NASU 661 Merlot"],
+    "features": [
+      "2022年7月オープン",
+      "那須高原の広大な敷地で栽培",
+      "オールサステナブルワイナリーを志向"
+    ],
+    "nearest_station": "",
+    "source": "https://verygoodlocal-tochigi.jp/news/page.php?id=265",
+    "lat": 37.0162,
+    "lng": 140.0691,
+    "name_en": "Nasu 661 Wine Hills"
+  },
+  {
+    "id": "hinoe-winery",
+    "name": "Hinoe Winery",
+    "company": "Hinoe Winery",
+    "brand": "Hinoe",
+    "winery_type": "estate",
+    "founded": "2024",
+    "founded_era": "令和6年",
+    "address": "栃木県宇都宮市新里町丙1195-1",
+    "tel": "090-7176-7533",
+    "url": "https://www.hinoewinery.com/",
+    "area": "宇都宮市",
+    "desc": "宇都宮市新里町で原木椎茸とワインを手がける小規模ワイナリー。地域で育ったぶどうと食材に寄り添うワインを目指す。",
+    "visit": "土日のみ13:00〜16:00。醸造ブース見学は基本不可。",
+    "wine_style": "red,white",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": [
+      "メルロー"
+    ],
+    "brands": ["Hinoe Merlot"],
+    "features": [
+      "宇都宮市初のワイナリー",
+      "耕作断念地を再生してぶどう栽培",
+      "原木椎茸生産と並行した里山型経営"
+    ],
+    "nearest_station": "",
+    "source": "https://verygoodlocal-tochigi.jp/news/page.php?id=271",
+    "lat": 36.6205,
+    "lng": 139.8146,
+    "name_en": "Hinoe Winery"
+  },
+  {
+    "id": "ys-vineyards",
+    "name": "ワイズヴィンヤーズ",
+    "company": "ワイズヴィンヤーズ",
+    "brand": "Y's Vineyards",
+    "winery_type": "small",
+    "founded": "2017",
+    "founded_era": "平成29年",
+    "address": "栃木県那須塩原市関谷516番地1",
+    "tel": "070-9110-6110",
+    "url": "https://ysvineyards.com/",
+    "area": "那須塩原市",
+    "desc": "那須塩原市で2017年からワイン用ぶどう栽培を始め、栽培から醸造まで一貫して行うワイナリー。",
+    "visit": "売店営業は金・土10:00〜15:00。不定休。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "プチマンサン",
+      "ツヴァイゲルトレーベ"
+    ],
+    "brands": ["Y's Chardonnay", "Y's Zweigeltrebe"],
+    "features": [
+      "2017年から栽培開始",
+      "那須塩原市ワイン特区を活用",
+      "問い合わせ販売にも対応"
+    ],
+    "nearest_station": "",
+    "source": "https://verygoodlocal-tochigi.jp/news/page.php?id=267",
+    "lat": 36.8983,
+    "lng": 139.9865,
+    "name_en": "Y's Vineyards"
+  },
+  {
+    "id": "ateus-wine",
+    "name": "アテウスワイン",
+    "company": "アテウス株式会社",
+    "brand": "ateus wine",
+    "winery_type": "small",
+    "founded": "2005",
+    "founded_era": "平成17年",
+    "address": "栃木県芳賀郡茂木町鮎田1854-1",
+    "tel": "0285-63-0140",
+    "url": "https://ateuswine.com/",
+    "area": "芳賀郡茂木町",
+    "desc": "国内外のぶどうや果実を使ったワインを醸造し、23L単位の小ロット受託醸造にも対応するワイナリー。",
+    "visit": "営業時間10:00〜17:00。定休日：日・祝。",
+    "wine_style": "red,white",
+    "main_grape": "",
+    "gi": "",
+    "grapes": [],
+    "brands": [
+      {
+        "name": "Himrod seedless",
+        "type": "白ワイン",
+        "specs": "ヒムロッドシードレスを使った人気商品。",
+        "grapes": "ヒムロッドシードレス"
+      }
+    ],
+    "features": [
+      "地元・世界の果実果汁を使用",
+      "個人の畑のぶどうや果実の醸造も受注",
+      "一仕込み23Lによる小ロット生産"
+    ],
+    "nearest_station": "",
+    "source": "https://verygoodlocal-tochigi.jp/news/page.php?id=268",
+    "lat": 36.5218,
+    "lng": 140.2006,
+    "name_en": "Ateus Wine"
+  }
+]

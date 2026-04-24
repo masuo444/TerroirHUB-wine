@@ -1,0 +1,100 @@
+[
+  {
+    "id": "totto-winery",
+    "name": "兎ッ兎ワイナリー",
+    "company": "兎ッ兎ワイナリー",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "2015",
+    "founded_era": "平成27年",
+    "address": "鳥取県鳥取市国府町麻生178-11",
+    "tel": "0857-30-0003",
+    "url": "https://www.tottowinery.com/",
+    "area": "鳥取市国府町",
+    "desc": "鳥取市国府町で果実味を生かしたフルーティーなワイン造りを行う小規模ワイナリー。超低温発酵を特徴とする。",
+    "visit": "ワイナリー見学可。営業日時は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA"],
+    "brands": [
+      {
+        "name": "兎ッ兎ワイン",
+        "type": "赤・白ワイン",
+        "specs": "フルーティーさを重視した主力シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": ["超低温発酵にこだわるフルーティーなワイン", "ワイナリー見学可"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17310010274/",
+    "lat": 35.4920,
+    "lng": 134.2770,
+    "name_en": "Totto Winery"
+  },
+  {
+    "id": "hojo-wine-jozo",
+    "name": "北条ワイン醸造所",
+    "company": "北条ワイン醸造所",
+    "brand": "北条ワイン",
+    "winery_type": "winery",
+    "founded": "1944",
+    "founded_era": "昭和19年",
+    "address": "鳥取県東伯郡北栄町松神608",
+    "tel": "0858-36-2015",
+    "url": "http://www.hojyowine.jp/",
+    "area": "東伯郡北栄町",
+    "desc": "鳥取砂丘に近い北条砂丘地のぶどうを生かして1944年から続く老舗ワイナリー。地元テロワールを反映したワイン造りを続ける。",
+    "visit": "営業時間9:00〜17:00。試飲・直売あり。見学は要問い合わせ。",
+    "wine_style": "red,white",
+    "main_grape": "delaware",
+    "gi": "",
+    "grapes": ["デラウェア", "甲州", "マスカット・ベーリーA", "シャルドネ"],
+    "brands": ["北条ワイン", "砂丘"],
+    "features": ["1944年創業の老舗", "北条砂丘の砂地テロワール", "直売所で試飲可能"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17310010275/",
+    "lat": 35.4810,
+    "lng": 133.7360,
+    "name_en": "Hojo Wine Jozo"
+  },
+  {
+    "id": "daisen-winery",
+    "name": "大山ワイナリー",
+    "company": "大山ワイナリー株式会社",
+    "brand": "DAISEN WINERY",
+    "winery_type": "estate",
+    "founded": "2017",
+    "founded_era": "平成29年",
+    "address": "鳥取県西伯郡伯耆町真野169",
+    "tel": "0859-68-6188",
+    "url": "http://daisenwinery.com/",
+    "area": "西伯郡伯耆町",
+    "desc": "大山の麓、伯耆町の高原で欧州系品種中心の自社栽培を行うエステートワイナリー。山陰の冷涼さを生かした白と赤を造る。",
+    "visit": "営業・見学は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA", "山ぶどう"],
+    "brands": [
+      {
+        "name": "DAISEN WINERY Chardonnay",
+        "type": "白ワイン",
+        "specs": "自社畑シャルドネを使用した代表白。",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "DAISEN WINERY Merlot",
+        "type": "赤ワイン",
+        "specs": "大山麓の冷涼感を生かした赤。",
+        "grapes": "メルロー"
+      }
+    ],
+    "features": ["自社圃場6.5ha（シャルドネ・メルロー等欧州品種）", "2025年目標10haに拡大"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/17310010276/",
+    "lat": 35.3670,
+    "lng": 133.3750,
+    "name_en": "Daisen Winery"
+  }
+]

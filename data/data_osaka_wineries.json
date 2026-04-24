@@ -1,0 +1,330 @@
+[
+  {
+    "id": "katashimo-winery",
+    "name": "カタシモワイナリー",
+    "company": "カタシモワインフード株式会社",
+    "brand": "カタシモ",
+    "winery_type": "winery",
+    "founded": "1914",
+    "founded_era": "大正3年",
+    "address": "大阪府柏原市太平寺2丁目9番14号",
+    "tel": "072-971-6334",
+    "url": "https://kashiwara-wine.com/",
+    "area": "柏原市",
+    "desc": "1914年創業。柏原のぶどう畑を守りながら、日本酒の発酵技術も生かして個性的な大阪ワインを造る老舗ワイナリー。",
+    "visit": "直売所営業：平日10:00〜18:00、土日祝10:00〜17:00（年中無休、正月休み除く）",
+    "wine_style": "red,white",
+    "main_grape": "delaware",
+    "gi": "GI大阪",
+    "grapes": [
+      "デラウェア",
+      "マスカット・ベーリーA"
+    ],
+    "brands": [
+      {
+        "name": "たこシャン",
+        "type": "スパークリングワイン",
+        "specs": "デラウェア主体。GI大阪認定。",
+        "grapes": "デラウェア"
+      },
+      {
+        "name": "キングセルビー",
+        "type": "赤・白ワイン",
+        "specs": "カタシモの代表シリーズ。",
+        "grapes": ""
+      },
+      {
+        "name": "柏原ワイン",
+        "type": "赤・白ワイン",
+        "specs": "地元色の強い定番銘柄。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1914年創業の西日本最古級ワイナリー",
+      "減農薬・有機肥料中心の自社農園",
+      "蒸留酒やグラッパも展開"
+    ],
+    "nearest_station": "",
+    "source": "https://kashiwara-wine.com/company/",
+    "lat": 34.5736,
+    "lng": 135.6331,
+    "name_en": "Katashimo Winery"
+  },
+  {
+    "id": "asuka-wine",
+    "name": "飛鳥ワイン",
+    "company": "株式会社飛鳥ワイン",
+    "brand": "飛鳥ワイン",
+    "winery_type": "winery",
+    "founded": "1934",
+    "founded_era": "昭和9年",
+    "address": "大阪府羽曳野市飛鳥1104",
+    "tel": "072-956-2020",
+    "url": "https://asukawine.co.jp/",
+    "area": "羽曳野市",
+    "desc": "1934年創業。羽曳野・飛鳥の自社農園ぶどうを中心に、高品質な大阪ワインを造る老舗ワイナリー。",
+    "visit": "ショップ営業時間10:00〜17:00。上ノ太子駅徒歩3分。",
+    "wine_style": "red,white,rose,sparkling",
+    "main_grape": "mba",
+    "gi": "GI大阪",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "シャルドネ",
+      "ソーヴィニヨン・ブラン",
+      "甲州",
+      "デラウェア",
+      "カベルネ・ソーヴィニヨン"
+    ],
+    "brands": [
+      {
+        "name": "飛鳥ワイン",
+        "type": "赤・白・ロゼ・泡",
+        "specs": "自社農園ぶどうを生かした主力シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1934年創業",
+      "自社接ぎ木・循環型農業に取り組む",
+      "大阪エコ農産物認証農園を保有"
+    ],
+    "nearest_station": "",
+    "source": "https://asukawine.co.jp/company/",
+    "lat": 34.554,
+    "lng": 135.6281,
+    "name_en": "Asuka Wine"
+  },
+  {
+    "id": "kawachi-wine",
+    "name": "河内ワイン",
+    "company": "河内ワイン株式会社",
+    "brand": "河内ワイン",
+    "winery_type": "winery",
+    "founded": "1934",
+    "founded_era": "昭和9年",
+    "address": "大阪府羽曳野市駒ヶ谷1027",
+    "tel": "072-956-0181",
+    "url": "https://www.kawachi-wine.co.jp/",
+    "area": "羽曳野市",
+    "desc": "大阪・羽曳野の地で80年余年。葡萄と共に、ワイン造りを続けてきた老舗ワイナリー",
+    "visit": "少人数・団体向け見学会あり。近鉄駒ヶ谷駅徒歩約8分。",
+    "wine_style": "red,white",
+    "main_grape": "delaware",
+    "gi": "GI大阪",
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "デラウェア"
+    ],
+    "brands": [
+      {
+        "name": "徳一",
+        "type": "赤・白ワイン",
+        "specs": "フラッグシップライン。",
+        "grapes": ""
+      },
+      {
+        "name": "金徳葡萄酒",
+        "type": "赤・白ワイン",
+        "specs": "創業者名を冠したシリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1934年に果実酒製造免許取得",
+      "“和飲”を掲げる老舗",
+      "見学会と試飲を継続実施"
+    ],
+    "nearest_station": "",
+    "source": "https://www.kawachi-wine.co.jp/company.html",
+    "lat": 34.548,
+    "lng": 135.629,
+    "name_en": "Kawachi Wine"
+  },
+  {
+    "id": "nakamura-wine-kobo",
+    "name": "仲村わいん工房",
+    "company": "仲村わいん工房",
+    "brand": "がんこおやじの手造りワイン",
+    "winery_type": "small",
+    "founded": "1993",
+    "founded_era": "平成5年",
+    "address": "大阪府羽曳野市飛鳥1184",
+    "tel": "072-956-2915",
+    "url": "http://www.nakamura-wine.jp/",
+    "area": "羽曳野市",
+    "desc": "羽曳野・飛鳥地区で家族経営を続ける小規模ワイナリー。自家栽培ぶどうを丁寧に選別し、“がんこおやじの手造りわいん”を造る。",
+    "visit": "営業日・見学対応は事前確認推奨。直売やイベント販売を実施。",
+    "wine_style": "red,white",
+    "main_grape": "mba",
+    "gi": "GI大阪",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "デラウェア"
+    ],
+    "brands": [
+      "がんこおやじの手造りワイン"
+    ],
+    "features": [
+      "1993年創業",
+      "家族経営の手造りワイナリー",
+      "約3haの自家農園で栽培"
+    ],
+    "nearest_station": "",
+    "source": "https://japancellar.com/breweries/419",
+    "lat": 34.555,
+    "lng": 135.63,
+    "name_en": "Nakamura Wine Kobo"
+  },
+  {
+    "id": "shimanouchi-fujimaru",
+    "name": "島之内フジマル醸造所",
+    "company": "株式会社パピーユ",
+    "brand": "島之内フジマル",
+    "winery_type": "urban",
+    "founded": "2013",
+    "founded_era": "平成25年",
+    "address": "大阪府大阪市中央区島之内1丁目1-14 三和ビル1F",
+    "tel": "06-4704-6666",
+    "url": "http://www.papilles.net/",
+    "area": "大阪市中央区",
+    "desc": "大阪・島之内の街なかで醸造を行う都市型ワイナリー。大阪郊外の自社畑や全国の優れたぶどうを使い、食と結びつくワインを提案する。",
+    "visit": "希望すれば見学可（醸造作業中は不可の場合あり）。レストラン併設。",
+    "wine_style": "red,white",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [],
+    "brands": ["デラウェア", "マスカット・ベーリーA"],
+    "features": [
+      "2013年開業の都市型ワイナリー",
+      "自社畑と全国のぶどうを使い分けて醸造",
+      "レストラン併設で食中酒提案に強い"
+    ],
+    "nearest_station": "",
+    "source": "https://www.gltjp.com/ja/directory/item/11717/",
+    "lat": 34.6691,
+    "lng": 135.5031,
+    "name_en": "Shimanouchi Fujimaru Winery"
+  },
+  {
+    "id": "tenshi-no-hane-winery",
+    "name": "天使の羽ワイナリー",
+    "company": "天使の羽ワイナリー",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "",
+    "founded_era": "",
+    "address": "大阪府柏原市大県697-2",
+    "tel": "072-975-3303",
+    "url": "http://www.n-farms.com/",
+    "area": "柏原市",
+    "desc": "柏原市の農園が手がける小規模ワイナリー。大阪・柏原産ぶどうを生かしたGI大阪のワインを展開する。",
+    "visit": "営業日・見学対応は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "mba",
+    "gi": "GI大阪",
+    "grapes": [],
+    "brands": [],
+    "features": ["柏原市の小規模ワイナリー", "GI大阪に対応した地域密着型の醸造"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/16270010269/",
+    "lat": 34.583,
+    "lng": 135.641,
+    "name_en": "Tenshi no Hane Winery"
+  },
+  {
+    "id": "kotobukiya-seiryo-shokuhin",
+    "name": "寿屋清涼食品",
+    "company": "株式会社寿屋清涼食品",
+    "brand": "",
+    "winery_type": "winery",
+    "founded": "",
+    "founded_era": "",
+    "address": "大阪府柏原市本郷3丁目8番38号",
+    "tel": "072-972-0377",
+    "url": "http://www.kotobukiyadrink.co.jp/",
+    "area": "柏原市",
+    "desc": "柏原市に拠点を置く飲料メーカー系のワイン製造所。地元産ぶどうも活用しながら大阪ワインを製造する。",
+    "visit": "一般見学は事前確認推奨。",
+    "wine_style": "red,white",
+    "main_grape": "delaware",
+    "gi": "GI大阪",
+    "grapes": [],
+    "brands": [],
+    "features": ["柏原市の飲料メーカー系製造所", "GI大阪の製造事業者"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/16270010268/",
+    "lat": 34.575,
+    "lng": 135.635,
+    "name_en": "Kotobukiya Seiryo Shokuhin"
+  },
+  {
+    "id": "osaka-airport-winery",
+    "name": "大阪エアポートワイナリー",
+    "company": "大阪エアポートワイナリー",
+    "brand": "",
+    "winery_type": "urban",
+    "founded": "2018",
+    "founded_era": "",
+    "address": "大阪府豊中市蛍池西町3丁目555番（伊丹空港内中央3階エリア）",
+    "tel": "06-6152-5165",
+    "url": "http://www.airportwinery.osaka/",
+    "area": "豊中市（伊丹空港内）",
+    "desc": "大阪国際空港内にある世界初の空港内ワイン醸造所。全国の契約農家のぶどうを使い、小規模醸造とレストラン体験を一体化している。",
+    "visit": "10:00〜22:00（L.O.21:00）。ガラス越しに醸造風景を見学可能。",
+    "wine_style": "red,white",
+    "main_grape": "delaware",
+    "gi": "",
+    "grapes": [],
+    "brands": [
+      {
+        "name": "大阪エアポートワイン",
+        "type": "赤・白ワイン",
+        "specs": "空港内醸造の出来たてワイン。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "世界初の空港内ワイン醸造所",
+      "年間約8,000本の小規模醸造",
+      "ワインバル併設"
+    ],
+    "nearest_station": "",
+    "source": "https://www.airportwinery.osaka/about/",
+    "lat": 34.7853,
+    "lng": 135.4384,
+    "name_en": "Osaka Airport Winery"
+  },
+  {
+    "id": "hirakata-suguri-coro-farm",
+    "name": "枚方杉リコロファーム",
+    "company": "枚方杉リコロファーム",
+    "brand": "NEXT to 「．．．」",
+    "winery_type": "small",
+    "founded": "2021",
+    "founded_era": "",
+    "address": "大阪府枚方市杉3丁目",
+    "tel": "",
+    "url": "https://rsuzuki2.wixsite.com/ricoro-farm",
+    "area": "枚方市",
+    "desc": "枚方市の里山でぶどう栽培と農体験を手がける農園が展開するワイナリー。地域資源を生かした少量生産が特徴。",
+    "visit": "Facebookページ経由で受付",
+    "wine_style": "red,white",
+    "main_grape": "delaware",
+    "gi": "",
+    "grapes": [],
+    "brands": [
+      "NEXT to 「．．．」",
+      "HIRAKATA NOVA"
+    ],
+    "features": ["枚方市の里山型ワイナリー", "農体験と連動した少量生産"],
+    "nearest_station": "",
+    "source": "https://nippon.wine/winery/16270010335/",
+    "lat": 34.818,
+    "lng": 135.657,
+    "name_en": "Hirakata Suguri Ricoro Farm"
+  }
+]

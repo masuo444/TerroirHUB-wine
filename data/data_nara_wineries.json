@@ -1,0 +1,35 @@
+[
+  {
+    "id": "kitani-wine",
+    "name": "木谷ワイン",
+    "company": "木谷ワイン",
+    "brand": "KITANI WINE",
+    "winery_type": "small",
+    "founded": "2018",
+    "founded_era": "平成30年",
+    "address": "奈良県香芝市下田西3丁目219-1",
+    "tel": "",
+    "url": "https://narawine.com/",
+    "area": "香芝市",
+    "desc": "奈良県産ぶどうを奈良で醸すことを目指して始まった、奈良県唯一のワイナリー。自然酵母発酵・無濾過を基本としたピュアな造りを志向する。",
+    "visit": "試飲直売会やVR見学会を不定期開催。営業日は事前確認推奨。",
+    "wine_style": "red,white,rose,sparkling",
+    "main_grape": "pinot_noir",
+    "gi": "",
+    "grapes": ["ピノ・ノワール"],
+    "brands": [
+      {
+        "name": "KITANI WINE Pinot Noir",
+        "type": "赤ワイン",
+        "specs": "奈良の風土表現を目指す代表銘柄。",
+        "grapes": "ピノ・ノワール"
+      }
+    ],
+    "features": ["奈良県唯一のワイナリー", "2018年独立・2022年自社醸造開始", "自然酵母発酵・無濾過スタイル", "除草剤不使用の草生栽培・減農薬・無化学肥料"],
+    "nearest_station": "",
+    "source": "https://narawine.com/",
+    "lat": 34.5430,
+    "lng": 135.7360,
+    "name_en": "Kitani Wine"
+  }
+]
