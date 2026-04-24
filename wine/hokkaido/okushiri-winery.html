@@ -121,6 +121,10 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://sake.terroirhub.com">
+<script>window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',basePath:'/wine',siteName:'Terroir HUB WINE',apiBase:'https://sake.terroirhub.com'};</script>
+<script src="https://sake.terroirhub.com/shared/cookie-storage.js" defer></script>
+<script src="https://sake.terroirhub.com/shared/auth.js" defer></script>
 <style>
 
 
@@ -653,6 +657,21 @@ async function sendQuestion(q){
   try{
     var ctx=BN+' — 北海道のワイナリー';
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx,userId:window._thubUserId||null})});
+    if(res.status===401){
+      removeT();
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
+
+無料アカウントで今すぐ始められます 🌸');
+      setTimeout(function(){if(typeof openAuthModal==='function')openAuthModal();},800);
+      renderSugs();return;
+    }
+    if(res.status===402){
+      removeT();
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
+
+プレミアムプランでは無制限でご利用いただけます。');
+      renderSugs();return;
+    }
     var data=await res.json();
     removeT();
     var ans=data.answer||'申し訳ありません、少し時間をおいてからもう一度お試しください。';
