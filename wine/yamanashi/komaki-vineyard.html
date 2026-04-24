@@ -660,7 +660,7 @@ async function sendQuestion(q){
       addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
 
 無料アカウントで今すぐ始められます 🌸');
-      setTimeout(function(){if(typeof openAuthModal==='function')openAuthModal();},800);
+      setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
