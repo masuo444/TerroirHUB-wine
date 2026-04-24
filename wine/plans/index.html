@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>料金プラン — Terroir HUB WINE</title>
+<meta name="description" content="Terroir HUB WINEの料金プラン。無料プランから、AIソムリエ「サクラ」が使い放題のPro・Premiumまで。日本ワイン432ワイナリーのデータを活用。">
+<link rel="canonical" href="https://wine.terroirhub.com/wine/plans/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,300&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:#FAF8F5;color:#222;font-family:'Noto Sans JP','DM Sans',sans-serif;font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:54px;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06);display:flex;align-items:center;padding:0 24px;justify-content:space-between;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#222;text-decoration:none;letter-spacing:0.05em;}
+.nav-logo em{color:#722F37;font-style:normal;}
+.nav-links{display:flex;gap:20px;align-items:center;}
+.nav-links a{font-size:13px;color:#555;text-decoration:none;transition:color 0.15s;}
+.nav-links a:hover,.nav-links a.active{color:#722F37;}
+@media(max-width:640px){.nav-links{display:none;}}
+
+/* HERO */
+.hero{padding:96px 24px 48px;text-align:center;}
+.hero-tag{font-size:11px;letter-spacing:0.2em;color:#722F37;font-weight:500;margin-bottom:14px;text-transform:uppercase;}
+.hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(22px,4.5vw,32px);font-weight:500;color:#1a1a1a;line-height:1.6;margin-bottom:12px;}
+.hero p{font-size:14px;color:#888;max-width:480px;margin:0 auto;line-height:1.9;}
+
+/* SAKURA INTRO */
+.sakura-bar{max-width:680px;margin:0 auto 48px;padding:24px 28px;background:#fff;border:1.5px solid rgba(114,47,55,0.12);border-radius:16px;display:flex;align-items:center;gap:20px;box-shadow:0 4px 20px rgba(114,47,55,0.06);}
+.sakura-bar-img{width:72px;height:72px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(114,47,55,0.15);}
+.sakura-bar-img img{width:100%;height:100%;object-fit:cover;}
+.sakura-bar-text h3{font-family:'Noto Serif JP',serif;font-size:16px;font-weight:500;color:#1a1a1a;margin-bottom:4px;}
+.sakura-bar-text p{font-size:13px;color:#777;line-height:1.7;}
+@media(max-width:640px){.sakura-bar{flex-direction:column;text-align:center;}}
+
+/* PLANS GRID */
+.plans{max-width:1020px;margin:0 auto;padding:0 20px 56px;}
+.plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+@media(max-width:768px){.plans-grid{grid-template-columns:1fr;gap:16px;max-width:400px;margin:0 auto;}}
+
+.card{background:#fff;border:1.5px solid #ebe7e0;border-radius:18px;padding:32px 24px;position:relative;transition:all 0.25s;}
+.card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.06);transform:translateY(-2px);}
+.card.pro{border-color:#722F37;box-shadow:0 4px 24px rgba(114,47,55,0.1);}
+.card.premium{background:#1e1410;border-color:#3a2318;color:#fff;}
+
+.card-badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:#722F37;color:#fff;font-size:10px;font-weight:600;padding:3px 14px;border-radius:10px;white-space:nowrap;letter-spacing:0.06em;}
+
+.card-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:4px;color:inherit;}
+.card-price{font-family:'DM Sans',sans-serif;font-size:38px;font-weight:500;margin-bottom:2px;color:inherit;}
+.card-price span{font-size:14px;font-weight:400;color:#999;}
+.card.premium .card-price span{color:rgba(255,255,255,0.4);}
+.card-desc{font-size:12px;color:#999;margin-bottom:20px;}
+.card.premium .card-desc{color:rgba(255,255,255,0.45);}
+
+.card-divider{height:1px;background:#f0ebe4;margin-bottom:16px;}
+.card.premium .card-divider{background:rgba(255,255,255,0.08);}
+
+.card-features{list-style:none;margin-bottom:24px;}
+.card-features li{font-size:13px;color:#555;padding:5px 0;display:flex;align-items:center;gap:10px;}
+.card-features li::before{content:'';width:18px;height:18px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;}
+.card-features li.on::before{content:'✓';background:rgba(114,47,55,0.08);color:#722F37;}
+.card-features li.off{color:#ccc;}
+.card-features li.off::before{content:'—';background:#f8f5f2;color:#ddd;}
+.card.premium .card-features li{color:rgba(255,255,255,0.75);}
+.card.premium .card-features li.on::before{background:rgba(185,138,100,0.2);color:#C8956A;}
+.card.premium .card-features li.off{color:rgba(255,255,255,0.22);}
+.card.premium .card-features li.off::before{background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.15);}
+
+.card-highlight{display:inline-block;font-size:11px;font-weight:600;color:#722F37;background:rgba(114,47,55,0.06);padding:2px 10px;border-radius:6px;margin-bottom:14px;}
+.card.premium .card-highlight{color:#C8956A;background:rgba(200,149,106,0.12);}
+
+.card-cta{display:block;width:100%;padding:13px 0;border-radius:10px;font-size:14px;font-weight:500;cursor:pointer;border:none;text-align:center;font-family:'Noto Sans JP',sans-serif;transition:opacity 0.2s;letter-spacing:0.03em;}
+.card-cta:hover{opacity:0.85;}
+.cta-free{background:#f5f0eb;color:#444;}
+.cta-pro{background:#722F37;color:#fff;}
+.cta-premium{background:linear-gradient(135deg,#C8956A,#722F37);color:#fff;}
+
+/* NOTE */
+.note{max-width:680px;margin:0 auto 40px;padding:0 20px;font-size:12px;color:#aaa;text-align:center;line-height:1.8;}
+.note a{color:#722F37;text-decoration:none;}
+
+/* FAQ */
+.faq{max-width:600px;margin:0 auto;padding:0 20px 80px;}
+.faq-title{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:400;text-align:center;margin-bottom:32px;color:#333;}
+.faq-item{border-bottom:1px solid #ebe7e0;}
+.faq-q{font-size:14px;font-weight:500;color:#333;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;}
+.faq-q::after{content:'+';font-size:20px;color:#722F37;flex-shrink:0;transition:transform 0.2s;}
+.faq-item.open .faq-q::after{transform:rotate(45deg);}
+.faq-a{font-size:13px;color:#888;line-height:1.9;max-height:0;overflow:hidden;transition:max-height 0.3s ease,padding 0.3s ease;}
+.faq-item.open .faq-a{max-height:200px;padding-bottom:18px;}
+
+/* FOOTER */
+.footer{text-align:center;padding:24px 20px;font-size:11px;color:#bbb;border-top:1px solid #ede9e3;}
+.footer a{color:#999;text-decoration:none;}
+.footer a:hover{color:#722F37;}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-logo" href="/">Terroir HUB <em>WINE</em></a>
+  <div class="nav-links">
+    <a href="/wine/search/">ワイナリー検索</a>
+    <a href="/wine/guide/">ワインガイド</a>
+    <a href="/wine/plans/" class="active">プラン</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">Plans</div>
+  <h1>まずは無料で。<br>もっと使いたくなったら。</h1>
+  <p>登録は無料。AIソムリエ「サクラ」はログイン後に利用可能。短文中心で試して、必要ならすぐアップグレードできます。</p>
+</section>
+
+<div class="plans">
+  <div class="sakura-bar">
+    <div class="sakura-bar-img"><img src="/img/sakura-fullbody.png" alt="サクラ"></div>
+    <div class="sakura-bar-text">
+      <h3>AIソムリエ「サクラ」とは？</h3>
+      <p>全国432ワイナリーのデータをもとに、品種・産地・ペアリング・ワイナリー紹介まで何でも回答。日本語・英語・フランス語に対応。Terroir HUB全サイト（日本酒・焼酎・ウイスキー）も1アカウントで利用できます。</p>
+    </div>
+  </div>
+
+  <div class="plans-grid">
+
+    <!-- Free -->
+    <div class="card">
+      <div class="card-name">Free</div>
+      <div class="card-price">¥0</div>
+      <div class="card-desc">まずは気軽に</div>
+      <div class="card-divider"></div>
+      <ul class="card-features">
+        <li class="on">全432ワイナリーの情報閲覧</li>
+        <li class="on">ワイナリー名・品種・地域で検索</li>
+        <li class="on">AIサクラ 月5クレジット</li>
+        <li class="on">ワインガイド 前半</li>
+        <li class="on">お気に入り保存</li>
+        <li class="off">長文・連続利用</li>
+        <li class="off">ペアリング詳細相談</li>
+        <li class="off">英語・フランス語での解説</li>
+      </ul>
+      <button class="card-cta cta-free" onclick="showAuth('signup')">無料で始める</button>
+    </div>
+
+    <!-- Pro -->
+    <div class="card pro">
+      <div class="card-badge">おすすめ</div>
+      <div class="card-name">Pro</div>
+      <div class="card-price">¥500<span>/月</span></div>
+      <div class="card-desc">サクラがあなた専用のソムリエに</div>
+      <div class="card-divider"></div>
+      <div class="card-highlight">Freeの全機能 +</div>
+      <ul class="card-features">
+        <li class="on">AIサクラ 月100クレジット</li>
+        <li class="on">ワインガイド 全章</li>
+        <li class="on">ペアリング詳細相談</li>
+        <li class="on">品種・産地の詳しい解説</li>
+        <li class="on">ワイナリー比較</li>
+        <li class="on">飲酒記録・バッジ</li>
+        <li class="off">レポート生成</li>
+        <li class="off">英語・フランス語対応</li>
+      </ul>
+      <button class="card-cta cta-pro" onclick="if(window.thubAuth&&window.thubAuth.isLoggedIn){thubSubscribe('pro')}else{sessionStorage.setItem('thub_pending_plan','pro');showAuth('signup')}">Proを始める</button>
+    </div>
+
+    <!-- Premium -->
+    <div class="card premium">
+      <div class="card-name">Premium</div>
+      <div class="card-price">¥1,500<span>/月</span></div>
+      <div class="card-desc">全機能を使い倒す</div>
+      <div class="card-divider"></div>
+      <div class="card-highlight">Proの全機能 +</div>
+      <ul class="card-features">
+        <li class="on">AIサクラ 月300クレジット</li>
+        <li class="on">英語・フランス語での解説</li>
+        <li class="on">ワイナリー詳細レポート生成</li>
+        <li class="on">全ジャンル横断比較</li>
+        <li class="on">クレジット追加購入</li>
+        <li class="on">プレミアム限定コンテンツ</li>
+      </ul>
+      <button class="card-cta cta-premium" onclick="if(window.thubAuth&&window.thubAuth.isLoggedIn){thubSubscribe('premium')}else{sessionStorage.setItem('thub_pending_plan','premium');showAuth('signup')}">Premiumを始める</button>
+    </div>
+
+  </div>
+</div>
+
+<p class="note">Terroir HUBは日本酒・焼酎・ウイスキー・ワインを1アカウントで利用可能。<a href="https://sake.terroirhub.com">sake.terroirhub.com</a> でのご登録もそのままご利用いただけます。</p>
+
+<section class="faq">
+  <h2 class="faq-title">よくある質問</h2>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">いつでも解約できますか？</div>
+    <div class="faq-a">はい。次回更新日以降の請求は発生しません。当該期間の終了までサービスをご利用いただけます。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">クレジットとは？</div>
+    <div class="faq-a">AIサクラへの質問は120文字までで1クレジットです。121〜240文字は2クレジット、241〜300文字は3クレジット。月額分は毎月初にリセットされます。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">日本酒版と同じアカウントで使えますか？</div>
+    <div class="faq-a">はい。Terroir HUBは全サイト（日本酒・焼酎・ウイスキー・ワイン）で1アカウント共通です。どのサイトでログインしていても、そのままワインサイトのサクラを利用できます。クレジットも共通です。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">支払方法は？</div>
+    <div class="faq-a">クレジットカード（Visa / Mastercard / Amex / JCB）に対応しています。Stripe経由の安全な決済です。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">プラン変更はできますか？</div>
+    <div class="faq-a">はい。アップグレードは即時反映、ダウングレードは次回更新日から切り替わります。</div>
+  </div>
+</section>
+
+<footer class="footer">
+  &copy; 2025 Terroir HUB WINE — 合同会社FOMUS &nbsp;|&nbsp;
+  <a href="/privacy.html">プライバシーポリシー</a> &nbsp;|&nbsp;
+  <a href="/terms.html">利用規約</a>
+</footer>
+
+<script>window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',basePath:'/wine',siteName:'Terroir HUB WINE',apiBase:'https://sake.terroirhub.com'};</script>
+<link rel="preconnect" href="https://sake.terroirhub.com">
+<script src="https://sake.terroirhub.com/shared/cookie-storage.js"></script>
+<script src="https://sake.terroirhub.com/shared/auth.js"></script>
+</body>
+</html>

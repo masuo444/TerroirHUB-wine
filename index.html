@@ -24,7 +24,7 @@
 <meta property="og:description" content="日本ワインを調べるならここ。全国560+ワイナリーの公式データベース。AIソムリエと会話で検索。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wine.terroirhub.com/">
-<meta property="og:image" content="https://wine.terroirhub.com/img/hero.jpg">
+<meta property="og:image" content="https://wine.terroirhub.com/img/hero-top.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:site_name" content="Terroir HUB WINE">
 <meta property="og:locale" content="ja_JP">
@@ -351,6 +351,21 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP','Inter',s
 @media(max-width:640px){
   .nav-top{padding:0 16px;}
 }
+/* ── SAKURA INTRO SECTION ── */
+.sakura-intro-sec{background:#FAF8F5;border-top:1px solid var(--border);}
+.sakura-intro-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:center;}
+@media(max-width:900px){.sakura-intro-grid{grid-template-columns:1fr;gap:32px;}}
+.sakura-intro-img{border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(114,47,55,0.12);}
+.sakura-intro-img img{width:100%;height:100%;object-fit:cover;display:block;}
+@media(max-width:900px){.sakura-intro-img{max-width:320px;margin:0 auto;}}
+.sakura-intro-lead{font-size:15px;color:#555;line-height:1.9;margin-bottom:20px;}
+.sakura-intro-feats{display:flex;flex-direction:column;gap:8px;}
+.sakura-intro-feat{font-size:13px;color:#555;display:flex;align-items:center;gap:10px;}
+.sif-ck{width:20px;height:20px;border-radius:50%;background:rgba(114,47,55,0.08);display:flex;align-items:center;justify-content:center;font-size:11px;color:#722F37;font-weight:700;flex-shrink:0;}
+.btn-wine{padding:12px 24px;background:#722F37;border:none;color:#fff;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Noto Sans JP',sans-serif;transition:opacity 0.2s;}
+.btn-wine:hover{opacity:0.85;}
+.btn-wine-outline{padding:12px 24px;border:1.5px solid #722F37;color:#722F37;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Noto Sans JP',sans-serif;text-decoration:none;display:inline-flex;align-items:center;transition:all 0.2s;}
+.btn-wine-outline:hover{background:#722F37;color:#fff;}
 </style>
 </head>
 <body>
@@ -372,6 +387,7 @@ window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',base
       <a href="#regions">産地</a>
       <a href="#varieties">品種</a>
       <a href="/wine/guide/">ワインガイド</a>
+      <a href="/wine/plans/">プラン</a>
       <a href="#ai-section" onclick="openPanel();return false;">AIソムリエ</a>
     </div>
     <div class="nav-lang">
@@ -512,6 +528,32 @@ window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',base
         </a>
       </div>
       <a class="see-all" href="/wine/guide/varieties.html">すべての品種を見る →</a>
+    </div>
+  </div>
+</section>
+
+<!-- AI SAKURA SECTION -->
+<section class="sakura-intro-sec section">
+  <div class="inner">
+    <div class="sakura-intro-grid">
+      <div class="sakura-intro-img">
+        <img src="/img/sakura-fullbody.png" alt="AIソムリエ サクラ">
+      </div>
+      <div class="sakura-intro-content">
+        <p class="sec-label">AI Sommelier</p>
+        <h2 class="sec-title" style="margin-bottom:16px;">サクラが、あなたの<br>ワイン選びをサポート。</h2>
+        <p class="sakura-intro-lead">日本全国432ワイナリーのデータをもとに、好みのワイン・ペアリング・産地・品種まで何でも答えます。日本語はもちろん、英語・フランス語にも対応。</p>
+        <div class="sakura-intro-feats">
+          <div class="sakura-intro-feat"><span class="sif-ck">✓</span>432ワイナリーのデータで正確な回答</div>
+          <div class="sakura-intro-feat"><span class="sif-ck">✓</span>甲州・MBA・ピノ・ノワールなど品種の解説</div>
+          <div class="sakura-intro-feat"><span class="sif-ck">✓</span>和食×日本ワインのペアリング提案</div>
+          <div class="sakura-intro-feat"><span class="sif-ck">✓</span>日本語 / English / Français 対応</div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;">
+          <button class="btn-wine" onclick="openPanel()">🌸 サクラに相談する</button>
+          <a class="btn-wine-outline" href="/wine/plans/">プランを見る</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -700,9 +742,9 @@ window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',base
   <div class="chat-panel" id="chat-panel">
     <div class="cp-hdr">
       <div class="cp-hdr-l">
-        <div class="cp-av"><img src="/img/sakura-avatar.png" alt="サクラ"></div>
+        <div class="cp-av"><img src="/img/sakura-fullbody.png" alt="サクラ"></div>
         <div>
-          <div class="cp-title">AIソムリエ サクラ</div>
+          <div class="cp-title">AIソムリエ サクラ <span id="cp-plan-tag" style="font-size:10px;background:rgba(255,255,255,0.25);border-radius:6px;padding:1px 7px;font-weight:400;font-family:'Noto Sans JP',sans-serif;">Free</span></div>
           <div class="cp-status">日本ワイン専門 · 24時間対応</div>
         </div>
       </div>
@@ -710,7 +752,7 @@ window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',base
     </div>
     <div class="ca" id="ca">
       <div class="cm">
-        <div class="m-av"><img src="/img/sakura-avatar.png" alt="サクラ"></div>
+        <div class="m-av"><img src="/img/sakura-fullbody.png" alt="サクラ"></div>
         <div class="mb">こんにちは！日本ワイン専門AIソムリエのサクラです🍷<br>「甲州のおすすめは？」「北海道でピノ・ノワールを探している」「和食に合う白ワインは？」など、何でも気軽にどうぞ！</div>
       </div>
     </div>
