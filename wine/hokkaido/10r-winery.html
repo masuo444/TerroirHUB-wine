@@ -651,7 +651,15 @@ async function sendQuestion(q){
   chatHistory.push({role:'user',content:q});
   try{
     var ctx=BN+' — 北海道のワイナリー';
-    var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx,userId:window._thubUserId||null})});
+    var headers={'Content-Type':'application/json'};
+    try{
+      if(window.thubAuth&&window.thubAuth.supabase){
+        var sess=await window.thubAuth.supabase.auth.getSession();
+        var tok=sess&&sess.data&&sess.data.session&&sess.data.session.access_token;
+        if(tok)headers['Authorization']='Bearer '+tok;
+      }
+    }catch(e){}
+    var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
     if(res.status===401){
       removeT();
       addMsg('butler','サクラAIをご利用いただくにはログインが必要です。

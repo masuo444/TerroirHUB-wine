@@ -777,14 +777,24 @@ function inlineSend(preset){
   msgs.innerHTML+='<div class="ai-msg" id="ai-typing"><div class="ai-msg-av">🌸</div><div class="ai-bubble"><span class="typing">・・・</span></div></div>';
   msgs.scrollTop=msgs.scrollHeight;
   inlineHistory.push({role:'user',content:msg});
-  fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:msg,history:inlineHistory.slice(-10),context:'Terroir HUB WINE トップページ',userId:window._thubUserId||null})})
-    .then(r=>r.json()).then(d=>{
+  (async()=>{
+    try{
+      const headers={'Content-Type':'application/json'};
+      if(window.thubAuth&&window.thubAuth.supabase){
+        const sess=await window.thubAuth.supabase.auth.getSession();
+        const tok=sess?.data?.session?.access_token;
+        if(tok)headers['Authorization']='Bearer '+tok;
+      }
+      const r=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers,body:JSON.stringify({question:msg,history:inlineHistory.slice(-10),context:'Terroir HUB WINE トップページ'})});
+      if(r.status===401){const t=document.getElementById('ai-typing');if(t)t.querySelector('.ai-bubble').textContent='ログインが必要です。右上のボタンからログインしてください。';if(typeof showAuth==='function')setTimeout(()=>showAuth('login'),800);inlineLoading=false;return;}
+      const d=await r.json();
       const t=document.getElementById('ai-typing');
       if(t)t.querySelector('.ai-bubble').innerHTML=fmtAnswer(d.answer||'申し訳ありません、エラーが発生しました。');
       inlineHistory.push({role:'assistant',content:d.answer||''});
       msgs.scrollTop=msgs.scrollHeight;
-    }).catch(()=>{const t=document.getElementById('ai-typing');if(t)t.querySelector('.ai-bubble').textContent='通信エラーが発生しました。';})
-    .finally(()=>{inlineLoading=false;});
+    }catch(e){const t=document.getElementById('ai-typing');if(t)t.querySelector('.ai-bubble').textContent='通信エラーが発生しました。';}
+    inlineLoading=false;
+  })();
 }
 
 // ── FULL CHAT ──
@@ -804,7 +814,14 @@ async function sendMsg(preset){
   ca.scrollTop=ca.scrollHeight;
   chatHistory.push({role:'user',content:msg});
   try{
-    const r=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:msg,history:chatHistory.slice(-20),context:'Terroir HUB WINE',userId:window._thubUserId||null})});
+    const headers={'Content-Type':'application/json'};
+    if(window.thubAuth&&window.thubAuth.supabase){
+      const sess=await window.thubAuth.supabase.auth.getSession();
+      const tok=sess?.data?.session?.access_token;
+      if(tok)headers['Authorization']='Bearer '+tok;
+    }
+    const r=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers,body:JSON.stringify({question:msg,history:chatHistory.slice(-20),context:'Terroir HUB WINE'})});
+    if(r.status===401){const t=document.getElementById('ct');if(t)t.querySelector('.mb').textContent='ログインが必要です。';if(typeof showAuth==='function')setTimeout(()=>showAuth('login'),800);chatLoading=false;return;}
     const d=await r.json();
     const ans=d.answer||'申し訳ありません、エラーが発生しました。';
     const t=document.getElementById('ct');
