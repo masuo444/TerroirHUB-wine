@@ -4,6 +4,10 @@ node_modules/
 *.DS_Store
 __pycache__/
 *.pyc
+# img/ 以外のpng/jpg/jpegは除外
 *.png
 *.jpg
 *.jpeg
+!img/*.png
+!img/*.jpg
+!img/*.jpeg
