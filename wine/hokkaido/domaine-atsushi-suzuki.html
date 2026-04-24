@@ -639,8 +639,26 @@ var SUGS=['ドメーヌアツシスズキってどんなワイン？','ワイナ
 function initChat(){ci=true;document.getElementById('chat').innerHTML='';addMsg('butler','ようこそ、'+BN+'へ。\n\nこのワイナリーについて何でもお気軽にお尋ねください。');renderSugs();}
 function addMsg(r,t){var c=document.getElementById('chat'),d=document.createElement('div');d.className='msg '+r;d.innerHTML='<div class="av">'+(r==='butler'?'桜':'あ')+'</div><div class="bubble">'+t.replace(/\n/g,'<br>')+'</div>';c.appendChild(d);c.scrollTop=c.scrollHeight;}
 function renderSugs(){document.getElementById('sugs').innerHTML=SUGS.map(function(s){return '<button class="sug" onclick="askSug(this.textContent)">'+s+'</button>';}).join('');}
-function askSug(q){document.getElementById('sugs').innerHTML='';addMsg('user',q);showT();setTimeout(function(){removeT();addMsg('butler','ご質問ありがとうございます。\n\n※ サクラAIはAPI接続後に実動作します。');renderSugs();},1200);}
-function sendMsg(){var i=document.getElementById('chat-inp'),q=i.value.trim();if(!q)return;i.value='';document.getElementById('sugs').innerHTML='';addMsg('user',q);showT();setTimeout(function(){removeT();addMsg('butler','ご質問ありがとうございます。\n\n※ サクラAIはAPI接続後に実動作します。');renderSugs();},1500);}
+var chatHistory=[];
+function askSug(q){document.getElementById('sugs').innerHTML='';sendQuestion(q);}
+function sendMsg(){var i=document.getElementById('chat-inp'),q=i.value.trim();if(!q)return;i.value='';sendQuestion(q);}
+async function sendQuestion(q){
+  document.getElementById('sugs').innerHTML='';
+  addMsg('user',q);showT();
+  chatHistory.push({role:'user',content:q});
+  try{
+    var ctx=BN+' — 北海道のワイナリー';
+    var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx,userId:window._thubUserId||null})});
+    var data=await res.json();
+    removeT();
+    var ans=data.answer||'申し訳ありません、少し時間をおいてからもう一度お試しください。';
+    addMsg('butler',ans);
+    chatHistory.push({role:'assistant',content:ans});
+  }catch(e){
+    removeT();addMsg('butler','通信エラーが発生しました。もう一度お試しください。');
+  }
+  renderSugs();
+}
 function showT(){var c=document.getElementById('chat'),d=document.createElement('div');d.className='msg butler';d.id='tp';d.innerHTML='<div class="av">桜</div><div class="bubble"><div class="typing"><div class="td"></div><div class="td"></div><div class="td"></div></div></div>';c.appendChild(d);c.scrollTop=c.scrollHeight;}
 function removeT(){var e=document.getElementById('tp');if(e)e.remove();}
 </script>
