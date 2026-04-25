@@ -1,10 +1,92 @@
 # Terroir HUB WINE — エージェント作業マニュアル
 
 ## プロジェクト概要
-全国560+ワイナリーの日本ワインデータベース。47都道府県カバー（主要産地：山梨80+蔵・北海道80+蔵・長野70+蔵・山形40+蔵・岩手30+蔵）。
-デプロイ先: wine.terroirhub.com
-GitHub: （未設定）
-姉妹サイト: https://sake.terroirhub.com/（日本酒版）、https://shochu.terroirhub.com/（焼酎版）
+全国432ワイナリーの日本ワインデータベース。47都道府県カバー（主要産地：山梨91蔵・北海道・長野・山形・岩手）。
+デプロイ先: wine.terroirhub.com（本番稼働中）
+GitHub: masuo444/TerroirHUB-wine（Vercel連携済み・git pushで自動デプロイ）
+姉妹サイト: https://sake.terroirhub.com/（中央API・共通認証ホスト）
+
+## アーキテクチャ（重要）
+
+### sake.terroirhub.com が中央サーバー
+このサイトはフロントエンドのみ。認証・AI・決済はすべて sake に集約している。
+
+```
+wine.terroirhub.com（フロントエンド）
+  ↓ 全APIリクエストを sake に転送
+sake.terroirhub.com
+  ├─ /shared/cookie-storage.js  ← .terroirhub.com 全体でCookie共有
+  ├─ /shared/auth.js            ← ログイン・マイページ・thubSubscribe
+  ├─ /api/sakura                ← AIサクラ（5ジャンル横断）
+  ├─ /api/create-subscription   ← Stripe決済（CORS許可済み）
+  └─ Supabase（全ジャンル共通DB）
+```
+
+### THUB_CONFIG（全HTMLに必須）
+```html
+<script>window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',basePath:'/wine',siteName:'Terroir HUB WINE',apiBase:'https://sake.terroirhub.com'};</script>
+<script src="https://sake.terroirhub.com/shared/cookie-storage.js" defer></script>
+<script src="https://sake.terroirhub.com/shared/auth.js" defer></script>
+```
+
+### AIサクラAPI呼び出しパターン（全ページ共通）
+```javascript
+var headers = { 'Content-Type': 'application/json' };
+try {
+  if (window.thubAuth && window.thubAuth.supabase) {
+    var sess = await window.thubAuth.supabase.auth.getSession();
+    var tok = sess?.data?.session?.access_token;
+    if (tok) headers['Authorization'] = 'Bearer ' + tok;
+  }
+} catch(e) {}
+var res = await fetch('https://sake.terroirhub.com/api/sakura', {
+  method: 'POST', headers: headers,
+  body: JSON.stringify({ question: q, history: chatHistory.slice(-10), context: ctx })
+});
+// 401 → showAuth('login')  ※ openAuthModal()は存在しない
+// 402 → クレジット上限メッセージ
+```
+
+## デプロイ手順
+
+### ワイナリーページ再生成
+```bash
+cd "/Users/masuo/Desktop/テロワールハブ　総合/terroirHUB wine"
+python3 scripts/regenerate_all_pages.py
+git add -A && git commit -m "メッセージ" && git push
+# Vercelが約30秒で自動デプロイ
+```
+
+### 手動デプロイ（即時反映したいとき）
+```bash
+cd "/Users/masuo/Desktop/テロワールハブ　総合/terroirHUB wine"
+vercel --prod
+```
+
+## Vercel環境変数（Production設定済み）
+| 変数名 | 説明 |
+|--------|------|
+| ANTHROPIC_API_KEY | Claude API |
+| SUPABASE_URL | https://hhwavxavuqqfiehrogwv.supabase.co |
+| SUPABASE_SERVICE_KEY | Supabaseサービスロール |
+| STRIPE_SECRET_KEY | Stripe本番キー |
+| STRIPE_WEBHOOK_SECRET | wine専用Webhookシークレット（sake と別値） |
+
+## Stripe Webhook
+- エンドポイント: `https://wine.terroirhub.com/api/webhook`
+- Stripe ID: `we_1TPv0PKLpMIAHdShP5JQQ8Ot`
+- イベント: checkout.session.completed / subscription.updated / subscription.deleted
+
+## セキュリティルール
+- `vercel.json`: /api/ はno-store、/admin/ はnoindex、/shared/ はCORS許可
+- `robots.txt`: /api/ と /admin/ は Disallow
+- `sitemap.xml`: /wine/plans/ (priority 0.8) を含む
+
+## sake側に変更が必要な操作
+以下はwineのコードではなく sake リポジトリ（masuo444/PRO-TerroirHUB）を変更する：
+- AIサクラの知識・システムプロンプト更新 → `/TerriorHUB sake/api/sakura.js`
+- Stripe CORS追加（新ジャンル追加時）→ `api/create-subscription.js` + `api/create-checkout.js`
+- 検索インデックス → `sake/search_index_wine.json`
 
 ## ファイル構成
 
