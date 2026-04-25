@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html",
+      "name": "MGVsワイナリー - 山梨県のワイナリー",
+      "description": "平成29年創業。山梨県甲州市勝沼のエステートワイナリー「MGVsワイナリー」。「実り豊かな土地を未来につなげるために」をコンセプトに、葡萄栽培からワイン販売を一元的に行い、地域の発展に寄与することを目指しています。甲州とマスカット・ベーリ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#winery",
       "name": "MGVsワイナリー",
       "description": "「実り豊かな土地を未来につなげるために」をコンセプトに、葡萄栽培からワイン販売を一元的に行い、地域の発展に寄与することを目指しています。甲州とマスカット・ベーリーAのスペシャリストとして、世界に挑戦します。半導体製造の株式会社塩山製作所がワイン事業に参入し、半導体工場で使われていた窒素ガスシステムやクリーンルームをワイン醸造・瓶詰めに転用しています。",
       "url": "https://mgvs.jp/",
@@ -49,7 +66,36 @@
       "knowsAbout": [
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://mgvs.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "MGVsワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +119,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#wine-1",
+      "name": "MGVs 甲州",
+      "category": "白ワイン・スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "MGVs（マグヴィス）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#winery"
+      },
+      "description": "甲州100%、勝沼産。アルファベット＋3桁数字で産地・製法・醸造法をコード化。瓶内二次醗酵スパークリング（POSH）あり。",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#wine-2",
+      "name": "MGVs マスカット・ベーリーA",
+      "category": "ロゼワイン・赤ワイン・スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "MGVs（マグヴィス）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mgvs-winery.html#winery"
+      },
+      "description": "マスカット・ベーリーA100%。ロゼスパークリング（POSH）あり。オーク熟成タイプあり。",
+      "material": "マスカット・ベーリーA"
     },
     {
       "@type": "FAQPage",

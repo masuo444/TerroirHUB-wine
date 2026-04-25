@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html",
+      "name": "ヴァン・ド・ラ・ボッチ - 石川県のワイナリー",
+      "description": "平成28年創業。石川県金沢市の小規模ワイナリー「ヴァン・ド・ラ・ボッチ」。障がいのある人の働く場づくりから始まった自然派ワイナリー。自社ぶどう100%で、無濾過を軸にした生き生きしたワインを造る。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html",
+      "@id": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html#winery",
       "name": "ヴァン・ド・ラ・ボッチ",
       "description": "障がいのある人の働く場づくりから始まった自然派ワイナリー。自社ぶどう100%で、無濾過を軸にした生き生きしたワインを造る。",
       "url": "https://labocchi.jp/",
@@ -51,7 +68,23 @@
         "シャルドネ",
         "メルロー",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://labocchi.jp/?mode=f1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ヴァン・ド・ラ・ボッチの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +108,19 @@
           "item": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html#wine-1",
+      "name": "Vin de la bocchi",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Vin de la bocchi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/ishikawa/vin-de-la-bocchi.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -381,7 +427,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ヴァン・ド・ラ・ボッチ</h1>
     <p class="hero-subtitle">Vin de la bocchi</p>
     <p class="hero-en">Since 2016 — 金沢市, 石川県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://labocchi.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -481,11 +527,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Vin de la bocchi</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -506,7 +552,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">石川県 金沢市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://labocchi.jp/?mode=f1" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://labocchi.jp/?mode=f1</a></p>
   </div>
 </section>

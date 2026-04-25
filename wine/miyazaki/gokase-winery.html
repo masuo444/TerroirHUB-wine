@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html",
+      "name": "五ヶ瀬ワイナリー - 宮崎県のワイナリー",
+      "description": "平成17年創業。宮崎県西臼杵郡五ヶ瀬町の日本ワイナリー「五ヶ瀬ワイナリー」。標高600m前後の冷涼な五ヶ瀬町で、地元産ぶどう100%からみずみずしいワインを造るワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html#winery",
       "name": "五ヶ瀬ワイナリー",
       "description": "標高600m前後の冷涼な五ヶ瀬町で、地元産ぶどう100%からみずみずしいワインを造るワイナリー。",
       "url": "http://gokase-winery.jp/",
@@ -52,7 +69,23 @@
         "シャルドネ",
         "デラウェア",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/1072/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "五ヶ瀬ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +109,19 @@
           "item": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html#wine-1",
+      "name": "五ヶ瀬ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "五ヶ瀬ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/miyazaki/gokase-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -380,9 +426,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
     <p class="hero-est">EST. 2005</p>
     <h1 class="hero-title">五ヶ瀬ワイナリー</h1>
-    
+
     <p class="hero-en">Since 2005 — 西臼杵郡五ヶ瀬町, 宮崎県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://gokase-winery.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -482,11 +528,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">五ヶ瀬ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -507,7 +553,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">宮崎県 西臼杵郡五ヶ瀬町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/1072/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/1072/</a></p>
   </div>
 </section>

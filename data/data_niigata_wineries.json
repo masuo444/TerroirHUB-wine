@@ -16,7 +16,13 @@
     "wine_style": "red,white,rose,sparkling",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "アルバリーニョ",
+      "シャルドネ",
+      "カベルネ・ソーヴィニヨン",
+      "メルロー",
+      "プティ・ヴェルド"
+    ],
     "brands": [
       {
         "name": "アルバリーニョ",

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html",
+      "name": "広島三次ワイナリー - 広島県のワイナリー",
+      "description": "平成6年創業。広島県三次市の日本ワイナリー「広島三次ワイナリー」。ブドウの持つ良さを最大限に活かす、丁寧なワイン造り",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#winery",
       "name": "広島三次ワイナリー",
       "description": "ブドウの持つ良さを最大限に活かす、丁寧なワイン造り",
       "url": "https://www.miyoshi-winery.co.jp/",
@@ -48,7 +65,41 @@
       },
       "knowsAbout": [
         "ピオーネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.miyoshi-winery.co.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "広島三次ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +123,58 @@
           "item": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-1",
+      "name": "TOMOE",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TOMOE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-2",
+      "name": "VILLAQUA",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TOMOE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-3",
+      "name": "三次ピオーネ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TOMOE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#wine-4",
+      "name": "霧里",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TOMOE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/hiroshima-miyoshi-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -378,7 +481,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">広島三次ワイナリー</h1>
     <p class="hero-subtitle">TOMOE</p>
     <p class="hero-en">Since 1994 — 三次市, 広島県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.miyoshi-winery.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -478,31 +581,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">TOMOE</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">VILLAQUA</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">三次ピオーネ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -523,7 +626,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">広島県 三次市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.miyoshi-winery.co.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.miyoshi-winery.co.jp/</a></p>
   </div>
 </section>

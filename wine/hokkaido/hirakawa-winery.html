@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html",
+      "name": "平川ワイナリー - 北海道のワイナリー",
+      "description": "平成27年創業。北海道余市町のエステートワイナリー「平川ワイナリー」。最高のワイン造りは、ブドウが育つ自然環境や風景そのものを香りや味わいの中に映し出すこと。畑固有の味わいを表現することに注力しています。余市西部地区の日照条件に恵",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#winery",
       "name": "平川ワイナリー",
       "description": "最高のワイン造りは、ブドウが育つ自然環境や風景そのものを香りや味わいの中に映し出すこと。畑固有の味わいを表現することに注力しています。余市西部地区の日照条件に恵まれた美しい南斜面にたたずむ醸造所。",
       "url": "https://hirakawawinery.jp/",
@@ -51,7 +68,48 @@
         "ピノ・ノワール",
         "ロンド",
         "レゲンド"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://hirakawawinery.jp/profile/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "平川ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +133,58 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-1",
+      "name": "Grande Cuvée",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "Terre de Yoichi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-2",
+      "name": "Cuvée Sélection",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "Terre de Yoichi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-3",
+      "name": "Terre de Yoichi",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "Terre de Yoichi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#wine-4",
+      "name": "Cuvée Gastronomique",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "Terre de Yoichi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/hirakawa-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -499,30 +609,30 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白</div>
-      
+
       <h3 class="brand-name">Grande Cuvée</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白</div>
-      
+
       <h3 class="brand-name">Cuvée Sélection</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白</div>
-      
+
       <h3 class="brand-name">Terre de Yoichi</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     </div>
   </div>

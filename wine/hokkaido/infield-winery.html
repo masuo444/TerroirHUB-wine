@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html",
+      "name": "インフィールドワイナリー - 北海道のワイナリー",
+      "description": "令和元年創業。北海道北見市のエステートワイナリー「インフィールドワイナリー」。和牛の育成・販売を主業とするみらいファームが、ワイナリー訪問をきっかけにワイン醸造を開始。ヤマブドウ系交配品種「山幸」「清舞」を中心に栽培しており、オホーツクの",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#winery",
       "name": "インフィールドワイナリー",
       "description": "和牛の育成・販売を主業とするみらいファームが、ワイナリー訪問をきっかけにワイン醸造を開始。ヤマブドウ系交配品種「山幸」「清舞」を中心に栽培しており、オホーツクの雄大な風土を表現したワイン造りを行っています。",
-      "url": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html",
+      "url": "https://miraifarm.co.jp/wine/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "北海道北見市",
@@ -40,6 +57,7 @@
         "addressCountry": "JP"
       },
       "foundingDate": "2019",
+      "telephone": "0157-57-2358",
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 43.81,
@@ -48,7 +66,42 @@
       "knowsAbout": [
         "山幸",
         "清舞"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://miraifarm.co.jp/wine/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "インフィールドワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,8 +127,69 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#wine-1",
+      "name": "北見PremiumRose",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Infeeld"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#winery"
+      },
+      "description": "北見産ぶどうを使うプレミアムロゼ。",
+      "material": "山幸、清舞ほか"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#wine-2",
+      "name": "遅摘み山幸",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Infeeld"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#winery"
+      },
+      "description": "山幸を遅摘みで仕込む赤ワイン。",
+      "material": "山幸"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#wine-3",
+      "name": "Campbell Early Rose",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Infeeld"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/infield-winery.html#winery"
+      },
+      "description": "キャンベル・アーリーを使うロゼ。",
+      "material": "キャンベル・アーリー"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "インフィールドワイナリーの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "購入はワイナリーショップまたはオンラインショップ。訪問・見学は事前確認推奨。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "インフィールドワイナリーの代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄は北見PremiumRose、遅摘み山幸、Campbell Early Roseなどがあります。北見産ぶどうを使うプレミアムロゼ。"
+          }
+        },
         {
           "@type": "Question",
           "name": "インフィールドワイナリーの所在地・アクセスを教えてください",
@@ -373,7 +487,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI北海道</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://miraifarm.co.jp/wine/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -469,6 +583,45 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge rose">ロゼワイン</div>
+      <div class="grape-tag">山幸、清舞ほか</div>
+      <h3 class="brand-name">北見PremiumRose</h3>
+      <p class="brand-type">ロゼワイン</p>
+      <p class="brand-desc">北見産ぶどうを使うプレミアムロゼ。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">赤ワイン</div>
+      <div class="grape-tag">山幸</div>
+      <h3 class="brand-name">遅摘み山幸</h3>
+      <p class="brand-type">赤ワイン</p>
+      <p class="brand-desc">山幸を遅摘みで仕込む赤ワイン。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge rose">ロゼワイン</div>
+      <div class="grape-tag">キャンベル・アーリー</div>
+      <h3 class="brand-name">Campbell Early Rose</h3>
+      <p class="brand-type">ロゼワイン</p>
+      <p class="brand-desc">キャンベル・アーリーを使うロゼ。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -477,7 +630,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道北見市</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道北見市</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0157-57-2358</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://miraifarm.co.jp/wine/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://miraifarm.co.jp/wine/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">購入はワイナリーショップまたはオンラインショップ。訪問・見学は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -486,7 +639,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       </div>
     </div>
     <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR石北本線 北見駅（車約20分）</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nihonwine.jp/winery_intro/infeeld/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nihonwine.jp/winery_intro/infeeld/</a></p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://miraifarm.co.jp/wine/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://miraifarm.co.jp/wine/</a></p>
   </div>
 </section>
 
@@ -500,26 +653,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">インフィールドワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">インフィールドワイナリーの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">住所は北海道北見市です。最寄りはJR石北本線 北見駅（車約20分）です。</div>
+      <div class="faq-a" id="faq-a-0">購入はワイナリーショップまたはオンラインショップ。訪問・見学は事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">インフィールドワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-text">インフィールドワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は北見PremiumRose、遅摘み山幸、Campbell Early Roseなどがあります。北見産ぶどうを使うプレミアムロゼ。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">インフィールドワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">インフィールドワイナリーの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">主に山幸、清舞を使用しています。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道北見市です。最寄りはJR石北本線 北見駅（車約20分）です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">インフィールドワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">インフィールドワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に山幸、清舞を使用しています。</div>
     </div>
     </div>
   </div>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html",
+      "name": "マルス穂坂ワイナリー - 山梨県のワイナリー",
+      "description": "平成29年創業。山梨県韮崎市穂坂の中規模ワイナリー「マルス穂坂ワイナリー」。本坊酒造が2017年に韮崎市穂坂地区に開設したワイナリー。標高約500〜600mの穂坂の地でシャルドネ、メルロー、カベルネ・ソーヴィニョン等を栽培。「シャトーマ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#winery",
       "name": "マルス穂坂ワイナリー",
       "description": "本坊酒造が2017年に韮崎市穂坂地区に開設したワイナリー。標高約500〜600mの穂坂の地でシャルドネ、メルロー、カベルネ・ソーヴィニョン等を栽培。「シャトーマルス」ブランドで高い評価を受ける。マルス山梨ワイナリー（笛吹市）とは別施設。",
       "url": "https://www.hombo.co.jp/winery/hosaka/",
@@ -46,7 +63,42 @@
         "メルロー",
         "カベルネ・ソーヴィニョン",
         "甲州"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.hombo.co.jp/winery/hosaka/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "マルス穂坂ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -70,6 +122,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#wine-1",
+      "name": "シャトーマルス 穂坂ひの白郷 シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトーマルス穂坂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#winery"
+      },
+      "description": "シャルドネ",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#wine-2",
+      "name": "シャトーマルス 穂坂収穫 ルージュ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトーマルス穂坂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#winery"
+      },
+      "description": "カベルネ・ソーヴィニョン、メルロー",
+      "material": "カベルネ・ソーヴィニョン、メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#wine-3",
+      "name": "シャトーマルス 穂坂 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトーマルス穂坂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mars-hosaka.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
     },
     {
       "@type": "FAQPage",

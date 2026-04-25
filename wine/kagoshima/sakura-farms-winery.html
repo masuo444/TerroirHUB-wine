@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html",
+      "name": "さくら農園ワイン製造所 - 鹿児島県のワイナリー",
+      "description": "令和2年創業。鹿児島県霧島市国分のエステートワイナリー「さくら農園ワイン製造所」。霧島連峰を望む果樹園内に2020年誕生した鹿児島県初のワイナリー。自社農園の多品種ぶどうを使い、霧島産ワインを醸造する。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#winery",
       "name": "さくら農園ワイン製造所",
       "description": "霧島連峰を望む果樹園内に2020年誕生した鹿児島県初のワイナリー。自社農園の多品種ぶどうを使い、霧島産ワインを醸造する。",
       "url": "https://sakurafarms.jp/",
@@ -48,7 +65,35 @@
       },
       "knowsAbout": [
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://sakurafarms.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "さくら農園ワイン製造所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +117,51 @@
           "item": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#wine-1",
+      "name": "Sakura Farm Merlot",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Sakura Farm & Winery"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#winery"
+      },
+      "description": "県産メルロー主体の赤。樽熟成版も展開。",
+      "material": "メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#wine-2",
+      "name": "Sakura Farm White Sweet",
+      "category": "甘口白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Sakura Farm & Winery"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#winery"
+      },
+      "description": "自社農園デラウェア100%をアイスワイン製法で仕上げた白。",
+      "material": "デラウェア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#wine-3",
+      "name": "Sakura Farm Rose",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Sakura Farm & Winery"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kagoshima/sakura-farms-winery.html#winery"
+      },
+      "description": "BKシードレスとメルローをブレンドしたやや甘口ロゼ。",
+      "material": "BKシードレス、メルロー"
     },
     {
       "@type": "FAQPage",
@@ -386,7 +476,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">さくら農園ワイン製造所</h1>
     <p class="hero-subtitle">Sakura Farm &amp; Winery</p>
     <p class="hero-en">Since 2020 — 霧島市国分, 鹿児島県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://sakurafarms.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -531,7 +621,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">鹿児島県 霧島市国分</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://sakurafarms.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://sakurafarms.jp/</a></p>
   </div>
 </section>

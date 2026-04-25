@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html",
+      "name": "cfaバックヤード・ワイナリー - 栃木県のワイナリー",
+      "description": "平成24年創業。栃木県足利市の小規模ワイナリー「cfaバックヤード・ワイナリー」。足利市の飲料メーカー工場内にあるガレージ型ワイナリー。日本固有品種から国際水準の品質を目指す少量醸造を行う。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html#winery",
       "name": "cfaバックヤード・ワイナリー",
       "description": "足利市の飲料メーカー工場内にあるガレージ型ワイナリー。日本固有品種から国際水準の品質を目指す少量醸造を行う。",
       "url": "https://www.winemaker.jp/",
@@ -45,6 +62,26 @@
         "@type": "GeoCoordinates",
         "latitude": 36.3311,
         "longitude": 139.4832
+      },
+      "knowsAbout": [
+        "甲州",
+        "マスカット・ベーリーA"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/13090010089/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "cfaバックヤード・ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +106,21 @@
           "item": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html#wine-1",
+      "name": "オープニングアクト",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Cfa Backyard Winery"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/cfa-backyard-winery.html#winery"
+      },
+      "description": "代表銘柄。",
+      "material": "甲州、マスカット・ベーリーA系"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +155,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "平成24年（2012年）に創業しました。栃木県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "cfaバックヤード・ワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主に甲州、マスカット・ベーリーAを使用しています。"
           }
         }
       ]
@@ -375,7 +435,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">cfaバックヤード・ワイナリー</h1>
     <p class="hero-subtitle">Cfa Backyard Winery</p>
     <p class="hero-en">Since 2012 — 足利市, 栃木県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.winemaker.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +512,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">cfaバックヤード・ワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">甲州</span><span class="grape-pill">マスカット・ベーリーA</span></div>
+  </div>
+</section>
 
 
 
@@ -491,7 +560,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">栃木県 足利市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/13090010089/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/13090010089/</a></p>
   </div>
 </section>
@@ -534,6 +603,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">平成24年（2012年）に創業しました。栃木県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">cfaバックヤード・ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に甲州、マスカット・ベーリーAを使用しています。</div>
     </div>
     </div>
   </div>

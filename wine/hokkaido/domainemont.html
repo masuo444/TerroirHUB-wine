@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html",
+      "name": "ドメーヌモン - 北海道のワイナリー",
+      "description": "平成28年創業。北海道余市町のエステートワイナリー「ドメーヌモン」。余市町は北海道の日本海側に突き出た積丹半島の付け根の北緯43度に位置する地域で、漁業と果樹農業が盛んな地。約3ha（栽培面積1.8ha）の自社畑で栽培。山中敦生",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#winery",
       "name": "ドメーヌモン",
       "description": "余市町は北海道の日本海側に突き出た積丹半島の付け根の北緯43度に位置する地域で、漁業と果樹農業が盛んな地。約3ha（栽培面積1.8ha）の自社畑で栽培。山中敦生がドメーヌ・タカヒコの曽我貴彦氏のもとで2年間研修後に独立。",
       "url": "https://domainemont.com/",
@@ -47,7 +64,36 @@
       },
       "knowsAbout": [
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://domainemont.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌモンの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -71,6 +117,32 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#wine-1",
+      "name": "Domaine Mont Pinot Noir",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌモン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#wine-2",
+      "name": "Domaine Mont Chardonnay",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌモン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domainemont.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -486,21 +558,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Domaine Mont Pinot Noir</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Domaine Mont Chardonnay</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

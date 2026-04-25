@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html",
+      "name": "敷島醸造 - 山梨県のワイナリー",
+      "description": "昭和60年創業。山梨県甲斐市の中規模ワイナリー「敷島醸造」。標高600mの昇仙峡南麓に位置し、自社農場産ぶどう100%・除草剤不使用・減農薬の自然農法で約30種の銘柄を製造。機械に頼らない手作業の栽培・醸造にこだわる。ぶ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#winery",
       "name": "敷島醸造",
       "description": "標高600mの昇仙峡南麓に位置し、自社農場産ぶどう100%・除草剤不使用・減農薬の自然農法で約30種の銘柄を製造。機械に頼らない手作業の栽培・醸造にこだわる。ぶどうの樹オーナー・樽ワインオーナー制度あり。",
       "url": "http://www.mountwine.co.jp",
@@ -40,7 +57,40 @@
         "addressCountry": "JP"
       },
       "foundingDate": "1985",
-      "telephone": "055-277-2805"
+      "telephone": "055-277-2805",
+      "knowsAbout": [
+        "甲州",
+        "ソーヴィニヨン・ブラン",
+        "プティ・ヴェルド"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://mountwine.jp"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "敷島醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -64,6 +114,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#wine-1",
+      "name": "マウントワイン 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "マウントワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#wine-2",
+      "name": "マウントワイン ソーヴィニヨン・ブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "マウントワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#winery"
+      },
+      "description": "ソーヴィニヨン・ブラン、垣根栽培",
+      "material": "ソーヴィニヨン・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#wine-3",
+      "name": "マウントワイン プティ・ヴェルド",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "マウントワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shikishima-jozo.html#winery"
+      },
+      "description": "プティ・ヴェルド、垣根栽培",
+      "material": "プティ・ヴェルド"
     },
     {
       "@type": "FAQPage",
@@ -98,6 +193,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "昭和60年（1985年）に創業しました。山梨県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "敷島醸造ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主に甲州、ソーヴィニヨン・ブラン、プティ・ヴェルドを使用しています。"
           }
         }
       ]
@@ -370,7 +473,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">敷島醸造</h1>
     <p class="hero-subtitle">マウントワイン</p>
     <p class="hero-en">Since 1985 — 甲斐市, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.mountwine.co.jp" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -447,6 +550,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">敷島醸造が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">甲州</span><span class="grape-pill">ソーヴィニヨン・ブラン</span><span class="grape-pill">プティ・ヴェルド</span></div>
+  </div>
+</section>
 
 
 
@@ -506,7 +618,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 甲斐市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://mountwine.jp" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://mountwine.jp</a></p>
   </div>
 </section>
@@ -549,6 +661,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">昭和60年（1985年）に創業しました。山梨県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">敷島醸造ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に甲州、ソーヴィニヨン・ブラン、プティ・ヴェルドを使用しています。</div>
     </div>
     </div>
   </div>

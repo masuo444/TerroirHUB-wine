@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/vinvie.html",
+      "name": "VinVie - 長野県のワイナリー",
+      "description": "平成30年創業。長野県松川町のエステートワイナリー「VinVie」。リンゴ農家とブドウ農家が協力して2018年にシードル生産を開始したワイナリー。標高720メートルの南アルプスの丘の上に位置し、「普段の生活の中にあるワイン・シー",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#winery",
       "name": "VinVie",
       "description": "リンゴ農家とブドウ農家が協力して2018年にシードル生産を開始したワイナリー。標高720メートルの南アルプスの丘の上に位置し、「普段の生活の中にあるワイン・シードル」を目指す。GI長野認定ワインを取得済み。",
       "url": "https://vinvie.jp/",
@@ -54,7 +71,42 @@
         "竜眼",
         "ナイアガラ",
         "山葡萄"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://vinvie.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "VinVieの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +130,47 @@
           "item": "https://wine.terroirhub.com/wine/nagano/vinvie.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#wine-1",
+      "name": "緒[いとぐち]",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "VinVie"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#wine-2",
+      "name": "編[とじいと]",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "VinVie"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#wine-3",
+      "name": "VinVie シードル",
+      "category": "シードル",
+      "brand": {
+        "@type": "Brand",
+        "name": "VinVie"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/vinvie.html#winery"
+      },
+      "description": "南信州産りんご使用"
     },
     {
       "@type": "FAQPage",
@@ -505,24 +598,24 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">緒[いとぐち]</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+
       <h3 class="brand-name">編[とじいと]</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">シードル</div>
-      
+
       <h3 class="brand-name">VinVie シードル</h3>
       <p class="brand-type">シードル</p>
       <p class="brand-desc">南信州産りんご使用</p>

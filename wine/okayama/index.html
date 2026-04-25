@@ -16,6 +16,108 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "CollectionPage",
+      "@id": "https://wine.terroirhub.com/wine/okayama/#webpage",
+      "url": "https://wine.terroirhub.com/wine/okayama/",
+      "name": "岡山県のワイナリー一覧",
+      "description": "岡山県のワイナリー10件を掲載。ドメーヌ・テッタ、ふなおワイナリー、ひるぜんワインなど岡山県の日本ワイン生産者情報。Terroir HUB WINE。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": 10,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ドメーヌ・テッタ",
+            "url": "https://wine.terroirhub.com/wine/okayama/domaine-tetta.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ふなおワイナリー",
+            "url": "https://wine.terroirhub.com/wine/okayama/funao-winery.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ひるぜんワイン",
+            "url": "https://wine.terroirhub.com/wine/okayama/hiruzen-wine.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "サッポロワイン岡山ワイナリー",
+            "url": "https://wine.terroirhub.com/wine/okayama/sapporo-wine-okayama.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "是里ワイン醸造場",
+            "url": "https://wine.terroirhub.com/wine/okayama/korezato-winery.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "ラ・グランド・コリーヌ・ジャポン",
+            "url": "https://wine.terroirhub.com/wine/okayama/la-grande-colline-japon.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "コルトラーダ",
+            "url": "https://wine.terroirhub.com/wine/okayama/coltrada.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "黒髪山葡萄園",
+            "url": "https://wine.terroirhub.com/wine/okayama/kurokamiyama-budoen.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "岡山ワインバレー",
+            "url": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "グレープシップ",
+            "url": "https://wine.terroirhub.com/wine/okayama/grapeship.html"
+          }
+        ]
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "シャルドネ"
+        },
+        {
+          "@type": "Thing",
+          "name": "ピオーネ"
+        },
+        {
+          "@type": "Thing",
+          "name": "マスカット・ベーリーA"
+        },
+        {
+          "@type": "Thing",
+          "name": "マスカット・オブ・アレキサンドリア"
+        },
+        {
+          "@type": "Thing",
+          "name": "ピノ・ノワール"
+        }
+      ]
+    },
+    {
       "@type": "ItemList",
       "name": "岡山県のワイナリー一覧",
       "description": "岡山県のワイナリー10件を掲載。ドメーヌ・テッタ、ふなおワイナリー、ひるぜんワインなど岡山県の日本ワイン生産者情報。Terroir HUB WINE。",
@@ -124,7 +226,7 @@
           "name": "岡山県のワイナリーは見学できますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "岡山県では10件のワイナリーが見学・テイスティングを受け入れています。要予約のところが多いため、各ワイナリーの公式サイトでご確認ください。"
+            "text": "岡山県では6件のワイナリーが見学・テイスティングを受け入れています。要予約のところが多いため、各ワイナリーの公式サイトでご確認ください。"
           }
         }
       ]
@@ -356,6 +458,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 .petal:nth-child(4){left:75%;animation-delay:4.5s;animation-duration:10s;}
 
 
+.intent-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+.intent-panel{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;}
+.intent-panel h3{font-family:'Zen Old Mincho',serif;font-size:17px;color:var(--text);margin-bottom:10px;}
+.intent-panel p{font-size:13px;line-height:1.8;color:var(--text-muted);}
+.intent-panel ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.intent-panel li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(114,47,55,0.08);padding-bottom:8px;font-size:12px;color:var(--text-muted);}
+.intent-panel li:last-child{border-bottom:0;padding-bottom:0;}
+.intent-panel a{color:var(--text);text-decoration:none;}
+.intent-panel a:hover{color:var(--accent);}
 </style>
 </head>
 <body>
@@ -381,7 +492,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
-    
+
     <h1 class="hero-title" style="font-size:clamp(32px,7vw,54px);">岡山県</h1>
     <p class="hero-subtitle">ワイナリー一覧</p>
     <p class="hero-en">10 Wineries</p>
@@ -391,14 +502,66 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
   </div>
 </section>
 
+
+
+<section class="section" style="background:var(--surface-warm);padding:44px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">FIND BY PURPOSE</label>
+    <h2 class="sec-title">岡山県ワインの探し方</h2>
+    <div class="sec-divider"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:28px;">
+
+      <a href="#visit-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">見学で選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">6件</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">岡山県で見学・試飲・ショップ利用の導線があるワイナリー。</p>
+      </a>
+      <a href="#grape-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">品種で選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">シャルドネ、ピオーネ、マスカット・ベーリーA</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">岡山県で多く使われる品種からワイナリーを探す。</p>
+      </a>
+      <a href="#brand-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">代表銘柄で選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">10件</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">銘柄名が確認できるワイナリーから選ぶ。</p>
+      </a>
+      <a href="#area-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">エリアで選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">新見市哲多町、倉敷市船穂町、真庭市蒜山</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">市町村・産地エリアごとに比較する。</p>
+      </a>
+    </div>
+    <div class="intent-grid">
+      <div class="intent-panel" id="visit-guide">
+        <h3>見学・試飲で選ぶ</h3>
+        <ul><li><a href="/wine/okayama/domaine-tetta.html">ドメーヌ・テッタ</a><span>新見市哲多町</span></li><li><a href="/wine/okayama/funao-winery.html">ふなおワイナリー</a><span>倉敷市船穂町</span></li><li><a href="/wine/okayama/sapporo-wine-okayama.html">サッポロワイン岡山ワイナリー</a><span>赤磐市</span></li><li><a href="/wine/okayama/korezato-winery.html">是里ワイン醸造場</a><span>赤磐市是里地区</span></li><li><a href="/wine/okayama/coltrada.html">コルトラーダ</a><span>新見市哲多町</span></li><li><a href="/wine/okayama/kurokamiyama-budoen.html">黒髪山葡萄園</a><span>新見市</span></li></ul>
+      </div>
+      <div class="intent-panel" id="grape-guide">
+        <h3>品種で選ぶ</h3>
+        <ul><li><span>シャルドネ</span><span>4件</span></li><li><span>ピオーネ</span><span>3件</span></li><li><span>マスカット・ベーリーA</span><span>3件</span></li><li><span>マスカット・オブ・アレキサンドリア</span><span>2件</span></li><li><span>ピノ・ノワール</span><span>1件</span></li></ul>
+      </div>
+
+      <div class="intent-panel" id="brand-guide">
+        <h3>代表銘柄で選ぶ</h3>
+        <ul><li><a href="/wine/okayama/domaine-tetta.html">ドメーヌ・テッタ</a><span>Chardonnay Barrique</span></li><li><a href="/wine/okayama/funao-winery.html">ふなおワイナリー</a><span>マスカット・オブ・アレキサンドリア スパークリング</span></li><li><a href="/wine/okayama/hiruzen-wine.html">ひるぜんワイン</a><span>山ぶどうワイン</span></li><li><a href="/wine/okayama/sapporo-wine-okayama.html">サッポロワイン岡山ワイナリー</a><span>グランポレール</span></li><li><a href="/wine/okayama/korezato-winery.html">是里ワイン醸造場</a><span>是里ワイン 赤</span></li><li><a href="/wine/okayama/la-grande-colline-japon.html">ラ・グランド・コリーヌ・ジャポン</a><span>ル・カノン</span></li><li><a href="/wine/okayama/coltrada.html">コルトラーダ</a><span>ル ピオニエ ペティアン</span></li><li><a href="/wine/okayama/kurokamiyama-budoen.html">黒髪山葡萄園</a><span>Blanc</span></li></ul>
+      </div>
+      <div class="intent-panel" id="area-guide">
+        <h3>エリアで選ぶ</h3>
+        <ul><li><span>新見市哲多町</span><span>3件</span></li><li><span>倉敷市船穂町</span><span>2件</span></li><li><span>真庭市蒜山</span><span>1件</span></li><li><span>赤磐市</span><span>1件</span></li><li><span>赤磐市是里地区</span><span>1件</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" style="background:var(--bg);" id="winery-list">
   <div class="sec-inner">
     <label class="sec-label">WINERIES</label>
     <h2 class="sec-title">岡山県のワイナリー <span style="font-size:0.6em;color:var(--text-muted);">10件</span></h2>
     <div class="sec-divider"></div>
-    
+
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
-      
+
     <a href="/wine/okayama/domaine-tetta.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
         <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">ドメーヌ・テッタ</h3>
@@ -443,6 +606,28 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <p style="font-size:11px;color:var(--text-muted);margin:4px 0 0;">銘柄: 是里ワイン 赤、是里ワイン 白</p>
       <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;" class="card-bar"></div>
     </a>
+    <a href="/wine/okayama/la-grande-colline-japon.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
+        <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">ラ・グランド・コリーヌ・ジャポン</h3>
+        <span style="font-size:10px;color:var(--text-muted);">Est. 2017</span>
+      </div>
+      <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.05em;">岡山市北区</p>
+      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;"></div>
+      <div class="grape-pills" style="margin-top:0;gap:4px;"><span class="grape-pill" style="font-size:9px;padding:3px 9px;">小公子</span></div>
+      <p style="font-size:11px;color:var(--text-muted);margin:4px 0 0;">銘柄: ル・カノン、ヴィノーブル・ド・ナカ</p>
+      <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;" class="card-bar"></div>
+    </a>
+    <a href="/wine/okayama/kurokamiyama-budoen.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
+        <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">黒髪山葡萄園</h3>
+        <span style="font-size:10px;color:var(--text-muted);">Est. 2014</span>
+      </div>
+      <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.05em;">新見市</p>
+      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;"></div>
+      <div class="grape-pills" style="margin-top:0;gap:4px;"><span class="grape-pill" style="font-size:9px;padding:3px 9px;">マスカット・ベーリーA</span><span class="grape-pill" style="font-size:9px;padding:3px 9px;">ソーヴィニヨン・ブラン</span></div>
+      <p style="font-size:11px;color:var(--text-muted);margin:4px 0 0;">銘柄: Blanc、Rouge</p>
+      <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;" class="card-bar"></div>
+    </a>
     <a href="/wine/okayama/okayama-wine-valley.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
         <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">岡山ワインバレー</h3>
@@ -465,11 +650,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h2 class="sec-title">その他のワイナリー</h2>
     <div class="sec-divider"></div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
-      
+
     <a href="/wine/okayama/sapporo-wine-okayama.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
         <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">サッポロワイン岡山ワイナリー</h3>
-        
+        <span style="font-size:10px;color:var(--text-muted);">Est. 1984</span>
       </div>
       <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.05em;">赤磐市</p>
       <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;"></div>
@@ -477,43 +662,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <p style="font-size:11px;color:var(--text-muted);margin:4px 0 0;">銘柄: グランポレール</p>
       <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;" class="card-bar"></div>
     </a>
-    <a href="/wine/okayama/la-grande-colline-japon.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
-      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
-        <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">ラ・グランド・コリーヌ・ジャポン</h3>
-        
-      </div>
-      <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.05em;">岡山市北区</p>
-      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;"></div>
-      <div class="grape-pills" style="margin-top:0;gap:4px;"><span class="grape-pill" style="font-size:9px;padding:3px 9px;">小公子</span></div>
-      <p style="font-size:11px;color:var(--text-muted);margin:4px 0 0;">銘柄: ル・カノン、ヴィノーブル・ド・ナカ</p>
-      <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;" class="card-bar"></div>
-    </a>
     <a href="/wine/okayama/coltrada.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
         <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">コルトラーダ</h3>
-        
+        <span style="font-size:10px;color:var(--text-muted);">Est. 2021</span>
       </div>
       <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.05em;">新見市哲多町</p>
       <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;"></div>
-      
+      <div class="grape-pills" style="margin-top:0;gap:4px;"><span class="grape-pill" style="font-size:9px;padding:3px 9px;">シャルドネ</span></div>
       <p style="font-size:11px;color:var(--text-muted);margin:4px 0 0;">銘柄: ル ピオニエ ペティアン</p>
-      <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;" class="card-bar"></div>
-    </a>
-    <a href="/wine/okayama/kurokamiyama-budoen.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
-      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
-        <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">黒髪山葡萄園</h3>
-        <span style="font-size:10px;color:var(--text-muted);">Est. 2014</span>
-      </div>
-      <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.05em;">新見市</p>
-      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;"></div>
-      <div class="grape-pills" style="margin-top:0;gap:4px;"><span class="grape-pill" style="font-size:9px;padding:3px 9px;">マスカット・ベーリーA</span><span class="grape-pill" style="font-size:9px;padding:3px 9px;">ソーヴィニヨン・ブラン</span></div>
-      
       <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;" class="card-bar"></div>
     </a>
     <a href="/wine/okayama/grapeship.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
         <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">グレープシップ</h3>
-        
+        <span style="font-size:10px;color:var(--text-muted);">Est. 2021</span>
       </div>
       <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;letter-spacing:0.05em;">倉敷市船穂町</p>
       <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;"><span class="wine-badge sparkling" style="font-size:9px;padding:2px 8px;">泡</span></div>
@@ -553,7 +716,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-text">岡山県のワイナリーは見学できますか？</span>
         <span class="faq-q-icon">▼</span>
       </div>
-      <div class="faq-a">岡山県では10件のワイナリーが見学・テイスティングを受け入れています。要予約のところが多いため、各ワイナリーの公式サイトでご確認ください。</div>
+      <div class="faq-a">岡山県では6件のワイナリーが見学・テイスティングを受け入れています。要予約のところが多いため、各ワイナリーの公式サイトでご確認ください。</div>
     </div>
     </div>
   </div>

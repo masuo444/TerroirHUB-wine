@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html",
+      "name": "Domaine Creation Farm - 山梨県のワイナリー",
+      "description": "令和5年創業。山梨県韮崎市穂坂の小規模ワイナリー「Domaine Creation Farm」。2023年に自社醸造所を完成させワイン生産を開始した韮崎市穂坂のワイナリー。甲州とマスカット・ベーリーAを中心に「おいしく、たのしく、うれしく」をコンセプトに、",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#winery",
       "name": "Domaine Creation Farm",
       "description": "2023年に自社醸造所を完成させワイン生産を開始した韮崎市穂坂のワイナリー。甲州とマスカット・ベーリーAを中心に「おいしく、たのしく、うれしく」をコンセプトに、ぶどう栽培から発酵まで一貫した生産体制を構築。",
       "url": "https://r.goope.jp/creation-farm/",
@@ -44,7 +61,36 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://r.goope.jp/creation-farm/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Domaine Creation Farmの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +114,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#wine-1",
+      "name": "Creation Farm 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Creation Farm"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#wine-2",
+      "name": "Creation Farm マスカット・ベーリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Creation Farm"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/creation-farm.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",

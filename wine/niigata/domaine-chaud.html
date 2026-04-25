@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html",
+      "name": "ドメーヌ・ショオ - 新潟県のワイナリー",
+      "description": "平成23年創業。新潟県新潟市西蒲区（角田浜）の小規模ワイナリー「ドメーヌ・ショオ」。国産ぶどう100%で少量生産を行う家族経営のワイナリー。「土から考えてシンプルにワインを造る」がコンセプト。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html",
+      "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#winery",
       "name": "ドメーヌ・ショオ",
       "description": "国産ぶどう100%で少量生産を行う家族経営のワイナリー。「土から考えてシンプルにワインを造る」がコンセプト。",
       "url": "https://domainechaud.net/",
@@ -54,7 +71,29 @@
         "メルロー",
         "シラー",
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://domainechaud.thebase.in/about"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ・ショオの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +117,32 @@
           "item": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#wine-1",
+      "name": "Domaine Chaud Cabernet Sauvignon",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Domaine Chaud"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#wine-2",
+      "name": "Domaine Chaud Chardonnay",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Domaine Chaud"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/domaine-chaud.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -384,7 +449,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ドメーヌ・ショオ</h1>
     <p class="hero-subtitle">Domaine Chaud</p>
     <p class="hero-en">Since 2011 — 新潟市西蒲区（角田浜）, 新潟県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://domainechaud.net/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -484,21 +549,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Domaine Chaud Cabernet Sauvignon</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Domaine Chaud Chardonnay</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -519,7 +584,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">新潟県 新潟市西蒲区（角田浜）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://domainechaud.thebase.in/about" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://domainechaud.thebase.in/about</a></p>
   </div>
 </section>

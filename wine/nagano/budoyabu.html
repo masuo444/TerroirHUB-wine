@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/budoyabu.html",
+      "name": "ぶどうやぶ - 長野県のワイナリー",
+      "description": "令和2年創業。長野県長野市（信州新町）のエステートワイナリー「ぶどうやぶ」。夫婦でワインぶどうの栽培をする長野市信州新町の山奥のワイナリー。2020年より開園し約2haに11品種のぶどうを栽培。複数品種を同日に収穫してブレンドするユニー",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#winery",
       "name": "ぶどうやぶ",
       "description": "夫婦でワインぶどうの栽培をする長野市信州新町の山奥のワイナリー。2020年より開園し約2haに11品種のぶどうを栽培。複数品種を同日に収穫してブレンドするユニークなアプローチで、白・赤・ロゼの3スタイルを展開する。",
       "url": "https://budoyabu.official.ec/",
@@ -56,7 +73,42 @@
         "カベルネ・ソーヴィニヨン",
         "シラー",
         "ヤマ・ソービニオン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/16753/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ぶどうやぶの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -82,8 +134,58 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#wine-1",
+      "name": "シロワヰン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ぶどうやぶ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#winery"
+      },
+      "description": "複数白品種同日収穫ブレンド"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#wine-2",
+      "name": "アカワヰン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ぶどうやぶ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#winery"
+      },
+      "description": "複数赤品種同日収穫ブレンド"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#wine-3",
+      "name": "ジンギスワヰン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ぶどうやぶ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/budoyabu.html#winery"
+      },
+      "description": "ジンギスカンBBQとのペアリング"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ぶどうやぶの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "ぶどうやぶの代表的なワインを教えてください",
@@ -496,7 +598,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+
       <h3 class="brand-name">シロワヰン</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">複数白品種同日収穫ブレンド</p>
@@ -506,7 +608,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">アカワヰン</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">複数赤品種同日収穫ブレンド</p>
@@ -516,7 +618,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">ジンギスワヰン</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">ジンギスカンBBQとのペアリング</p>
@@ -532,7 +634,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">長野県長野市信州新町日原東1276-1</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://budoyabu.official.ec/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://budoyabu.official.ec/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">長野県長野市信州新町日原東1276-1</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://budoyabu.official.ec/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://budoyabu.official.ec/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -540,7 +642,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 長野市（信州新町）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/16753/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/16753/</a></p>
   </div>
 </section>
@@ -555,34 +657,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ぶどうやぶの代表的なワインを教えてください</span>
+        <span class="faq-q-text">ぶどうやぶの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄はシロワヰン、アカワヰン、ジンギスワヰンなどがあります。複数白品種同日収穫ブレンド</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ぶどうやぶの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">ぶどうやぶの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は長野県長野市信州新町日原東1276-1です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はシロワヰン、アカワヰン、ジンギスワヰンなどがあります。複数白品種同日収穫ブレンド</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ぶどうやぶはいつ創業しましたか？</span>
+        <span class="faq-q-text">ぶどうやぶの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">令和2年（2020年）に創業しました。長野県を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は長野県長野市信州新町日原東1276-1です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ぶどうやぶではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">ぶどうやぶはいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にソーヴィニヨン・ブラン、セミヨン、シャルドネ、プティ・マンサン、アルバリーニョ、プティ・ヴェルド、メルロー、カベルネ・ソーヴィニヨン、シラー、ヤマ・ソービニオンを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">令和2年（2020年）に創業しました。長野県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ぶどうやぶではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にソーヴィニヨン・ブラン、セミヨン、シャルドネ、プティ・マンサン、アルバリーニョ、プティ・ヴェルド、メルロー、カベルネ・ソーヴィニヨン、シラー、ヤマ・ソービニオンを使用しています。</div>
     </div>
     </div>
   </div>

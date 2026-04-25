@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>山梨 wineries | Terroir HUB WINE</title>
+<meta name="description" content="A curated list of wineries in 山梨.">
+<link rel="canonical" href="https://wine.terroirhub.com/wine/en/yamanashi/index.html">
+<link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/yamanashi/">
+<link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/yamanashi/index.html">
+<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/yamanashi/index.html">
+<link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/yamanashi/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --bg:#FAF8F5;--surface:#FFFFFF;--surface-warm:#F5F0EB;
+  --accent:#722F37;--accent-light:#A86B74;--accent-pale:#F5EAE8;
+  --gd:rgba(114,47,55,0.08);
+  --gb:rgba(114,47,55,0.2);--text:#1A1814;--text-body:#3D3830;
+  --text-muted:#8A8070;--green:#4caf7d;--red:#e05c5c;--border:#E5DDD5;
+  --kuro:#2A2420;--kuro-light:#4A4038;
+  --gold-warm:#9A7B4A;--indigo:#3D5A80;--hover:#F5F0EB;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;overflow-x:hidden;}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
+
+/* ── NAV ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;background:rgba(250,248,245,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
+.nav-logo{font-family:'Zen Old Mincho',serif;font-size:18px;font-weight:700;letter-spacing:0.06em;color:var(--text);}
+.nav-logo-sub{font-size:10px;color:var(--text-muted);letter-spacing:0.06em;margin-left:8px;font-family:'DM Sans',sans-serif;}
+.nav-mon{width:32px;height:32px;border:1px solid var(--gb);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Zen Old Mincho',serif;font-size:13px;color:var(--accent);}
+.nav-name{font-family:'Zen Old Mincho',serif;font-size:16px;letter-spacing:0.08em;color:var(--text);}
+.nav-r{display:flex;align-items:center;gap:5px;}
+.lb{background:none;border:1px solid var(--border);font-size:10px;letter-spacing:0.08em;padding:4px 10px;border-radius:2px;color:var(--text-muted);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;text-decoration:none;}
+.lb.active{border-color:var(--gb);color:var(--accent);background:var(--gd);}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding-top:54px;}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 25% 45%,rgba(114,47,55,0.04) 0%,transparent 55%),
+    radial-gradient(ellipse 60% 80% at 75% 30%,rgba(229,221,213,0.3) 0%,transparent 50%),
+    linear-gradient(180deg,#FAF8F5 0%,#F5F0EB 100%);
+}
+.hero-bg::after{content:'';position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 48px,rgba(114,47,55,0.4) 48px,rgba(114,47,55,0.4) 49px),repeating-linear-gradient(90deg,transparent,transparent 48px,rgba(114,47,55,0.4) 48px,rgba(114,47,55,0.4) 49px);}
+.hero-content{position:relative;z-index:1;text-align:center;max-width:640px;padding:0 24px;animation:fadeUp 1.1s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--gb);border-radius:20px;padding:5px 16px;font-size:10px;letter-spacing:0.22em;color:var(--accent);margin-bottom:24px;}
+.badge-dot{width:5px;height:5px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero-est{font-size:10px;letter-spacing:0.45em;color:var(--text-muted);margin-bottom:12px;}
+.hero-title{font-family:'Zen Old Mincho',serif;font-size:clamp(42px,10vw,68px);font-weight:700;color:var(--text);line-height:1.1;margin-bottom:4px;letter-spacing:0.08em;}
+.hero-subtitle{font-family:'Zen Old Mincho',serif;font-size:clamp(16px,3vw,22px);color:var(--text-muted);letter-spacing:0.18em;margin-bottom:8px;}
+.hero-en{font-family:'Cormorant Garamond',serif;font-size:clamp(14px,2.5vw,20px);font-weight:300;color:var(--accent);letter-spacing:0.2em;margin-bottom:24px;font-style:italic;}
+.hero-tagline{font-family:'Noto Serif JP',serif;font-size:clamp(12px,2vw,14px);color:var(--text-body);line-height:2.1;margin-bottom:38px;font-weight:300;}
+.hero-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.btn-p{background:var(--accent);border:none;color:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 26px;border-radius:2px;cursor:pointer;transition:all 0.25s;letter-spacing:0.06em;}
+.btn-p:hover{background:var(--accent-light);}
+.btn-s{background:none;border:1px solid var(--gb);color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;padding:12px 26px;border-radius:2px;cursor:pointer;transition:all 0.25s;letter-spacing:0.06em;}
+.btn-s:hover{background:var(--gd);}
+.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--text-muted);font-size:9px;letter-spacing:0.2em;animation:bob 2s ease-in-out infinite;}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(5px)}}
+.scroll-line{width:1px;height:22px;background:linear-gradient(to bottom,transparent,var(--text-muted));}
+
+/* ── MOTTO BANNER ── */
+.motto{background:var(--surface-warm);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:22px 24px;text-align:center;}
+.motto-txt{font-family:'Zen Old Mincho',serif;font-size:clamp(16px,3vw,22px);color:var(--accent);letter-spacing:0.3em;}
+.motto-sub{font-size:12px;color:var(--text-body);margin-top:6px;letter-spacing:0.15em;}
+
+/* ── SECTIONS ── */
+.section{padding:72px 24px;}
+.sec-inner{max-width:960px;margin:0 auto;}
+.sec-label{font-size:11px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;}
+.sec-title{font-family:'Zen Old Mincho',serif;font-size:clamp(22px,4vw,34px);color:var(--text);margin-bottom:14px;line-height:1.3;}
+.sec-divider{width:32px;height:1px;background:var(--accent);opacity:0.5;margin:12px 0 22px;}
+.sec-body{font-size:15px;color:var(--text-body);line-height:2.1;font-family:'Noto Serif JP',serif;font-weight:300;}
+
+/* ── STORY ── */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.story-visual{background:var(--surface-warm);border:1px solid var(--border);border-radius:6px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.story-visual-inner{width:100%;height:100%;background:linear-gradient(180deg,#ebe5dd,#ddd5cb 50%,#d5cdc3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;}
+.bottle{width:72px;height:168px;background:linear-gradient(180deg,#2a2420,#1a1410);border-radius:4px 4px 7px 7px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.25),inset 0 1px 0 rgba(255,255,255,0.05);}
+.bottle-neck{position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:20px;height:24px;background:linear-gradient(180deg,#2a2420,#1a1410);border-radius:3px 3px 0 0;}
+.bottle-lbl{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:54px;background:rgba(240,232,220,0.92);border-radius:1px;padding:5px 0;text-align:center;}
+.bottle-lbl-txt{font-family:'Zen Old Mincho',serif;font-size:11px;color:#2a1a08;writing-mode:vertical-rl;line-height:1.4;letter-spacing:0.1em;}
+.bottle-lbl-sub{font-size:8px;color:#6a4a28;letter-spacing:0.12em;display:block;margin-top:3px;}
+.story-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(235,229,221,0.95),transparent);padding:22px 16px 16px;font-family:'Cormorant Garamond',serif;font-size:12px;color:var(--text-muted);font-style:italic;text-align:center;letter-spacing:0.1em;}
+.facts{display:flex;flex-direction:column;gap:20px;margin-top:26px;}
+.fact{display:flex;gap:12px;align-items:flex-start;}
+.fact-num{font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--accent);line-height:1;flex-shrink:0;width:64px;}
+.fact-body{font-size:15px;color:var(--text-body);line-height:1.9;padding-top:4px;}
+.fact-lbl{font-size:11px;letter-spacing:0.12em;color:var(--text-muted);text-transform:uppercase;margin-bottom:3px;}
+
+/* ── BRANDS ── */
+.brands-section{background:var(--surface-warm);}
+.brands-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);}
+.brand-card{background:var(--surface);padding:28px 22px;transition:background 0.22s;position:relative;overflow:hidden;}
+.brand-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.3s;}
+.brand-card:hover{background:var(--hover);}
+.brand-card:hover::before{opacity:1;}
+.brand-img-wrap{margin-bottom:18px;display:flex;justify-content:center;}
+.brand-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;background:var(--surface-warm);border:1px solid var(--border);}
+.brand-img-placeholder{width:100%;aspect-ratio:1/1;border-radius:6px;background:linear-gradient(135deg,var(--surface-warm),#DDD5CB);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:11px;letter-spacing:0.1em;}
+.brand-name{font-family:'Zen Old Mincho',serif;font-size:19px;color:var(--text);margin-bottom:3px;}
+.brand-type{font-size:9px;letter-spacing:0.2em;color:var(--accent);margin-bottom:6px;}
+.brand-desc{font-size:11.5px;color:var(--text-body);line-height:1.85;margin-bottom:14px;}
+
+/* ── WINE STYLE BADGE ── */
+.wine-badge{display:inline-flex;align-items:center;gap:4px;font-size:10px;letter-spacing:0.08em;padding:3px 10px;border-radius:2px;margin-bottom:8px;}
+.wine-badge.red{background:rgba(114,47,55,0.08);color:var(--accent);border:1px solid rgba(114,47,55,0.2);}
+.wine-badge.white{background:rgba(200,200,180,0.1);color:#7a7a50;border:1px solid rgba(200,200,180,0.3);}
+.wine-badge.rose{background:rgba(200,120,130,0.08);color:#a06070;border:1px solid rgba(200,120,130,0.2);}
+.wine-badge.sparkling{background:rgba(60,100,180,0.06);color:#3a5a90;border:1px solid rgba(60,100,180,0.15);}
+.wine-badge.sweet{background:rgba(180,140,60,0.08);color:#8a7030;border:1px solid rgba(180,140,60,0.2);}
+
+/* ── GRAPE TAG ── */
+.grape-tag{font-size:10px;color:var(--accent);letter-spacing:0.1em;margin-bottom:6px;}
+
+/* ── GI BADGE ── */
+.gi-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;letter-spacing:0.12em;padding:4px 12px;border-radius:2px;background:var(--accent-pale);border:1px solid var(--gb);color:var(--accent);margin-bottom:10px;}
+
+/* ── AWARDS ── */
+.brand-awards{margin-top:10px;display:flex;flex-direction:column;gap:4px;}
+.award-item{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--text-body);}
+.award-dot{width:5px;height:5px;border-radius:50%;background:var(--gold-warm);flex-shrink:0;}
+.award-year{font-family:'DM Sans',sans-serif;color:var(--text-muted);width:36px;flex-shrink:0;}
+.award-name{color:var(--text-body);}
+.award-rank{color:var(--accent);font-weight:500;}
+
+/* ── FOOTER ── */
+.site-footer{background:#1A1814;padding:56px 24px 40px;color:rgba(255,255,255,0.5);font-size:13px;text-align:center;}
+.footer-brand{margin-bottom:32px;}
+.footer-tagline{font-size:13px;color:rgba(255,255,255,0.6);letter-spacing:0.15em;margin-bottom:18px;}
+.footer-logo{font-family:'Zen Old Mincho',serif;font-size:28px;color:#fff;font-weight:600;letter-spacing:0.08em;}
+.footer-logo .accent{color:var(--accent);}
+.footer-nav{max-width:960px;margin:0 auto 28px;padding:28px 0 0;border-top:1px solid rgba(255,255,255,0.15);display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:0;}
+.footer-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;padding:0 20px;border-right:1px solid rgba(255,255,255,0.25);line-height:1;transition:color 0.2s;}
+.footer-nav a:last-child{border-right:none;}
+.footer-nav a:hover{color:#fff;}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:0.08em;}
+
+/* ── FAB ── */
+.fab{position:fixed;bottom:24px;right:20px;z-index:200;display:flex;align-items:center;gap:9px;background:var(--kuro);border:none;border-radius:26px;padding:11px 18px;cursor:pointer;box-shadow:0 8px 32px rgba(42,36,32,0.3),0 2px 10px rgba(0,0,0,0.15);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:#fff;letter-spacing:0.04em;transition:all 0.3s;animation:fabIn 0.8s 0.5s ease both;}
+@keyframes fabIn{from{opacity:0;transform:translateY(20px) scale(0.9)}to{opacity:1;transform:translateY(0) scale(1)}}
+.fab:hover{background:var(--kuro-light);transform:translateY(-2px);}
+.fab-pulse{position:absolute;top:0;right:0;width:9px;height:9px;background:var(--green);border-radius:50%;border:2px solid var(--surface);animation:pulse 2s infinite;}
+
+/* ── CONCIERGE ── */
+.overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,0.4);backdrop-filter:blur(8px);display:none;align-items:flex-end;justify-content:center;}
+.overlay.open{display:flex;}
+.panel{width:100%;max-width:500px;height:88vh;background:var(--surface);border:1px solid var(--border);border-radius:16px 16px 0 0;display:flex;flex-direction:column;transform:translateY(100%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);overflow:hidden;box-shadow:0 -20px 60px rgba(0,0,0,0.15);}
+.overlay.open .panel{transform:translateY(0);}
+.p-handle{width:34px;height:4px;background:var(--border);border-radius:2px;margin:10px auto 0;flex-shrink:0;}
+.p-hdr{display:flex;align-items:center;justify-content:space-between;padding:11px 16px 9px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.p-hdr-l{display:flex;align-items:center;gap:10px;}
+.p-av{width:34px;height:34px;border:1px solid var(--gb);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Zen Old Mincho',serif;font-size:14px;color:var(--kuro);background:rgba(42,36,32,0.06);}
+.p-title{font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);}
+.p-status{font-size:9px;color:var(--green);letter-spacing:0.1em;display:flex;align-items:center;gap:3px;}
+.p-dot{width:5px;height:5px;background:var(--green);border-radius:50%;animation:pulse 2s infinite;}
+.p-close{background:none;border:1px solid var(--border);color:var(--text-muted);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+.p-close:hover{color:var(--text);}
+.chat{flex:1;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:10px;}
+.chat::-webkit-scrollbar{width:2px;}
+.chat::-webkit-scrollbar-thumb{background:rgba(114,47,55,0.15);}
+.msg{display:flex;gap:8px;animation:fu 0.35s ease both;}
+@keyframes fu{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.msg.user{flex-direction:row-reverse;}
+.av{width:26px;height:26px;border-radius:50%;flex-shrink:0;border:1px solid var(--gb);display:flex;align-items:center;justify-content:center;font-family:'Zen Old Mincho',serif;font-size:10px;color:var(--kuro);background:rgba(42,36,32,0.06);}
+.msg.user .av{border-color:var(--border);background:var(--surface-warm);color:var(--text-muted);}
+.bubble{max-width:84%;padding:9px 12px;border-radius:2px;font-size:13px;line-height:1.85;letter-spacing:0.02em;color:var(--text-body);}
+.msg.butler .bubble{background:var(--accent-pale);border:1px solid rgba(114,47,55,0.12);border-left:2px solid rgba(114,47,55,0.4);font-family:'Noto Serif JP',serif;font-weight:300;}
+.msg.user .bubble{background:var(--surface-warm);border:1px solid var(--border);}
+.typing{display:flex;gap:4px;align-items:center;}
+.td{width:4px;height:4px;background:rgba(114,47,55,0.3);border-radius:50%;animation:tp 1.2s infinite;}
+.td:nth-child(2){animation-delay:.2s}.td:nth-child(3){animation-delay:.4s}
+@keyframes tp{0%,80%,100%{opacity:.3;transform:scale(.8)}40%{opacity:1;transform:scale(1)}}
+.sugs{padding:0 16px 7px;display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;}
+.sug{background:none;border:1px solid var(--border);color:var(--text-body);font-size:10px;padding:4px 9px;border-radius:2px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;}
+.sug:hover{border-color:var(--gb);color:var(--accent);background:var(--gd);}
+.inp-row{padding:9px 14px 16px;border-top:1px solid var(--border);display:flex;gap:7px;flex-shrink:0;}
+#chat-inp{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:2px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;padding:9px 11px;outline:none;resize:none;transition:border-color 0.2s;line-height:1.5;}
+#chat-inp:focus{border-color:var(--gb);}
+#chat-inp::placeholder{color:var(--text-muted);}
+#chat-send{background:var(--kuro);border:none;color:#fff;width:36px;height:36px;border-radius:2px;cursor:pointer;font-size:15px;font-weight:700;transition:all 0.2s;flex-shrink:0;}
+#chat-send:hover{background:var(--kuro-light);}
+@media(min-width:701px){.overlay{align-items:center;}.panel{border-radius:8px;height:80vh;}}
+@media(max-width:640px){.story-grid{grid-template-columns:1fr;gap:24px;}.story-visual{aspect-ratio:1/1;max-width:320px;margin:0 auto;border-radius:8px;}.brands-grid{grid-template-columns:1fr;}.section{padding:48px 20px;}.sec-title{font-size:24px;}}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{margin-top:54px;padding:10px 22px;background:var(--surface-warm);border-bottom:1px solid var(--border);font-size:12px;color:var(--text-muted);letter-spacing:0.05em;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
+.breadcrumb a:hover{color:var(--accent);}
+.breadcrumb-sep{color:var(--border);font-size:10px;}
+.breadcrumb-current{color:var(--text-body);font-weight:500;}
+
+/* ── GRAPE PILLS ── */
+.grape-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+.grape-pill{display:inline-flex;align-items:center;font-size:11px;letter-spacing:0.1em;padding:5px 14px;border-radius:20px;background:var(--accent-pale);border:1px solid var(--gb);color:var(--accent);}
+.grape-pill.main{background:rgba(114,47,55,0.14);border-color:rgba(114,47,55,0.35);font-weight:600;}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:20px;}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-item:last-child{border-bottom:none;}
+.faq-q{display:flex;align-items:center;gap:12px;padding:16px 20px;cursor:pointer;font-size:14px;font-family:'Noto Serif JP',serif;color:var(--text);letter-spacing:0.04em;transition:background 0.2s;background:var(--surface);user-select:none;}
+.faq-q:hover{background:var(--hover);}
+.faq-q-q{color:var(--accent);font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;flex-shrink:0;line-height:1;}
+.faq-q-text{flex:1;}
+.faq-q-icon{color:var(--text-muted);font-size:10px;flex-shrink:0;transition:transform 0.3s;}
+.faq-item.open .faq-q-icon{transform:rotate(180deg);}
+.faq-a{display:none;padding:14px 20px 16px;font-size:13.5px;color:var(--text-body);line-height:2;font-family:'Noto Serif JP',serif;font-weight:300;background:var(--surface-warm);border-top:1px solid var(--border);}
+.faq-item.open .faq-a{display:block;}
+
+/* ── BACK LINK ── */
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--text-muted);text-decoration:none;letter-spacing:0.08em;padding:6px 0;transition:color 0.2s;}
+.back-link:hover{color:var(--accent);}
+
+/* ── GRAPE PETAL ANIMATION ── */
+.petal{position:absolute;width:6px;height:6px;background:rgba(114,47,55,0.05);border-radius:50%;animation:petalFall 7s ease-in infinite;z-index:1;pointer-events:none;}
+@keyframes petalFall{
+  0%{transform:translate(0,0) scale(1) rotate(0deg);opacity:0;}
+  10%{opacity:0.3;}
+  50%{opacity:0.15;}
+  100%{transform:translate(20px,100vh) scale(2) rotate(180deg);opacity:0;}
+}
+.petal:nth-child(2){left:25%;animation-delay:1.5s;animation-duration:9s;}
+.petal:nth-child(3){left:50%;animation-delay:3s;animation-duration:8s;width:8px;height:8px;}
+.petal:nth-child(4){left:75%;animation-delay:4.5s;animation-duration:10s;}
+
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-top">
+    <a href="/en/" class="nav-logo">Terroir HUB <span style="color:#722F37">WINE</span></a>
+    <a href="/en/" class="nav-back">Back to Japan</a>
+    <a href="/wine/search/" class="nav-page">Search</a>
+    <a href="/wine/guide/" class="nav-page">Guides</a>
+    <a href="/wine/plans/" class="nav-page">Plans</a>
+  </div>
+</nav>
+<section class="hero" style="min-height:auto;">
+  <div class="hero-left">
+    <div class="hero-catch">TERROIR HUB WINE</div>
+    <h1 class="hero-brand">山梨 wineries</h1>
+    <p class="hero-sub">A curated list of wineries in 山梨.</p>
+  </div>
+  <div class="hero-right"><img class="hero-right-img" src="/img/map-japan-filled.jpg" alt="山梨"></div>
+</section>
+<section class="section">
+  <div class="inner">
+    <div class="feature-grid">
+      <a class="feature-card" href="/wine/en/yamanashi/grace-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">グレイスワイン（中央葡萄酒）</div><div class="fc-desc">日本の美しさをワインに表現する。日本には折り目正しく鮮やかに切り替わる四季があります。日本の風土で培われてきた繊細な味わいの感性と丁寧で堅牢な技は、日本文化の個性のひとつになっています。グレイスワインは、日本の良さを選び抜いてワインに包み込</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/chateau-mercian.html"><div class="fc-icon">🍷</div><div class="fc-name">シャトー・メルシャン 勝沼ワイナリー</div><div class="fc-desc">シャトー・メルシャンの基幹となるワイナリーです。ぜひ、お気軽にご来場ください。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/lumiere.html"><div class="fc-icon">🍷</div><div class="fc-name">ルミエール</div><div class="fc-desc">本物のワインを造るには、本物のブドウを育てること。創業以来の教えを守り、自然の力を活かした農場整備とブドウ栽培に注力。ヨーロッパ品種導入と伝統的な醸造技術、若い醸造家の情熱を組み合わせ、革新的なものづくりを実践している。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/mannswines-katsunuma.html"><div class="fc-icon">🍷</div><div class="fc-name">マンズワイン 勝沼ワイナリー</div><div class="fc-desc">日本がおいしくなるワイン。日本の食文化に寄り添い、食卓に楽しさと華やぎをお届けするワインを造り続けています。マンズワインの創業地であり、海外コンクールで受賞し高品質ワインでエリアを牽引してきたワイナリーです。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/yamatowine.html"><div class="fc-icon">🍷</div><div class="fc-name">大和葡萄酒（ハギーワイン）</div><div class="fc-desc">日本古来の葡萄品種を大切と考え、日本の風土と環境に合うワインの製造に取り組んでいる。「個性、凝縮、複雑、エレガント」をワイン製造の哲学とし、ひとつひとつの作業に努力を惜しまず、手間暇をかけたワイン造りをおこなっている。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/chateau-katsunuma.html"><div class="fc-icon">🍷</div><div class="fc-name">シャトー勝沼</div><div class="fc-desc">味にこだわり、香りにこだわり、素材に製法にこだわる。すべては豊かに流れる時にめぐり会うために。ぶどうの栽培から醸造、販売まで、全て一貫した手作り。本場フランス仕込みのワイン造り。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/marufuji-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">丸藤葡萄酒工業（ルバイヤートワイン）</div><div class="fc-desc">明治二十三年五月、創業者大村治作は、自宅の庭に小さな葡萄酒醸造場を造りました。親子四代、一人でも多くの方々に本物の美味しさをわかっていただくことを喜びにワイン造り一筋にこつこつと歩んできました。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/haramo-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">原茂ワイン</div><div class="fc-desc">創業1924年、ぶどう棚の中の小さなワイン醸造所。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kurambon-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">くらむぼんワイン</div><div class="fc-desc">人間が機械的にワインを製造するものではなく、ブドウがワインになるのを職人が手助けしていくもの。より自然な味わいのするワイン造りを目指し、2007年より化学農薬・殺虫剤を不使用の自然栽培を実践。自社栽培ブドウでは土着酵母による発酵を採用し、最</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/katsunuma-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">勝沼醸造</div><div class="fc-desc">たとえ一樽でも最高のものを。この想いはいつまでも変わりません。最高品質の甲州を、世界へ。甲州品種に特化し、国際展開を積極的に推進しています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/shirayuri-jozo.html"><div class="fc-icon">🍷</div><div class="fc-name">白百合醸造（ロリアンワイン）</div><div class="fc-desc">ロリアン（L'ORIENT）は「東洋」を意味するフランス語で、ヨーロッパに劣らぬ高水準のワイン造りを目指して命名。「ローカル」であることを最優先とし、地元を大切にすることがおいしいワインづくりの基本と考えている。「勝沼を世界へ」を理念に掲げ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/maruki-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">まるき葡萄酒</div><div class="fc-desc">明治10年から続くまるき葡萄酒の歴史。現存する日本最古のワイナリー。すべてはぶどうのために。歴史に裏付けられた革新を追求しています。不耕起草生栽培と減農薬による極力自然な環境でのぶどう栽培を実践しています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/sadoya.html"><div class="fc-icon">🍷</div><div class="fc-name">サドヤワイナリー</div><div class="fc-desc">甲府は明治初期の「ワイン発祥の地」として知られ、サドヤは大正6年に創業。1936年に善光寺地区でぶどう栽培を開始し、フランスのワイン製造方法を参考に「食と共に楽しむワインのある豊かな食卓」という創業理念のもと事業を展開しています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/chateau-sakaori.html"><div class="fc-icon">🍷</div><div class="fc-name">シャトー酒折ワイナリー</div><div class="fc-desc">リーズナブルかつ高品質なワインを、特別な日だけでなく日常的に楽しんでいただきたいという思いのもと、ワイン造りに取り組んでいます。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/monde-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">モンデ酒造</div><div class="fc-desc">詰めているのは感動です。山梨・石和温泉郷にあるワイナリー。この地の豊かな自然と、ぶどうへのひたむきな想いをもったつくり手たちが、ここでしか味わえないワインを生み出しています。缶ワイン製造のパイオニアとして、気取らず、気軽に、いつもの時間にふ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/mars-yamanashi.html"><div class="fc-icon">🍷</div><div class="fc-name">本坊酒造 マルス山梨ワイナリー</div><div class="fc-desc">地域に根ざし、地域の資源を活用した酒造りを見学できる施設です。日本ワイン発祥の地である山梨での約60年以上のワイン造りを続けています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/suntory-tominooka.html"><div class="fc-icon">🍷</div><div class="fc-name">サントリー 登美の丘ワイナリー</div><div class="fc-desc">1909年にぶどう園として開設され、1936年にサントリーが経営を継承。南アルプスを望む標高約600mの丘陵地に広がる自社農園で、「世界を感動させる日本ワインを」をテーマに、自園産ぶどう100%にこだわったワイン造りを続けています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kizan-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">機山洋酒工業（キザンワイン）</div><div class="fc-desc">ワインは大地に育まれるもの。機山ワインは自家ぶどう園のぶどうを主体に東山梨地区で栽培されたぶどうのみを使ったまさに山梨のワインです。周囲に山々が折り重なる甲府盆地の北東に位置する甲州市塩山に機山ワインはあります。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/chateau-jun.html"><div class="fc-icon">🍷</div><div class="fc-name">シャトージュン</div><div class="fc-desc">ファッションメーカー「JUN」のワイナリーとして誕生。「ぶどうに正直なワインを目指す」をコンセプトに、甲州種を中心に複数品種を栽培・醸造しています。「YOU ARE CULTURE.」を企業理念に、ワインを通じてライフスタイルを豊かにするこ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/hojo-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">ホンジョーワイン（岩崎醸造）</div><div class="fc-desc">昭和16年（1941年）、130名のぶどう農家が「岩崎葡萄酒共同醸造組合」を設立。昭和27年（1952年）に株式会社に組織変更。日本の固有品種「甲州」の発祥の地・勝沼で、自然と人をつなぐワイン造りを続けています。「和敬静寂」「侘び・寂び」「</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/mgvs-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">MGVsワイナリー</div><div class="fc-desc">「実り豊かな土地を未来につなげるために」をコンセプトに、葡萄栽培からワイン販売を一元的に行い、地域の発展に寄与することを目指しています。甲州とマスカット・ベーリーAのスペシャリストとして、世界に挑戦します。半導体製造の株式会社塩山製作所がワ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/fujiclair-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">フジクレールワイナリー</div><div class="fc-desc">清らかに澄みきった、まっすぐなワイナリー。世界で評価される日本の食に合うワインの製造に取り組んでいます。甲州盆地の南東に位置する京戸川扇状地にワイナリーを構え、山梨各地から集められたブドウを使い、丁寧にワイン造りを行っています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/sainte-neige.html"><div class="fc-icon">🍷</div><div class="fc-name">サントネージュワイン</div><div class="fc-desc">サントネージュとは、フランス語で『聖なる雪』を意味します。日本の最高峰である富士山の頂きにかかる雪が名前の由来です。その気高く清廉な名に恥じぬようクオリティの高いワインを追求しています。よいワインはよいぶどうから。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/shion-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">四恩醸造</div><div class="fc-desc">横浜にある幼稚園の自然教育施設として2007年に誕生したワイナリーです。山梨県牧丘町の巨峰を中心に、家族の時間を大事に、食卓を華やかに彩り、家族と楽しいひとときを実現することを目指しています。料理との相性の良い辛口ワインを得意としています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/aramaki-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">新巻葡萄酒</div><div class="fc-desc">昭和5年創業、情熱と伝統を90年以上受け継ぐワイナリー。自社栽培のぶどうのみを使用し、自然との共鳴をコンセプトに山梨の山々に囲まれた恵まれた環境で醸造を続けています。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/charmant-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">シャルマンワイン（江井ヶ嶋酒造 山梨ワイナリー）</div><div class="fc-desc">ぶどうの栽培から熟成まで取り組んでいる栽培醸造ワイナリー。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/98wines.html"><div class="fc-icon">🍷</div><div class="fc-name">98WINEs</div><div class="fc-desc">「98winesワイナリー」は「ワインの持つ力」を創造する場所として設立されました。ワインを通して出会う人たちはもちろんのこと、直接ワインとは関係がないけれどわたしたちの考えに賛同していただける世界のあらゆるジャンルの新しい友人とジョイント</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/soryuwine.html"><div class="fc-icon">🍷</div><div class="fc-name">蒼龍葡萄酒</div><div class="fc-desc">ワインのふるさと勝沼町の草分け的メーカー。厳選した勝沼産ぶどうを主体にバラエティーに富んだワインを提供し、無添加ワインを元祖として多くのファンに愛飲されています。直営売店には常時約40種類のワインを取り揃えており、初心者でも飲みやすいワイン</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/alps-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">アルプスワイン</div><div class="fc-desc">山梨の小さなワイナリー。'Small Winery、High quality'の合言葉を掲げ、家族経営で丁寧なワイン造りを行っています。創業60周年を機に誕生したプロダクトブランド「FOX VILLAGE」では、ぶどう本来の成分をそぎ落とさ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kisvin-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">Kisvin Winery</div><div class="fc-desc">畑にこだわる。ぶどうにこだわる。妥協しないワインづくり。ぶどう農家3代目の荻原康弘が「ぶどう作りがワイン造りだ」という考えのもと2013年に設立。カリフォルニア・ブルゴーニュで研鑽を積んだ醸造家・斎藤まゆを迎え、自社農園産ぶどうのみを使用し</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/cantina-hiro.html"><div class="fc-icon">🍷</div><div class="fc-name">カンティーナ・ヒロ</div><div class="fc-desc">丘の上の小さなワイナリー。Our wines conceal timeless treasures…～私たちのワインは時代を超えた宝物を秘めている～。補糖・補酸なしでぶどう本来のポテンシャルをワインに閉じ込めるアプローチを取り、果実感と香り</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/spring-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">スプリングワイン</div><div class="fc-desc">2024年4月に醸造場を新設し、同年7月に酒類製造免許を取得。9月より醸造を開始した山梨の新鋭ワイナリー。代表の佐野いずみ氏が農業生産法人での葡萄栽培と醸造所での研修を経て独立開業した。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/domaine-kayagatake.html"><div class="fc-icon">🍷</div><div class="fc-name">ドメーヌ茅ヶ岳</div><div class="fc-desc">茅ヶ岳南麓・韮崎に拠点を置く小規模ワイナリー。代表の安部正彦氏が脱サラ後に山梨大学で準ワイン化学士を取得し2015年に初ヴィンテージをリリース。2017年に現ワイナリーへ移転。初ヴィンテージが「日本で飲もう最高のワイン」でベスト日本ワインに</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/asaya-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">あさや葡萄酒</div><div class="fc-desc">産地の風土を生かしたワイン造りに励んでいます。赤・白・ロゼ・スパークリングなど複数種類のワインを製造。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/enzan-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">塩山洋酒醸造</div><div class="fc-desc">1957年に果実生産者組合を母体として設立。1959年に塩山洋酒醸造株式会社に社名変更。日本固有品種のみを使用し、欧州系品種は一切栽培・醸造しない方針。山梨県産ぶどうのみ使用。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kai-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">甲斐ワイナリー</div><div class="fc-desc">自社畑でブドウ栽培を行い、隣接圃場・醸造場を備えたワイナリー。JR塩山駅から徒歩12分。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/nikkawa-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">Nikkawa Winery</div><div class="fc-desc">ぶどう栽培者と、ワイン醸造家の顔の見えるワイナリーを目指して。契約農家との緊密な関係を重視した丁寧なワイン造り。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/belle-vigne.html"><div class="fc-icon">🍷</div><div class="fc-name">ラベルヴィーニュ</div><div class="fc-desc">勝沼の日川沿いに2019年創業した小さなワイナリー。「勝沼ワイン村」に参加する8ワイナリーの一つ。土づくりから自然との調和を考え、リュットレゾネによる栽培とブドウ育成の延長でのワイン造りを追求。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/toumu-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">東夢ワイナリー</div><div class="fc-desc">勝沼ワイン村の核となるワイナリー。上日川ダムトンネルを活用したダム貯蔵ワインで知られる。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kinjyo-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">錦城葡萄酒</div><div class="fc-desc">ぶどう作りの一等地で作られた、小さなワイナリーによる手作りのワインです。勝沼の葡萄農家が自らの消費目的で製造を開始したことが起源。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/hishiyama-chuo-jozo.html"><div class="fc-icon">🍷</div><div class="fc-name">菱山中央醸造</div><div class="fc-desc">地域の農家約50軒が栽培した甲州ぶどうを持ち寄り、木枠のバスケット絞り機による手搾りで仕込む地域農家共同出資型の小規模ワイン蔵。昭和初期、国から菱山地区の三森家にぶどう酒の醸造免許が下りたのを起源とする。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/ohizumi-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">大泉葡萄酒</div><div class="fc-desc">岩崎地区のぶどう栽培農家による共同出資経営。100年以上の歴史を持つ地域密着型ワイナリー。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/ikeda-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">イケダワイナリー</div><div class="fc-desc">創業者の池田俊和がワインに魅せられ勝沼に移住し、1995年に大手食品グループのワイナリーを株式譲渡の形で引き継いで独立。2023年に長男の池田秀俊が事業継承。日本ワインコンクール金賞受賞歴あり。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/morita-koshu-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">盛田甲州ワイナリー</div><div class="fc-desc">盛田家14代目久左衛門の次男・和昭が1973年に設立。盛田家は江戸時代中期から酒・味噌・醤油の醸造を営み、明治時代からワイン醸造も手がける。勝沼ワインバレーで有数の規模を誇り「シャンモリ」の愛称で親しまれる。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kitanoro-jozo.html"><div class="fc-icon">🍷</div><div class="fc-name">北野呂醸造</div><div class="fc-desc">昭和38年（1963年）に一宮町北野呂地内の共同醸造場として創業。昭和50年に現在地（一宮町新巻）に移転し、家族経営のワイナリーとして操業を続ける。1991年よりサンセミヨンの試験栽培を開始し、2000年より製品化。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/nikawa-chuo-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">日川中央葡萄酒</div><div class="fc-desc">「大地の恵みを感動に結びつけるワイン」を哲学に掲げ、葡萄の栽培・収穫・醸造を一貫して実施する家族経営のワイナリー。辛口を基本とし、最低限の薬品使用・温度管理を徹底した醸造を行う。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/fuefuki-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">笛吹ワイン</div><div class="fc-desc">ワイン造りについては、葡萄栽培からワイン醸造までこだわり通す。100%自社葡萄で製造。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/new-yamanashi-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">ニュー山梨ワイン醸造</div><div class="fc-desc">JAふえふき直営のワイナリー。昭和38年（1963年）に地元農協葡萄部として設立。ブランド名「8 vin-yard MISAKA（ユイット・ヴィンヤード・ミサカ）」の「8」は末広がりの縁起数字であり横に倒すと無限大の意。笛吹市御坂町産ぶどう</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/seven-cedars-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">セブンシダーズワイナリー</div><div class="fc-desc">河口浅間神社の七本の大杉に由来するワイナリー名。葡萄栽培者に光を当てたワイン造りを理念とし、ラベルには必ず栽培者名と品種を明記。除草剤・化学肥料不使用で4区画（御印・霊嶽・神免・二柱）を管理。富士河口湖町初のワイナリー。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kanai-jozo.html"><div class="fc-icon">🍷</div><div class="fc-name">金井醸造場</div><div class="fc-desc">「ワインには、土地の自然と人々がレコードされている」を理念とする夫婦二人の家族経営ワイナリー。0.6haの自家農園で低農薬・ビオディナミ農法を研究しながら栽培。土地の情報をワインで伝えることを目標とする。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/belle-foret-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">シャトレーゼ ベルフォーレワイナリー</div><div class="fc-desc">1985年に雪印乳業が「雪印ベルフォーレ」としてオープン、2002年にシャトレーゼベルフォーレワイナリーとして現社名に変更。南アルプスと八ヶ岳を望む絶好のロケーションで高品質なワインを製造。勝沼ワイナリーとの2拠点体制。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/shikishima-jozo.html"><div class="fc-icon">🍷</div><div class="fc-name">敷島醸造</div><div class="fc-desc">標高600mの昇仙峡南麓に位置し、自社農場産ぶどう100%・除草剤不使用・減農薬の自然農法で約30種の銘柄を製造。機械に頼らない手作業の栽培・醸造にこだわる。ぶどうの樹オーナー・樽ワインオーナー制度あり。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/domaine-hide.html"><div class="fc-icon">🍷</div><div class="fc-name">ドメーヌ ヒデ</div><div class="fc-desc">「真の日本ワイン」造りを目指す赤ワイン専門ワイナリー。セニエ製法を探求し、精葡歩合は日本酒の大吟醸並みの50%以上に達する赤ワインを製造。代表：渋谷英雄。南アルプスの自然の中で「月に従い自然に造る」哲学を持つ。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/higashi-shin-yoshu.html"><div class="fc-icon">🍷</div><div class="fc-name">東晨洋酒</div><div class="fc-desc">昭和38年（1963年）、日川高校の卒業生仲間が「自分たちの育てたぶどうでワインを造り皆で飲もう」という思いで創業した小規模ワイナリー。酸化防止剤無添加・無濾過・野生酵母など自然派醸造を実践し、毎年20種類以上の銘柄をリリース。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/sanyo-jozo.html"><div class="fc-icon">🍷</div><div class="fc-name">三養醸造</div><div class="fc-desc">1933年創業の山梨市牧丘町のファミリーワイナリー。4代目山田啓二が代表。フィールドブレンド（混植同時収穫・醸造）を特徴的な製法として採用。除草剤・ボルドー液不使用で自社圃場約1.2haを管理。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/diamond-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">ダイヤモンド酒造</div><div class="fc-desc">1939年創業、1963年法人化。勝沼のぶどうにこだわり、地酒的な重厚なワインを製造。醸造家・雨宮吉男がブルゴーニュで修行した経験を活かした樽熟成が特徴。甲州・マスカットベリーAへの深いこだわりを持つ。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/okunota-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">奥野田葡萄酒醸造</div><div class="fc-desc">1962年に地元農家の共同醸造場として設立。1989年に現オーナー（中村雅量）が受け継ぎ現在の形に。1.5haの自社農園でシャルドネ・メルロー・カベルネを栽培。日本初のバキューム式搾汁機を導入し酸化を防止。170名以上のヴィンヤードクラブ会</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/comazono-vineyard.html"><div class="fc-icon">🍷</div><div class="fc-name">駒園ヴィンヤード</div><div class="fc-desc">1952年に五味果汁工業株式会社として創業。2019年に駒園ヴィンヤード株式会社に社名変更。創業以来、全銘柄を山梨県産ぶどう100%で醸造。樹齢80年超の甲州古樹（自根、接ぎ木なし）を含む山梨県内4箇所・全12区画・約2haを管理。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/suzuran-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">スズランワイナリー</div><div class="fc-desc">「最良のワインは最良の葡萄づくりから」を信念に、明治38年に宮内省陸軍御用達として製造した「九重シャンパン」で知られる老舗ワイナリー。2004年に農業生産法人へ移行し、自社農園の拡大と栽培品種育成に注力している。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/yahagi-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">矢作洋酒</div><div class="fc-desc">笛吹市一宮町矢作地区の無添加ワイン専門醸造所。除草剤を使わずに根を強くすることから始め、有機質肥料で抵抗力のある果樹を育てることで農薬を極力抑えた原料ぶどうを栽培。自然の力を引き出した素直なワインを造り続けている。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/yatsushiro-jozo.html"><div class="fc-icon">🍷</div><div class="fc-name">八代醸造</div><div class="fc-desc">「良いワインはよいブドウから」の哲学のもと、山梨県特産の里づくり推進事業（ワイン業界唯一の指定）を受けた蔵元。自社農園で有機自然農法を実践し、100%地元八代町産ぶどうのみを使用。蔵元直販で低価格を実現。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/montanus-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">モンターナスワイン</div><div class="fc-desc">笛吹市一宮町千米寺地区の家族経営小規模ワイナリー。自家農園で栽培するぶどうを用いて「量より質」をモットーに、収穫から瓶詰めまでほぼ手作業で丁寧にワイン造りを行っている。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/ushioku-daiichi.html"><div class="fc-icon">🍷</div><div class="fc-name">牛奥第一葡萄酒</div><div class="fc-desc">地元塩山のぶどう農家が自家消費目的で運営する超小規模醸造所。生食に出荷できないぶどうや余ったぶどうを持ち寄って醸造するため、年間生産量は720ml瓶2,000本・一升瓶5,000本程度と極めて希少。市場流通がほぼなく、現地でしか買えないワイ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/asahi-yosyu-soleil.html"><div class="fc-icon">🍷</div><div class="fc-name">旭洋酒（ソレイユワイン）</div><div class="fc-desc">戦前から農家の共同醸造所として営まれてきた歴史ある醸造所。自社畑ではピノ・ノワール、シラー、アルバリーニョなどの欧州系品種を栽培し、日本の食卓を意識した食中酒として製造。版画家・雨宮千鶴のエチケットも話題。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/yamanashi-hakko.html"><div class="fc-icon">🍷</div><div class="fc-name">山梨醗酵工業</div><div class="fc-desc">昭和36年（1961年）に地元農家450軒が出資して設立した協同組合型ワイナリー。土壁と細い木組みの建物は夏涼しく冬寒い理想的な醸造環境。地産地消のワイン造りを続けている。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/yawata-yosyu.html"><div class="fc-icon">🍷</div><div class="fc-name">八幡洋酒</div><div class="fc-desc">昭和36年より地元八幡地区の農家がぶどうを持ち寄って始めたワイナリー。その年の気候と収穫タイミングによって甘みと香りが変わるぶどうの個性を最大限に引き出した、毎年違う味わいのワインを提供。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/cave-an.html"><div class="fc-icon">🍷</div><div class="fc-name">Cave an</div><div class="fc-desc">丸藤葡萄酒で栽培・醸造を担当していた安蔵正子氏が2022年に創業した新鋭ワイナリー。山梨市万力の標高約400mの山地に6圃場（約1ha）を開き、甲州をはじめプティ・マンサン、アルバリーニョ、タナなど多品種を栽培。日本の食に合うバランスとエレ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kyoeido-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">共栄堂（室伏ワイナリー）</div><div class="fc-desc">「共に栄える」を理念に2016年創業。山梨市・甲州市の自社畑と県内6軒のぶどう農家から原料を調達。ワイン名を記号・数字の配列で表記するユニークなスタイルが特徴。アーティストとコラボしたエチケットを採用する、ワインとアートの融合を実践するワイ</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/mirai-yume-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">未来夢ワイナリー</div><div class="fc-desc">2024年設立の最新鋭ナチュラルワイナリー。無補糖・亜硫酸不使用の完全無添加ワイン造りを方針とし、甲州とヤマソービニオン（山ぶどう×カベルネ・ソーヴィニョン交配種）を栽培・醸造。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/shingen-wine.html"><div class="fc-icon">🍷</div><div class="fc-name">信玄ワイン</div><div class="fc-desc">代表が一人でぶどう栽培から瓶詰めまでを行う「一人ワイナリー」。笛吹市・北杜市の自社畑でカベルネ・ソーヴィニョン、甲斐ノワール、甲斐ブラン、甲州などを栽培。甲府駅南口から徒歩15分の市街地に醸造場とショップを構える。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/beau-paysage.html"><div class="fc-icon">🍷</div><div class="fc-name">ボーペイサージュ</div><div class="fc-desc">「ワインは人が作るものではなくて畑で生まれるもの」という哲学のもと、化学肥料・除草剤・殺虫剤を一切使用せず、ブドウ栽培から醸造・瓶詰めまでを醸造家・岡本英史がほぼ一人で手掛ける。入手困難な幻のワインとして国内外で知られる。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/mars-hosaka.html"><div class="fc-icon">🍷</div><div class="fc-name">マルス穂坂ワイナリー</div><div class="fc-desc">本坊酒造が2017年に韮崎市穂坂地区に開設したワイナリー。標高約500〜600mの穂坂の地でシャルドネ、メルロー、カベルネ・ソーヴィニョン等を栽培。「シャトーマルス」ブランドで高い評価を受ける。マルス山梨ワイナリー（笛吹市）とは別施設。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kawanishi-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">能見園 河西ワイナリー</div><div class="fc-desc">大正7年（1918年）創業の小さな手造りワイナリー。八ヶ岳の麓に広がる峡北の地で収穫される良質のぶどうを原料に、創業当時からの伝統を守り昔ながらの製法でワインを醸造。代表ブランド「Mont.8」は八ヶ岳から命名。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/creation-farm.html"><div class="fc-icon">🍷</div><div class="fc-name">Domaine Creation Farm</div><div class="fc-desc">2023年に自社醸造所を完成させワイン生産を開始した韮崎市穂坂のワイナリー。甲州とマスカット・ベーリーAを中心に「おいしく、たのしく、うれしく」をコンセプトに、ぶどう栽培から発酵まで一貫した生産体制を構築。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/akeno-venus.html"><div class="fc-icon">🍷</div><div class="fc-name">ドメーヌ・ド・ラ・アケノ・ヴェニュス</div><div class="fc-desc">年間2600時間超の日照時間を誇る北杜市明野の地に、定年退職を機に一念発起した醸造家が2018年に設立。山梨県立農林大学校で学び県内ワイナリーで実習を積んだ後に開業。自家畑のぶどうを減農薬栽培し、カベルネ・ソーヴィニョンを中心に醸造。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/komaki-vineyard.html"><div class="fc-icon">🍷</div><div class="fc-name">Komaki Vineyard（小牧ヴィンヤード）</div><div class="fc-desc">ソムリエとして長年活躍してきた小牧康伸が代表を務める滞在型ワイナリー。2025年に自社醸造所「Domaine Enchante（ドメーヌ アンシャンテ）」をオープン。八ヶ岳・甲斐駒ヶ岳・富士山を望む絶景の中で、栽培から醸造・ワインサービス・</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/grandvert-vineyard.html"><div class="fc-icon">🍷</div><div class="fc-name">八ヶ岳グランヴェールヴィンヤード</div><div class="fc-desc">2024年9月グランドオープンした標高約950mの八ヶ岳山麓ワイナリー。約15ヘクタールの敷地にシャルドネ、甲州、リースリングなどを栽培。ぶどう畑の中央に醸造所・ショップ・展望デッキが並び、八ヶ岳と富士山を背景にテイスティング体験が楽しめる</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/ogasawara-farm.html"><div class="fc-icon">🍷</div><div class="fc-name">小笠原ファーム</div><div class="fc-desc">2015年から農業法人として営農を開始し、2022年にワイナリーを開設。八ヶ岳の農園で育てた西洋梨を使ったポワレ（西洋梨ワイン）を主力に、ぶどうワインも製造。西洋梨100%ワインという国内希少なアイテムで注目を集める。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/midaigawa-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">御勅使川ワイナリー</div><div class="fc-desc">株式会社宮入バルブ製作所が運営する南アルプス市唯一のワイナリー。2022年より醸造を開始。ぶどう栽培から醸造まで一貫して自社で実施。工業技術を生かしたワイン醸造機器の自社開発も行うユニークな背景を持つ。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/domaine-q.html"><div class="fc-icon">🍷</div><div class="fc-name">ドメーヌ久（甲府ワインポート）</div><div class="fc-desc">2000年設立。甲府市内のワイナリーで、ピノ・ノワールを国内最大級の栽培本数で手掛ける。日本で最も早い新酒「ヌーヌーボー」（早摘み青デラウェア使用）でも知られる。レストラン「ボルドー」を併設した観光・食体験型ワイナリー。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/sasaichi-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">笹一酒造（オリファンワイン）</div><div class="fc-desc">1661年創業の老舗酒蔵が1953年からワイン醸造を開始。ブランド名「OLIFANT（オリファン）」で自社畑のぶどうを使用した日本ワインを製造。日本酒蔵が醸す山梨ワインとして独自のポジションを確立。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/rakuen-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">楽園葡萄酒醸造場</div><div class="fc-desc">昭和15年（1940年）創業の市川三郷町の家族経営小規模ワイナリー。約1,200坪の自社ぶどう園と近隣農家のぶどうを使い、少量生産で自然な味わいのワインを醸造。代表ブランド「信天翁（アルバトロス）」は丁寧な小ロット生産による芳醇な風味が特徴</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/kashiwa-budoushu.html"><div class="fc-icon">🍷</div><div class="fc-name">柏和葡萄酒</div><div class="fc-desc">大善寺住職が近隣の檀家と造るユニークなワイナリー。境内の畑で住職自ら栽培したぶどうを使い、境内の醸造小屋で醸造。組合員が自園で作ったぶどうを持ち寄り、キロ数に応じて分配するシステムを採用。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/carefit-farm-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">ケアフィットファームワイナリー</div><div class="fc-desc">公益財団法人日本ケアフィット共育機構が2018年に設立したワイナリー。障害のある人たち約20名が農業従事者として活躍し、土づくりから収穫まで葡萄づくりを担う。天然酵母による自然発酵と無添加醸造のナチュラルワインを生産。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/marusan-budoushu.html"><div class="fc-icon">🍷</div><div class="fc-name">マルサン葡萄酒</div><div class="fc-desc">ぶどう栽培300余年の歴史を持つ若尾家によるファミリーワイナリー。昭和38年（1963年）に有限会社マルサン葡萄酒を設立。観光農園「若尾果樹園」を併設し、近年はMIWAKUBOブランドなど個性豊かなラインナップを展開。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/hiyori-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">日和ワイナリー</div><div class="fc-desc">勝沼・鳥居平地区で栽培されたぶどうから純国産の限定生産クラフトワインを造るワイナリー。「太陽に愛される土地、甲州・勝沼で育てられたぶどう。その個性を生かしながら、慈しみながら、ていねいに醸造しました」をコンセプトとする。ベルモットも手がける</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/nakahara-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">中原ワイナリー</div><div class="fc-desc">ペイザナ農事組合法人が設立した共同醸造所。ドメーヌ・オヤマダ、ドメーヌ・ポンコツ、パパプルなど複数の独立生産者が同施設で醸造し、それぞれの個性を生かしたワインを生産している。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/sanfoods-nirasaki.html"><div class="fc-icon">🍷</div><div class="fc-name">株式会社サン・フーズ（韮崎ワイン）</div><div class="fc-desc">昭和51年（1976年）創業の総合酒類・調味料メーカー。韮崎工場で2008年に果実酒製造免許を取得し、韮崎市穂坂地区産ぶどう100%使用の「韮崎ワイン」シリーズを展開。日本ワインコンクール・さくらアワードで受賞歴多数。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/la-pensee-winery.html"><div class="fc-icon">🍷</div><div class="fc-name">LA PENSÉE（ラ・パンセ）</div><div class="fc-desc">2024年9月に醸造免許を取得して設立した新鋭ナチュラルワイナリー。代表・髙橋厚芝氏はドメーヌ・ヒデで地域おこし協力隊として3年間研修。有機栽培農園から甲州・マスカットベリーA・ゲヴュルツトラミネールを栽培。野生酵母発酵・亜硫酸無添加が基本</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/katsunuma-daihachi.html"><div class="fc-icon">🍷</div><div class="fc-name">勝沼第八葡萄酒</div><div class="fc-desc">甲州市勝沼町等々力に拠点を置く地域組合型醸造所。山梨県ワイン酒造組合に所属し、地元産の甲州ぶどうを原料に甲州白ワインを中心に醸造。事前予約で見学・試飲にも対応する。</div></a>
+<a class="feature-card" href="/wine/en/yamanashi/wine-labo.html"><div class="fc-icon">🍷</div><div class="fc-name">ワインづくり研究所</div><div class="fc-desc">醸造資材・機械の輸入販売を行うシンワフーズケミカル株式会社が2022年に開設した実証型ワイナリー。自社取扱の酵母・機材を実際の醸造に使用し、その効果を検証・提案する。甲州・メルロー・マスカットベリーAを醸造。</div></a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-brand">
+    <p class="footer-tagline">Terroir HUB WINE</p>
+    <div class="footer-logo">Terroir HUB <span class="accent">WINE</span></div>
+  </div>
+</footer>
+</body></html>

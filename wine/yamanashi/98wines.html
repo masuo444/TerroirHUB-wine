@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/98wines.html",
+      "name": "98WINEs - 山梨県のワイナリー",
+      "description": "平成29年創業。山梨県甲州市塩山の小規模ワイナリー「98WINEs」。「98winesワイナリー」は「ワインの持つ力」を創造する場所として設立されました。ワインを通して出会う人たちはもちろんのこと、直接ワインとは関係がないけれどわ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#winery",
       "name": "98WINEs",
       "description": "「98winesワイナリー」は「ワインの持つ力」を創造する場所として設立されました。ワインを通して出会う人たちはもちろんのこと、直接ワインとは関係がないけれどわたしたちの考えに賛同していただける世界のあらゆるジャンルの新しい友人とジョイント、コラボレーション、結び合う事が大事と考えている。",
       "url": "https://98wines.jp/",
@@ -49,7 +66,35 @@
       "knowsAbout": [
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://98wines.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "98WINEsの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +118,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/98wines.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#wine-1",
+      "name": "霜（SOU）",
+      "category": "白・ロゼ・赤",
+      "brand": {
+        "@type": "Brand",
+        "name": "98WINEs"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#winery"
+      },
+      "description": "甲州またはマスカット・ベーリーA使用、普段の食卓に寄り添うエントリーシリーズ",
+      "material": "甲州 / マスカット・ベーリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#wine-2",
+      "name": "芒（NOGI）",
+      "category": "白・ロゼ・赤",
+      "brand": {
+        "@type": "Brand",
+        "name": "98WINEs"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#winery"
+      },
+      "description": "品種の個性を最大限に引き出したミッドレンジシリーズ、無濾過ボトリング",
+      "material": "甲州 / マスカット・ベーリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#wine-3",
+      "name": "穀（KOKU）",
+      "category": "白・赤",
+      "brand": {
+        "@type": "Brand",
+        "name": "98WINEs"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/98wines.html#winery"
+      },
+      "description": "樽熟成エレガントスタイルのプレミアムシリーズ、長期熟成（6ヶ月〜10年）",
+      "material": "甲州 / マスカット・ベーリーA"
     },
     {
       "@type": "FAQPage",
@@ -387,7 +477,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">98WINEs</h1>
     <p class="hero-subtitle">98WINEs</p>
     <p class="hero-en">Since 2017 — 甲州市塩山, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://98wines.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>

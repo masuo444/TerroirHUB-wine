@@ -16,6 +16,72 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "CollectionPage",
+      "@id": "https://wine.terroirhub.com/wine/toyama/#webpage",
+      "url": "https://wine.terroirhub.com/wine/toyama/",
+      "name": "富山県のワイナリー一覧",
+      "description": "富山県のワイナリー4件を掲載。やまふじぶどう園（ホーライサンワイナリー）、セイズ・ファーム、ドメーヌボーなど富山県の日本ワイン生産者情報。Terroir HUB WINE。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "やまふじぶどう園（ホーライサンワイナリー）",
+            "url": "https://wine.terroirhub.com/wine/toyama/yamafuji-budoen.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "セイズ・ファーム",
+            "url": "https://wine.terroirhub.com/wine/toyama/says-farm.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ドメーヌボー",
+            "url": "https://wine.terroirhub.com/wine/toyama/domaine-beau.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "カナタワイナリー",
+            "url": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html"
+          }
+        ]
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "シャルドネ"
+        },
+        {
+          "@type": "Thing",
+          "name": "メルロー"
+        },
+        {
+          "@type": "Thing",
+          "name": "ソーヴィニヨン・ブラン"
+        },
+        {
+          "@type": "Thing",
+          "name": "シャインマスカット"
+        },
+        {
+          "@type": "Thing",
+          "name": "マスカット・ベーリーA"
+        }
+      ]
+    },
+    {
       "@type": "ItemList",
       "name": "富山県のワイナリー一覧",
       "description": "富山県のワイナリー4件を掲載。やまふじぶどう園（ホーライサンワイナリー）、セイズ・ファーム、ドメーヌボーなど富山県の日本ワイン生産者情報。Terroir HUB WINE。",
@@ -320,6 +386,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 .petal:nth-child(4){left:75%;animation-delay:4.5s;animation-duration:10s;}
 
 
+.intent-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+.intent-panel{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;}
+.intent-panel h3{font-family:'Zen Old Mincho',serif;font-size:17px;color:var(--text);margin-bottom:10px;}
+.intent-panel p{font-size:13px;line-height:1.8;color:var(--text-muted);}
+.intent-panel ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.intent-panel li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(114,47,55,0.08);padding-bottom:8px;font-size:12px;color:var(--text-muted);}
+.intent-panel li:last-child{border-bottom:0;padding-bottom:0;}
+.intent-panel a{color:var(--text);text-decoration:none;}
+.intent-panel a:hover{color:var(--accent);}
 </style>
 </head>
 <body>
@@ -345,7 +420,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
-    
+
     <h1 class="hero-title" style="font-size:clamp(32px,7vw,54px);">富山県</h1>
     <p class="hero-subtitle">ワイナリー一覧</p>
     <p class="hero-en">4 Wineries</p>
@@ -355,14 +430,66 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
   </div>
 </section>
 
+
+
+<section class="section" style="background:var(--surface-warm);padding:44px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">FIND BY PURPOSE</label>
+    <h2 class="sec-title">富山県ワインの探し方</h2>
+    <div class="sec-divider"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:28px;">
+
+      <a href="#visit-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">見学で選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">4件</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">富山県で見学・試飲・ショップ利用の導線があるワイナリー。</p>
+      </a>
+      <a href="#grape-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">品種で選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">シャルドネ、メルロー、ソーヴィニヨン・ブラン</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">富山県で多く使われる品種からワイナリーを探す。</p>
+      </a>
+      <a href="#brand-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">代表銘柄で選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">4件</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">銘柄名が確認できるワイナリーから選ぶ。</p>
+      </a>
+      <a href="#area-guide" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">エリアで選ぶ</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">富山市婦中町、氷見市、南砺市</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">市町村・産地エリアごとに比較する。</p>
+      </a>
+    </div>
+    <div class="intent-grid">
+      <div class="intent-panel" id="visit-guide">
+        <h3>見学・試飲で選ぶ</h3>
+        <ul><li><a href="/wine/toyama/yamafuji-budoen.html">やまふじぶどう園（ホーライサンワイナリー）</a><span>富山市婦中町</span></li><li><a href="/wine/toyama/says-farm.html">セイズ・ファーム</a><span>氷見市</span></li><li><a href="/wine/toyama/domaine-beau.html">ドメーヌボー</a><span>南砺市</span></li><li><a href="/wine/toyama/kanata-winery.html">カナタワイナリー</a><span>魚津市</span></li></ul>
+      </div>
+      <div class="intent-panel" id="grape-guide">
+        <h3>品種で選ぶ</h3>
+        <ul><li><span>シャルドネ</span><span>3件</span></li><li><span>メルロー</span><span>2件</span></li><li><span>ソーヴィニヨン・ブラン</span><span>2件</span></li><li><span>シャインマスカット</span><span>2件</span></li><li><span>マスカット・ベーリーA</span><span>1件</span></li></ul>
+      </div>
+
+      <div class="intent-panel" id="brand-guide">
+        <h3>代表銘柄で選ぶ</h3>
+        <ul><li><a href="/wine/toyama/yamafuji-budoen.html">やまふじぶどう園（ホーライサンワイナリー）</a><span>ホーライサン</span></li><li><a href="/wine/toyama/says-farm.html">セイズ・ファーム</a><span>SAYS FARM</span></li><li><a href="/wine/toyama/domaine-beau.html">ドメーヌボー</a><span>Domaine Beau</span></li><li><a href="/wine/toyama/kanata-winery.html">カナタワイナリー</a><span>KANATA</span></li></ul>
+      </div>
+      <div class="intent-panel" id="area-guide">
+        <h3>エリアで選ぶ</h3>
+        <ul><li><span>富山市婦中町</span><span>1件</span></li><li><span>氷見市</span><span>1件</span></li><li><span>南砺市</span><span>1件</span></li><li><span>魚津市</span><span>1件</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" style="background:var(--bg);" id="winery-list">
   <div class="sec-inner">
     <label class="sec-label">WINERIES</label>
     <h2 class="sec-title">富山県のワイナリー <span style="font-size:0.6em;color:var(--text-muted);">4件</span></h2>
     <div class="sec-divider"></div>
-    
+
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
-      
+
     <a href="/wine/toyama/yamafuji-budoen.html" class="pref-card" style="text-decoration:none;display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;transition:all 0.22s;position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 4px 20px rgba(114,47,55,0.12)';this.style.borderColor='var(--gb)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;">
         <h3 style="font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);line-height:1.3;flex:1;">やまふじぶどう園（ホーライサンワイナリー）</h3>

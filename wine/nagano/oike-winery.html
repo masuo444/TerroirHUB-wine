@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/oike-winery.html",
+      "name": "大池ワイナリー - 長野県のワイナリー",
+      "description": "平成27年創業。長野県山形村のエステートワイナリー「大池ワイナリー」。「山形村の里山時間が育むワイン」をコンセプトに、2014年の信州山形ワイン特区認定を経て2015年に誕生したガレージワイナリー。標高約700mの里山に位置し、自",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#winery",
       "name": "大池ワイナリー",
       "description": "「山形村の里山時間が育むワイン」をコンセプトに、2014年の信州山形ワイン特区認定を経て2015年に誕生したガレージワイナリー。標高約700mの里山に位置し、自然にやさしい栽培法にこだわる。元精密機械工場を醸造所として再活用。",
       "url": "https://www.taikewine.jp/",
@@ -52,7 +69,48 @@
         "メルロー",
         "ピノ・ノワール",
         "ヤマ・ソービニオン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/alps/oike-winery/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "大池ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +134,63 @@
           "item": "https://wine.terroirhub.com/wine/nagano/oike-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-1",
+      "name": "ヤマ・ソービニオン スパークリング",
+      "category": "スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "大池ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#winery"
+      },
+      "material": "ヤマ・ソービニオン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-2",
+      "name": "シャルドネ・スパークリング",
+      "category": "スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "大池ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-3",
+      "name": "ソーヴィニヨン・ブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "大池ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#winery"
+      },
+      "material": "ソーヴィニヨン・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#wine-4",
+      "name": "メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "大池ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/oike-winery.html#winery"
+      },
+      "description": "樽熟成",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",
@@ -503,7 +618,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ヤマ・ソービニオン</div>
       <h3 class="brand-name">ヤマ・ソービニオン スパークリング</h3>
       <p class="brand-type">スパークリング</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -513,7 +628,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">シャルドネ・スパークリング</h3>
       <p class="brand-type">スパークリング</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -523,7 +638,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ソーヴィニヨン・ブラン</div>
       <h3 class="brand-name">ソーヴィニヨン・ブラン</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

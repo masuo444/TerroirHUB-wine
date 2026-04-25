@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html",
+      "name": "東根フルーツワイン - 山形県のワイナリー",
+      "description": "平成28年創業。山形県天童市の小規模ワイナリー「東根フルーツワイン」。さくらんぼや西洋梨など山形の特産果実を使い、濃縮還元汁や甘味料を使わず、果実と酵母のみで醸造したフルーツワインを製造・販売。ブドウワインも手掛け、さくらんぼワイ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#winery",
       "name": "東根フルーツワイン",
       "description": "さくらんぼや西洋梨など山形の特産果実を使い、濃縮還元汁や甘味料を使わず、果実と酵母のみで醸造したフルーツワインを製造・販売。ブドウワインも手掛け、さくらんぼワインではJAPAN Wine Challenge銅賞を受賞しています。",
       "url": "https://www.h-fruitwine.com/",
@@ -53,7 +70,36 @@
         "マスカットベーリーA",
         "ヤマブドウ",
         "ヤマソービニオン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/higashine/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "東根フルーツワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -77,6 +123,33 @@
           "item": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#wine-1",
+      "name": "佐藤錦（さくらんぼ）",
+      "category": "フルーツワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "フルーツワイナリー エスプリ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#wine-2",
+      "name": "シャインマスカット",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "フルーツワイナリー エスプリ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/fruit-winery-esprit.html#winery"
+      },
+      "material": "シャインマスカット"
     },
     {
       "@type": "FAQPage",
@@ -501,10 +574,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">フルーツワイン</div>
-      
+
       <h3 class="brand-name">佐藤錦（さくらんぼ）</h3>
       <p class="brand-type">フルーツワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -514,7 +587,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャインマスカット</div>
       <h3 class="brand-name">シャインマスカット</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -535,7 +608,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山形県 天童市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://giyamagata-wine.jp/maker/higashine/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://giyamagata-wine.jp/maker/higashine/</a></p>
   </div>
 </section>

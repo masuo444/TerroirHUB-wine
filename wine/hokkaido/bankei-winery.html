@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html",
+      "name": "ばんけい峠のワイナリー - 北海道のワイナリー",
+      "description": "平成13年創業。北海道札幌市の小規模ワイナリー「ばんけい峠のワイナリー」。2001年、札幌市中央区盤渓の峠に誕生した小規模ワイナリー。創業者は札幌の風土と気候がカリフォルニアに類似していることに着目し、酸化防止剤無添加の手作りワインを",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#winery",
       "name": "ばんけい峠のワイナリー",
       "description": "2001年、札幌市中央区盤渓の峠に誕生した小規模ワイナリー。創業者は札幌の風土と気候がカリフォルニアに類似していることに着目し、酸化防止剤無添加の手作りワインを製造。ヤマ・ソーヴィニヨン（交配品種）やピノ・グリを使い、オレンジワインの手法も早くから取り入れてきた。",
       "url": "https://sapporo-bankei-winery.jimdofree.com/",
@@ -49,7 +66,42 @@
         "ヤマ・ソーヴィニヨン",
         "ピノ・グリ",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://sapporo-bankei-winery.jimdofree.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ばんけい峠のワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,8 +127,58 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#wine-1",
+      "name": "峠の山ソービニオン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "峠の山ソービニオン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#winery"
+      },
+      "material": "ヤマ・ソーヴィニヨン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#wine-2",
+      "name": "峠のピノ・グリ",
+      "category": "白・オレンジワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "峠の山ソービニオン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#winery"
+      },
+      "material": "ピノ・グリ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#wine-3",
+      "name": "峠のナイアガラ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "峠の山ソービニオン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/bankei-winery.html#winery"
+      },
+      "material": "ナイアガラ"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ばんけい峠のワイナリーの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "ばんけい峠のワイナリーの代表的なワインを教えてください",
@@ -492,7 +594,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ヤマ・ソーヴィニヨン</div>
       <h3 class="brand-name">峠の山ソービニオン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -502,7 +604,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・グリ</div>
       <h3 class="brand-name">峠のピノ・グリ</h3>
       <p class="brand-type">白・オレンジワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -512,7 +614,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ナイアガラ</div>
       <h3 class="brand-name">峠のナイアガラ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -525,7 +627,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道札幌市中央区盤渓201-4</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://sapporo-bankei-winery.jimdofree.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://sapporo-bankei-winery.jimdofree.com/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道札幌市中央区盤渓201-4</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://sapporo-bankei-winery.jimdofree.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://sapporo-bankei-winery.jimdofree.com/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -548,34 +650,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ばんけい峠のワイナリーの代表的なワインを教えてください</span>
+        <span class="faq-q-text">ばんけい峠のワイナリーの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄は峠の山ソービニオン、峠のピノ・グリ、峠のナイアガラなどがあります。</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ばんけい峠のワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">ばんけい峠のワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道札幌市中央区盤渓201-4です。最寄りは地下鉄東西線 円山公園駅（バス約20分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は峠の山ソービニオン、峠のピノ・グリ、峠のナイアガラなどがあります。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ばんけい峠のワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-text">ばんけい峠のワイナリーの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">平成13年（2001年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道札幌市中央区盤渓201-4です。最寄りは地下鉄東西線 円山公園駅（バス約20分）です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ばんけい峠のワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">ばんけい峠のワイナリーはいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にヤマ・ソーヴィニヨン、ピノ・グリ、ナイアガラを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">平成13年（2001年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ばんけい峠のワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にヤマ・ソーヴィニヨン、ピノ・グリ、ナイアガラを使用しています。</div>
     </div>
     </div>
   </div>

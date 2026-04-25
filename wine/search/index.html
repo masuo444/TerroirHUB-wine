@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>ワイナリー検索 — 日本全国880+ワイナリー | Terroir HUB WINE</title>
-<meta name="description" content="日本全国880以上のワイナリーを地域・品種・キーワードで検索。北海道から九州まで、日本ワインの造り手をTerroir HUB WINEで探せます。">
+<title>ワイナリー検索 — 全国432ワイナリー | Terroir HUB WINE</title>
+<meta name="description" content="全国432ワイナリーを地域・品種・キーワードで検索。北海道から九州まで、日本ワインの造り手をTerroir HUB WINEで探せます。保存はマイページ、深掘りはSakuraで。">
 <link rel="canonical" href="https://wine.terroirhub.com/wine/search/">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/search/">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/en/wine/search/">
@@ -15,7 +15,7 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "ワイナリー検索 | Terroir HUB WINE",
-  "description": "日本全国880以上のワイナリーを地域・品種・キーワードで検索できるページです。",
+  "description": "全国432ワイナリーを地域・品種・キーワードで検索できるページです。",
   "url": "https://wine.terroirhub.com/wine/search/",
   "isPartOf": {
     "@type": "WebSite",
@@ -33,12 +33,29 @@ body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-si
 .nav-logo{font-family:'Shippori Mincho',serif;font-size:18px;font-weight:700;color:#1a1a1a;text-decoration:none;letter-spacing:0.04em;}
 .nav-back{font-size:13px;color:#722F37;text-decoration:none;margin-left:auto;padding:6px 16px;border:1px solid rgba(114,47,55,0.3);border-radius:20px;transition:all 0.2s;}
 .nav-back:hover{background:#722F37;color:#fff;}
+.nav-page{font-size:13px;color:#555;text-decoration:none;margin-left:10px;padding:6px 16px;border:1px solid rgba(0,0,0,0.08);border-radius:20px;transition:all 0.2s;}
+.nav-page:hover{background:rgba(114,47,55,0.06);color:#722F37;}
 .nav-hamburger{display:none;background:none;border:none;font-size:22px;cursor:pointer;padding:4px 8px;color:#333;margin-left:auto;}
-@media(max-width:700px){.nav-back{display:none;}.nav-hamburger{display:block;}}
+@media(max-width:700px){.nav-back,.nav-page{display:none;}.nav-hamburger{display:block;}}
 .search-header{margin-top:54px;background:linear-gradient(135deg,#3d0c12 0%,#722F37 60%,#8B3A42 100%);color:#fff;padding:48px 28px 40px;}
-.search-header-inner{max-width:900px;margin:0 auto;}
-.search-header h1{font-family:'Shippori Mincho',serif;font-size:clamp(22px,4vw,34px);font-weight:700;margin-bottom:8px;}
-.search-header p{font-size:14px;opacity:0.85;}
+.search-header-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,0.9fr);gap:24px;align-items:stretch;}
+.search-header h1{font-family:'Shippori Mincho',serif;font-size:clamp(24px,4.2vw,36px);font-weight:700;margin-bottom:10px;line-height:1.25;}
+.search-header p{font-size:14px;opacity:0.88;max-width:58ch;}
+.search-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.search-meta span{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.16);font-size:12px;color:#fff;}
+.search-hero-copy{display:flex;flex-direction:column;justify-content:center;}
+.search-hero-panel{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:14px;min-height:100%;}
+.search-hero-figure{position:relative;border-radius:14px;overflow:hidden;min-height:170px;background:#2a0a0e;}
+.search-hero-figure img{width:100%;height:100%;object-fit:cover;display:block;opacity:0.9;}
+.search-hero-figure:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(45,10,14,0.06),rgba(45,10,14,0.42));}
+.search-hero-figure-caption{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;font-size:12px;line-height:1.6;color:#fff;}
+.search-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+.search-hero-stat{background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:12px 10px;text-align:left;}
+.search-hero-stat strong{display:block;font-size:15px;line-height:1.2;margin-bottom:4px;color:#fff;}
+.search-hero-stat span{display:block;font-size:11px;opacity:0.78;line-height:1.5;}
+.search-hero-links{display:flex;flex-wrap:wrap;gap:8px;}
+.search-hero-links a{display:inline-flex;align-items:center;justify-content:center;padding:7px 11px;border-radius:999px;border:1px solid rgba(255,255,255,0.16);background:rgba(255,255,255,0.08);color:#fff;text-decoration:none;font-size:12px;transition:background 0.15s,border-color 0.15s;}
+.search-hero-links a:hover{background:rgba(255,255,255,0.16);border-color:rgba(255,255,255,0.26);}
 .search-box-wrap{background:#fff;border-radius:16px;padding:32px;max-width:900px;margin:-28px auto 0;position:relative;z-index:10;box-shadow:0 4px 32px rgba(114,47,55,0.12);}
 .search-row{display:flex;gap:12px;margin-bottom:16px;}
 .search-input{flex:1;height:48px;border:1.5px solid #e0d0d2;border-radius:10px;padding:0 16px;font-size:15px;font-family:'Noto Sans JP',sans-serif;outline:none;transition:border-color 0.2s;}
@@ -48,17 +65,23 @@ body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-si
 .filter-row{display:flex;gap:10px;flex-wrap:wrap;}
 .filter-select{height:40px;border:1.5px solid #e0d0d2;border-radius:8px;padding:0 14px;font-size:14px;font-family:'Noto Sans JP',sans-serif;color:#444;background:#fff;outline:none;cursor:pointer;transition:border-color 0.2s;}
 .filter-select:focus{border-color:#722F37;}
+.search-help{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.search-help span,.search-help a{font-size:12px;line-height:1;display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;background:#faf6f4;border:1px solid #eadfdd;color:#722F37;text-decoration:none;}
 .content{max-width:900px;margin:0 auto;padding:40px 28px 80px;}
-.results-info{font-size:14px;color:#888;margin-bottom:20px;}
+.results-info{font-size:14px;color:#888;margin-bottom:20px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
 .results-info span{color:#722F37;font-weight:600;}
 .result-grid{display:flex;flex-direction:column;gap:12px;}
-.result-card{background:#fff;border:1px solid #f0e0e2;border-radius:12px;padding:20px 24px;display:flex;align-items:flex-start;gap:16px;transition:box-shadow 0.2s;cursor:pointer;}
-.result-card:hover{box-shadow:0 4px 20px rgba(114,47,55,0.1);border-color:#d0a0a8;}
-.result-icon{width:44px;height:44px;background:rgba(114,47,55,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.result-card{background:#fff;border:1px solid #f0e0e2;border-radius:14px;padding:18px 20px;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;transition:box-shadow 0.2s,border-color 0.2s;cursor:pointer;box-shadow:0 1px 0 rgba(0,0,0,0.02);}
+.result-card:hover{box-shadow:0 8px 28px rgba(114,47,55,0.08);border-color:#d0a0a8;}
+.result-icon{width:44px;height:44px;background:linear-gradient(180deg,rgba(114,47,55,0.10),rgba(114,47,55,0.06));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
 .result-body{flex:1;}
-.result-body h3{font-size:16px;font-weight:600;color:#2a0a0e;margin-bottom:4px;}
-.result-body .result-meta{font-size:13px;color:#888;display:flex;gap:10px;flex-wrap:wrap;}
+.result-body h3{font-size:16px;font-weight:700;color:#2a0a0e;margin-bottom:4px;line-height:1.45;}
+.result-body .result-meta{font-size:13px;color:#888;display:flex;gap:8px;flex-wrap:wrap;}
 .result-body .result-meta span{background:#f5eded;padding:2px 10px;border-radius:10px;color:#722F37;font-size:12px;}
+.result-desc{margin-top:8px;font-size:13px;color:#6f6765;line-height:1.75;max-width:60ch;}
+.result-actions{display:flex;flex-direction:column;gap:8px;align-items:flex-end;min-width:92px;}
+.result-detail{font-size:12px;color:#722F37;text-decoration:none;font-weight:700;}
+.result-save{font-size:12px;border:none;background:#f5eded;color:#722F37;border-radius:999px;padding:6px 10px;cursor:pointer;}
 .empty-state{text-align:center;padding:64px 24px;color:#999;}
 .empty-state p{font-size:15px;margin-bottom:8px;}
 .region-shortcuts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
@@ -73,9 +96,16 @@ body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-si
 .footer-nav a:last-child{border-right:none;}
 .footer-nav a:hover{color:#fff;}
 .footer-copy{font-size:11px;color:rgba(255,255,255,0.3);}
+.toast{position:fixed;right:18px;bottom:18px;z-index:200;background:#1f1214;color:#fff;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:12px 14px;font-size:13px;box-shadow:0 12px 30px rgba(0,0,0,0.18);transform:translateY(16px);opacity:0;pointer-events:none;transition:opacity 0.18s,transform 0.18s;}
+.toast.show{opacity:1;transform:translateY(0);}
 @media(max-width:600px){
+  .search-header-inner{grid-template-columns:1fr;}
   .search-row{flex-direction:column;}
   .search-box-wrap{padding:20px 16px;}
+  .search-hero-stats{grid-template-columns:1fr;}
+  .result-card{grid-template-columns:36px 1fr;align-items:flex-start;}
+  .result-actions{grid-column:1 / -1;flex-direction:row;justify-content:flex-start;align-items:center;margin-left:50px;}
+  .toast{left:16px;right:16px;bottom:16px;}
 }
 </style>
 </head>
@@ -84,14 +114,38 @@ body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-si
   <div class="nav-top">
     <a href="/" class="nav-logo">Terroir HUB <span style="color:#722F37">WINE</span></a>
     <a href="/" class="nav-back">&#8592; トップへ</a>
+    <a href="/wine/mypage/" class="nav-page">マイページ</a>
     <button class="nav-hamburger">&#9776;</button>
   </div>
 </nav>
 
 <div class="search-header">
   <div class="search-header-inner">
-    <h1>ワイナリー検索</h1>
-    <p>日本全国880以上のワイナリーをキーワード・地域・品種で探す</p>
+    <div class="search-hero-copy">
+      <h1>ワイナリー検索</h1>
+      <p>全国432ワイナリーを、キーワード・地域・品種で探すページです。検索した候補はマイページに保存でき、Sakuraは会話の深掘りで使います。</p>
+      <div class="search-meta">
+        <span>ログイン無料</span>
+        <span>マイページで保存</span>
+        <span>Sakuraは月額課金</span>
+      </div>
+      <div class="search-hero-links">
+        <a href="/wine/guide/beginner.html">初心者ガイド</a>
+        <a href="/wine/guide/compare.html">比較ハブ</a>
+        <a href="/wine/guide/visit.html">見学ガイド</a>
+      </div>
+    </div>
+    <div class="search-hero-panel">
+      <div class="search-hero-figure">
+        <img src="/img/winery-mountain-filled.jpg" alt="ワイナリーの風景">
+        <div class="search-hero-figure-caption">候補を探して、保存して、あとから比較するための検索導線を最短にしています。</div>
+      </div>
+      <div class="search-hero-stats">
+        <div class="search-hero-stat"><strong>432</strong><span>ワイナリー収録</span></div>
+        <div class="search-hero-stat"><strong>3</strong><span>軸検索対応</span></div>
+        <div class="search-hero-stat"><strong>1</strong><span>マイページ保存</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -139,6 +193,12 @@ body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-si
       <span class="region-tag" onclick="setRegion('九州')">九州</span>
     </div>
   </div>
+  <div class="search-help">
+    <span>例: 甲州で探す</span>
+    <span>例: 見学できる場所</span>
+    <a href="/wine/guide/koshu.html">甲州の入口</a>
+    <a href="/wine/guide/yamanashi-vs-nagano.html">山梨 vs 長野</a>
+  </div>
 </div>
 
 <div class="content">
@@ -146,7 +206,7 @@ body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-si
   <div class="result-grid" id="resultGrid">
     <div class="empty-state">
       <p>&#127863; 検索してワイナリーを見つけましょう</p>
-      <p style="font-size:13px;">880以上のワイナリーから探せます</p>
+      <p style="font-size:13px;">432ワイナリーから探せます</p>
     </div>
   </div>
 </div>
@@ -168,6 +228,43 @@ body{background:#f9f5f5;color:#222;font-family:'Noto Sans JP',sans-serif;font-si
 <script>
 let allData = [];
 let filtered = [];
+const RECENT_KEY = 'thub_wine_recent_searches';
+const FAVORITES_KEY = 'thub_wine_favorites';
+
+function readStore(key, fallback) {
+  try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch(e) { return fallback; }
+}
+function writeStore(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch(e) {}
+}
+function addRecentSearch(query) {
+  if (!query) return;
+  const items = readStore(RECENT_KEY, []);
+  const next = [query, ...items.filter(v => v !== query)].slice(0, 12);
+  writeStore(RECENT_KEY, next);
+}
+function saveFavorite(item) {
+  if (!item || !item.page) return;
+  const items = readStore(FAVORITES_KEY, []);
+  const next = [item, ...items.filter(v => v.page !== item.page)].slice(0, 24);
+  writeStore(FAVORITES_KEY, next);
+  showToast('マイページに保存しました');
+}
+
+let toastTimer = null;
+function showToast(message) {
+  let el = document.getElementById('thubToast');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'thubToast';
+    el.className = 'toast';
+    document.body.appendChild(el);
+  }
+  el.textContent = message;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2200);
+}
 
 async function loadData() {
   try {
@@ -191,7 +288,7 @@ function doSearch() {
 
   if (!q && !region && !variety) {
     document.getElementById('resultsInfo').textContent = 'キーワードを入力するか、地域タグを選択してください';
-    document.getElementById('resultGrid').innerHTML = '<div class="empty-state"><p>&#127863; 検索してワイナリーを見つけましょう</p><p style="font-size:13px;">880以上のワイナリーから探せます</p></div>';
+    document.getElementById('resultGrid').innerHTML = '<div class="empty-state"><p>&#127863; 検索してワイナリーを見つけましょう</p><p style="font-size:13px;">432ワイナリーから探せます</p></div>';
     return;
   }
 
@@ -206,6 +303,7 @@ function doSearch() {
     return matchQ && matchRegion && matchVariety;
   });
 
+  if (q) addRecentSearch([q, region, variety].filter(Boolean).join(' '));
   renderResults(filtered);
 }
 
@@ -222,7 +320,9 @@ function renderResults(data) {
   info.innerHTML = '検索結果: <span>' + data.length + '件</span>';
   grid.innerHTML = data.slice(0, 60).map(w => {
     const tags = (w.varieties || []).slice(0,3).map(v => '<span>' + v + '</span>').join('');
-    return '<div class="result-card"><div class="result-icon">&#127863;</div><div class="result-body"><h3>' + (w.name || '—') + '</h3><div class="result-meta"><span>' + (w.prefecture || w.region || '不明') + '</span>' + tags + '</div></div></div>';
+    const desc = w.desc ? '<div class="result-desc">' + w.desc + '</div>' : '';
+    const item = {name: w.name || '', page: w.page || '', pref: w.prefecture || w.region || '', area: w.area || ''};
+    return '<div class="result-card"><div class="result-icon">&#127863;</div><div class="result-body"><h3>' + (w.name || '—') + '</h3><div class="result-meta"><span>' + (w.prefecture || w.region || '不明') + '</span>' + tags + '</div>' + desc + '</div><div class="result-actions"><a class="result-detail" href="' + (w.page || '#') + '">詳細</a><button class="result-save" onclick=\'saveFavorite(' + JSON.stringify(item).replace(/'/g, "\\'") + ')\' type="button">保存</button></div></div>';
   }).join('');
 }
 

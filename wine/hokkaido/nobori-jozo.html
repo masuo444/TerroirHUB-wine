@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html",
+      "name": "登醸造 - 北海道のワイナリー",
+      "description": "平成26年創業。北海道余市町のエステートワイナリー「登醸造」。秋田県出身の小西史明氏が、2009年に余市町に移住、2011年より自農園にて栽培を開始。野生酵母を使用したワイン造り。ツヴァイゲルト種を原料にしたワインを中心に",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html#winery",
       "name": "登醸造",
       "description": "秋田県出身の小西史明氏が、2009年に余市町に移住、2011年より自農園にて栽培を開始。野生酵母を使用したワイン造り。ツヴァイゲルト種を原料にしたワインを中心に製造しています。",
       "url": "http://www.noborijozo.com",
@@ -47,7 +64,30 @@
       },
       "knowsAbout": [
         "ツヴァイゲルト"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/area/yoichi/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "登醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -71,6 +111,19 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html#wine-1",
+      "name": "登醸造 ツヴァイゲルト",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "登醸造"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/nobori-jozo.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -479,11 +532,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">登醸造 ツヴァイゲルト</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

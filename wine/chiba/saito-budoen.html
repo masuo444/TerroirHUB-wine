@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html",
+      "name": "齊藤ぶどう園 - 千葉県のワイナリー",
+      "description": "昭和5年頃創業。千葉県山武郡横芝光町のエステートワイナリー「齊藤ぶどう園」。戦前から続く横芝光町の老舗ぶどう園。農薬や除草剤の使用を抑えた栽培で、千葉の果実味を生かしたワインを手がける。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html",
+      "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#winery",
       "name": "齊藤ぶどう園",
       "description": "戦前から続く横芝光町の老舗ぶどう園。農薬や除草剤の使用を抑えた栽培で、千葉の果実味を生かしたワインを手がける。",
       "url": "http://www.saito-winery.com/",
@@ -48,7 +65,29 @@
       "knowsAbout": [
         "デラウェア",
         "ヤマブドウ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.saito-winery.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "齊藤ぶどう園の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +113,36 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#wine-1",
+      "name": "齊藤ぶどう園 デラウェア",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "齊藤ぶどう園"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#winery"
+      },
+      "description": "横芝光町産デラウェアを使う自園ワイン。",
+      "material": "デラウェア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#wine-2",
+      "name": "齊藤ぶどう園 ヤマブドウ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "齊藤ぶどう園"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/chiba/saito-budoen.html#winery"
+      },
+      "description": "ヤマブドウ系の果実味を生かしたワイン。",
+      "material": "ヤマブドウ"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -82,6 +151,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "訪問前に営業確認推奨。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "齊藤ぶどう園の代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄は齊藤ぶどう園 デラウェア、齊藤ぶどう園 ヤマブドウなどがあります。横芝光町産デラウェアを使う自園ワイン。"
           }
         },
         {
@@ -378,7 +455,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">齊藤ぶどう園</h1>
     <p class="hero-subtitle">齊藤ぶどう園</p>
     <p class="hero-en">Since 1930 — 山武郡横芝光町, 千葉県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.saito-winery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -468,6 +545,35 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">デラウェア</div>
+      <h3 class="brand-name">齊藤ぶどう園 デラウェア</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">横芝光町産デラウェアを使う自園ワイン。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">赤ワイン</div>
+      <div class="grape-tag">ヤマブドウ</div>
+      <h3 class="brand-name">齊藤ぶどう園 ヤマブドウ</h3>
+      <p class="brand-type">赤ワイン</p>
+      <p class="brand-desc">ヤマブドウ系の果実味を生かしたワイン。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -507,26 +613,34 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">齊藤ぶどう園の所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">齊藤ぶどう園の代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は千葉県山武郡横芝光町横芝1074です。最寄りはJR総武本線横芝駅です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は齊藤ぶどう園 デラウェア、齊藤ぶどう園 ヤマブドウなどがあります。横芝光町産デラウェアを使う自園ワイン。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">齊藤ぶどう園はいつ創業しましたか？</span>
+        <span class="faq-q-text">齊藤ぶどう園の所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">昭和5年頃（1930年）に創業しました。千葉県を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は千葉県山武郡横芝光町横芝1074です。最寄りはJR総武本線横芝駅です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">齊藤ぶどう園ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">齊藤ぶどう園はいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にデラウェア、ヤマブドウを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">昭和5年頃（1930年）に創業しました。千葉県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">齊藤ぶどう園ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にデラウェア、ヤマブドウを使用しています。</div>
     </div>
     </div>
   </div>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html",
+      "name": "Komaki Vineyard（小牧ヴィンヤード） - 山梨県のワイナリー",
+      "description": "令和7年創業。山梨県北杜市小淵沢のエステートワイナリー「Komaki Vineyard（小牧ヴィンヤード）」。ソムリエとして長年活躍してきた小牧康伸が代表を務める滞在型ワイナリー。2025年に自社醸造所「Domaine Enchante（ドメーヌ アンシャンテ）」をオー",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#winery",
       "name": "Komaki Vineyard（小牧ヴィンヤード）",
       "description": "ソムリエとして長年活躍してきた小牧康伸が代表を務める滞在型ワイナリー。2025年に自社醸造所「Domaine Enchante（ドメーヌ アンシャンテ）」をオープン。八ヶ岳・甲斐駒ヶ岳・富士山を望む絶景の中で、栽培から醸造・ワインサービス・宿泊まで一貫した農業観光を提供。",
       "url": "https://komaki-vineyard.com/",
@@ -45,7 +62,29 @@
         "甲州",
         "メルロー",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://komaki-vineyard.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Komaki Vineyard（小牧ヴィンヤード）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -69,6 +108,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#wine-1",
+      "name": "Domaine Enchante 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Domaine Enchante"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#wine-2",
+      "name": "Domaine Enchante メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Domaine Enchante"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/komaki-vineyard.html#winery"
+      },
+      "description": "メルロー",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",
@@ -383,7 +452,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">Komaki Vineyard（小牧ヴィンヤード）</h1>
     <p class="hero-subtitle">Domaine Enchante</p>
     <p class="hero-en">Since 2025 — 北杜市小淵沢, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://komaki-vineyard.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html",
+      "name": "リンゴリらっぱ醸造所 - 山形県のワイナリー",
+      "description": "令和6年創業。山形県新庄市の小規模ワイナリー「リンゴリらっぱ醸造所」。4.7haのりんご園は全て有機JAS認証を取得し、国産初の有機シードルと有機リンゴジュースを製造しております。野生酵母による自然発酵で、添加物を最小限に抑えた製",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html#winery",
       "name": "リンゴリらっぱ醸造所",
       "description": "4.7haのりんご園は全て有機JAS認証を取得し、国産初の有機シードルと有機リンゴジュースを製造しております。野生酵母による自然発酵で、添加物を最小限に抑えた製品を提供しています。",
       "url": "https://www.ringorillappa.jp/",
@@ -45,6 +62,25 @@
         "@type": "GeoCoordinates",
         "latitude": 38.7572,
         "longitude": 140.3028
+      },
+      "knowsAbout": [
+        "りんご"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/ringo/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "リンゴリらっぱ醸造所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -71,8 +107,30 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html#wine-1",
+      "name": "有機シードル",
+      "category": "シードル",
+      "brand": {
+        "@type": "Brand",
+        "name": "リンゴリらっぱ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html#winery"
+      },
+      "description": "国産初有機JAS認証"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "リンゴリらっぱ醸造所の見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "リンゴリらっぱ醸造所の代表的なワインを教えてください",
@@ -95,6 +153,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和6年（2024年）に創業しました。山形県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "リンゴリらっぱ醸造所ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にりんごを使用しています。"
           }
         }
       ]
@@ -367,7 +433,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">リンゴリらっぱ醸造所</h1>
     <p class="hero-subtitle">リンゴリらっぱ</p>
     <p class="hero-en">Since 2024 — 新庄市, 山形県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.ringorillappa.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -444,6 +510,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">リンゴリらっぱ醸造所が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">りんご</span></div>
+  </div>
+</section>
 
 
 
@@ -459,7 +534,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">シードル</div>
-      
+
       <h3 class="brand-name">有機シードル</h3>
       <p class="brand-type">シードル</p>
       <p class="brand-desc">国産初有機JAS認証</p>
@@ -475,7 +550,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県新庄市昭和665</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">090-7795-2701</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.ringorillappa.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.ringorillappa.jp/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県新庄市昭和665</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">090-7795-2701</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.ringorillappa.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.ringorillappa.jp/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -498,26 +573,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">リンゴリらっぱ醸造所の代表的なワインを教えてください</span>
+        <span class="faq-q-text">リンゴリらっぱ醸造所の見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄は有機シードルなどがあります。国産初有機JAS認証</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">リンゴリらっぱ醸造所の所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">リンゴリらっぱ醸造所の代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は山形県新庄市昭和665です。最寄りはJR奥羽本線 新庄駅です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は有機シードルなどがあります。国産初有機JAS認証</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">リンゴリらっぱ醸造所はいつ創業しましたか？</span>
+        <span class="faq-q-text">リンゴリらっぱ醸造所の所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">令和6年（2024年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は山形県新庄市昭和665です。最寄りはJR奥羽本線 新庄駅です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">リンゴリらっぱ醸造所はいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">令和6年（2024年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">リンゴリらっぱ醸造所ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にりんごを使用しています。</div>
     </div>
     </div>
   </div>

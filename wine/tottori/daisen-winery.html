@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html",
+      "name": "大山ワイナリー - 鳥取県のワイナリー",
+      "description": "平成29年創業。鳥取県西伯郡伯耆町のエステートワイナリー「大山ワイナリー」。大山の麓、伯耆町の高原で欧州系品種中心の自社栽培を行うエステートワイナリー。山陰の冷涼さを生かした白と赤を造る。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#winery",
       "name": "大山ワイナリー",
       "description": "大山の麓、伯耆町の高原で欧州系品種中心の自社栽培を行うエステートワイナリー。山陰の冷涼さを生かした白と赤を造る。",
       "url": "http://daisenwinery.com/",
@@ -51,7 +68,29 @@
         "メルロー",
         "マスカット・ベーリーA",
         "山ぶどう"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/17310010276/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "大山ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +114,36 @@
           "item": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#wine-1",
+      "name": "DAISEN WINERY Chardonnay",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "DAISEN WINERY"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#winery"
+      },
+      "description": "自社畑シャルドネを使用した代表白。",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#wine-2",
+      "name": "DAISEN WINERY Merlot",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "DAISEN WINERY"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/daisen-winery.html#winery"
+      },
+      "description": "大山麓の冷涼感を生かした赤。",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",
@@ -389,7 +458,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">大山ワイナリー</h1>
     <p class="hero-subtitle">DAISEN WINERY</p>
     <p class="hero-en">Since 2017 — 西伯郡伯耆町, 鳥取県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://daisenwinery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -517,7 +586,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">鳥取県 西伯郡伯耆町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/17310010276/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/17310010276/</a></p>
   </div>
 </section>

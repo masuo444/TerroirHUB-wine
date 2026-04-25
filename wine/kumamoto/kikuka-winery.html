@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html",
+      "name": "菊鹿ワイナリー - 熊本県のワイナリー",
+      "description": "平成30年創業。熊本県山鹿市菊鹿町のエステートワイナリー「菊鹿ワイナリー」。山鹿市菊鹿町の自社畑・契約畑のぶどうだけを使い、熊本の冷涼産地を表現するエステート型ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html#winery",
       "name": "菊鹿ワイナリー",
       "description": "山鹿市菊鹿町の自社畑・契約畑のぶどうだけを使い、熊本の冷涼産地を表現するエステート型ワイナリー。",
       "url": "https://www.kikuka-winery.jp/",
@@ -50,7 +67,23 @@
         "シャルドネ",
         "マスカット・ベーリーA",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/19430010341/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "菊鹿ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +107,19 @@
           "item": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html#wine-1",
+      "name": "菊鹿ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "菊鹿ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kumamoto/kikuka-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -380,7 +426,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">菊鹿ワイナリー</h1>
     <p class="hero-subtitle">菊鹿ワイン</p>
     <p class="hero-en">Since 2018 — 山鹿市菊鹿町, 熊本県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.kikuka-winery.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -480,11 +526,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">菊鹿ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -505,7 +551,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">熊本県 山鹿市菊鹿町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/19430010341/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/19430010341/</a></p>
   </div>
 </section>

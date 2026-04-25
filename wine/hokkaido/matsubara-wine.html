@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html",
+      "name": "松原農園 - 北海道のワイナリー",
+      "description": "平成26年創業。北海道蘭越町のエステートワイナリー「松原農園」。1993年より蘭越町上里地区の森の中の開拓跡地に入植し、葡萄栽培を開始。初ビンテージは1995年。2014年から自家醸造を始め「ワイナリー」としてスタート。ミュ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#winery",
       "name": "松原農園",
       "description": "1993年より蘭越町上里地区の森の中の開拓跡地に入植し、葡萄栽培を開始。初ビンテージは1995年。2014年から自家醸造を始め「ワイナリー」としてスタート。ミュラー・トゥルガウを看板商品とする。",
       "url": "http://matsubarawine.com/",
@@ -47,7 +64,36 @@
       },
       "knowsAbout": [
         "ミュラー・トゥルガウ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://terroir.media/?p=6732"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "松原農園の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -71,6 +117,34 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#wine-1",
+      "name": "松原農園 ミュラートゥルガウ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "松原農園"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#winery"
+      },
+      "material": "ミュラー・トゥルガウ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#wine-2",
+      "name": "松原農園 スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "松原農園"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/matsubara-wine.html#winery"
+      },
+      "description": "瓶内二次発酵"
     },
     {
       "@type": "FAQPage",
@@ -498,14 +572,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ミュラー・トゥルガウ</div>
       <h3 class="brand-name">松原農園 ミュラートゥルガウ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge sparkling">スパークリングワイン</div>
-      
+
       <h3 class="brand-name">松原農園 スパークリング</h3>
       <p class="brand-type">スパークリングワイン</p>
       <p class="brand-desc">瓶内二次発酵</p>

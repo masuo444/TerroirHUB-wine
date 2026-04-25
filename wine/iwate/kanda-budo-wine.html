@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html",
+      "name": "神田葡萄園　かんだわいん - 岩手県のワイナリー",
+      "description": "平成27年（ワイナリー設立）創業。岩手県陸前高田市のエステートワイナリー「神田葡萄園　かんだわいん」。創業明治38年（1905年）の飲料製造会社が2015年に立ち上げたワイナリー。2.5haの自社畑で栽培した葡萄だけで「三陸の豊富な海の幸とマリアージュするワイン",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#winery",
       "name": "神田葡萄園　かんだわいん",
       "description": "創業明治38年（1905年）の飲料製造会社が2015年に立ち上げたワイナリー。2.5haの自社畑で栽培した葡萄だけで「三陸の豊富な海の幸とマリアージュするワイン」がTHE RIAS WINEのコンセプト。潮風を浴びた塩分を含む土壌で育ったブドウからミネラル感のあるワインを醸造。",
       "url": "http://0192-55-2222.jp/",
@@ -48,7 +65,29 @@
       },
       "knowsAbout": [
         "アルバリーニョ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/839/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "神田葡萄園　かんだわいんの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +111,35 @@
           "item": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#wine-1",
+      "name": "THE RIAS WINE アルバリーニョ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "THE RIAS WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#winery"
+      },
+      "description": "辛口",
+      "material": "アルバリーニョ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#wine-2",
+      "name": "リアスワイン ユナイト",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "THE RIAS WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kanda-budo-wine.html#winery"
+      },
+      "material": "アルバリーニョ"
     },
     {
       "@type": "FAQPage",
@@ -386,7 +454,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">神田葡萄園　かんだわいん</h1>
     <p class="hero-subtitle">THE RIAS WINE</p>
     <p class="hero-en">Since 2015 — 陸前高田市, 岩手県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://0192-55-2222.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -500,7 +568,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">アルバリーニョ</div>
       <h3 class="brand-name">リアスワイン ユナイト</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -521,7 +589,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">岩手県 陸前高田市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/839/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/839/</a></p>
   </div>
 </section>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html",
+      "name": "八ヶ岳グランヴェールヴィンヤード - 山梨県のワイナリー",
+      "description": "令和6年創業。山梨県北杜市小淵沢のエステートワイナリー「八ヶ岳グランヴェールヴィンヤード」。2024年9月グランドオープンした標高約950mの八ヶ岳山麓ワイナリー。約15ヘクタールの敷地にシャルドネ、甲州、リースリングなどを栽培。ぶどう畑の中央に醸造所",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#winery",
       "name": "八ヶ岳グランヴェールヴィンヤード",
       "description": "2024年9月グランドオープンした標高約950mの八ヶ岳山麓ワイナリー。約15ヘクタールの敷地にシャルドネ、甲州、リースリングなどを栽培。ぶどう畑の中央に醸造所・ショップ・展望デッキが並び、八ヶ岳と富士山を背景にテイスティング体験が楽しめる。",
       "url": "https://www.grandvertvineyard.jp/",
@@ -46,7 +63,35 @@
         "シャルドネ",
         "リースリング",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.grandvertvineyard.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "八ヶ岳グランヴェールヴィンヤードの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -70,6 +115,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#wine-1",
+      "name": "Grand Vert 甲州 エチュード",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Grand Vert"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#wine-2",
+      "name": "宝結 シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Grand Vert"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#winery"
+      },
+      "description": "シャルドネ",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#wine-3",
+      "name": "花菱 メルロー&カベルネ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Grand Vert"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grandvert-vineyard.html#winery"
+      },
+      "description": "メルロー、カベルネ・ソーヴィニョン",
+      "material": "メルロー、カベルネ・ソーヴィニョン"
     },
     {
       "@type": "FAQPage",
@@ -384,7 +474,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">八ヶ岳グランヴェールヴィンヤード</h1>
     <p class="hero-subtitle">Grand Vert</p>
     <p class="hero-en">Since 2024 — 北杜市小淵沢, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.grandvertvineyard.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html",
+      "name": "安曇野ワイナリー - 長野県のワイナリー",
+      "description": "平成20年創業。長野県安曇野市のエステートワイナリー「安曇野ワイナリー」。北アルプスを西に望む安曇野に位置し、自社畑のぶどうを使用したワイン生産を行うワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#winery",
       "name": "安曇野ワイナリー",
       "description": "北アルプスを西に望む安曇野に位置し、自社畑のぶどうを使用したワイン生産を行うワイナリー。",
       "url": "http://www.ch-azumino.com",
@@ -52,7 +69,48 @@
         "カベルネ・ソーヴィニヨン",
         "ナイアガラ",
         "コンコード"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/alps/post-10/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "安曇野ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +134,62 @@
           "item": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-1",
+      "name": "シャトー安曇野 シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "安曇野ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-2",
+      "name": "シャトー安曇野 メルロ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "安曇野ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#winery"
+      },
+      "material": "メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-3",
+      "name": "安曇野カベルネ・ソーヴィニョン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "安曇野ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#winery"
+      },
+      "material": "カベルネ・ソーヴィニヨン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#wine-4",
+      "name": "シャトー安曇野 スペシャルリザーブ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "安曇野ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/azumino-winery.html#winery"
+      },
+      "material": "カベルネ・ソーヴィニヨン・メルロ"
     },
     {
       "@type": "FAQPage",
@@ -503,7 +617,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">シャトー安曇野 シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -513,7 +627,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー</div>
       <h3 class="brand-name">シャトー安曇野 メルロ</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -523,7 +637,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">カベルネ・ソーヴィニヨン</div>
       <h3 class="brand-name">安曇野カベルネ・ソーヴィニョン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

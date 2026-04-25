@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html",
+      "name": "ガクファーム＆ワイナリー - 長野県のワイナリー",
+      "description": "2022年創業。長野県松本市のエステートワイナリー「ガクファーム＆ワイナリー」。北アルプスなどの3000m級の山々に取り囲まれた信州松本平のガレージワイナリー。昼夜の気温差が大きく雨量が少ない内陸性気候と標高700mの環境を活かし、その土地",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#winery",
       "name": "ガクファーム＆ワイナリー",
       "description": "北アルプスなどの3000m級の山々に取り囲まれた信州松本平のガレージワイナリー。昼夜の気温差が大きく雨量が少ない内陸性気候と標高700mの環境を活かし、その土地らしさを重視したワイン造りを実践している。",
       "url": "https://gakufarm.jp/",
@@ -53,7 +70,54 @@
         "カベルネ・フラン",
         "ピノ・グリ",
         "シュナン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/14177/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ガクファーム＆ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -77,6 +141,76 @@
           "item": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-1",
+      "name": "IMA シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GAKUFARM"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-2",
+      "name": "IMA シラー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GAKUFARM"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#winery"
+      },
+      "material": "シラー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-3",
+      "name": "SEIL メルロ+カベルネ・フラン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GAKUFARM"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#winery"
+      },
+      "material": "メルロー・カベルネ・フラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-4",
+      "name": "Kar ピノグリ 泡",
+      "category": "スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "GAKUFARM"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#winery"
+      },
+      "material": "ピノ・グリ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#wine-5",
+      "name": "IMA シュナン・ブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GAKUFARM"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/gaku-farm-winery.html#winery"
+      },
+      "material": "シュナン・ブラン"
     },
     {
       "@type": "FAQPage",
@@ -504,7 +638,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">IMA シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -514,7 +648,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シラー</div>
       <h3 class="brand-name">IMA シラー</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -524,7 +658,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー・カベルネ・フラン</div>
       <h3 class="brand-name">SEIL メルロ+カベルネ・フラン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

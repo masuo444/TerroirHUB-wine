@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html",
+      "name": "未来夢ワイナリー - 山梨県のワイナリー",
+      "description": "令和6年創業。山梨県山梨市の小規模ワイナリー「未来夢ワイナリー」。2024年設立の最新鋭ナチュラルワイナリー。無補糖・亜硫酸不使用の完全無添加ワイン造りを方針とし、甲州とヤマソービニオン（山ぶどう×カベルネ・ソーヴィニョン交配",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#winery",
       "name": "未来夢ワイナリー",
       "description": "2024年設立の最新鋭ナチュラルワイナリー。無補糖・亜硫酸不使用の完全無添加ワイン造りを方針とし、甲州とヤマソービニオン（山ぶどう×カベルネ・ソーヴィニョン交配種）を栽培・醸造。",
-      "url": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html",
+      "url": "https://www.winery.or.jp/winery-map/16465/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "山梨県山梨市中村25",
@@ -43,7 +60,29 @@
       "knowsAbout": [
         "甲州",
         "ヤマソービニオン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/16465/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "未来夢ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -67,6 +106,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#wine-1",
+      "name": "未来夢 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "未来夢"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#winery"
+      },
+      "description": "甲州種、完全無添加",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#wine-2",
+      "name": "未来夢 ヤマソービニオン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "未来夢"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/mirai-yume-winery.html#winery"
+      },
+      "description": "ヤマソービニオン（山ぶどう×カベルネ・ソーヴィニョン交配種）",
+      "material": "ヤマソービニオン"
     },
     {
       "@type": "FAQPage",
@@ -381,10 +450,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">未来夢ワイナリー</h1>
     <p class="hero-subtitle">未来夢</p>
     <p class="hero-en">Since 2024 — 山梨市, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.winery.or.jp/winery-map/16465/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -508,7 +577,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県山梨市中村25</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県山梨市中村25</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.winery.or.jp/winery-map/16465/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/16465/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>

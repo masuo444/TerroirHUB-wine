@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html",
+      "name": "Nasu 661 WINE HILLS - 栃木県のワイナリー",
+      "description": "令和4年創業。栃木県那須郡那須町のエステートワイナリー「Nasu 661 WINE HILLS」。那須高原初の大規模サステナブルワイナリー。耕作放棄地や別荘跡地を活用し、那須の自然と共存するワイン造りを目指す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#winery",
       "name": "Nasu 661 WINE HILLS",
       "description": "那須高原初の大規模サステナブルワイナリー。耕作放棄地や別荘跡地を活用し、那須の自然と共存するワイン造りを目指す。",
       "url": "https://www.nasu661winehills.net/",
@@ -50,7 +67,29 @@
         "シャルドネ",
         "メルロー",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://verygoodlocal-tochigi.jp/news/page.php?id=265"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Nasu 661 WINE HILLSの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +113,32 @@
           "item": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#wine-1",
+      "name": "NASU 661 Chardonnay",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "NASU 661 WINE HILLS"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#wine-2",
+      "name": "NASU 661 Merlot",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "NASU 661 WINE HILLS"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-661-wine-hills.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -380,7 +445,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">Nasu 661 WINE HILLS</h1>
     <p class="hero-subtitle">NASU 661 WINE HILLS</p>
     <p class="hero-en">Since 2022 — 那須郡那須町, 栃木県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.nasu661winehills.net/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -480,21 +545,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">NASU 661 Chardonnay</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">NASU 661 Merlot</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -515,7 +580,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">栃木県 那須郡那須町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://verygoodlocal-tochigi.jp/news/page.php?id=265" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://verygoodlocal-tochigi.jp/news/page.php?id=265</a></p>
   </div>
 </section>

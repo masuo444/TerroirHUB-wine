@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html",
+      "name": "さぬきワイナリー - 香川県のワイナリー",
+      "description": "昭和63年創業。香川県さぬき市の中規模ワイナリー「さぬきワイナリー」。瀬戸内海を見渡す大串自然公園内にある四国初のワイン工場。香川県オリジナル品種を含む県産ぶどうで、地元食材に合うワインを造る。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#winery",
       "name": "さぬきワイナリー",
       "description": "瀬戸内海を見渡す大串自然公園内にある四国初のワイン工場。香川県オリジナル品種を含む県産ぶどうで、地元食材に合うワインを造る。",
       "url": "https://wine.sanuki-sa.jp/",
@@ -48,7 +65,35 @@
       },
       "knowsAbout": [
         "香大農R-1"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://wine.sanuki-sa.jp/view/page/about"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "さぬきワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +117,50 @@
           "item": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#wine-1",
+      "name": "さぬきワイン",
+      "category": "赤・白・ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "さぬきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#winery"
+      },
+      "description": "香川県産ぶどうを使う主力シリーズ。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#wine-2",
+      "name": "さぬきRED",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "さぬきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#winery"
+      },
+      "description": "香大農R-1を活かした赤。",
+      "material": "香大農R-1"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#wine-3",
+      "name": "ソヴァジョーヌ・サヴルーズ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "さぬきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kagawa/sanuki-winery.html#winery"
+      },
+      "description": "香川県独自開発品種を用いた個性派白。",
+      "material": "香大農R-1"
     },
     {
       "@type": "FAQPage",
@@ -386,7 +475,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">さぬきワイナリー</h1>
     <p class="hero-subtitle">さぬきワイン</p>
     <p class="hero-en">Since 1988 — さぬき市, 香川県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://wine.sanuki-sa.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -487,7 +576,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・ロゼ</div>
-      
+
       <h3 class="brand-name">さぬきワイン</h3>
       <p class="brand-type">赤・白・ロゼ</p>
       <p class="brand-desc">香川県産ぶどうを使う主力シリーズ。</p>
@@ -531,7 +620,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">香川県 さぬき市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://wine.sanuki-sa.jp/view/page/about" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://wine.sanuki-sa.jp/view/page/about</a></p>
   </div>
 </section>

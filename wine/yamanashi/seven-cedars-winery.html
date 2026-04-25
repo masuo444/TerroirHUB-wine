@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html",
+      "name": "セブンシダーズワイナリー - 山梨県のワイナリー",
+      "description": "令和3年創業。山梨県富士河口湖町の小規模ワイナリー「セブンシダーズワイナリー」。河口浅間神社の七本の大杉に由来するワイナリー名。葡萄栽培者に光を当てたワイン造りを理念とし、ラベルには必ず栽培者名と品種を明記。除草剤・化学肥料不使用で4区画（",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#winery",
       "name": "セブンシダーズワイナリー",
       "description": "河口浅間神社の七本の大杉に由来するワイナリー名。葡萄栽培者に光を当てたワイン造りを理念とし、ラベルには必ず栽培者名と品種を明記。除草剤・化学肥料不使用で4区画（御印・霊嶽・神免・二柱）を管理。富士河口湖町初のワイナリー。",
       "url": "https://www.7cwinery.com",
@@ -48,7 +65,35 @@
         "ケルナー",
         "ピノ・ノワール",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.7cwinery.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "セブンシダーズワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +117,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#wine-1",
+      "name": "甲州 キュヴェ・S",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "セブンシダーズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#winery"
+      },
+      "description": "甲州100%、各区画ごとの個性を表現",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#wine-2",
+      "name": "デラウェア スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "セブンシダーズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#winery"
+      },
+      "description": "デラウェア100%、限定3,571本",
+      "material": "デラウェア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#wine-3",
+      "name": "マスカット・ベーリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "セブンシダーズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/seven-cedars-winery.html#winery"
+      },
+      "description": "マスカットベリーA100%",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -386,7 +476,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">セブンシダーズワイナリー</h1>
     <p class="hero-subtitle">セブンシダーズ</p>
     <p class="hero-en">Since 2021 — 富士河口湖町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.7cwinery.com" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -531,7 +621,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 富士河口湖町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.7cwinery.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.7cwinery.com</a></p>
   </div>
 </section>

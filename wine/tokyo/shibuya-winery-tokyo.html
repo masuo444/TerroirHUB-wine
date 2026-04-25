@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html",
+      "name": "渋谷ワイナリー東京 - 東京都のワイナリー",
+      "description": "令和2年創業。東京都渋谷区の日本ワイナリー「渋谷ワイナリー東京」。MIYASHITA PARK内にある渋谷初のアーバンワイナリー。全国から仕入れたぶどうを使い、渋谷の食文化に寄り添うワインを造る。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#winery",
       "name": "渋谷ワイナリー東京",
       "description": "MIYASHITA PARK内にある渋谷初のアーバンワイナリー。全国から仕入れたぶどうを使い、渋谷の食文化に寄り添うワインを造る。",
       "url": "https://shibuya.wine/",
@@ -50,7 +67,29 @@
         "ピノ・ノワール",
         "ナイアガラ",
         "カベルネ・ソーヴィニヨン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://shibuya.wine/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "渋谷ワイナリー東京の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +113,32 @@
           "item": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#wine-1",
+      "name": "渋谷ブラン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "渋谷ワイナリー東京"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#wine-2",
+      "name": "渋谷ルージュ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "渋谷ワイナリー東京"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/shibuya-winery-tokyo.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -380,7 +445,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">渋谷ワイナリー東京</h1>
     <p class="hero-subtitle">渋谷ワイナリー東京</p>
     <p class="hero-en">Since 2020 — 渋谷区, 東京都</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://shibuya.wine/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -480,21 +545,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">渋谷ブラン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">渋谷ルージュ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

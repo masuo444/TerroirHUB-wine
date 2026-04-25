@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html",
+      "name": "飛鳥ワイン - 大阪府のワイナリー",
+      "description": "昭和9年創業。大阪府羽曳野市の日本ワイナリー「飛鳥ワイン」。1934年創業。羽曳野・飛鳥の自社農園ぶどうを中心に、高品質な大阪ワインを造る老舗ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html#winery",
       "name": "飛鳥ワイン",
       "description": "1934年創業。羽曳野・飛鳥の自社農園ぶどうを中心に、高品質な大阪ワインを造る老舗ワイナリー。",
       "url": "https://asukawine.co.jp/",
@@ -53,7 +70,30 @@
         "甲州",
         "デラウェア",
         "カベルネ・ソーヴィニヨン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://asukawine.co.jp/company/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI大阪"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "飛鳥ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -77,6 +117,20 @@
           "item": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html#wine-1",
+      "name": "飛鳥ワイン",
+      "category": "赤・白・ロゼ・泡",
+      "brand": {
+        "@type": "Brand",
+        "name": "飛鳥ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/osaka/asuka-wine.html#winery"
+      },
+      "description": "自社農園ぶどうを生かした主力シリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -501,7 +555,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・ロゼ・泡</div>
-      
+
       <h3 class="brand-name">飛鳥ワイン</h3>
       <p class="brand-type">赤・白・ロゼ・泡</p>
       <p class="brand-desc">自社農園ぶどうを生かした主力シリーズ。</p>
@@ -525,7 +579,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">大阪府 羽曳野市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://asukawine.co.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://asukawine.co.jp/company/</a></p>
   </div>
 </section>

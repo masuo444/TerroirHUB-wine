@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html",
+      "name": "吾妻山麓醸造所 - 福島県のワイナリー",
+      "description": "令和元年創業。福島県福島市のエステートワイナリー「吾妻山麓醸造所」。福島市のシンボル吾妻山の麓に2019年に創業、高品質な果実酒（ワイン）の製造販売を行っています。表情豊かな福島の四季を奏でるようなワインづくりを目指しており、地",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html#winery",
       "name": "吾妻山麓醸造所",
       "description": "福島市のシンボル吾妻山の麓に2019年に創業、高品質な果実酒（ワイン）の製造販売を行っています。表情豊かな福島の四季を奏でるようなワインづくりを目指しており、地元産ブドウと福島の果樹を活用しています。",
       "url": "https://azumasanroku-winery.co.jp/",
@@ -45,6 +62,26 @@
         "@type": "GeoCoordinates",
         "latitude": 37.7678,
         "longitude": 140.4478
+      },
+      "knowsAbout": [
+        "メルロー",
+        "シャルドネ"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/12936/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "吾妻山麓醸造所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +106,20 @@
           "item": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html#wine-1",
+      "name": "吾妻山麓ワイン",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "吾妻山麓ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/fukushima/azuma-sanroku-winery.html#winery"
+      },
+      "description": "福島の四季と果実を映すシリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +154,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和元年（2019年）に創業しました。福島県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "吾妻山麓醸造所ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にメルロー、シャルドネを使用しています。"
           }
         }
       ]
@@ -375,7 +434,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">吾妻山麓醸造所</h1>
     <p class="hero-subtitle">吾妻山麓ワイナリー</p>
     <p class="hero-en">Since 2019 — 福島市, 福島県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://azumasanroku-winery.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +511,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">吾妻山麓醸造所が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">メルロー</span><span class="grape-pill">シャルドネ</span></div>
+  </div>
+</section>
 
 
 
@@ -467,7 +535,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">吾妻山麓ワイン</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">福島の四季と果実を映すシリーズ。</p>
@@ -491,7 +559,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">福島県 福島市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/12936/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/12936/</a></p>
   </div>
 </section>
@@ -534,6 +602,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">令和元年（2019年）に創業しました。福島県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">吾妻山麓醸造所ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にメルロー、シャルドネを使用しています。</div>
     </div>
     </div>
   </div>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html",
+      "name": "高畠ワイナリー - 山形県のワイナリー",
+      "description": "平成2年創業。山形県高畠町の大規模ワイナリー「高畠ワイナリー」。1990年創業のワイナリーで、現在では観光も楽しめる東北では出荷量No1のワイナリーに成長。より親しみやすい甘口のワイン、フルーツワインから、ワイン愛好家を唸ら",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery",
       "name": "高畠ワイナリー",
       "description": "1990年創業のワイナリーで、現在では観光も楽しめる東北では出荷量No1のワイナリーに成長。より親しみやすい甘口のワイン、フルーツワインから、ワイン愛好家を唸らせる白ワインのシャルドネやフルボディタイプの赤ワインまで、多種多様のワインを造り出しています。",
       "url": "https://www.takahata-winery.jp/",
@@ -55,7 +72,60 @@
         "マスカット・ベーリーA",
         "ピノ・ノワール",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/takahata/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "高畠ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-5"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-6"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -79,6 +149,91 @@
           "item": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-1",
+      "name": "DOMAINE TAKAHATA Haut-Vigne",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "高畠ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery"
+      },
+      "material": "カベルネ・ソーヴィニヨン、メルロー、シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-2",
+      "name": "ARKADIA",
+      "category": "赤・白・スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "高畠ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery"
+      },
+      "material": "メルロー、シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-3",
+      "name": "Majestique",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "高畠ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery"
+      },
+      "material": "シャルドネ、メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-4",
+      "name": "Barrique",
+      "category": "赤・白・ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "高畠ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery"
+      },
+      "description": "樽熟成",
+      "material": "メルロー、シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-5",
+      "name": "Classique",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "高畠ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery"
+      },
+      "material": "メルロー、シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#wine-6",
+      "name": "Japanesque",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "高畠ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takahata-winery.html#winery"
+      },
+      "material": "マスカット・ベーリーA、リースリング・フォルテ"
     },
     {
       "@type": "FAQPage",
@@ -506,7 +661,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">カベルネ・ソーヴィニヨン、メルロー、シャルドネ</div>
       <h3 class="brand-name">DOMAINE TAKAHATA Haut-Vigne</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -516,7 +671,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー、シャルドネ</div>
       <h3 class="brand-name">ARKADIA</h3>
       <p class="brand-type">赤・白・スパークリング</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -526,7 +681,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ、メルロー</div>
       <h3 class="brand-name">Majestique</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     </div>
   </div>
@@ -547,7 +702,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山形県 高畠町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://giyamagata-wine.jp/maker/takahata/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://giyamagata-wine.jp/maker/takahata/</a></p>
   </div>
 </section>

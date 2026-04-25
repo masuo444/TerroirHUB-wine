@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html",
+      "name": "ドメーヌレゾン - 北海道のワイナリー",
+      "description": "令和元年創業。北海道中富良野町のエステートワイナリー「ドメーヌレゾン」。やぎと共につくるワイナリー。人間と自然が共存できる環境でのワイン造りを目指しています。富良野エリアに10haを超える自社圃場を持つ。サスティナブルな運営を中核に",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#winery",
       "name": "ドメーヌレゾン",
       "description": "やぎと共につくるワイナリー。人間と自然が共存できる環境でのワイン造りを目指しています。富良野エリアに10haを超える自社圃場を持つ。サスティナブルな運営を中核に据え、ワイン造りにおいて人の手を最小限にとどめることが特徴。",
       "url": "https://domaine-raison.com/",
@@ -45,6 +62,45 @@
         "@type": "GeoCoordinates",
         "latitude": 43.41,
         "longitude": 142.4
+      },
+      "knowsAbout": [
+        "ソーヴィニヨン・ブラン",
+        "シャルドネ"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://domaine-raison.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌレゾンの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -71,6 +127,50 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#wine-1",
+      "name": "中富良野ソーヴィニヨンブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌレゾン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#winery"
+      },
+      "description": "中富良野町の自社圃場産ソーヴィニヨン・ブラン100%。",
+      "material": "ソーヴィニヨン・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#wine-2",
+      "name": "中富良野シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌレゾン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#winery"
+      },
+      "description": "自園葡萄100%の樽発酵白。",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#wine-3",
+      "name": "中富良野ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌレゾン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-raison.html#winery"
+      },
+      "description": "富良野エリアの自社圃場ぶどうを使うロゼ。"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -79,6 +179,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "葡萄の収穫体験、ヤギとのふれあい、カフェ＆レストラン、ワイナリーツアー。ホテル＆コンドミニアム「一花（HITOHANA）」で宿泊可。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ドメーヌレゾンの代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄は中富良野ソーヴィニヨンブラン、中富良野シャルドネ、中富良野ロゼなどがあります。中富良野町の自社圃場産ソーヴィニヨン・ブラン100%。"
           }
         },
         {
@@ -95,6 +203,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ドメーヌレゾンではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にソーヴィニヨン・ブラン、シャルドネを使用しています。"
           }
         }
       ]
@@ -444,6 +560,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ドメーヌレゾンが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">ソーヴィニヨン・ブラン</span><span class="grape-pill">シャルドネ</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -467,21 +592,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
-      <h3 class="brand-name">中富良野シャルドネ</h3>
-      <p class="brand-type"></p>
-      
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">ソーヴィニヨン・ブラン</div>
+      <h3 class="brand-name">中富良野ソーヴィニヨンブラン</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">中富良野町の自社圃場産ソーヴィニヨン・ブラン100%。</p>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">シャルドネ</div>
+      <h3 class="brand-name">中富良野シャルドネ</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">自園葡萄100%の樽発酵白。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge rose">ロゼワイン</div>
+
       <h3 class="brand-name">中富良野ロゼ</h3>
-      <p class="brand-type"></p>
-      
+      <p class="brand-type">ロゼワイン</p>
+      <p class="brand-desc">富良野エリアの自社圃場ぶどうを使うロゼ。</p>
     </div>
     </div>
   </div>
@@ -525,18 +660,34 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ドメーヌレゾンの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">ドメーヌレゾンの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道空知郡中富良野町です。最寄りはJR富良野線 中富良野駅（車約10分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は中富良野ソーヴィニヨンブラン、中富良野シャルドネ、中富良野ロゼなどがあります。中富良野町の自社圃場産ソーヴィニヨン・ブラン100%。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ドメーヌレゾンはいつ創業しましたか？</span>
+        <span class="faq-q-text">ドメーヌレゾンの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道空知郡中富良野町です。最寄りはJR富良野線 中富良野駅（車約10分）です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ドメーヌレゾンはいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ドメーヌレゾンではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にソーヴィニヨン・ブラン、シャルドネを使用しています。</div>
     </div>
     </div>
   </div>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html",
+      "name": "ドメーヌ・タカヒコ - 北海道のワイナリー",
+      "description": "平成22年創業。北海道余市町のエステートワイナリー「ドメーヌ・タカヒコ」。余市でのワイン造りを志す農家による醸造所。約9,000本のピノ・ノワールを有機栽培で管理し、廃材を改装したワイナリーで醸造。13種類のクローンをビオディナミ農法",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html#winery",
       "name": "ドメーヌ・タカヒコ",
       "description": "余市でのワイン造りを志す農家による醸造所。約9,000本のピノ・ノワールを有機栽培で管理し、廃材を改装したワイナリーで醸造。13種類のクローンをビオディナミ農法で栽培し、全房発酵・野生酵母発酵、亜硫酸無添加〜極少量添加のワイン造りを実践。",
       "url": "https://www.takahiko.co.jp/",
@@ -48,7 +65,30 @@
       },
       "knowsAbout": [
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.takahiko.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ・タカヒコの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +112,20 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html#wine-1",
+      "name": "ナナツモリ ピノノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ナナツモリ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-takahiko.html#winery"
+      },
+      "material": "ピノ・ノワール"
     },
     {
       "@type": "FAQPage",
@@ -499,7 +553,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">ナナツモリ ピノノワール</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

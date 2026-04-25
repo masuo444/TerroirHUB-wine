@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html",
+      "name": "ワイン畑 浦本 - 北海道のワイナリー",
+      "description": "令和5年創業。北海道岩見沢市のエステートワイナリー「ワイン畑 浦本」。岩見沢市で2023年に設立された小規模ワイナリー。空知エリアで自社畑のぶどうを栽培・醸造。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html#winery",
       "name": "ワイン畑 浦本",
       "description": "岩見沢市で2023年に設立された小規模ワイナリー。空知エリアで自社畑のぶどうを栽培・醸造。",
-      "url": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html",
+      "url": "https://www.winebatake.com/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "北海道岩見沢市",
@@ -44,6 +61,36 @@
         "@type": "GeoCoordinates",
         "latitude": 43.2,
         "longitude": 141.77
+      },
+      "knowsAbout": [
+        "ピノ・ノワール",
+        "ソーヴィニヨン・ブラン",
+        "ソーヴィニヨン・グリ",
+        "ゲヴュルツトラミネール",
+        "サヴァニャン・ブラン"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winebatake.com/introduction/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ワイン畑 浦本の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,8 +117,39 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html#wine-1",
+      "name": "ワイン畑 浦本",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "浦本"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/wine-hatake-uramoto.html#winery"
+      },
+      "description": "岩見沢市栗沢町の畑を表現する小規模生産。",
+      "material": "ピノ・ノワールほか"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ワイン畑 浦本の見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ワイン販売準備・営業日は公式サイトで要確認。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ワイン畑 浦本の代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄はワイン畑 浦本などがあります。岩見沢市栗沢町の畑を表現する小規模生産。"
+          }
+        },
         {
           "@type": "Question",
           "name": "ワイン畑 浦本の所在地・アクセスを教えてください",
@@ -86,6 +164,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和5年（2023年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ワイン畑 浦本ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にピノ・ノワール、ソーヴィニヨン・ブラン、ソーヴィニヨン・グリ、ゲヴュルツトラミネール、サヴァニャン・ブランを使用しています。"
           }
         }
       ]
@@ -361,7 +447,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI北海道</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.winebatake.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -428,6 +514,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ワイン畑 浦本が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">ピノ・ノワール</span><span class="grape-pill">ソーヴィニヨン・ブラン</span><span class="grape-pill">ソーヴィニヨン・グリ</span><span class="grape-pill">ゲヴュルツトラミネール</span><span class="grape-pill">サヴァニャン・ブラン</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -441,6 +536,25 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">日本ワイン</div>
+      <div class="grape-tag">ピノ・ノワールほか</div>
+      <h3 class="brand-name">ワイン畑 浦本</h3>
+      <p class="brand-type">日本ワイン</p>
+      <p class="brand-desc">岩見沢市栗沢町の畑を表現する小規模生産。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -449,7 +563,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道岩見沢市</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道岩見沢市</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.winebatake.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winebatake.com/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">ワイン販売準備・営業日は公式サイトで要確認。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -458,7 +572,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       </div>
     </div>
     <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR函館本線 岩見沢駅（車約20分）</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://winecluster.org/contents/winery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://winecluster.org/contents/winery/</a></p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winebatake.com/introduction/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winebatake.com/introduction/</a></p>
   </div>
 </section>
 
@@ -472,18 +586,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ワイン畑 浦本の所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">ワイン畑 浦本の見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">住所は北海道岩見沢市です。最寄りはJR函館本線 岩見沢駅（車約20分）です。</div>
+      <div class="faq-a" id="faq-a-0">ワイン販売準備・営業日は公式サイトで要確認。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ワイン畑 浦本はいつ創業しましたか？</span>
+        <span class="faq-q-text">ワイン畑 浦本の代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">令和5年（2023年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はワイン畑 浦本などがあります。岩見沢市栗沢町の畑を表現する小規模生産。</div>
+    </div>
+    <div class="faq-item" id="faq-2">
+      <div class="faq-q" onclick="toggleFaq(2)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ワイン畑 浦本の所在地・アクセスを教えてください</span>
+        <span class="faq-q-icon" id="faq-icon-2">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-2">住所は北海道岩見沢市です。最寄りはJR函館本線 岩見沢駅（車約20分）です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ワイン畑 浦本はいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">令和5年（2023年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ワイン畑 浦本ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にピノ・ノワール、ソーヴィニヨン・ブラン、ソーヴィニヨン・グリ、ゲヴュルツトラミネール、サヴァニャン・ブランを使用しています。</div>
     </div>
     </div>
   </div>

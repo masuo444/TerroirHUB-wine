@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html",
+      "name": "ふくしま逢瀬ワイナリー - 福島県のワイナリー",
+      "description": "平成27年創業。福島県郡山市のエステートワイナリー「ふくしま逢瀬ワイナリー」。農家と共に葡萄づくり・ワインづくりに取り組むと共に、福島の特産である美味しい桃や梨、林檎の可能性を広げる施設。素材の良さを引き出した酒づくりを目指しており、JR",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html#winery",
       "name": "ふくしま逢瀬ワイナリー",
       "description": "農家と共に葡萄づくり・ワインづくりに取り組むと共に、福島の特産である美味しい桃や梨、林檎の可能性を広げる施設。素材の良さを引き出した酒づくりを目指しており、JR郡山駅と猪苗代湖のほぼ中間の自然豊かな山あいに位置しています。",
       "url": "https://ousewinery.jp/",
@@ -45,6 +62,29 @@
         "@type": "GeoCoordinates",
         "latitude": 37.4278,
         "longitude": 140.2078
+      },
+      "knowsAbout": [
+        "メルロー",
+        "カベルネ・ソーヴィニヨン",
+        "シャルドネ",
+        "ソーヴィニヨン・ブラン",
+        "ブラッククイーン"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/6562/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ふくしま逢瀬ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +109,20 @@
           "item": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html#wine-1",
+      "name": "Vin de Ollage",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ふくしま逢瀬ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/fukushima/ouse-winery.html#winery"
+      },
+      "description": "郡山産ぶどう100%の主力シリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +157,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "平成27年（2015年）に創業しました。福島県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ふくしま逢瀬ワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にメルロー、カベルネ・ソーヴィニヨン、シャルドネ、ソーヴィニヨン・ブラン、ブラッククイーンを使用しています。"
           }
         }
       ]
@@ -375,7 +437,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ふくしま逢瀬ワイナリー</h1>
     <p class="hero-subtitle">ふくしま逢瀬ワイナリー</p>
     <p class="hero-en">Since 2015 — 郡山市, 福島県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://ousewinery.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +514,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ふくしま逢瀬ワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">メルロー</span><span class="grape-pill">カベルネ・ソーヴィニヨン</span><span class="grape-pill">シャルドネ</span><span class="grape-pill">ソーヴィニヨン・ブラン</span><span class="grape-pill">ブラッククイーン</span></div>
+  </div>
+</section>
 
 
 
@@ -467,7 +538,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">Vin de Ollage</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">郡山産ぶどう100%の主力シリーズ。</p>
@@ -491,7 +562,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">福島県 郡山市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/6562/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/6562/</a></p>
   </div>
 </section>
@@ -534,6 +605,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">平成27年（2015年）に創業しました。福島県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ふくしま逢瀬ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にメルロー、カベルネ・ソーヴィニヨン、シャルドネ、ソーヴィニヨン・ブラン、ブラッククイーンを使用しています。</div>
     </div>
     </div>
   </div>

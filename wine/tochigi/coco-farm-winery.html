@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html",
+      "name": "ココ・ファーム・ワイナリー - 栃木県のワイナリー",
+      "description": "昭和55年創業。栃木県足利市のエステートワイナリー「ココ・ファーム・ワイナリー」。1950年代に開かれた急斜面の畑を母体に、1980年に誕生したワイナリー。野生酵母を中心に100%日本のぶどうで醸造する。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#winery",
       "name": "ココ・ファーム・ワイナリー",
       "description": "1950年代に開かれた急斜面の畑を母体に、1980年に誕生したワイナリー。野生酵母を中心に100%日本のぶどうで醸造する。",
       "url": "https://cocowine.com/",
@@ -45,6 +62,42 @@
         "@type": "GeoCoordinates",
         "latitude": 36.3082,
         "longitude": 139.4617
+      },
+      "knowsAbout": [
+        "マスカット・ベーリーA",
+        "甲州",
+        "シャルドネ",
+        "メルロー",
+        "カベルネ・ソーヴィニヨン",
+        "ノートン"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.verygoodlocal-tochigi.jp/news/page.php?id=272"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ココ・ファーム・ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +122,48 @@
           "item": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#wine-1",
+      "name": "農民ロッソ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "COCO FARM & WINERY"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#winery"
+      },
+      "description": "果実味豊かな代表赤。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#wine-2",
+      "name": "農民ドライ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "COCO FARM & WINERY"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#winery"
+      },
+      "description": "食事に寄り添う定番白。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#wine-3",
+      "name": "北ののぼ",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "COCO FARM & WINERY"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/coco-farm-winery.html#winery"
+      },
+      "description": "サミット採用実績のある瓶内二次発酵。"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +198,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "昭和55年（1980年）に創業しました。栃木県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ココ・ファーム・ワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にマスカット・ベーリーA、甲州、シャルドネ、メルロー、カベルネ・ソーヴィニヨン、ノートンを使用しています。"
           }
         }
       ]
@@ -375,7 +478,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ココ・ファーム・ワイナリー</h1>
     <p class="hero-subtitle">COCO FARM &amp; WINERY</p>
     <p class="hero-en">Since 1980 — 足利市, 栃木県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://cocowine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +555,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ココ・ファーム・ワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">マスカット・ベーリーA</span><span class="grape-pill">甲州</span><span class="grape-pill">シャルドネ</span><span class="grape-pill">メルロー</span><span class="grape-pill">カベルネ・ソーヴィニヨン</span><span class="grape-pill">ノートン</span></div>
+  </div>
+</section>
 
 
 
@@ -467,7 +579,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">農民ロッソ</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">果実味豊かな代表赤。</p>
@@ -477,7 +589,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+
       <h3 class="brand-name">農民ドライ</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">食事に寄り添う定番白。</p>
@@ -487,7 +599,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge sparkling">スパークリングワイン</div>
-      
+
       <h3 class="brand-name">北ののぼ</h3>
       <p class="brand-type">スパークリングワイン</p>
       <p class="brand-desc">サミット採用実績のある瓶内二次発酵。</p>
@@ -554,6 +666,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">昭和55年（1980年）に創業しました。栃木県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ココ・ファーム・ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にマスカット・ベーリーA、甲州、シャルドネ、メルロー、カベルネ・ソーヴィニヨン、ノートンを使用しています。</div>
     </div>
     </div>
   </div>

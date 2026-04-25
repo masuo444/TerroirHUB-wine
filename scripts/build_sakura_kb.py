@@ -7,6 +7,7 @@ wine/sakura_kb.json と wine/search_index.json を生成。
 
 import json, glob, os
 from datetime import date
+from collections import Counter, defaultdict
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,6 +23,73 @@ PREF_NAMES = {
     'saga':'佐賀県','nagasaki':'長崎県','kumamoto':'熊本県','oita':'大分県','miyazaki':'宮崎県',
     'kagoshima':'鹿児島県','okinawa':'沖縄県'
 }
+
+CORE_FIELDS = ('name', 'area', 'desc')
+TRUST_FIELDS = ('url', 'founded')
+NEGATIVE_VISIT_TERMS = ('見学不可', '一般見学なし', '見学なし', '受け付けていない', '受付なし', '公開情報では')
+POSITIVE_VISIT_TERMS = ('見学', 'ツアー', '試飲', 'テイスティング', 'ショップ', '直売', 'カフェ', 'レストラン', 'ワインバー', '販売')
+
+
+def is_present(value):
+    if value is None:
+        return False
+    if isinstance(value, str):
+        return bool(value.strip())
+    if isinstance(value, (list, tuple, set, dict)):
+        return bool(value)
+    return True
+
+
+def brand_name(brand):
+    if isinstance(brand, dict):
+        return str(brand.get('name', '')).strip()
+    if isinstance(brand, str):
+        return brand.strip()
+    return ''
+
+
+def brand_detail(brand):
+    if isinstance(brand, dict):
+        return {
+            'name': brand_name(brand),
+            'type': str(brand.get('type', '')).strip(),
+            'grapes': brand.get('grapes', []) if isinstance(brand.get('grapes', []), list) else [],
+            'specs': brand.get('specs', {}) if isinstance(brand.get('specs', {}), dict) else {},
+        }
+    name = brand_name(brand)
+    return {'name': name, 'type': '', 'grapes': [], 'specs': {}}
+
+
+def can_visit(winery):
+    visit = str(winery.get('visit', '') or '').strip()
+    if not visit:
+        return False
+    if any(term in visit for term in NEGATIVE_VISIT_TERMS):
+        return False
+    return any(term in visit for term in POSITIVE_VISIT_TERMS)
+
+
+def quality_rank(winery):
+    missing = [field for field in CORE_FIELDS if not is_present(winery.get(field))]
+    missing += [field for field in TRUST_FIELDS if not is_present(winery.get(field))]
+    if not any(brand_name(brand) for brand in winery.get('brands', []) or []):
+        missing.append('brands')
+    if not is_present(winery.get('features')):
+        missing.append('features')
+    if not is_present(winery.get('grapes')):
+        missing.append('grapes')
+    if not missing:
+        return 'A', []
+    if len(missing) <= 2 and all(field in {'url', 'founded', 'brands'} for field in missing):
+        return 'B', missing
+    if len(missing) <= 3:
+        return 'C', missing
+    return 'D', missing
+
+
+def top_items(counter, limit=5):
+    return [{'name': name, 'count': count} for name, count in counter.most_common(limit) if name]
+
 
 # ── ワイナリーデータ収集 ──
 all_wineries = []
@@ -41,7 +109,10 @@ for jf in sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json'))):
     pref_entries = []
     for w in wineries:
         if not w.get('id'): continue
-        brands_names = [br.get('name','') for br in w.get('brands',[]) if isinstance(br,dict) and br.get('name')]
+        brand_details = [brand_detail(br) for br in w.get('brands', []) or [] if brand_name(br)]
+        brands_names = [br['name'] for br in brand_details if br.get('name')]
+        q_rank, missing_fields = quality_rank(w)
+        visit_available = can_visit(w)
         entry = {
             'id':         w.get('id',''),
             'name':       w.get('name',''),
@@ -62,7 +133,16 @@ for jf in sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json'))):
             'visit':      w.get('visit',''),
             'desc':       w.get('desc','')[:300],
             'brands':     brands_names[:3],
+            'brand_details': brand_details[:6],
             'features':   w.get('features',[])[:3],
+            'quality_rank': q_rank,
+            'missing_fields': missing_fields,
+            'visit_available': visit_available,
+            'source':     w.get('source', ''),
+            'search_terms': [term for term in [
+                w.get('name',''), w.get('brand',''), pref_name, w.get('area',''), w.get('gi',''),
+                w.get('main_grape',''), *brands_names[:3], *(w.get('grapes', [])[:5] or [])
+            ] if term],
             'page':       f"/wine/{pref}/{w.get('id','')}.html",
         }
         all_wineries.append(entry)
@@ -80,10 +160,12 @@ for jf in sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json'))):
             'main_grape':w.get('main_grape',''),
             'grapes':   w.get('grapes',[])[:3],
             'brands':   brands_names[:2],
+            'quality_rank': q_rank,
+            'visit_available': visit_available,
             'page':     f"/wine/{pref}/{w.get('id','')}.html",
         })
 
-    a_count = sum(1 for w in pref_entries if w.get('url') and w.get('founded') and w.get('brands') and w.get('features'))
+    a_count = sum(1 for w in pref_entries if w.get('quality_rank') == 'A')
     by_pref[pref] = {
         'name':      pref_name,
         'count':     len(pref_entries),
@@ -91,9 +173,86 @@ for jf in sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json'))):
         'wineries':  pref_entries,
     }
 
+pref_answer_index = {}
+grape_map = defaultdict(list)
+gi_map = defaultdict(list)
+visit_map = {}
+
+for pref, info in by_pref.items():
+    wineries = info['wineries']
+    grape_counter = Counter(grape for winery in wineries for grape in winery.get('grapes', []) if grape)
+    area_counter = Counter(winery.get('area', '') for winery in wineries if winery.get('area'))
+    visit_wineries = [winery for winery in wineries if winery.get('visit_available')]
+    top_wineries = sorted(wineries, key=lambda winery: (winery.get('quality_rank') != 'A', winery.get('name', '')))[:6]
+    pref_answer_index[pref] = {
+        'name': info['name'],
+        'count': info['count'],
+        'a_rank': info['a_rank'],
+        'quality_rate': round(info['a_rank'] / info['count'] * 100, 1) if info['count'] else 0,
+        'visit_count': len(visit_wineries),
+        'top_grapes': top_items(grape_counter),
+        'top_areas': top_items(area_counter),
+        'gi': next((winery.get('gi') for winery in wineries if winery.get('gi')), ''),
+        'top_wineries': [{'name': winery['name'], 'page': winery['page']} for winery in top_wineries],
+        'page': f"/wine/{pref}/",
+    }
+    visit_map[pref] = {
+        'name': info['name'],
+        'visit_count': len(visit_wineries),
+        'wineries': [{'name': winery['name'], 'area': winery.get('area', ''), 'page': winery['page']} for winery in visit_wineries[:12]],
+    }
+    for winery in wineries:
+        for grape in winery.get('grapes', []):
+            if grape:
+                grape_map[grape].append(winery)
+        if winery.get('gi'):
+            gi_map[winery['gi']].append(winery)
+
+grape_answer_index = {
+    grape: {
+        'count': len(wineries),
+        'prefs': top_items(Counter(winery.get('pref_name', '') for winery in wineries)),
+        'top_wineries': [{'name': winery['name'], 'pref_name': winery['pref_name'], 'page': winery['page']} for winery in wineries[:8]],
+    }
+    for grape, wineries in sorted(grape_map.items())
+}
+
+gi_answer_index = {
+    gi: {
+        'count': len(wineries),
+        'prefs': top_items(Counter(winery.get('pref_name', '') for winery in wineries)),
+        'top_wineries': [{'name': winery['name'], 'pref_name': winery['pref_name'], 'page': winery['page']} for winery in wineries[:8]],
+    }
+    for gi, wineries in sorted(gi_map.items())
+}
+
+answer_index = {
+    'prefectures': pref_answer_index,
+    'grapes': grape_answer_index,
+    'gi': gi_answer_index,
+    'visit': visit_map,
+    'starter_routes': [
+        {
+            'intent': '初心者が日本ワインを選ぶ',
+            'answer': 'まずは甲州の山梨、ピノ・ノワールやケルナーの北海道、メルローやシャルドネの長野から選ぶと特徴を比較しやすいです。',
+            'links': ['/wine/yamanashi/', '/wine/hokkaido/', '/wine/nagano/', '/wine/guide/varieties.html'],
+        },
+        {
+            'intent': 'ワイナリー見学で選ぶ',
+            'answer': '見学・試飲・ショップ情報があるワイナリーを都道府県ページの目的別導線から確認できます。予約要否は公式サイトで確認してください。',
+            'links': ['/wine/yamanashi/', '/wine/hokkaido/', '/wine/nagano/'],
+        },
+        {
+            'intent': 'GI産地で選ぶ',
+            'answer': '日本のワインGIは山梨、北海道、山形、大阪、長野の5産地です。産地別の気候、代表品種、ワイナリーを比較できます。',
+            'links': ['/wine/guide/regions.html', '/wine/yamanashi/', '/wine/hokkaido/', '/wine/nagano/', '/wine/yamagata/', '/wine/osaka/'],
+        },
+    ],
+}
+
 # ── ナレッジベース ──
 kb = {
-    'version':  '2.0',
+    'version':  '2.1',
     'domain':   'wine',
     'updated':  date.today().isoformat(),
     'total_wineries': len(all_wineries),
@@ -114,22 +273,22 @@ kb = {
             'desc': '2018年認定。冷涼な気候で欧州系品種が育つ。余市・仁木エリアが中心産地。ピノ・ノワールが高く評価される。'
         },
         'GI長野': {
-            'year': 2020, 'pref': '長野県',
+            'year': 2021, 'pref': '長野県',
             'main_grapes': ['メルロー','シャルドネ','カベルネ・フラン','ソーヴィニョン・ブラン'],
             'winery_count': by_pref.get('nagano',{}).get('count',0),
-            'desc': '2020年認定。標高の高い冷涼な産地。塩尻・東御・上田エリアが主産地。シャトー・メルシャンなど国際的に評価が高い。'
+            'desc': '2021年認定。標高の高い冷涼な産地。塩尻・東御・上田エリアが主産地。メルローやシャルドネなどの欧州系品種が評価される。'
         },
         'GI山形': {
-            'year': 2023, 'pref': '山形県',
+            'year': 2021, 'pref': '山形県',
             'main_grapes': ['メルロー','シャルドネ','デラウェア'],
             'winery_count': by_pref.get('yamagata',{}).get('count',0),
-            'desc': '2023年認定。フルーツ王国山形の恵みを活かしたワイン。上山・高畠・天童エリアが産地。'
+            'desc': '2021年認定。フルーツ王国山形の恵みを活かしたワイン。上山・高畠・天童エリアが産地。'
         },
         'GI大阪': {
-            'year': 2024, 'pref': '大阪府',
+            'year': 2021, 'pref': '大阪府',
             'main_grapes': ['デラウェア','マスカット・ベーリーA'],
             'winery_count': by_pref.get('osaka',{}).get('count',0),
-            'desc': '2024年認定、最新のGI産地。河内エリア（柏原・羽曳野・富田林）が主産地。日本最古のワイン産地のひとつ。'
+            'desc': '2021年認定。河内エリア（柏原・羽曳野・富田林）が主産地。日本の歴史あるワイン産地のひとつ。'
         },
     },
 
@@ -214,7 +373,7 @@ kb = {
         },
         {
             'q': 'GI（地理的表示）とは何ですか？',
-            'a': 'GIとは国税庁が認定する地理的表示制度で、特定地域産のぶどうだけで造られたワインに与えられます。現在GI山梨（2013年）・GI北海道（2018年）・GI長野（2020年）・GI山形（2023年）・GI大阪（2024年）の5産地が認定されています。'
+            'a': 'GIとは国税庁が認定する地理的表示制度で、産地に主として帰せられる品質や特性を持つ酒類の産地名を保護する仕組みです。日本のワインGIは山梨（2013年）・北海道（2018年）・山形（2021年）・大阪（2021年）・長野（2021年）の5産地です。'
         },
         {
             'q': '甲州ワインとはどんなワインですか？',
@@ -226,7 +385,7 @@ kb = {
         },
         {
             'q': '日本ワインの産地はどこが有名ですか？',
-            'a': '山梨県（国内最大の産地・91ワイナリー）・北海道（冷涼でピノ・ノワールが有名・79ワイナリー）・長野県（標高が高くメルローが秀逸・70ワイナリー）・山形県・岩手県が主要産地です。全国に432以上のワイナリーがあります。'
+            'a': '山梨県（国内最大級の産地・91ワイナリー）・北海道（冷涼でピノ・ノワールが有名・79ワイナリー）・長野県（標高が高くメルローなどが評価される・69ワイナリー）・山形県・岩手県が主要産地です。Terroir HUB WINEでは432件のワイナリーを掲載しています。'
         },
         {
             'q': 'ワイナリー見学はできますか？',
@@ -263,6 +422,16 @@ kb = {
         }
         for pref, info in by_pref.items()
     },
+
+    # AI回答向けインデックス
+    'answer_index': answer_index,
+    'query_patterns': [
+        {'intent': 'prefecture_summary', 'examples': ['山梨のワイナリーを教えて', '北海道ワインの特徴は？']},
+        {'intent': 'grape_search', 'examples': ['甲州が飲める産地', 'ピノ・ノワールのワイナリー']},
+        {'intent': 'visit_search', 'examples': ['見学できるワイナリー', '試飲できる長野のワイナリー']},
+        {'intent': 'gi_summary', 'examples': ['日本ワインのGIとは', 'GI山梨とGI北海道の違い']},
+        {'intent': 'beginner_route', 'examples': ['初心者におすすめの日本ワイン', '最初に飲むならどこから？']},
+    ],
 
     # 全ワイナリーデータ
     'wineries': all_wineries,

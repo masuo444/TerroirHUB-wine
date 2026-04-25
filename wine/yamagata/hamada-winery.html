@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html",
+      "name": "モンサンワイン - 山形県のワイナリー",
+      "description": "昭和32年（ワイン醸造着手）創業。山形県米沢市のエステートワイナリー「モンサンワイン」。1957年ワイン醸造に着手、1973年ぶどう果樹の垣根式密植栽培法に成功しボルドー大学でワイン醸造技術を学び1976年シャトーモンサンを発売。ワインは畑作りから",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html#winery",
       "name": "モンサンワイン",
       "description": "1957年ワイン醸造に着手、1973年ぶどう果樹の垣根式密植栽培法に成功しボルドー大学でワイン醸造技術を学び1976年シャトーモンサンを発売。ワインは畑作りから基本にこだわりの手作りワインを心がけています。",
       "url": "https://www.okimasamune.com/",
@@ -45,6 +62,34 @@
         "@type": "GeoCoordinates",
         "latitude": 37.9178,
         "longitude": 140.1067
+      },
+      "knowsAbout": [
+        "カベルネ・ソーヴィニヨン",
+        "メルロー",
+        "シャルドネ"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/2621/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "モンサンワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +114,19 @@
           "item": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html#wine-1",
+      "name": "シャトーモンサン",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトーモンサン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/hamada-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -103,6 +161,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "昭和32年（ワイン醸造着手）（1957年）に創業しました。山形県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "モンサンワインではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にカベルネ・ソーヴィニヨン、メルロー、シャルドネを使用しています。"
           }
         }
       ]
@@ -452,6 +518,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">モンサンワインが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">カベルネ・ソーヴィニヨン</span><span class="grape-pill">メルロー</span><span class="grape-pill">シャルドネ</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -476,10 +551,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白</div>
-      
+
       <h3 class="brand-name">シャトーモンサン</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     </div>
   </div>
@@ -500,7 +575,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山形県 米沢市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/2621/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/2621/</a></p>
   </div>
 </section>
@@ -543,6 +618,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">昭和32年（ワイン醸造着手）（1957年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">モンサンワインではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にカベルネ・ソーヴィニヨン、メルロー、シャルドネを使用しています。</div>
     </div>
     </div>
   </div>

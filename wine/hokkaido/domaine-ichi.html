@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html",
+      "name": "ドメーヌ・ICHI - 北海道のワイナリー",
+      "description": "平成20年創業。北海道仁木町のエステートワイナリー「ドメーヌ・ICHI」。有機JAS認定と環境にやさしい有機農法で自社農園栽培。2021年にオーガニックワイナリー認定を取得しています。日本初のオーガニックワイン認定取得（2010年）。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#winery",
       "name": "ドメーヌ・ICHI",
       "description": "有機JAS認定と環境にやさしい有機農法で自社農園栽培。2021年にオーガニックワイナリー認定を取得しています。日本初のオーガニックワイン認定取得（2010年）。",
       "url": "https://domaine-1.com/",
@@ -52,7 +69,48 @@
         "ゲヴュルツトラミネール",
         "ナイアガラ",
         "ポートランド"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://domaine-1.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ・ICHIの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +134,61 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-1",
+      "name": "ICHIシリーズ Pinot Noir",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ICHI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#winery"
+      },
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-2",
+      "name": "ICHIシリーズ Pinot Gris",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ICHI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#winery"
+      },
+      "material": "ピノ・グリ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-3",
+      "name": "蝦夷泡",
+      "category": "ペティヤン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ICHI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#winery"
+      },
+      "material": "ナイアガラ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#wine-4",
+      "name": "Natural Xシリーズ",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "ICHI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-ichi.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -503,7 +616,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">ICHIシリーズ Pinot Noir</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -513,7 +626,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・グリ</div>
       <h3 class="brand-name">ICHIシリーズ Pinot Gris</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -523,7 +636,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ナイアガラ</div>
       <h3 class="brand-name">蝦夷泡</h3>
       <p class="brand-type">ペティヤン</p>
-      
+
     </div>
     </div>
   </div>

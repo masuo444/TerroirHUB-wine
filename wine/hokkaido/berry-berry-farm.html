@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html",
+      "name": "ベリーベリーファーム＆ワイナリー仁木 - 北海道のワイナリー",
+      "description": "平成12年創業。北海道仁木町のエステートワイナリー「ベリーベリーファーム＆ワイナリー仁木」。有機JAS認定・特別栽培農産物認定を取得した50haの農場を持つ。ブルーベリーやラズベリーなどのベリー類とワイン葡萄を栽培し、オーガニックワインを醸造。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#winery",
       "name": "ベリーベリーファーム＆ワイナリー仁木",
       "description": "有機JAS認定・特別栽培農産物認定を取得した50haの農場を持つ。ブルーベリーやラズベリーなどのベリー類とワイン葡萄を栽培し、オーガニックワインを醸造。",
       "url": "https://shop2.organicwine.jp/",
@@ -49,7 +66,36 @@
         "ナイアガラ",
         "ピノ・グリ",
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://shop2.organicwine.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ベリーベリーファーム＆ワイナリー仁木の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +119,33 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#wine-1",
+      "name": "オーガニックワイン",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "ベリーベリーファーム"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#wine-2",
+      "name": "蝦夷泡（ペティヤン）",
+      "category": "スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "ベリーベリーファーム"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/berry-berry-farm.html#winery"
+      },
+      "material": "ナイアガラ"
     },
     {
       "@type": "FAQPage",
@@ -497,10 +570,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白</div>
-      
+
       <h3 class="brand-name">オーガニックワイン</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -510,7 +583,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ナイアガラ</div>
       <h3 class="brand-name">蝦夷泡（ペティヤン）</h3>
       <p class="brand-type">スパークリング</p>
-      
+
     </div>
     </div>
   </div>

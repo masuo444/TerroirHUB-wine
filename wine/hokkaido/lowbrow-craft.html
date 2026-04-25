@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html",
+      "name": "LOWBROW CRAFT - 北海道のワイナリー",
+      "description": "令和4年創業。北海道余市町のエステートワイナリー「LOWBROW CRAFT」。ワイン初心者でも気軽に手に取れるようなワイン造り、難しいことは考えずにごくごく飲める、日常に溶け込むワイン造りを目指しています。古くからある石蔵を改造したワイナ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#winery",
       "name": "LOWBROW CRAFT",
       "description": "ワイン初心者でも気軽に手に取れるようなワイン造り、難しいことは考えずにごくごく飲める、日常に溶け込むワイン造りを目指しています。古くからある石蔵を改造したワイナリーにて2022年10月より醸造開始。",
       "url": "https://lowbrowcraft.jp/",
@@ -49,7 +66,36 @@
         "ピノ・グリ",
         "ツヴァイゲルトレーベ",
         "旅路"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://lowbrowcraft.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "LOWBROW CRAFTの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +119,35 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#wine-1",
+      "name": "TABIJI（旅路）",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "LOWBROW CRAFT"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#winery"
+      },
+      "description": "旅路100%",
+      "material": "旅路"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#wine-2",
+      "name": "Roadrunner 旅路",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "LOWBROW CRAFT"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/lowbrow-craft.html#winery"
+      },
+      "material": "旅路"
     },
     {
       "@type": "FAQPage",
@@ -510,7 +585,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">旅路</div>
       <h3 class="brand-name">Roadrunner 旅路</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

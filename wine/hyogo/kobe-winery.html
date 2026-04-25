@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html",
+      "name": "神戸ワイナリー - 兵庫県のワイナリー",
+      "description": "昭和58年創業。兵庫県神戸市西区の日本ワイナリー「神戸ワイナリー」。神戸市西区の丘陵地に広がる神戸ワイン発祥のワイナリー。自社畑と契約農家のぶどうで神戸産ワインを醸す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#winery",
       "name": "神戸ワイナリー",
       "description": "神戸市西区の丘陵地に広がる神戸ワイン発祥のワイナリー。自社畑と契約農家のぶどうで神戸産ワインを醸す。",
       "url": "https://kobewinery.or.jp/",
@@ -45,6 +62,40 @@
         "@type": "GeoCoordinates",
         "latitude": 34.713,
         "longitude": 134.969
+      },
+      "knowsAbout": [
+        "カベルネ・ソーヴィニヨン",
+        "メルロー",
+        "シャルドネ",
+        "リースリング"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/16280010270/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "神戸ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -71,6 +122,45 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#wine-1",
+      "name": "神戸ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "神戸ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#wine-2",
+      "name": "みのり",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "神戸ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#wine-3",
+      "name": "ベネディクシオン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "神戸ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hyogo/kobe-winery.html#winery"
+      }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -95,6 +185,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "昭和58年（1983年）に創業しました。兵庫県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "神戸ワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にカベルネ・ソーヴィニヨン、メルロー、シャルドネ、リースリングを使用しています。"
           }
         }
       ]
@@ -367,7 +465,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">神戸ワイナリー</h1>
     <p class="hero-subtitle">神戸ワイン</p>
     <p class="hero-en">Since 1983 — 神戸市西区, 兵庫県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://kobewinery.or.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -444,6 +542,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">神戸ワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">カベルネ・ソーヴィニヨン</span><span class="grape-pill">メルロー</span><span class="grape-pill">シャルドネ</span><span class="grape-pill">リースリング</span></div>
+  </div>
+</section>
 
 
 
@@ -458,31 +565,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">神戸ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">みのり</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">ベネディクシオン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -503,7 +610,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">兵庫県 神戸市西区</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/16280010270/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/16280010270/</a></p>
   </div>
 </section>
@@ -538,6 +645,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
       <div class="faq-a" id="faq-a-2">昭和58年（1983年）に創業しました。兵庫県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">神戸ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">主にカベルネ・ソーヴィニヨン、メルロー、シャルドネ、リースリングを使用しています。</div>
     </div>
     </div>
   </div>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html",
+      "name": "楠わいなりー - 長野県のワイナリー",
+      "description": "平成23年創業。長野県須坂市のエステートワイナリー「楠わいなりー」。健康的なぶどうを使って、日本の食事に合う高品質でやさしく上品なワインを追求",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#winery",
       "name": "楠わいなりー",
       "description": "健康的なぶどうを使って、日本の食事に合う高品質でやさしく上品なワインを追求",
       "url": "http://www.kusunoki-winery.com",
@@ -58,7 +75,48 @@
         "ピノ・ノワール",
         "シラーズ",
         "ヤマブドウ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/chikuma/post-49/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "楠わいなりーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -82,6 +140,63 @@
           "item": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-1",
+      "name": "日滝原",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "楠わいなりー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#winery"
+      },
+      "description": "お刺身・お寿司に合う",
+      "material": "セミヨン・ソーヴィニヨン・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-2",
+      "name": "楠わいなりー シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "楠わいなりー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-3",
+      "name": "楠わいなりー ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "楠わいなりー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#winery"
+      },
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#wine-4",
+      "name": "ボーリュー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "楠わいなりー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kusunoki-winery.html#winery"
+      },
+      "material": "メルロー他"
     },
     {
       "@type": "FAQPage",
@@ -519,7 +634,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">楠わいなりー シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -529,7 +644,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">楠わいなりー ピノ・ノワール</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

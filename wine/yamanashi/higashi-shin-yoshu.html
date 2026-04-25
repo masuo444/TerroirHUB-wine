@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html",
+      "name": "東晨洋酒 - 山梨県のワイナリー",
+      "description": "昭和38年創業。山梨県山梨市の小規模ワイナリー「東晨洋酒」。昭和38年（1963年）、日川高校の卒業生仲間が「自分たちの育てたぶどうでワインを造り皆で飲もう」という思いで創業した小規模ワイナリー。酸化防止剤無添加・無濾過",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#winery",
       "name": "東晨洋酒",
       "description": "昭和38年（1963年）、日川高校の卒業生仲間が「自分たちの育てたぶどうでワインを造り皆で飲もう」という思いで創業した小規模ワイナリー。酸化防止剤無添加・無濾過・野生酵母など自然派醸造を実践し、毎年20種類以上の銘柄をリリース。",
       "url": "https://yn-sunriver.jimdofree.com/",
@@ -45,7 +62,35 @@
         "甲州",
         "マスカットベリーA",
         "ケルナー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.yamanashi-kankou.jp/special/toushinyoushu2019.html"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "東晨洋酒の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -69,6 +114,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#wine-1",
+      "name": "甲州街道栗原宿産甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サンリバーワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#winery"
+      },
+      "description": "辛口〜やや辛口 750ml",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#wine-2",
+      "name": "甲州街道栗原宿産マスカットベーリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サンリバーワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#winery"
+      },
+      "description": "ミディアムライトボディ",
+      "material": "マスカットベリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#wine-3",
+      "name": "ペトリコール ケルナー",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サンリバーワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/higashi-shin-yoshu.html#winery"
+      },
+      "description": "辛口",
+      "material": "ケルナー"
     },
     {
       "@type": "FAQPage",
@@ -383,7 +473,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">東晨洋酒</h1>
     <p class="hero-subtitle">サンリバーワイン</p>
     <p class="hero-en">Since 1963 — 山梨市, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://yn-sunriver.jimdofree.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -528,7 +618,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 山梨市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.yamanashi-kankou.jp/special/toushinyoushu2019.html" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.yamanashi-kankou.jp/special/toushinyoushu2019.html</a></p>
   </div>
 </section>

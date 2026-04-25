@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html",
+      "name": "塩山洋酒醸造 - 山梨県のワイナリー",
+      "description": "昭和32年創業。山梨県甲州市塩山の小規模ワイナリー「塩山洋酒醸造」。1957年に果実生産者組合を母体として設立。1959年に塩山洋酒醸造株式会社に社名変更。日本固有品種のみを使用し、欧州系品種は一切栽培・醸造しない方針。山梨県産",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#winery",
       "name": "塩山洋酒醸造",
       "description": "1957年に果実生産者組合を母体として設立。1959年に塩山洋酒醸造株式会社に社名変更。日本固有品種のみを使用し、欧州系品種は一切栽培・醸造しない方針。山梨県産ぶどうのみ使用。",
       "url": "http://www.enzanwine.co.jp",
@@ -40,7 +57,53 @@
         "addressCountry": "JP"
       },
       "foundingDate": "1957",
-      "telephone": "0553-33-2228"
+      "telephone": "0553-33-2228",
+      "knowsAbout": [
+        "甲州",
+        "デラウエア",
+        "マスカット・ベーリーA"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.enzanwine.co.jp/company.html"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "塩山洋酒醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -64,6 +127,65 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-1",
+      "name": "SALZ BERG Koshu",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "塩山ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#winery"
+      },
+      "description": "ステンレスタンク発酵後オーク樽熟成。トロピカルアロマとミネラル感。辛口。アルコール11%",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-2",
+      "name": "ORANGE ROUSSI",
+      "category": "オレンジワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "塩山ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#winery"
+      },
+      "description": "甲州種使用のオレンジワイン",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-3",
+      "name": "DELA KOSHU SPARKLING",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "塩山ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#winery"
+      },
+      "description": "デラウエアと甲州のスパークリング",
+      "material": "デラウエア、甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#wine-4",
+      "name": "Enzan Rouge",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "塩山ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/enzan-wine.html#winery"
+      },
+      "description": "甲州市産葡萄使用の赤ワイン"
     },
     {
       "@type": "FAQPage",
@@ -98,6 +220,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "昭和32年（1957年）に創業しました。山梨県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "塩山洋酒醸造ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主に甲州、デラウエア、マスカット・ベーリーAを使用しています。"
           }
         }
       ]
@@ -447,6 +577,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">塩山洋酒醸造が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">甲州</span><span class="grape-pill">デラウエア</span><span class="grape-pill">マスカット・ベーリーA</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -515,7 +654,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 甲州市塩山</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="http://www.enzanwine.co.jp/company.html" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">http://www.enzanwine.co.jp/company.html</a></p>
   </div>
 </section>
@@ -558,6 +697,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">昭和32年（1957年）に創業しました。山梨県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">塩山洋酒醸造ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に甲州、デラウエア、マスカット・ベーリーAを使用しています。</div>
     </div>
     </div>
   </div>

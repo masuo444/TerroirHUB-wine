@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html",
+      "name": "マザーバインズ長野醸造所 - 長野県のワイナリー",
+      "description": "令和2年創業。長野県高山村の日本ワイナリー「マザーバインズ長野醸造所」。高山村に設立された醸造所。地域農家のぶどうを受け入れ醸造する地域共生型ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#winery",
       "name": "マザーバインズ長野醸造所",
       "description": "高山村に設立された醸造所。地域農家のぶどうを受け入れ醸造する地域共生型ワイナリー。",
-      "url": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html",
+      "url": "https://www.nagano-wine.jp/winery/chikuma/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "長野県上高井郡高山村",
@@ -48,7 +65,36 @@
       "knowsAbout": [
         "シャルドネ",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/chikuma/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "マザーバインズ長野醸造所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +118,32 @@
           "item": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#wine-1",
+      "name": "Mother Vines Chardonnay",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "マザーバインズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#wine-2",
+      "name": "Mother Vines Merlot",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "マザーバインズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/mother-vines-nagano.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -381,7 +453,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI長野</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.nagano-wine.jp/winery/chikuma/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -480,21 +552,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Mother Vines Chardonnay</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Mother Vines Merlot</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -507,7 +579,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">長野県上高井郡高山村</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">通常は一般公開なし。販売案内は事前確認推奨。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">長野県上高井郡高山村</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.nagano-wine.jp/winery/chikuma/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/winery/chikuma/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">通常は一般公開なし。販売案内は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -515,7 +587,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 高山村</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.nagano-wine.jp/winery/chikuma/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/winery/chikuma/</a></p>
   </div>
 </section>

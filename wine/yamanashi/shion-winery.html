@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html",
+      "name": "四恩醸造 - 山梨県のワイナリー",
+      "description": "平成19年創業。山梨県山梨市・牧丘町の小規模ワイナリー「四恩醸造」。横浜にある幼稚園の自然教育施設として2007年に誕生したワイナリーです。山梨県牧丘町の巨峰を中心に、家族の時間を大事に、食卓を華やかに彩り、家族と楽しいひととき",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#winery",
       "name": "四恩醸造",
       "description": "横浜にある幼稚園の自然教育施設として2007年に誕生したワイナリーです。山梨県牧丘町の巨峰を中心に、家族の時間を大事に、食卓を華やかに彩り、家族と楽しいひとときを実現することを目指しています。料理との相性の良い辛口ワインを得意としています。",
       "url": "https://shion-winery.co.jp/",
@@ -49,7 +66,47 @@
       "knowsAbout": [
         "巨峰",
         "甲州"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://shion-winery.co.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "四恩醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +130,73 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-1",
+      "name": "紫陽花",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "四恩醸造"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#winery"
+      },
+      "material": "巨峰"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-2",
+      "name": "薔薇",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "四恩醸造"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#winery"
+      },
+      "material": "巨峰"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-3",
+      "name": "向日葵",
+      "category": "ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "四恩醸造"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-4",
+      "name": "マーガレット",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "四恩醸造"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#wine-5",
+      "name": "希望",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "四恩醸造"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/shion-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -387,7 +511,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">四恩醸造</h1>
     <p class="hero-subtitle">四恩醸造</p>
     <p class="hero-en">Since 2007 — 山梨市・牧丘町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://shion-winery.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -491,7 +615,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">巨峰</div>
       <h3 class="brand-name">紫陽花</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -501,17 +625,17 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">巨峰</div>
       <h3 class="brand-name">薔薇</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge rose">ロゼ</div>
-      
+
       <h3 class="brand-name">向日葵</h3>
       <p class="brand-type">ロゼ</p>
-      
+
     </div>
     </div>
   </div>

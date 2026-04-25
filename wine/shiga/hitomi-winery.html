@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html",
+      "name": "ヒトミワイナリー - 滋賀県のワイナリー",
+      "description": "大正10年創業。滋賀県東近江市の日本ワイナリー「ヒトミワイナリー」。滋賀県東近江市で1921年から続くワイナリー。日本産生ぶどう100%・無濾過の“にごりワイン”で知られ、委託醸造も受け入れる。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#winery",
       "name": "ヒトミワイナリー",
       "description": "滋賀県東近江市で1921年から続くワイナリー。日本産生ぶどう100%・無濾過の“にごりワイン”で知られ、委託醸造も受け入れる。",
       "url": "http://www.nigoriwine.jp/",
@@ -50,7 +67,47 @@
         "デラウェア",
         "マスカット・ベーリーA",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/16250010258/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ヒトミワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +131,71 @@
           "item": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-1",
+      "name": "AWA",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "にごりワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-2",
+      "name": "Niブラン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "にごりワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-3",
+      "name": "カフカ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "にごりワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-4",
+      "name": "タータル",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "にごりワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#wine-5",
+      "name": "身土不二",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "にごりワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shiga/hitomi-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -380,7 +502,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ヒトミワイナリー</h1>
     <p class="hero-subtitle">にごりワイン</p>
     <p class="hero-en">Since 1921 — 東近江市, 滋賀県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.nigoriwine.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -480,31 +602,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">AWA</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Niブラン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">カフカ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -525,7 +647,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">滋賀県 東近江市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/16250010258/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/16250010258/</a></p>
   </div>
 </section>

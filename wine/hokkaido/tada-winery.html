@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html",
+      "name": "多田ワイナリー - 北海道のワイナリー",
+      "description": "平成28年創業。北海道上富良野町のエステートワイナリー「多田ワイナリー」。除草剤や化学肥料を使用せず、富良野盆地の地下伏流水とミネラル豊富な土壌を活用。野生酵母によるワイン造りにより「その土地そのものを感じることができる特徴的なワイン",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#winery",
       "name": "多田ワイナリー",
       "description": "除草剤や化学肥料を使用せず、富良野盆地の地下伏流水とミネラル豊富な土壌を活用。野生酵母によるワイン造りにより「その土地そのものを感じることができる特徴的なワイン」を実現。",
       "url": "https://ninjin-koubou.com/",
@@ -51,7 +68,48 @@
         "メルロー",
         "シャルドネ",
         "バッカス"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://ninjin-koubou.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "多田ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +133,60 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-1",
+      "name": "多田ワイナリー ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "多田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#winery"
+      },
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-2",
+      "name": "多田ワイナリー シードル",
+      "category": "シードル",
+      "brand": {
+        "@type": "Brand",
+        "name": "多田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-3",
+      "name": "ブラン・ド・ノワール",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "多田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#winery"
+      },
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#wine-4",
+      "name": "オレンジワイン",
+      "category": "オレンジワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "多田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tada-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -502,17 +614,17 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">多田ワイナリー ピノ・ノワール</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">シードル</div>
-      
+
       <h3 class="brand-name">多田ワイナリー シードル</h3>
       <p class="brand-type">シードル</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -522,7 +634,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">ブラン・ド・ノワール</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

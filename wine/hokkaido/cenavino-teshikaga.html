@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html",
+      "name": "弟子屈ワイナリー - 北海道のワイナリー",
+      "description": "令和6年創業。北海道弟子屈町のエステートワイナリー「弟子屈ワイナリー」。北海道独自品種「山幸」「清舞」を中心とした醸造に特化。屈斜路湖・摩周湖に囲まれた弟子屈テロワールを生かし、温泉水を活用した独自製法も取り入れる。無農薬・無添加・",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#winery",
       "name": "弟子屈ワイナリー",
       "description": "北海道独自品種「山幸」「清舞」を中心とした醸造に特化。屈斜路湖・摩周湖に囲まれた弟子屈テロワールを生かし、温泉水を活用した独自製法も取り入れる。無農薬・無添加・天然酵母・無清澄・無濾過のナチュラルスタイルで釧路管内初の民間ワイナリー。2024年6月に醸造免許取得。",
       "url": "https://www.cenavino.com/",
@@ -48,7 +65,48 @@
       "knowsAbout": [
         "山幸",
         "清舞"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.cenavino.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "弟子屈ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,8 +132,70 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-1",
+      "name": "Viruwa ROSE",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "CENAVINO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-2",
+      "name": "Caldera ROSE SPARKLING",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "CENAVINO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-3",
+      "name": "和～NAGI～ YAMASACHI ROUGE",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "CENAVINO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#winery"
+      },
+      "material": "山幸"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#wine-4",
+      "name": "琴～KOTO～ KIYOMAI ROUGE",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "CENAVINO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/cenavino-teshikaga.html#winery"
+      },
+      "material": "清舞"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "弟子屈ワイナリーの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "弟子屈ワイナリーの代表的なワインを教えてください",
@@ -488,20 +608,20 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge rose">ロゼワイン</div>
-      
+
       <h3 class="brand-name">Viruwa ROSE</h3>
       <p class="brand-type">ロゼワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge sparkling">スパークリングワイン</div>
-      
+
       <h3 class="brand-name">Caldera ROSE SPARKLING</h3>
       <p class="brand-type">スパークリングワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -511,7 +631,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">山幸</div>
       <h3 class="brand-name">和～NAGI～ YAMASACHI ROUGE</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -524,7 +644,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道川上郡弟子屈町字弟子屈原野789-3</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.cenavino.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.cenavino.com/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道川上郡弟子屈町字弟子屈原野789-3</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.cenavino.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.cenavino.com/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -547,34 +667,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">弟子屈ワイナリーの代表的なワインを教えてください</span>
+        <span class="faq-q-text">弟子屈ワイナリーの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄はViruwa ROSE、Caldera ROSE SPARKLING、和～NAGI～ YAMASACHI ROUGEなどがあります。</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">弟子屈ワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">弟子屈ワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道川上郡弟子屈町字弟子屈原野789-3です。最寄りはJR釧網本線 摩周駅（車約10分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はViruwa ROSE、Caldera ROSE SPARKLING、和～NAGI～ YAMASACHI ROUGEなどがあります。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">弟子屈ワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-text">弟子屈ワイナリーの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">令和6年（2024年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道川上郡弟子屈町字弟子屈原野789-3です。最寄りはJR釧網本線 摩周駅（車約10分）です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">弟子屈ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">弟子屈ワイナリーはいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主に山幸、清舞を使用しています。</div>
+      <div class="faq-a" id="faq-a-3">令和6年（2024年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">弟子屈ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に山幸、清舞を使用しています。</div>
     </div>
     </div>
   </div>

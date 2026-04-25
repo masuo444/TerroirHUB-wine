@@ -61,7 +61,7 @@
     "founded_era": "",
     "address": "静岡県富士宮市北山4129",
     "tel": "0544-58-0005",
-    "url": "",
+    "url": "https://fujisan-kitayama-wine.com/",
     "area": "富士宮市",
     "desc": "富士宮市北山で日本固有のヤマブドウ交配品種を中心に育て、地域色の強いワインを目指す小規模ワイナリー。",
     "visit": "営業日・見学対応は事前確認推奨。",
@@ -94,7 +94,10 @@
     "wine_style": "white",
     "main_grape": "muscat_of_alexandria",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "マスカット・オブ・アレキサンドリア",
+      "園内果実"
+    ],
     "brands": ["トロピカルワインカーヴ"],
     "features": ["静岡県西部唯一の果実酒製造所", "160種4300本の果樹を栽培する農業公園内に醸造所"],
     "nearest_station": "",

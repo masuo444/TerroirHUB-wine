@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html",
+      "name": "胎内高原ワイン - 新潟県のワイナリー",
+      "description": "平成19年創業。新潟県胎内市のエステートワイナリー「胎内高原ワイン」。胎内市の自社農園ぶどうを使う公営ワイナリー。飯豊連峰を望む高原で欧州系品種を中心に栽培・醸造している。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#winery",
       "name": "胎内高原ワイン",
       "description": "胎内市の自社農園ぶどうを使う公営ワイナリー。飯豊連峰を望む高原で欧州系品種を中心に栽培・醸造している。",
       "url": "https://tainaiwinery.stores.jp/",
@@ -51,7 +68,29 @@
         "ツヴァイゲルトレーベ",
         "シャルドネ",
         "ソーヴィニヨン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/14150010105/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "胎内高原ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +114,32 @@
           "item": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#wine-1",
+      "name": "胎内高原メルロー",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "胎内高原ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#wine-2",
+      "name": "胎内高原シャルドネ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "胎内高原ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/tainai-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -381,7 +446,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">胎内高原ワイン</h1>
     <p class="hero-subtitle">胎内高原ワイン</p>
     <p class="hero-en">Since 2007 — 胎内市, 新潟県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://tainaiwinery.stores.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -474,21 +539,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">胎内高原メルロー</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">胎内高原シャルドネ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -509,7 +574,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">新潟県 胎内市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/14150010105/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/14150010105/</a></p>
   </div>
 </section>

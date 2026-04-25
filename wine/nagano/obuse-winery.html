@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html",
+      "name": "小布施ワイナリー - 長野県のワイナリー",
+      "description": "昭和17年創業。長野県小布施町のエステートワイナリー「小布施ワイナリー」。4代目曽我彰彦氏がブルゴーニュで修行し、自社農場のぶどうのみで造るエステートワイン。農薬・化学肥料不使用の「サンシミ（Sans Chimie）」ワインで知られる",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#winery",
       "name": "小布施ワイナリー",
       "description": "4代目曽我彰彦氏がブルゴーニュで修行し、自社農場のぶどうのみで造るエステートワイン。農薬・化学肥料不使用の「サンシミ（Sans Chimie）」ワインで知られる。",
       "url": "http://obusewinery.com/",
@@ -55,7 +72,48 @@
         "シャルドネ",
         "プティ・マンサン",
         "ソーヴィニヨン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/chikuma/post-53/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "小布施ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -79,6 +137,66 @@
           "item": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-1",
+      "name": "ドメイヌ・ソガ ムラサキ メルロ サンシミ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメイヌ・ソガ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#winery"
+      },
+      "description": "農薬・化学肥料不使用",
+      "material": "メルロ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-2",
+      "name": "ドメイヌ・ソガ シャルドネ サンシミ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメイヌ・ソガ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#winery"
+      },
+      "description": "農薬・化学肥料不使用",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-3",
+      "name": "ドメイヌ・ソガ プティ・マンサン モアルー",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメイヌ・ソガ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#winery"
+      },
+      "description": "甘口・サンシミ",
+      "material": "プティ・マンサン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#wine-4",
+      "name": "ソガ・ペール・エ・フィス",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメイヌ・ソガ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/obuse-winery.html#winery"
+      },
+      "description": "辛口",
+      "material": "シャルドネ他"
     },
     {
       "@type": "FAQPage",

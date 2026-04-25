@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html",
+      "name": "日本ワイン農業研究所 アルカンヴィーニュ - 長野県のワイナリー",
+      "description": "2019年創業。長野県東御市の日本ワイナリー「日本ワイン農業研究所 アルカンヴィーニュ」。ワイン用ぶどうを栽培する農家の受け皿になるべく、買い取ったぶどうで自社ワインを醸造、または委託醸造を引き受けるクレイドル（ゆりかご）ワイナリー",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#winery",
       "name": "日本ワイン農業研究所 アルカンヴィーニュ",
       "description": "ワイン用ぶどうを栽培する農家の受け皿になるべく、買い取ったぶどうで自社ワインを醸造、または委託醸造を引き受けるクレイドル（ゆりかご）ワイナリー",
       "url": "http://jw-arc.co.jp/",
@@ -52,7 +69,48 @@
         "メルロー",
         "ブラッククイーン",
         "巨峰"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/chikuma/post-43/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "日本ワイン農業研究所 アルカンヴィーニュの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +134,64 @@
           "item": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-1",
+      "name": "シャルドネ ヴィラージュ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルカンヴィーニュ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#winery"
+      },
+      "description": "樽発酵・7ヶ月熟成",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-2",
+      "name": "メルロー ヴィラージュ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルカンヴィーニュ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#winery"
+      },
+      "description": "東御市指定生産者メルロー100%",
+      "material": "メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-3",
+      "name": "ブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルカンヴィーニュ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#winery"
+      },
+      "material": "シャルドネ他"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#wine-4",
+      "name": "ジュベニール ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルカンヴィーニュ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/arcanvigne.html#winery"
+      },
+      "material": "ピノ・ノワール"
     },
     {
       "@type": "FAQPage",
@@ -523,7 +639,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ他</div>
       <h3 class="brand-name">ブラン</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

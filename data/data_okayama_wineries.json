@@ -155,8 +155,8 @@
     "company": "サッポロビール株式会社",
     "brand": "グランポレール",
     "winery_type": "winery",
-    "founded": "",
-    "founded_era": "",
+    "founded": "1984",
+    "founded_era": "昭和59年",
     "address": "岡山県赤磐市東軽部1556",
     "tel": "086-957-3838",
     "url": "https://www.sapporobeer.jp/brewery/okayama/",
@@ -223,8 +223,8 @@
     "company": "ラ・グランド・コリーヌ・ジャポン",
     "brand": "La Grande Colline Japon",
     "winery_type": "estate",
-    "founded": "",
-    "founded_era": "",
+    "founded": "2017",
+    "founded_era": "平成29年",
     "address": "岡山県岡山市北区富吉1819",
     "tel": "",
     "url": "http://www.lagrandecolline.fr/j_okayama.html",
@@ -246,7 +246,7 @@
       "フランス・ローヌ出身のオーナーが岡山に開設"
     ],
     "nearest_station": "",
-    "source": "https://nippon.wine/winery/17330010318/",
+  "source": "https://www.nobori-sake.com/shouhin/wine/japan/oooka/item.html",
     "lat": 34.723,
     "lng": 133.889,
     "name_en": "La Grande Colline Japon"
@@ -257,8 +257,8 @@
     "company": "コルトラーダ",
     "brand": "",
     "winery_type": "small",
-    "founded": "",
-    "founded_era": "",
+    "founded": "2021",
+    "founded_era": "令和3年",
     "address": "岡山県新見市哲多町",
     "tel": "",
     "url": "https://shop.coltrada.com/",
@@ -268,7 +268,9 @@
     "wine_style": "red,white,sparkling",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "シャルドネ"
+    ],
     "brands": [
       "ル ピオニエ ペティアン"
     ],
@@ -302,7 +304,20 @@
       "マスカット・ベーリーA",
       "ソーヴィニヨン・ブラン"
     ],
-    "brands": [],
+  "brands": [
+    {
+      "name": "Blanc",
+      "type": "白ワイン",
+      "specs": "自社農園のソーヴィニヨン・ブランを使う辛口白ワイン。",
+      "grapes": "ソーヴィニヨン・ブラン"
+    },
+    {
+      "name": "Rouge",
+      "type": "赤ワイン",
+      "specs": "自社農園産マスカット・ベーリーAの辛口赤ワイン。",
+      "grapes": "マスカット・ベーリーA"
+    }
+  ],
     "features": [
       "自然発酵・無濾過",
       "年間生産量約1,200本",
@@ -367,8 +382,8 @@
     "company": "グレープシップ",
     "brand": "",
     "winery_type": "small",
-    "founded": "",
-    "founded_era": "",
+    "founded": "2021",
+    "founded_era": "令和3年",
     "address": "岡山県倉敷市船穂町船穂7153-1",
     "tel": "",
     "url": "https://www.grapeship.jp/",
@@ -384,7 +399,7 @@
       "発泡性ワイン"
     ],
     "nearest_station": "",
-    "source": "https://nippon.wine/winery/17330010378/",
+  "source": "https://ec.yamajin.com/items/56196573",
     "lat": 34.587,
     "lng": 133.726,
     "name_en": "Grapeship"

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html",
+      "name": "Kii's Open Field - 北海道のワイナリー",
+      "description": "平成22年創業。北海道仁木町のエステートワイナリー「Kii's Open Field」。喜井夫妻が営む果樹園兼ワイナリー。サクランボ・ブルーベリーなどの果物とワイン用ぶどうを複合栽培。「ぶどう本来の香りや特徴を活かすため」除草剤・殺虫剤をできるだけ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#winery",
       "name": "Kii's Open Field",
       "description": "喜井夫妻が営む果樹園兼ワイナリー。サクランボ・ブルーベリーなどの果物とワイン用ぶどうを複合栽培。「ぶどう本来の香りや特徴を活かすため」除草剤・殺虫剤をできるだけ使わない栽培を実践。年間約1,000本の生産。樽熟成を行わずフレッシュな風味を重視。",
       "url": "https://sites.google.com/view/kiisopenfield/",
@@ -48,7 +65,36 @@
       "knowsAbout": [
         "ソーヴィニョン・ブラン",
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://niki-wine-tourism.com/winery/01/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Kii's Open Fieldの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,8 +120,44 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#wine-1",
+      "name": "Kii's ピノ・ノワール ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kii's"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#winery"
+      },
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#wine-2",
+      "name": "Kii's ソーヴィニョン・ブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kii's"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/kiis-open-field.html#winery"
+      },
+      "material": "ソーヴィニョン・ブラン"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kii's Open Fieldの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "Kii's Open Fieldの代表的なワインを教えてください",
@@ -491,7 +573,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">Kii's ピノ・ノワール ロゼ</h3>
       <p class="brand-type">ロゼワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -501,7 +583,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ソーヴィニョン・ブラン</div>
       <h3 class="brand-name">Kii's ソーヴィニョン・ブラン</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -514,7 +596,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道余市郡仁木町南町3-28</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://sites.google.com/view/kiisopenfield/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://sites.google.com/view/kiisopenfield/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道余市郡仁木町南町3-28</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://sites.google.com/view/kiisopenfield/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://sites.google.com/view/kiisopenfield/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -537,34 +619,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">Kii's Open Fieldの代表的なワインを教えてください</span>
+        <span class="faq-q-text">Kii's Open Fieldの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄はKii's ピノ・ノワール ロゼ、Kii's ソーヴィニョン・ブランなどがあります。</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">Kii's Open Fieldの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">Kii's Open Fieldの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道余市郡仁木町南町3-28です。最寄りはJR函館本線 仁木駅（車約5分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はKii's ピノ・ノワール ロゼ、Kii's ソーヴィニョン・ブランなどがあります。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">Kii's Open Fieldはいつ創業しましたか？</span>
+        <span class="faq-q-text">Kii's Open Fieldの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">平成22年（2010年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道余市郡仁木町南町3-28です。最寄りはJR函館本線 仁木駅（車約5分）です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">Kii's Open Fieldではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">Kii's Open Fieldはいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にソーヴィニョン・ブラン、ピノ・ノワールを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">平成22年（2010年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">Kii's Open Fieldではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にソーヴィニョン・ブラン、ピノ・ノワールを使用しています。</div>
     </div>
     </div>
   </div>

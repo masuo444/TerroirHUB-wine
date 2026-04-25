@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tottori/totto-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tottori/totto-winery.html",
+      "name": "兎ッ兎ワイナリー - 鳥取県のワイナリー",
+      "description": "平成27年創業。鳥取県鳥取市国府町の小規模ワイナリー「兎ッ兎ワイナリー」。鳥取市国府町で果実味を生かしたフルーティーなワイン造りを行う小規模ワイナリー。超低温発酵を特徴とする。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/totto-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tottori/totto-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/tottori/totto-winery.html#winery",
       "name": "兎ッ兎ワイナリー",
       "description": "鳥取市国府町で果実味を生かしたフルーティーなワイン造りを行う小規模ワイナリー。超低温発酵を特徴とする。",
       "url": "https://www.tottowinery.com/",
@@ -50,7 +67,23 @@
         "シャルドネ",
         "メルロー",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/17310010274/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "兎ッ兎ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tottori/totto-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +107,20 @@
           "item": "https://wine.terroirhub.com/wine/tottori/totto-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tottori/totto-winery.html#wine-1",
+      "name": "兎ッ兎ワイン",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "兎ッ兎ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/totto-winery.html#winery"
+      },
+      "description": "フルーティーさを重視した主力シリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -386,9 +433,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
     <p class="hero-est">EST. 2015</p>
     <h1 class="hero-title">兎ッ兎ワイナリー</h1>
-    
+
     <p class="hero-en">Since 2015 — 鳥取市国府町, 鳥取県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.tottowinery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -482,7 +529,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">兎ッ兎ワイン</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">フルーティーさを重視した主力シリーズ。</p>
@@ -506,7 +553,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">鳥取県 鳥取市国府町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/17310010274/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/17310010274/</a></p>
   </div>
 </section>

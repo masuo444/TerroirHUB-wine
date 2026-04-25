@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html",
+      "name": "雪川醸造 - 北海道のワイナリー",
+      "description": "令和3年創業。北海道東川町のエステートワイナリー「雪川醸造」。北海道の真ん中、大雪山系の麓に位置する東川町の小さなワイナリー。ミネラル豊かな雪解け水や寒暖差の大きい気候など上川・富良野エリア独特の豊かな自然の恵みを生かした",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#winery",
       "name": "雪川醸造",
       "description": "北海道の真ん中、大雪山系の麓に位置する東川町の小さなワイナリー。ミネラル豊かな雪解け水や寒暖差の大きい気候など上川・富良野エリア独特の豊かな自然の恵みを生かしたワインづくりを行っています。",
       "url": "https://www.snowriverwines.com/",
@@ -52,7 +69,48 @@
         "ナイアガラ",
         "ピノ・ノワール",
         "ソーヴィニョン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.snowriverwines.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "雪川醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +136,66 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-1",
+      "name": "スノーリバー ミュラー Hachi アンバー",
+      "category": "オレンジワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Snow River Wines"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#winery"
+      },
+      "description": "ミュラー・トゥルガウを醸したアンバーワイン。",
+      "material": "ミュラー・トゥルガウ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-2",
+      "name": "スノーリバー ピノ・グリ Hachi",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Snow River Wines"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#winery"
+      },
+      "description": "東川・北海道の冷涼感を表すピノ・グリ。",
+      "material": "ピノ・グリ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-3",
+      "name": "スノーリバー シャルドネ Hachi 樽熟成",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Snow River Wines"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#winery"
+      },
+      "description": "シャルドネ100%、樽熟成の白ワイン。",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#wine-4",
+      "name": "スノーリバー ピノ・ノワール Hachi",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Snow River Wines"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/snow-river-wines.html#winery"
+      },
+      "description": "北海道産ピノ・ノワールの赤ワイン。",
+      "material": "ピノ・ノワール"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -86,6 +204,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "ワイナリーツアーあり（詳細は公式サイト参照）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "雪川醸造の代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄はスノーリバー ミュラー Hachi アンバー、スノーリバー ピノ・グリ Hachi、スノーリバー シャルドネ Hachi 樽熟成などがあります。ミュラー・トゥルガウを醸したアンバーワイン。"
           }
         },
         {
@@ -481,6 +607,45 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">オレンジワイン</div>
+      <div class="grape-tag">ミュラー・トゥルガウ</div>
+      <h3 class="brand-name">スノーリバー ミュラー Hachi アンバー</h3>
+      <p class="brand-type">オレンジワイン</p>
+      <p class="brand-desc">ミュラー・トゥルガウを醸したアンバーワイン。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">ピノ・グリ</div>
+      <h3 class="brand-name">スノーリバー ピノ・グリ Hachi</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">東川・北海道の冷涼感を表すピノ・グリ。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">シャルドネ</div>
+      <h3 class="brand-name">スノーリバー シャルドネ Hachi 樽熟成</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">シャルドネ100%、樽熟成の白ワイン。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -520,26 +685,34 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">雪川醸造の所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">雪川醸造の代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道上川郡東川町です。最寄りは旭川空港（車約15分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はスノーリバー ミュラー Hachi アンバー、スノーリバー ピノ・グリ Hachi、スノーリバー シャルドネ Hachi 樽熟成などがあります。ミュラー・トゥルガウを醸したアンバーワイン。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">雪川醸造はいつ創業しましたか？</span>
+        <span class="faq-q-text">雪川醸造の所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">令和3年（2021年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道上川郡東川町です。最寄りは旭川空港（車約15分）です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">雪川醸造ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">雪川醸造はいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にミュラー・トゥルガウ、ピノ・グリ、シャルドネ、ナイアガラ、ピノ・ノワール、ソーヴィニョン・ブランを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">令和3年（2021年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">雪川醸造ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にミュラー・トゥルガウ、ピノ・グリ、シャルドネ、ナイアガラ、ピノ・ノワール、ソーヴィニョン・ブランを使用しています。</div>
     </div>
     </div>
   </div>

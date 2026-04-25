@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html",
+      "name": "馬追蒸溜所 - 北海道のワイナリー",
+      "description": "平成18年創業。北海道長沼町のエステートワイナリー「馬追蒸溜所」。2006年3月に初代ワイナリーとして設立。2021年冬にMAOI株式会社に改名し、スコットランドのフォーサイス社よりハイブリット式の蒸溜器を導入（2022年）。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html#winery",
       "name": "馬追蒸溜所",
       "description": "2006年3月に初代ワイナリーとして設立。2021年冬にMAOI株式会社に改名し、スコットランドのフォーサイス社よりハイブリット式の蒸溜器を導入（2022年）。ワイン・ブランデー・ウイスキー・クラフトジンを製造。",
       "url": "https://maoidistillery.com/",
@@ -44,6 +61,33 @@
         "@type": "GeoCoordinates",
         "latitude": 42.86,
         "longitude": 141.65
+      },
+      "knowsAbout": [
+        "山ソービニオン",
+        "山ブドウ"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/6995/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "馬追蒸溜所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,6 +114,21 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html#wine-1",
+      "name": "馬追ワイン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "馬追"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/maoi-distillery.html#winery"
+      },
+      "description": "馬追丘陵の山ブドウ系品種を中心に醸造。",
+      "material": "山ソービニオン、山ブドウ"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -78,6 +137,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "直売所 土日祝 13:00〜15:00（1〜3月は冬季休業）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "馬追蒸溜所の代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄は馬追ワインなどがあります。馬追丘陵の山ブドウ系品種を中心に醸造。"
           }
         },
         {
@@ -94,6 +161,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "平成18年（2006年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "馬追蒸溜所ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主に山ソービニオン、山ブドウを使用しています。"
           }
         }
       ]
@@ -443,6 +518,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">馬追蒸溜所が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">山ソービニオン</span><span class="grape-pill">山ブドウ</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -456,6 +540,25 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">赤ワイン</div>
+      <div class="grape-tag">山ソービニオン、山ブドウ</div>
+      <h3 class="brand-name">馬追ワイン</h3>
+      <p class="brand-type">赤ワイン</p>
+      <p class="brand-desc">馬追丘陵の山ブドウ系品種を中心に醸造。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -473,7 +576,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       </div>
     </div>
     <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR千歳線 長沼駅（車約10分）</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://maoidistillery.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://maoidistillery.com/</a></p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/6995/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/6995/</a></p>
   </div>
 </section>
 
@@ -495,18 +598,34 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">馬追蒸溜所の所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">馬追蒸溜所の代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道夕張郡長沼町加賀団体です。最寄りはJR千歳線 長沼駅（車約10分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は馬追ワインなどがあります。馬追丘陵の山ブドウ系品種を中心に醸造。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">馬追蒸溜所はいつ創業しましたか？</span>
+        <span class="faq-q-text">馬追蒸溜所の所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">平成18年（2006年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道夕張郡長沼町加賀団体です。最寄りはJR千歳線 長沼駅（車約10分）です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">馬追蒸溜所はいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">平成18年（2006年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">馬追蒸溜所ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に山ソービニオン、山ブドウを使用しています。</div>
     </div>
     </div>
   </div>

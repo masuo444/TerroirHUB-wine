@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html",
+      "name": "大和葡萄酒（ハギーワイン） - 山梨県のワイナリー",
+      "description": "大正2年創業。山梨県甲州市勝沼の中規模ワイナリー「大和葡萄酒（ハギーワイン）」。日本古来の葡萄品種を大切と考え、日本の風土と環境に合うワインの製造に取り組んでいる。「個性、凝縮、複雑、エレガント」をワイン製造の哲学とし、ひとつひとつの作業に",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#winery",
       "name": "大和葡萄酒（ハギーワイン）",
       "description": "日本古来の葡萄品種を大切と考え、日本の風土と環境に合うワインの製造に取り組んでいる。「個性、凝縮、複雑、エレガント」をワイン製造の哲学とし、ひとつひとつの作業に努力を惜しまず、手間暇をかけたワイン造りをおこなっている。",
       "url": "http://www.yamatowine.com/",
@@ -51,7 +68,42 @@
         "マスカット・ベーリーA",
         "メルロー",
         "シラー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.yamatowine.com/contents/corporate/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "大和葡萄酒（ハギーワイン）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +127,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#wine-1",
+      "name": "ハギーワイン（L'HUGGY）",
+      "category": "白ワイン・赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ハギーワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#winery"
+      },
+      "description": "2012年より使用の創業家「萩」に由来するブランド名。",
+      "material": "甲州、マスカット・ベーリーA、メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#wine-2",
+      "name": "ミネラル甲州（番イ）",
+      "category": "白ワイン・辛口",
+      "brand": {
+        "@type": "Brand",
+        "name": "ハギーワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#winery"
+      },
+      "description": "シュール・リータイプ。2012年国産ワインコンクール金賞・コストパフォーマンス賞受賞。",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#wine-3",
+      "name": "コリーヌコレクション",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ハギーワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yamatowine.html#winery"
+      },
+      "description": "2006年モンドセレクション銀賞受賞。長野県松本市旧四賀村地区産メルロー使用。",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",

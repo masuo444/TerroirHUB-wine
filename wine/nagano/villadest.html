@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/villadest.html",
+      "name": "ヴィラデストワイナリー - 長野県のワイナリー",
+      "description": "平成15年創業。長野県東御市のエステートワイナリー「ヴィラデストワイナリー」。里山暮らしとワインの魅力を発信",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#winery",
       "name": "ヴィラデストワイナリー",
       "description": "里山暮らしとワインの魅力を発信",
       "url": "http://www.villadest.com",
@@ -55,7 +72,42 @@
         "ゲヴュルツトラミネール",
         "カベルネ・ソーヴィニヨン",
         "カベルネ・フラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/chikuma/post-44/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ヴィラデストワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -79,6 +131,48 @@
           "item": "https://wine.terroirhub.com/wine/nagano/villadest.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#wine-1",
+      "name": "ヴィニュロンズリザーブ シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ヴィラデスト"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#wine-2",
+      "name": "ヴィラデスト ソーヴィニヨン・ブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ヴィラデスト"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#winery"
+      },
+      "material": "ソーヴィニヨン・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#wine-3",
+      "name": "ヴィニュロンズリザーブ メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ヴィラデスト"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/villadest.html#winery"
+      },
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",
@@ -506,7 +600,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">ヴィニュロンズリザーブ シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -516,7 +610,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ソーヴィニヨン・ブラン</div>
       <h3 class="brand-name">ヴィラデスト ソーヴィニヨン・ブラン</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -526,7 +620,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー</div>
       <h3 class="brand-name">ヴィニュロンズリザーブ メルロー</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

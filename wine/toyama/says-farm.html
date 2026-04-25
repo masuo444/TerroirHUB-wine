@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/toyama/says-farm.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/toyama/says-farm.html",
+      "name": "セイズ・ファーム - 富山県のワイナリー",
+      "description": "平成19年創業。富山県氷見市のエステートワイナリー「セイズ・ファーム」。氷見の丘陵から富山湾を望む立地で、畑・レストラン・宿を一体で運営する複合型エステートワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/toyama/says-farm.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/toyama/says-farm.html",
+      "@id": "https://wine.terroirhub.com/wine/toyama/says-farm.html#winery",
       "name": "セイズ・ファーム",
       "description": "氷見の丘陵から富山湾を望む立地で、畑・レストラン・宿を一体で運営する複合型エステートワイナリー。",
       "url": "https://www.saysfarm.com/",
@@ -51,7 +68,23 @@
         "メルロー",
         "カベルネ・ソーヴィニヨン",
         "アルバリーニョ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.saysfarm.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "セイズ・ファームの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/toyama/says-farm.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +108,19 @@
           "item": "https://wine.terroirhub.com/wine/toyama/says-farm.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/toyama/says-farm.html#wine-1",
+      "name": "SAYS FARM",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "SAYS FARM"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/toyama/says-farm.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -381,7 +427,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">セイズ・ファーム</h1>
     <p class="hero-subtitle">SAYS FARM</p>
     <p class="hero-en">Since 2007 — 氷見市, 富山県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.saysfarm.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -474,11 +520,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">SAYS FARM</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -499,7 +545,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">富山県 氷見市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.saysfarm.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.saysfarm.com/</a></p>
   </div>
 </section>

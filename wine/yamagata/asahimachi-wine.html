@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html",
+      "name": "朝日町ワイン - 山形県のワイナリー",
+      "description": "昭和19年創業。山形県朝日町の日本ワイナリー「朝日町ワイン」。「良い葡萄がなければ、良いワインは生まれない」というワイン造りの基本理念のもと、ぶどう農家と醸造技術者が協力して高品質なワイン製造に取り組んでいます。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html#winery",
       "name": "朝日町ワイン",
       "description": "「良い葡萄がなければ、良いワインは生まれない」というワイン造りの基本理念のもと、ぶどう農家と醸造技術者が協力して高品質なワイン製造に取り組んでいます。",
       "url": "https://asahimachi-wine.jp/",
@@ -55,7 +72,30 @@
         "シャルドネ",
         "ソーヴィニヨンブラン",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/asahimachi/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "朝日町ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -79,6 +119,20 @@
           "item": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html#wine-1",
+      "name": "マイスターセレクション バレルセレクションルージュ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "朝日町ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/asahimachi-wine.html#winery"
+      },
+      "material": "マスカットベーリーA"
     },
     {
       "@type": "FAQPage",
@@ -506,7 +560,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">マスカットベーリーA</div>
       <h3 class="brand-name">マイスターセレクション バレルセレクションルージュ</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

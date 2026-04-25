@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html",
+      "name": "山崎ワイナリー - 北海道のワイナリー",
+      "description": "平成14年創業。北海道三笠市のエステートワイナリー「山崎ワイナリー」。北海道で最初の果実酒製造免許を取得した個人農家のワイナリー。全てのワインを自社栽培のブドウだけで醸造しています。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#winery",
       "name": "山崎ワイナリー",
       "description": "北海道で最初の果実酒製造免許を取得した個人農家のワイナリー。全てのワインを自社栽培のブドウだけで醸造しています。",
       "url": "http://www.yamazaki-winery.co.jp/",
@@ -50,7 +67,36 @@
         "シャルドネ",
         "メルロー",
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.yamazaki-winery.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "山崎ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +120,32 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#wine-1",
+      "name": "YAMAZAKI Pinot Noir",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "YAMAZAKI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#wine-2",
+      "name": "YAMAZAKI Chardonnay",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "YAMAZAKI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yamazaki-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -489,21 +561,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">YAMAZAKI Pinot Noir</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">YAMAZAKI Chardonnay</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

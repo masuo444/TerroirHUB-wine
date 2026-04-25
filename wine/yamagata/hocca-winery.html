@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html",
+      "name": "HOCCAワイナリー - 山形県のワイナリー",
+      "description": "令和3年創業。山形県鶴岡市の小規模ワイナリー「HOCCAワイナリー」。日本酒蔵「奥羽自慢」が手掛けるワイナリー。酒造りの技術と哲学をワイン醸造に注ぎ込み、「食事に寄り添い、葡萄本来の個性を素直に表現する」ワイン造りを目指しています",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#winery",
       "name": "HOCCAワイナリー",
       "description": "日本酒蔵「奥羽自慢」が手掛けるワイナリー。酒造りの技術と哲学をワイン醸造に注ぎ込み、「食事に寄り添い、葡萄本来の個性を素直に表現する」ワイン造りを目指しています。HOCCAという名はかつて農家が着用した頭巾「ほっかむり」に由来します。",
       "url": "https://hocca.jp/",
@@ -49,7 +66,36 @@
       "knowsAbout": [
         "ピノ・グリ",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/hocca/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "HOCCAワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,8 +121,44 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#wine-1",
+      "name": "HOCCA Table Blanc",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "HOCCA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#wine-2",
+      "name": "HOCCA Cidre Dry",
+      "category": "シードル",
+      "brand": {
+        "@type": "Brand",
+        "name": "HOCCA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/hocca-winery.html#winery"
+      },
+      "description": "辛口"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "HOCCAワイナリーの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "HOCCAワイナリーの代表的なワインを教えてください",
@@ -492,14 +574,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">HOCCA Table Blanc</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">シードル</div>
-      
+
       <h3 class="brand-name">HOCCA Cidre Dry</h3>
       <p class="brand-type">シードル</p>
       <p class="brand-desc">辛口</p>
@@ -515,7 +597,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県鶴岡市上山添字神明前123番地</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">050-3385-0347</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://hocca.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://hocca.jp/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県鶴岡市上山添字神明前123番地</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">050-3385-0347</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://hocca.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://hocca.jp/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -538,34 +620,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">HOCCAワイナリーの代表的なワインを教えてください</span>
+        <span class="faq-q-text">HOCCAワイナリーの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄はHOCCA Table Blanc、HOCCA Cidre Dryなどがあります。</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">HOCCAワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">HOCCAワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は山形県鶴岡市上山添字神明前123番地です。最寄りはJR羽越本線 鶴岡駅です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はHOCCA Table Blanc、HOCCA Cidre Dryなどがあります。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">HOCCAワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-text">HOCCAワイナリーの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">令和3年（2021年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は山形県鶴岡市上山添字神明前123番地です。最寄りはJR羽越本線 鶴岡駅です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">HOCCAワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">HOCCAワイナリーはいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にピノ・グリ、シャルドネを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">令和3年（2021年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">HOCCAワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にピノ・グリ、シャルドネを使用しています。</div>
     </div>
     </div>
   </div>

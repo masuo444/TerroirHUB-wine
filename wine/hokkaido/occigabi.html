@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html",
+      "name": "OcciGabi ワイナリー - 北海道のワイナリー",
+      "description": "平成25年創業。北海道余市町のエステートワイナリー「OcciGabi ワイナリー」。余市町山田地区で、一面のぶどう畑と森林、ヨーロッパ風庭園に包みこまれるように佇む美しいワイナリー。試飲カウンターからナパヴァレーを思わせる絶景を一望することがで",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#winery",
       "name": "OcciGabi ワイナリー",
       "description": "余市町山田地区で、一面のぶどう畑と森林、ヨーロッパ風庭園に包みこまれるように佇む美しいワイナリー。試飲カウンターからナパヴァレーを思わせる絶景を一望することができ、併設するレストランではウエディングパーティーやクラシックコンサートを開催。",
       "url": "https://www.occigabi.net/",
@@ -52,7 +69,48 @@
         "カベルネ",
         "アコロン",
         "バッカス"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.occigabi.net/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "OcciGabi ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +134,60 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-1",
+      "name": "OcciGabi Black Label",
+      "category": "プレミアムライン",
+      "brand": {
+        "@type": "Brand",
+        "name": "OcciGabi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-2",
+      "name": "OcciGabi ルージュ スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "OcciGabi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-3",
+      "name": "OcciGabi シャルドネ スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "OcciGabi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#wine-4",
+      "name": "OcciGabi バッカス スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "OcciGabi"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/occigabi.html#winery"
+      },
+      "material": "バッカス"
     },
     {
       "@type": "FAQPage",
@@ -500,20 +612,20 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">プレミアムライン</div>
-      
+
       <h3 class="brand-name">OcciGabi Black Label</h3>
       <p class="brand-type">プレミアムライン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge sparkling">スパークリングワイン</div>
-      
+
       <h3 class="brand-name">OcciGabi ルージュ スパークリング</h3>
       <p class="brand-type">スパークリングワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -523,7 +635,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">OcciGabi シャルドネ スパークリング</h3>
       <p class="brand-type">スパークリングワイン</p>
-      
+
     </div>
     </div>
   </div>

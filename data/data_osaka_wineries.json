@@ -196,7 +196,10 @@
     "wine_style": "red,white",
     "main_grape": "mba",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "デラウェア",
+      "マスカット・ベーリーA"
+    ],
     "brands": ["デラウェア", "マスカット・ベーリーA"],
     "features": [
       "2013年開業の都市型ワイナリー",
@@ -215,8 +218,8 @@
     "company": "天使の羽ワイナリー",
     "brand": "",
     "winery_type": "small",
-    "founded": "",
-    "founded_era": "",
+  "founded": "1947",
+  "founded_era": "昭和22年",
     "address": "大阪府柏原市大県697-2",
     "tel": "072-975-3303",
     "url": "http://www.n-farms.com/",
@@ -226,8 +229,13 @@
     "wine_style": "red,white",
     "main_grape": "mba",
     "gi": "GI大阪",
-    "grapes": [],
-    "brands": [],
+    "grapes": [
+      "マスカット・ベーリーA"
+    ],
+    "brands": [
+      {"name": "NI CO RI 白", "type": "白ワイン", "specs": "にごりワイン", "grapes": "デラウェア"},
+      {"name": "NI CO RI 赤", "type": "赤ワイン", "specs": "にごりワイン", "grapes": "マスカット・ベーリーA、コンコード"}
+    ],
     "features": ["柏原市の小規模ワイナリー", "GI大阪に対応した地域密着型の醸造"],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/16270010269/",
@@ -241,8 +249,8 @@
     "company": "株式会社寿屋清涼食品",
     "brand": "",
     "winery_type": "winery",
-    "founded": "",
-    "founded_era": "",
+    "founded": "1947",
+    "founded_era": "昭和22年",
     "address": "大阪府柏原市本郷3丁目8番38号",
     "tel": "072-972-0377",
     "url": "http://www.kotobukiyadrink.co.jp/",
@@ -252,11 +260,13 @@
     "wine_style": "red,white",
     "main_grape": "delaware",
     "gi": "GI大阪",
-    "grapes": [],
+    "grapes": [
+      "デラウェア"
+    ],
     "brands": [],
     "features": ["柏原市の飲料メーカー系製造所", "GI大阪の製造事業者"],
     "nearest_station": "",
-    "source": "https://nippon.wine/winery/16270010268/",
+  "source": "https://kashiwara-machi-hito-shigoto.net/archives/business_info/%E5%AF%BF%E5%B1%8B%E6%B8%85%E6%B6%BC%E9%A3%9F%E5%93%81%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE",
     "lat": 34.575,
     "lng": 135.635,
     "name_en": "Kotobukiya Seiryo Shokuhin"
@@ -278,7 +288,10 @@
     "wine_style": "red,white",
     "main_grape": "delaware",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "デラウェア",
+      "マスカット・ベーリーA"
+    ],
     "brands": [
       {
         "name": "大阪エアポートワイン",
@@ -315,7 +328,9 @@
     "wine_style": "red,white",
     "main_grape": "delaware",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "デラウェア"
+    ],
     "brands": [
       "NEXT to 「．．．」",
       "HIRAKATA NOVA"

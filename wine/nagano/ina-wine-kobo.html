@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html",
+      "name": "伊那ワイン工房 - 長野県のワイナリー",
+      "description": "平成26年創業。長野県伊那市の小規模ワイナリー「伊那ワイン工房」。約30年間、数社のワイナリーの醸造責任者を務めたベテランが開いた夫婦二人の小さな醸造専門醸造場。元診療所の建物を活用し、小ロット委託醸造と自社製品製造を実施。各",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#winery",
       "name": "伊那ワイン工房",
       "description": "約30年間、数社のワイナリーの醸造責任者を務めたベテランが開いた夫婦二人の小さな醸造専門醸造場。元診療所の建物を活用し、小ロット委託醸造と自社製品製造を実施。各製品に「作品番号（Op）」を付け、原料栽培者や製造意図を公開している。",
       "url": "http://inawine.net",
@@ -54,7 +71,42 @@
         "キャンベル",
         "メルロー",
         "山葡萄"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/7599/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "伊那ワイン工房の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +130,49 @@
           "item": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#wine-1",
+      "name": "美篶 シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "美篶（みすず）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#winery"
+      },
+      "description": "樽熟成",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#wine-2",
+      "name": "山紫（やまむらさき）",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "美篶（みすず）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#winery"
+      },
+      "material": "山葡萄"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#wine-3",
+      "name": "紅玉りんごワイン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "美篶（みすず）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/ina-wine-kobo.html#winery"
+      },
+      "description": "りんご使用"
     },
     {
       "@type": "FAQPage",
@@ -515,14 +610,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">山葡萄</div>
       <h3 class="brand-name">山紫（やまむらさき）</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+
       <h3 class="brand-name">紅玉りんごワイン</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">りんご使用</p>

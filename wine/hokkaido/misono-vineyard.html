@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html",
+      "name": "Misono Vineyard - 北海道のワイナリー",
+      "description": "令和3年創業。北海道余市町のエステートワイナリー「Misono Vineyard」。有機肥料と無化学農薬による栽培、生物多様性を重視した農法を採用。「無添加、天然酵母、無濾過により、この土地のぶどうをありのままに活かした高い品質のワイン造り」を",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#winery",
       "name": "Misono Vineyard",
       "description": "有機肥料と無化学農薬による栽培、生物多様性を重視した農法を採用。「無添加、天然酵母、無濾過により、この土地のぶどうをありのままに活かした高い品質のワイン造り」を目指し、人生の大切なシーンで飲むワインを造ることを理念としています。",
       "url": "https://misono-vineyard.com/",
@@ -53,7 +70,36 @@
         "アルバリーニョ",
         "デラウェア",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://misono-vineyard.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Misono Vineyardの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -77,6 +123,32 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#wine-1",
+      "name": "さっぽろブラン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Misono"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#wine-2",
+      "name": "さっぽろルージュ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Misono"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/misono-vineyard.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -492,21 +564,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">さっぽろブラン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">さっぽろルージュ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

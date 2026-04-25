@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html",
+      "name": "旭洋酒（ソレイユワイン） - 山梨県のワイナリー",
+      "description": "平成13年（現経営体制）創業。山梨県山梨市の小規模ワイナリー「旭洋酒（ソレイユワイン）」。戦前から農家の共同醸造所として営まれてきた歴史ある醸造所。自社畑ではピノ・ノワール、シラー、アルバリーニョなどの欧州系品種を栽培し、日本の食卓を意識した食中酒と",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#winery",
       "name": "旭洋酒（ソレイユワイン）",
       "description": "戦前から農家の共同醸造所として営まれてきた歴史ある醸造所。自社畑ではピノ・ノワール、シラー、アルバリーニョなどの欧州系品種を栽培し、日本の食卓を意識した食中酒として製造。版画家・雨宮千鶴のエチケットも話題。",
       "url": "https://soleilwine.jp/",
@@ -46,7 +63,35 @@
         "ピノ・ノワール",
         "シラー",
         "アルバリーニョ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://soleilwine.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "旭洋酒（ソレイユワイン）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -70,6 +115,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#wine-1",
+      "name": "ソレイユ 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ソレイユ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#winery"
+      },
+      "description": "甲州種、食中酒コンセプト",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#wine-2",
+      "name": "旭洋酒のきろく",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ソレイユ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#winery"
+      },
+      "description": "山梨市産ぶどう使用",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#wine-3",
+      "name": "ソレイユ ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ソレイユ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/asahi-yosyu-soleil.html#winery"
+      },
+      "description": "ピノ・ノワール",
+      "material": "ピノ・ノワール"
     },
     {
       "@type": "FAQPage",
@@ -384,7 +474,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">旭洋酒（ソレイユワイン）</h1>
     <p class="hero-subtitle">ソレイユ</p>
     <p class="hero-en">Since 2001 — 山梨市, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://soleilwine.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>

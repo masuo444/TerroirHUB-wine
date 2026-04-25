@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html",
+      "name": "大三島みんなのワイナリー - 愛媛県のワイナリー",
+      "description": "令和4年創業。愛媛県今治市大三島町の小規模ワイナリー「大三島みんなのワイナリー」。しまなみ海道・大三島で、島の農家や住民と連携しながら柑橘の島に新しいワイン文化を根づかせることを目指す小規模ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html#winery",
       "name": "大三島みんなのワイナリー",
       "description": "しまなみ海道・大三島で、島の農家や住民と連携しながら柑橘の島に新しいワイン文化を根づかせることを目指す小規模ワイナリー。",
       "url": "http://www.ohmishimawine.com/",
@@ -49,7 +66,23 @@
         "シャルドネ",
         "メルロー",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/18380010426/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "大三島みんなのワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +106,20 @@
           "item": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html#wine-1",
+      "name": "大三島みんなのワイン",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "大三島みんなのワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/ehime/omishima-minna-winery.html#winery"
+      },
+      "description": "島の果実味を生かした少量生産シリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -385,9 +432,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
     <p class="hero-est">EST. 2022</p>
     <h1 class="hero-title">大三島みんなのワイナリー</h1>
-    
+
     <p class="hero-en">Since 2022 — 今治市大三島町, 愛媛県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.ohmishimawine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -474,7 +521,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">大三島みんなのワイン</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">島の果実味を生かした少量生産シリーズ。</p>
@@ -498,7 +545,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">愛媛県 今治市大三島町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/18380010426/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/18380010426/</a></p>
   </div>
 </section>

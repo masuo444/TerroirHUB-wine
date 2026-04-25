@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html",
+      "name": "山口ワイナリー - 山口県のワイナリー",
+      "description": "平成11年創業。山口県山陽小野田市の日本ワイナリー「山口ワイナリー」。山口県を世界に通用するワイン産地へ育てることを目指し、自社農園や契約農園のぶどうで醸造を行うワイナリー。永山酒造グループの山口ワイン部門。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#winery",
       "name": "山口ワイナリー",
       "description": "山口県を世界に通用するワイン産地へ育てることを目指し、自社農園や契約農園のぶどうで醸造を行うワイナリー。永山酒造グループの山口ワイン部門。",
       "url": "http://www.yamanosake.com/products/list.php?category_id=6",
@@ -51,7 +68,35 @@
         "カベルネ・ソーヴィニヨン",
         "シャルドネ",
         "甲州"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.yamanosake.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "山口ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +120,51 @@
           "item": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#wine-1",
+      "name": "シャトーヤマグチ カベルネソーヴィニヨン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山口ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#winery"
+      },
+      "description": "自社農園カベルネを使用した樫樽熟成フルボディ。",
+      "material": "カベルネ・ソーヴィニヨン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#wine-2",
+      "name": "シャトーヤマグチ シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山口ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#winery"
+      },
+      "description": "自社農園シャルドネを使用した樽熟成辛口。",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#wine-3",
+      "name": "山口ワイン ソレイネ",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山口ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamaguchi/yamaguchi-winery.html#winery"
+      },
+      "description": "山口県産ぶどうを生かした親しみやすいシリーズ。",
+      "material": "マスカット・ベーリーA、甲州"
     },
     {
       "@type": "FAQPage",
@@ -389,7 +479,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">山口ワイナリー</h1>
     <p class="hero-subtitle">山口ワイン</p>
     <p class="hero-en">Since 1999 — 山陽小野田市, 山口県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.yamanosake.com/products/list.php?category_id=6" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -534,7 +624,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山口県 山陽小野田市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.yamanosake.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.yamanosake.com/</a></p>
   </div>
 </section>

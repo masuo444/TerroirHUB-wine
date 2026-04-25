@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html",
+      "name": "ドメーヌ茅ヶ岳 - 山梨県のワイナリー",
+      "description": "平成27年創業。山梨県韮崎市の小規模ワイナリー「ドメーヌ茅ヶ岳」。茅ヶ岳南麓・韮崎に拠点を置く小規模ワイナリー。代表の安部正彦氏が脱サラ後に山梨大学で準ワイン化学士を取得し2015年に初ヴィンテージをリリース。2017年に現ワ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#winery",
       "name": "ドメーヌ茅ヶ岳",
       "description": "茅ヶ岳南麓・韮崎に拠点を置く小規模ワイナリー。代表の安部正彦氏が脱サラ後に山梨大学で準ワイン化学士を取得し2015年に初ヴィンテージをリリース。2017年に現ワイナリーへ移転。初ヴィンテージが「日本で飲もう最高のワイン」でベスト日本ワインに選出。",
       "url": "http://d-kayagatake.com",
@@ -43,7 +60,35 @@
       "telephone": "080-5534-1674",
       "knowsAbout": [
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.mblqs.com/c_262.html"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ茅ヶ岳の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -67,6 +112,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#wine-1",
+      "name": "アダージョ ディ 上ノ山 マスカットベーリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ茅ヶ岳"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#winery"
+      },
+      "description": "フラネオール含有量が通常の10倍以上の果実香が強い濃紫色ワイン",
+      "material": "マスカット・ベーリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#wine-2",
+      "name": "アダージョ ディ 上ノ山 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ茅ヶ岳"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#winery"
+      },
+      "description": "辛口。自園栽培の完熟甲州種を使用",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#wine-3",
+      "name": "穂坂メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ茅ヶ岳"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-kayagatake.html#winery"
+      },
+      "description": "ミディアムボディ。穂坂産メルロー使用",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",
@@ -381,7 +471,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ドメーヌ茅ヶ岳</h1>
     <p class="hero-subtitle">ドメーヌ茅ヶ岳</p>
     <p class="hero-en">Since 2015 — 韮崎市, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://d-kayagatake.com" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -526,7 +616,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 韮崎市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.mblqs.com/c_262.html" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.mblqs.com/c_262.html</a></p>
   </div>
 </section>

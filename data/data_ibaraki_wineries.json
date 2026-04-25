@@ -166,7 +166,9 @@
     "wine_style": "red,white",
     "main_grape": "mba",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "マスカット・ベーリーA"
+    ],
     "brands": [
       "Domaine Mito"
     ],

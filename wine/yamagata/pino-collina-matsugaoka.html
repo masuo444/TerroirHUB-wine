@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html",
+      "name": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡 - 山形県のワイナリー",
+      "description": "令和2年（醸造開始）創業。山形県鶴岡市のエステートワイナリー「ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡」。2020年ユネスコ食文化創造都市に認定された鶴岡松ケ岡地区でワイナリーをオープン。自社畑で収穫したぶどうを重力を活用したグラビティーフローでワイン醸造を行ってい",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#winery",
       "name": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡",
       "description": "2020年ユネスコ食文化創造都市に認定された鶴岡松ケ岡地区でワイナリーをオープン。自社畑で収穫したぶどうを重力を活用したグラビティーフローでワイン醸造を行っています。「ワインは農業×ART×化学＝文化」という哲学を掲げています。",
       "url": "https://pinocollina.com/",
@@ -52,7 +69,42 @@
         "ソーヴィニヨンブラン",
         "ピノノワール",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://pinocollina.com/wine-cellar/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,8 +130,69 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#wine-1",
+      "name": "フルフル ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ピノ・コッリーナ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#winery"
+      },
+      "description": "第一号ワイン。ピノ・ノワールと甲州を使用。",
+      "material": "ピノ・ノワール、甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#wine-2",
+      "name": "フルフル 白",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ピノ・コッリーナ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#winery"
+      },
+      "description": "松ケ岡の自社畑ぶどうを使う白ワイン。",
+      "material": "シャルドネ、ソーヴィニヨン・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#wine-3",
+      "name": "鶴岡甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ピノ・コッリーナ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/pino-collina-matsugaoka.html#winery"
+      },
+      "description": "鶴岡産甲州を使う白ワイン。",
+      "material": "甲州"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄はフルフル ロゼ、フルフル 白、鶴岡甲州などがあります。第一号ワイン。ピノ・ノワールと甲州を使用。"
+          }
+        },
         {
           "@type": "Question",
           "name": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の所在地・アクセスを教えてください",
@@ -473,6 +586,45 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge rose">ロゼワイン</div>
+      <div class="grape-tag">ピノ・ノワール、甲州</div>
+      <h3 class="brand-name">フルフル ロゼ</h3>
+      <p class="brand-type">ロゼワイン</p>
+      <p class="brand-desc">第一号ワイン。ピノ・ノワールと甲州を使用。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">シャルドネ、ソーヴィニヨン・ブラン</div>
+      <h3 class="brand-name">フルフル 白</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">松ケ岡の自社畑ぶどうを使う白ワイン。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">甲州</div>
+      <h3 class="brand-name">鶴岡甲州</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">鶴岡産甲州を使う白ワイン。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -481,7 +633,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県鶴岡市東原町17番地7号</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0235-26-7807</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://pinocollina.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://pinocollina.com/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県鶴岡市東原町17番地7号</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0235-26-7807</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://pinocollina.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://pinocollina.com/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -489,8 +641,8 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山形県 鶴岡市</div>
       </div>
     </div>
-    
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://giyamagata-wine.jp/maker/pino/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://giyamagata-wine.jp/maker/pino/</a></p>
+
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://pinocollina.com/wine-cellar/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://pinocollina.com/wine-cellar/</a></p>
   </div>
 </section>
 
@@ -504,26 +656,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">住所は山形県鶴岡市東原町17番地7号です。</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡はいつ創業しましたか？</span>
+        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">令和2年（醸造開始）（2020年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はフルフル ロゼ、フルフル 白、鶴岡甲州などがあります。第一号ワイン。ピノ・ノワールと甲州を使用。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡の所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">主に甲州、シャルドネ、ソーヴィニヨンブラン、ピノノワール、メルローを使用しています。</div>
+      <div class="faq-a" id="faq-a-2">住所は山形県鶴岡市東原町17番地7号です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡はいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">令和2年（醸造開始）（2020年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に甲州、シャルドネ、ソーヴィニヨンブラン、ピノノワール、メルローを使用しています。</div>
     </div>
     </div>
   </div>

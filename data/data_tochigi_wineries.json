@@ -16,7 +16,14 @@
     "wine_style": "red,white,sparkling",
     "main_grape": "mba",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "マスカット・ベーリーA",
+      "甲州",
+      "シャルドネ",
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "ノートン"
+    ],
     "brands": [
       {
         "name": "農民ロッソ",
@@ -112,7 +119,10 @@
     "wine_style": "red,white",
     "main_grape": "mba",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "甲州",
+      "マスカット・ベーリーA"
+    ],
     "brands": [
       {
         "name": "オープニングアクト",
@@ -303,7 +313,9 @@
     "wine_style": "red,white",
     "main_grape": "",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "ヒムロッドシードレス"
+    ],
     "brands": [
       {
         "name": "Himrod seedless",

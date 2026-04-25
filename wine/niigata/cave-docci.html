@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/niigata/cave-docci.html",
+      "name": "カーブドッチワイナリー - 新潟県のワイナリー",
+      "description": "平成4年創業。新潟県新潟市西蒲区（角田浜）のエステートワイナリー「カーブドッチワイナリー」。角田浜の砂丘地に広がる新潟ワインコーストの中心的ワイナリー。畑・温泉・宿・食を組み合わせた滞在型リゾートを形成する。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html",
+      "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#winery",
       "name": "カーブドッチワイナリー",
       "description": "角田浜の砂丘地に広がる新潟ワインコーストの中心的ワイナリー。畑・温泉・宿・食を組み合わせた滞在型リゾートを形成する。",
       "url": "https://www.docci.com/",
@@ -45,6 +62,41 @@
         "@type": "GeoCoordinates",
         "latitude": 37.5774,
         "longitude": 138.7673
+      },
+      "knowsAbout": [
+        "アルバリーニョ",
+        "シャルドネ",
+        "カベルネ・ソーヴィニヨン",
+        "メルロー",
+        "プティ・ヴェルド"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.docci.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "カーブドッチワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +121,49 @@
           "item": "https://wine.terroirhub.com/wine/niigata/cave-docci.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#wine-1",
+      "name": "アルバリーニョ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "CAVE D'OCCI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#winery"
+      },
+      "description": "新潟ワインコーストを代表する白。",
+      "material": "アルバリーニョ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#wine-2",
+      "name": "どうぶつシリーズ",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "CAVE D'OCCI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#winery"
+      },
+      "description": "食卓向けの人気シリーズ。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#wine-3",
+      "name": "サブル",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "CAVE D'OCCI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/cave-docci.html#winery"
+      },
+      "description": "砂地の個性を映す泡。"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +198,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "平成4年（1992年）に創業しました。新潟県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "カーブドッチワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にアルバリーニョ、シャルドネ、カベルネ・ソーヴィニヨン、メルロー、プティ・ヴェルドを使用しています。"
           }
         }
       ]
@@ -375,7 +478,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">カーブドッチワイナリー</h1>
     <p class="hero-subtitle">CAVE D'OCCI</p>
     <p class="hero-en">Since 1992 — 新潟市西蒲区（角田浜）, 新潟県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.docci.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +555,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">カーブドッチワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">アルバリーニョ</span><span class="grape-pill">シャルドネ</span><span class="grape-pill">カベルネ・ソーヴィニヨン</span><span class="grape-pill">メルロー</span><span class="grape-pill">プティ・ヴェルド</span></div>
+  </div>
+</section>
 
 
 
@@ -477,7 +589,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">どうぶつシリーズ</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">食卓向けの人気シリーズ。</p>
@@ -487,7 +599,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge sparkling">スパークリングワイン</div>
-      
+
       <h3 class="brand-name">サブル</h3>
       <p class="brand-type">スパークリングワイン</p>
       <p class="brand-desc">砂地の個性を映す泡。</p>
@@ -511,7 +623,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">新潟県 新潟市西蒲区（角田浜）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.docci.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.docci.com/</a></p>
   </div>
 </section>
@@ -554,6 +666,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">平成4年（1992年）に創業しました。新潟県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">カーブドッチワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にアルバリーニョ、シャルドネ、カベルネ・ソーヴィニヨン、メルロー、プティ・ヴェルドを使用しています。</div>
     </div>
     </div>
   </div>

@@ -16,7 +16,12 @@
     "wine_style": "red,white",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "カベルネ・ソーヴィニヨン",
+      "メルロー",
+      "シャルドネ",
+      "リースリング"
+    ],
     "brands": ["神戸ワイン", "みのり", "ベネディクシオン"],
     "features": ["1983年初仕込み", "神戸市産原料のみ使用", "広大な農業公園内にショップやBBQ施設を併設"],
     "nearest_station": "",
@@ -42,7 +47,9 @@
     "wine_style": "red,white",
     "main_grape": "mba",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "マスカット・ベーリーA"
+    ],
     "brands": [
       "丹波・青垣ワイン"
     ],

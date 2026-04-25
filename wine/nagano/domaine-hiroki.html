@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html",
+      "name": "ドメーヌ・ヒロキ - 長野県のワイナリー",
+      "description": "令和2年創業。長野県池田町のエステートワイナリー「ドメーヌ・ヒロキ」。ぶどう栽培のプロが実現させた池田町初のワイナリー。北アルプスを望む安曇野北部の池田町で、昼夜の寒暖差を活かした高品質なワインを醸造。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#winery",
       "name": "ドメーヌ・ヒロキ",
       "description": "ぶどう栽培のプロが実現させた池田町初のワイナリー。北アルプスを望む安曇野北部の池田町で、昼夜の寒暖差を活かした高品質なワインを醸造。",
       "url": "https://domaine-hiroki.wine/",
@@ -53,7 +70,42 @@
         "シャルドネ",
         "ソーヴィニヨン・ブラン",
         "竜眼"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/special/winery/vol73domainehiroki.html"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ・ヒロキの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -77,6 +129,49 @@
           "item": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#wine-1",
+      "name": "ルヴェデュソレイユ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ・ヒロキ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#winery"
+      },
+      "material": "メルロー・カベルネ・ソーヴィニヨン・カベルネ・フラン・プティ・ヴェルド"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#wine-2",
+      "name": "シャルドネ ヴェニュス",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ・ヒロキ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#wine-3",
+      "name": "ソーヴィニヨン・ブラン メルキュール",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ・ヒロキ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-hiroki.html#winery"
+      },
+      "description": "日本ワインコンクール2025金賞",
+      "material": "ソーヴィニヨン・ブラン"
     },
     {
       "@type": "FAQPage",
@@ -504,7 +599,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー・カベルネ・ソーヴィニヨン・カベルネ・フラン・プティ・ヴェルド</div>
       <h3 class="brand-name">ルヴェデュソレイユ</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -514,7 +609,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">シャルドネ ヴェニュス</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">

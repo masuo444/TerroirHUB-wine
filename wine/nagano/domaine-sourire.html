@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html",
+      "name": "塩尻ファーム ドメーヌスリエ - 長野県のワイナリー",
+      "description": "令和元年創業。長野県塩尻市（広丘）のエステートワイナリー「塩尻ファーム ドメーヌスリエ」。建設・飲食業の「塩尻建友」が遊休農地再生のため設立。2013年にぶどう栽培開始、2019年にワイナリーを設立。「スリエ」はフランス語で「笑顔」の意。米粉専門ベー",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#winery",
       "name": "塩尻ファーム ドメーヌスリエ",
       "description": "建設・飲食業の「塩尻建友」が遊休農地再生のため設立。2013年にぶどう栽培開始、2019年にワイナリーを設立。「スリエ」はフランス語で「笑顔」の意。米粉専門ベーカリーを併設。",
       "url": "https://www.domaine-sourire.jp/",
@@ -52,7 +69,42 @@
         "シャルドネ",
         "コンコード",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/kikyogahara/post-23/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "塩尻ファーム ドメーヌスリエの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +128,48 @@
           "item": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#wine-1",
+      "name": "ドメーヌスリエ メルロ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌスリエ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#winery"
+      },
+      "material": "メルロ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#wine-2",
+      "name": "ドメーヌスリエ シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌスリエ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#wine-3",
+      "name": "ドメーヌスリエ ナイアガラ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌスリエ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-sourire.html#winery"
+      },
+      "material": "ナイアガラ"
     },
     {
       "@type": "FAQPage",
@@ -503,7 +597,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロ</div>
       <h3 class="brand-name">ドメーヌスリエ メルロ</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -513,7 +607,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">ドメーヌスリエ シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -523,7 +617,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ナイアガラ</div>
       <h3 class="brand-name">ドメーヌスリエ ナイアガラ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -544,7 +638,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 塩尻市（広丘）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.nagano-wine.jp/winery/kikyogahara/post-23/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/winery/kikyogahara/post-23/</a></p>
   </div>
 </section>

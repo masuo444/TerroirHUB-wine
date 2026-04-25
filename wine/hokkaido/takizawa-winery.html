@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html",
+      "name": "タキザワワイナリー - 北海道のワイナリー",
+      "description": "平成25年創業。北海道三笠市のエステートワイナリー「タキザワワイナリー」。2004年にワインづくりを志し、北海道三笠市達布地区の南向斜面約1haを開墾したのが始まり。葡萄畑はできるだけ無農薬にこだわり、葡萄そのものが本来持っている自然",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#winery",
       "name": "タキザワワイナリー",
       "description": "2004年にワインづくりを志し、北海道三笠市達布地区の南向斜面約1haを開墾したのが始まり。葡萄畑はできるだけ無農薬にこだわり、葡萄そのものが本来持っている自然の酵母を使って発酵させるワイン造りにこだわっています。",
-      "url": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html",
+      "url": "https://www.enoteca.co.jp/producer/detail/1122",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "北海道三笠市川内841-24",
@@ -44,6 +61,48 @@
         "@type": "GeoCoordinates",
         "latitude": 43.4,
         "longitude": 141.95
+      },
+      "knowsAbout": [
+        "ピノ・ノワール",
+        "ソーヴィニヨン・ブラン",
+        "シャルドネ",
+        "旅路",
+        "ケルナー"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.enoteca.co.jp/producer/detail/1122"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "タキザワワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,6 +129,51 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#wine-1",
+      "name": "旅路",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TAKIZAWA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#winery"
+      },
+      "description": "北海道固有品種・旅路を野生酵母で醸す辛口白。",
+      "material": "旅路"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#wine-2",
+      "name": "ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TAKIZAWA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#winery"
+      },
+      "description": "三笠市の自社畑ピノ・ノワールを使う赤。",
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#wine-3",
+      "name": "ケルナー",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TAKIZAWA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/takizawa-winery.html#winery"
+      },
+      "description": "北海道産ケルナーの香りと酸を生かした白。",
+      "material": "ケルナー"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -78,6 +182,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "営業日・見学対応は事前確認推奨。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "タキザワワイナリーの代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄は旅路、ピノ・ノワール、ケルナーなどがあります。北海道固有品種・旅路を野生酵母で醸す辛口白。"
           }
         },
         {
@@ -94,6 +206,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "平成25年（2013年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "タキザワワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にピノ・ノワール、ソーヴィニヨン・ブラン、シャルドネ、旅路、ケルナーを使用しています。"
           }
         }
       ]
@@ -369,7 +489,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI北海道</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.enoteca.co.jp/producer/detail/1122" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -443,6 +563,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">タキザワワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">ピノ・ノワール</span><span class="grape-pill">ソーヴィニヨン・ブラン</span><span class="grape-pill">シャルドネ</span><span class="grape-pill">旅路</span><span class="grape-pill">ケルナー</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -456,6 +585,45 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">旅路</div>
+      <h3 class="brand-name">旅路</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">北海道固有品種・旅路を野生酵母で醸す辛口白。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">赤ワイン</div>
+      <div class="grape-tag">ピノ・ノワール</div>
+      <h3 class="brand-name">ピノ・ノワール</h3>
+      <p class="brand-type">赤ワイン</p>
+      <p class="brand-desc">三笠市の自社畑ピノ・ノワールを使う赤。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">ケルナー</div>
+      <h3 class="brand-name">ケルナー</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">北海道産ケルナーの香りと酸を生かした白。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -464,7 +632,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道三笠市川内841-24</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道三笠市川内841-24</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.enoteca.co.jp/producer/detail/1122" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.enoteca.co.jp/producer/detail/1122</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -473,7 +641,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       </div>
     </div>
     <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR函館本線 三笠駅（車約20分）</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/area/hokkaido/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/area/hokkaido/</a></p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.enoteca.co.jp/producer/detail/1122" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.enoteca.co.jp/producer/detail/1122</a></p>
   </div>
 </section>
 
@@ -495,18 +663,34 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">タキザワワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">タキザワワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道三笠市川内841-24です。最寄りはJR函館本線 三笠駅（車約20分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は旅路、ピノ・ノワール、ケルナーなどがあります。北海道固有品種・旅路を野生酵母で醸す辛口白。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">タキザワワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-text">タキザワワイナリーの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">平成25年（2013年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道三笠市川内841-24です。最寄りはJR函館本線 三笠駅（車約20分）です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">タキザワワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">平成25年（2013年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">タキザワワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にピノ・ノワール、ソーヴィニヨン・ブラン、シャルドネ、旅路、ケルナーを使用しています。</div>
     </div>
     </div>
   </div>

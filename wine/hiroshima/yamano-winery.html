@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html",
+      "name": "山野峡大田ワイナリー - 広島県のワイナリー",
+      "description": "2021年創業。広島県福山市山野町の小規模ワイナリー「山野峡大田ワイナリー」。福山市山野町で富士の夢やピノ・グリなどを使い、宿泊施設と一体で運営する小規模ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#winery",
       "name": "山野峡大田ワイナリー",
       "description": "福山市山野町で富士の夢やピノ・グリなどを使い、宿泊施設と一体で運営する小規模ワイナリー。",
       "url": "https://yamano-wine.com/",
@@ -51,7 +68,29 @@
         "マルスラン",
         "シャルドネ",
         "ソーヴィニヨン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/17340010424/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "山野峡大田ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +114,36 @@
           "item": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#wine-1",
+      "name": "山野峡ワイン 富士の夢",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山野峡大田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#winery"
+      },
+      "description": "広島県北部の品種個性を生かした赤。",
+      "material": "富士の夢"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#wine-2",
+      "name": "山野峡ワイン ピノグリ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山野峡大田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/yamano-winery.html#winery"
+      },
+      "description": "香り高い白。",
+      "material": "ピノ・グリ"
     },
     {
       "@type": "FAQPage",
@@ -387,9 +456,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
     <p class="hero-est">EST. 2021</p>
     <h1 class="hero-title">山野峡大田ワイナリー</h1>
-    
+
     <p class="hero-en">Since 2021 — 福山市山野町, 広島県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://yamano-wine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -524,7 +593,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">広島県 福山市山野町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/17340010424/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/17340010424/</a></p>
   </div>
 </section>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html",
+      "name": "グレイスワイン（中央葡萄酒） - 山梨県のワイナリー",
+      "description": "大正12年創業。山梨県甲州市・勝沼のエステートワイナリー「グレイスワイン（中央葡萄酒）」。日本の美しさをワインに表現する。日本には折り目正しく鮮やかに切り替わる四季があります。日本の風土で培われてきた繊細な味わいの感性と丁寧で堅牢な技は、日本文化の個",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#winery",
       "name": "グレイスワイン（中央葡萄酒）",
       "description": "日本の美しさをワインに表現する。日本には折り目正しく鮮やかに切り替わる四季があります。日本の風土で培われてきた繊細な味わいの感性と丁寧で堅牢な技は、日本文化の個性のひとつになっています。グレイスワインは、日本の良さを選び抜いてワインに包み込みたいと願っています。",
       "url": "https://www.grace-wine.com/",
@@ -51,7 +68,54 @@
         "マスカット・ベーリーA",
         "カベルネ・ソーヴィニヨン",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.grace-wine.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "グレイスワイン（中央葡萄酒）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +139,73 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-1",
+      "name": "GRACE KOSHU MISAWA VINEYARD",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GRACE WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-2",
+      "name": "GRACE CUVÉE MISAWA",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GRACE WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-3",
+      "name": "GRACE KOSHU",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GRACE WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-4",
+      "name": "GRACE SPARKLING",
+      "category": "スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "GRACE WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#wine-5",
+      "name": "GRACE FORTIFIED WINE",
+      "category": "酒精強化ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "GRACE WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/grace-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -502,17 +633,17 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">GRACE KOSHU MISAWA VINEYARD</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">GRACE CUVÉE MISAWA</h3>
       <p class="brand-type">赤・白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -522,7 +653,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">GRACE KOSHU</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

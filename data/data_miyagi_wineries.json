@@ -16,7 +16,11 @@
     "wine_style": "mixed",
     "main_grape": "steuben",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "スチューベン",
+      "メルロー",
+      "シャルドネ"
+    ],
     "brands": [
       {
         "name": "秋保ワイン",

@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html",
+      "name": "ドメーヌ・ド・ラ・アケノ・ヴェニュス - 山梨県のワイナリー",
+      "description": "平成30年創業。山梨県北杜市明野町の小規模ワイナリー「ドメーヌ・ド・ラ・アケノ・ヴェニュス」。年間2600時間超の日照時間を誇る北杜市明野の地に、定年退職を機に一念発起した醸造家が2018年に設立。山梨県立農林大学校で学び県内ワイナリーで実習を積んだ後に",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#winery",
       "name": "ドメーヌ・ド・ラ・アケノ・ヴェニュス",
       "description": "年間2600時間超の日照時間を誇る北杜市明野の地に、定年退職を機に一念発起した醸造家が2018年に設立。山梨県立農林大学校で学び県内ワイナリーで実習を積んだ後に開業。自家畑のぶどうを減農薬栽培し、カベルネ・ソーヴィニョンを中心に醸造。",
-      "url": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html",
+      "url": "https://nihonwine.jp/winery_intro/akenovenus/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "山梨県北杜市明野町下神取793",
@@ -42,7 +59,29 @@
       "foundingDate": "2018",
       "knowsAbout": [
         "カベルネ・ソーヴィニョン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nihonwine.jp/winery_intro/akenovenus/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ・ド・ラ・アケノ・ヴェニュスの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -66,6 +105,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#wine-1",
+      "name": "アケノ ヴェニュス カベルネ・ソーヴィニョン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アケノ ヴェニュス"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#winery"
+      },
+      "description": "カベルネ・ソーヴィニョン、減農薬自家畑",
+      "material": "カベルネ・ソーヴィニョン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#wine-2",
+      "name": "アケノ ヴェニュス 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アケノ ヴェニュス"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
     },
     {
       "@type": "FAQPage",
@@ -380,10 +449,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ドメーヌ・ド・ラ・アケノ・ヴェニュス</h1>
     <p class="hero-subtitle">アケノ ヴェニュス</p>
     <p class="hero-en">Since 2018 — 北杜市明野町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://nihonwine.jp/winery_intro/akenovenus/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -507,7 +576,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県北杜市明野町下神取793</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県北杜市明野町下神取793</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://nihonwine.jp/winery_intro/akenovenus/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nihonwine.jp/winery_intro/akenovenus/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>

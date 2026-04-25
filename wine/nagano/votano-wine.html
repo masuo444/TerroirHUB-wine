@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/votano-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/votano-wine.html",
+      "name": "ヴォータノワイン - 長野県のワイナリー",
+      "description": "平成24年創業。長野県塩尻市（洗馬）のエステートワイナリー「ヴォータノワイン」。石の多い奈良井川沿いの畑でワイン用ぶどうを栽培",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/votano-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/votano-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/votano-wine.html#winery",
       "name": "ヴォータノワイン",
       "description": "石の多い奈良井川沿いの畑でワイン用ぶどうを栽培",
       "url": "http://www.votanowine.info/index.php",
@@ -57,7 +74,30 @@
         "ケルナー",
         "甲斐ブラン",
         "ネッビオーロ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/kikyogahara/post-26/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ヴォータノワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/votano-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -81,6 +121,21 @@
           "item": "https://wine.terroirhub.com/wine/nagano/votano-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/votano-wine.html#wine-1",
+      "name": "洗馬ロッソ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ヴォータノワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/votano-wine.html#winery"
+      },
+      "description": "メルロ72%・シラー28%ブレンド",
+      "material": "メルロー・シラー"
     },
     {
       "@type": "FAQPage",
@@ -529,7 +584,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 塩尻市（洗馬）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.nagano-wine.jp/winery/kikyogahara/post-26/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/winery/kikyogahara/post-26/</a></p>
   </div>
 </section>

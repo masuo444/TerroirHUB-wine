@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html",
+      "name": "ヴァンヴァンヴィンヤード - 千葉県のワイナリー",
+      "description": "千葉県のエステートワイナリー「ヴァンヴァンヴィンヤード」。八街市でワインぶどうを栽培するヴィンヤード。風通しのよい台地でマスカット・ベーリーAやシャルドネなどを育て、限定流通ワインでも知られる。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html",
+      "@id": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html#winery",
       "name": "ヴァンヴァンヴィンヤード",
       "description": "八街市でワインぶどうを栽培するヴィンヤード。風通しのよい台地でマスカット・ベーリーAやシャルドネなどを育て、限定流通ワインでも知られる。",
-      "url": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html",
+      "url": "https://nippon.wine/winery/12120010315/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "千葉県八街市",
@@ -48,7 +65,23 @@
         "マスカット・ベーリーA",
         "シャルドネ",
         "甲州"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/12120010315/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ヴァンヴァンヴィンヤードの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +105,19 @@
           "item": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html#wine-1",
+      "name": "VANVAN VINEYARD",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "VANVAN VINEYARD"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/chiba/vanvan-vineyard.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -366,14 +412,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
   </div>
   <div class="hero-content">
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
-    
+
     <h1 class="hero-title">ヴァンヴァンヴィンヤード</h1>
     <p class="hero-subtitle">VANVAN VINEYARD</p>
-    
-    
+
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://nippon.wine/winery/12120010315/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -401,7 +447,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <h2 class="sec-title">ヴァンヴァンヴィンヤードの物語</h2>
         <div class="sec-divider"></div>
         <p class="sec-body">八街市でワインぶどうを栽培するヴィンヤード。風通しのよい台地でマスカット・ベーリーAやシャルドネなどを育て、限定流通ワインでも知られる。</p>
-        
+
       </div>
     </div>
   </div>
@@ -463,11 +509,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">VANVAN VINEYARD</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -480,7 +526,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">千葉県八街市</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開営業情報が限られるため事前確認前提。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">千葉県八街市</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://nippon.wine/winery/12120010315/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/12120010315/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開営業情報が限られるため事前確認前提。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -488,7 +534,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">千葉県 八街市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/12120010315/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/12120010315/</a></p>
   </div>
 </section>

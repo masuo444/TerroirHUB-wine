@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html",
+      "name": "佐藤ぶどう酒　金渓ワイン - 山形県のワイナリー",
+      "description": "昭和15年創業。山形県南陽市のエステートワイナリー「佐藤ぶどう酒　金渓ワイン」。全商品、山形県産原料を100％使用しています。工場は南陽市の赤湯温泉街の中にあり、家族中心の小さいワイナリーですが、大量生産を行わず、繊細な注意を払って、丁寧な",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html#winery",
       "name": "佐藤ぶどう酒　金渓ワイン",
       "description": "全商品、山形県産原料を100％使用しています。工場は南陽市の赤湯温泉街の中にあり、家族中心の小さいワイナリーですが、大量生産を行わず、繊細な注意を払って、丁寧なワイン造りを心がけております。",
       "url": "http://www.kinkei.net/",
@@ -54,7 +71,30 @@
         "北醇",
         "キャンベルアーリー",
         "ベリーアリカントA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/sato/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "佐藤ぶどう酒　金渓ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +118,19 @@
           "item": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html#wine-1",
+      "name": "金渓ワイン",
+      "category": "赤・白・ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "金渓ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/kinkei-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -502,10 +555,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・ロゼ</div>
-      
+
       <h3 class="brand-name">金渓ワイン</h3>
       <p class="brand-type">赤・白・ロゼ</p>
-      
+
     </div>
     </div>
   </div>
@@ -526,7 +579,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山形県 南陽市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://giyamagata-wine.jp/maker/sato/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://giyamagata-wine.jp/maker/sato/</a></p>
   </div>
 </section>

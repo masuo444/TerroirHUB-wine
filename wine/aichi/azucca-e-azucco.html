@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html",
+      "name": "アズッカ・エ・アズッコ 風の丘のワイナリー - 愛知県のワイナリー",
+      "description": "平成26年創業。愛知県豊田市のエステートワイナリー「アズッカ・エ・アズッコ 風の丘のワイナリー」。豊田市の丘陵地で夫婦が営むエステートワイナリー。イタリアでの修業経験を生かし、多品種少量生産で土地の個性を引き出す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html",
+      "@id": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html#winery",
       "name": "アズッカ・エ・アズッコ 風の丘のワイナリー",
       "description": "豊田市の丘陵地で夫婦が営むエステートワイナリー。イタリアでの修業経験を生かし、多品種少量生産で土地の個性を引き出す。",
       "url": "https://azu-azu.sakura.ne.jp/",
@@ -55,7 +72,23 @@
         "シャルドネ",
         "ソーヴィニヨン・ブラン",
         "ゲヴュルツトラミネール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://azu-azu.sakura.ne.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "アズッカ・エ・アズッコ 風の丘のワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -79,6 +112,20 @@
           "item": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html#wine-1",
+      "name": "風の丘",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アズッカ・エ・アズッコ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/aichi/azucca-e-azucco.html#winery"
+      },
+      "description": "多品種少量生産の代表シリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -393,7 +440,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">アズッカ・エ・アズッコ 風の丘のワイナリー</h1>
     <p class="hero-subtitle">アズッカ・エ・アズッコ</p>
     <p class="hero-en">Since 2014 — 豊田市, 愛知県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://azu-azu.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -494,7 +541,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">風の丘</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">多品種少量生産の代表シリーズ。</p>
@@ -518,7 +565,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">愛知県 豊田市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://azu-azu.sakura.ne.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://azu-azu.sakura.ne.jp/</a></p>
   </div>
 </section>

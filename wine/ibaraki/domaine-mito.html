@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html",
+      "name": "ドメーヌ水戸 - 茨城県のワイナリー",
+      "description": "平成28年創業。茨城県水戸市の日本ワイナリー「ドメーヌ水戸」。水戸市中心部の商店街活性化から生まれた都市型ワイナリー。市民参加型の仕込みや体験企画を通じてワイン文化を広げている。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html#winery",
       "name": "ドメーヌ水戸",
       "description": "水戸市中心部の商店街活性化から生まれた都市型ワイナリー。市民参加型の仕込みや体験企画を通じてワイン文化を広げている。",
       "url": "https://domaine-mito.jp/",
@@ -44,6 +61,25 @@
         "@type": "GeoCoordinates",
         "latitude": 36.3741,
         "longitude": 140.4769
+      },
+      "knowsAbout": [
+        "マスカット・ベーリーA"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://domaine-mito.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ水戸の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,6 +106,19 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html#wine-1",
+      "name": "Domaine Mito",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Domaine Mito"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/ibaraki/domaine-mito.html#winery"
+      }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -94,6 +143,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "平成28年（2016年）に創業しました。茨城県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ドメーヌ水戸ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にマスカット・ベーリーAを使用しています。"
           }
         }
       ]
@@ -366,7 +423,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ドメーヌ水戸</h1>
     <p class="hero-subtitle">Domaine Mito</p>
     <p class="hero-en">Since 2016 — 水戸市, 茨城県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://domaine-mito.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -436,6 +493,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ドメーヌ水戸が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">マスカット・ベーリーA</span></div>
+  </div>
+</section>
 
 
 
@@ -450,11 +516,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Domaine Mito</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -510,6 +576,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
       <div class="faq-a" id="faq-a-2">平成28年（2016年）に創業しました。茨城県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ドメーヌ水戸ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">主にマスカット・ベーリーAを使用しています。</div>
     </div>
     </div>
   </div>

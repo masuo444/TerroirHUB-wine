@@ -15,9 +15,26 @@ def add(loc, priority, changefreq='monthly'):
 
 # ── トップ・固定ページ ──
 add(f'{DOMAIN}/',               '1.0', 'weekly')
+add(f'{DOMAIN}/en/',            '0.9', 'weekly')
+add(f'{DOMAIN}/fr/',            '0.9', 'weekly')
 add(f'{DOMAIN}/wine/guide/',    '0.9', 'monthly')
+add(f'{DOMAIN}/wine/mypage/',   '0.7', 'monthly')
+add(f'{DOMAIN}/wine/search/',   '0.8', 'weekly')
+add(f'{DOMAIN}/wine/plans/',    '0.8', 'monthly')
+add(f'{DOMAIN}/en/wine/search/', '0.8', 'weekly')
+add(f'{DOMAIN}/fr/wine/search/', '0.8', 'weekly')
+add(f'{DOMAIN}/en/wine/plans/',  '0.8', 'monthly')
+add(f'{DOMAIN}/fr/wine/plans/',  '0.8', 'monthly')
+add(f'{DOMAIN}/en/wine/mypage/', '0.7', 'monthly')
+add(f'{DOMAIN}/fr/wine/mypage/', '0.7', 'monthly')
+for g in ['index','beginner','visit','compare','yamanashi-vs-nagano','koshu-vs-pinot','beginner-white','koshu','hokkaido-pinot-noir','nagano-merlot']:
+    add(f'{DOMAIN}/en/wine/guide/{g}.html', '0.7', 'monthly')
+    add(f'{DOMAIN}/fr/wine/guide/{g}.html', '0.7', 'monthly')
+for g in ['regions','varieties','production','drinking','pairing','history','glossary']:
+    add(f'{DOMAIN}/en/wine/guide/{g}.html', '0.7', 'monthly')
+    add(f'{DOMAIN}/fr/wine/guide/{g}.html', '0.7', 'monthly')
 
-for g in ['index','varieties','production','drinking','pairing','history','regions','glossary']:
+for g in ['index','beginner','visit','compare','yamanashi-vs-nagano','koshu-vs-pinot','beginner-white','koshu','hokkaido-pinot-noir','nagano-merlot','varieties','production','drinking','pairing','history','regions','glossary']:
     add(f'{DOMAIN}/wine/guide/{g}.html', '0.7', 'monthly')
 
 # ── 産地ページ ──
@@ -29,6 +46,8 @@ json_files = sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json')
 for jf in json_files:
     pref = os.path.basename(jf).replace('data_','').replace('_wineries.json','')
     add(f'{DOMAIN}/wine/{pref}/', '0.85', 'weekly')
+    add(f'{DOMAIN}/wine/en/{pref}/', '0.8', 'weekly')
+    add(f'{DOMAIN}/wine/fr/{pref}/', '0.8', 'weekly')
 
     with open(jf, 'r', encoding='utf-8') as f:
         wineries = json.load(f)
@@ -39,6 +58,8 @@ for jf in json_files:
                     len(b.get('brands',[])) >= 1 and len(b.get('features',[])) >= 2)
         prio = '0.8' if is_a else '0.6'
         add(f'{DOMAIN}/wine/{pref}/{b["id"]}.html', prio, 'monthly')
+        add(f'{DOMAIN}/wine/en/{pref}/{b["id"]}.html', '0.7' if is_a else '0.5', 'monthly')
+        add(f'{DOMAIN}/wine/fr/{pref}/{b["id"]}.html', '0.7' if is_a else '0.5', 'monthly')
 
 # ── XML出力 ──
 lines = [

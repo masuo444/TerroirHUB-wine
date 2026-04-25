@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html",
+      "name": "ニッカシードル弘前工場 - 青森県のワイナリー",
+      "description": "1969年創業。青森県弘前市の大規模ワイナリー「ニッカシードル弘前工場」。国産リンゴ100％のスパークリングワイン「ニッカシードル」を製造しております。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html",
+      "@id": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html#winery",
       "name": "ニッカシードル弘前工場",
       "description": "国産リンゴ100％のスパークリングワイン「ニッカシードル」を製造しております。",
       "url": "https://www.nikka.com/company/facility.html",
@@ -45,6 +62,25 @@
         "@type": "GeoCoordinates",
         "latitude": 40.6067,
         "longitude": 140.4642
+      },
+      "knowsAbout": [
+        "りんご"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/487/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ニッカシードル弘前工場の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +105,20 @@
           "item": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html#wine-1",
+      "name": "ニッカシードル",
+      "category": "スパークリングワイン（シードル）",
+      "brand": {
+        "@type": "Brand",
+        "name": "ニッカシードル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/aomori/nikka-cidre-hirosaki.html#winery"
+      },
+      "material": "国産りんご100%"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +153,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "1969年に創業しました。青森県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ニッカシードル弘前工場ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にりんごを使用しています。"
           }
         }
       ]
@@ -375,7 +433,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ニッカシードル弘前工場</h1>
     <p class="hero-subtitle">ニッカシードル</p>
     <p class="hero-en">Since 1969 — 弘前市, 青森県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.nikka.com/company/facility.html" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +510,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ニッカシードル弘前工場が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">りんご</span></div>
+  </div>
+</section>
 
 
 
@@ -470,7 +537,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">国産りんご100%</div>
       <h3 class="brand-name">ニッカシードル</h3>
       <p class="brand-type">スパークリングワイン（シードル）</p>
-      
+
     </div>
     </div>
   </div>
@@ -491,7 +558,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">青森県 弘前市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/487/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/487/</a></p>
   </div>
 </section>
@@ -534,6 +601,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">1969年に創業しました。青森県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ニッカシードル弘前工場ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にりんごを使用しています。</div>
     </div>
     </div>
   </div>

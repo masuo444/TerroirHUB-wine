@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html",
+      "name": "イケダワイナリー - 山梨県のワイナリー",
+      "description": "平成7年創業。山梨県甲州市勝沼の小規模ワイナリー「イケダワイナリー」。創業者の池田俊和がワインに魅せられ勝沼に移住し、1995年に大手食品グループのワイナリーを株式譲渡の形で引き継いで独立。2023年に長男の池田秀俊が事業継承。日",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#winery",
       "name": "イケダワイナリー",
       "description": "創業者の池田俊和がワインに魅せられ勝沼に移住し、1995年に大手食品グループのワイナリーを株式譲渡の形で引き継いで独立。2023年に長男の池田秀俊が事業継承。日本ワインコンクール金賞受賞歴あり。",
       "url": "https://www.ikedawinery.com",
@@ -44,7 +61,36 @@
       "knowsAbout": [
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.ikedawinery.com/about/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "イケダワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +114,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#wine-1",
+      "name": "樽熟甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "樽熟甲州"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#winery"
+      },
+      "description": "勝沼産甲州100%。ステンレスタンク発酵後古樽熟成。やや辛口。柑橘の香りと落ち着いた熟成感。",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#wine-2",
+      "name": "ヴァン・ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "樽熟甲州"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ikeda-winery.html#winery"
+      },
+      "description": "イチゴの香りとフレッシュな果実味。春向けロゼワイン",
+      "material": "マスカット・ベーリーA、甲州"
     },
     {
       "@type": "FAQPage",
@@ -526,7 +602,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 甲州市勝沼</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.ikedawinery.com/about/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.ikedawinery.com/about/</a></p>
   </div>
 </section>

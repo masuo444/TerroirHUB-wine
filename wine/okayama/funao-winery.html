@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/okayama/funao-winery.html",
+      "name": "ふなおワイナリー - 岡山県のワイナリー",
+      "description": "1989年創業。岡山県倉敷市船穂町の日本ワイナリー「ふなおワイナリー」。倉敷市船穂町のマスカット・オブ・アレキサンドリア産地にあるワイナリー。栽培から搾汁・発酵・瓶詰めまで一貫して手がける。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#winery",
       "name": "ふなおワイナリー",
       "description": "倉敷市船穂町のマスカット・オブ・アレキサンドリア産地にあるワイナリー。栽培から搾汁・発酵・瓶詰めまで一貫して手がける。",
       "url": "http://www.funaowinery.com/",
@@ -48,7 +65,35 @@
       },
       "knowsAbout": [
         "マスカット・オブ・アレキサンドリア"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.kurashiki-tabi.jp/rm_experience/rm-experience15/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ふなおワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +117,51 @@
           "item": "https://wine.terroirhub.com/wine/okayama/funao-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#wine-1",
+      "name": "マスカット・オブ・アレキサンドリア スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ふなおワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#winery"
+      },
+      "description": "マスカット100%の代表銘柄。",
+      "material": "マスカット・オブ・アレキサンドリア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#wine-2",
+      "name": "マスカット・オブ・アレキサンドリア やや辛口",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ふなおワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#winery"
+      },
+      "description": "芳醇な香りと上品な余韻。",
+      "material": "マスカット・オブ・アレキサンドリア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#wine-3",
+      "name": "特醸辛口",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ふなおワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/okayama/funao-winery.html#winery"
+      },
+      "description": "シュール・リー製法で熟成した辛口。",
+      "material": "マスカット・オブ・アレキサンドリア"
     },
     {
       "@type": "FAQPage",
@@ -384,9 +474,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
     <p class="hero-est">EST. 1989</p>
     <h1 class="hero-title">ふなおワイナリー</h1>
-    
+
     <p class="hero-en">Since 1989 — 倉敷市船穂町, 岡山県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.funaowinery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -531,7 +621,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">岡山県 倉敷市船穂町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.kurashiki-tabi.jp/rm_experience/rm-experience15/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.kurashiki-tabi.jp/rm_experience/rm-experience15/</a></p>
   </div>
 </section>

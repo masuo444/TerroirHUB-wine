@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html",
+      "name": "瀬戸内醸造所 - 広島県のワイナリー",
+      "description": "令和元年創業。広島県広島県（瀬戸内海沿岸）の日本ワイナリー「瀬戸内醸造所」。瀬戸内海沿岸の風景と食文化を映すワインを目指すワイナリー。竹原に本社を置き、三原・須波の醸造所とレストランmioを展開する。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html#winery",
       "name": "瀬戸内醸造所",
       "description": "瀬戸内海沿岸の風景と食文化を映すワインを目指すワイナリー。竹原に本社を置き、三原・須波の醸造所とレストランmioを展開する。",
       "url": "https://setouchijozojo.jp/",
@@ -51,7 +68,23 @@
         "ソーヴィニヨン・ブラン",
         "セミヨン",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://setouchijozojo.jp/locations/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "瀬戸内醸造所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +108,20 @@
           "item": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html#wine-1",
+      "name": "mio",
+      "category": "白・ロゼ・泡",
+      "brand": {
+        "@type": "Brand",
+        "name": "瀬戸内醸造所"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/setouchi-jozo.html#winery"
+      },
+      "description": "瀬戸内の海辺の景色と食卓を意識したシリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -387,9 +434,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
     <p class="hero-est">EST. 2019</p>
     <h1 class="hero-title">瀬戸内醸造所</h1>
-    
+
     <p class="hero-en">Since 2019 — 広島県（瀬戸内海沿岸）, 広島県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://setouchijozojo.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -490,7 +537,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白・ロゼ・泡</div>
-      
+
       <h3 class="brand-name">mio</h3>
       <p class="brand-type">白・ロゼ・泡</p>
       <p class="brand-desc">瀬戸内の海辺の景色と食卓を意識したシリーズ。</p>
@@ -514,7 +561,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">広島県 広島県（瀬戸内海沿岸）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://setouchijozojo.jp/locations/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://setouchijozojo.jp/locations/</a></p>
   </div>
 </section>

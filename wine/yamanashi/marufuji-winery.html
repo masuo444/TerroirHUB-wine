@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html",
+      "name": "丸藤葡萄酒工業（ルバイヤートワイン） - 山梨県のワイナリー",
+      "description": "明治23年創業。山梨県甲州市・勝沼のエステートワイナリー「丸藤葡萄酒工業（ルバイヤートワイン）」。明治二十三年五月、創業者大村治作は、自宅の庭に小さな葡萄酒醸造場を造りました。親子四代、一人でも多くの方々に本物の美味しさをわかっていただくことを喜びにワイン造",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#winery",
       "name": "丸藤葡萄酒工業（ルバイヤートワイン）",
       "description": "明治二十三年五月、創業者大村治作は、自宅の庭に小さな葡萄酒醸造場を造りました。親子四代、一人でも多くの方々に本物の美味しさをわかっていただくことを喜びにワイン造り一筋にこつこつと歩んできました。",
       "url": "http://www.rubaiyat.jp/",
@@ -54,7 +71,42 @@
         "プティ・ヴェルド",
         "シャルドネ",
         "ソーヴィニヨン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.rubaiyat.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "丸藤葡萄酒工業（ルバイヤートワイン）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +130,48 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#wine-1",
+      "name": "ルバイヤート 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ルバイヤート"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#wine-2",
+      "name": "ルバイヤート マスカット・ベーリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ルバイヤート"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#winery"
+      },
+      "material": "マスカット・ベーリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#wine-3",
+      "name": "ルバイヤート カベルネ・ソーヴィニヨン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ルバイヤート"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/marufuji-winery.html#winery"
+      },
+      "material": "カベルネ・ソーヴィニヨン"
     },
     {
       "@type": "FAQPage",
@@ -505,7 +599,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">ルバイヤート 甲州</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -515,7 +609,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">マスカット・ベーリーA</div>
       <h3 class="brand-name">ルバイヤート マスカット・ベーリーA</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -525,7 +619,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">カベルネ・ソーヴィニヨン</div>
       <h3 class="brand-name">ルバイヤート カベルネ・ソーヴィニヨン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

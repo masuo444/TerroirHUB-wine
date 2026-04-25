@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html",
+      "name": "牛奥第一葡萄酒 - 山梨県のワイナリー",
+      "description": "昭和27年創業。山梨県甲州市塩山の小規模ワイナリー「牛奥第一葡萄酒」。地元塩山のぶどう農家が自家消費目的で運営する超小規模醸造所。生食に出荷できないぶどうや余ったぶどうを持ち寄って醸造するため、年間生産量は720ml瓶2,000本",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#winery",
       "name": "牛奥第一葡萄酒",
       "description": "地元塩山のぶどう農家が自家消費目的で運営する超小規模醸造所。生食に出荷できないぶどうや余ったぶどうを持ち寄って醸造するため、年間生産量は720ml瓶2,000本・一升瓶5,000本程度と極めて希少。市場流通がほぼなく、現地でしか買えないワインとして知られる。",
-      "url": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html",
+      "url": "https://www.winery.or.jp/winery-map/2680/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "山梨県甲州市塩山牛奥3969",
@@ -44,7 +61,29 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/2680/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "牛奥第一葡萄酒の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +107,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#wine-1",
+      "name": "牛奥ワイン 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "牛奥ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#winery"
+      },
+      "description": "甲州種、720ml・一升瓶",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#wine-2",
+      "name": "牛奥ワイン 赤",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "牛奥ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ushioku-daiichi.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -382,10 +451,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">牛奥第一葡萄酒</h1>
     <p class="hero-subtitle">牛奥ワイン</p>
     <p class="hero-en">Since 1952 — 甲州市塩山, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.winery.or.jp/winery-map/2680/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -509,7 +578,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県甲州市塩山牛奥3969</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0553-33-8080</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学・試飲あり（要予約・最大20名）</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県甲州市塩山牛奥3969</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0553-33-8080</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.winery.or.jp/winery-map/2680/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/2680/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学・試飲あり（要予約・最大20名）</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>

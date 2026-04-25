@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html",
+      "name": "ドメーヌトワ - 北海道のワイナリー",
+      "description": "令和6年創業。北海道鷹栖町のエステートワイナリー「ドメーヌトワ」。社会福祉法人 鷹栖共生会が運営するワイナリー。道北・鷹栖町でぶどう栽培から醸造までを行う。2024年に醸造免許を取得した新進気鋭の産地。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#winery",
       "name": "ドメーヌトワ",
       "description": "社会福祉法人 鷹栖共生会が運営するワイナリー。道北・鷹栖町でぶどう栽培から醸造までを行う。2024年に醸造免許を取得した新進気鋭の産地。",
-      "url": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html",
+      "url": "https://domainetoi.jp/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "北海道上川郡鷹栖町14線17号",
@@ -44,6 +61,50 @@
         "@type": "GeoCoordinates",
         "latitude": 43.77,
         "longitude": 142.37
+      },
+      "knowsAbout": [
+        "バッカス",
+        "ゲヴュルツトラミネール",
+        "ピノ・グリ",
+        "シャルドネ",
+        "ピノ・ノワール",
+        "ピノ・ムニエ",
+        "ツヴァイゲルト"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://domainetoi.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌトワの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,8 +131,69 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#wine-1",
+      "name": "Bacchus",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌトワ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#winery"
+      },
+      "description": "バッカス100%の白。",
+      "material": "バッカス"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#wine-2",
+      "name": "L'assemblage Blanc",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌトワ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#winery"
+      },
+      "description": "ピノ・グリ主体のブレンド白。",
+      "material": "ピノ・グリ、ゲヴュルツトラミネール、ケルナー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#wine-3",
+      "name": "L'assemblage Rouge",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌトワ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-towa.html#winery"
+      },
+      "description": "ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワールのブレンド赤。",
+      "material": "ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワール"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ドメーヌトワの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "販売・見学対応は公式サイトまたは取扱店情報で要確認。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ドメーヌトワの代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄はBacchus、L'assemblage Blanc、L'assemblage Rougeなどがあります。バッカス100%の白。"
+          }
+        },
         {
           "@type": "Question",
           "name": "ドメーヌトワの所在地・アクセスを教えてください",
@@ -86,6 +208,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和6年（2024年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ドメーヌトワではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にバッカス、ゲヴュルツトラミネール、ピノ・グリ、シャルドネ、ピノ・ノワール、ピノ・ムニエ、ツヴァイゲルトを使用しています。"
           }
         }
       ]
@@ -361,7 +491,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI北海道</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://domainetoi.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -413,14 +543,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="fact-num" style="font-family:'Zen Old Mincho',serif;font-size:42px;opacity:0.7;">①</div>
         <div>
           <div class="fact-lbl">特徴 1</div>
-          <div class="fact-body">社会福祉法人運営のワイナリー</div>
+          <div class="fact-body">社会福祉法人運営の農福連携ワイナリー</div>
         </div>
       </div>
       <div class="fact">
         <div class="fact-num" style="font-family:'Zen Old Mincho',serif;font-size:42px;opacity:0.7;">②</div>
         <div>
           <div class="fact-lbl">特徴 2</div>
-          <div class="fact-body">道北・鷹栖町立地</div>
+          <div class="fact-body">道北・鷹栖町の冷涼な盆地で栽培</div>
+        </div>
+      </div>
+      <div class="fact">
+        <div class="fact-num" style="font-family:'Zen Old Mincho',serif;font-size:42px;opacity:0.7;">③</div>
+        <div>
+          <div class="fact-lbl">特徴 3</div>
+          <div class="fact-body">白赤7品種を栽培し2024年から自社醸造を開始</div>
         </div>
       </div>
     </div>
@@ -428,6 +565,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ドメーヌトワが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">バッカス</span><span class="grape-pill">ゲヴュルツトラミネール</span><span class="grape-pill">ピノ・グリ</span><span class="grape-pill">シャルドネ</span><span class="grape-pill">ピノ・ノワール</span><span class="grape-pill">ピノ・ムニエ</span><span class="grape-pill">ツヴァイゲルト</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -441,6 +587,45 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">バッカス</div>
+      <h3 class="brand-name">Bacchus</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">バッカス100%の白。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">ピノ・グリ、ゲヴュルツトラミネール、ケルナー</div>
+      <h3 class="brand-name">L'assemblage Blanc</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">ピノ・グリ主体のブレンド白。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">赤ワイン</div>
+      <div class="grape-tag">ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワール</div>
+      <h3 class="brand-name">L'assemblage Rouge</h3>
+      <p class="brand-type">赤ワイン</p>
+      <p class="brand-desc">ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワールのブレンド赤。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -449,7 +634,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道上川郡鷹栖町14線17号</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道上川郡鷹栖町14線17号</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://domainetoi.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://domainetoi.jp/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">販売・見学対応は公式サイトまたは取扱店情報で要確認。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -458,7 +643,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       </div>
     </div>
     <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR宗谷本線 鷹栖駅</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/16866/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/16866/</a></p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://domainetoi.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://domainetoi.jp/</a></p>
   </div>
 </section>
 
@@ -472,18 +657,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ドメーヌトワの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">ドメーヌトワの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">住所は北海道上川郡鷹栖町14線17号です。最寄りはJR宗谷本線 鷹栖駅です。</div>
+      <div class="faq-a" id="faq-a-0">販売・見学対応は公式サイトまたは取扱店情報で要確認。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ドメーヌトワはいつ創業しましたか？</span>
+        <span class="faq-q-text">ドメーヌトワの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">令和6年（2024年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はBacchus、L'assemblage Blanc、L'assemblage Rougeなどがあります。バッカス100%の白。</div>
+    </div>
+    <div class="faq-item" id="faq-2">
+      <div class="faq-q" onclick="toggleFaq(2)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ドメーヌトワの所在地・アクセスを教えてください</span>
+        <span class="faq-q-icon" id="faq-icon-2">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-2">住所は北海道上川郡鷹栖町14線17号です。最寄りはJR宗谷本線 鷹栖駅です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ドメーヌトワはいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">令和6年（2024年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ドメーヌトワではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にバッカス、ゲヴュルツトラミネール、ピノ・グリ、シャルドネ、ピノ・ノワール、ピノ・ムニエ、ツヴァイゲルトを使用しています。</div>
     </div>
     </div>
   </div>

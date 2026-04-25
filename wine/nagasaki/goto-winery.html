@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html",
+      "name": "五島ワイナリー - 長崎県のワイナリー",
+      "description": "平成26年創業。長崎県五島市（福江島）の日本ワイナリー「五島ワイナリー」。五島列島福江島の自然と潮風の中で育つぶどうを使い、島の風土を映すワインを造る長崎県唯一のワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#winery",
       "name": "五島ワイナリー",
       "description": "五島列島福江島の自然と潮風の中で育つぶどうを使い、島の風土を映すワインを造る長崎県唯一のワイナリー。",
       "url": "http://goto-winery.net/",
@@ -50,7 +67,35 @@
         "キャンベル・アーリー",
         "ナイアガラ",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/19420010293/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "五島ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +119,51 @@
           "item": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#wine-1",
+      "name": "スパークリングワイン キャンベル・アーリー",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "五島ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#winery"
+      },
+      "description": "ロゼタイプの人気商品。",
+      "material": "キャンベル・アーリー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#wine-2",
+      "name": "ナイアガラ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "五島ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#winery"
+      },
+      "description": "島の食卓に合わせやすいフルーティーな白。",
+      "material": "ナイアガラ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#wine-3",
+      "name": "マスカット・ベーリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "五島ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagasaki/goto-winery.html#winery"
+      },
+      "description": "やわらかな果実味を生かした赤。",
+      "material": "マスカット・ベーリーA"
     },
     {
       "@type": "FAQPage",
@@ -388,7 +478,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">五島ワイナリー</h1>
     <p class="hero-subtitle">五島ワイン</p>
     <p class="hero-en">Since 2014 — 五島市（福江島）, 長崎県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://goto-winery.net/" target="_blank" rel="noopener noreferrer">公式サイト</a>

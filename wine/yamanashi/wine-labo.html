@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html",
+      "name": "ワインづくり研究所 - 山梨県のワイナリー",
+      "description": "令和4年創業。山梨県山梨市の小規模ワイナリー「ワインづくり研究所」。醸造資材・機械の輸入販売を行うシンワフーズケミカル株式会社が2022年に開設した実証型ワイナリー。自社取扱の酵母・機材を実際の醸造に使用し、その効果を検証・提案",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#winery",
       "name": "ワインづくり研究所",
       "description": "醸造資材・機械の輸入販売を行うシンワフーズケミカル株式会社が2022年に開設した実証型ワイナリー。自社取扱の酵母・機材を実際の醸造に使用し、その効果を検証・提案する。甲州・メルロー・マスカットベリーAを醸造。",
       "url": "https://wine-labo.com/",
@@ -45,7 +62,35 @@
         "甲州",
         "メルロー",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://wine-labo.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ワインづくり研究所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -69,6 +114,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#wine-1",
+      "name": "花鳥風月 白",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "花鳥風月"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#winery"
+      },
+      "description": "甲州種、300ml・750ml",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#wine-2",
+      "name": "花鳥風月 赤",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "花鳥風月"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#wine-3",
+      "name": "花鳥風月 ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "花鳥風月"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/wine-labo.html#winery"
+      },
+      "description": "ロゼ",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -383,7 +473,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ワインづくり研究所</h1>
     <p class="hero-subtitle">花鳥風月</p>
     <p class="hero-en">Since 2022 — 山梨市, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://wine-labo.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>

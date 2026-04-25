@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html",
+      "name": "めむろワイナリー - 北海道のワイナリー",
+      "description": "令和2年創業。北海道芽室町のエステートワイナリー「めむろワイナリー」。地域のブドウ生産者たちが中心となり立ち上げた共同ドメーヌ方式のワイナリー。冬はマイナス20度を下回る十勝の過酷な気候での農業人の夢から生まれた。「減点法のワイン",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#winery",
       "name": "めむろワイナリー",
       "description": "地域のブドウ生産者たちが中心となり立ち上げた共同ドメーヌ方式のワイナリー。冬はマイナス20度を下回る十勝の過酷な気候での農業人の夢から生まれた。「減点法のワインづくり」で畑の個性を最大限に活かす。",
       "url": "https://memurowinery.jp/",
@@ -47,7 +64,36 @@
       },
       "knowsAbout": [
         "清見"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://memurowinery.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "めむろワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -71,6 +117,33 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#wine-1",
+      "name": "つながる",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "めむろ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#wine-2",
+      "name": "めむろ 清見",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "めむろ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/memuro-winery.html#winery"
+      },
+      "material": "清見"
     },
     {
       "@type": "FAQPage",
@@ -495,10 +568,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">つながる</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -508,7 +581,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">清見</div>
       <h3 class="brand-name">めむろ 清見</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

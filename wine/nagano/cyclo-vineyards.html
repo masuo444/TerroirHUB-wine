@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html",
+      "name": "シクロヴィンヤード - 長野県のワイナリー",
+      "description": "令和元年創業。長野県東御市のエステートワイナリー「シクロヴィンヤード」。元プロサイクリストの飯島さんご夫妻が2014年からぶどう栽培を開始し、2019年に自社ワイナリーを完成。ミシュランガイド掲載飲食店に採用された実績を持つ。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#winery",
       "name": "シクロヴィンヤード",
       "description": "元プロサイクリストの飯島さんご夫妻が2014年からぶどう栽培を開始し、2019年に自社ワイナリーを完成。ミシュランガイド掲載飲食店に採用された実績を持つ。",
       "url": "https://www.cyclovineyards.com/",
@@ -50,7 +67,42 @@
         "ソーヴィニヨン・ブラン",
         "メルロー",
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/chikuma/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "シクロヴィンヤードの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +126,50 @@
           "item": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#wine-1",
+      "name": "パシュート シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シクロヴィンヤード"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#winery"
+      },
+      "description": "ステンレスタンク発酵・熟成",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#wine-2",
+      "name": "グルペット シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シクロヴィンヤード"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#wine-3",
+      "name": "メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シクロヴィンヤード"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/cyclo-vineyards.html#winery"
+      },
+      "description": "フレンチオーク18ヶ月熟成",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",
@@ -511,7 +607,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">グルペット シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">

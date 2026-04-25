@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/alps-wine.html",
+      "name": "アルプスワイン - 長野県のワイナリー",
+      "description": "昭和2年創業。長野県塩尻市（桔梗ヶ原）の日本ワイナリー「アルプスワイン」。生産者の情熱と最新テクノロジーが生むワイン",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#winery",
       "name": "アルプスワイン",
       "description": "生産者の情熱と最新テクノロジーが生むワイン",
       "url": "http://www.alpswine.com",
@@ -54,7 +71,54 @@
         "シャルドネ",
         "竜眼",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/kikyogahara/post-24/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "アルプスワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +142,75 @@
           "item": "https://wine.terroirhub.com/wine/nagano/alps-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-1",
+      "name": "ALPS FARM 塩尻CONFIDENTIAL",
+      "category": "白ワイン・赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#winery"
+      },
+      "material": "シャルドネ他"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-2",
+      "name": "ミュゼドゥヴァン 片丘シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-3",
+      "name": "ミュゼドゥヴァン 塩尻ピノブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#winery"
+      },
+      "material": "ピノ・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-4",
+      "name": "ミュゼドゥヴァン 善光寺竜眼",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#winery"
+      },
+      "material": "竜眼"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#wine-5",
+      "name": "あずさワイン",
+      "category": "赤ワイン・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/alps-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -505,7 +638,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ他</div>
       <h3 class="brand-name">ALPS FARM 塩尻CONFIDENTIAL</h3>
       <p class="brand-type">白ワイン・赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -515,7 +648,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">ミュゼドゥヴァン 片丘シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -525,7 +658,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ブラン</div>
       <h3 class="brand-name">ミュゼドゥヴァン 塩尻ピノブラン</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -546,7 +679,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 塩尻市（桔梗ヶ原）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.nagano-wine.jp/winery/kikyogahara/post-24/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/winery/kikyogahara/post-24/</a></p>
   </div>
 </section>

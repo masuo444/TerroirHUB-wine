@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html",
+      "name": "能見園 河西ワイナリー - 山梨県のワイナリー",
+      "description": "大正7年創業。山梨県韮崎市穴山町の小規模ワイナリー「能見園 河西ワイナリー」。大正7年（1918年）創業の小さな手造りワイナリー。八ヶ岳の麓に広がる峡北の地で収穫される良質のぶどうを原料に、創業当時からの伝統を守り昔ながらの製法でワインを",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#winery",
       "name": "能見園 河西ワイナリー",
       "description": "大正7年（1918年）創業の小さな手造りワイナリー。八ヶ岳の麓に広がる峡北の地で収穫される良質のぶどうを原料に、創業当時からの伝統を守り昔ながらの製法でワインを醸造。代表ブランド「Mont.8」は八ヶ岳から命名。",
-      "url": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html",
+      "url": "https://www.winery.or.jp/winery-map/2772/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "山梨県韮崎市穴山町5390",
@@ -44,7 +61,29 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/2772/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "能見園 河西ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +107,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#wine-1",
+      "name": "Mont.8 白",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Mont.8"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#wine-2",
+      "name": "Mont.8 赤",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Mont.8"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kawanishi-winery.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -382,10 +451,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">能見園 河西ワイナリー</h1>
     <p class="hero-subtitle">Mont.8</p>
     <p class="hero-en">Since 1918 — 韮崎市穴山町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.winery.or.jp/winery-map/2772/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -509,7 +578,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県韮崎市穴山町5390</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0551-25-5107</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学・試飲あり</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県韮崎市穴山町5390</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0551-25-5107</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.winery.or.jp/winery-map/2772/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/2772/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学・試飲あり</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>

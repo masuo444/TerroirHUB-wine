@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html",
+      "name": "丹波青垣ワイナリー - 兵庫県のワイナリー",
+      "description": "兵庫県の小規模ワイナリー「丹波青垣ワイナリー」。丹波市青垣町で家族経営により営まれる小規模ワイナリー。丹波の里山の気候を生かしてワインを造る。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html#winery",
       "name": "丹波青垣ワイナリー",
       "description": "丹波市青垣町で家族経営により営まれる小規模ワイナリー。丹波の里山の気候を生かしてワインを造る。",
       "url": "http://www.aogaki-wine.com/",
@@ -44,6 +61,25 @@
         "@type": "GeoCoordinates",
         "latitude": 35.166,
         "longitude": 135.129
+      },
+      "knowsAbout": [
+        "マスカット・ベーリーA"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.wine-info.jp/portal/winery/detail/?id=189"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "丹波青垣ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,6 +106,19 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html#wine-1",
+      "name": "丹波・青垣ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "丹波青垣ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hyogo/tanba-aogaki-winery.html#winery"
+      }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -86,6 +135,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "住所は兵庫県丹波市青垣町西芦田1071-1です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "丹波青垣ワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にマスカット・ベーリーAを使用しています。"
           }
         }
       ]
@@ -354,11 +411,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
   </div>
   <div class="hero-content">
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
-    
+
     <h1 class="hero-title">丹波青垣ワイナリー</h1>
-    
-    
-    
+
+
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.aogaki-wine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -389,7 +446,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <h2 class="sec-title">丹波青垣ワイナリーの物語</h2>
         <div class="sec-divider"></div>
         <p class="sec-body">丹波市青垣町で家族経営により営まれる小規模ワイナリー。丹波の里山の気候を生かしてワインを造る。</p>
-        
+
       </div>
     </div>
   </div>
@@ -428,6 +485,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">丹波青垣ワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">マスカット・ベーリーA</span></div>
+  </div>
+</section>
 
 
 
@@ -442,11 +508,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">丹波・青垣ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -467,7 +533,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">兵庫県 丹波市青垣町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.wine-info.jp/portal/winery/detail/?id=189" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.wine-info.jp/portal/winery/detail/?id=189</a></p>
   </div>
 </section>
@@ -494,6 +560,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
       <div class="faq-a" id="faq-a-1">住所は兵庫県丹波市青垣町西芦田1071-1です。</div>
+    </div>
+    <div class="faq-item" id="faq-2">
+      <div class="faq-q" onclick="toggleFaq(2)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">丹波青垣ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-2">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-2">主にマスカット・ベーリーAを使用しています。</div>
     </div>
     </div>
   </div>

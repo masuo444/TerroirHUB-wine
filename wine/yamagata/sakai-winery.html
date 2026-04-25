@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html",
+      "name": "酒井ワイナリー - 山形県のワイナリー",
+      "description": "明治25年創業。山形県南陽市のエステートワイナリー「酒井ワイナリー」。東北最古のワイナリー。化学肥料・農薬を使用せず、植栽の多様さと生き物の豊かに育つ畑を目指しています。地元赤湯の畑を蘇らせるべく圃場の拡大にも取り組んでいます。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#winery",
       "name": "酒井ワイナリー",
       "description": "東北最古のワイナリー。化学肥料・農薬を使用せず、植栽の多様さと生き物の豊かに育つ畑を目指しています。地元赤湯の畑を蘇らせるべく圃場の拡大にも取り組んでいます。",
       "url": "http://www.sakai-winery.jp/",
@@ -52,7 +69,36 @@
         "シャルドネ",
         "マスカットベーリーA",
         "ブラッククイーン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/sakai/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "酒井ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,8 +124,45 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#wine-1",
+      "name": "名子山",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "BIRDUP WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#winery"
+      },
+      "description": "フルボディ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#wine-2",
+      "name": "シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "BIRDUP WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/sakai-winery.html#winery"
+      },
+      "description": "辛口",
+      "material": "シャルドネ"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "酒井ワイナリーの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ショップ営業時間10:00〜17:00。レストラン・ワイナリー施設あり。見学・利用条件は公式サイトで事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "酒井ワイナリーの代表的なワインを教えてください",
@@ -485,7 +568,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">名子山</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">フルボディ</p>
@@ -511,7 +594,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県南陽市赤湯980</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0238-43-2043</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="http://www.sakai-winery.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">http://www.sakai-winery.jp/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山形県南陽市赤湯980</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0238-43-2043</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="http://www.sakai-winery.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">http://www.sakai-winery.jp/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">ショップ営業時間10:00〜17:00。レストラン・ワイナリー施設あり。見学・利用条件は公式サイトで事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -519,7 +602,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山形県 南陽市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://giyamagata-wine.jp/maker/sakai/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://giyamagata-wine.jp/maker/sakai/</a></p>
   </div>
 </section>
@@ -534,34 +617,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">酒井ワイナリーの代表的なワインを教えてください</span>
+        <span class="faq-q-text">酒井ワイナリーの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄は名子山、シャルドネなどがあります。フルボディ</div>
+      <div class="faq-a" id="faq-a-0">ショップ営業時間10:00〜17:00。レストラン・ワイナリー施設あり。見学・利用条件は公式サイトで事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">酒井ワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">酒井ワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は山形県南陽市赤湯980です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は名子山、シャルドネなどがあります。フルボディ</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">酒井ワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-text">酒井ワイナリーの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">明治25年（1892年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は山形県南陽市赤湯980です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">酒井ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">酒井ワイナリーはいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にカベルネ・ソーヴィニヨン、メルロ、シャルドネ、マスカットベーリーA、ブラッククイーンを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">明治25年（1892年）に創業しました。山形県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">酒井ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にカベルネ・ソーヴィニヨン、メルロ、シャルドネ、マスカットベーリーA、ブラッククイーンを使用しています。</div>
     </div>
     </div>
   </div>

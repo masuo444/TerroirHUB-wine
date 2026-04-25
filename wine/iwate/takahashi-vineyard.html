@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html",
+      "name": "高橋葡萄園 - 岩手県のワイナリー",
+      "description": "平成27年創業。岩手県花巻市のエステートワイナリー「高橋葡萄園」。オーストリア国立ワイン学校で技術を習得した醸造家による大迫のワイナリー。「ワインは生活の中で自然に生まれるもの、すなわち文化」をコンセプトに、大迫の気候風土を活",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html",
+      "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#winery",
       "name": "高橋葡萄園",
       "description": "オーストリア国立ワイン学校で技術を習得した醸造家による大迫のワイナリー。「ワインは生活の中で自然に生まれるもの、すなわち文化」をコンセプトに、大迫の気候風土を活かした「柔らかいが芯のある」味わいを目指す。",
       "url": "http://weinbautakahashi.com/",
@@ -48,7 +65,29 @@
       },
       "knowsAbout": [
         "リースリング"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/12030010053/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "高橋葡萄園の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +111,33 @@
           "item": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#wine-1",
+      "name": "リースリング・リオン フロイデ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "リースリング・リオン フロイデ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#winery"
+      },
+      "material": "リースリング"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#wine-2",
+      "name": "大迫ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "リースリング・リオン フロイデ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/takahashi-vineyard.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -386,7 +452,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">高橋葡萄園</h1>
     <p class="hero-subtitle">リースリング・リオン フロイデ</p>
     <p class="hero-en">Since 2015 — 花巻市, 岩手県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://weinbautakahashi.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -490,17 +556,17 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">リースリング</div>
       <h3 class="brand-name">リースリング・リオン フロイデ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge rose">ロゼワイン</div>
-      
+
       <h3 class="brand-name">大迫ロゼ</h3>
       <p class="brand-type">ロゼワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -521,7 +587,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">岩手県 花巻市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/12030010053/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/12030010053/</a></p>
   </div>
 </section>

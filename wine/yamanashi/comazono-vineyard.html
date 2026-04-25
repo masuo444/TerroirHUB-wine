@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html",
+      "name": "駒園ヴィンヤード - 山梨県のワイナリー",
+      "description": "昭和27年創業。山梨県甲州市塩山の小規模ワイナリー「駒園ヴィンヤード」。1952年に五味果汁工業株式会社として創業。2019年に駒園ヴィンヤード株式会社に社名変更。創業以来、全銘柄を山梨県産ぶどう100%で醸造。樹齢80年超の甲州古",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#winery",
       "name": "駒園ヴィンヤード",
       "description": "1952年に五味果汁工業株式会社として創業。2019年に駒園ヴィンヤード株式会社に社名変更。創業以来、全銘柄を山梨県産ぶどう100%で醸造。樹齢80年超の甲州古樹（自根、接ぎ木なし）を含む山梨県内4箇所・全12区画・約2haを管理。",
       "url": "https://comazono.com/",
@@ -44,7 +61,42 @@
         "甲州",
         "マスカットベリーA",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://comazono.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "駒園ヴィンヤードの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +120,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#wine-1",
+      "name": "Pony koshu 桜花",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tao"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#winery"
+      },
+      "description": "甲州種、フェミナリーズ世界ワインコンクール2026金賞受賞",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#wine-2",
+      "name": "Tao",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tao"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#winery"
+      },
+      "description": "シングルリージョンワイン",
+      "material": "甲州他"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#wine-3",
+      "name": "Field Blend",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tao"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/comazono-vineyard.html#winery"
+      },
+      "description": "複数ヴィンテージ展開",
+      "material": "複数品種"
     },
     {
       "@type": "FAQPage",

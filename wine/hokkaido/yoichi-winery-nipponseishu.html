@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html",
+      "name": "余市ワイナリー（日本清酒） - 北海道のワイナリー",
+      "description": "平成23年創業。北海道余市町のエステートワイナリー「余市ワイナリー（日本清酒）」。余市駅近くの複合施設で、北海道産ぶどうを使ったワインと食・アートを組み合わせて発信するワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html#winery",
       "name": "余市ワイナリー（日本清酒）",
       "description": "余市駅近くの複合施設で、北海道産ぶどうを使ったワインと食・アートを組み合わせて発信するワイナリー。",
       "url": "https://nipponseishu.co.jp/yoichiwine/",
@@ -54,7 +71,30 @@
         "ケルナー",
         "ミュラートゥルガウ",
         "デラウェア"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nipponseishu.co.jp/yoichiwine/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "余市ワイナリー（日本清酒）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +118,19 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html#wine-1",
+      "name": "余市ワイン（YOICHI ONLY WINE）",
+      "category": "赤・白・ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "余市ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yoichi-winery-nipponseishu.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -495,10 +548,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・ロゼ</div>
-      
+
       <h3 class="brand-name">余市ワイン（YOICHI ONLY WINE）</h3>
       <p class="brand-type">赤・白・ロゼ</p>
-      
+
     </div>
     </div>
   </div>

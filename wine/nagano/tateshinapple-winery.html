@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html",
+      "name": "たてしなップルワイナリー - 長野県のワイナリー",
+      "description": "平成30年創業。長野県立科町の日本ワイナリー「たてしなップルワイナリー」。立科産の上質なりんごを使ったワイン・シードルを製造。立科町のりんご農家が起源のワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#winery",
       "name": "たてしなップルワイナリー",
       "description": "立科産の上質なりんごを使ったワイン・シードルを製造。立科町のりんご農家が起源のワイナリー。",
       "url": "https://tateshinapple.jp/winery/",
@@ -50,7 +67,36 @@
         "メルロー",
         "マスカット・ベーリーA",
         "ソーヴィニヨン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/chikuma/post-37/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "たてしなップルワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +120,36 @@
           "item": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#wine-1",
+      "name": "たてしなップル シードル",
+      "category": "スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "たてしなップル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#winery"
+      },
+      "description": "りんご100%・フランス伝統製法",
+      "material": "りんご（ふじ）"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#wine-2",
+      "name": "たてしなップル りんごワイン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "たてしなップル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/tateshinapple-winery.html#winery"
+      },
+      "description": "立科産りんご使用",
+      "material": "りんご"
     },
     {
       "@type": "FAQPage",

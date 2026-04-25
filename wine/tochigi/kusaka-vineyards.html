@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html",
+      "name": "Kusaka Vineyards - 栃木県のワイナリー",
+      "description": "平成28年創業。栃木県芳賀郡市貝町のエステートワイナリー「Kusaka Vineyards」。芳賀郡市貝町で栽培から醸造、加工品づくりまで行う小規模ヴィンヤード。地域の農産物と連動した運営が特徴。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#winery",
       "name": "Kusaka Vineyards",
       "description": "芳賀郡市貝町で栽培から醸造、加工品づくりまで行う小規模ヴィンヤード。地域の農産物と連動した運営が特徴。",
       "url": "https://www.kusakavineyards.com/",
@@ -48,7 +65,29 @@
       "knowsAbout": [
         "メルロー",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.kusakavineyards.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Kusaka Vineyardsの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +111,32 @@
           "item": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#wine-1",
+      "name": "Kusaka Merlot",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kusaka Vineyards"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#wine-2",
+      "name": "Kusaka Chardonnay",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kusaka Vineyards"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/kusaka-vineyards.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -378,7 +443,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">Kusaka Vineyards</h1>
     <p class="hero-subtitle">Kusaka Vineyards</p>
     <p class="hero-en">Since 2016 — 芳賀郡市貝町, 栃木県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.kusakavineyards.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -471,21 +536,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Kusaka Merlot</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Kusaka Chardonnay</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -506,7 +571,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">栃木県 芳賀郡市貝町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.kusakavineyards.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.kusakavineyards.com/</a></p>
   </div>
 </section>

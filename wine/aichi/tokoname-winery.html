@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html",
+      "name": "常滑ワイナリー - 愛知県のワイナリー",
+      "description": "令和3年創業。愛知県常滑市のエステートワイナリー「常滑ワイナリー」。温暖な知多半島・常滑で、オレゴンの思想を継ぐフレッシュで飲みやすいワインを造る国家戦略特区ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#winery",
       "name": "常滑ワイナリー",
       "description": "温暖な知多半島・常滑で、オレゴンの思想を継ぐフレッシュで飲みやすいワインを造る国家戦略特区ワイナリー。",
       "url": "https://tokonamewinery.jp/",
@@ -54,7 +71,29 @@
         "メルロー",
         "デラウェア",
         "巨峰"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://tokonamewinery.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "常滑ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +117,34 @@
           "item": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#wine-1",
+      "name": "ネイバーフッド",
+      "category": "赤・白・ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "常滑ワイナリー ネイバーフッド"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#winery"
+      },
+      "description": "自社農園ぶどうの個性をまっすぐ表現するシリーズ。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#wine-2",
+      "name": "デリバリング・ハピネス",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "常滑ワイナリー ネイバーフッド"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/aichi/tokoname-winery.html#winery"
+      },
+      "description": "より親しみやすいスタイルのライン。"
     },
     {
       "@type": "FAQPage",
@@ -392,7 +459,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">常滑ワイナリー</h1>
     <p class="hero-subtitle">常滑ワイナリー ネイバーフッド</p>
     <p class="hero-en">Since 2021 — 常滑市, 愛知県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://tokonamewinery.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -486,7 +553,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・ロゼ</div>
-      
+
       <h3 class="brand-name">ネイバーフッド</h3>
       <p class="brand-type">赤・白・ロゼ</p>
       <p class="brand-desc">自社農園ぶどうの個性をまっすぐ表現するシリーズ。</p>
@@ -496,7 +563,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">デリバリング・ハピネス</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">より親しみやすいスタイルのライン。</p>
@@ -520,7 +587,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">愛知県 常滑市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://tokonamewinery.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://tokonamewinery.jp/</a></p>
   </div>
 </section>

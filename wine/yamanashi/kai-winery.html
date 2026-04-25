@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html",
+      "name": "甲斐ワイナリー - 山梨県のワイナリー",
+      "description": "昭和61年創業。山梨県甲州市塩山の小規模ワイナリー「甲斐ワイナリー」。自社畑でブドウ栽培を行い、隣接圃場・醸造場を備えたワイナリー。JR塩山駅から徒歩12分。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#winery",
       "name": "甲斐ワイナリー",
       "description": "自社畑でブドウ栽培を行い、隣接圃場・醸造場を備えたワイナリー。JR塩山駅から徒歩12分。",
       "url": "http://www.kaiwinery.com",
@@ -45,7 +62,36 @@
         "甲州",
         "メルロー",
         "バルベーラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.kaiwinery.com"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "甲斐ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -69,6 +115,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#wine-1",
+      "name": "かざま甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "かざま甲州"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#winery"
+      },
+      "description": "辛口",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#wine-2",
+      "name": "かざまメルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "かざま甲州"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kai-winery.html#winery"
+      },
+      "description": "辛口",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",

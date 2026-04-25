@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nara/kitani-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nara/kitani-wine.html",
+      "name": "木谷ワイン - 奈良県のワイナリー",
+      "description": "平成30年創業。奈良県香芝市の小規模ワイナリー「木谷ワイン」。奈良県産ぶどうを奈良で醸すことを目指して始まった、奈良県唯一のワイナリー。自然酵母発酵・無濾過を基本としたピュアな造りを志向する。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nara/kitani-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nara/kitani-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/nara/kitani-wine.html#winery",
       "name": "木谷ワイン",
       "description": "奈良県産ぶどうを奈良で醸すことを目指して始まった、奈良県唯一のワイナリー。自然酵母発酵・無濾過を基本としたピュアな造りを志向する。",
       "url": "https://narawine.com/",
@@ -47,7 +64,23 @@
       },
       "knowsAbout": [
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://narawine.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "木谷ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nara/kitani-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -71,6 +104,21 @@
           "item": "https://wine.terroirhub.com/wine/nara/kitani-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nara/kitani-wine.html#wine-1",
+      "name": "KITANI WINE Pinot Noir",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "KITANI WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nara/kitani-wine.html#winery"
+      },
+      "description": "奈良の風土表現を目指す代表銘柄。",
+      "material": "ピノ・ノワール"
     },
     {
       "@type": "FAQPage",
@@ -385,7 +433,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">木谷ワイン</h1>
     <p class="hero-subtitle">KITANI WINE</p>
     <p class="hero-en">Since 2018 — 香芝市, 奈良県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://narawine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -510,7 +558,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">奈良県 香芝市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://narawine.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://narawine.com/</a></p>
   </div>
 </section>

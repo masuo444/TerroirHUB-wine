@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html",
+      "name": "東京ワイナリー - 東京都のワイナリー",
+      "description": "平成26年創業。東京都練馬区（大泉学園）の日本ワイナリー「東京ワイナリー」。2014年に東京都初のワイナリーとして誕生。東京産ぶどうや東京の農産物にこだわり、無濾過無清澄を基本に小規模醸造を行う。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html#winery",
       "name": "東京ワイナリー",
       "description": "2014年に東京都初のワイナリーとして誕生。東京産ぶどうや東京の農産物にこだわり、無濾過無清澄を基本に小規模醸造を行う。",
       "url": "https://www.wine.tokyo.jp/",
@@ -52,7 +69,23 @@
         "立川ベリー",
         "立川ヤマブドウ",
         "青森産スチューベン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.wine.tokyo.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "東京ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +109,19 @@
           "item": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html#wine-1",
+      "name": "練馬ヌーボー",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "東京ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/tokyo-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -382,7 +428,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">東京ワイナリー</h1>
     <p class="hero-subtitle">東京ワイナリー</p>
     <p class="hero-en">Since 2014 — 練馬区（大泉学園）, 東京都</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.wine.tokyo.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -482,11 +528,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">練馬ヌーボー</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

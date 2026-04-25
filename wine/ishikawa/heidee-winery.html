@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html",
+      "name": "ハイディワイナリー - 石川県のワイナリー",
+      "description": "平成23年創業。石川県輪島市門前町の小規模ワイナリー「ハイディワイナリー」。能登半島西岸の輪島市門前町でゼロから畑を拓いて始まった小規模ワイナリー。海風と土を映すエレガントなワインを目指す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html#winery",
       "name": "ハイディワイナリー",
       "description": "能登半島西岸の輪島市門前町でゼロから畑を拓いて始まった小規模ワイナリー。海風と土を映すエレガントなワインを目指す。",
       "url": "https://heidee-winery.jp/",
@@ -54,7 +71,23 @@
         "シャルドネ",
         "セミヨン",
         "アルバリーニョ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://heidee-winery.jp/company/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ハイディワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +111,19 @@
           "item": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html#wine-1",
+      "name": "HEIDEE",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "HEIDEE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/ishikawa/heidee-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -384,7 +430,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ハイディワイナリー</h1>
     <p class="hero-subtitle">HEIDEE</p>
     <p class="hero-en">Since 2011 — 輪島市門前町, 石川県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://heidee-winery.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -484,11 +530,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">HEIDEE</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -509,7 +555,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">石川県 輪島市門前町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://heidee-winery.jp/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://heidee-winery.jp/company/</a></p>
   </div>
 </section>

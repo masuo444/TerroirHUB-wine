@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html",
+      "name": "八ヶ岳はらむらワイナリー - 長野県のワイナリー",
+      "description": "令和3年創業。長野県原村のエステートワイナリー「八ヶ岳はらむらワイナリー」。標高914mの八ヶ岳西麓に立地。冷涼な高原気候を活かしたエレガントなワインを醸造。八ヶ岳西麓ワインバレーの中核ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#winery",
       "name": "八ヶ岳はらむらワイナリー",
       "description": "標高914mの八ヶ岳西麓に立地。冷涼な高原気候を活かしたエレガントなワインを醸造。八ヶ岳西麓ワインバレーの中核ワイナリー。",
       "url": "https://www.haramura-winery.com",
@@ -51,7 +68,42 @@
         "メルロー",
         "カベルネ・ソーヴィニヨン",
         "カベルネ・フラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/special/winery/Vol86haramura.html"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "八ヶ岳はらむらワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +127,50 @@
           "item": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#wine-1",
+      "name": "星降るワイン シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "八ヶ岳はらむらワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#winery"
+      },
+      "description": "シャルドネ83%・ソーヴィニヨン・ブラン17%",
+      "material": "シャルドネ・ソーヴィニヨン・ブラン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#wine-2",
+      "name": "風巡るワイン ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "八ヶ岳はらむらワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#winery"
+      },
+      "description": "サクラアワード2024シルバー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#wine-3",
+      "name": "赤ワイン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "八ヶ岳はらむらワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/haramura-winery.html#winery"
+      },
+      "description": "メルロー・カベルネ・ソーヴィニヨン・カベルネ・フランブレンド",
+      "material": "メルロー他"
     },
     {
       "@type": "FAQPage",
@@ -509,7 +605,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge rose">ロゼワイン</div>
-      
+
       <h3 class="brand-name">風巡るワイン ロゼ</h3>
       <p class="brand-type">ロゼワイン</p>
       <p class="brand-desc">サクラアワード2024シルバー</p>

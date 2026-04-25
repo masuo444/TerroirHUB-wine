@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html",
+      "name": "渡邊葡萄園醸造 - 栃木県のワイナリー",
+      "description": "明治17年創業。栃木県那須塩原市のエステートワイナリー「渡邊葡萄園醸造」。1884年創業。那須山麓でボルドー系品種を自社栽培し、少量高品質のワインを造る老舗ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#winery",
       "name": "渡邊葡萄園醸造",
       "description": "1884年創業。那須山麓でボルドー系品種を自社栽培し、少量高品質のワインを造る老舗ワイナリー。",
       "url": "https://nasuwine.com/",
@@ -50,7 +67,29 @@
         "メルロー",
         "カベルネ・ソーヴィニヨン",
         "カベルネ・フラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/13090010088/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "渡邊葡萄園醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +113,35 @@
           "item": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#wine-1",
+      "name": "NASU WINE",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "NASU WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#winery"
+      },
+      "description": "那須ワインの主力シリーズ。",
+      "material": "メルロー、カベルネ・ソーヴィニヨン他"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#wine-2",
+      "name": "ブラックマホガニー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "NASU WINE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/nasu-wine.html#winery"
+      },
+      "description": "フラッグシップ。"
     },
     {
       "@type": "FAQPage",
@@ -388,7 +456,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">渡邊葡萄園醸造</h1>
     <p class="hero-subtitle">NASU WINE</p>
     <p class="hero-en">Since 1884 — 那須塩原市, 栃木県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://nasuwine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -499,7 +567,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">ブラックマホガニー</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">フラッグシップ。</p>
@@ -523,7 +591,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">栃木県 那須塩原市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/13090010088/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/13090010088/</a></p>
   </div>
 </section>

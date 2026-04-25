@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html",
+      "name": "モンターナスワイン - 山梨県のワイナリー",
+      "description": "平成22年創業。山梨県笛吹市一宮町の小規模ワイナリー「モンターナスワイン」。笛吹市一宮町千米寺地区の家族経営小規模ワイナリー。自家農園で栽培するぶどうを用いて「量より質」をモットーに、収穫から瓶詰めまでほぼ手作業で丁寧にワイン造りを行っ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#winery",
       "name": "モンターナスワイン",
       "description": "笛吹市一宮町千米寺地区の家族経営小規模ワイナリー。自家農園で栽培するぶどうを用いて「量より質」をモットーに、収穫から瓶詰めまでほぼ手作業で丁寧にワイン造りを行っている。",
-      "url": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html",
+      "url": "https://www.winery.or.jp/winery-map/2691/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "山梨県笛吹市一宮町千米寺1040",
@@ -44,7 +61,29 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/2691/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "モンターナスワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +107,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#wine-1",
+      "name": "モンターナス 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンターナスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#wine-2",
+      "name": "モンターナス マスカットベリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンターナスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/montanus-wine.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -382,10 +451,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">モンターナスワイン</h1>
     <p class="hero-subtitle">モンターナスワイン</p>
     <p class="hero-en">Since 2010 — 笛吹市一宮町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.winery.or.jp/winery-map/2691/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -509,7 +578,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県笛吹市一宮町千米寺1040</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0553-47-0491</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">山梨県笛吹市一宮町千米寺1040</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0553-47-0491</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.winery.or.jp/winery-map/2691/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/2691/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html",
+      "name": "Bee’s Knees Vineyards - 茨城県のワイナリー",
+      "description": "令和5年創業。茨城県つくば市のエステートワイナリー「Bee’s Knees Vineyards」。つくば市臼井でぶどう栽培を続け、2023年に自社ワイナリー店舗を開いたエステート型のヴィンヤード&ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#winery",
       "name": "Bee’s Knees Vineyards",
       "description": "つくば市臼井でぶどう栽培を続け、2023年に自社ワイナリー店舗を開いたエステート型のヴィンヤード&ワイナリー。",
       "url": "https://beesknees.co.jp/",
@@ -48,7 +65,29 @@
       "knowsAbout": [
         "シャルドネ",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://beesknees.co.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Bee’s Knees Vineyardsの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +111,32 @@
           "item": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#wine-1",
+      "name": "Bee’s Knees Chardonnay",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Bee's Knees Vineyards"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#wine-2",
+      "name": "Bee’s Knees Merlot",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Bee's Knees Vineyards"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/ibaraki/bees-knees-vineyards.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -378,7 +443,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">Bee’s Knees Vineyards</h1>
     <p class="hero-subtitle">Bee's Knees Vineyards</p>
     <p class="hero-en">Since 2023 — つくば市, 茨城県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://beesknees.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -478,21 +543,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Bee’s Knees Chardonnay</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">Bee’s Knees Merlot</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -513,7 +578,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">茨城県 つくば市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://beesknees.co.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://beesknees.co.jp/</a></p>
   </div>
 </section>

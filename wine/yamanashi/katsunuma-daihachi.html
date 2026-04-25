@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html",
+      "name": "勝沼第八葡萄酒 - 山梨県のワイナリー",
+      "description": "昭和55年創業。山梨県甲州市勝沼町の小規模ワイナリー「勝沼第八葡萄酒」。甲州市勝沼町等々力に拠点を置く地域組合型醸造所。山梨県ワイン酒造組合に所属し、地元産の甲州ぶどうを原料に甲州白ワインを中心に醸造。事前予約で見学・試飲にも対応す",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#winery",
       "name": "勝沼第八葡萄酒",
       "description": "甲州市勝沼町等々力に拠点を置く地域組合型醸造所。山梨県ワイン酒造組合に所属し、地元産の甲州ぶどうを原料に甲州白ワインを中心に醸造。事前予約で見学・試飲にも対応する。",
-      "url": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html",
+      "url": "https://www.winery.or.jp/winery-map/2697/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "〒409-1305 山梨県甲州市勝沼町等々力55",
@@ -44,7 +61,36 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/2697/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "勝沼第八葡萄酒の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +114,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#wine-1",
+      "name": "勝沼第八 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "勝沼第八"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#winery"
+      },
+      "description": "甲州種、720ml・1800ml",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#wine-2",
+      "name": "勝沼第八 赤",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "勝沼第八"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/katsunuma-daihachi.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -385,7 +461,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI山梨</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.winery.or.jp/winery-map/2697/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -518,7 +594,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">〒409-1305 山梨県甲州市勝沼町等々力55</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0553-44-0162</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学・試飲（事前予約制）</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">〒409-1305 山梨県甲州市勝沼町等々力55</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">0553-44-0162</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.winery.or.jp/winery-map/2697/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/2697/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学・試飲（事前予約制）</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>

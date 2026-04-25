@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html",
+      "name": "ワインマンファクトリー - 東京都のワイナリー",
+      "description": "令和3年創業。東京都港区芝の日本ワイナリー「ワインマンファクトリー」。港区芝の古民家を改装したレストラン・ワインショップ・アーバンワイナリーの複合施設。港区唯一のワイナリーとして少量醸造を行う。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#winery",
       "name": "ワインマンファクトリー",
       "description": "港区芝の古民家を改装したレストラン・ワインショップ・アーバンワイナリーの複合施設。港区唯一のワイナリーとして少量醸造を行う。",
       "url": "https://wineman.jp/",
@@ -51,7 +68,29 @@
         "スチューベン",
         "シャインマスカット",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://wa-syu.com/collections/wineman-factory"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ワインマンファクトリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +114,36 @@
           "item": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#wine-1",
+      "name": "WINEMAN NIAGARA",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "WINEMAN"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#winery"
+      },
+      "description": "にごり感を生かした辛口スパークリング。",
+      "material": "ナイアガラ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#wine-2",
+      "name": "WINEMAN STEUBEN",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "WINEMAN"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tokyo/wineman-factory.html#winery"
+      },
+      "description": "野生酵母で仕込む無濾過赤。",
+      "material": "スチューベン"
     },
     {
       "@type": "FAQPage",
@@ -389,7 +458,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ワインマンファクトリー</h1>
     <p class="hero-subtitle">WINEMAN</p>
     <p class="hero-en">Since 2021 — 港区芝, 東京都</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://wineman.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>

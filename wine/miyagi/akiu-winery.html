@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html",
+      "name": "秋保ワイナリー - 宮城県のワイナリー",
+      "description": "平成27年創業。宮城県仙台市のエステートワイナリー「秋保ワイナリー」。仙台市の奥座敷として知られる秋保温泉郷に位置し、目の前に広がるブドウ畑と、温泉街を望むことができる一等地にワイナリーを構える。宮城の豊かな食を最大限に活かすワイ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html#winery",
       "name": "秋保ワイナリー",
       "description": "仙台市の奥座敷として知られる秋保温泉郷に位置し、目の前に広がるブドウ畑と、温泉街を望むことができる一等地にワイナリーを構える。宮城の豊かな食を最大限に活かすワインづくりを目指し、カフェスペースを併設。",
       "url": "http://akiuwinery.co.jp/",
@@ -45,6 +62,27 @@
         "@type": "GeoCoordinates",
         "latitude": 38.2178,
         "longitude": 140.6078
+      },
+      "knowsAbout": [
+        "スチューベン",
+        "メルロー",
+        "シャルドネ"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/894/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "秋保ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +107,20 @@
           "item": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html#wine-1",
+      "name": "秋保ワイン",
+      "category": "赤・白・シードル",
+      "brand": {
+        "@type": "Brand",
+        "name": "秋保ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/miyagi/akiu-winery.html#winery"
+      },
+      "description": "宮城の食材と合わせることを意識したシリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +155,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "平成27年（2015年）に創業しました。宮城県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "秋保ワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にスチューベン、メルロー、シャルドネを使用しています。"
           }
         }
       ]
@@ -375,7 +435,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">秋保ワイナリー</h1>
     <p class="hero-subtitle">秋保ワイナリー</p>
     <p class="hero-en">Since 2015 — 仙台市, 宮城県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://akiuwinery.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +512,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">秋保ワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">スチューベン</span><span class="grape-pill">メルロー</span><span class="grape-pill">シャルドネ</span></div>
+  </div>
+</section>
 
 
 
@@ -467,7 +536,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・シードル</div>
-      
+
       <h3 class="brand-name">秋保ワイン</h3>
       <p class="brand-type">赤・白・シードル</p>
       <p class="brand-desc">宮城の食材と合わせることを意識したシリーズ。</p>
@@ -491,7 +560,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">宮城県 仙台市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/894/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/894/</a></p>
   </div>
 </section>
@@ -534,6 +603,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">平成27年（2015年）に創業しました。宮城県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">秋保ワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にスチューベン、メルロー、シャルドネを使用しています。</div>
     </div>
     </div>
   </div>

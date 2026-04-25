@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html",
+      "name": "大和葡萄酒 梓川ワイナリー - 長野県のワイナリー",
+      "description": "昭和12年創業。長野県松本市（梓川）の日本ワイナリー「大和葡萄酒 梓川ワイナリー」。長野県松本市梓川に位置する老舗ワイナリー。世界品質のワインづくりと日本独自の産地形成を目指す。国産ワインコンクール受賞歴を持つ。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#winery",
       "name": "大和葡萄酒 梓川ワイナリー",
       "description": "長野県松本市梓川に位置する老舗ワイナリー。世界品質のワインづくりと日本独自の産地形成を目指す。国産ワインコンクール受賞歴を持つ。",
       "url": "http://www.yamatowine.com/",
@@ -50,7 +67,36 @@
         "メルロー",
         "シャルドネ",
         "カベルネ・ソーヴィニヨン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.yamatowine.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "大和葡萄酒 梓川ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +120,34 @@
           "item": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#wine-1",
+      "name": "ハーフムーン メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ハーフムーン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#winery"
+      },
+      "material": "メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#wine-2",
+      "name": "ハーフムーン シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ハーフムーン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/yamato-grape-wine-azusagawa.html#winery"
+      },
+      "material": "シャルドネ"
     },
     {
       "@type": "FAQPage",
@@ -501,7 +575,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー</div>
       <h3 class="brand-name">ハーフムーン メルロー</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -511,7 +585,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">ハーフムーン シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

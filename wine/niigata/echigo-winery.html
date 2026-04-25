@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html",
+      "name": "アグリコア越後ワイナリー - 新潟県のワイナリー",
+      "description": "昭和50年創業。新潟県南魚沼市の日本ワイナリー「アグリコア越後ワイナリー」。雪国・南魚沼で新潟県産ぶどうにこだわり、雪室貯蔵で熟成させるワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#winery",
       "name": "アグリコア越後ワイナリー",
       "description": "雪国・南魚沼で新潟県産ぶどうにこだわり、雪室貯蔵で熟成させるワイナリー。",
       "url": "https://www.echigowinery.com/",
@@ -51,7 +68,35 @@
         "カベルネ・ソーヴィニヨン",
         "シャルドネ",
         "ケルナー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.echigowinery.com/publics/index/62/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "アグリコア越後ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +120,50 @@
           "item": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#wine-1",
+      "name": "越後メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "越後ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#winery"
+      },
+      "description": "日本ワインコンクール受賞歴あり。",
+      "material": "メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#wine-2",
+      "name": "越後シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "越後ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#winery"
+      },
+      "description": "雪室熟成の定番白。",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#wine-3",
+      "name": "雪季",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "越後ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/echigo-winery.html#winery"
+      },
+      "description": "雪室貯蔵シリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -389,7 +478,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">アグリコア越後ワイナリー</h1>
     <p class="hero-subtitle">越後ワイン</p>
     <p class="hero-en">Since 1975 — 南魚沼市, 新潟県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.echigowinery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -510,7 +599,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">雪季</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">雪室貯蔵シリーズ。</p>

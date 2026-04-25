@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html",
+      "name": "モンデ酒造 - 山梨県のワイナリー",
+      "description": "昭和27年創業。山梨県笛吹市・石和の大規模ワイナリー「モンデ酒造」。詰めているのは感動です。山梨・石和温泉郷にあるワイナリー。この地の豊かな自然と、ぶどうへのひたむきな想いをもったつくり手たちが、ここでしか味わえないワインを生み",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#winery",
       "name": "モンデ酒造",
       "description": "詰めているのは感動です。山梨・石和温泉郷にあるワイナリー。この地の豊かな自然と、ぶどうへのひたむきな想いをもったつくり手たちが、ここでしか味わえないワインを生み出しています。缶ワイン製造のパイオニアとして、気取らず、気軽に、いつもの時間にふと手に取りたくなるような一杯を届けています。",
       "url": "https://www.mondewinery.co.jp/",
@@ -49,7 +66,54 @@
       "knowsAbout": [
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.mondewinery.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "モンデ酒造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +137,71 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-1",
+      "name": "YOAKENO",
+      "category": "フラッグシップワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンデ酒造 / YOAKENO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-2",
+      "name": "塚ノ越",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンデ酒造 / YOAKENO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-3",
+      "name": "上屋敷",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンデ酒造 / YOAKENO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-4",
+      "name": "モンテリア",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンデ酒造 / YOAKENO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#wine-5",
+      "name": "プレミアム缶ワイン",
+      "category": "缶ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンデ酒造 / YOAKENO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/monde-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -497,30 +626,30 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">フラッグシップワイン</div>
-      
+
       <h3 class="brand-name">YOAKENO</h3>
       <p class="brand-type">フラッグシップワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">塚ノ越</h3>
       <p class="brand-type">赤・白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">上屋敷</h3>
       <p class="brand-type">赤・白ワイン</p>
-      
+
     </div>
     </div>
   </div>

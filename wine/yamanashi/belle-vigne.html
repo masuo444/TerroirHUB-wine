@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html",
+      "name": "ラベルヴィーニュ - 山梨県のワイナリー",
+      "description": "令和元年創業。山梨県甲州市勝沼の小規模ワイナリー「ラベルヴィーニュ」。勝沼の日川沿いに2019年創業した小さなワイナリー。「勝沼ワイン村」に参加する8ワイナリーの一つ。土づくりから自然との調和を考え、リュットレゾネによる栽培とブド",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#winery",
       "name": "ラベルヴィーニュ",
       "description": "勝沼の日川沿いに2019年創業した小さなワイナリー。「勝沼ワイン村」に参加する8ワイナリーの一つ。土づくりから自然との調和を考え、リュットレゾネによる栽培とブドウ育成の延長でのワイン造りを追求。",
       "url": "https://belle-vigne.net",
@@ -48,7 +65,48 @@
         "ピノ・ノワール",
         "シャルドネ",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://belle-vigne.net/wine/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ラベルヴィーニュの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +130,66 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-1",
+      "name": "甲州 樽発酵",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "テロワールシリーズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#winery"
+      },
+      "description": "GI山梨認定",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-2",
+      "name": "Delaware",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "テロワールシリーズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#winery"
+      },
+      "description": "辛口、ノンフィルター",
+      "material": "デラウエア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-3",
+      "name": "Muscat Bailey A Rose Petillant",
+      "category": "ロゼ・ペティアン",
+      "brand": {
+        "@type": "Brand",
+        "name": "テロワールシリーズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#winery"
+      },
+      "description": "瓶内二次発酵のロゼ微発泡",
+      "material": "マスカット・ベーリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#wine-4",
+      "name": "河口湖ピノ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "テロワールシリーズ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/belle-vigne.html#winery"
+      },
+      "description": "辛口赤ワイン",
+      "material": "ピノ・ノワール"
     },
     {
       "@type": "FAQPage",
@@ -540,7 +658,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 甲州市勝沼</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://belle-vigne.net/wine/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://belle-vigne.net/wine/</a></p>
   </div>
 </section>

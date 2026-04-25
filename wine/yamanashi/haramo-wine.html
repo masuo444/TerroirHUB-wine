@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html",
+      "name": "原茂ワイン - 山梨県のワイナリー",
+      "description": "大正13年創業。山梨県甲州市・勝沼の小規模ワイナリー「原茂ワイン」。創業1924年、ぶどう棚の中の小さなワイン醸造所。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#winery",
       "name": "原茂ワイン",
       "description": "創業1924年、ぶどう棚の中の小さなワイン醸造所。",
       "url": "http://www.haramo.com/",
@@ -49,7 +66,42 @@
       "knowsAbout": [
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.haramo.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "原茂ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +125,46 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#wine-1",
+      "name": "原茂 白ワイン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "原茂ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#wine-2",
+      "name": "原茂 赤ワイン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "原茂ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#wine-3",
+      "name": "原茂 ロゼワイン",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "原茂ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/haramo-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -500,27 +592,27 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">原茂 白ワイン</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">原茂 赤ワイン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge rose">ロゼワイン</div>
-      
+
       <h3 class="brand-name">原茂 ロゼワイン</h3>
       <p class="brand-type">ロゼワイン</p>
-      
+
     </div>
     </div>
   </div>

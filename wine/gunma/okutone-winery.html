@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html",
+      "name": "奥利根ワイナリー - 群馬県のワイナリー",
+      "description": "平成3年創業。群馬県利根郡昭和村の小規模ワイナリー「奥利根ワイナリー」。赤城高原の冷涼な気候を求めて昭和村へ移転した小規模ワイナリー。欧州系品種を中心に、群馬の高原テロワールを表現する。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html#winery",
       "name": "奥利根ワイナリー",
       "description": "赤城高原の冷涼な気候を求めて昭和村へ移転した小規模ワイナリー。欧州系品種を中心に、群馬の高原テロワールを表現する。",
       "url": "https://oze.co.jp/",
@@ -52,7 +69,23 @@
         "メルロー",
         "カベルネ・ソーヴィニヨン",
         "ジンファンデル"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://oze.co.jp/company"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "奥利根ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +109,19 @@
           "item": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html#wine-1",
+      "name": "奥利根",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "奥利根"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/gunma/okutone-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -382,7 +428,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">奥利根ワイナリー</h1>
     <p class="hero-subtitle">奥利根</p>
     <p class="hero-en">Since 1991 — 利根郡昭和村, 群馬県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://oze.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -482,11 +528,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">奥利根</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -507,7 +553,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">群馬県 利根郡昭和村</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://oze.co.jp/company" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://oze.co.jp/company</a></p>
   </div>
 </section>

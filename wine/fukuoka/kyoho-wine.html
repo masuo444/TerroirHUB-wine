@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html",
+      "name": "巨峰ワイン - 福岡県のワイナリー",
+      "description": "昭和47年創業。福岡県久留米市田主丸町の日本ワイナリー「巨峰ワイン」。巨峰開植の地・田主丸で1972年に日本初の巨峰ワインを生み出した、福岡を代表するフルーツワイナリー。地元果実を丁寧に仕込む。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#winery",
       "name": "巨峰ワイン",
       "description": "巨峰開植の地・田主丸で1972年に日本初の巨峰ワインを生み出した、福岡を代表するフルーツワイナリー。地元果実を丁寧に仕込む。",
       "url": "http://www.kyoho-winery.com/",
@@ -49,7 +66,35 @@
       "knowsAbout": [
         "巨峰",
         "ブルーベリー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.kyoho-winery.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "巨峰ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +118,51 @@
           "item": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#wine-1",
+      "name": "巨峰葡萄酒ドライ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "巨峰葡萄酒"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#winery"
+      },
+      "description": "田主丸特産巨峰から造るすっきりした辛口。",
+      "material": "巨峰"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#wine-2",
+      "name": "巨峰葡萄酒ルージュ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "巨峰葡萄酒"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#winery"
+      },
+      "description": "巨峰らしいやわらかな果実味を生かした中核商品。",
+      "material": "巨峰"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#wine-3",
+      "name": "巨峰葡萄酒スウィート",
+      "category": "甘口ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "巨峰葡萄酒"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/fukuoka/kyoho-wine.html#winery"
+      },
+      "description": "巨峰の香りを前面に出した甘口。",
+      "material": "巨峰"
     },
     {
       "@type": "FAQPage",
@@ -387,7 +477,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">巨峰ワイン</h1>
     <p class="hero-subtitle">巨峰葡萄酒</p>
     <p class="hero-en">Since 1972 — 久留米市田主丸町, 福岡県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.kyoho-winery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>

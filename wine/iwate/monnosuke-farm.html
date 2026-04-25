@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html",
+      "name": "もんのすけ農園 - 岩手県のワイナリー",
+      "description": "令和3年創業。岩手県花巻市の小規模ワイナリー「もんのすけ農園」。東北自動車道の花巻南ICから車で5分程、田園と住宅地の中にある、とても小さな醸造所。果実酒や林檎・葡萄を通じて、ふるさとを思い出すような果実の味わいを、いわて花",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html",
+      "@id": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html#winery",
       "name": "もんのすけ農園",
       "description": "東北自動車道の花巻南ICから車で5分程、田園と住宅地の中にある、とても小さな醸造所。果実酒や林檎・葡萄を通じて、ふるさとを思い出すような果実の味わいを、いわて花巻の地からお届けする。農園名は実家の屋号に由来。",
       "url": "https://monnosukefarm.com/",
@@ -45,6 +62,26 @@
         "@type": "GeoCoordinates",
         "latitude": 39.4678,
         "longitude": 141.1278
+      },
+      "knowsAbout": [
+        "りんご",
+        "ぶどう"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/13016/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "もんのすけ農園の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -69,6 +106,20 @@
           "item": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html#wine-1",
+      "name": "もんのすけシードル",
+      "category": "シードル（瓶内二次発酵）",
+      "brand": {
+        "@type": "Brand",
+        "name": "もんのすけ農園"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html#winery"
+      },
+      "material": "りんご"
     },
     {
       "@type": "FAQPage",
@@ -103,6 +154,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和3年（2021年）に創業しました。岩手県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "もんのすけ農園ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にりんご、ぶどうを使用しています。"
           }
         }
       ]
@@ -375,7 +434,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">もんのすけ農園</h1>
     <p class="hero-subtitle">もんのすけ農園</p>
     <p class="hero-en">Since 2021 — 花巻市, 岩手県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://monnosukefarm.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -452,6 +511,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">もんのすけ農園が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">りんご</span><span class="grape-pill">ぶどう</span></div>
+  </div>
+</section>
 
 
 
@@ -470,7 +538,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">りんご</div>
       <h3 class="brand-name">もんのすけシードル</h3>
       <p class="brand-type">シードル（瓶内二次発酵）</p>
-      
+
     </div>
     </div>
   </div>
@@ -534,6 +602,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">令和3年（2021年）に創業しました。岩手県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">もんのすけ農園ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にりんご、ぶどうを使用しています。</div>
     </div>
     </div>
   </div>

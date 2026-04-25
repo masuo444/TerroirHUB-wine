@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html",
+      "name": "モンガク谷ワイナリー - 北海道のワイナリー",
+      "description": "平成27年創業。北海道余市町のエステートワイナリー「モンガク谷ワイナリー」。7品種の醸造用ブドウを出来る限り自然に栽培している北海道の家族経営ワイナリー。ブドウ栽培からワイン醸造まで一貫して行う。フィールド・ブレンド（一つの畑に様々なブ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#winery",
       "name": "モンガク谷ワイナリー",
       "description": "7品種の醸造用ブドウを出来る限り自然に栽培している北海道の家族経営ワイナリー。ブドウ栽培からワイン醸造まで一貫して行う。フィールド・ブレンド（一つの畑に様々なブドウを混植し混醸）に特化し、無濾過・無清澄、野生酵母による自然なワインを造っています。",
       "url": "https://mongakuwinery.com/",
@@ -52,7 +69,48 @@
         "ピノ・タージュ",
         "ピノ・グリ",
         "ソーヴィニョン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://mongakuwinery.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "モンガク谷ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +134,62 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-1",
+      "name": "杤（トチ）",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンガク谷"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#winery"
+      },
+      "material": "ピノ・ノワール主体"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-2",
+      "name": "柏（ハク）",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンガク谷"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#winery"
+      },
+      "material": "シャルドネ主体"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-3",
+      "name": "楢（ナラ）",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンガク谷"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#winery"
+      },
+      "material": "ピノ・タージュ主体"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#wine-4",
+      "name": "桧（ヒノキ）",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "モンガク谷"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html#winery"
+      },
+      "material": "ピノ・ノワール主体"
     },
     {
       "@type": "FAQPage",
@@ -503,7 +617,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール主体</div>
       <h3 class="brand-name">杤（トチ）</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -513,7 +627,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ主体</div>
       <h3 class="brand-name">柏（ハク）</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -523,7 +637,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・タージュ主体</div>
       <h3 class="brand-name">楢（ナラ）</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

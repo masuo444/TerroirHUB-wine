@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html",
+      "name": "ドメーヌ久（甲府ワインポート） - 山梨県のワイナリー",
+      "description": "平成12年創業。山梨県甲府市の中規模ワイナリー「ドメーヌ久（甲府ワインポート）」。2000年設立。甲府市内のワイナリーで、ピノ・ノワールを国内最大級の栽培本数で手掛ける。日本で最も早い新酒「ヌーヌーボー」（早摘み青デラウェア使用）でも知られる",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#winery",
       "name": "ドメーヌ久（甲府ワインポート）",
       "description": "2000年設立。甲府市内のワイナリーで、ピノ・ノワールを国内最大級の栽培本数で手掛ける。日本で最も早い新酒「ヌーヌーボー」（早摘み青デラウェア使用）でも知られる。レストラン「ボルドー」を併設した観光・食体験型ワイナリー。",
       "url": "https://www.kofuwineport.jp/",
@@ -44,7 +61,35 @@
         "ピノ・ノワール",
         "デラウェア",
         "甲州"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.kofuwineport.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ久（甲府ワインポート）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +113,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#wine-1",
+      "name": "ドメーヌ久 ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ久"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#winery"
+      },
+      "description": "ピノ・ノワール、国内最大級栽培本数",
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#wine-2",
+      "name": "ヌーヌーボー",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ久"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#winery"
+      },
+      "description": "早摘みデラウェア、日本最速新酒",
+      "material": "デラウェア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#wine-3",
+      "name": "ドメーヌ久 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ久"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/domaine-q.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
     },
     {
       "@type": "FAQPage",
@@ -382,7 +472,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ドメーヌ久（甲府ワインポート）</h1>
     <p class="hero-subtitle">ドメーヌ久</p>
     <p class="hero-en">Since 2000 — 甲府市, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.kofuwineport.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>

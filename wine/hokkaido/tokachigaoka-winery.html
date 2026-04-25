@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html",
+      "name": "十勝が丘ワイナリー - 北海道のワイナリー",
+      "description": "令和7年創業。北海道音更町のエステートワイナリー「十勝が丘ワイナリー」。中村利雄代表が運営する十勝ぶどう園が十勝川温泉公園北側に設立したワイナリー。有機栽培の北海道独自品種「山幸」「清舞」を使った赤ワインを醸造。年間12,800本の",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#winery",
       "name": "十勝が丘ワイナリー",
       "description": "中村利雄代表が運営する十勝ぶどう園が十勝川温泉公園北側に設立したワイナリー。有機栽培の北海道独自品種「山幸」「清舞」を使った赤ワインを醸造。年間12,800本の生産を見込む。2025年4月に醸造免許取得、4月18日にショップオープン。",
       "url": "http://tokachigaoka-w.jp/",
@@ -48,7 +65,36 @@
       "knowsAbout": [
         "山幸",
         "清舞"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://tokachigaoka-w.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "十勝が丘ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +118,36 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#wine-1",
+      "name": "十勝が丘 山幸",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "十勝が丘"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#winery"
+      },
+      "description": "山幸100%、有機栽培",
+      "material": "山幸"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#wine-2",
+      "name": "十勝が丘 清舞",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "十勝が丘"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html#winery"
+      },
+      "description": "清舞100%、有機栽培",
+      "material": "清舞"
     },
     {
       "@type": "FAQPage",

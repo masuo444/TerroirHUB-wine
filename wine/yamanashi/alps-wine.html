@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html",
+      "name": "アルプスワイン - 山梨県のワイナリー",
+      "description": "昭和37年創業。山梨県笛吹市一宮の中規模ワイナリー「アルプスワイン」。山梨の小さなワイナリー。'Small Winery、High quality'の合言葉を掲げ、家族経営で丁寧なワイン造りを行っています。創業60周年を機に誕生し",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#winery",
       "name": "アルプスワイン",
       "description": "山梨の小さなワイナリー。'Small Winery、High quality'の合言葉を掲げ、家族経営で丁寧なワイン造りを行っています。創業60周年を機に誕生したプロダクトブランド「FOX VILLAGE」では、ぶどう本来の成分をそぎ落とさず、クリアでクリーンに造り、熟成でのレベルアップが期待できるワインを目指しています。",
       "url": "http://www.alpswine.co.jp/",
@@ -54,7 +71,48 @@
         "カベルネ・ソーヴィニヨン",
         "シラー",
         "ブラック・クイーン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.alpswine.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "アルプスワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -78,6 +136,62 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-1",
+      "name": "FOX VILLAGE HIDAMARI",
+      "category": "白・赤・ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#winery"
+      },
+      "description": "甘口から中辛口、気軽に楽しめるエントリーシリーズ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-2",
+      "name": "FOX VILLAGE KOMOREBI",
+      "category": "白・赤",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#winery"
+      },
+      "description": "辛口、透明感あるスタンダードな日本ワイン、Stelvinスクリューキャップ採用"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-3",
+      "name": "FOX VILLAGE BARREL",
+      "category": "白・赤",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#winery"
+      },
+      "description": "古樽熟成、繊細さと力強さを併せ持つ日本ワイン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#wine-4",
+      "name": "プラチナコレクション",
+      "category": "白・赤",
+      "brand": {
+        "@type": "Brand",
+        "name": "アルプスワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/alps-wine.html#winery"
+      },
+      "description": "特区制度による自社畑産ぶどうを使用したプレミアムシリーズ、国内外コンテストで高評価"
     },
     {
       "@type": "FAQPage",
@@ -502,7 +616,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白・赤・ロゼ</div>
-      
+
       <h3 class="brand-name">FOX VILLAGE HIDAMARI</h3>
       <p class="brand-type">白・赤・ロゼ</p>
       <p class="brand-desc">甘口から中辛口、気軽に楽しめるエントリーシリーズ</p>
@@ -512,7 +626,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白・赤</div>
-      
+
       <h3 class="brand-name">FOX VILLAGE KOMOREBI</h3>
       <p class="brand-type">白・赤</p>
       <p class="brand-desc">辛口、透明感あるスタンダードな日本ワイン、Stelvinスクリューキャップ採用</p>
@@ -522,7 +636,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白・赤</div>
-      
+
       <h3 class="brand-name">FOX VILLAGE BARREL</h3>
       <p class="brand-type">白・赤</p>
       <p class="brand-desc">古樽熟成、繊細さと力強さを併せ持つ日本ワイン</p>

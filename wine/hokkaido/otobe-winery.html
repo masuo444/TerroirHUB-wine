@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html",
+      "name": "おとべワイナリー - 北海道のワイナリー",
+      "description": "昭和51年創業。北海道乙部町のエステートワイナリー「おとべワイナリー」。温暖な気候・北国特有の長い日照時間・ぶどう熟期の夜と昼との寒暖差により、質の高いワイン生産に適した地域特性を備えています。自社畑の総面積は10ヘクタール、年間生",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#winery",
       "name": "おとべワイナリー",
       "description": "温暖な気候・北国特有の長い日照時間・ぶどう熟期の夜と昼との寒暖差により、質の高いワイン生産に適した地域特性を備えています。自社畑の総面積は10ヘクタール、年間生産本数は25,000本。",
-      "url": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html",
+      "url": "https://www.sapporo-shusei.jp/otobewinery/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "北海道爾志郡乙部町字富岡251",
@@ -45,6 +62,49 @@
         "@type": "GeoCoordinates",
         "latitude": 42.21,
         "longitude": 140.14
+      },
+      "knowsAbout": [
+        "セイベル13053",
+        "メルロー",
+        "ヤマソービニヨン",
+        "ザラジェンジェ",
+        "セイベル9110",
+        "シャルドネ"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.sapporo-shusei.jp/otobewinery/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "おとべワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -71,6 +131,51 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#wine-1",
+      "name": "乙部醸造ワイン 赤",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "乙部醸造ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#winery"
+      },
+      "description": "北海道産ぶどう100%のミディアム赤。",
+      "material": "セイベル13053、メルロー、ヤマソービニヨン"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#wine-2",
+      "name": "乙部醸造ワイン 白",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "乙部醸造ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#winery"
+      },
+      "description": "北海道産ぶどう100%の中口白。",
+      "material": "ザラジェンジェ、セイベル9110、シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#wine-3",
+      "name": "ミスタージンギスカン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "乙部醸造ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/otobe-winery.html#winery"
+      },
+      "description": "ジンギスカン料理に合わせた赤。",
+      "material": "セイベル13053、ヤマソービニヨン"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -86,7 +191,7 @@
           "name": "おとべワイナリーの代表的なワインを教えてください",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "代表銘柄は乙部醸造ワイン、ミスタージンギスカンなどがあります。"
+            "text": "代表銘柄は乙部醸造ワイン 赤、乙部醸造ワイン 白、ミスタージンギスカンなどがあります。北海道産ぶどう100%のミディアム赤。"
           }
         },
         {
@@ -103,6 +208,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "昭和51年（1976年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "おとべワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にセイベル13053、メルロー、ヤマソービニヨン、ザラジェンジェ、セイベル9110、シャルドネを使用しています。"
           }
         }
       ]
@@ -378,7 +491,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI北海道</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://www.sapporo-shusei.jp/otobewinery/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -452,6 +565,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">おとべワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">セイベル13053</span><span class="grape-pill">メルロー</span><span class="grape-pill">ヤマソービニヨン</span><span class="grape-pill">ザラジェンジェ</span><span class="grape-pill">セイベル9110</span><span class="grape-pill">シャルドネ</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -475,21 +597,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      <div class="wine-badge white">赤・白</div>
-      
-      <h3 class="brand-name">乙部醸造ワイン</h3>
-      <p class="brand-type">赤・白</p>
-      
+      <div class="wine-badge red">赤ワイン</div>
+      <div class="grape-tag">セイベル13053、メルロー、ヤマソービニヨン</div>
+      <h3 class="brand-name">乙部醸造ワイン 赤</h3>
+      <p class="brand-type">赤ワイン</p>
+      <p class="brand-desc">北海道産ぶどう100%のミディアム赤。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+      <div class="grape-tag">ザラジェンジェ、セイベル9110、シャルドネ</div>
+      <h3 class="brand-name">乙部醸造ワイン 白</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">北海道産ぶどう100%の中口白。</p>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+      <div class="grape-tag">セイベル13053、ヤマソービニヨン</div>
       <h3 class="brand-name">ミスタージンギスカン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+      <p class="brand-desc">ジンギスカン料理に合わせた赤。</p>
     </div>
     </div>
   </div>
@@ -502,7 +634,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道爾志郡乙部町字富岡251</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">011-661-1211</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学不可。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道爾志郡乙部町字富岡251</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">011-661-1211</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.sapporo-shusei.jp/otobewinery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.sapporo-shusei.jp/otobewinery/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">見学不可。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -511,7 +643,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       </div>
     </div>
     <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR函館本線 八雲駅（バスまたは車約30分）</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/846/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/846/</a></p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.sapporo-shusei.jp/otobewinery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.sapporo-shusei.jp/otobewinery/</a></p>
   </div>
 </section>
 
@@ -536,7 +668,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-text">おとべワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">代表銘柄は乙部醸造ワイン、ミスタージンギスカンなどがあります。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は乙部醸造ワイン 赤、乙部醸造ワイン 白、ミスタージンギスカンなどがあります。北海道産ぶどう100%のミディアム赤。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
@@ -553,6 +685,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">昭和51年（1976年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">おとべワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にセイベル13053、メルロー、ヤマソービニヨン、ザラジェンジェ、セイベル9110、シャルドネを使用しています。</div>
     </div>
     </div>
   </div>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html",
+      "name": "カナタワイナリー - 富山県のワイナリー",
+      "description": "令和5年創業。富山県魚津市の小規模ワイナリー「カナタワイナリー」。魚津市で2023年に始動した県東部初のワイナリー。地域の水循環と果樹栽培の伝統を背景に少量醸造を行う。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html#winery",
       "name": "カナタワイナリー",
       "description": "魚津市で2023年に始動した県東部初のワイナリー。地域の水循環と果樹栽培の伝統を背景に少量醸造を行う。",
       "url": "https://kanatawinery.com/",
@@ -50,7 +67,23 @@
         "シャルドネ",
         "ヤマソーヴィニヨン",
         "シャインマスカット"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://kanatawinery.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "カナタワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +107,19 @@
           "item": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html#wine-1",
+      "name": "KANATA",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "KANATA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/toyama/kanata-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -380,7 +426,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">カナタワイナリー</h1>
     <p class="hero-subtitle">KANATA</p>
     <p class="hero-en">Since 2023 — 魚津市, 富山県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://kanatawinery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -480,11 +526,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">KANATA</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -505,7 +551,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">富山県 魚津市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://kanatawinery.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://kanatawinery.com/</a></p>
   </div>
 </section>

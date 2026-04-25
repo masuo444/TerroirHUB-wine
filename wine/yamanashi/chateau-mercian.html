@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html",
+      "name": "シャトー・メルシャン 勝沼ワイナリー - 山梨県のワイナリー",
+      "description": "明治10年創業。山梨県甲州市・勝沼の大規模ワイナリー「シャトー・メルシャン 勝沼ワイナリー」。シャトー・メルシャンの基幹となるワイナリーです。ぜひ、お気軽にご来場ください。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#winery",
       "name": "シャトー・メルシャン 勝沼ワイナリー",
       "description": "シャトー・メルシャンの基幹となるワイナリーです。ぜひ、お気軽にご来場ください。",
       "url": "https://www.chateaumercian.com/",
@@ -52,7 +69,42 @@
         "カベルネ・ソーヴィニヨン",
         "メルロー",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.chateaumercian.com/winery/katsunuma/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "シャトー・メルシャン 勝沼ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +128,46 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#wine-1",
+      "name": "シャトー・メルシャン 甲州きいろ香",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトー・メルシャン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#wine-2",
+      "name": "シャトー・メルシャン 日本の地ワイン",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトー・メルシャン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#wine-3",
+      "name": "シャトー・メルシャン 椀子ヴィンヤード",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトー・メルシャン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-mercian.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -503,27 +595,27 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">シャトー・メルシャン 甲州きいろ香</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">シャトー・メルシャン 日本の地ワイン</h3>
       <p class="brand-type">赤・白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">シャトー・メルシャン 椀子ヴィンヤード</h3>
       <p class="brand-type">赤・白ワイン</p>
-      
+
     </div>
     </div>
   </div>

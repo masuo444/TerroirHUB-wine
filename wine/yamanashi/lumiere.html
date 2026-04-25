@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html",
+      "name": "ルミエール - 山梨県のワイナリー",
+      "description": "明治18年創業。山梨県笛吹市のエステートワイナリー「ルミエール」。本物のワインを造るには、本物のブドウを育てること。創業以来の教えを守り、自然の力を活かした農場整備とブドウ栽培に注力。ヨーロッパ品種導入と伝統的な醸造技術、若い",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#winery",
       "name": "ルミエール",
       "description": "本物のワインを造るには、本物のブドウを育てること。創業以来の教えを守り、自然の力を活かした農場整備とブドウ栽培に注力。ヨーロッパ品種導入と伝統的な醸造技術、若い醸造家の情熱を組み合わせ、革新的なものづくりを実践している。",
       "url": "https://www.lumiere.jp/",
@@ -57,7 +74,48 @@
         "プティ・マンサン",
         "テンプラニーリョ",
         "デラウェア"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.lumiere.jp/company"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ルミエールの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -81,6 +139,65 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-1",
+      "name": "シャトールミエール",
+      "category": "白ワイン・赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ルミエール"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#winery"
+      },
+      "description": "Decanter World Wine Awards銀賞・IWC銀賞受賞。フラッグシップシリーズ。",
+      "material": "甲州、メルロー他"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-2",
+      "name": "光 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ルミエール"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#winery"
+      },
+      "description": "KURA MASTER金賞（2025年）、ジャパンワインチャレンジ・香港和酒大賞プラチナ賞・金賞受賞。",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-3",
+      "name": "ルミエール スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ルミエール"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#winery"
+      },
+      "description": "トラディショナルメソッド製法。ブラン・ド・ノワール 2020はGlass of Bubbly Awards金賞（2025年）。",
+      "material": "甲州、マスカット・ベーリーA他"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#wine-4",
+      "name": "イストワール",
+      "category": "白ワイン・赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ルミエール"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/lumiere.html#winery"
+      },
+      "description": "プレステージクラスシリーズ"
     },
     {
       "@type": "FAQPage",

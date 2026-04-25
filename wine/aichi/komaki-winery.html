@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html",
+      "name": "小牧ワイナリー - 愛知県のワイナリー",
+      "description": "平成27年創業。愛知県小牧市のエステートワイナリー「小牧ワイナリー」。障がいのある人の働く場づくりから生まれた福祉型ワイナリー。栽培から醸造、販売までを一体で行い、地域に開かれたワイナリーを目指す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html#winery",
       "name": "小牧ワイナリー",
       "description": "障がいのある人の働く場づくりから生まれた福祉型ワイナリー。栽培から醸造、販売までを一体で行い、地域に開かれたワイナリーを目指す。",
       "url": "https://komakiwinery.com/",
@@ -52,7 +69,23 @@
         "ヤマ・ソーヴィニヨン",
         "ローズ・シオター",
         "モンドブリエ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://komakiwinery.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "小牧ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +109,20 @@
           "item": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html#wine-1",
+      "name": "ななつぼし",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "小牧ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/aichi/komaki-winery.html#winery"
+      },
+      "description": "小牧ワイナリー醸造ワインの中心ブランド。"
     },
     {
       "@type": "FAQPage",
@@ -390,7 +437,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">小牧ワイナリー</h1>
     <p class="hero-subtitle">小牧ワイナリー</p>
     <p class="hero-en">Since 2015 — 小牧市, 愛知県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://komakiwinery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -484,7 +531,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">ななつぼし</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">小牧ワイナリー醸造ワインの中心ブランド。</p>
@@ -508,7 +555,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">愛知県 小牧市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://komakiwinery.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://komakiwinery.com/</a></p>
   </div>
 </section>

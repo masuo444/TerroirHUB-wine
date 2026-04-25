@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html",
+      "name": "カタシモワイナリー - 大阪府のワイナリー",
+      "description": "大正3年創業。大阪府柏原市の日本ワイナリー「カタシモワイナリー」。1914年創業。柏原のぶどう畑を守りながら、日本酒の発酵技術も生かして個性的な大阪ワインを造る老舗ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#winery",
       "name": "カタシモワイナリー",
       "description": "1914年創業。柏原のぶどう畑を守りながら、日本酒の発酵技術も生かして個性的な大阪ワインを造る老舗ワイナリー。",
       "url": "https://kashiwara-wine.com/",
@@ -49,7 +66,42 @@
       "knowsAbout": [
         "デラウェア",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://kashiwara-wine.com/company/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI大阪"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "カタシモワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +125,49 @@
           "item": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#wine-1",
+      "name": "たこシャン",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "カタシモ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#winery"
+      },
+      "description": "デラウェア主体。GI大阪認定。",
+      "material": "デラウェア"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#wine-2",
+      "name": "キングセルビー",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "カタシモ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#winery"
+      },
+      "description": "カタシモの代表シリーズ。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#wine-3",
+      "name": "柏原ワイン",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "カタシモ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/osaka/katashimo-winery.html#winery"
+      },
+      "description": "地元色の強い定番銘柄。"
     },
     {
       "@type": "FAQPage",
@@ -507,7 +602,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">キングセルビー</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">カタシモの代表シリーズ。</p>
@@ -517,7 +612,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">柏原ワイン</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">地元色の強い定番銘柄。</p>
@@ -541,7 +636,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">大阪府 柏原市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://kashiwara-wine.com/company/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://kashiwara-wine.com/company/</a></p>
   </div>
 </section>

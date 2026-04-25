@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html",
+      "name": "さっぽろ藤野ワイナリー - 北海道のワイナリー",
+      "description": "平成21年創業。北海道札幌市のエステートワイナリー「さっぽろ藤野ワイナリー」。添加物をできる限り使用せず、野生酵母による醗酵・無濾過のワイン造りを行う。自社農園と道内契約農家のぶどうを使用。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#winery",
       "name": "さっぽろ藤野ワイナリー",
       "description": "添加物をできる限り使用せず、野生酵母による醗酵・無濾過のワイン造りを行う。自社農園と道内契約農家のぶどうを使用。",
       "url": "https://www.sapporo-fujino-winery.com/",
@@ -52,7 +69,36 @@
         "セイベル13053",
         "ピノ・ノワール",
         "ツヴァイゲルトレーベ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.sapporo-fujino-winery.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "さっぽろ藤野ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +122,32 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#wine-1",
+      "name": "藤野ピノ・ノワール",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "さっぽろ藤野"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#wine-2",
+      "name": "藤野バッカス",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "さっぽろ藤野"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/sapporo-fujino-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -491,21 +563,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">藤野ピノ・ノワール</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">藤野バッカス</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

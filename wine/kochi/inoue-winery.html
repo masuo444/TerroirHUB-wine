@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html",
+      "name": "井上ワイナリー - 高知県のワイナリー",
+      "description": "平成28年創業。高知県香南市野市町の小規模ワイナリー「井上ワイナリー」。高知県内各地のぶどうを活かし、太平洋を望む高台で土佐の食文化に寄り添うワインを造るワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html#winery",
       "name": "井上ワイナリー",
       "description": "高知県内各地のぶどうを活かし、太平洋を望む高台で土佐の食文化に寄り添うワインを造るワイナリー。",
       "url": "https://www.inoue-winery.co.jp/",
@@ -49,7 +66,23 @@
       "knowsAbout": [
         "マスカット・ベーリーA",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.inoue-winery.co.jp/company.htm"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "井上ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +106,19 @@
           "item": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html#wine-1",
+      "name": "TOSAワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TOSAワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kochi/inoue-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -379,7 +425,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">井上ワイナリー</h1>
     <p class="hero-subtitle">TOSAワイン</p>
     <p class="hero-en">Since 2016 — 香南市野市町, 高知県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.inoue-winery.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -479,11 +525,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">TOSAワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -504,7 +550,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">高知県 香南市野市町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.inoue-winery.co.jp/company.htm" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.inoue-winery.co.jp/company.htm</a></p>
   </div>
 </section>

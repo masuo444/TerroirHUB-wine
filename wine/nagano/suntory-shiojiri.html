@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html",
+      "name": "サントリー 塩尻ワイナリー - 長野県のワイナリー",
+      "description": "昭和11年創業。長野県塩尻市（桔梗ヶ原）の日本ワイナリー「サントリー 塩尻ワイナリー」。様々な醸造法や貯蔵法にも挑戦し続けているワイナリー",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#winery",
       "name": "サントリー 塩尻ワイナリー",
       "description": "様々な醸造法や貯蔵法にも挑戦し続けているワイナリー",
       "url": "http://www.suntory.co.jp/wine/",
@@ -51,7 +68,36 @@
         "シャルドネ",
         "メルロー",
         "ソーヴィニヨン・ブラン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/kikyogahara/post-27/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "サントリー 塩尻ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +121,36 @@
           "item": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#wine-1",
+      "name": "塩尻ワイナリー シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "塩尻"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#winery"
+      },
+      "description": "長野県産シャルドネ100%",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#wine-2",
+      "name": "塩尻ワイナリー メルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "塩尻"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/suntory-shiojiri.html#winery"
+      },
+      "description": "長野県産メルロー100%",
+      "material": "メルロー"
     },
     {
       "@type": "FAQPage",
@@ -533,7 +609,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 塩尻市（桔梗ヶ原）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.nagano-wine.jp/winery/kikyogahara/post-27/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/winery/kikyogahara/post-27/</a></p>
   </div>
 </section>

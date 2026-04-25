@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html",
+      "name": "せらワイナリー - 広島県のワイナリー",
+      "description": "1975年創業。広島県世羅郡世羅町の日本ワイナリー「せらワイナリー」。標高400〜500mの世羅台地に立地し、町内約20戸の農家が育てたぶどうでワインを醸すワイナリー。醸造見学通路やレストラン、ショップを備える。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html#winery",
       "name": "せらワイナリー",
       "description": "標高400〜500mの世羅台地に立地し、町内約20戸の農家が育てたぶどうでワインを醸すワイナリー。醸造見学通路やレストラン、ショップを備える。",
       "url": "http://www.serawinery.jp/",
@@ -48,7 +65,23 @@
       },
       "knowsAbout": [
         "ハニービーナス"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/17340010286/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "せらワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +105,19 @@
           "item": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html#wine-1",
+      "name": "せらワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "せらワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hiroshima/sera-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -376,9 +422,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
     <p class="hero-est">EST. 1975</p>
     <h1 class="hero-title">せらワイナリー</h1>
-    
+
     <p class="hero-en">Since 1975 — 世羅郡世羅町, 広島県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.serawinery.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -478,11 +524,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">せらワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -503,7 +549,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">広島県 世羅郡世羅町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/17340010286/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/17340010286/</a></p>
   </div>
 </section>

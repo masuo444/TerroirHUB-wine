@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html",
+      "name": "八代醸造 - 山梨県のワイナリー",
+      "description": "昭和57年創業。山梨県笛吹市八代町の小規模ワイナリー「八代醸造」。「良いワインはよいブドウから」の哲学のもと、山梨県特産の里づくり推進事業（ワイン業界唯一の指定）を受けた蔵元。自社農園で有機自然農法を実践し、100%地元八代町",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#winery",
       "name": "八代醸造",
       "description": "「良いワインはよいブドウから」の哲学のもと、山梨県特産の里づくり推進事業（ワイン業界唯一の指定）を受けた蔵元。自社農園で有機自然農法を実践し、100%地元八代町産ぶどうのみを使用。蔵元直販で低価格を実現。",
       "url": "https://r.goope.jp/sr-19-192111s0057/",
@@ -46,7 +63,35 @@
         "マスカットベリーA",
         "甲斐ブラン",
         "甲斐ノアール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/2685/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "八代醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -70,6 +115,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#wine-1",
+      "name": "ニュー甲州路ゴールド",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ニュー甲州路"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#wine-2",
+      "name": "アケビワイン",
+      "category": "果実酒",
+      "brand": {
+        "@type": "Brand",
+        "name": "ニュー甲州路"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#winery"
+      },
+      "description": "アケビ使用の地域特産品",
+      "material": "アケビ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#wine-3",
+      "name": "甲斐ブランシュール",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ニュー甲州路"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yatsushiro-jozo.html#winery"
+      },
+      "description": "甲斐ブラン",
+      "material": "甲斐ブラン"
     },
     {
       "@type": "FAQPage",
@@ -384,7 +474,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">八代醸造</h1>
     <p class="hero-subtitle">ニュー甲州路</p>
     <p class="hero-en">Since 1982 — 笛吹市八代町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://r.goope.jp/sr-19-192111s0057/" target="_blank" rel="noopener noreferrer">公式サイト</a>

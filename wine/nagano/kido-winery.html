@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/kido-winery.html",
+      "name": "Kidoワイナリー - 長野県のワイナリー",
+      "description": "平成16年創業。長野県塩尻市（桔梗ヶ原）のエステートワイナリー「Kidoワイナリー」。除草剤を使わない草生栽培にこだわり、「オータムカラーズ」「プレミアムメルロー」「プライベートリザーブ」の3シリーズと、最高品質時に「プロジェクトK」を製造してい",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#winery",
       "name": "Kidoワイナリー",
       "description": "除草剤を使わない草生栽培にこだわり、「オータムカラーズ」「プレミアムメルロー」「プライベートリザーブ」の3シリーズと、最高品質時に「プロジェクトK」を製造しています。",
       "url": "https://sites.google.com/view/kido-winery/top",
@@ -55,7 +72,48 @@
         "カベルネ・フラン",
         "ナイアガラ",
         "コンコード"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/winery/kikyogahara/kido/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Kidoワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -79,6 +137,61 @@
           "item": "https://wine.terroirhub.com/wine/nagano/kido-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-1",
+      "name": "オータムカラーズ",
+      "category": "赤ワイン・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kido"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#winery"
+      },
+      "material": "メルロー・シャルドネ他"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-2",
+      "name": "プレミアムメルロー",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kido"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#winery"
+      },
+      "material": "メルロー"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-3",
+      "name": "プライベートリザーブ",
+      "category": "赤ワイン・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kido"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#wine-4",
+      "name": "プロジェクトK",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kido"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/kido-winery.html#winery"
+      },
+      "description": "最高品質時のみリリース"
     },
     {
       "@type": "FAQPage",
@@ -506,7 +619,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー・シャルドネ他</div>
       <h3 class="brand-name">オータムカラーズ</h3>
       <p class="brand-type">赤ワイン・白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -516,17 +629,17 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">メルロー</div>
       <h3 class="brand-name">プレミアムメルロー</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤ワイン・白ワイン</div>
-      
+
       <h3 class="brand-name">プライベートリザーブ</h3>
       <p class="brand-type">赤ワイン・白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -547,7 +660,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 塩尻市（桔梗ヶ原）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.nagano-wine.jp/winery/kikyogahara/kido/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/winery/kikyogahara/kido/</a></p>
   </div>
 </section>

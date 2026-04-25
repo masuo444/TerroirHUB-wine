@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html",
+      "name": "國津果實酒醸造所 - 三重県のワイナリー",
+      "description": "平成30年創業。三重県名張市のナチュラルワイナリー「國津果實酒醸造所」。名張市の廃校を改修した醸造所で、“葡萄8割、人2割”を掲げて畑の表現を重視するクラフトワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html",
+      "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#winery",
       "name": "國津果實酒醸造所",
       "description": "名張市の廃校を改修した醸造所で、“葡萄8割、人2割”を掲げて畑の表現を重視するクラフトワイナリー。",
       "url": "https://www.kunitsu-wine.com/",
@@ -49,7 +66,29 @@
         "デラウェア",
         "マスカット・ベーリーA",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.kunitsu-wine.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "國津果實酒醸造所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +112,34 @@
           "item": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#wine-1",
+      "name": "國津",
+      "category": "赤・白・ペティアン",
+      "brand": {
+        "@type": "Brand",
+        "name": "國津"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#winery"
+      },
+      "description": "名張の畑を表現する主力シリーズ。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#wine-2",
+      "name": "Natural POP Life",
+      "category": "赤・ペティアン",
+      "brand": {
+        "@type": "Brand",
+        "name": "國津"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/mie/kunitsu-kajitsushu-jozo.html#winery"
+      },
+      "description": "名張市産ぶどうのみを使用する自然派ライン。"
     },
     {
       "@type": "FAQPage",
@@ -387,7 +454,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">國津果實酒醸造所</h1>
     <p class="hero-subtitle">國津</p>
     <p class="hero-en">Since 2018 — 名張市, 三重県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.kunitsu-wine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -488,7 +555,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・ペティアン</div>
-      
+
       <h3 class="brand-name">國津</h3>
       <p class="brand-type">赤・白・ペティアン</p>
       <p class="brand-desc">名張の畑を表現する主力シリーズ。</p>
@@ -498,7 +565,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤・ペティアン</div>
-      
+
       <h3 class="brand-name">Natural POP Life</h3>
       <p class="brand-type">赤・ペティアン</p>
       <p class="brand-desc">名張市産ぶどうのみを使用する自然派ライン。</p>
@@ -522,7 +589,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">三重県 名張市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.kunitsu-wine.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.kunitsu-wine.com/</a></p>
   </div>
 </section>

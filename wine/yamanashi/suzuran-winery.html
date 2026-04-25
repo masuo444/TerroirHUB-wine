@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html",
+      "name": "スズランワイナリー - 山梨県のワイナリー",
+      "description": "明治38年（ワイン醸造開始）創業。山梨県笛吹市一宮町の小規模ワイナリー「スズランワイナリー」。「最良のワインは最良の葡萄づくりから」を信念に、明治38年に宮内省陸軍御用達として製造した「九重シャンパン」で知られる老舗ワイナリー。2004年に農業生産法人へ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#winery",
       "name": "スズランワイナリー",
       "description": "「最良のワインは最良の葡萄づくりから」を信念に、明治38年に宮内省陸軍御用達として製造した「九重シャンパン」で知られる老舗ワイナリー。2004年に農業生産法人へ移行し、自社農園の拡大と栽培品種育成に注力している。",
       "url": "http://www.suzuran-w.co.jp/",
@@ -44,7 +61,42 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.suzuran-w.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "スズランワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +120,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#wine-1",
+      "name": "九重シャンパン",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "九重シャンパン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#winery"
+      },
+      "description": "宮内省陸軍御用達として製造した歴史的銘柄",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#wine-2",
+      "name": "スズランワイン 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "九重シャンパン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#wine-3",
+      "name": "スズランワイン 一宮",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "九重シャンパン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html#winery"
+      },
+      "description": "笛吹市一宮産ぶどう使用",
+      "material": "甲州"
     },
     {
       "@type": "FAQPage",

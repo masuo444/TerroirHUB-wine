@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html",
+      "name": "楽園葡萄酒醸造場 - 山梨県のワイナリー",
+      "description": "昭和15年創業。山梨県市川三郷町の小規模ワイナリー「楽園葡萄酒醸造場」。昭和15年（1940年）創業の市川三郷町の家族経営小規模ワイナリー。約1,200坪の自社ぶどう園と近隣農家のぶどうを使い、少量生産で自然な味わいのワインを醸造。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#winery",
       "name": "楽園葡萄酒醸造場",
       "description": "昭和15年（1940年）創業の市川三郷町の家族経営小規模ワイナリー。約1,200坪の自社ぶどう園と近隣農家のぶどうを使い、少量生産で自然な味わいのワインを醸造。代表ブランド「信天翁（アルバトロス）」は丁寧な小ロット生産による芳醇な風味が特徴。",
       "url": "https://wine1940.securesite.jp/",
@@ -44,7 +61,35 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://wine1940.securesite.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "楽園葡萄酒醸造場の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +113,50 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#wine-1",
+      "name": "信天翁（アルバトロス）白",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "信天翁（アルバトロス）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#wine-2",
+      "name": "信天翁（アルバトロス）赤",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "信天翁（アルバトロス）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#wine-3",
+      "name": "信天翁（アルバトロス）ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "信天翁（アルバトロス）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/rakuen-winery.html#winery"
+      },
+      "description": "ロゼ"
     },
     {
       "@type": "FAQPage",
@@ -382,7 +471,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">楽園葡萄酒醸造場</h1>
     <p class="hero-subtitle">信天翁（アルバトロス）</p>
     <p class="hero-en">Since 1940 — 市川三郷町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://wine1940.securesite.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -503,7 +592,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge rose">ロゼワイン</div>
-      
+
       <h3 class="brand-name">信天翁（アルバトロス）ロゼ</h3>
       <p class="brand-type">ロゼワイン</p>
       <p class="brand-desc">ロゼ</p>

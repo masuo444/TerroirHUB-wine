@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html",
+      "name": "都農ワイナリー - 宮崎県のワイナリー",
+      "description": "平成8年創業。宮崎県児湯郡都農町のエステートワイナリー「都農ワイナリー」。尾鈴連山と日向灘を望む牧内台地で、尾鈴産ぶどう100%にこだわる宮崎を代表するエステートワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#winery",
       "name": "都農ワイナリー",
       "description": "尾鈴連山と日向灘を望む牧内台地で、尾鈴産ぶどう100%にこだわる宮崎を代表するエステートワイナリー。",
       "url": "https://tsunowine.com/",
@@ -49,7 +66,35 @@
       "knowsAbout": [
         "キャンベル・アーリー",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/19450010303/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "都農ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +118,45 @@
           "item": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#wine-1",
+      "name": "都農ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "都農ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#wine-2",
+      "name": "キャンベル・アーリー",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "都農ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#wine-3",
+      "name": "シャルドネ・アンフィルタード",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "都農ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/miyazaki/tsuno-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -379,7 +463,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">都農ワイナリー</h1>
     <p class="hero-subtitle">都農ワイン</p>
     <p class="hero-en">Since 1996 — 児湯郡都農町, 宮崎県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://tsunowine.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -479,31 +563,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">都農ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">キャンベル・アーリー</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">シャルドネ・アンフィルタード</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -524,7 +608,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">宮崎県 児湯郡都農町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/19450010303/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/19450010303/</a></p>
   </div>
 </section>

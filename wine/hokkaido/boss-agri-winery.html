@@ -24,26 +24,86 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html",
+      "name": "ボスアグリワイナリー - 北海道のワイナリー",
+      "description": "令和2年創業。北海道北見市のエステートワイナリー「ボスアグリワイナリー」。北見市で2020年に設立されたオホーツクエリアのワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#winery",
       "name": "ボスアグリワイナリー",
       "description": "北見市で2020年に設立されたオホーツクエリアのワイナリー。",
-      "url": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html",
+      "url": "https://kitamikanko.jp/gift/1100/",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "北海道北見市",
+        "streetAddress": "北海道北見市端野町緋牛内793-3",
         "addressLocality": "北見市",
         "addressRegion": "北海道",
         "addressCountry": "JP"
       },
       "foundingDate": "2020",
+      "telephone": "090-3396-4357",
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 43.81,
         "longitude": 143.89
+      },
+      "knowsAbout": [
+        "山幸",
+        "清舞",
+        "山ブドウ",
+        "シャルドネ",
+        "ケルナー"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://kitamikanko.jp/gift/1100/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ボスアグリワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#wine-3"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,14 +130,74 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#wine-1",
+      "name": "桜夢雫 山幸",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ボスアグリ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#winery"
+      },
+      "description": "北見市端野町の自社ぶどうを使用。",
+      "material": "山幸"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#wine-2",
+      "name": "桜夢雫 おと",
+      "category": "ロゼ微発泡",
+      "brand": {
+        "@type": "Brand",
+        "name": "ボスアグリ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#winery"
+      },
+      "description": "山幸を使う辛口ロゼ微発泡。",
+      "material": "山幸"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#wine-3",
+      "name": "オホーツクブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ボスアグリ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/boss-agri-winery.html#winery"
+      },
+      "description": "オホーツクエリアの白ワイン。"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ボスアグリワイナリーの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "直販所あり。営業時間8:00〜18:00、年中無休（最新情報は事前確認推奨）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ボスアグリワイナリーの代表的なワインを教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代表銘柄は桜夢雫 山幸、桜夢雫 おと、オホーツクブランなどがあります。北見市端野町の自社ぶどうを使用。"
+          }
+        },
         {
           "@type": "Question",
           "name": "ボスアグリワイナリーの所在地・アクセスを教えてください",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "住所は北海道北見市です。最寄りはJR石北本線 北見駅です。"
+            "text": "住所は北海道北見市端野町緋牛内793-3です。最寄りはJR石北本線 緋牛内駅（車約5分）です。"
           }
         },
         {
@@ -86,6 +206,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和2年（2020年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ボスアグリワイナリーではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主に山幸、清舞、山ブドウ、シャルドネ、ケルナーを使用しています。"
           }
         }
       ]
@@ -361,7 +489,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI北海道</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://kitamikanko.jp/gift/1100/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -416,11 +544,34 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
           <div class="fact-body">オホーツク・北見市立地</div>
         </div>
       </div>
+      <div class="fact">
+        <div class="fact-num" style="font-family:'Zen Old Mincho',serif;font-size:42px;opacity:0.7;">②</div>
+        <div>
+          <div class="fact-lbl">特徴 2</div>
+          <div class="fact-body">自社ぶどう100%を目指す家族経営ワイナリー</div>
+        </div>
+      </div>
+      <div class="fact">
+        <div class="fact-num" style="font-family:'Zen Old Mincho',serif;font-size:42px;opacity:0.7;">③</div>
+        <div>
+          <div class="fact-lbl">特徴 3</div>
+          <div class="fact-body">山幸・清舞など耐寒性品種を活用</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">ボスアグリワイナリーが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">山幸</span><span class="grape-pill">清舞</span><span class="grape-pill">山ブドウ</span><span class="grape-pill">シャルドネ</span><span class="grape-pill">ケルナー</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -434,6 +585,45 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section brands-section">
+  <div class="sec-inner">
+    <label class="sec-label">WINE</label>
+    <h2 class="sec-title">代表銘柄</h2>
+    <div class="sec-divider"></div>
+    <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge red">赤ワイン</div>
+      <div class="grape-tag">山幸</div>
+      <h3 class="brand-name">桜夢雫 山幸</h3>
+      <p class="brand-type">赤ワイン</p>
+      <p class="brand-desc">北見市端野町の自社ぶどうを使用。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge rose">ロゼ微発泡</div>
+      <div class="grape-tag">山幸</div>
+      <h3 class="brand-name">桜夢雫 おと</h3>
+      <p class="brand-type">ロゼ微発泡</p>
+      <p class="brand-desc">山幸を使う辛口ロゼ微発泡。</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-img-wrap">
+        <div class="brand-img-placeholder">PHOTO</div>
+      </div>
+      <div class="wine-badge white">白ワイン</div>
+
+      <h3 class="brand-name">オホーツクブラン</h3>
+      <p class="brand-type">白ワイン</p>
+      <p class="brand-desc">オホーツクエリアの白ワイン。</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -442,7 +632,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道北見市</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道北見市端野町緋牛内793-3</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">090-3396-4357</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://kitamikanko.jp/gift/1100/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://kitamikanko.jp/gift/1100/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">直販所あり。営業時間8:00〜18:00、年中無休（最新情報は事前確認推奨）。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -450,8 +640,8 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">北海道 北見市</div>
       </div>
     </div>
-    <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR石北本線 北見駅</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://winecluster.org/contents/winery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://winecluster.org/contents/winery/</a></p>
+    <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR石北本線 緋牛内駅（車約5分）</p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://kitamikanko.jp/gift/1100/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://kitamikanko.jp/gift/1100/</a></p>
   </div>
 </section>
 
@@ -465,18 +655,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ボスアグリワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">ボスアグリワイナリーの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">住所は北海道北見市です。最寄りはJR石北本線 北見駅です。</div>
+      <div class="faq-a" id="faq-a-0">直販所あり。営業時間8:00〜18:00、年中無休（最新情報は事前確認推奨）。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">ボスアグリワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-text">ボスアグリワイナリーの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">令和2年（2020年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄は桜夢雫 山幸、桜夢雫 おと、オホーツクブランなどがあります。北見市端野町の自社ぶどうを使用。</div>
+    </div>
+    <div class="faq-item" id="faq-2">
+      <div class="faq-q" onclick="toggleFaq(2)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ボスアグリワイナリーの所在地・アクセスを教えてください</span>
+        <span class="faq-q-icon" id="faq-icon-2">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-2">住所は北海道北見市端野町緋牛内793-3です。最寄りはJR石北本線 緋牛内駅（車約5分）です。</div>
+    </div>
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFaq(3)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ボスアグリワイナリーはいつ創業しましたか？</span>
+        <span class="faq-q-icon" id="faq-icon-3">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-3">令和2年（2020年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">ボスアグリワイナリーではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に山幸、清舞、山ブドウ、シャルドネ、ケルナーを使用しています。</div>
     </div>
     </div>
   </div>

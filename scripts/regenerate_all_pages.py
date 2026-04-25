@@ -88,6 +88,30 @@ def build_faqs(name, brand, founded, founded_era, visit, address, station, brand
     return faqs
 
 
+def brand_name(brand):
+    if isinstance(brand, dict):
+        return str(brand.get('name', '')).strip()
+    return str(brand).strip() if brand else ''
+
+
+def brand_type(brand):
+    if isinstance(brand, dict):
+        return str(brand.get('type', '')).strip()
+    return ''
+
+
+def brand_specs(brand):
+    if isinstance(brand, dict):
+        return str(brand.get('specs', '')).strip()
+    return ''
+
+
+def brand_grapes(brand):
+    if isinstance(brand, dict):
+        return str(brand.get('grapes', '')).strip()
+    return ''
+
+
 def generate_page(b, pref_slug):
     pref_name = PREF_NAMES.get(pref_slug, pref_slug)
     name      = b.get('name','')
@@ -133,9 +157,10 @@ def generate_page(b, pref_slug):
     faqs = build_faqs(name, brand, founded, founded_era, visit, address, station, brands, pref_name, grapes)
 
     # ── JSON-LD ──
+    winery_id = f"{page_url}#winery"
     local_biz = {
         "@type": ["LocalBusiness", "Winery"],
-        "@id": page_url,
+        "@id": winery_id,
         "name": name,
         "description": desc[:200] if desc else name,
         "url": url if url else page_url,
@@ -159,6 +184,78 @@ def generate_page(b, pref_slug):
         }
     if grapes:
         local_biz["knowsAbout"] = grapes
+    if source:
+        local_biz["subjectOf"] = {
+            "@type": "CreativeWork",
+            "url": source
+        }
+    if gi:
+        local_biz["additionalProperty"] = [
+            {
+                "@type": "PropertyValue",
+                "name": "地理的表示",
+                "value": gi
+            }
+        ]
+
+    product_schemas = []
+    offer_items = []
+    for idx, br in enumerate(brands[:6], start=1):
+        br_name = brand_name(br)
+        if not br_name:
+            continue
+        product_id = f"{page_url}#wine-{idx}"
+        product = {
+            "@type": "Product",
+            "@id": product_id,
+            "name": br_name,
+            "category": brand_type(br) or "日本ワイン",
+            "brand": {
+                "@type": "Brand",
+                "name": brand or name
+            },
+            "manufacturer": {
+                "@id": winery_id
+            }
+        }
+        specs = brand_specs(br)
+        if specs:
+            product["description"] = specs[:300]
+        br_grapes = brand_grapes(br)
+        if br_grapes:
+            product["material"] = br_grapes
+        product_schemas.append(product)
+        offer_items.append({
+            "@type": "Offer",
+            "itemOffered": {
+                "@id": product_id
+            }
+        })
+
+    if offer_items:
+        local_biz["hasOfferCatalog"] = {
+            "@type": "OfferCatalog",
+            "name": f"{name}の代表銘柄",
+            "itemListElement": offer_items
+        }
+
+    webpage_schema = {
+        "@type": "WebPage",
+        "@id": f"{page_url}#webpage",
+        "url": page_url,
+        "name": f"{name} - {pref_name}のワイナリー",
+        "description": meta_desc,
+        "inLanguage": "ja",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": f"https://{DOMAIN}/#website",
+            "name": "Terroir HUB WINE",
+            "url": f"https://{DOMAIN}/"
+        },
+        "mainEntity": {
+            "@id": winery_id
+        }
+    }
 
     breadcrumb_schema = {
         "@type": "BreadcrumbList",
@@ -169,7 +266,7 @@ def generate_page(b, pref_slug):
         ]
     }
 
-    graph = [local_biz, breadcrumb_schema]
+    graph = [webpage_schema, local_biz, breadcrumb_schema] + product_schemas
 
     if faqs:
         faq_schema = {
@@ -635,7 +732,7 @@ for jf in json_files:
         if not b.get('id'):
             continue
         try:
-            html = generate_page(b, pref)
+            html = '\n'.join(line.rstrip() for line in generate_page(b, pref).splitlines()) + '\n'
             with open(os.path.join(out_dir, f"{b['id']}.html"), 'w', encoding='utf-8') as f:
                 f.write(html)
             total += 1

@@ -98,7 +98,9 @@
     "wine_style": "sparkling",
     "main_grape": "apple",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "りんご"
+    ],
     "brands": [
       {"name": "ニッカシードル", "type": "スパークリングワイン（シードル）", "specs": "", "grapes": "国産りんご100%"}
     ],

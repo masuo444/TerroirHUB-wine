@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html",
+      "name": "山田堂 - 北海道のワイナリー",
+      "description": "令和3年創業。北海道余市町のエステートワイナリー「山田堂」。日常に楽しんで頂けるテーブルワインを造ること。食事の邪魔をしないが、個性的で、日々の食卓が華やかになるワイン造りを目指しています。農家から受け継いだ納屋をワイナ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#winery",
       "name": "山田堂",
       "description": "日常に楽しんで頂けるテーブルワインを造ること。食事の邪魔をしないが、個性的で、日々の食卓が華やかになるワイン造りを目指しています。農家から受け継いだ納屋をワイナリーに改修。2.3ヘクタールの畑を保有。",
       "url": "https://yamadado.jp/",
@@ -49,7 +66,42 @@
         "ピノ・ノワール",
         "ミュラー・トゥルガウ",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://yamadado.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "山田堂の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +125,48 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#wine-1",
+      "name": "山田堂 ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山田堂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#winery"
+      },
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#wine-2",
+      "name": "山田堂 ロゼ・ピノ・ノワール",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山田堂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#winery"
+      },
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#wine-3",
+      "name": "山田堂 ニアガラ・スパークリング",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "山田堂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/yamadado.html#winery"
+      },
+      "material": "ナイアガラ"
     },
     {
       "@type": "FAQPage",
@@ -500,7 +594,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">山田堂 ピノ・ノワール</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -510,7 +604,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ピノ・ノワール</div>
       <h3 class="brand-name">山田堂 ロゼ・ピノ・ノワール</h3>
       <p class="brand-type">ロゼワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -520,7 +614,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ナイアガラ</div>
       <h3 class="brand-name">山田堂 ニアガラ・スパークリング</h3>
       <p class="brand-type">スパークリングワイン</p>
-      
+
     </div>
     </div>
   </div>

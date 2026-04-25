@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html",
+      "name": "麻原酒造 - 埼玉県のワイナリー",
+      "description": "明治15年創業。埼玉県入間郡毛呂山町のエステートワイナリー「麻原酒造」。1882年創業の老舗酒蔵が展開するワイン部門。日本酒・焼酎・リキュールと並行して、果実を生かしたワインや甘味果実酒を製造する。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html",
+      "@id": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html#winery",
       "name": "麻原酒造",
       "description": "1882年創業の老舗酒蔵が展開するワイン部門。日本酒・焼酎・リキュールと並行して、果実を生かしたワインや甘味果実酒を製造する。",
       "url": "https://www.musashino-asahara.jp/",
@@ -49,7 +66,23 @@
         "デラウェア",
         "巨峰",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.musashino-asahara.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "麻原酒造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +106,20 @@
           "item": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html#wine-1",
+      "name": "麻原ワイン",
+      "category": "赤・白・甘味果実酒",
+      "brand": {
+        "@type": "Brand",
+        "name": "麻原ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/saitama/asahara-shuzou.html#winery"
+      },
+      "description": "蔵元ブランドのワインシリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -387,7 +434,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">麻原酒造</h1>
     <p class="hero-subtitle">麻原ワイン</p>
     <p class="hero-en">Since 1882 — 入間郡毛呂山町, 埼玉県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.musashino-asahara.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -488,7 +535,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・甘味果実酒</div>
-      
+
       <h3 class="brand-name">麻原ワイン</h3>
       <p class="brand-type">赤・白・甘味果実酒</p>
       <p class="brand-desc">蔵元ブランドのワインシリーズ。</p>
@@ -512,7 +559,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">埼玉県 入間郡毛呂山町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.musashino-asahara.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.musashino-asahara.jp/</a></p>
   </div>
 </section>

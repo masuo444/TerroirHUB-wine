@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html",
+      "name": "笛吹ワイン - 山梨県のワイナリー",
+      "description": "昭和63年創業。山梨県笛吹市御坂町の小規模ワイナリー「笛吹ワイン」。ワイン造りについては、葡萄栽培からワイン醸造までこだわり通す。100%自社葡萄で製造。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#winery",
       "name": "笛吹ワイン",
       "description": "ワイン造りについては、葡萄栽培からワイン醸造までこだわり通す。100%自社葡萄で製造。",
       "url": "https://fuefuki-wine.com/",
@@ -45,7 +62,42 @@
         "甲州",
         "マスカット・ベーリーA",
         "デラウェア"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://fuefuki-wine.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "笛吹ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -69,6 +121,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#wine-1",
+      "name": "マスカットベリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "風の家ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#wine-2",
+      "name": "甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "風の家ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#wine-3",
+      "name": "デラウェア",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "風の家ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/fuefuki-wine.html#winery"
+      },
+      "description": "デラウェア品種",
+      "material": "デラウェア"
     },
     {
       "@type": "FAQPage",
@@ -537,7 +634,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 笛吹市御坂町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://fuefuki-wine.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://fuefuki-wine.com/</a></p>
   </div>
 </section>

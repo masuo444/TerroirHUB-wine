@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html",
+      "name": "北海道ワイン鶴沼ワイナリー - 北海道のワイナリー",
+      "description": "昭和47年創業。北海道浦臼町の大規模ワイナリー「北海道ワイン鶴沼ワイナリー」。石狩川を眺める樺戸郡浦臼町「鶴沼」の南西向きの斜面に広がる、日本でもっとも大きな垣根式のぶどう畑（447ha）。AIやロボットを使ったスマート農業の実験も行なっ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#winery",
       "name": "北海道ワイン鶴沼ワイナリー",
       "description": "石狩川を眺める樺戸郡浦臼町「鶴沼」の南西向きの斜面に広がる、日本でもっとも大きな垣根式のぶどう畑（447ha）。AIやロボットを使ったスマート農業の実験も行なっています。",
       "url": "https://www.hokkaidowine.com/contents/tsurunuma/index.html",
@@ -53,7 +70,36 @@
         "ゲヴュルツトラミネール",
         "バッカス",
         "ロンド"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.hokkaidowine.com/contents/tsurunuma/index.html"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "北海道ワイン鶴沼ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -77,6 +123,34 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#wine-1",
+      "name": "鶴沼収穫 ゲヴュルツトラミネール",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "鶴沼"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#winery"
+      },
+      "material": "ゲヴュルツトラミネール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#wine-2",
+      "name": "鶴沼収穫 ツヴァイゲルト",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "鶴沼"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tsurunuma-winery.html#winery"
+      },
+      "material": "ツヴァイゲルト"
     },
     {
       "@type": "FAQPage",
@@ -504,7 +578,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ゲヴュルツトラミネール</div>
       <h3 class="brand-name">鶴沼収穫 ゲヴュルツトラミネール</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -514,7 +588,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ツヴァイゲルト</div>
       <h3 class="brand-name">鶴沼収穫 ツヴァイゲルト</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

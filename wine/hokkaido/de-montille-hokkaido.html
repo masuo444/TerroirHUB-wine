@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html",
+      "name": "ド・モンティーユ＆北海道 - 北海道のワイナリー",
+      "description": "令和5年創業。北海道函館市のエステートワイナリー「ド・モンティーユ＆北海道」。フランス・ブルゴーニュで約300年の歴史を持つ家族経営ワイナリー「ドメーヌ・ド・モンティーユ」が函館市に設立した醸造所。2016年よりプロジェクト開始、2019",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#winery",
       "name": "ド・モンティーユ＆北海道",
       "description": "フランス・ブルゴーニュで約300年の歴史を持つ家族経営ワイナリー「ドメーヌ・ド・モンティーユ」が函館市に設立した醸造所。2016年よりプロジェクト開始、2019年にぶどう植樹開始、2023年にワイナリー完成。ピノ・ノワールとシャルドネに特化。",
       "url": "https://www.demontille-hokkaido.com/",
@@ -50,7 +67,36 @@
         "ピノ・ノワール",
         "ケルナー",
         "ツヴァイゲルト"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.demontille-hokkaido.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ド・モンティーユ＆北海道の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +120,36 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#wine-1",
+      "name": "ド・モンティーユ＆北海道 ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ド・モンティーユ＆北海道"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#winery"
+      },
+      "description": "2022年産",
+      "material": "ピノ・ノワール"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#wine-2",
+      "name": "ド・モンティーユ＆北海道 ケルナー",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ド・モンティーユ＆北海道"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html#winery"
+      },
+      "description": "2022年産",
+      "material": "ケルナー"
     },
     {
       "@type": "FAQPage",

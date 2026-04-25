@@ -33,6 +33,24 @@ GI_MAP = {
     'nagano': 'GI長野', 'yamagata': 'GI山形', 'osaka': 'GI大阪'
 }
 
+PREF_VISUALS = {
+    'yamanashi': {
+        'src': 'https://commons.wikimedia.org/wiki/Special:FilePath/Katsunuma%20vineyard%2002.jpg',
+        'alt': '勝沼のぶどう畑',
+        'caption': '勝沼のぶどう畑 / Wikimedia Commons / CC BY 2.0',
+    },
+    'hokkaido': {
+        'src': 'https://commons.wikimedia.org/wiki/Special:FilePath/130823Nikka%20Wisky%20Yoichi%20Distillery%20Hokkaido%20Japan18s3.jpg',
+        'alt': '北海道・余市の蒸溜所',
+        'caption': '北海道・余市の蒸溜所 / Wikimedia Commons',
+    },
+    'nagano': {
+        'src': 'https://commons.wikimedia.org/wiki/Special:FilePath/Azumino%20Winery.jpg',
+        'alt': '安曇野ワイナリー',
+        'caption': '安曇野ワイナリー / Wikimedia Commons',
+    },
+}
+
 WINE_STYLE_LABELS = {
     'dry_white':'辛口白', 'red':'赤', 'rose':'ロゼ', 'sweet':'甘口', 'sparkling':'泡'
 }
@@ -40,6 +58,21 @@ WINE_STYLE_LABELS = {
 def esc(s):
     if not s: return ''
     return str(s).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
+
+def brand_name(brand):
+    if isinstance(brand, dict):
+        return str(brand.get('name', '')).strip()
+    return str(brand).strip() if brand else ''
+
+def can_visit(winery):
+    text = str(winery.get('visit', ''))
+    if not text:
+        return False
+    negative = ('見学不可', '一般見学なし', '見学なし', '受け付けていない', '受付なし', '公開情報では')
+    if any(word in text for word in negative):
+        return False
+    positive = ('見学', 'ツアー', '試飲', 'テイスティング', 'ショップ', '直売', 'カフェ', 'レストラン', 'ワインバー', '販売')
+    return any(word in text for word in positive)
 
 def generate_pref_page(pref_slug, wineries):
     pref_name = PREF_NAMES.get(pref_slug, pref_slug)
@@ -62,6 +95,19 @@ def generate_pref_page(pref_slug, wineries):
     gi_txt = f'{gi}認定産地。' if gi else ''
     meta_desc = f"{pref_name}のワイナリー{count}件を掲載。{gi_txt}{rep_names}など{pref_name}の日本ワイン生産者情報。Terroir HUB WINE。"
     meta_desc = meta_desc[:160]
+
+    top_grapes = {}
+    for b in wineries:
+        for g in b.get('grapes',[]):
+            top_grapes[g] = top_grapes.get(g,0) + 1
+    top_grape_names = sorted(top_grapes, key=lambda x:-top_grapes[x])[:5]
+    visit_wineries = [b for b in wineries if can_visit(b)]
+    brand_wineries = [b for b in wineries if any(brand_name(br) for br in b.get('brands', []) or [])]
+    area_counts = {}
+    for b in wineries:
+        area = b.get('area') or pref_name
+        area_counts[area] = area_counts.get(area, 0) + 1
+    top_areas = sorted(area_counts, key=lambda x:-area_counts[x])[:5]
 
     # ItemList JSON-LD
     item_list = {
@@ -88,6 +134,35 @@ def generate_pref_page(pref_slug, wineries):
         ]
     }
 
+    collection_page = {
+        "@type": "CollectionPage",
+        "@id": f"{page_url}#webpage",
+        "url": page_url,
+        "name": f"{pref_name}のワイナリー一覧",
+        "description": meta_desc,
+        "inLanguage": "ja",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": f"https://{DOMAIN}/#website",
+            "name": "Terroir HUB WINE",
+            "url": f"https://{DOMAIN}/"
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": count,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": i + 1,
+                    "name": b.get('name',''),
+                    "url": f"https://{DOMAIN}/wine/{pref_slug}/{b['id']}.html"
+                }
+                for i, b in enumerate(wineries) if b.get('id')
+            ]
+        },
+        "about": [{"@type": "Thing", "name": g} for g in top_grape_names] + ([{"@type": "Thing", "name": gi}] if gi else [])
+    }
+
     # FAQ JSON-LD
     faqs_data = [
         (f"{pref_name}にはワイナリーが何件ありますか？",
@@ -98,17 +173,13 @@ def generate_pref_page(pref_slug, wineries):
             f"{gi}とは何ですか？",
             f"{gi}は国税庁が認定した地理的表示（GI）で、{pref_name}産ぶどう100%使用のワインに付与されます。"
         ))
-    top_grapes = {}
-    for b in wineries:
-        for g in b.get('grapes',[]):
-            top_grapes[g] = top_grapes.get(g,0) + 1
     if top_grapes:
         main_grapes = '、'.join(sorted(top_grapes, key=lambda x:-top_grapes[x])[:3])
         faqs_data.append((
             f"{pref_name}の主なブドウ品種は何ですか？",
             f"{pref_name}では主に{main_grapes}などが栽培されています。"
         ))
-    visit_count = sum(1 for b in wineries if b.get('visit'))
+    visit_count = len(visit_wineries)
     if visit_count:
         faqs_data.append((
             f"{pref_name}のワイナリーは見学できますか？",
@@ -124,7 +195,7 @@ def generate_pref_page(pref_slug, wineries):
     }
 
     jsonld = json.dumps(
-        {"@context":"https://schema.org","@graph":[item_list, breadcrumb, faq_schema]},
+        {"@context":"https://schema.org","@graph":[collection_page, item_list, breadcrumb, faq_schema]},
         ensure_ascii=False, indent=2
     )
 
@@ -178,6 +249,116 @@ def generate_pref_page(pref_slug, wineries):
   </div>
 </section>'''
 
+    intent_cards = [
+        (
+            '見学で選ぶ',
+            f'{visit_count}件',
+            f'{pref_name}で見学・試飲・ショップ利用の導線があるワイナリー。',
+            '#visit-guide'
+        ),
+        (
+            '品種で選ぶ',
+            '、'.join(top_grape_names[:3]) if top_grape_names else '主要品種',
+            f'{pref_name}で多く使われる品種からワイナリーを探す。',
+            '#grape-guide'
+        ),
+        (
+            '代表銘柄で選ぶ',
+            f'{len(brand_wineries)}件',
+            '銘柄名が確認できるワイナリーから選ぶ。',
+            '#brand-guide'
+        ),
+        (
+            'エリアで選ぶ',
+            '、'.join(top_areas[:3]),
+            '市町村・産地エリアごとに比較する。',
+            '#area-guide'
+        ),
+    ]
+    if gi:
+        intent_cards.insert(2, (
+            'GIで選ぶ',
+            gi,
+            f'{gi}の地理的表示に関連するワイナリーを確認する。',
+            '#gi-guide'
+        ))
+
+    intent_cards_html = ''.join(f'''
+      <a href="{href}" style="display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;min-height:132px;">
+        <div style="font-size:11px;color:var(--accent);letter-spacing:0.14em;margin-bottom:10px;">{esc(title)}</div>
+        <div style="font-family:'Zen Old Mincho',serif;font-size:20px;color:var(--text);line-height:1.35;margin-bottom:8px;">{esc(metric)}</div>
+        <p style="font-size:12px;line-height:1.7;color:var(--text-muted);">{esc(body)}</p>
+      </a>''' for title, metric, body, href in intent_cards)
+
+    visit_links = ''.join(
+        f'<li><a href="/wine/{pref_slug}/{esc(b["id"])}.html">{esc(b.get("name",""))}</a><span>{esc(b.get("area",""))}</span></li>'
+        for b in visit_wineries[:8]
+    ) or '<li><span>公開情報で確認できる見学・試飲情報は限定的です。訪問前に公式情報をご確認ください。</span></li>'
+
+    grape_links = ''.join(
+        f'<li><span>{esc(g)}</span><span>{top_grapes[g]}件</span></li>'
+        for g in top_grape_names
+    )
+
+    brand_links = ''.join(
+        f'<li><a href="/wine/{pref_slug}/{esc(b["id"])}.html">{esc(b.get("name",""))}</a><span>{esc(brand_name((b.get("brands") or [""])[0]))}</span></li>'
+        for b in brand_wineries[:8]
+    )
+
+    area_links = ''.join(
+        f'<li><span>{esc(area)}</span><span>{area_counts[area]}件</span></li>'
+        for area in top_areas
+    )
+
+    gi_panel = ''
+    if gi:
+        gi_count = sum(1 for b in wineries if b.get('gi') == gi)
+        gi_panel = f'''
+      <div class="intent-panel" id="gi-guide">
+        <h3>{esc(gi)}で選ぶ</h3>
+          <p>{esc(pref_name)}はワインGI認定産地です。データ上は{gi_count}件が{esc(gi)}として掲載されています。</p>
+      </div>'''
+
+    hero_visual = ''
+    if pref_slug in PREF_VISUALS:
+        visual = PREF_VISUALS[pref_slug]
+        hero_visual = f'''
+<figure class="hero-visual" style="max-width:1100px;margin:24px auto 0;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--surface);">
+  <img src="{visual["src"]}" alt="{esc(visual["alt"])}" style="display:block;width:100%;aspect-ratio:16/8;object-fit:cover;">
+  <figcaption style="padding:12px 16px;font-size:12px;color:var(--text-muted);background:var(--surface-warm);border-top:1px solid var(--border);">{esc(visual["caption"])}</figcaption>
+</figure>'''
+
+    intent_section = f'''
+<section class="section" style="background:var(--surface-warm);padding:44px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">FIND BY PURPOSE</label>
+    <h2 class="sec-title">{esc(pref_name)}ワインの探し方</h2>
+    <div class="sec-divider"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:28px;">
+      {intent_cards_html}
+    </div>
+    <div class="intent-grid">
+      <div class="intent-panel" id="visit-guide">
+        <h3>見学・試飲で選ぶ</h3>
+        <ul>{visit_links}</ul>
+      </div>
+      <div class="intent-panel" id="grape-guide">
+        <h3>品種で選ぶ</h3>
+        <ul>{grape_links}</ul>
+      </div>
+      {gi_panel}
+      <div class="intent-panel" id="brand-guide">
+        <h3>代表銘柄で選ぶ</h3>
+        <ul>{brand_links}</ul>
+      </div>
+      <div class="intent-panel" id="area-guide">
+        <h3>エリアで選ぶ</h3>
+        <ul>{area_links}</ul>
+      </div>
+    </div>
+  </div>
+</section>'''
+
     # FAQ HTML
     faq_items_html = ''
     for i, (q, a) in enumerate(faqs_data):
@@ -211,6 +392,15 @@ def generate_pref_page(pref_slug, wineries):
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 {CSS}
+.intent-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}}
+.intent-panel{{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 16px;}}
+.intent-panel h3{{font-family:'Zen Old Mincho',serif;font-size:17px;color:var(--text);margin-bottom:10px;}}
+.intent-panel p{{font-size:13px;line-height:1.8;color:var(--text-muted);}}
+.intent-panel ul{{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}}
+.intent-panel li{{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(114,47,55,0.08);padding-bottom:8px;font-size:12px;color:var(--text-muted);}}
+.intent-panel li:last-child{{border-bottom:0;padding-bottom:0;}}
+.intent-panel a{{color:var(--text);text-decoration:none;}}
+.intent-panel a:hover{{color:var(--accent);}}
 </style>
 </head>
 <body>
@@ -245,6 +435,9 @@ def generate_pref_page(pref_slug, wineries):
     </div>
   </div>
 </section>
+{hero_visual}
+
+{intent_section}
 
 <section class="section" style="background:var(--bg);" id="winery-list">
   <div class="sec-inner">
@@ -303,7 +496,7 @@ for jf in json_files:
     out_dir = os.path.join(BASE, 'wine', pref)
     os.makedirs(out_dir, exist_ok=True)
 
-    html = generate_pref_page(pref, wineries)
+    html = '\n'.join(line.rstrip() for line in generate_pref_page(pref, wineries).splitlines()) + '\n'
     with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(html)
     total += 1

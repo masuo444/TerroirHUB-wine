@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html",
+      "name": "共栄堂（室伏ワイナリー） - 山梨県のワイナリー",
+      "description": "平成28年創業。山梨県山梨市牧丘町の小規模ワイナリー「共栄堂（室伏ワイナリー）」。「共に栄える」を理念に2016年創業。山梨市・甲州市の自社畑と県内6軒のぶどう農家から原料を調達。ワイン名を記号・数字の配列で表記するユニークなスタイルが特徴。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#winery",
       "name": "共栄堂（室伏ワイナリー）",
       "description": "「共に栄える」を理念に2016年創業。山梨市・甲州市の自社畑と県内6軒のぶどう農家から原料を調達。ワイン名を記号・数字の配列で表記するユニークなスタイルが特徴。アーティストとコラボしたエチケットを採用する、ワインとアートの融合を実践するワイナリー。",
       "url": "http://kyo-edo.main.jp/",
@@ -44,7 +61,29 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://kyo-edo.main.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "共栄堂（室伏ワイナリー）の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +107,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#wine-1",
+      "name": "共栄堂 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "共栄堂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#winery"
+      },
+      "description": "甲州種、記号名表記",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#wine-2",
+      "name": "共栄堂 マスカットベリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "共栄堂"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kyoeido-winery.html#winery"
+      },
+      "description": "マスカットベリーA",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -382,7 +451,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">共栄堂（室伏ワイナリー）</h1>
     <p class="hero-subtitle">共栄堂</p>
     <p class="hero-en">Since 2016 — 山梨市牧丘町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://kyo-edo.main.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>

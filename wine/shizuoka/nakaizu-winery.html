@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html",
+      "name": "中伊豆ワイナリーシャトーT.S - 静岡県のワイナリー",
+      "description": "1999年創業。静岡県伊豆市のエステートワイナリー「中伊豆ワイナリーシャトーT.S」。伊豆の丘陵地に広がる自社畑と醸造設備を備え、宿泊・レストランも併設する観光型エステートワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#winery",
       "name": "中伊豆ワイナリーシャトーT.S",
       "description": "伊豆の丘陵地に広がる自社畑と醸造設備を備え、宿泊・レストランも併設する観光型エステートワイナリー。",
       "url": "https://nakaizuwinery.com/",
@@ -52,7 +69,29 @@
         "メルロー",
         "プティ・ヴェルド",
         "ヤマソーヴィニヨン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nakaizuwinery.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "中伊豆ワイナリーシャトーT.Sの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +115,32 @@
           "item": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#wine-1",
+      "name": "伊豆シャルドネ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "中伊豆ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#wine-2",
+      "name": "信濃リースリング",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "中伊豆ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shizuoka/nakaizu-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -382,7 +447,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">中伊豆ワイナリーシャトーT.S</h1>
     <p class="hero-subtitle">中伊豆ワイナリー</p>
     <p class="hero-en">Since 1999 — 伊豆市, 静岡県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://nakaizuwinery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -482,21 +547,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">伊豆シャルドネ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">信濃リースリング</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -517,7 +582,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">静岡県 伊豆市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nakaizuwinery.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nakaizuwinery.com/</a></p>
   </div>
 </section>

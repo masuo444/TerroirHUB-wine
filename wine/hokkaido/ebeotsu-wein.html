@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html",
+      "name": "えべおつWein - 北海道のワイナリー",
+      "description": "令和元年創業。北海道滝川市のエステートワイナリー「えべおつWein」。滝川産ぶどうを使用したワイン。黒ブドウ2品種と白ブドウ5品種を栽培。2016年に1,000本の苗木を植え、2019年に初ビンテージ「Regenbogen（レーゲ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html#winery",
       "name": "えべおつWein",
       "description": "滝川産ぶどうを使用したワイン。黒ブドウ2品種と白ブドウ5品種を栽培。2016年に1,000本の苗木を植え、2019年に初ビンテージ「Regenbogen（レーゲンボーゲン）」を完成。",
-      "url": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html",
+      "url": "https://winecluster.org/contents/winery/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "北海道滝川市江部乙町東12-1454-39",
@@ -44,6 +61,38 @@
         "@type": "GeoCoordinates",
         "latitude": 43.65,
         "longitude": 141.9
+      },
+      "knowsAbout": [
+        "シャルドネ",
+        "ミュラー・トゥルガウ",
+        "ピノ・ブラン",
+        "ピノ・グリ",
+        "リースリング",
+        "ピノ・ノワール",
+        "ツヴァイゲルトレーベ"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://winecluster.org/contents/winery/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "えべおつWeinの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html#wine-1"
+            }
+          }
+        ]
       }
     },
     {
@@ -70,6 +119,21 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html#wine-1",
+      "name": "Regenbogen（レーゲンボーゲン）",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "えべおつWein"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/ebeotsu-wein.html#winery"
+      },
+      "description": "滝川産ぶどう7品種を使う白ワイン。",
+      "material": "シャルドネ、ミュラー・トゥルガウ、ピノ・ブラン、ピノ・グリ、リースリング、ピノ・ノワール、ツヴァイゲルトレーベ"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -85,7 +149,7 @@
           "name": "えべおつWeinの代表的なワインを教えてください",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "代表銘柄はRegenbogen（レーゲンボーゲン）などがあります。"
+            "text": "代表銘柄はRegenbogen（レーゲンボーゲン）などがあります。滝川産ぶどう7品種を使う白ワイン。"
           }
         },
         {
@@ -102,6 +166,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "えべおつWeinではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主にシャルドネ、ミュラー・トゥルガウ、ピノ・ブラン、ピノ・グリ、リースリング、ピノ・ノワール、ツヴァイゲルトレーベを使用しています。"
           }
         }
       ]
@@ -377,7 +449,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="gi-badge">GI北海道</div>
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://winecluster.org/contents/winery/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -444,6 +516,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">えべおつWeinが使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">シャルドネ</span><span class="grape-pill">ミュラー・トゥルガウ</span><span class="grape-pill">ピノ・ブラン</span><span class="grape-pill">ピノ・グリ</span><span class="grape-pill">リースリング</span><span class="grape-pill">ピノ・ノワール</span><span class="grape-pill">ツヴァイゲルトレーベ</span></div>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--surface-warm);padding:36px 24px;">
@@ -468,10 +549,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+      <div class="grape-tag">シャルドネ、ミュラー・トゥルガウ、ピノ・ブラン、ピノ・グリ、リースリング、ピノ・ノワール、ツヴァイゲルトレーベ</div>
       <h3 class="brand-name">Regenbogen（レーゲンボーゲン）</h3>
       <p class="brand-type">白ワイン</p>
-      
+      <p class="brand-desc">滝川産ぶどう7品種を使う白ワイン。</p>
     </div>
     </div>
   </div>
@@ -484,7 +565,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道滝川市江部乙町東12-1454-39</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道滝川市江部乙町東12-1454-39</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://winecluster.org/contents/winery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://winecluster.org/contents/winery/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業日・見学対応は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -518,7 +599,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-text">えべおつWeinの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">代表銘柄はRegenbogen（レーゲンボーゲン）などがあります。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はRegenbogen（レーゲンボーゲン）などがあります。滝川産ぶどう7品種を使う白ワイン。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
@@ -535,6 +616,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">えべおつWeinではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にシャルドネ、ミュラー・トゥルガウ、ピノ・ブラン、ピノ・グリ、リースリング、ピノ・ノワール、ツヴァイゲルトレーベを使用しています。</div>
     </div>
     </div>
   </div>

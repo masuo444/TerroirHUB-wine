@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html",
+      "name": "檜山酒造 常陸ワイン - 茨城県のワイナリー",
+      "description": "明治22年創業。茨城県常陸太田市のエステートワイナリー「檜山酒造 常陸ワイン」。明治創業の酒蔵が常陸太田の自社農園で山ぶどう交配品種を育て、個性ある常陸ワインを醸す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html#winery",
       "name": "檜山酒造 常陸ワイン",
       "description": "明治創業の酒蔵が常陸太田の自社農園で山ぶどう交配品種を育て、個性ある常陸ワインを醸す。",
       "url": "https://hiyama.hitachiota.jp/",
@@ -51,7 +68,23 @@
         "ワイングランド",
         "山ソーヴィニヨン",
         "巨峰"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://hiyama.hitachiota.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "檜山酒造 常陸ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +108,19 @@
           "item": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html#wine-1",
+      "name": "常陸ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "常陸ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/ibaraki/hiyama-shuzou-hitachi-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -381,7 +427,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">檜山酒造 常陸ワイン</h1>
     <p class="hero-subtitle">常陸ワイン</p>
     <p class="hero-en">Since 1889 — 常陸太田市, 茨城県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://hiyama.hitachiota.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -481,11 +527,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">常陸ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -506,7 +552,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">茨城県 常陸太田市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://hiyama.hitachiota.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://hiyama.hitachiota.jp/</a></p>
   </div>
 </section>

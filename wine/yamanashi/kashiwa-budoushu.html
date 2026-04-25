@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html",
+      "name": "柏和葡萄酒 - 山梨県のワイナリー",
+      "description": "昭和26年創業。山梨県甲州市勝沼町の小規模ワイナリー「柏和葡萄酒」。大善寺住職が近隣の檀家と造るユニークなワイナリー。境内の畑で住職自ら栽培したぶどうを使い、境内の醸造小屋で醸造。組合員が自園で作ったぶどうを持ち寄り、キロ数に応",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#winery",
       "name": "柏和葡萄酒",
       "description": "大善寺住職が近隣の檀家と造るユニークなワイナリー。境内の畑で住職自ら栽培したぶどうを使い、境内の醸造小屋で醸造。組合員が自園で作ったぶどうを持ち寄り、キロ数に応じて分配するシステムを採用。",
       "url": "http://daizenji.org/",
@@ -44,7 +61,36 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/2689/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "柏和葡萄酒の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +114,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#wine-1",
+      "name": "柏和 白",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "柏和"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#winery"
+      },
+      "description": "甲州種、少量生産",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#wine-2",
+      "name": "柏和 赤",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "柏和"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/kashiwa-budoushu.html#winery"
+      },
+      "description": "マスカットベリーA、少量生産",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",

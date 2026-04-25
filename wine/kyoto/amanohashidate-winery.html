@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html",
+      "name": "天橋立ワイナリー - 京都府のワイナリー",
+      "description": "平成12年創業。京都府宮津市の日本ワイナリー「天橋立ワイナリー」。天橋立を望むロケーションで、京都・丹後のぶどうを中心に醸造する観光型ワイナリー。地元食材と合わせやすいやわらかな味わいを目指す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#winery",
       "name": "天橋立ワイナリー",
       "description": "天橋立を望むロケーションで、京都・丹後のぶどうを中心に醸造する観光型ワイナリー。地元食材と合わせやすいやわらかな味わいを目指す。",
       "url": "http://www.amanohashidate.org/wein/",
@@ -51,7 +68,29 @@
         "メルロー",
         "マスカット・ベーリーA",
         "セイベル"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/16260010261/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "天橋立ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +114,35 @@
           "item": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#wine-1",
+      "name": "天橋立ワイン",
+      "category": "赤・白・ロゼ",
+      "brand": {
+        "@type": "Brand",
+        "name": "天橋立ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#winery"
+      },
+      "description": "京都北部産ぶどうを生かした主力シリーズ。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#wine-2",
+      "name": "丹後セイベル",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "天橋立ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kyoto/amanohashidate-winery.html#winery"
+      },
+      "description": "丹後の冷涼さを生かしたやや辛口白。",
+      "material": "セイベル"
     },
     {
       "@type": "FAQPage",
@@ -389,7 +457,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">天橋立ワイナリー</h1>
     <p class="hero-subtitle">天橋立ワイン</p>
     <p class="hero-en">Since 2000 — 宮津市, 京都府</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.amanohashidate.org/wein/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -490,7 +558,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・ロゼ</div>
-      
+
       <h3 class="brand-name">天橋立ワイン</h3>
       <p class="brand-type">赤・白・ロゼ</p>
       <p class="brand-desc">京都北部産ぶどうを生かした主力シリーズ。</p>
@@ -524,7 +592,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">京都府 宮津市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/16260010261/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/16260010261/</a></p>
   </div>
 </section>

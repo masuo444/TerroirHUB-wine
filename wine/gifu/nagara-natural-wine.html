@@ -24,14 +24,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html",
+      "name": "長良天然ワイン醸造 - 岐阜県のワイナリー",
+      "description": "昭和初期創業。岐阜県岐阜市のエステートワイナリー「長良天然ワイン醸造」。岐阜市長良で昭和初期から続く家族経営の自然派ワイン醸造所。天然酵母・酸化防止剤無添加を基本に、やさしい味わいのワインを造る。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#winery",
       "name": "長良天然ワイン醸造",
       "description": "岐阜市長良で昭和初期から続く家族経営の自然派ワイン醸造所。天然酵母・酸化防止剤無添加を基本に、やさしい味わいのワインを造る。",
-      "url": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html",
+      "url": "https://nihonwine.jp/winery_intro/nagarawinery/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "岐阜県岐阜市長良志段見106",
@@ -49,7 +66,29 @@
       "knowsAbout": [
         "マスカット・ベーリーA",
         "デラウェア"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nihonwine.jp/winery_intro/nagarawinery/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "長良天然ワイン醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +112,34 @@
           "item": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#wine-1",
+      "name": "Le Bois",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Le Bois（長良ワイン）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#winery"
+      },
+      "description": "自然派スタイルの主力ブランド。"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#wine-2",
+      "name": "NAGARAワイン",
+      "category": "赤・白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "Le Bois（長良ワイン）"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/gifu/nagara-natural-wine.html#winery"
+      },
+      "description": "地元で親しまれる定番シリーズ。"
     },
     {
       "@type": "FAQPage",
@@ -387,10 +454,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">長良天然ワイン醸造</h1>
     <p class="hero-subtitle">Le Bois（長良ワイン）</p>
     <p class="hero-en">Since 1930 — 岐阜市, 岐阜県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
-      
+      <a class="btn-s" href="https://nihonwine.jp/winery_intro/nagarawinery/" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -488,7 +555,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">Le Bois</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">自然派スタイルの主力ブランド。</p>
@@ -498,7 +565,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白ワイン</div>
-      
+
       <h3 class="brand-name">NAGARAワイン</h3>
       <p class="brand-type">赤・白ワイン</p>
       <p class="brand-desc">地元で親しまれる定番シリーズ。</p>
@@ -514,7 +581,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">岐阜県岐阜市長良志段見106</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">058-232-4750</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業状況は事前確認推奨。</div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">岐阜県岐阜市長良志段見106</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">058-232-4750</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://nihonwine.jp/winery_intro/nagarawinery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nihonwine.jp/winery_intro/nagarawinery/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">営業状況は事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -522,7 +589,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">岐阜県 岐阜市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nihonwine.jp/winery_intro/nagarawinery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nihonwine.jp/winery_intro/nagarawinery/</a></p>
   </div>
 </section>

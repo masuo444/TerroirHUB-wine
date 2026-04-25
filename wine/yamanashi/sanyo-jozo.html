@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html",
+      "name": "三養醸造 - 山梨県のワイナリー",
+      "description": "昭和8年創業。山梨県山梨市牧丘町の小規模ワイナリー「三養醸造」。1933年創業の山梨市牧丘町のファミリーワイナリー。4代目山田啓二が代表。フィールドブレンド（混植同時収穫・醸造）を特徴的な製法として採用。除草剤・ボルドー液不",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#winery",
       "name": "三養醸造",
       "description": "1933年創業の山梨市牧丘町のファミリーワイナリー。4代目山田啓二が代表。フィールドブレンド（混植同時収穫・醸造）を特徴的な製法として採用。除草剤・ボルドー液不使用で自社圃場約1.2haを管理。",
       "url": "https://sanyowine.com",
@@ -40,7 +57,40 @@
         "addressCountry": "JP"
       },
       "foundingDate": "1933",
-      "telephone": "0553-35-2108"
+      "telephone": "0553-35-2108",
+      "knowsAbout": [
+        "甲州",
+        "デラウェア",
+        "フィールドブレンド"
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://sanyowine.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "三養醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -64,6 +114,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#wine-1",
+      "name": "mii 甲州ペティヤン",
+      "category": "スパークリングワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "三養ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#winery"
+      },
+      "description": "甲州100%、酸化防止剤無添加・無濾過・微発泡",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#wine-2",
+      "name": "Field Blend mäkioka",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "三養ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#winery"
+      },
+      "description": "複数品種の混植同時収穫・共発酵",
+      "material": "複数品種フィールドブレンド"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#wine-3",
+      "name": "デラウェア",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "三養ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/sanyo-jozo.html#winery"
+      },
+      "description": "デラウェア100%、無添加",
+      "material": "デラウェア"
     },
     {
       "@type": "FAQPage",
@@ -98,6 +193,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "昭和8年（1933年）に創業しました。山梨県を代表するワイナリーのひとつです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "三養醸造ではどのようなブドウ品種を使っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主に甲州、デラウェア、フィールドブレンドを使用しています。"
           }
         }
       ]
@@ -370,7 +473,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">三養醸造</h1>
     <p class="hero-subtitle">三養ワイン</p>
     <p class="hero-en">Since 1933 — 山梨市牧丘町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://sanyowine.com" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -447,6 +550,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
 </section>
 
 
+<section class="section" style="background:var(--bg);padding:48px 24px;">
+  <div class="sec-inner">
+    <label class="sec-label">GRAPE VARIETIES</label>
+    <h2 class="sec-title">使用品種</h2>
+    <div class="sec-divider"></div>
+    <p class="sec-body" style="font-size:14px;margin-bottom:4px;">三養醸造が使用する主なブドウ品種</p>
+    <div class="grape-pills"><span class="grape-pill main">甲州</span><span class="grape-pill">デラウェア</span><span class="grape-pill">フィールドブレンド</span></div>
+  </div>
+</section>
 
 
 
@@ -506,7 +618,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 山梨市牧丘町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://sanyowine.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://sanyowine.com</a></p>
   </div>
 </section>
@@ -549,6 +661,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
       <div class="faq-a" id="faq-a-3">昭和8年（1933年）に創業しました。山梨県を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">三養醸造ではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主に甲州、デラウェア、フィールドブレンドを使用しています。</div>
     </div>
     </div>
   </div>

@@ -99,8 +99,8 @@
     "company": "農事組合法人アグリ平泉",
     "brand": "",
     "winery_type": "estate",
-    "founded": "",
-    "founded_era": "",
+    "founded": "2017",
+    "founded_era": "平成29年",
     "address": "岩手県西磐井郡平泉町長島字砂子沢172-6",
     "tel": "0191-48-4360",
     "url": "https://agri-hiraizumi.com",
@@ -118,7 +118,7 @@
     ],
     "features": ["地元農家による運営", "手造りナチュラルワイン", "有機肥料・農薬最小限", "世界遺産平泉近隣"],
     "nearest_station": "",
-    "source": "https://www.winery.or.jp/winery-map/9955/",
+    "source": "https://japancellar.com/breweries/214",
     "lat": 38.9878,
     "lng": 141.1078,
     "name_en": "Hiraizumi Winery"
@@ -193,7 +193,7 @@
     "url": "https://tonomagokoro.net/",
     "area": "遠野市",
     "desc": "東日本大震災の被災地活性化・被災者や障がい者の雇用創出を目的にNPO法人遠野まごころネットが創設。障がい者就農によるぶどう栽培やハーブ栽培を行い、地域活性化を担う社会事業モデルとして運営。遠野市綾織町・寒風地区と釜石市甲子町の2つの自社農園で11種類の醸造用ブドウを栽培。",
-    "visit": "",
+    "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
     "wine_style": "mixed",
     "main_grape": "pinotnoir",
     "gi": "",
@@ -217,8 +217,8 @@
     "company": "",
     "brand": "わんだ",
     "winery_type": "estate",
-    "founded": "",
-    "founded_era": "",
+    "founded": "2015",
+    "founded_era": "平成27年",
     "address": "岩手県花巻市大迫町亀ヶ森19-7-1",
     "tel": "090-2873-6939",
     "url": "http://www.kamegamori.com/",
@@ -228,7 +228,10 @@
     "wine_style": "mixed",
     "main_grape": "yamabudou",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "山ぶどう",
+      "りんご"
+    ],
     "brands": [
       {"name": "わんだ", "type": "赤・白ワイン", "specs": "", "grapes": ""},
       {"name": "亀ヶ森ヌーヴォー", "type": "赤ワイン", "specs": "", "grapes": ""}
@@ -286,7 +289,10 @@
     "wine_style": "mixed",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "シャルドネ",
+      "りんご"
+    ],
     "brands": [
       {"name": "ロゼッタ・スパークル", "type": "スパークリングワイン", "specs": "", "grapes": ""},
       {"name": "ポム・シュクレ", "type": "シードル", "specs": "", "grapes": "りんご"}
@@ -404,7 +410,10 @@
     "wine_style": "mixed",
     "main_grape": "apple",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "りんご",
+      "ぶどう"
+    ],
     "brands": [
       {"name": "もんのすけシードル", "type": "シードル（瓶内二次発酵）", "specs": "", "grapes": "りんご"}
     ],
@@ -456,11 +465,15 @@
     "url": "https://www.iwa-kan.com/",
     "area": "岩手町",
     "desc": "岩手缶詰株式会社が1987年に岩手町工場敷地内にワイン工場を新設し果実酒類製造免許を取得。翌1988年に「シュプールワイン」を新発売。岩手の総合食品メーカーによるワイン製造事業。",
-    "visit": "",
+    "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
     "wine_style": "mixed",
     "main_grape": "yamabudou",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "山ぶどう",
+      "キャンベル",
+      "ナイアガラ"
+    ],
     "brands": [
       {"name": "十二夜ワイン", "type": "赤・白ワイン", "specs": "", "grapes": ""}
     ],

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html",
+      "name": "サントネージュワイン - 山梨県のワイナリー",
+      "description": "昭和17年創業。山梨県山梨市の大規模ワイナリー「サントネージュワイン」。サントネージュとは、フランス語で『聖なる雪』を意味します。日本の最高峰である富士山の頂きにかかる雪が名前の由来です。その気高く清廉な名に恥じぬようクオリティの高",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#winery",
       "name": "サントネージュワイン",
       "description": "サントネージュとは、フランス語で『聖なる雪』を意味します。日本の最高峰である富士山の頂きにかかる雪が名前の由来です。その気高く清廉な名に恥じぬようクオリティの高いワインを追求しています。よいワインはよいぶどうから。",
       "url": "https://www.sainteneige.co.jp/",
@@ -51,7 +68,36 @@
         "カベルネ・ソーヴィニヨン",
         "甲州",
         "巨峰"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.sainteneige.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "サントネージュワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +121,34 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#wine-1",
+      "name": "サントネージュ 恋紅",
+      "category": "赤ワイン（オリジナル品種）",
+      "brand": {
+        "@type": "Brand",
+        "name": "サントネージュ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#winery"
+      },
+      "material": "恋紅"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#wine-2",
+      "name": "サントネージュ シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サントネージュ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/sainte-neige.html#winery"
+      },
+      "material": "シャルドネ"
     },
     {
       "@type": "FAQPage",
@@ -502,7 +576,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">恋紅</div>
       <h3 class="brand-name">サントネージュ 恋紅</h3>
       <p class="brand-type">赤ワイン（オリジナル品種）</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -512,7 +586,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">サントネージュ シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

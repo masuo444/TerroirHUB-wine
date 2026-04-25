@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html",
+      "name": "岡山ワインバレー - 岡山県のワイナリー",
+      "description": "平成30年創業。岡山県新見市哲多町の日本ワイナリー「岡山ワインバレー」。新見市哲多町の保育所跡地をリノベーションして開設した小規模ワイナリー。栽培から醸造まで一貫し、ぶどうの繊細な風味を生かす。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html",
+      "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#winery",
       "name": "岡山ワインバレー",
       "description": "新見市哲多町の保育所跡地をリノベーションして開設した小規模ワイナリー。栽培から醸造まで一貫し、ぶどうの繊細な風味を生かす。",
       "url": "https://okayamawine.jp/",
@@ -50,7 +67,29 @@
         "シャルドネ",
         "サンジョヴェーゼ",
         "ネッビオーロ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://okayamawine.jp/winery/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "岡山ワインバレーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +113,36 @@
           "item": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#wine-1",
+      "name": "HAKUBI",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "HAKUBI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#winery"
+      },
+      "description": "自社醸造のシャルドネ。",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#wine-2",
+      "name": "QAUGURA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "HAKUBI"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/okayama/okayama-wine-valley.html#winery"
+      },
+      "description": "哲多町産ぶどうを用いた赤。",
+      "material": "サンジョヴェーゼ、ネッビオーロ"
     },
     {
       "@type": "FAQPage",
@@ -388,7 +457,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">岡山ワインバレー</h1>
     <p class="hero-subtitle">HAKUBI</p>
     <p class="hero-en">Since 2018 — 新見市哲多町, 岡山県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://okayamawine.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -523,7 +592,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">岡山県 新見市哲多町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://okayamawine.jp/winery/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://okayamawine.jp/winery/</a></p>
   </div>
 </section>

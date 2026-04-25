@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html",
+      "name": "ドメーヌ・ド・ユノハラ - 長野県のワイナリー",
+      "description": "令和5年創業。長野県松本市（里山辺）のエステートワイナリー「ドメーヌ・ド・ユノハラ」。1964年創業の松本市美ヶ原温泉・追分屋旅館が2023年8月に開設したワイナリー。「ぶどう畑のある情景を復活させて残したい」という思いから誕生。信州ぶどう栽培発",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#winery",
       "name": "ドメーヌ・ド・ユノハラ",
       "description": "1964年創業の松本市美ヶ原温泉・追分屋旅館が2023年8月に開設したワイナリー。「ぶどう畑のある情景を復活させて残したい」という思いから誕生。信州ぶどう栽培発祥の地・松本里山辺で、老舗旅館と一体となったユニークな施設。",
       "url": "https://shop.oiwakeya.com/",
@@ -50,7 +67,36 @@
         "ピノ・ノワール",
         "デラウエア",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/special/winery/vol93.html"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌ・ド・ユノハラの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +120,34 @@
           "item": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#wine-1",
+      "name": "ドメーヌ・ド・ユノハラ シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ・ド・ユノハラ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#winery"
+      },
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#wine-2",
+      "name": "ドメーヌ・ド・ユノハラ シードル",
+      "category": "シードル",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌ・ド・ユノハラ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/domaine-de-yunohara.html#winery"
+      },
+      "description": "長野県産りんご使用"
     },
     {
       "@type": "FAQPage",
@@ -501,14 +575,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">ドメーヌ・ド・ユノハラ シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">シードル</div>
-      
+
       <h3 class="brand-name">ドメーヌ・ド・ユノハラ シードル</h3>
       <p class="brand-type">シードル</p>
       <p class="brand-desc">長野県産りんご使用</p>

@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html",
+      "name": "北条ワイン醸造所 - 鳥取県のワイナリー",
+      "description": "昭和19年創業。鳥取県東伯郡北栄町の日本ワイナリー「北条ワイン醸造所」。鳥取砂丘に近い北条砂丘地のぶどうを生かして1944年から続く老舗ワイナリー。地元テロワールを反映したワイン造りを続ける。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html",
+      "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#winery",
       "name": "北条ワイン醸造所",
       "description": "鳥取砂丘に近い北条砂丘地のぶどうを生かして1944年から続く老舗ワイナリー。地元テロワールを反映したワイン造りを続ける。",
       "url": "http://www.hojyowine.jp/",
@@ -51,7 +68,29 @@
         "甲州",
         "マスカット・ベーリーA",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/17310010275/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "北条ワイン醸造所の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +114,32 @@
           "item": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#wine-1",
+      "name": "北条ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "北条ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#wine-2",
+      "name": "砂丘",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "北条ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tottori/hojo-wine-jozo.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -381,7 +446,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">北条ワイン醸造所</h1>
     <p class="hero-subtitle">北条ワイン</p>
     <p class="hero-en">Since 1944 — 東伯郡北栄町, 鳥取県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.hojyowine.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -481,21 +546,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">北条ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">砂丘</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -516,7 +581,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">鳥取県 東伯郡北栄町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/17310010275/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/17310010275/</a></p>
   </div>
 </section>

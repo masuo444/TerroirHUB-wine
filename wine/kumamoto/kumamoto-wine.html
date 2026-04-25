@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html",
+      "name": "熊本ワイン - 熊本県のワイナリー",
+      "description": "平成11年創業。熊本県熊本市北区の日本ワイナリー「熊本ワイン」。熊本県産ぶどうにこだわり、菊鹿や熊本県内各地の契約農家と連携してテロワールを映すワインを造る県内中核ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html#winery",
       "name": "熊本ワイン",
       "description": "熊本県産ぶどうにこだわり、菊鹿や熊本県内各地の契約農家と連携してテロワールを映すワインを造る県内中核ワイナリー。",
       "url": "https://www.kumamotowine.co.jp/",
@@ -49,7 +66,23 @@
       "knowsAbout": [
         "シャルドネ",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/19430010294/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "熊本ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +106,19 @@
           "item": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html#wine-1",
+      "name": "菊鹿",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "菊鹿"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/kumamoto/kumamoto-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -379,7 +425,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">熊本ワイン</h1>
     <p class="hero-subtitle">菊鹿</p>
     <p class="hero-en">Since 1999 — 熊本市北区, 熊本県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.kumamotowine.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -472,11 +518,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">菊鹿</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -497,7 +543,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">熊本県 熊本市北区</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/19430010294/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/19430010294/</a></p>
   </div>
 </section>

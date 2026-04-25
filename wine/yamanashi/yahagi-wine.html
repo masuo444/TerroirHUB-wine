@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html",
+      "name": "矢作洋酒 - 山梨県のワイナリー",
+      "description": "大正3年創業。山梨県笛吹市一宮町の小規模ワイナリー「矢作洋酒」。笛吹市一宮町矢作地区の無添加ワイン専門醸造所。除草剤を使わずに根を強くすることから始め、有機質肥料で抵抗力のある果樹を育てることで農薬を極力抑えた原料ぶどうを栽",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#winery",
       "name": "矢作洋酒",
       "description": "笛吹市一宮町矢作地区の無添加ワイン専門醸造所。除草剤を使わずに根を強くすることから始め、有機質肥料で抵抗力のある果樹を育てることで農薬を極力抑えた原料ぶどうを栽培。自然の力を引き出した素直なワインを造り続けている。",
       "url": "http://www.yahagi-wine.co.jp/",
@@ -44,7 +61,29 @@
       "knowsAbout": [
         "甲州",
         "マスカットベリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.yahagi-wine.co.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "矢作洋酒の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +107,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#wine-1",
+      "name": "矢作ワイン 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "矢作ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#winery"
+      },
+      "description": "甲州種、無添加",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#wine-2",
+      "name": "矢作ワイン マスカットベリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "矢作ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/yahagi-wine.html#winery"
+      },
+      "description": "マスカットベリーA、無添加",
+      "material": "マスカットベリーA"
     },
     {
       "@type": "FAQPage",
@@ -382,7 +451,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">矢作洋酒</h1>
     <p class="hero-subtitle">矢作ワイン</p>
     <p class="hero-en">Since 1914 — 笛吹市一宮町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.yahagi-wine.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>

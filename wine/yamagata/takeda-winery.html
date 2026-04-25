@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html",
+      "name": "タケダワイナリー - 山形県のワイナリー",
+      "description": "大正9年創業。山形県上山市のエステートワイナリー「タケダワイナリー」。樹氷美しき蔵王連峰の麓にあるタケダワイナリーは、1920年開園以来、『良いワインは良いぶどうから』という理念のもと、土造りから始めたぶどう栽培、ワイン醸造を続け",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#winery",
       "name": "タケダワイナリー",
       "description": "樹氷美しき蔵王連峰の麓にあるタケダワイナリーは、1920年開園以来、『良いワインは良いぶどうから』という理念のもと、土造りから始めたぶどう栽培、ワイン醸造を続けております。",
       "url": "http://www.takeda-wine.co.jp/",
@@ -50,7 +67,54 @@
         "デラウェア",
         "マスカット・ベーリーA",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://giyamagata-wine.jp/maker/takeda/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山形"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "タケダワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +138,71 @@
           "item": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-1",
+      "name": "サン・スフル",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サン・スフル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-2",
+      "name": "ルージュ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サン・スフル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-3",
+      "name": "ブラン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サン・スフル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-4",
+      "name": "ブラン・ド・ノワール",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サン・スフル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#wine-5",
+      "name": "クリオエクストラクシオン",
+      "category": "貴腐ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "サン・スフル"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamagata/takeda-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -498,30 +627,30 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+
       <h3 class="brand-name">サン・スフル</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">赤ワイン</div>
-      
+
       <h3 class="brand-name">ルージュ</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+
       <h3 class="brand-name">ブラン</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

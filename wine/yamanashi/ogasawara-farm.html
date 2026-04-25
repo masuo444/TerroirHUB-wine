@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html",
+      "name": "小笠原ファーム - 山梨県のワイナリー",
+      "description": "令和4年創業。山梨県北杜市高根町の小規模ワイナリー「小笠原ファーム」。2015年から農業法人として営農を開始し、2022年にワイナリーを開設。八ヶ岳の農園で育てた西洋梨を使ったポワレ（西洋梨ワイン）を主力に、ぶどうワインも製造。西",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#winery",
       "name": "小笠原ファーム",
       "description": "2015年から農業法人として営農を開始し、2022年にワイナリーを開設。八ヶ岳の農園で育てた西洋梨を使ったポワレ（西洋梨ワイン）を主力に、ぶどうワインも製造。西洋梨100%ワインという国内希少なアイテムで注目を集める。",
       "url": "https://shop.ogasawara-farm.com/",
@@ -43,7 +60,29 @@
       "knowsAbout": [
         "甲州",
         "西洋梨"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://shop.ogasawara-farm.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "小笠原ファームの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -67,6 +106,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#wine-1",
+      "name": "小笠原ファーム 西洋梨ポワレ",
+      "category": "果実酒",
+      "brand": {
+        "@type": "Brand",
+        "name": "小笠原ファーム"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#winery"
+      },
+      "description": "西洋梨100%、国内希少スタイル",
+      "material": "西洋梨"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#wine-2",
+      "name": "小笠原ファーム 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "小笠原ファーム"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/ogasawara-farm.html#winery"
+      },
+      "description": "甲州種",
+      "material": "甲州"
     },
     {
       "@type": "FAQPage",
@@ -381,7 +450,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">小笠原ファーム</h1>
     <p class="hero-subtitle">小笠原ファーム</p>
     <p class="hero-en">Since 2022 — 北杜市高根町, 山梨県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://shop.ogasawara-farm.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>

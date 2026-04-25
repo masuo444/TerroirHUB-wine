@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html",
+      "name": "株式会社はこだてわいん - 北海道のワイナリー",
+      "description": "昭和48年創業。北海道七飯町の日本ワイナリー「株式会社はこだてわいん」。葡萄からつくる本格的なワインはもちろんのこと、大地の恵みである様々な果物を原料としたフルーツワインを造ってきた企業。北海道を拠点に日本人の味覚に合う「日本のワイ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html#winery",
       "name": "株式会社はこだてわいん",
       "description": "葡萄からつくる本格的なワインはもちろんのこと、大地の恵みである様々な果物を原料としたフルーツワインを造ってきた企業。北海道を拠点に日本人の味覚に合う「日本のワイン」を目指しています。",
       "url": "https://www.hakodatewine.co.jp/",
@@ -51,7 +68,30 @@
         "メルロー",
         "ピノ・ノワール",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.hakodatewine.co.jp/company/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "株式会社はこだてわいんの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +115,19 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html#wine-1",
+      "name": "北海道100 シリーズ",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "はこだてわいん"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/hakodate-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -499,10 +552,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白</div>
-      
+
       <h3 class="brand-name">北海道100 シリーズ</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     </div>
   </div>

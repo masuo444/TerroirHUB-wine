@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html",
+      "name": "島根ワイナリー - 島根県のワイナリー",
+      "description": "昭和34年創業。島根県出雲市大社町の日本ワイナリー「島根ワイナリー」。出雲大社近くの観光型ワイナリー。島根ぶどうから造る島根わいんの製造と、工場見学・試飲・食の発信を担う拠点施設。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html#winery",
       "name": "島根ワイナリー",
       "description": "出雲大社近くの観光型ワイナリー。島根ぶどうから造る島根わいんの製造と、工場見学・試飲・食の発信を担う拠点施設。",
       "url": "https://www.shimane-winery.jp/",
@@ -50,7 +67,23 @@
         "デラウェア",
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.shimane-winery.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "島根ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +107,20 @@
           "item": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html#wine-1",
+      "name": "島根わいん",
+      "category": "白・赤・ロゼ・甘味果実酒",
+      "brand": {
+        "@type": "Brand",
+        "name": "島根わいん"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shimane/shimane-winery.html#winery"
+      },
+      "description": "島根ぶどうの果実味を生かした基幹ブランド。"
     },
     {
       "@type": "FAQPage",
@@ -388,7 +435,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">島根ワイナリー</h1>
     <p class="hero-subtitle">島根わいん</p>
     <p class="hero-en">Since 1959 — 出雲市大社町, 島根県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.shimane-winery.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -489,7 +536,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白・赤・ロゼ・甘味果実酒</div>
-      
+
       <h3 class="brand-name">島根わいん</h3>
       <p class="brand-type">白・赤・ロゼ・甘味果実酒</p>
       <p class="brand-desc">島根ぶどうの果実味を生かした基幹ブランド。</p>
@@ -513,7 +560,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">島根県 出雲市大社町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.shimane-winery.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.shimane-winery.jp/</a></p>
   </div>
 </section>

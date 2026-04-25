@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/niigata/fermier.html",
+      "name": "フェルミエ - 新潟県のワイナリー",
+      "description": "平成18年創業。新潟県新潟市西蒲区（越前浜）の小規模ワイナリー「フェルミエ」。越前浜で海風と砂地の個性を生かし、アルバリーニョなどで新潟らしい清涼感あるワインを追求する小規模ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html",
+      "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#winery",
       "name": "フェルミエ",
       "description": "越前浜で海風と砂地の個性を生かし、アルバリーニョなどで新潟らしい清涼感あるワインを追求する小規模ワイナリー。",
       "url": "https://fermier.jp/",
@@ -48,7 +65,29 @@
       },
       "knowsAbout": [
         "アルバリーニョ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://fermier.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "フェルミエの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +111,32 @@
           "item": "https://wine.terroirhub.com/wine/niigata/fermier.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#wine-1",
+      "name": "アルバリーニョ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "FERMIER"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#wine-2",
+      "name": "ケルナー",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "FERMIER"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/niigata/fermier.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -378,7 +443,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">フェルミエ</h1>
     <p class="hero-subtitle">FERMIER</p>
     <p class="hero-en">Since 2006 — 新潟市西蒲区（越前浜）, 新潟県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://fermier.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -478,21 +543,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">アルバリーニョ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">ケルナー</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -513,7 +578,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">新潟県 新潟市西蒲区（越前浜）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://fermier.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://fermier.jp/</a></p>
   </div>
 </section>

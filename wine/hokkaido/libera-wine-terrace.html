@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html",
+      "name": "LIBERA WINE TERRACE - 北海道のワイナリー",
+      "description": "令和6年創業。北海道札幌市の小規模ワイナリー「LIBERA WINE TERRACE」。「札幌植物園前醸造 北海道自然栽培農学校」として知られる都市型ワイナリー。木村式自然栽培で農薬・化学肥料・除草剤を使用せずに葡萄を育成。AI技術を活用した栽培・",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html#winery",
       "name": "LIBERA WINE TERRACE",
       "description": "「札幌植物園前醸造 北海道自然栽培農学校」として知られる都市型ワイナリー。木村式自然栽培で農薬・化学肥料・除草剤を使用せずに葡萄を育成。AI技術を活用した栽培・醸造管理で障がい者が安全に働ける環境を構築し、売上の80%が障がい者雇用や自然環境改善に還元される社会的事業モデル。",
       "url": "https://libera-wine.jp/",
@@ -48,7 +65,30 @@
       "knowsAbout": [
         "ツヴァイゲルトレーベ",
         "ナイアガラ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://libera-wine.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "LIBERA WINE TERRACEの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +112,19 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html#wine-1",
+      "name": "MILO",
+      "category": "赤・白・シードル",
+      "brand": {
+        "@type": "Brand",
+        "name": "MILO"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/libera-wine-terrace.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -496,10 +549,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白・シードル</div>
-      
+
       <h3 class="brand-name">MILO</h3>
       <p class="brand-type">赤・白・シードル</p>
-      
+
     </div>
     </div>
   </div>

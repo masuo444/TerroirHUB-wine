@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html",
+      "name": "富士山ワイナリー - 静岡県のワイナリー",
+      "description": "平成19年創業。静岡県富士宮市（朝霧高原）のエステートワイナリー「富士山ワイナリー」。朝霧高原の標高約900mに広がる畑で、富士山麓の冷涼な気候を生かした欧州系品種中心のワインを造るエステート。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#winery",
       "name": "富士山ワイナリー",
       "description": "朝霧高原の標高約900mに広がる畑で、富士山麓の冷涼な気候を生かした欧州系品種中心のワインを造るエステート。",
       "url": "https://www.fujisanwinery.co.jp/",
@@ -47,7 +64,29 @@
       },
       "knowsAbout": [
         "甲州"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.fujisanwinery.co.jp/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "富士山ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -71,6 +110,32 @@
           "item": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#wine-1",
+      "name": "富士山シャルドネ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "富士山ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#wine-2",
+      "name": "富士の夢",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "富士山ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/shizuoka/fujisan-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -377,7 +442,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">富士山ワイナリー</h1>
     <p class="hero-subtitle">富士山ワイナリー</p>
     <p class="hero-en">Since 2007 — 富士宮市（朝霧高原）, 静岡県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://www.fujisanwinery.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -477,21 +542,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">富士山シャルドネ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">富士の夢</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -512,7 +577,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">静岡県 富士宮市（朝霧高原）</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.fujisanwinery.co.jp/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.fujisanwinery.co.jp/</a></p>
   </div>
 </section>

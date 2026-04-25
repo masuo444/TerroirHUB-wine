@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html",
+      "name": "新巻葡萄酒 - 山梨県のワイナリー",
+      "description": "昭和5年創業。山梨県笛吹市・一宮町のエステートワイナリー「新巻葡萄酒」。昭和5年創業、情熱と伝統を90年以上受け継ぐワイナリー。自社栽培のぶどうのみを使用し、自然との共鳴をコンセプトに山梨の山々に囲まれた恵まれた環境で醸造を続けてい",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#winery",
       "name": "新巻葡萄酒",
       "description": "昭和5年創業、情熱と伝統を90年以上受け継ぐワイナリー。自社栽培のぶどうのみを使用し、自然との共鳴をコンセプトに山梨の山々に囲まれた恵まれた環境で醸造を続けています。",
       "url": "https://aramakiwinery.jp/",
@@ -51,7 +68,42 @@
         "甲州",
         "マスカット・ベーリーA",
         "シラー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://aramakiwinery.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "新巻葡萄酒の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,6 +127,48 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#wine-1",
+      "name": "新巻 甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "新巻葡萄酒"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#wine-2",
+      "name": "新巻 マスカット・ベーリーA",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "新巻葡萄酒"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#winery"
+      },
+      "material": "マスカット・ベーリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#wine-3",
+      "name": "新巻 デラウェア",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "新巻葡萄酒"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/aramaki-winery.html#winery"
+      },
+      "material": "デラウェア"
     },
     {
       "@type": "FAQPage",
@@ -502,7 +596,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">新巻 甲州</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -512,7 +606,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">マスカット・ベーリーA</div>
       <h3 class="brand-name">新巻 マスカット・ベーリーA</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -522,7 +616,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">デラウェア</div>
       <h3 class="brand-name">新巻 デラウェア</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>

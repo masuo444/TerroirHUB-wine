@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html",
+      "name": "奥野田葡萄酒醸造 - 山梨県のワイナリー",
+      "description": "昭和37年創業。山梨県甲州市塩山の小規模ワイナリー「奥野田葡萄酒醸造」。1962年に地元農家の共同醸造場として設立。1989年に現オーナー（中村雅量）が受け継ぎ現在の形に。1.5haの自社農園でシャルドネ・メルロー・カベルネを栽培。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#winery",
       "name": "奥野田葡萄酒醸造",
       "description": "1962年に地元農家の共同醸造場として設立。1989年に現オーナー（中村雅量）が受け継ぎ現在の形に。1.5haの自社農園でシャルドネ・メルロー・カベルネを栽培。日本初のバキューム式搾汁機を導入し酸化を防止。170名以上のヴィンヤードクラブ会員と農作業・テイスティングを共有。",
       "url": "http://www.okunota.com/",
@@ -46,7 +63,42 @@
         "甲州",
         "メルロー",
         "カベルネ・ソーヴィニョン"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.okunota.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "奥野田葡萄酒醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -70,6 +122,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#wine-1",
+      "name": "アンソレイユ シャルドネ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "奥野田"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#winery"
+      },
+      "description": "シャルドネ、オーク樽発酵",
+      "material": "シャルドネ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#wine-2",
+      "name": "ハナミズキ ブラン",
+      "category": "オレンジワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "奥野田"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#winery"
+      },
+      "description": "甲州、オレンジワイン",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#wine-3",
+      "name": "奥野田ロッソ",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "奥野田"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/okunota-winery.html#winery"
+      },
+      "description": "マスカットベリーA・メルロー、オーク樽熟成",
+      "material": "マスカットベリーA、メルロー"
     },
     {
       "@type": "FAQPage",

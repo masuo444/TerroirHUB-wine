@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html",
+      "name": "かぬま里山わいん - 栃木県のワイナリー",
+      "description": "平成30年創業。栃木県鹿沼市のエステートワイナリー「かぬま里山わいん」。鹿沼市の自社農園ぶどうだけで仕込むエステート型ワイナリー。里山の景観と一体になった素朴な味わいを目指す。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#winery",
       "name": "かぬま里山わいん",
       "description": "鹿沼市の自社農園ぶどうだけで仕込むエステート型ワイナリー。里山の景観と一体になった素朴な味わいを目指す。",
       "url": "http://www.bc9.jp/~ryokuhan/",
@@ -49,7 +66,29 @@
       "knowsAbout": [
         "マスカット・ベーリーA",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://kanuma-kanko.jp/purpose/%E3%81%8B%E3%81%AC%E3%81%BE%E9%87%8C%E5%B1%B1%E3%82%8F%E3%81%84%E3%82%93/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "かぬま里山わいんの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +112,32 @@
           "item": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#wine-1",
+      "name": "かぬま里山わいん 赤",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "かぬま里山わいん"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#wine-2",
+      "name": "かぬま里山わいん 白",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "かぬま里山わいん"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -379,7 +444,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">かぬま里山わいん</h1>
     <p class="hero-subtitle">かぬま里山わいん</p>
     <p class="hero-en">Since 2018 — 鹿沼市, 栃木県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.bc9.jp/~ryokuhan/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -472,21 +537,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">かぬま里山わいん 赤</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">かぬま里山わいん 白</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -507,7 +572,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">栃木県 鹿沼市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://kanuma-kanko.jp/purpose/%E3%81%8B%E3%81%AC%E3%81%BE%E9%87%8C%E5%B1%B1%E3%82%8F%E3%81%84%E3%82%93/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://kanuma-kanko.jp/purpose/%E3%81%8B%E3%81%AC%E3%81%BE%E9%87%8C%E5%B1%B1%E3%82%8F%E3%81%84%E3%82%93/</a></p>
   </div>
 </section>

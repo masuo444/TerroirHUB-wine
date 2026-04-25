@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html",
+      "name": "多古ワイン - 千葉県のワイナリー",
+      "description": "令和2年創業。千葉県香取郡多古町の小規模ワイナリー「多古ワイン」。2020年に開業した多古町の小規模ワイナリー。千葉県内に約90年ぶりに誕生したワイナリーとして、多古町の風土を映すワインを造る。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html#winery",
       "name": "多古ワイン",
       "description": "2020年に開業した多古町の小規模ワイナリー。千葉県内に約90年ぶりに誕生したワイナリーとして、多古町の風土を映すワインを造る。",
       "url": "https://funakoshi-winery.com/",
@@ -55,7 +72,23 @@
         "ソーヴィニヨン・ブラン",
         "メルロー",
         "ピノ・ノワール"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://funakoshi-winery.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "多古ワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -79,6 +112,19 @@
           "item": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html#wine-1",
+      "name": "多古ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "多古ワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/chiba/funakoshi-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -385,7 +431,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">多古ワイン</h1>
     <p class="hero-subtitle">多古ワイン</p>
     <p class="hero-en">Since 2020 — 香取郡多古町, 千葉県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://funakoshi-winery.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -478,11 +524,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">多古ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -503,7 +549,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">千葉県 香取郡多古町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://funakoshi-winery.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://funakoshi-winery.com/</a></p>
   </div>
 </section>

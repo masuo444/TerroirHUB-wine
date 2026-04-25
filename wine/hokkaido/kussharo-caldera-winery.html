@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html",
+      "name": "屈斜路カルデラワイナリー - 北海道のワイナリー",
+      "description": "令和6年創業。北海道弟子屈町のエステートワイナリー「屈斜路カルデラワイナリー」。屈斜路湖を一望するロケーションに2024年8月開業。弟子屈町産ワイン用ぶどう「山幸」を使ったナチュラルワインを醸造・販売。当面の年間醸造量は2,000リットル。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html#winery",
       "name": "屈斜路カルデラワイナリー",
       "description": "屈斜路湖を一望するロケーションに2024年8月開業。弟子屈町産ワイン用ぶどう「山幸」を使ったナチュラルワインを醸造・販売。当面の年間醸造量は2,000リットル。弟子屈町の指定管理事業として運営。テイスティングカウンターから屈斜路湖の絶景が楽しめる。",
       "url": "https://teshikagafarm.com/kcwinery/",
@@ -47,7 +64,30 @@
       },
       "knowsAbout": [
         "山幸"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://teshikagafarm.com/kcwinery/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "屈斜路カルデラワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -71,6 +111,20 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html#wine-1",
+      "name": "屈斜路カルデラ ナチュラルワイン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "屈斜路カルデラ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/kussharo-caldera-winery.html#winery"
+      },
+      "material": "山幸"
     },
     {
       "@type": "FAQPage",
@@ -498,7 +552,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">山幸</div>
       <h3 class="brand-name">屈斜路カルデラ ナチュラルワイン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     </div>
   </div>

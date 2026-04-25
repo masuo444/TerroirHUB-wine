@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html",
+      "name": "くずまきワイン - 岩手県のワイナリー",
+      "description": "昭和61年創業。岩手県葛巻町の日本ワイナリー「くずまきワイン」。山ぶどうを主品種に栽培、醸造をしています。日本の土着品種である山ぶどうのきれいで伸びやかな酸味、野趣溢れる味わいを最大限に引き出し個性を伝えます。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#winery",
       "name": "くずまきワイン",
       "description": "山ぶどうを主品種に栽培、醸造をしています。日本の土着品種である山ぶどうのきれいで伸びやかな酸味、野趣溢れる味わいを最大限に引き出し個性を伝えます。",
       "url": "https://kuzumakiwine.co.jp/",
@@ -52,7 +69,47 @@
         "キャンベル",
         "ナイアガラ",
         "山ぶどう交配種（ワイングランド・ブラックペガール）"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://jwine.net/winery/kuzumaki/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "くずまきワインの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-4"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-5"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +133,73 @@
           "item": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-1",
+      "name": "山ぶどうワイン",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "くずまきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#winery"
+      },
+      "material": "山ぶどう"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-2",
+      "name": "くずまきワイン 蒼（あお）",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "くずまきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-3",
+      "name": "フォーレ・ロゼ",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "くずまきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-4",
+      "name": "さくらワイン",
+      "category": "果実酒",
+      "brand": {
+        "@type": "Brand",
+        "name": "くずまきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#wine-5",
+      "name": "澤登ブラックペガール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "くずまきワイン"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/iwate/kuzumaki-wine.html#winery"
+      },
+      "material": "ブラックペガール"
     },
     {
       "@type": "FAQPage",
@@ -390,7 +514,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">くずまきワイン</h1>
     <p class="hero-subtitle">くずまきワイン</p>
     <p class="hero-en">Since 1986 — 葛巻町, 岩手県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://kuzumakiwine.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -494,27 +618,27 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">山ぶどう</div>
       <h3 class="brand-name">山ぶどうワイン</h3>
       <p class="brand-type">赤ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">白ワイン</div>
-      
+
       <h3 class="brand-name">くずまきワイン 蒼（あお）</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge rose">ロゼワイン</div>
-      
+
       <h3 class="brand-name">フォーレ・ロゼ</h3>
       <p class="brand-type">ロゼワイン</p>
-      
+
     </div>
     </div>
   </div>

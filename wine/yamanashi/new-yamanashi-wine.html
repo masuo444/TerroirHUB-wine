@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html",
+      "name": "ニュー山梨ワイン醸造 - 山梨県のワイナリー",
+      "description": "昭和38年創業。山梨県笛吹市御坂町の中規模ワイナリー「ニュー山梨ワイン醸造」。JAふえふき直営のワイナリー。昭和38年（1963年）に地元農協葡萄部として設立。ブランド名「8 vin-yard MISAKA（ユイット・ヴィンヤード・ミサカ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#winery",
       "name": "ニュー山梨ワイン醸造",
       "description": "JAふえふき直営のワイナリー。昭和38年（1963年）に地元農協葡萄部として設立。ブランド名「8 vin-yard MISAKA（ユイット・ヴィンヤード・ミサカ）」の「8」は末広がりの縁起数字であり横に倒すと無限大の意。笛吹市御坂町産ぶどう100%使用。",
       "url": "https://8vin-yard.jp",
@@ -44,7 +61,42 @@
       "knowsAbout": [
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://8vin-yard.jp"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ニュー山梨ワイン醸造の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,6 +120,51 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#wine-1",
+      "name": "御坂フリーラン甲州",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "8 vin-yard MISAKA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#winery"
+      },
+      "description": "甲州種、フリーランジュース使用",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#wine-2",
+      "name": "Muscat Bailey A Rosé",
+      "category": "ロゼワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "8 vin-yard MISAKA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#winery"
+      },
+      "description": "マスカットベリーA、甘口ロゼ",
+      "material": "マスカットベリーA"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#wine-3",
+      "name": "Misaka・Yachikura",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "8 vin-yard MISAKA"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/new-yamanashi-wine.html#winery"
+      },
+      "description": "御坂町産ぶどう使用",
+      "material": "甲州"
     },
     {
       "@type": "FAQPage",
@@ -536,7 +633,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">山梨県 笛吹市御坂町</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://8vin-yard.jp" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://8vin-yard.jp</a></p>
   </div>
 </section>

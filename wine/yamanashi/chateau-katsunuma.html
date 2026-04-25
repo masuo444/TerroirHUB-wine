@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html",
+      "name": "シャトー勝沼 - 山梨県のワイナリー",
+      "description": "明治10年創業。山梨県甲州市勝沼の中規模ワイナリー「シャトー勝沼」。味にこだわり、香りにこだわり、素材に製法にこだわる。すべては豊かに流れる時にめぐり会うために。ぶどうの栽培から醸造、販売まで、全て一貫した手作り。本場フランス仕",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#winery",
       "name": "シャトー勝沼",
       "description": "味にこだわり、香りにこだわり、素材に製法にこだわる。すべては豊かに流れる時にめぐり会うために。ぶどうの栽培から醸造、販売まで、全て一貫した手作り。本場フランス仕込みのワイン造り。",
       "url": "https://www.chateauk.co.jp/",
@@ -49,7 +66,36 @@
       "knowsAbout": [
         "甲州",
         "巨峰"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.chateauk.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "シャトー勝沼の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +119,36 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#wine-1",
+      "name": "シャトー勝沼 甲州白ワイン",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトー勝沼"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#winery"
+      },
+      "description": "甲州使用。ぶどうの栽培から醸造・販売まで一貫手作り。",
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#wine-2",
+      "name": "シャトー勝沼 無添加ワイン",
+      "category": "白ワイン・赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "シャトー勝沼"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/chateau-katsunuma.html#winery"
+      },
+      "description": "無添加・無補糖シリーズ。",
+      "material": "甲州他"
     },
     {
       "@type": "FAQPage",

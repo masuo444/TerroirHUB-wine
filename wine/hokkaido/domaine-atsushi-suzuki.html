@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html",
+      "name": "ドメーヌアツシスズキ - 北海道のワイナリー",
+      "description": "平成27年創業。北海道余市町のエステートワイナリー「ドメーヌアツシスズキ」。2015年から自社ワイナリーでの醸造をスタート。できるだけ手を加えない自然なワインづくりを目指しており、化学農薬を使用せずに育てたぶどうを、自然酵母を使い発酵し",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#winery",
       "name": "ドメーヌアツシスズキ",
       "description": "2015年から自社ワイナリーでの醸造をスタート。できるだけ手を加えない自然なワインづくりを目指しており、化学農薬を使用せずに育てたぶどうを、自然酵母を使い発酵し、亜硫酸添加もゼロもしくは少量添加のみ。",
       "url": "http://atsushi-suzuki.jp/",
@@ -50,7 +67,36 @@
         "ケルナー",
         "ミュラートゥルガウ",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nihonwine.jp/winery_intro/domaine_atsushi_suzuki/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ドメーヌアツシスズキの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +120,32 @@
           "item": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#wine-1",
+      "name": "MAOI Rouge",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌアツシスズキ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#wine-2",
+      "name": "MAOI Blanc",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "ドメーヌアツシスズキ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/domaine-atsushi-suzuki.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -489,21 +561,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">MAOI Rouge</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">MAOI Blanc</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>

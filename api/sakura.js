@@ -6,6 +6,14 @@ const fs = require('fs');
 const path = require('path');
 
 let searchIndex = null;
+let wineKB = null;
+
+function normalizeText(value) {
+  if (Array.isArray(value)) return value.join(' ').toLowerCase();
+  if (value && typeof value === 'object') return Object.values(value).join(' ').toLowerCase();
+  return String(value || '').toLowerCase();
+}
+
 function getSearchIndex() {
   if (searchIndex) return searchIndex;
   searchIndex = [];
@@ -28,19 +36,33 @@ function getSearchIndex() {
   return searchIndex;
 }
 
+function getWineKB() {
+  if (wineKB) return wineKB;
+  try {
+    const p = path.join(__dirname, '..', 'wine', 'sakura_kb.json');
+    wineKB = JSON.parse(fs.readFileSync(p, 'utf-8'));
+  } catch (e) {
+    wineKB = null;
+  }
+  return wineKB;
+}
+
 function searchBreweries(query) {
   const idx = getSearchIndex();
   const ql = query.toLowerCase();
   const keywords = ql.split(/\s+/).filter(k => k.length > 0);
 
   const scored = idx.map(entry => {
-    const name  = (entry.n || entry.name  || '').toLowerCase();
-    const brand = (entry.b || entry.brand || '').toLowerCase();
-    const brands = (entry.br || entry.brands || '').toLowerCase();
-    const area  = (entry.a || entry.area  || '').toLowerCase();
-    const nameEn = (entry.ne || '').toLowerCase();
-    const pref  = (entry.pn || '').toLowerCase();
-    const full  = [name, brand, brands, area, nameEn, pref].join(' ');
+    const name  = normalizeText(entry.n || entry.name);
+    const brand = normalizeText(entry.b || entry.brand);
+    const brands = normalizeText(entry.br || entry.brands);
+    const area  = normalizeText(entry.a || entry.area);
+    const nameEn = normalizeText(entry.ne);
+    const pref  = normalizeText(entry.pn || entry.pref_name);
+    const grapes = normalizeText(entry.grapes);
+    const gi = normalizeText(entry.gi);
+    const mainGrape = normalizeText(entry.main_grape);
+    const full  = [name, brand, brands, area, nameEn, pref, grapes, gi, mainGrape].join(' ');
 
     let s = 0;
     if (brand  === ql)          s += 200;
@@ -50,6 +72,9 @@ function searchBreweries(query) {
     if (name.includes(ql))      s += 60;
     if (nameEn.includes(ql))    s += 50;
     if (pref.includes(ql))      s += 40;
+    if (grapes.includes(ql))    s += 45;
+    if (gi.includes(ql))        s += 45;
+    if (mainGrape.includes(ql)) s += 45;
     if (area.includes(ql))      s += 35;
     if (full.includes(ql))      s += 10;
     if (keywords.length > 1 && keywords.every(k => full.includes(k))) s += 80;
@@ -75,10 +100,77 @@ function searchBreweries(query) {
       brands:     e.br  || e.brands || '',
       prefecture: e.pn  || '',
       area:       e.a   || e.area  || '',
+      gi:         e.gi || '',
+      grapes:     e.grapes || [],
+      visit_available: Boolean(e.visit_available),
       type:       info.type,
       page:       `${info.base}/${p}/${id}.html`,
     };
   });
+}
+
+function buildWineAnswerHints(question) {
+  const kb = getWineKB();
+  if (!kb || !kb.answer_index) return '';
+  const q = normalizeText(question);
+  const hints = [];
+  const ai = kb.answer_index;
+
+  Object.entries(ai.prefectures || {}).forEach(([slug, pref]) => {
+    if (q.includes(normalizeText(pref.name).replace('県', '').replace('府', '').replace('都', '').replace('道', '')) || q.includes(slug)) {
+      hints.push(`都道府県: ${pref.name}は掲載${pref.count}件、Aランク${pref.a_rank}件、見学関連${pref.visit_count}件。主要品種: ${(pref.top_grapes || []).map(g => `${g.name}${g.count}件`).join('、')}。ページ: ${pref.page}`);
+    }
+  });
+
+  Object.entries(ai.grapes || {}).forEach(([grape, info]) => {
+    if (q.includes(normalizeText(grape))) {
+      hints.push(`品種: ${grape}は掲載${info.count}件。主な都道府県: ${(info.prefs || []).map(p => `${p.name}${p.count}件`).join('、')}。代表ページ: ${(info.top_wineries || []).slice(0, 4).map(w => `${w.name} ${w.page}`).join(' / ')}`);
+    }
+  });
+
+  Object.entries(ai.gi || {}).forEach(([gi, info]) => {
+    if (q.includes(normalizeText(gi)) || q.includes('gi')) {
+      hints.push(`GI: ${gi}は掲載${info.count}件。関連都道府県: ${(info.prefs || []).map(p => `${p.name}${p.count}件`).join('、')}。代表ページ: ${(info.top_wineries || []).slice(0, 4).map(w => `${w.name} ${w.page}`).join(' / ')}`);
+    }
+  });
+
+  if (/(見学|試飲|テイスティング|行ける|訪問|ツアー)/.test(question)) {
+    const visitPrefs = Object.values(ai.visit || {})
+      .filter(v => v.visit_count > 0)
+      .sort((a, b) => b.visit_count - a.visit_count)
+      .slice(0, 5)
+      .map(v => `${v.name}${v.visit_count}件`);
+    hints.push(`見学検索: 見学関連情報が多い産地は ${visitPrefs.join('、')}。個別の予約可否は公式サイト確認を案内する。`);
+  }
+
+  if (/(比較|違い|どっち|vs|山梨.*長野|長野.*山梨|甲州.*ピノ|ピノ.*甲州)/.test(question)) {
+    hints.push('比較ルート: 山梨と長野を比べるなら /wine/guide/yamanashi-vs-nagano.html。甲州とピノ・ノワールを比べるなら /wine/guide/koshu-vs-pinot.html。');
+  }
+
+  if (/(初心者|おすすめ|最初|入門|どこから)/.test(question)) {
+    (ai.starter_routes || []).forEach(route => hints.push(`提案ルート: ${route.intent} - ${route.answer} リンク: ${route.links.join('、')}`));
+  }
+
+  if (/(白ワイン|辛口白|白から|最初の白|初心者.*白)/.test(question)) {
+    hints.push('白ワイン入門: /wine/guide/beginner-white.html');
+  }
+
+  return hints.slice(0, 8).join('\n');
+}
+
+function buildResponseFormatHints(question) {
+  const q = normalizeText(question);
+  const links = [];
+  if (/(比較|違い|どっち|vs|山梨.*長野|長野.*山梨)/.test(q)) {
+    links.push('/wine/guide/compare.html', '/wine/guide/yamanashi-vs-nagano.html');
+  }
+  if (/(甲州|koshu)/.test(q)) links.push('/wine/guide/koshu.html');
+  if (/(ピノ|pinot)/.test(q)) links.push('/wine/guide/hokkaido-pinot-noir.html', '/wine/guide/koshu-vs-pinot.html');
+  if (/(初心者|おすすめ|最初|入門|どこから)/.test(q)) links.push('/wine/guide/beginner.html', '/wine/guide/beginner-white.html');
+  if (/(見学|試飲|ツアー|訪問|行ける)/.test(q)) links.push('/wine/guide/visit.html');
+
+  const uniqueLinks = [...new Set(links)].slice(0, 3);
+  return uniqueLinks.length > 0 ? `関連ページ候補: ${uniqueLinks.join('、')}` : '';
 }
 
 const TOOLS = [
@@ -108,6 +200,8 @@ module.exports = async function handler(req, res) {
 
   const { question, context, history, userId } = req.body || {};
   if (!question) return res.status(400).json({ error: 'No question' });
+  const wineAnswerHints = buildWineAnswerHints(question);
+  const responseFormatHints = buildResponseFormatHints(question);
 
   const supabaseUrl = process.env.SUPABASE_URL || 'https://hhwavxavuqqfiehrogwv.supabase.co';
   const supabaseKey = process.env.SUPABASE_SERVICE_KEY;
@@ -134,7 +228,7 @@ module.exports = async function handler(req, res) {
 
   const systemPrompt = `あなたは「サクラ」、Terroir HUBのAIコンシェルジュです。
 日本の酒文化を横断する総合ガイドとして、以下の全ジャンルの公式データベースを持っています：
-- 日本ワイン: 全国880+ワイナリー（wine.terroirhub.com）
+- 日本ワイン: 全国432ワイナリー（wine.terroirhub.com）
 - 日本酒: 全国1,295蔵（sake.terroirhub.com）
 - 焼酎・泡盛: 389蒸留所（shochu.terroirhub.com）
 - ウイスキー: 67蒸留所（whisky.terroirhub.com）
@@ -149,8 +243,12 @@ module.exports = async function handler(req, res) {
 - 回答は正確に、公式情報に基づいて行う
 - 知らないことは「公式サイトをご確認ください」と案内する
 - 情報を捏造しない。推測で埋めない
+- 日本ワインについては、下の「日本ワインDBヒント」があれば最優先で使う
 - 日本語、英語、フランス語に対応（相手の言語に合わせる）
 - 回答は200〜300文字を目安に
+- 回答は次の順でまとめる: 1) 結論を1文 2) 理由を2〜3点 3) 関連ページを1〜2件 4) 最後に「関連する次の質問」
+- 比較質問では、山梨 vs 長野、甲州 vs ピノ、初心者の白のように比較軸を明確にして、各ページへ誘導する
+- URLを出せる場合は、本文の最後に自然に短く添える
 
 ★ ジャンル回答の絶対ルール：
 - ユーザーが特定のジャンルについて質問している場合、そのジャンルの中で回答する
@@ -171,12 +269,11 @@ module.exports = async function handler(req, res) {
 日本ワインの専門知識：
 【産地・GI認定地域】
 - 山梨（GI山梨・2013年）: 甲州発祥の地。勝沼・甲州市が中心。シャトー・メルシャン、グレイスワイン等
-- 長野（GI長野・2020年）: 千曲川・安曇野・塩尻。リュードヴァン、五一ワイン等
+- 長野（GI長野・2021年）: 千曲川・安曇野・塩尻。リュードヴァン、五一ワイン等
 - 北海道（GI北海道・2018年）: 余市・空知・十勝。ドメーヌ・タカヒコ、OcciGabi等
-- 山形（GI山形・2019年）: 上山・南陽。タケダワイナリー、高畠ワイナリー等
+- 山形（GI山形・2021年）: 上山・南陽。タケダワイナリー、高畠ワイナリー等
 - 大阪（GI大阪・2021年）: 河内ワインが有名
-- 岩手（GI岩手・2021年）: エーデルワイン等
-- 萩（GI萩・2021年）: 山口県萩市の長州葡萄酒等
+- 岩手・山口（萩）は注目産地だが、岩手GI・萩GIは清酒のGI。ワインGIとして案内しないこと
 
 【主要品種】
 白: 甲州（日本固有・OIV登録2010）、シャルドネ、ケルナー、ソーヴィニヨン・ブラン、リースリング、甲斐ブラン
@@ -192,6 +289,9 @@ module.exports = async function handler(req, res) {
 - ドメーヌ・タカヒコ: 北海道余市。ナナツモリ ピノ・ノワールが世界的評価
 - リュードヴァン: 長野・東御市。フランス仕込みの技術で高品質
 - タケダワイナリー: 山形・上山市。シャトー・タケダが代表銘柄
+
+${wineAnswerHints ? '日本ワインDBヒント：\n' + wineAnswerHints : ''}
+${responseFormatHints ? responseFormatHints + '\n' : ''}
 
 【ペアリング（和食×日本ワイン）】
 甲州（辛口白）: 刺身・天ぷら・白身魚・鮨・出汁料理と好相性

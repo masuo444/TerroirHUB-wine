@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html",
+      "name": "高倉ぶどう園 - 大分県のワイナリー",
+      "description": "大分県の小規模ワイナリー「高倉ぶどう園」。竹田市でぶどう栽培を続ける生産者が、自園果実を生かした少量生産のワインを手がけるぶどう園。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html",
+      "@id": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html#winery",
       "name": "高倉ぶどう園",
       "description": "竹田市でぶどう栽培を続ける生産者が、自園果実を生かした少量生産のワインを手がけるぶどう園。",
       "url": "http://www.oct-net.ne.jp/k-46/",
@@ -48,7 +65,23 @@
       "knowsAbout": [
         "キャンベル",
         "デラウェア"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://nippon.wine/winery/19440010298/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "高倉ぶどう園の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +105,19 @@
           "item": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html#wine-1",
+      "name": "高倉ぶどう園ワイン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "高倉ぶどう園"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/oita/takakura-budoen.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -366,11 +412,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
   </div>
   <div class="hero-content">
     <div class="hero-badge"><span class="badge-dot"></span>TERROIR HUB WINE</div>
-    
+
     <h1 class="hero-title">高倉ぶどう園</h1>
-    
-    
-    
+
+
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="http://www.oct-net.ne.jp/k-46/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -401,7 +447,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <h2 class="sec-title">高倉ぶどう園の物語</h2>
         <div class="sec-divider"></div>
         <p class="sec-body">竹田市でぶどう栽培を続ける生産者が、自園果実を生かした少量生産のワインを手がけるぶどう園。</p>
-        
+
       </div>
     </div>
   </div>
@@ -456,11 +502,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">高倉ぶどう園ワイン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -481,7 +527,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">大分県 竹田市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://nippon.wine/winery/19440010298/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://nippon.wine/winery/19440010298/</a></p>
   </div>
 </section>

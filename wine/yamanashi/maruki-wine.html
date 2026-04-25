@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html",
+      "name": "まるき葡萄酒 - 山梨県のワイナリー",
+      "description": "明治10年創業。山梨県甲州市・勝沼のエステートワイナリー「まるき葡萄酒」。明治10年から続くまるき葡萄酒の歴史。現存する日本最古のワイナリー。すべてはぶどうのために。歴史に裏付けられた革新を追求しています。不耕起草生栽培と減農薬による",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#winery",
       "name": "まるき葡萄酒",
       "description": "明治10年から続くまるき葡萄酒の歴史。現存する日本最古のワイナリー。すべてはぶどうのために。歴史に裏付けられた革新を追求しています。不耕起草生栽培と減農薬による極力自然な環境でのぶどう栽培を実践しています。",
       "url": "http://www.marukiwine.co.jp/",
@@ -49,7 +66,48 @@
       "knowsAbout": [
         "甲州",
         "マスカット・ベーリーA"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "http://www.marukiwine.co.jp/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI山梨"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "まるき葡萄酒の代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-4"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -73,6 +131,60 @@
           "item": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-1",
+      "name": "レゾン",
+      "category": "フラッグシップ（自園ぶどう）",
+      "brand": {
+        "@type": "Brand",
+        "name": "まるき葡萄酒 / レゾン / ラフィーユ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-2",
+      "name": "ラフィーユ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "まるき葡萄酒 / レゾン / ラフィーユ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#winery"
+      },
+      "material": "甲州"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-3",
+      "name": "いろ",
+      "category": "スタンダード",
+      "brand": {
+        "@type": "Brand",
+        "name": "まるき葡萄酒 / レゾン / ラフィーユ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#wine-4",
+      "name": "コリエドゥペルル",
+      "category": "スパークリング",
+      "brand": {
+        "@type": "Brand",
+        "name": "まるき葡萄酒 / レゾン / ラフィーユ"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/yamanashi/maruki-wine.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -500,7 +612,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">レゾン</h3>
       <p class="brand-type">フラッグシップ（自園ぶどう）</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -510,17 +622,17 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">甲州</div>
       <h3 class="brand-name">ラフィーユ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge red">スタンダード</div>
-      
+
       <h3 class="brand-name">いろ</h3>
       <p class="brand-type">スタンダード</p>
-      
+
     </div>
     </div>
   </div>

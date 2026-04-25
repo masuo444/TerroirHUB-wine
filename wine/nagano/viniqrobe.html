@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html",
+      "name": "VINIQROBE - 長野県のワイナリー",
+      "description": "令和元年創業。長野県高山村のエステートワイナリー「VINIQROBE」。2016年からピノ・ノワールを植栽し、2019年9月に開業した高山村5軒目のワイナリー。各ボトルに一点ものラベルを採用し、フルート演奏に合わせたダンス写真を使用",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html",
+      "@id": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html#winery",
       "name": "VINIQROBE",
       "description": "2016年からピノ・ノワールを植栽し、2019年9月に開業した高山村5軒目のワイナリー。各ボトルに一点ものラベルを採用し、フルート演奏に合わせたダンス写真を使用する。",
       "url": "https://viniqrobe.studio.site/",
@@ -48,7 +65,30 @@
       "knowsAbout": [
         "ピノ・ノワール",
         "メルロー"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.nagano-wine.jp/special/winery/Vol87viniqrobe.html"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI長野"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "VINIQROBEの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -72,6 +112,21 @@
           "item": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html#wine-1",
+      "name": "VINIQROBE ピノ・ノワール",
+      "category": "赤ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "VINIQROBE"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/nagano/viniqrobe.html#winery"
+      },
+      "description": "一点ものラベル",
+      "material": "ピノ・ノワール"
     },
     {
       "@type": "FAQPage",
@@ -520,7 +575,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">長野県 高山村</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.nagano-wine.jp/special/winery/Vol87viniqrobe.html" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.nagano-wine.jp/special/winery/Vol87viniqrobe.html</a></p>
   </div>
 </section>

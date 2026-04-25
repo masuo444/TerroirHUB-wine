@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html",
+      "name": "ファットリア ダ・サスィーノ - 青森県のワイナリー",
+      "description": "平成22年（醸造免許取得）創業。青森県弘前市のエステートワイナリー「ファットリア ダ・サスィーノ」。霊峰岩木山を臨む畑でネッビオーロ、マルヴァジア、シャルドネなどを中心に栽培・醸造を行う施設。地産地消にこだわるイタリアンレストランの経営者が自身で栽培するブドウ",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html",
+      "@id": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html#winery",
       "name": "ファットリア ダ・サスィーノ",
       "description": "霊峰岩木山を臨む畑でネッビオーロ、マルヴァジア、シャルドネなどを中心に栽培・醸造を行う施設。地産地消にこだわるイタリアンレストランの経営者が自身で栽培するブドウからワイン製造を開始しました。",
       "url": "https://dasasino.com/",
@@ -50,7 +67,23 @@
         "ネッビオーロ",
         "マルヴァジア",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://www.winery.or.jp/winery-map/12685/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ファットリア ダ・サスィーノの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html#wine-1"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -74,6 +107,19 @@
           "item": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html#wine-1",
+      "name": "Fattoria da Sasino",
+      "category": "赤・白",
+      "brand": {
+        "@type": "Brand",
+        "name": "Fattoria da Sasino"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/aomori/fattoria-da-sasino.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -388,7 +434,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">ファットリア ダ・サスィーノ</h1>
     <p class="hero-subtitle">Fattoria da Sasino</p>
     <p class="hero-en">Since 2010 — 弘前市, 青森県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://dasasino.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -489,10 +535,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
       <div class="wine-badge white">赤・白</div>
-      
+
       <h3 class="brand-name">Fattoria da Sasino</h3>
       <p class="brand-type">赤・白</p>
-      
+
     </div>
     </div>
   </div>
@@ -513,7 +559,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">青森県 弘前市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.winery.or.jp/winery-map/12685/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.winery.or.jp/winery-map/12685/</a></p>
   </div>
 </section>

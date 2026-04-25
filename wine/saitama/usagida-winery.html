@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html",
+      "name": "兎田ワイナリー - 埼玉県のワイナリー",
+      "description": "平成27年創業。埼玉県秩父市のエステートワイナリー「兎田ワイナリー」。秩父の里山でぶどう栽培や体験農園を展開し、観光とワインを結びつける地域密着型ワイナリー。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html",
+      "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#winery",
       "name": "兎田ワイナリー",
       "description": "秩父の里山でぶどう栽培や体験農園を展開し、観光とワインを結びつける地域密着型ワイナリー。",
       "url": "https://chichibu-ff.com/",
@@ -52,7 +69,35 @@
         "セイベル9110",
         "甲斐ブラン",
         "シャルドネ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://chichibu-ff.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "兎田ワイナリーの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#wine-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#wine-3"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -76,6 +121,45 @@
           "item": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html"
         }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#wine-1",
+      "name": "秩父ブラン",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "兎田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#wine-2",
+      "name": "秩父ルージュ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "兎田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#winery"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#wine-3",
+      "name": "秩父ロゼ",
+      "category": "日本ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "兎田ワイナリー"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/saitama/usagida-winery.html#winery"
+      }
     },
     {
       "@type": "FAQPage",
@@ -382,7 +466,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <h1 class="hero-title">兎田ワイナリー</h1>
     <p class="hero-subtitle">兎田ワイナリー</p>
     <p class="hero-en">Since 2015 — 秩父市, 埼玉県</p>
-    
+
     <div class="hero-actions">
       <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
       <a class="btn-s" href="https://chichibu-ff.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
@@ -468,31 +552,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">秩父ブラン</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">秩父ルージュ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
         <div class="brand-img-placeholder">PHOTO</div>
       </div>
-      
-      
+
+
       <h3 class="brand-name">秩父ロゼ</h3>
       <p class="brand-type"></p>
-      
+
     </div>
     </div>
   </div>
@@ -513,7 +597,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
         <div style="font-size:13px;color:var(--text-muted);">埼玉県 秩父市</div>
       </div>
     </div>
-    
+
     <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://chichibu-ff.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://chichibu-ff.com/</a></p>
   </div>
 </section>

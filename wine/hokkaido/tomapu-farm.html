@@ -24,11 +24,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#webpage",
+      "url": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html",
+      "name": "TOMAPU FARM - 北海道のワイナリー",
+      "description": "令和元年創業。北海道仁木町のエステートワイナリー「TOMAPU FARM」。代表の高橋ひかり氏が100年続く農家を引き継ぎ、2019年に仁木町でスタート。ツヴァイゲルト・ケルナー・ミュラー・トゥルガウを栽培し、ワイン・チェリー・コーンな",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://wine.terroirhub.com/#website",
+        "name": "Terroir HUB WINE",
+        "url": "https://wine.terroirhub.com/"
+      },
+      "mainEntity": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#winery"
+      }
+    },
+    {
       "@type": [
         "LocalBusiness",
         "Winery"
       ],
-      "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#winery",
       "name": "TOMAPU FARM",
       "description": "代表の高橋ひかり氏が100年続く農家を引き継ぎ、2019年に仁木町でスタート。ツヴァイゲルト・ケルナー・ミュラー・トゥルガウを栽培し、ワイン・チェリー・コーンなど多彩な農産物を生産。「冬」シリーズなど季節感のあるワイン名でも知られる。",
       "url": "https://tomapufarm.com/",
@@ -49,7 +66,36 @@
         "ツヴァイゲルトレーベ",
         "ケルナー",
         "ミュラー・トゥルガウ"
-      ]
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "url": "https://tomapufarm.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "地理的表示",
+          "value": "GI北海道"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "TOMAPU FARMの代表銘柄",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#wine-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#wine-2"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -75,8 +121,44 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#wine-1",
+      "name": "TOMAPU フユ ミュラー・トゥルガウ",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TOMAPU"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#winery"
+      },
+      "material": "ミュラー・トゥルガウ"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#wine-2",
+      "name": "TOMAPU ケルナー",
+      "category": "白ワイン",
+      "brand": {
+        "@type": "Brand",
+        "name": "TOMAPU"
+      },
+      "manufacturer": {
+        "@id": "https://wine.terroirhub.com/wine/hokkaido/tomapu-farm.html#winery"
+      },
+      "material": "ケルナー"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "TOMAPU FARMの見学・テイスティングはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。"
+          }
+        },
         {
           "@type": "Question",
           "name": "TOMAPU FARMの代表的なワインを教えてください",
@@ -492,7 +574,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ミュラー・トゥルガウ</div>
       <h3 class="brand-name">TOMAPU フユ ミュラー・トゥルガウ</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap">
@@ -502,7 +584,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
       <div class="grape-tag">ケルナー</div>
       <h3 class="brand-name">TOMAPU ケルナー</h3>
       <p class="brand-type">白ワイン</p>
-      
+
     </div>
     </div>
   </div>
@@ -515,7 +597,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="sec-divider"></div>
     <div class="story-grid" style="gap:32px;">
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道余市郡仁木町旭台148-1</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://tomapufarm.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://tomapufarm.com/</a></div></div></div>
+        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道余市郡仁木町旭台148-1</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://tomapufarm.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://tomapufarm.com/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div></div></div>
       </div>
       <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
         <span style="font-size:28px;">📍</span>
@@ -538,34 +620,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;}
     <div class="faq-item" id="faq-0">
       <div class="faq-q" onclick="toggleFaq(0)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">TOMAPU FARMの代表的なワインを教えてください</span>
+        <span class="faq-q-text">TOMAPU FARMの見学・テイスティングはできますか？</span>
         <span class="faq-q-icon" id="faq-icon-0">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-0">代表銘柄はTOMAPU フユ ミュラー・トゥルガウ、TOMAPU ケルナーなどがあります。</div>
+      <div class="faq-a" id="faq-a-0">公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。</div>
     </div>
     <div class="faq-item" id="faq-1">
       <div class="faq-q" onclick="toggleFaq(1)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">TOMAPU FARMの所在地・アクセスを教えてください</span>
+        <span class="faq-q-text">TOMAPU FARMの代表的なワインを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-1">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-1">住所は北海道余市郡仁木町旭台148-1です。最寄りはJR函館本線 仁木駅（車約15分）です。</div>
+      <div class="faq-a" id="faq-a-1">代表銘柄はTOMAPU フユ ミュラー・トゥルガウ、TOMAPU ケルナーなどがあります。</div>
     </div>
     <div class="faq-item" id="faq-2">
       <div class="faq-q" onclick="toggleFaq(2)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">TOMAPU FARMはいつ創業しましたか？</span>
+        <span class="faq-q-text">TOMAPU FARMの所在地・アクセスを教えてください</span>
         <span class="faq-q-icon" id="faq-icon-2">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-2">令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+      <div class="faq-a" id="faq-a-2">住所は北海道余市郡仁木町旭台148-1です。最寄りはJR函館本線 仁木駅（車約15分）です。</div>
     </div>
     <div class="faq-item" id="faq-3">
       <div class="faq-q" onclick="toggleFaq(3)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">TOMAPU FARMではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-text">TOMAPU FARMはいつ創業しましたか？</span>
         <span class="faq-q-icon" id="faq-icon-3">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-3">主にツヴァイゲルトレーベ、ケルナー、ミュラー・トゥルガウを使用しています。</div>
+      <div class="faq-a" id="faq-a-3">令和元年（2019年）に創業しました。北海道を代表するワイナリーのひとつです。</div>
+    </div>
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFaq(4)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">TOMAPU FARMではどのようなブドウ品種を使っていますか？</span>
+        <span class="faq-q-icon" id="faq-icon-4">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-4">主にツヴァイゲルトレーベ、ケルナー、ミュラー・トゥルガウを使用しています。</div>
     </div>
     </div>
   </div>

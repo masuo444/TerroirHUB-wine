@@ -10,7 +10,8 @@
 <meta name="description" content="日本ワインの品種・産地・歴史・醸造工程・飲み方・ペアリングまで網羅する総合ガイド。甲州・マスカット・ベーリーAからGI産地まで徹底解説。">
 <link rel="canonical" href="https://wine.terroirhub.com/wine/guide/index.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/guide/index.html">
-<link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/en/guide/index.html">
+<link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/en/wine/guide/index.html">
+<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/fr/wine/guide/index.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/guide/index.html">
 <meta property="og:title" content="日本ワインガイド — 品種・産地・歴史・ペアリングの総合教科書 | Terroir HUB WINE">
 <meta property="og:description" content="日本ワインの品種・産地・歴史・醸造工程・飲み方・ペアリングまで網羅する総合ガイド。">
@@ -35,7 +36,7 @@
       "name": "GIとは何ですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GI（地理的表示）とは、ある産地の農産物・食品がその地域の気候・土壌・人的要因によって特定の品質や特性を持つことを保護する制度です。日本ワインでは2013年のGI山梨を皮切りに、2024年時点で7つのGIが認定されています。GI産地のワインには厳格な品質基準と産地表示ルールが適用されます。"
+        "text": "GI（地理的表示）とは、ある産地の農産物・食品がその地域の気候・土壌・人的要因によって特定の品質や特性を持つことを保護する制度です。日本ワインでは2013年のGI山梨を皮切りに、2026年4月時点で5つのワインGIが認定されています。GI産地のワインには厳格な品質基準と産地表示ルールが適用されます。"
       }
     },
     {
@@ -120,6 +121,15 @@ body{background:#fff;color:#222;font-family:'Noto Sans JP',sans-serif;font-size:
 .guide-intro h2{font-family:'Shippori Mincho',serif;font-size:22px;color:#2A1A1C;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #722F37;}
 .guide-intro p{margin-bottom:16px;color:#444;}
 
+.guide-visuals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:10px 0 44px;}
+.guide-visual{position:relative;display:block;min-height:220px;border-radius:14px;overflow:hidden;border:1px solid #f0ede8;text-decoration:none;color:#fff;background:#1f1f1f;}
+.guide-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.02) contrast(1.03);}
+.guide-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02) 30%,rgba(0,0,0,.62) 100%);}
+.guide-visual strong{position:absolute;left:16px;right:16px;bottom:14px;z-index:1;font-family:'Shippori Mincho',serif;font-size:18px;line-height:1.3;}
+.guide-visual span{display:block;font-size:12px;font-weight:400;margin-top:6px;opacity:.85;}
+.guide-visual.wide{grid-column:span 2;}
+@media(max-width:700px){.guide-visual.wide{grid-column:auto;}}
+
 .guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:48px;}
 .guide-card{background:#fafaf8;border:1px solid #f0ede8;border-radius:12px;padding:28px 24px;text-decoration:none;color:inherit;transition:all 0.25s;}
 .guide-card:hover{border-color:#722F37;box-shadow:0 4px 20px rgba(114,47,55,0.1);transform:translateY(-2px);}
@@ -161,6 +171,25 @@ body{background:#fff;color:#222;font-family:'Noto Sans JP',sans-serif;font-size:
 <p>国産ぶどうから生まれる日本ワイン。品種・産地・醸造・歴史・ペアリングまで、基礎から深くまで解説する総合教科書です。</p>
 </div>
 
+<section class="guide-visuals">
+<a class="guide-visual wide" href="/wine/guide/beginner.html">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Katsunuma%20vineyard%2002.jpg" alt="勝沼のぶどう畑">
+<strong>まずはここから<span>初心者向けの最初の1本</span></strong>
+</a>
+<a class="guide-visual" href="/wine/guide/visit.html">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/BUNCH%20WINE%20GRAPES%20green%20and%20purple%20close%20up%20(48986786716).jpg" alt="ワインぶどう">
+<strong>見学する<span>ワイナリー巡りの入口</span></strong>
+</a>
+<a class="guide-visual" href="/wine/guide/koshu.html">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wine%20Glass%20(6922364426).jpg" alt="ワイングラス">
+<strong>甲州を知る<span>日本ワインの中心品種</span></strong>
+</a>
+<a class="guide-visual" href="/wine/guide/hokkaido-pinot-noir.html">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Red%20Wine%20glass.jpg" alt="赤ワイン">
+<strong>北海道ピノ<span>冷涼産地の代表</span></strong>
+</a>
+</section>
+
 <section class="guide-intro">
 <h2>日本ワインとは</h2>
 <p>日本ワインとは、国産のぶどうのみを原料として日本国内で醸造されたワインです。2018年の酒税法改正により、この定義が法律上明確化されました。それ以前は「国産ワイン」という表示が外国産濃縮果汁を使ったものにも適用されていましたが、現在は国産ぶどう100%のものだけが「日本ワイン」を名乗れます。</p>
@@ -169,51 +198,105 @@ body{background:#fff;color:#222;font-family:'Noto Sans JP',sans-serif;font-size:
 
 <section class="guide-intro">
 <h2>GI（地理的表示）産地</h2>
-<p>日本ワインのGI（地理的表示）制度は2013年のGI山梨認定を皮切りに広がり、2024年時点で7つの産地が認定されています。GI産地のワインには、産地のぶどうを一定割合以上使用することや品質基準への適合が求められます。山梨・北海道・山形・長野・大阪・岩手・萩が現在認定されているGI産地です。</p>
+<p>日本ワインのGI（地理的表示）制度は2013年のGI山梨認定を皮切りに広がり、2026年4月時点で5つのワインGI産地が認定されています。GI産地のワインには、産地のぶどうを一定割合以上使用することや品質基準への適合が求められます。山梨・北海道・山形・大阪・長野が現在認定されているワインGI産地です。</p>
 </section>
 
 <h2 style="font-family:'Shippori Mincho',serif;font-size:22px;color:#2A1A1C;margin-bottom:24px;padding-bottom:8px;border-bottom:2px solid #722F37;">ガイド一覧</h2>
 
 <div class="guide-grid">
 
-<a href="/wine/guide/varieties.html" class="guide-card">
+<a href="/wine/guide/beginner.html" class="guide-card">
+<div class="card-num">GUIDE 00</div>
+<h3>初心者ガイド</h3>
+<p>日本ワインをどこから飲むか、最初の選び方をまとめた入口ページ。</p>
+</a>
+
+<a href="/wine/guide/visit.html" class="guide-card">
 <div class="card-num">GUIDE 01</div>
+<h3>見学できるワイナリー</h3>
+<p>見学・試飲・直売がしやすいワイナリーを探すための実用ガイド。</p>
+</a>
+
+<a href="/wine/guide/compare.html" class="guide-card">
+<div class="card-num">GUIDE 02</div>
+<h3>比較ハブ</h3>
+<p>初心者、見学、甲州、北海道ピノ、長野メルローを横断比較する中核ページ。</p>
+</a>
+
+<a href="/wine/guide/yamanashi-vs-nagano.html" class="guide-card">
+<div class="card-num">GUIDE 02A</div>
+<h3>山梨 vs 長野</h3>
+<p>産地で選ぶ人向け。甲州の山梨とメルローの長野を比較するページ。</p>
+</a>
+
+<a href="/wine/guide/koshu-vs-pinot.html" class="guide-card">
+<div class="card-num">GUIDE 02B</div>
+<h3>甲州 vs ピノ</h3>
+<p>白と赤、和食向きと冷涼産地の違いを品種軸で比較するページ。</p>
+</a>
+
+<a href="/wine/guide/beginner-white.html" class="guide-card">
+<div class="card-num">GUIDE 02C</div>
+<h3>初心者の白</h3>
+<p>最初の1本を白ワインから選ぶ人向けの比較ページ。</p>
+</a>
+
+<a href="/wine/guide/koshu.html" class="guide-card">
+<div class="card-num">GUIDE 03</div>
+<h3>甲州ワイン特化</h3>
+<p>甲州の特徴、和食との相性、山梨の代表ワイナリーをまとめる代表品種ページ。</p>
+</a>
+
+<a href="/wine/guide/hokkaido-pinot-noir.html" class="guide-card">
+<div class="card-num">GUIDE 04</div>
+<h3>北海道ピノ・ノワール</h3>
+<p>余市・仁木を中心に、冷涼産地のピノ・ノワールを深掘りするページ。</p>
+</a>
+
+<a href="/wine/guide/nagano-merlot.html" class="guide-card">
+<div class="card-num">GUIDE 05</div>
+<h3>長野メルロー</h3>
+<p>塩尻・東御・安曇野で評価が高いメルローを比較するページ。</p>
+</a>
+
+<a href="/wine/guide/varieties.html" class="guide-card">
+<div class="card-num">GUIDE 05</div>
 <h3>ぶどう品種ガイド</h3>
 <p>甲州・マスカット・ベーリーA・シャルドネ・メルロー・ピノ・ノワール。日本で栽培される主要品種の特徴と産地を解説。</p>
 </a>
 
 <a href="/wine/guide/production.html" class="guide-card">
-<div class="card-num">GUIDE 02</div>
+<div class="card-num">GUIDE 06</div>
 <h3>醸造工程</h3>
 <p>収穫から瓶詰めまで。白ワイン・赤ワインの製法の違い、樽熟成、自然派ワインについても解説。</p>
 </a>
 
 <a href="/wine/guide/drinking.html" class="guide-card">
-<div class="card-num">GUIDE 03</div>
+<div class="card-num">GUIDE 07</div>
 <h3>飲み方ガイド</h3>
 <p>適飲温度・グラス選び・保存方法。白は8〜12℃、赤は16〜18℃。正しい飲み方で日本ワインをより楽しむ。</p>
 </a>
 
 <a href="/wine/guide/pairing.html" class="guide-card">
-<div class="card-num">GUIDE 04</div>
+<div class="card-num">GUIDE 08</div>
 <h3>料理ペアリング</h3>
 <p>和食×日本ワインに特化。甲州×刺身、MBA×焼き鳥、ピノ・ノワール×鴨など、具体的な組み合わせを紹介。</p>
 </a>
 
 <a href="/wine/guide/history.html" class="guide-card">
-<div class="card-num">GUIDE 05</div>
+<div class="card-num">GUIDE 09</div>
 <h3>日本ワインの歴史</h3>
 <p>1875年の国産ワイン発祥から現代のGI制度まで。150年の日本ワイン史を年表で辿る。</p>
 </a>
 
 <a href="/wine/guide/regions.html" class="guide-card">
-<div class="card-num">GUIDE 06</div>
+<div class="card-num">GUIDE 10</div>
 <h3>GI産地ガイド</h3>
-<p>GI山梨・北海道・山形・長野・大阪・岩手・萩の7産地を詳解。各産地の気候・土壌・代表ワイナリー。</p>
+<p>GI山梨・北海道・山形・大阪・長野の5産地を詳解。各産地の気候・土壌・代表ワイナリー。</p>
 </a>
 
 <a href="/wine/guide/glossary.html" class="guide-card">
-<div class="card-num">GUIDE 07</div>
+<div class="card-num">GUIDE 11</div>
 <h3>用語集</h3>
 <p>テロワール・タンニン・アペラシオンなど50語以上の用語を4カテゴリで解説。</p>
 </a>

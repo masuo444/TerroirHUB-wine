@@ -16,7 +16,13 @@
     "wine_style": "mixed",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "シャルドネ",
+      "ソーヴィニヨン・ブラン",
+      "ブラッククイーン"
+    ],
     "brands": [
       {
         "name": "Vin de Ollage",
@@ -82,7 +88,10 @@
     "wine_style": "mixed",
     "main_grape": "merlot",
     "gi": "",
-    "grapes": [],
+    "grapes": [
+      "メルロー",
+      "シャルドネ"
+    ],
     "brands": [
       {
         "name": "吾妻山麓ワイン",
@@ -108,7 +117,7 @@
     "founded_era": "平成24年",
     "address": "福島県二本松市木幡字白石181-1",
     "tel": "0243-24-8170",
-    "url": "",
+    "url": "https://nippon.wine/winery/12070010077/",
     "area": "二本松市",
     "desc": "農家が立ち上げ、栽培から、醸造、瓶詰め、販売まで手掛けるファーマーズワイナリー。",
     "visit": "見学可（一部要予約）。試飲無料（3種類）、一部有料。営業時間：9:00〜17:00（定休日：不定休）",
