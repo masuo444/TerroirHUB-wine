@@ -277,7 +277,7 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP','Inter',s
 .overlay.open{display:flex;}
 .chat-panel{width:100%;max-width:420px;margin:0 auto;height:88vh;background:var(--bg);border-radius:20px 20px 0 0;display:flex;flex-direction:column;transform:translateY(100%);transition:transform 0.45s cubic-bezier(0.16,1,0.3,1);overflow:hidden;box-shadow:0 -16px 48px rgba(0,0,0,0.2);}
 .overlay.open .chat-panel{transform:translateY(0);}
-@media(min-width:701px){.overlay{align-items:center;}.chat-panel{border-radius:16px;height:75vh;}}
+@media(min-width:701px){.overlay{align-items:stretch;justify-content:flex-end;}.chat-panel{width:400px;max-width:100vw;height:100%;border-radius:0;transform:translateX(100%);box-shadow:-8px 0 40px rgba(0,0,0,0.4);}.overlay.open .chat-panel{transform:translateX(0);}}
 @media(max-width:700px){.chat-panel{max-width:100%;height:100dvh;border-radius:0;}.overlay{background:none;backdrop-filter:none;}}
 .cp-hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--wine);color:#fff;}
 .cp-hdr-l{display:flex;align-items:center;gap:10px;}
@@ -369,6 +369,11 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP','Inter',s
 .btn-wine:hover{opacity:0.85;}
 .btn-wine-outline{padding:12px 24px;border:1.5px solid #722F37;color:#722F37;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Noto Sans JP',sans-serif;text-decoration:none;display:inline-flex;align-items:center;transition:all 0.2s;}
 .btn-wine-outline:hover{background:#722F37;color:#fff;}
+
+.mob-close-bar{display:none;padding:8px 16px 10px;flex-shrink:0;background:#fff;}
+.mob-close-bar button{width:100%;padding:12px;background:rgba(0,0,0,.04);border:1.5px solid rgba(0,0,0,.2);border-radius:8px;color:#333;font-size:.85rem;font-weight:500;letter-spacing:.08em;cursor:pointer;font-family:'Noto Sans JP',sans-serif;transition:all .2s;}
+.mob-close-bar button:hover,.mob-close-bar button:active{background:rgba(0,0,0,.08);}
+@media(max-width:699px){.mob-close-bar{display:block;}}
 </style>
 </head>
 <body>
@@ -780,6 +785,7 @@ window.THUB_CONFIG={genre:'wine',brandColor:'#722F37',brandColor2:'#A86B74',base
       <textarea id="pi" rows="1" placeholder="何でも聞いてください…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMsg();}"></textarea>
       <button id="ps" onclick="sendMsg()">↑</button>
     </div>
+    <div class="mob-close-bar"><button onclick="closePanel()">✕ チャットを閉じる</button></div>
   </div>
 </div>
 
@@ -879,8 +885,9 @@ async function sendMsg(preset){
     }
     const r=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers,body:JSON.stringify({question:msg,history:chatHistory.slice(-20),context:'Terroir HUB WINE'})});
     if(r.status===401){const t=document.getElementById('ct');if(t)t.querySelector('.mb').textContent='ログインが必要です。';if(typeof showAuth==='function')setTimeout(()=>showAuth('login'),800);chatLoading=false;return;}
+    if(r.status===402){const t=document.getElementById('ct');if(t)t.querySelector('.mb').textContent='今月のご利用上限に達しました。プランをアップグレードするとさらに利用できます。';chatLoading=false;return;}
     const d=await r.json();
-    const ans=d.answer||'申し訳ありません、エラーが発生しました。';
+    const ans=d.answer||'少し時間をおいてお試しください。';
     const t=document.getElementById('ct');
     if(t)t.querySelector('.mb').innerHTML=fmtAnswer(ans);
     chatHistory.push({role:'assistant',content:ans});
