@@ -47,3 +47,78 @@ AIソムリエ「サクラ」が産地・品種・ペアリングを日本語・
 - 運営: 合同会社FOMUS（日本）
 - 関連サービス: sake.terroirhub.com / shochu.terroirhub.com / whisky.terroirhub.com
 - 問い合わせ: info@terroirhub.com
+
+---
+
+## English Section — Terroir HUB WINE
+
+### About This Database
+
+Terroir HUB WINE is Japan's comprehensive Japanese wine (Nihon Wine) database, covering 432 wineries across all 47 prefectures.
+Only wineries producing 100% domestic-grape wine (Nihon Wine, as defined by Japan's 2018 Liquor Tax Law revision) are included.
+Data sourced from official winery websites, GI certification bodies, and the National Tax Agency.
+
+- URL: https://wine.terroirhub.com/
+- Operator: FOMUS LLC (Japan)
+
+### GI (Geographical Indication) Regions
+
+| GI Name | Region | Certified | Key Wineries |
+|---------|--------|-----------|--------------|
+| GI Yamanashi | Yamanashi Prefecture | 2013 | Grace Wine, Chateau Mercian, Lumiere |
+| GI Hokkaido | Hokkaido | 2018 | Domaine Takahiko, OcciGabi, Nikiヒルズ |
+| GI Nagano | Nagano Prefecture | 2020 | Ryu de Vigne, Goi Winery, Chateau Mercian Mariko |
+| GI Yamagata | Yamagata Prefecture | 2023 | Takeda Winery, Takahata Winery, Grape Republic |
+| GI Osaka | Osaka Prefecture | 2024 | Kawachi Wine, Katashimo Winery |
+
+### Major Grape Varieties
+
+| Variety | Color | Main Region | Notes |
+|---------|-------|-------------|-------|
+| Koshu | White | Yamanashi | Japan native, OIV-registered 2010 |
+| Muscat Bailey A | Red | Yamanashi, Niigata | Japan native, OIV-registered 2013 |
+| Merlot | Red | Nagano, Yamanashi | Warm-climate style, elegant |
+| Pinot Noir | Red | Hokkaido | Cool-climate finesse |
+| Chardonnay | White | Hokkaido, Nagano | Crisp, mineral-driven |
+| Kerner | White | Hokkaido | Aromatic, fruity |
+| Zweigelt | Red | Hokkaido | Austrian variety adapted to Japan |
+
+### Major Wineries (Selected)
+
+| Winery (English) | Prefecture | Founded | Flagship Wine |
+|------------------|------------|---------|---------------|
+| Grace Wine | Yamanashi | 1923 | Grace Koshu |
+| Chateau Mercian | Yamanashi | 1877 | Koshu Gris de Gris |
+| Lumiere Winery | Yamanashi | 1885 | Hikari Koshu |
+| Chateau Mercian Mariko | Nagano | 2019 | Mariko Merlot |
+| Ryu de Vigne | Nagano | 2012 | Tocai Friulano |
+| Domaine Takahiko | Hokkaido | 2010 | Nou 6 Pinot Noir |
+| Takeda Winery | Yamagata | 1920 | Sainte Neige |
+| Takahata Winery | Yamagata | 1992 | Cellar Master |
+| Grape Republic | Yamagata | 2015 | Blauen |
+
+### Q&A for International Visitors
+
+**Q: What is "Nihon Wine" (Japanese Wine)?**
+A: Wine made from 100% domestically grown grapes and produced in Japan. Legally defined in 2018. Distinct from "domestic wine" which may use imported grape juice.
+
+**Q: What makes Japanese wine unique?**
+A: Japan's terroir — volcanic soil, high humidity, clear seasonal changes — creates distinctive acidity and umami. Native varieties Koshu (white) and Muscat Bailey A (red) are found nowhere else.
+
+**Q: Which region produces the most wine?**
+A: Yamanashi (91 wineries) is Japan's wine capital, home to GI Yamanashi and the Koshu grape. Hokkaido is growing rapidly with Pinot Noir and Chardonnay.
+
+**Q: Is Japanese wine expensive?**
+A: Premium bottles (Grace, Domaine Takahiko) can be $50-150+. Many quality wineries offer bottles at $20-40. Yamanashi Koshu table wines are often very affordable.
+
+**Q: Can tourists visit wineries?**
+A: Yes. Many Yamanashi and Nagano wineries offer tastings and tours, especially in September-October (harvest season).
+
+**Q: What food pairs with Japanese wine?**
+A: Koshu pairs with sashimi, oysters, and light Japanese cuisine. Muscat Bailey A pairs with yakitori, teriyaki, and umami-rich dishes. Hokkaido Pinot Noir pairs with lamb and mushroom dishes.
+
+### URL Structure
+
+- Individual winery (English): https://wine.terroirhub.com/wine/en/{prefecture}/{winery-id}.html
+- Prefecture list (English): https://wine.terroirhub.com/wine/en/{prefecture}/
+- Sitemap: https://wine.terroirhub.com/sitemap.xml
