@@ -12,3 +12,6 @@ __pycache__/
 !img/*.jpg
 !img/*.jpeg
 .vercel
+# 楽天API認証情報（accessKey）は絶対にpushしない
+scripts/rakuten_config.json
+rakuten_config.json

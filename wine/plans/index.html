@@ -234,5 +234,63 @@ body{background:#FAF8F5;color:#222;font-family:'Noto Sans JP','DM Sans',sans-ser
 <link rel="preconnect" href="https://sake.terroirhub.com">
 <script src="https://sake.terroirhub.com/shared/cookie-storage.js"></script>
 <script src="https://sake.terroirhub.com/shared/auth.js"></script>
+<script>
+(function(){
+  var ACCENT='#722F37';
+  var _mode='signup';
+  function buildModal(){
+    if(document.getElementById('plans-auth-modal'))return;
+    var el=document.createElement('div');
+    el.id='plans-auth-modal';
+    el.style.cssText='display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.5);backdrop-filter:blur(6px);align-items:center;justify-content:center;';
+    el.innerHTML='<div style="background:#fff;border-radius:16px;padding:32px 28px;max-width:400px;width:calc(100%-32px);box-shadow:0 20px 60px rgba(0,0,0,0.2);position:relative;">'
+      +'<button onclick="document.getElementById(\'plans-auth-modal\').style.display=\'none\'" style="position:absolute;top:14px;right:14px;background:none;border:none;font-size:20px;color:#aaa;cursor:pointer;">✕</button>'
+      +'<h3 id="plans-auth-title" style="font-size:20px;font-weight:700;color:#1a1a1a;margin:0 0 6px;font-family:serif;"></h3>'
+      +'<p id="plans-auth-sub" style="font-size:13px;color:#888;margin:0 0 20px;"></p>'
+      +'<button onclick="thubSignInWithGoogle&&thubSignInWithGoogle()" style="width:100%;height:46px;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;border:1px solid #ddd;border-radius:8px;font-size:14px;font-weight:500;color:#333;cursor:pointer;margin-bottom:16px;"><svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Googleで続ける</button>'
+      +'<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;"><div style="flex:1;height:1px;background:#eee;"></div><span style="font-size:11px;color:#ccc;">または</span><div style="flex:1;height:1px;background:#eee;"></div></div>'
+      +'<input id="plans-auth-email" type="email" placeholder="メールアドレス" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">'
+      +'<input id="plans-auth-pw" type="password" placeholder="パスワード（6文字以上）" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:8px;font-size:14px;margin-bottom:14px;box-sizing:border-box;">'
+      +'<button id="plans-auth-submit" onclick="plansAuthSubmit()" style="width:100%;padding:13px;background:'+ACCENT+';color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;margin-bottom:12px;"></button>'
+      +'<div id="plans-auth-err" style="font-size:12px;color:#e53;text-align:center;min-height:16px;margin-bottom:8px;"></div>'
+      +'<p style="font-size:12px;color:#aaa;text-align:center;"><a id="plans-auth-toggle" href="#" onclick="event.preventDefault();showAuth(_mode===\'signup\'?\'login\':\'signup\')" style="color:'+ACCENT+';">Switch</a></p>'
+      +'</div>';
+    el.addEventListener('click',function(e){if(e.target===el)el.style.display='none';});
+    document.body.appendChild(el);
+  }
+  window.showAuth=function(mode){
+    _mode=mode||'signup';
+    buildModal();
+    var m=document.getElementById('plans-auth-modal');
+    document.getElementById('plans-auth-title').textContent=_mode==='signup'?'アカウントを作成':'サインイン';
+    document.getElementById('plans-auth-sub').textContent=_mode==='signup'?'無料・クレジットカード不要':'おかえりなさい';
+    document.getElementById('plans-auth-submit').textContent=_mode==='signup'?'アカウントを作成':'サインイン';
+    document.getElementById('plans-auth-toggle').textContent=_mode==='signup'?'すでにアカウントをお持ちの方':'アカウントをお持ちでない方は無料登録';
+    document.getElementById('plans-auth-err').textContent='';
+    m.style.display='flex';
+    setTimeout(function(){document.getElementById('plans-auth-email').focus();},100);
+  };
+  window.plansAuthSubmit=async function(){
+    var email=document.getElementById('plans-auth-email').value.trim();
+    var pw=document.getElementById('plans-auth-pw').value;
+    var err=document.getElementById('plans-auth-err');
+    if(!email||!pw){err.textContent='すべての項目を入力してください。';return;}
+    if(pw.length<6){err.textContent='パスワードは6文字以上で入力してください。';return;}
+    err.textContent='';
+    if(_mode==='signup'){
+      if(typeof thubSignUp==='function') await thubSignUp(email,pw);
+    } else {
+      if(typeof thubSignIn==='function') await thubSignIn(email,pw);
+    }
+    setTimeout(function(){
+      if(window.thubAuth&&window.thubAuth.isLoggedIn){
+        document.getElementById('plans-auth-modal').style.display='none';
+        var p=sessionStorage.getItem('thub_pending_plan');
+        if(p&&typeof thubSubscribe==='function') thubSubscribe(p);
+      }
+    },800);
+  };
+})();
+</script>
 </body>
 </html>

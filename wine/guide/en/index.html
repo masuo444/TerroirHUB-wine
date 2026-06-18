@@ -563,5 +563,32 @@ body {
   <a href="/wine/en/plans/" class="tab-item"><span class="tab-icon">&#11088;</span><span class="tab-label">Plans</span></a>
 </div>
 
+<!-- EMAIL CAPTURE -->
+<section style="background:#F8F6F3;border-top:1px solid rgba(0,0,0,0.08);border-bottom:1px solid rgba(0,0,0,0.08);padding:56px 24px;text-align:center;">
+  <div style="max-width:520px;margin:0 auto;">
+    <div style="font-size:11px;letter-spacing:0.25em;color:#722F37;font-weight:500;margin-bottom:12px;text-transform:uppercase;">Stay Updated</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:#1A1510;margin:0 0 10px;">New wineries. New guides. First.</h2>
+    <p style="font-size:14px;color:#503820;line-height:1.8;margin:0 0 24px;">Join Japanese wine enthusiasts worldwide. One email per month — new content only, no spam.</p>
+    <form id="sub-form" onsubmit="subSubmit(event)" style="display:flex;gap:10px;max-width:400px;margin:0 auto;">
+      <input id="sub-email" type="email" placeholder="your@email.com" required style="flex:1;padding:12px 16px;border:1.5px solid #E5DAD0;border-radius:8px;font-size:14px;outline:none;background:#fff;color:#1A1510;" onfocus="this.style.borderColor='#722F37'" onblur="this.style.borderColor='#E5DAD0'">
+      <button type="submit" style="padding:12px 20px;background:#722F37;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Subscribe</button>
+    </form>
+    <div id="sub-msg" style="font-size:13px;margin-top:12px;min-height:20px;color:#722F37;"></div>
+  </div>
+</section>
+<script>
+async function subSubmit(e){
+  e.preventDefault();
+  var email=document.getElementById('sub-email').value.trim();
+  var msg=document.getElementById('sub-msg');
+  var btn=e.target.querySelector('button');
+  btn.disabled=true;btn.textContent='...';
+  try{
+    var r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email})});
+    if(r.ok){msg.style.color='#722F37';msg.textContent="✓ You're on the list. Welcome!";e.target.style.display='none';}
+    else{msg.style.color='#c0392b';msg.textContent='Something went wrong. Please try again.';btn.disabled=false;btn.textContent='Subscribe';}
+  }catch(err){msg.style.color='#c0392b';msg.textContent='Something went wrong. Please try again.';btn.disabled=false;btn.textContent='Subscribe';}
+}
+</script>
 </body>
 </html>

@@ -15,6 +15,59 @@ with open(os.path.join(BASE, 'template_wine.html'), 'r') as f:
     tmpl = f.read()
 CSS = tmpl[tmpl.find('<style>') + 7:tmpl.find('</style>')]
 
+# ── 楽天商品データ（fetch_rakuten_items.py が生成）
+RAKUTEN_DB = {}
+_rk_path = os.path.join(BASE, 'wine', 'rakuten_items.json')
+if os.path.exists(_rk_path):
+    try:
+        RAKUTEN_DB = json.load(open(_rk_path, encoding='utf-8'))
+    except Exception:
+        RAKUTEN_DB = {}
+
+import urllib.parse as _up
+AMAZON_TAG = 'terroirhub-22'
+def amazon_url(kw):
+    return 'https://www.amazon.co.jp/s?k=' + _up.quote(kw or '') + '&i=food-beverage&tag=' + AMAZON_TAG
+
+# ── 購入導線・STORY刷新のための追加CSS
+EXTRA_CSS = '''
+/* STORY 刷新（写真なし・タイポ中心） */
+.story-redesign{background:var(--surface-warm);padding:110px 24px;}
+.story-redesign .sec-inner{max-width:780px;margin:0 auto;text-align:center;}
+.sr-title{font-family:'Zen Old Mincho',serif;font-size:48px;font-weight:700;color:var(--text);letter-spacing:.05em;line-height:1.45;margin:20px 0 0;}
+.sr-rule{width:44px;height:2px;background:var(--accent);margin:30px auto 0;opacity:.8;}
+.sr-lead{font-family:'Noto Serif JP',serif;font-weight:300;font-size:18px;line-height:2.15;color:var(--text-body);max-width:620px;margin:34px auto 0;}
+.sr-meta{display:flex;justify-content:center;margin-top:56px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.sm-item{flex:1;padding:30px 18px;border-left:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:8px;}
+.sm-item:first-child{border-left:none;}
+.sm-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--accent);line-height:.9;}
+.sm-val{font-family:'Zen Old Mincho',serif;font-size:21px;color:var(--text);line-height:1.2;}
+.sm-lbl{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.22em;color:var(--text-muted);}
+.sm-sub{font-family:'Noto Serif JP',serif;font-size:12px;color:var(--text-muted);}
+/* 代表銘柄カード（楽天画像・価格なし・楽天/Amazonボタン） */
+.brands-grid .brand-card{display:flex;flex-direction:column;}
+.brand-img-wrap{width:100%;aspect-ratio:1/1;background:#fff;border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:16px;display:flex;align-items:center;justify-content:center;}
+.brand-img{width:100%;height:100%;object-fit:contain;padding:14px;box-sizing:border-box;transition:transform .3s;}
+.brand-card:hover .brand-img{transform:scale(1.04);}
+.brand-img-placeholder{color:var(--text-muted);font-family:'DM Sans';font-size:13px;letter-spacing:.1em;}
+.brand-noimg{background:linear-gradient(135deg,var(--surface-warm) 0%,#fff 100%);padding:24px;}
+.brand-noimg-name{font-family:'Zen Old Mincho',serif;font-size:22px;color:var(--text);line-height:1.7;text-align:center;letter-spacing:.05em;}
+.buy-btns{display:flex;gap:8px;margin-top:14px;}
+.bb{flex:1;text-align:center;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;padding:9px 0;border-radius:3px;text-decoration:none;letter-spacing:.03em;transition:all .2s;}
+.bb-r{background:#BF0000;color:#fff;}.bb-r:hover{background:#a00000;}
+.bb-a{background:#FF9900;color:#1a1a1a;}.bb-a:hover{background:#e88a00;}
+/* このワイナリーのワイン（楽天商品グリッド） */
+.buy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.buy-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .22s,transform .22s;}
+.buy-card:hover{box-shadow:0 8px 24px rgba(42,32,24,.10);transform:translateY(-2px);}
+.buy-card-img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;padding:12px;box-sizing:border-box;}
+.buy-card-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1;}
+.buy-card-name{font-size:13px;line-height:1.5;color:var(--text-body);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:39px;margin-bottom:4px;}
+.buy-note{font-size:11px;color:var(--text-muted);line-height:1.7;margin-top:20px;text-align:center;}
+@media(max-width:900px){.buy-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.sr-title{font-size:32px;}.sr-lead{font-size:16px;}.sr-meta{flex-direction:column;}.sm-item{border-left:none;border-top:1px solid var(--border);padding:24px;}.sm-item:first-child{border-top:none;}.buy-grid{grid-template-columns:1fr 1fr;gap:12px;}}
+'''
+
 PREF_NAMES = {
     'hokkaido':'北海道','aomori':'青森県','iwate':'岩手県','miyagi':'宮城県','akita':'秋田県',
     'yamagata':'山形県','fukushima':'福島県','ibaraki':'茨城県','tochigi':'栃木県','gunma':'群馬県',
@@ -136,6 +189,10 @@ def generate_page(b, pref_slug):
     lng       = b.get('lng')
 
     winery_label = WINERY_TYPE_LABELS.get(winery_type, '日本ワイナリー')
+
+    # 楽天データ
+    rk = RAKUTEN_DB.get(b.get('id'), {}) if b.get('id') else {}
+    rk_brands = {x.get('name'): x for x in rk.get('brands', []) if isinstance(x, dict)}
 
     years = ''
     if founded and founded.isdigit():
@@ -309,16 +366,27 @@ def generate_page(b, pref_slug):
             elif '甘口' in br_type: style_class = 'sweet'
             wine_badge_html = f'<div class="wine-badge {style_class}">{esc(br_type)}</div>'
 
+        # 楽天画像カード（価格なし・楽天/Amazon両ボタン）。画像なしは明朝で銘柄名表示
+        rb = rk_brands.get(br_name) or {}
+        rimg, rurl = rb.get('image', ''), rb.get('url', '')
+        if rimg:
+            imgwrap = f'<div class="brand-img-wrap"><img class="brand-img" src="{esc(rimg)}" alt="{esc(br_name)}" loading="lazy"></div>'
+        else:
+            imgwrap = f'<div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">{esc(br_name)}</span></div>'
+        btns = '<div class="buy-btns">'
+        if rurl:
+            btns += f'<a class="bb bb-r" href="{esc(rurl)}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>'
+        btns += f'<a class="bb bb-a" href="{esc(amazon_url(br_name))}" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>'
+
         brands_html += f'''
     <div class="brand-card">
-      <div class="brand-img-wrap">
-        <div class="brand-img-placeholder">PHOTO</div>
-      </div>
+      {imgwrap}
       {wine_badge_html}
       {f'<div class="grape-tag">{esc(br_grapes)}</div>' if br_grapes else ''}
       <h3 class="brand-name">{esc(br_name)}</h3>
       <p class="brand-type">{esc(br_type or specs_short)}</p>
       {f'<p class="brand-desc">{esc(br_specs)}</p>' if br_specs else ''}
+      {btns}
     </div>'''
 
     # ── Features HTML ──
@@ -347,31 +415,25 @@ def generate_page(b, pref_slug):
             </div>
           </div>'''
 
-    # ── Story section ──
+    # ── Story section（写真なし・タイポ中心の刷新版） ──
     story_section = ''
-    if desc:
+    if desc or founded or area:
+        sm = ''
+        if years:
+            sm += f'<div class="sm-item"><span class="sm-num">{years}</span><span class="sm-lbl">YEARS</span><span class="sm-sub">年の歴史</span></div>'
+        if founded_era or founded:
+            sub = f'{esc(founded)}年創業' if founded else '創業'
+            sm += f'<div class="sm-item"><span class="sm-val">{esc(founded_era or founded)}</span><span class="sm-lbl">FOUNDED</span><span class="sm-sub">{sub}</span></div>'
+        if area:
+            sm += f'<div class="sm-item"><span class="sm-val">{esc(area)}</span><span class="sm-lbl">TERROIR</span><span class="sm-sub">産地</span></div>'
         story_section = f'''
-<section class="section" style="background:var(--bg);">
+<section class="section story-redesign">
   <div class="sec-inner">
-    <div class="story-grid">
-      <div class="story-visual">
-        <div class="story-visual-inner">
-          <div class="bottle">
-            <div class="bottle-neck"></div>
-            <div class="bottle-lbl">
-              <div class="bottle-lbl-txt">{esc(brand or name)}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <label class="sec-label">STORY</label>
-        <h2 class="sec-title">{esc(name)}の物語</h2>
-        <div class="sec-divider"></div>
-        <p class="sec-body">{esc(desc)}</p>
-        {f'<div class="facts" style="margin-top:32px;">{facts_html}</div>' if facts_html else ''}
-      </div>
-    </div>
+    <label class="sec-label">STORY</label>
+    <h2 class="sr-title">{esc(name)}の物語</h2>
+    <div class="sr-rule"></div>
+    {f'<p class="sr-lead">{esc(desc)}</p>' if desc else ''}
+    {f'<div class="sr-meta">{sm}</div>' if sm else ''}
   </div>
 </section>'''
 
@@ -432,6 +494,36 @@ def generate_page(b, pref_slug):
     <div class="sec-divider"></div>
     <div class="brands-grid">{brands_html}
     </div>
+  </div>
+</section>'''
+
+    # ── Shop section（このワイナリーのワイン・楽天商品グリッド） ──
+    shop_section = ''
+    rk_items = [it for it in rk.get('items', []) if isinstance(it, dict) and it.get('image')]
+    if rk_items:
+        cards = ''
+        for it in rk_items[:6]:
+            iname, iimg, iurl = it.get('name', ''), it.get('image', ''), it.get('url', '')
+            cards += f'''
+      <div class="buy-card">
+        <a href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener"><img class="buy-card-img" src="{esc(iimg)}" alt="{esc(iname)}" loading="lazy"></a>
+        <div class="buy-card-body">
+          <div class="buy-card-name">{esc(iname)}</div>
+          <div class="buy-btns">
+            <a class="bb bb-r" href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener">楽天</a>
+            <a class="bb bb-a" href="{esc(amazon_url(iname))}" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
+          </div>
+        </div>
+      </div>'''
+        shop_section = f'''
+<section class="section buy-section" style="background:var(--surface-warm);">
+  <div class="sec-inner">
+    <label class="sec-label">BUY</label>
+    <h2 class="sec-title">このワイナリーのワイン</h2>
+    <div class="sec-divider"></div>
+    <div class="buy-grid">{cards}
+    </div>
+    <p class="buy-note">※ 商品・価格は楽天市場の検索結果です（時点により変動）。Terroir HUB はワインの販売を行っていません。<br>価格・在庫・送料は各ストアでご確認ください。20歳未満の飲酒は法律で禁止されています。</p>
   </div>
 </section>'''
 
@@ -517,6 +609,7 @@ def generate_page(b, pref_slug):
 <script src="https://sake.terroirhub.com/shared/auth.js" defer></script>
 <style>
 {CSS}
+{EXTRA_CSS}
 </style>
 </head>
 <body>
@@ -575,6 +668,8 @@ def generate_page(b, pref_slug):
 {gi_section}
 
 {brands_section}
+
+{shop_section}
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -716,12 +811,18 @@ function removeT(){{var e=document.getElementById('tp');if(e)e.remove();}}
 
 
 # Main
+import sys as _sys
+_test = _sys.argv[_sys.argv.index('--test') + 1] if '--test' in _sys.argv else None
+_pref = _sys.argv[_sys.argv.index('--pref') + 1] if '--pref' in _sys.argv else None
+
 json_files = sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json')))
 total = 0
 errors = 0
 
 for jf in json_files:
     pref = os.path.basename(jf).replace('data_', '').replace('_wineries.json', '')
+    if _pref and pref != _pref:
+        continue
     with open(jf, 'r', encoding='utf-8') as f:
         wineries = json.load(f)
 
@@ -730,6 +831,8 @@ for jf in json_files:
 
     for b in wineries:
         if not b.get('id'):
+            continue
+        if _test and b.get('id') != _test:
             continue
         try:
             html = '\n'.join(line.rstrip() for line in generate_page(b, pref).splitlines()) + '\n'
@@ -740,6 +843,7 @@ for jf in json_files:
             print(f"  ERROR: {pref}/{b.get('id','?')} — {e}")
             errors += 1
 
-    print(f"  {pref}: {len(wineries)} pages")
+    if not _test:
+        print(f"  {pref}: {len(wineries)} pages")
 
 print(f"\nDone: {total} pages generated, {errors} errors")
