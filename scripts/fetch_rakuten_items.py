@@ -20,6 +20,9 @@
 """
 import json, glob, os, sys, time, re, urllib.request, urllib.parse, urllib.error
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from wine_filter import is_wine_item   # ワイン以外（服飾・他カテゴリ酒類等）を弾く共通フィルタ
+
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(BASE, 'scripts', 'rakuten_config.json'), encoding='utf-8'))
 ENDPOINT = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601'
@@ -87,6 +90,9 @@ def items_from(data):
         img = img_of(it)
         if not img:
             continue
+        name = it.get('itemName', '').strip()
+        if not is_wine_item(name):   # ワイン以外（服飾・雑貨・書籍・他カテゴリ酒類）は除外
+            continue
         out.append({
             'name': it.get('itemName', '').strip(),
             'image': img,
@@ -101,8 +107,8 @@ def brand_image(brname, brand, pool):
     for it in pool:
         nm = it['name']
         if tokens and all(t in nm for t in tokens):
-            return {'name': brname, 'image': it['image'], 'url': it['url']}
-    # フォールバック: 銘柄名→末尾を削る→ワイナリー代表
+            return {'name': brname, 'image': it['image'], 'url': it['url'], 'match': nm}
+    # フォールバック: 銘柄名→末尾を削る→ワイナリー代表（pool/items_fromは既にワイン限定）
     cands = [brname]
     p = list(tokens)
     while len(p) > 1:
@@ -112,7 +118,7 @@ def brand_image(brname, brand, pool):
     for kw in cands[1:]:  # brname本体はpoolで見つからなかったので次から
         res = items_from(search(kw, hits=3))
         if res:
-            return {'name': brname, 'image': res[0]['image'], 'url': res[0]['url']}
+            return {'name': brname, 'image': res[0]['image'], 'url': res[0]['url'], 'match': res[0]['name']}
     return {'name': brname, 'image': '', 'url': ''}
 
 
@@ -157,10 +163,10 @@ def main():
                 if not n:
                     continue
                 nk = normalize_kw(n)
-                got = next(({'name': n, 'image': it['image'], 'url': it['url']} for it in pool if nk and nk in it['name']), None)
+                got = next(({'name': n, 'image': it['image'], 'url': it['url'], 'match': it['name']} for it in pool if nk and nk in it['name']), None)
                 if not got:
                     r = items_from(search(nk, hits=3, avail=False)) if nk else []
-                    got = {'name': n, 'image': r[0]['image'], 'url': r[0]['url']} if r else {'name': n, 'image': '', 'url': ''}
+                    got = {'name': n, 'image': r[0]['image'], 'url': r[0]['url'], 'match': r[0]['name']} if r else {'name': n, 'image': '', 'url': ''}
                 brands.append(got)
             result[bid] = {'brands': brands, 'items': items}
             if items:

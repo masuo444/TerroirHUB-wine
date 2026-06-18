@@ -7,6 +7,10 @@ SEO/AIO強化版: Winery JSON-LD, FAQPage, GeoCoordinates, パンくずリスト
 import json
 import glob
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from wine_filter import is_wine_item   # ワイン以外の楽天商品を表示しないための共通フィルタ
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -193,6 +197,9 @@ def generate_page(b, pref_slug):
     # 楽天データ
     rk = RAKUTEN_DB.get(b.get('id'), {}) if b.get('id') else {}
     rk_brands = {x.get('name'): x for x in rk.get('brands', []) if isinstance(x, dict)}
+    # ワイン判定を通った楽天商品のURL集合（銘柄画像の検証に使う）
+    _valid_rk_urls = {it.get('url') for it in rk.get('items', [])
+                      if isinstance(it, dict) and it.get('url') and is_wine_item(it.get('name', ''))}
 
     years = ''
     if founded and founded.isdigit():
@@ -367,8 +374,15 @@ def generate_page(b, pref_slug):
             wine_badge_html = f'<div class="wine-badge {style_class}">{esc(br_type)}</div>'
 
         # 楽天画像カード（価格なし・楽天/Amazon両ボタン）。画像なしは明朝で銘柄名表示
+        # 銘柄画像は「ワイン判定を通った検証済み商品」と一致するURLのみ採用（誤マッチ画像を出さない）
         rb = rk_brands.get(br_name) or {}
         rimg, rurl = rb.get('image', ''), rb.get('url', '')
+        # 検証: match(マッチ商品名)があればワイン判定で、無い旧データはitems一致で担保
+        if rimg:
+            _m = rb.get('match')
+            _ok = is_wine_item(_m) if _m else (rurl in _valid_rk_urls)
+            if not _ok:
+                rimg, rurl = '', ''
         if rimg:
             imgwrap = f'<div class="brand-img-wrap"><img class="brand-img" src="{esc(rimg)}" alt="{esc(br_name)}" loading="lazy"></div>'
         else:
@@ -499,7 +513,7 @@ def generate_page(b, pref_slug):
 
     # ── Shop section（このワイナリーのワイン・楽天商品グリッド） ──
     shop_section = ''
-    rk_items = [it for it in rk.get('items', []) if isinstance(it, dict) and it.get('image')]
+    rk_items = [it for it in rk.get('items', []) if isinstance(it, dict) and it.get('image') and is_wine_item(it.get('name', ''))]
     if rk_items:
         cards = ''
         for it in rk_items[:6]:
