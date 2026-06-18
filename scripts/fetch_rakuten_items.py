@@ -116,10 +116,52 @@ def brand_image(brname, brand, pool):
     if brand and brand not in cands:
         cands.append(brand)
     for kw in cands[1:]:  # brname本体はpoolで見つからなかったので次から
-        res = items_from(search(kw, hits=3))
-        if res:
-            return {'name': brname, 'image': res[0]['image'], 'url': res[0]['url'], 'match': res[0]['name']}
+        for it in items_from(search(kw, hits=5)):
+            if item_matches_identity(it['name'], _IDENTITY[0]):  # その蔵の商品だけ採用
+                return {'name': brname, 'image': it['image'], 'url': it['url'], 'match': it['name']}
     return {'name': brname, 'image': '', 'url': ''}
+
+
+# ── 蔵の同定（その蔵の商品だけを残すためのトークン） ──
+_IDENTITY = [set()]   # brand_image から参照できるよう現在処理中の蔵トークンを保持
+
+_COMPANY_SUFFIX = re.compile(r'(株式会社|有限会社|合同会社|農事組合法人|有限責任事業組合|株|（株）|\(株\)|工業|製造|販売)')
+
+
+def identity_tokens(b):
+    """その蔵を一意に表すトークン集合（蔵名・会社名・ブランド名・銘柄名）。"""
+    toks = set()
+
+    def add(s):
+        if not s:
+            return
+        s = s.strip()
+        if len(s) >= 2:
+            toks.add(s.lower())
+
+    name = b.get('name', '') or ''
+    for part in re.split(r'[（()）]', name):     # 「グレイスワイン（中央葡萄酒）」→ 両方
+        add(part)
+    add(b.get('brand', ''))
+    add(_COMPANY_SUFFIX.sub('', b.get('company', '') or ''))
+    for br in b.get('brands', []):
+        nm = br.get('name', '') if isinstance(br, dict) else str(br)
+        add(nm)
+        # 銘柄の先頭語は「GRACE」「Due」等の汎用英単語だと別ブランド（輸入ワイン等）を拾うため、
+        # 日本語を含む語のみ同定トークンに採用する（英字のみの先頭語は使わない）
+        if nm:
+            head = nm.split()[0]
+            if re.search(r'[ぁ-んァ-ヶ一-龠]', head):
+                add(head)
+    return toks
+
+
+def item_matches_identity(item_name, tokens):
+    """商品名にいずれかの蔵トークンが含まれればTrue（= その蔵の商品）。"""
+    if not tokens:
+        return True
+    low = (item_name or '').lower()
+    return any(t in low for t in tokens)
 
 
 def main():
@@ -191,15 +233,28 @@ def main():
             if not brand:
                 continue
             try:
-                pool = items_from(search(brand, hits=30))
-                # 商品グリッド（重複名除外）
-                items, seen = [], set()
-                for it in pool:
-                    if it['name'] in seen:
-                        continue
-                    seen.add(it['name']); items.append(it)
-                    if len(items) >= GRID_ITEMS:
-                        break
+                # この蔵の同定トークン（brand_imageからも参照）
+                ident = identity_tokens(b)
+                _IDENTITY[0] = ident
+                # 複数キーワードで検索しリコールを上げる（蔵名・ブランド・各銘柄）
+                name_clean = normalize_kw(re.split(r'[（(]', b.get('name', ''))[0])
+                brnames = [normalize_kw(br.get('name', '') if isinstance(br, dict) else str(br))
+                           for br in b.get('brands', [])[:3]]
+                kws = []
+                for k in [brand, name_clean] + brnames:
+                    k = (k or '').strip()
+                    if k and k not in kws:
+                        kws.append(k)
+                # プール構築（ワイン判定 items_from 済み）→ その蔵の商品だけに同定
+                pool, seen = [], set()
+                for kw in kws:
+                    for it in items_from(search(kw, hits=30)):
+                        if it['name'] in seen:
+                            continue
+                        if not item_matches_identity(it['name'], ident):  # 他蔵・無関係を除外
+                            continue
+                        seen.add(it['name']); pool.append(it)
+                items = pool[:GRID_ITEMS]
                 # 代表銘柄ごとの画像
                 brands = []
                 for br in b.get('brands', [])[:3]:
