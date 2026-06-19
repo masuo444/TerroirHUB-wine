@@ -494,6 +494,13 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
 .buy-note{font-size:11px;color:var(--text-muted);line-height:1.7;margin-top:20px;text-align:center;}
 @media(max-width:900px){.buy-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:560px){.sr-title{font-size:32px;}.sr-lead{font-size:16px;}.sr-meta{flex-direction:column;}.sm-item{border-left:none;border-top:1px solid var(--border);padding:24px;}.sm-item:first-child{border-top:none;}.buy-grid{grid-template-columns:1fr 1fr;gap:12px;}}
+/* 関連ワイナリー（同県） */
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.related-card{display:flex;flex-direction:column;gap:5px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;transition:box-shadow .2s,transform .2s;}
+.related-card:hover{box-shadow:0 6px 18px rgba(42,32,24,.08);transform:translateY(-2px);}
+.related-name{font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);}
+.related-meta{font-size:11.5px;color:var(--text-muted);}
+@media(max-width:700px){.related-grid{grid-template-columns:1fr 1fr;}}
 
 </style>
 </head>
@@ -716,6 +723,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
     <div class="sec-divider" style="margin-left:auto;margin-right:auto;"></div>
     <p style="font-size:14px;color:var(--text-body);max-width:560px;margin:0 auto 20px;line-height:1.9;">山梨県のワインは、ふるさと納税の返礼品としても受け取れます。実質自己負担2,000円で、寄付しながら産地と蔵を直接応援できます。</p>
     <a href="/wine/furusato/yamanashi.html" style="display:inline-block;background:#722F37;color:#fff;text-decoration:none;font-size:14px;font-weight:600;padding:13px 30px;border-radius:26px;">山梨県のワインふるさと納税を見る →</a>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg);">
+  <div class="sec-inner">
+    <label class="sec-label">MORE WINERIES</label>
+    <h2 class="sec-title">山梨県の他のワイナリー</h2>
+    <div class="sec-divider"></div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:20px;">山梨県には他にも個性豊かなワイナリーがあります。あわせてご覧ください。</p>
+    <div class="related-grid">
+      <a class="related-card" href="/wine/yamanashi/98wines.html">
+        <span class="related-name">98WINEs</span>
+        <span class="related-meta">甲州市塩山 ｜ 甲州・マスカット・ベーリーA</span>
+      </a>
+      <a class="related-card" href="/wine/yamanashi/cave-an.html">
+        <span class="related-name">Cave an</span>
+        <span class="related-meta">山梨市万力 ｜ 甲州・プティ・マンサン・アルバリーニョ</span>
+      </a>
+      <a class="related-card" href="/wine/yamanashi/creation-farm.html">
+        <span class="related-name">Domaine Creation Farm</span>
+        <span class="related-meta">韮崎市穂坂 ｜ 甲州・マスカットベリーA</span>
+      </a>
+      <a class="related-card" href="/wine/yamanashi/komaki-vineyard.html">
+        <span class="related-name">Komaki Vineyard（小牧ヴィンヤード）</span>
+        <span class="related-meta">北杜市小淵沢 ｜ 甲州・メルロー・シャルドネ</span>
+      </a>
+      <a class="related-card" href="/wine/yamanashi/la-pensee-winery.html">
+        <span class="related-name">LA PENSÉE（ラ・パンセ）</span>
+        <span class="related-meta">南アルプス市 ｜ 甲州・マスカットベリーA・ゲヴュルツトラミネール</span>
+      </a>
+      <a class="related-card" href="/wine/yamanashi/mgvs-winery.html">
+        <span class="related-name">MGVsワイナリー</span>
+        <span class="related-meta">甲州市勝沼 ｜ 甲州・マスカット・ベーリーA</span>
+      </a>
+    </div>
+    <div style="margin-top:22px;"><a href="/wine/yamanashi/" style="font-size:13px;color:var(--accent);text-decoration:none;font-weight:500;">山梨県のワイナリー一覧をすべて見る →</a></div>
   </div>
 </section>
 

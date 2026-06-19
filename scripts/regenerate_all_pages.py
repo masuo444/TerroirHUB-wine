@@ -82,6 +82,13 @@ EXTRA_CSS = '''
 .buy-note{font-size:11px;color:var(--text-muted);line-height:1.7;margin-top:20px;text-align:center;}
 @media(max-width:900px){.buy-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:560px){.sr-title{font-size:32px;}.sr-lead{font-size:16px;}.sr-meta{flex-direction:column;}.sm-item{border-left:none;border-top:1px solid var(--border);padding:24px;}.sm-item:first-child{border-top:none;}.buy-grid{grid-template-columns:1fr 1fr;gap:12px;}}
+/* 関連ワイナリー（同県） */
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.related-card{display:flex;flex-direction:column;gap:5px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;transition:box-shadow .2s,transform .2s;}
+.related-card:hover{box-shadow:0 6px 18px rgba(42,32,24,.08);transform:translateY(-2px);}
+.related-name{font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);}
+.related-meta{font-size:11.5px;color:var(--text-muted);}
+@media(max-width:700px){.related-grid{grid-template-columns:1fr 1fr;}}
 '''
 
 PREF_NAMES = {
@@ -181,7 +188,7 @@ def brand_grapes(brand):
     return ''
 
 
-def generate_page(b, pref_slug):
+def generate_page(b, pref_slug, siblings=None):
     pref_name = PREF_NAMES.get(pref_slug, pref_slug)
     name      = b.get('name','')
     brand     = b.get('brand','')
@@ -565,6 +572,36 @@ def generate_page(b, pref_slug):
   </div>
 </section>'''
 
+    # ── 同じ県の他のワイナリー（ページ毎に内容が変わる独自セクション＋内部リンク） ──
+    related_html = ''
+    if siblings:
+        others = [s for s in siblings if isinstance(s, dict) and s.get('id') and s.get('id') != b.get('id') and s.get('name')]
+        # 同じ主要品種を優先して並べ、最大6件
+        mg = b.get('main_grape')
+        others.sort(key=lambda s: (0 if mg and s.get('main_grape') == mg else 1, s.get('name', '')))
+        cards = ''
+        for s in others[:6]:
+            s_area = esc(s.get('area', '') or pref_name)
+            s_grapes = '・'.join((s.get('grapes') or [])[:3])
+            cards += f'''
+      <a class="related-card" href="/wine/{pref_slug}/{esc(s['id'])}.html">
+        <span class="related-name">{esc(s['name'])}</span>
+        <span class="related-meta">{s_area}{f' ｜ {esc(s_grapes)}' if s_grapes else ''}</span>
+      </a>'''
+        if cards:
+            related_html = f'''
+<section class="section" style="background:var(--bg);">
+  <div class="sec-inner">
+    <label class="sec-label">MORE WINERIES</label>
+    <h2 class="sec-title">{esc(pref_name)}の他のワイナリー</h2>
+    <div class="sec-divider"></div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:20px;">{esc(pref_name)}には他にも個性豊かなワイナリーがあります。あわせてご覧ください。</p>
+    <div class="related-grid">{cards}
+    </div>
+    <div style="margin-top:22px;"><a href="/wine/{pref_slug}/" style="font-size:13px;color:var(--accent);text-decoration:none;font-weight:500;">{esc(pref_name)}のワイナリー一覧をすべて見る →</a></div>
+  </div>
+</section>'''
+
     # ── ふるさと納税CTA（その県の特集ページへ内部リンク。返礼品がある県のみ） ──
     furusato_cta = ''
     if pref_slug in FURUSATO_PREFS:
@@ -723,6 +760,7 @@ def generate_page(b, pref_slug):
 
 {shop_section}
 {furusato_cta}
+{related_html}
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
@@ -888,7 +926,7 @@ for jf in json_files:
         if _test and b.get('id') != _test:
             continue
         try:
-            html = '\n'.join(line.rstrip() for line in generate_page(b, pref).splitlines()) + '\n'
+            html = '\n'.join(line.rstrip() for line in generate_page(b, pref, siblings=wineries).splitlines()) + '\n'
             with open(os.path.join(out_dir, f"{b['id']}.html"), 'w', encoding='utf-8') as f:
                 f.write(html)
             total += 1

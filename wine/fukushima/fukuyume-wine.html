@@ -520,6 +520,13 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
 .buy-note{font-size:11px;color:var(--text-muted);line-height:1.7;margin-top:20px;text-align:center;}
 @media(max-width:900px){.buy-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:560px){.sr-title{font-size:32px;}.sr-lead{font-size:16px;}.sr-meta{flex-direction:column;}.sm-item{border-left:none;border-top:1px solid var(--border);padding:24px;}.sm-item:first-child{border-top:none;}.buy-grid{grid-template-columns:1fr 1fr;gap:12px;}}
+/* 関連ワイナリー（同県） */
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.related-card{display:flex;flex-direction:column;gap:5px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;transition:box-shadow .2s,transform .2s;}
+.related-card:hover{box-shadow:0 6px 18px rgba(42,32,24,.08);transform:translateY(-2px);}
+.related-name{font-family:'Zen Old Mincho',serif;font-size:15px;color:var(--text);}
+.related-meta{font-size:11.5px;color:var(--text-muted);}
+@media(max-width:700px){.related-grid{grid-template-columns:1fr 1fr;}}
 
 </style>
 </head>
@@ -736,6 +743,38 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   </div>
 </section>
 
+
+<section class="section" style="background:var(--bg);">
+  <div class="sec-inner">
+    <label class="sec-label">MORE WINERIES</label>
+    <h2 class="sec-title">福島県の他のワイナリー</h2>
+    <div class="sec-divider"></div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:20px;">福島県には他にも個性豊かなワイナリーがあります。あわせてご覧ください。</p>
+    <div class="related-grid">
+      <a class="related-card" href="/wine/fukushima/iwaki-winery.html">
+        <span class="related-name">いわきワイナリー</span>
+        <span class="related-meta">いわき市 ｜ シャルドネ・メルロー・ピノノワール</span>
+      </a>
+      <a class="related-card" href="/wine/fukushima/ouse-winery.html">
+        <span class="related-name">ふくしま逢瀬ワイナリー</span>
+        <span class="related-meta">郡山市 ｜ メルロー・カベルネ・ソーヴィニヨン・シャルドネ</span>
+      </a>
+      <a class="related-card" href="/wine/fukushima/wine-kobo-aizu.html">
+        <span class="related-name">ワイン工房あいづ</span>
+        <span class="related-meta">猪苗代町 ｜ ベーリーA</span>
+      </a>
+      <a class="related-card" href="/wine/fukushima/kitaaizu-wine.html">
+        <span class="related-name">北会津ワイン</span>
+        <span class="related-meta">会津若松市北会津町 ｜ マスカット・ベーリーA・カベルネ・ソーヴィニヨン・ミュラートゥルガウ</span>
+      </a>
+      <a class="related-card" href="/wine/fukushima/azuma-sanroku-winery.html">
+        <span class="related-name">吾妻山麓醸造所</span>
+        <span class="related-meta">福島市 ｜ メルロー・シャルドネ</span>
+      </a>
+    </div>
+    <div style="margin-top:22px;"><a href="/wine/fukushima/" style="font-size:13px;color:var(--accent);text-decoration:none;font-weight:500;">福島県のワイナリー一覧をすべて見る →</a></div>
+  </div>
+</section>
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
