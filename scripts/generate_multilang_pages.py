@@ -15,10 +15,49 @@ The pages are intentionally lightweight but fully indexable and internally linke
 import glob
 import json
 import os
+import sys
+import urllib.parse as _up
 from pathlib import Path
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = "wine.terroirhub.com"
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from wine_filter import is_wine_item   # 日本語版と同じワイン判定（非ワインを表示しない）
+
+# 楽天商品データ（fetch_rakuten_items.py が生成・蔵同定済み）
+RAKUTEN_DB = {}
+_rk_path = os.path.join(BASE, "wine", "rakuten_items.json")
+if os.path.exists(_rk_path):
+    try:
+        RAKUTEN_DB = json.load(open(_rk_path, encoding="utf-8"))
+    except Exception:
+        RAKUTEN_DB = {}
+
+_AMAZON_TAG = "terroirhub-22"
+
+
+def amazon_url(kw):
+    return "https://www.amazon.co.jp/s?k=" + _up.quote(kw or "") + "&i=food-beverage&tag=" + _AMAZON_TAG
+
+
+# 購入セクション用CSS（多言語テンプレに依存しない自己完結スタイル）
+BUY_CSS = """
+<style>
+.buy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;}
+.buy-card{background:#fff;border:1px solid #E7DFD5;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .22s,transform .22s;}
+.buy-card:hover{box-shadow:0 8px 24px rgba(42,32,24,.10);transform:translateY(-2px);}
+.buy-card-img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;padding:12px;box-sizing:border-box;}
+.buy-card-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1;}
+.buy-card-name{font-size:13px;line-height:1.5;color:#4A4039;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:39px;margin-bottom:8px;}
+.buy-btns{display:flex;gap:8px;margin-top:auto;}
+.bb{flex:1;text-align:center;font-size:12px;font-weight:500;padding:9px 0;border-radius:3px;text-decoration:none;letter-spacing:.03em;transition:all .2s;}
+.bb-r{background:#BF0000;color:#fff;}.bb-r:hover{background:#a00000;}
+.bb-a{background:#FF9900;color:#1a1a1a;}.bb-a:hover{background:#e88a00;}
+.buy-note{font-size:11px;color:#8A7E72;line-height:1.7;margin-top:18px;}
+@media(max-width:900px){.buy-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.buy-grid{grid-template-columns:1fr 1fr;gap:12px;}}
+</style>"""
 
 PREF_NAMES_JA = {
     'hokkaido':'北海道','aomori':'青森県','iwate':'岩手県','miyagi':'宮城県','akita':'秋田県',
@@ -308,6 +347,45 @@ def wine_page(b, pref, lang):
         brand_cards.append(card)
     brand_cards_html = "\n".join(brand_cards)
 
+    # ── 購入セクション（その蔵の楽天商品。ワイン判定済みのみ。無ければ非表示） ──
+    rk = RAKUTEN_DB.get(bid, {}) if bid else {}
+    rk_items = [it for it in rk.get("items", [])
+                if isinstance(it, dict) and it.get("image") and is_wine_item(it.get("name", ""))]
+    buy_section = ""
+    if rk_items:
+        if lang == "fr":
+            buy_lbl, buy_title = "ACHETER", f"Où acheter les vins de {name}"
+            buy_note = ("Produits issus des résultats de recherche Rakuten (prix/stock variables). "
+                        "Terroir HUB ne vend pas de vin. La vente d'alcool aux mineurs est interdite.")
+        else:
+            buy_lbl, buy_title = "BUY", f"Where to buy {name} wines"
+            buy_note = ("Products are Rakuten search results (prices/stock may vary). "
+                        "Terroir HUB does not sell wine. Underage drinking is prohibited by law.")
+        cards = ""
+        for it in rk_items[:6]:
+            iname, iimg, iurl = it.get("name", ""), it.get("image", ""), it.get("url", "")
+            cards += f"""
+      <div class="buy-card">
+        <a href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener"><img class="buy-card-img" src="{esc(iimg)}" alt="{esc(iname)}" loading="lazy"></a>
+        <div class="buy-card-body">
+          <div class="buy-card-name">{esc(iname)}</div>
+          <div class="buy-btns">
+            <a class="bb bb-r" href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener">Rakuten</a>
+            <a class="bb bb-a" href="{esc(amazon_url(iname))}" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
+          </div>
+        </div>
+      </div>"""
+        buy_section = f"""
+<section class="section">
+  <div class="inner">
+    <div class="sec-label">{buy_lbl}</div>
+    <h2 class="sec-title">{esc(buy_title)}</h2>
+    <div class="buy-grid">{cards}
+    </div>
+    <p class="buy-note">{esc(buy_note)}</p>
+  </div>
+</section>"""
+
     feature_cards = []
     for i, feat in enumerate(features[:3], start=1):
         feature_cards.append(
@@ -396,6 +474,7 @@ def wine_page(b, pref, lang):
     </div>
   </div>
 </section>
+{BUY_CSS if buy_section else ''}{buy_section}
 
 <section class="section">
   <div class="inner">
