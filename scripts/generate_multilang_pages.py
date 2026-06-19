@@ -72,10 +72,7 @@ PREF_NAMES_JA = {
     'kagoshima':'鹿児島県','okinawa':'沖縄県'
 }
 
-PREF_NAMES_EN = {
-    k: v.replace("県", "").replace("府", "").replace("都", "").replace("道", "")
-    for k, v in PREF_NAMES_JA.items()
-}
+PREF_NAMES_EN = {k: ("Hokkaido" if k == "hokkaido" else k.capitalize()) for k in PREF_NAMES_JA}
 PREF_NAMES_FR = PREF_NAMES_EN.copy()
 
 ROOT_COPY = {
@@ -305,7 +302,7 @@ def wine_page(b, pref, lang):
     t = UI[lang]
     pref_n = pref_name(pref, lang)
     bid = b.get("id", "")
-    name = b.get("name", "")
+    name = (b.get("name_en") or b.get("name", "")) if lang in ("en", "fr") else b.get("name", "")
     brand = b.get("brand", "")
     founded = str(b.get("founded", "") or "")
     desc = b.get("desc", "")

@@ -7,10 +7,12 @@
 ItemList/FAQPage/BreadcrumbList)・meta/OG。県別ページ一覧は wine/furusato/_prefs.json に出力し、
 蔵ページ(regenerate_all_pages.py)からの内部リンクに使う。
 """
-import json, glob, os, sys, html, re
+import json, glob, os, sys, html, re, datetime
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from wine_filter import is_wine_item
+
+TODAY = datetime.date.today().isoformat()
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = "wine.terroirhub.com"
@@ -84,13 +86,15 @@ def collect():
             if key in seen:
                 continue
             seen.add(key)
-            by_pref.setdefault(w["pref"], []).append({**it, "winery": w["name"], "winery_id": wid})
+            by_pref.setdefault(w["pref"], []).append({**it, "winery": w["name"], "winery_id": wid, "pref": w["pref"]})
     return by_pref
 
 
 def clean_name(nm):
     s = re.sub(r'^[【\[]?\s*ふるさと納税\s*[】\]]?\s*', '', nm)
     s = re.sub(r'\s*(御祝|御礼|母の日|父の日|敬老の日|御中元|御歳暮|御年賀|内祝|出産内祝|誕生日祝|結婚祝|退職祝|卒業祝|還暦祝|古希祝|傘寿祝|喜寿祝|米寿祝|開店祝|感謝|贈り物|プレゼント|ギフト|人気|寿|壽|御供|仏事).*$', '', s)
+    s = re.sub(r'\s*【[A-Za-z0-9\-]+】\s*$', '', s)   # 末尾の管理番号【B2-628】等を除去
+    s = re.sub(r'\s*\[[A-Za-z0-9\-]+\]\s*$', '', s)
     return s.strip() or nm
 
 
@@ -104,9 +108,9 @@ def card_html(it):
             <span class="fcard-badge">ふるさと納税</span>
           </a>
           <div class="fcard-body">
-            <div class="fcard-winery">{esc(it['winery'])}</div>
+            <a class="fcard-winery" href="/wine/{esc(it.get('pref',''))}/{esc(it.get('winery_id',''))}.html">{esc(it['winery'])} ›</a>
             <h3 class="fcard-name" title="{esc(it['name'])}">{esc(nm)}</h3>
-            <a class="fcard-btn" href="{esc(it['url'])}" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で見る</a>
+            <a class="fcard-btn" href="{esc(it['url'])}" target="_blank" rel="nofollow sponsored noopener" onclick="if(window.gtag)gtag('event','furusato_click',{{genre:'wine'}});">楽天ふるさと納税で寄付 →</a>
           </div>
         </article>'''
 
@@ -178,8 +182,9 @@ a{color:inherit;}
 .fcard-img{width:100%;height:100%;object-fit:contain;padding:14px;box-sizing:border-box;}
 .fcard-badge{position:absolute;top:10px;left:10px;background:#722F37;color:#fff;font-size:10.5px;letter-spacing:.05em;padding:4px 9px;border-radius:4px;}
 .fcard-body{padding:13px 15px 16px;display:flex;flex-direction:column;flex:1;}
-.fcard-winery{font-size:11.5px;color:#9a7e84;margin-bottom:5px;}
-.fcard-name{font-size:13.5px;line-height:1.55;color:#33272a;font-weight:500;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:13px;flex:1;}
+.fcard-winery{font-size:12px;color:#7a5560;margin-bottom:5px;text-decoration:none;display:block;}
+.fcard-winery:hover{color:#722F37;text-decoration:underline;}
+.fcard-name{font-size:13.5px;line-height:1.55;color:#2a2024;font-weight:500;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.9em;margin-bottom:13px;}
 .fcard-btn{display:block;text-align:center;background:#BF0000;color:#fff;font-size:12.5px;font-weight:600;padding:10px 0;border-radius:5px;text-decoration:none;transition:background .2s;margin-top:auto;}
 .fcard-btn:hover{background:#a00000;}
 .noresult{text-align:center;color:#999;padding:60px 0;font-size:15px;display:none;}
@@ -195,7 +200,7 @@ a{color:inherit;}
 .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
 .faq-item dt{font-weight:600;color:#2a0a0e;margin-bottom:8px;font-size:15px;}
 .faq-item dd{font-size:14px;color:#5a5a5a;line-height:1.85;margin:0;}
-.note{max-width:960px;margin:22px auto 0;padding:0 24px;font-size:11.5px;color:#a99;line-height:1.8;}
+.note{max-width:960px;margin:22px auto 0;padding:0 24px;font-size:12px;color:#897a7e;line-height:1.85;}
 .footer{background:#1a0508;padding:46px 24px 30px;color:rgba(255,255,255,0.5);font-size:13px;text-align:center;margin-top:52px;}
 .footer-logo{font-family:'Shippori Mincho',serif;font-size:24px;color:#fff;font-weight:600;margin-bottom:16px;}
 .footer-logo .accent{color:#722F37;}
@@ -218,8 +223,12 @@ HEAD = """<!DOCTYPE html>
 <meta property="og:title" content="{ogtitle}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="https://wine.terroirhub.com/img/hero.jpg">
+<meta property="og:image" content="https://wine.terroirhub.com/img/hero-top.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index,follow,max-image-preview:large">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JWN7TVZ6N"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-9JWN7TVZ6N');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
@@ -260,13 +269,22 @@ NOTE = ('<p class="note">※ 返礼品・寄付額・在庫・取扱自治体は
         '20歳未満の飲酒・お酒の購入は法律で禁止されています。Terroir HUB はワインの販売を行っていません。</p>')
 
 
+PUBLISHER = {"@type": "Organization", "name": "合同会社FOMUS",
+             "url": f"https://{DOMAIN}/", "sameAs": ["https://sake.terroirhub.com/", "https://terroirhub.com/"]}
+
+
 def jsonld_for(name, desc, url, crumb, items, faqs):
-    item_list = [{"@type": "ListItem", "position": i + 1, "name": clean_name(it["name"]),
-                  "image": it["image"], "url": it["url"]} for i, it in enumerate(items[:30])]
+    # ItemList を Product/Offer 型に格上げ（価格は出さない方針→ offers.url + availability のみ）
+    item_list = [{"@type": "ListItem", "position": i + 1,
+                  "item": {"@type": "Product", "name": clean_name(it["name"]), "image": it["image"],
+                           "offers": {"@type": "Offer", "url": it["url"], "availability": "https://schema.org/InStock",
+                                      "priceCurrency": "JPY"}}}
+                 for i, it in enumerate(items[:30])]
     g = [
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "name": c[0], "item": c[1]} for i, c in enumerate(crumb)]},
         {"@type": "CollectionPage", "name": name, "description": desc, "url": url,
+         "datePublished": "2026-06-19", "dateModified": TODAY, "publisher": PUBLISHER,
          "isPartOf": {"@type": "WebSite", "name": "Terroir HUB WINE", "url": f"https://{DOMAIN}/"}},
         {"@type": "ItemList", "name": name, "numberOfItems": len(items), "itemListElement": item_list},
         {"@type": "FAQPage", "mainEntity": [
@@ -393,9 +411,12 @@ def build_pref(pref, items, all_prefs):
     n = len(items)
     n_winery = len({it["winery_id"] for it in items})
     wineries = sorted({it["winery"] for it in items})
+    gi = {'yamanashi': 'GI山梨', 'hokkaido': 'GI北海道', 'nagano': 'GI長野',
+          'yamagata': 'GI山形', 'osaka': 'GI大阪'}.get(pref)
     lead = PREF_LEAD.get(pref) or (
-        f"{pn}のワイナリーによる日本ワインのふるさと納税返礼品をまとめました。"
-        f"{n_winery}のワイナリーから{n}件の返礼品を掲載しています。寄付で{pn}のワイン産地を応援できます。")
+        f"{pn}の日本ワインふるさと納税返礼品を{n}件掲載しています。"
+        + (f"{pn}は{gi}に認定された日本ワインの産地です。" if gi else "")
+        + f"{('、'.join(wineries[:3]))}など{n_winery}のワイナリーの返礼品から、寄付で{pn}のワイン産地と造り手を直接応援できます。")
     cards = "".join(card_html(it) for it in items)
 
     title = f"{pn}のワイン ふるさと納税 返礼品{n}件 | Terroir HUB WINE"
@@ -441,6 +462,15 @@ def build_pref(pref, items, all_prefs):
     <div class="fgrid">{cards}
     </div>
   </section>
+  <div class="otherpref">
+    <h2>{esc(pn)}のワインをもっと知る</h2>
+    <div class="otherpref-list">
+      <a href="/wine/{pref}/">{esc(pn)}のワイナリー一覧</a>
+      <a href="/wine/guide/varieties.html">ぶどう品種ガイド</a>
+      <a href="/wine/guide/regions.html">GI産地ガイド</a>
+      <a href="/wine/search/">ワイナリー検索</a>
+    </div>
+  </div>
   <div class="otherpref">
     <h2>他の産地のワインふるさと納税</h2>
     <div class="otherpref-list">{other_links}</div>

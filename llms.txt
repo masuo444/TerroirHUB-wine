@@ -24,6 +24,15 @@ Terroir HUB WINE は、全国のワイナリーの「ふるさと納税返礼品
 - 控除: 実質自己負担2,000円。確定申告またはワンストップ特例（年間5自治体以内）で控除。控除上限は年収・家族構成により各サイトのシミュレーターで要確認
 - 注意: 返礼品・寄付額・在庫は時期により変動。最新情報は各返礼品ページで確認
 
+### 都道府県別 ふるさと納税ページ（主要産地）
+- 山梨県（甲州・MBA中心、返礼品最多）: https://wine.terroirhub.com/wine/furusato/yamanashi.html
+- 長野県: https://wine.terroirhub.com/wine/furusato/nagano.html
+- 北海道: https://wine.terroirhub.com/wine/furusato/hokkaido.html
+- 山形県: https://wine.terroirhub.com/wine/furusato/yamagata.html
+- 岩手県: https://wine.terroirhub.com/wine/furusato/iwate.html
+- 大阪府: https://wine.terroirhub.com/wine/furusato/osaka.html
+- 全35都道府県の県別ページあり。一覧はハブ https://wine.terroirhub.com/wine/furusato/ から辿れます
+
 ## GI（地理的表示）認定産地
 
 | GI名 | 認定年 | 代表ワイナリー |

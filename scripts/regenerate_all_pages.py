@@ -8,6 +8,9 @@ import json
 import glob
 import os
 import sys
+import datetime
+
+_TODAY = datetime.date.today().isoformat()
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from wine_filter import is_wine_item   # ワイン以外の楽天商品を表示しないための共通フィルタ
@@ -45,11 +48,11 @@ def amazon_url(kw):
 # ── 購入導線・STORY刷新のための追加CSS
 EXTRA_CSS = '''
 /* STORY 刷新（写真なし・タイポ中心） */
-.story-redesign{background:var(--surface-warm);padding:110px 24px;}
+.story-redesign{background:var(--surface-warm);padding:76px 24px;}
 .story-redesign .sec-inner{max-width:780px;margin:0 auto;text-align:center;}
 .sr-title{font-family:'Zen Old Mincho',serif;font-size:48px;font-weight:700;color:var(--text);letter-spacing:.05em;line-height:1.45;margin:20px 0 0;}
 .sr-rule{width:44px;height:2px;background:var(--accent);margin:30px auto 0;opacity:.8;}
-.sr-lead{font-family:'Noto Serif JP',serif;font-weight:300;font-size:18px;line-height:2.15;color:var(--text-body);max-width:620px;margin:34px auto 0;}
+.sr-lead{font-family:'Noto Serif JP',serif;font-weight:400;font-size:17px;line-height:1.95;color:var(--text-body);max-width:680px;margin:30px auto 0;}
 .sr-meta{display:flex;justify-content:center;margin-top:56px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .sm-item{flex:1;padding:30px 18px;border-left:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:8px;}
 .sm-item:first-child{border-left:none;}
@@ -228,6 +231,13 @@ def generate_page(b, pref_slug):
 
     # ── FAQ data ──
     faqs = build_faqs(name, brand, founded, founded_era, visit, address, station, brands, pref_name, grapes)
+    # 購入・ふるさと納税の意図に答えるFAQ（AIO/被引用強化）
+    if any(is_wine_item(it.get('name', '')) for it in rk.get('items', []) if isinstance(it, dict)):
+        faqs.append((f"{name}のワインはどこで購入できますか？",
+                     f"{name}のワインは楽天市場やAmazonで取り扱いがあります。本ページの「このワイナリーのワイン」から各商品ページをご確認いただけます（在庫・価格は変動します）。"))
+    if pref_slug in FURUSATO_PREFS:
+        faqs.append((f"{name}のワインはふるさと納税で受け取れますか？",
+                     f"{pref_name}のワイナリーの一部はふるさと納税の返礼品として日本ワインを提供しています。{pref_name}のふるさと納税特集ページで対象の返礼品をご確認ください。"))
 
     # ── JSON-LD ──
     winery_id = f"{page_url}#winery"
@@ -318,6 +328,7 @@ def generate_page(b, pref_slug):
         "url": page_url,
         "name": f"{name} - {pref_name}のワイナリー",
         "description": meta_desc,
+        "dateModified": _TODAY,
         "inLanguage": "ja",
         "isPartOf": {
             "@type": "WebSite",
@@ -362,6 +373,7 @@ def generate_page(b, pref_slug):
 
     # ── Brands HTML ──
     brands_html = ''
+    _used_brand_imgs = set()   # 同じ画像を複数銘柄で使い回さない（嘘の画像防止）
     for br in brands[:3]:
         if isinstance(br, str):
             br = {'name': br, 'specs': ''}
@@ -376,9 +388,10 @@ def generate_page(b, pref_slug):
         wine_badge_html = ''
         style_class = 'red'
         if br_type:
-            if '白' in br_type: style_class = 'white'
-            elif 'ロゼ' in br_type: style_class = 'rose'
+            if 'ロゼ' in br_type: style_class = 'rose'
             elif 'スパークリング' in br_type or '泡' in br_type: style_class = 'sparkling'
+            elif '赤' in br_type and '白' in br_type: style_class = 'red'   # 赤・白セットは赤系で統一（白誤判定を防止）
+            elif '白' in br_type: style_class = 'white'
             elif '甘口' in br_type: style_class = 'sweet'
             wine_badge_html = f'<div class="wine-badge {style_class}">{esc(br_type)}</div>'
 
@@ -390,8 +403,10 @@ def generate_page(b, pref_slug):
         if rimg:
             _m = rb.get('match')
             _ok = is_wine_item(_m) if _m else (rurl in _valid_rk_urls)
-            if not _ok:
+            if not _ok or rimg in _used_brand_imgs:   # 無効 or 画像重複 → 名前カードにフォールバック
                 rimg, rurl = '', ''
+        if rimg:
+            _used_brand_imgs.add(rimg)
         if rimg:
             imgwrap = f'<div class="brand-img-wrap"><img class="brand-img" src="{esc(rimg)}" alt="{esc(br_name)}" loading="lazy"></div>'
         else:
@@ -618,14 +633,14 @@ def generate_page(b, pref_slug):
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(name)} — {esc(pref_name)}のワイナリー | Terroir HUB WINE</title>
 <meta name="description" content="{esc(meta_desc)}">
 <meta property="og:title" content="{esc(name)} — {esc(pref_name)}のワイナリー | Terroir HUB WINE">
 <meta property="og:description" content="{og_desc}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{page_url}">
-<meta property="og:image" content="https://{DOMAIN}/img/hero.jpg">
+<meta property="og:image" content="https://{DOMAIN}/img/hero-top.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(name)} | Terroir HUB WINE">
 <meta name="twitter:description" content="{og_desc}">
