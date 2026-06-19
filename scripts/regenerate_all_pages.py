@@ -29,6 +29,15 @@ if os.path.exists(_rk_path):
         RAKUTEN_DB = {}
 
 import urllib.parse as _up
+# ふるさと納税の返礼品がある県スラッグ（generate_furusato_page.py が出力）
+FURUSATO_PREFS = set()
+_fp = os.path.join(BASE, 'wine', 'furusato', '_prefs.json')
+if os.path.exists(_fp):
+    try:
+        FURUSATO_PREFS = set(json.load(open(_fp, encoding='utf-8')))
+    except Exception:
+        FURUSATO_PREFS = set()
+
 AMAZON_TAG = 'terroirhub-22'
 def amazon_url(kw):
     return 'https://www.amazon.co.jp/s?k=' + _up.quote(kw or '') + '&i=food-beverage&tag=' + AMAZON_TAG
@@ -541,6 +550,20 @@ def generate_page(b, pref_slug):
   </div>
 </section>'''
 
+    # ── ふるさと納税CTA（その県の特集ページへ内部リンク。返礼品がある県のみ） ──
+    furusato_cta = ''
+    if pref_slug in FURUSATO_PREFS:
+        furusato_cta = f'''
+<section class="section" style="background:var(--bg);">
+  <div class="sec-inner" style="text-align:center;">
+    <label class="sec-label">FURUSATO TAX</label>
+    <h2 class="sec-title">ふるさと納税で{esc(name)}を応援</h2>
+    <div class="sec-divider" style="margin-left:auto;margin-right:auto;"></div>
+    <p style="font-size:14px;color:var(--text-body);max-width:560px;margin:0 auto 20px;line-height:1.9;">{esc(pref_name)}のワインは、ふるさと納税の返礼品としても受け取れます。実質自己負担2,000円で、寄付しながら産地と蔵を直接応援できます。</p>
+    <a href="/wine/furusato/{pref_slug}.html" style="display:inline-block;background:#722F37;color:#fff;text-decoration:none;font-size:14px;font-weight:600;padding:13px 30px;border-radius:26px;">{esc(pref_name)}のワインふるさと納税を見る →</a>
+  </div>
+</section>'''
+
     # ── Visit info items ──
     visit_items = ''
     if address:
@@ -684,6 +707,7 @@ def generate_page(b, pref_slug):
 {brands_section}
 
 {shop_section}
+{furusato_cta}
 
 <section class="section" style="background:var(--bg);">
   <div class="sec-inner">
