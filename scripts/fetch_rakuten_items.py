@@ -46,7 +46,22 @@ def normalize_kw(name):
     return s.strip() or (name or '').strip()
 
 
+def _clean_kw(keyword):
+    """楽天APIが弾くキーワードを整える。
+    - 記号 & / \\ | - + 等は除去（-,+ は NOT/AND 演算子扱いにもなる）
+    - 半角1文字トークン（"A" "s" "N" 等）を含むと keyword is not valid になるため除去
+      （例「Muscat Bailey A」「Abbey's→Abbey s」）。全角1文字（漢字等）は残す。
+    """
+    s = re.sub(r'[&＆/／\\|｜<>"\'\-+~^*]', ' ', keyword or '')
+    # 1文字トークンは漢字以外（半角英数・かな・カナ）だと弾かれるため除去。漢字1文字（「蔵」等）は残す
+    toks = [t for t in s.split() if len(t) > 1 or re.match(r'[一-龥々〆ヶ]', t)]
+    return ' '.join(toks).strip()
+
+
 def search(keyword, hits=30, avail=True):
+    keyword = _clean_kw(keyword)
+    if not keyword:
+        return {}
     params = {
         'applicationId': CFG['applicationId'], 'accessKey': CFG['accessKey'],
         'affiliateId': CFG['affiliateId'], 'keyword': keyword, 'hits': hits,
