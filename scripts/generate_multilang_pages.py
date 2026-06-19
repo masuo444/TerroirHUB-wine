@@ -346,8 +346,10 @@ def wine_page(b, pref, lang):
 
     # ── 購入セクション（その蔵の楽天商品。ワイン判定済みのみ。無ければ非表示） ──
     rk = RAKUTEN_DB.get(bid, {}) if bid else {}
+    # en/fr では「ふるさと納税」返礼品は対象外（海外向けには不要・寄付制度は国内限定）
     rk_items = [it for it in rk.get("items", [])
-                if isinstance(it, dict) and it.get("image") and is_wine_item(it.get("name", ""))]
+                if isinstance(it, dict) and it.get("image") and is_wine_item(it.get("name", ""))
+                and "ふるさと納税" not in it.get("name", "")]
     buy_section = ""
     if rk_items:
         if lang == "fr":
