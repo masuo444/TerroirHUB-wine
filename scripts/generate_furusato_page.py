@@ -30,6 +30,16 @@ PREF_NAMES = {
 }
 PREF_ORDER = list(PREF_NAMES.keys())
 
+# 表示順: 日本ワインの主要産地を上位に固定（山梨を最上位）。残りは返礼品数の多い順。
+WINE_PRIORITY = ['yamanashi', 'nagano', 'hokkaido', 'yamagata', 'iwate', 'osaka', 'niigata']
+
+
+def sort_prefs(by_pref):
+    def key(p):
+        pr = WINE_PRIORITY.index(p) if p in WINE_PRIORITY else len(WINE_PRIORITY)
+        return (pr, -len(by_pref[p]), PREF_ORDER.index(p))
+    return sorted(by_pref.keys(), key=key)
+
 # 主要産地の固有リード文（薄いコンテンツ回避・SEO）。未定義の県はデータから自動生成。
 PREF_LEAD = {
     'yamanashi': "日本ワイン発祥の地・山梨県。甲州・マスカット・ベーリーAを筆頭に、勝沼を中心とした日本最大級のワイン産地です。GI山梨認定。ふるさと納税では甲州ワインや赤ワインの返礼品が充実しています。",
@@ -272,7 +282,7 @@ def write(path, content):
 
 
 def build_hub(by_pref):
-    ordered = [(p, by_pref[p]) for p in PREF_ORDER if p in by_pref]
+    ordered = [(p, by_pref[p]) for p in sort_prefs(by_pref)]
     total = sum(len(v) for v in by_pref.values())
     n_pref = len(by_pref)
     n_winery = len({c["winery_id"] for v in by_pref.values() for c in v})
