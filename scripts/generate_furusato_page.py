@@ -312,9 +312,9 @@ def build_hub(by_pref):
 
     sections = ""
     for p, items in ordered:
-        cards = "".join(card_html(it) for it in items[:12])
+        cards = "".join(card_html(it) for it in items[:6])
         more = (f'<a class="pref-more" href="/wine/furusato/{p}.html">{esc(PREF_NAMES[p])}の返礼品をすべて見る ({len(items)}件) →</a>'
-                if len(items) > 12 else
+                if len(items) > 6 else
                 f'<a class="pref-more" href="/wine/furusato/{p}.html">{esc(PREF_NAMES[p])}の特集ページ →</a>')
         sections += f'''
       <section class="pref-block" data-pref="{p}" id="pref-{p}">
