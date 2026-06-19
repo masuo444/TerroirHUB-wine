@@ -627,6 +627,26 @@ def generate_page(b, pref_slug, siblings=None):
     if visit:
         visit_items += f'<div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">{esc(visit)}</div></div></div>'
 
+    # ── 地図（lat/lngがあればOpenStreetMap埋め込み・キー不要） ──
+    if lat and lng:
+        try:
+            _la, _ln = float(lat), float(lng)
+            _bbox = f"{_ln-0.012}%2C{_la-0.008}%2C{_ln+0.012}%2C{_la+0.008}"
+            map_box = (f'<div style="border:1px solid var(--border);border-radius:8px;overflow:hidden;">'
+                       f'<iframe title="{esc(name)}の地図" width="100%" height="280" frameborder="0" scrolling="no" loading="lazy" '
+                       f'style="display:block;border:0;" src="https://www.openstreetmap.org/export/embed.html?bbox={_bbox}&amp;layer=mapnik&amp;marker={_la}%2C{_ln}"></iframe>'
+                       f'<div style="padding:8px 12px;background:var(--surface-warm);font-size:12px;text-align:right;">'
+                       f'<a href="https://www.google.com/maps/search/?api=1&amp;query={_la}%2C{_ln}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Googleマップで開く →</a></div></div>')
+        except (ValueError, TypeError):
+            map_box = ''
+    else:
+        map_box = ''
+    if not map_box:
+        map_box = (f'<div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">'
+                   f'<span style="font-size:28px;">📍</span>'
+                   f'<div style="font-family:\'Zen Old Mincho\',serif;font-size:16px;color:var(--text);">{esc(name)}</div>'
+                   f'<div style="font-size:13px;color:var(--text-muted);">{esc(pref_name)}{(" " + esc(area)) if area else ""}</div></div>')
+
     # ── FAQ HTML ──
     faq_section = ''
     if faqs:
@@ -771,11 +791,7 @@ def generate_page(b, pref_slug, siblings=None):
       <div style="display:flex;flex-direction:column;gap:22px;">
         {visit_items}
       </div>
-      <div style="background:var(--surface-warm);border:1px solid var(--border);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:240px;gap:8px;">
-        <span style="font-size:28px;">📍</span>
-        <div style="font-family:\'Zen Old Mincho\',serif;font-size:16px;color:var(--text);">{esc(name)}</div>
-        <div style="font-size:13px;color:var(--text-muted);">{esc(pref_name)}{(' ' + esc(area)) if area else ''}</div>
-      </div>
+      <div>{map_box}</div>
     </div>
     {f'<p style="font-size:13px;color:var(--text-muted);margin-top:16px;">{esc(station)}</p>' if station else ''}
     {f'<p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="{esc(source)}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">{esc(source)}</a></p>' if source else ''}
