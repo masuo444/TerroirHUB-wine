@@ -421,7 +421,7 @@ def generate_page(b, pref_slug, siblings=None):
         btns = '<div class="buy-btns">'
         if rurl:
             btns += f'<a class="bb bb-r" href="{esc(rurl)}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>'
-        btns += f'<a class="bb bb-a" href="{esc(amazon_url(br_name))}" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>'
+        btns += '</div>'  # Amazonアソシエイト承認確認まで非表示
 
         brands_html += f'''
     <div class="brand-card">
@@ -556,7 +556,6 @@ def generate_page(b, pref_slug, siblings=None):
           <div class="buy-card-name">{esc(iname)}</div>
           <div class="buy-btns">
             <a class="bb bb-r" href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener">楽天</a>
-            <a class="bb bb-a" href="{esc(amazon_url(iname))}" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
           </div>
         </div>
       </div>'''
@@ -568,7 +567,7 @@ def generate_page(b, pref_slug, siblings=None):
     <div class="sec-divider"></div>
     <div class="buy-grid">{cards}
     </div>
-    <p class="buy-note">※ 商品・価格は楽天市場の検索結果です（時点により変動）。Terroir HUB はワインの販売を行っていません。<br>価格・在庫・送料は各ストアでご確認ください。20歳未満の飲酒は法律で禁止されています。</p>
+    <p class="buy-note">【PR】本セクションはアフィリエイト広告（楽天）を含みます。<br>※ 商品・価格は楽天市場の検索結果です（時点により変動）。Terroir HUB はワインの販売を行っていません。<br>価格・在庫・送料は各ストアでご確認ください。20歳未満の飲酒は法律で禁止されています。</p>
   </div>
 </section>'''
 
@@ -705,7 +704,6 @@ def generate_page(b, pref_slug, siblings=None):
 <link rel="canonical" href="{page_url}">
 <link rel="alternate" hreflang="ja" href="{page_url}">
 <link rel="alternate" hreflang="en" href="https://{DOMAIN}/wine/en/{pref_slug}/{b['id']}.html">
-<link rel="alternate" hreflang="fr" href="https://{DOMAIN}/wine/fr/{pref_slug}/{b['id']}.html">
 <link rel="alternate" hreflang="x-default" href="https://{DOMAIN}/wine/en/{pref_slug}/{b['id']}.html">
 <script type="application/ld+json">
 {jsonld}
@@ -731,7 +729,6 @@ def generate_page(b, pref_slug, siblings=None):
   <div class="nav-r">
     <a class="lb active" href="/wine/{pref_slug}/{b['id']}.html">日本語</a>
     <a class="lb" href="/wine/en/{pref_slug}/{b['id']}.html">EN</a>
-    <a class="lb" href="/wine/fr/{pref_slug}/{b['id']}.html">FR</a>
   </div>
 </nav>
 
@@ -889,15 +886,21 @@ async function sendQuestion(q){{
       }}
     }}catch(e){{}}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{{method:'POST',headers:headers,body:JSON.stringify({{question:q,history:chatHistory.slice(-10),context:ctx}})}});
+    if(res.status===429){{
+      removeT();
+      var d429=null; try{{d429=await res.json();}}catch(e){{}}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }}
     if(res.status===401){{
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\\n\\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){{if(typeof showAuth==='function')showAuth('login');}},800);
       renderSugs();return;
     }}
     if(res.status===402){{
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\\n\\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }}
     var data=await res.json();

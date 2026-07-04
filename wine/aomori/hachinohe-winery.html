@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/aomori/hachinohe-winery.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/aomori/hachinohe-winery.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/aomori/hachinohe-winery.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/aomori/hachinohe-winery.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/aomori/hachinohe-winery.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/aomori/hachinohe-winery.html",
       "name": "はちのへワイナリー - 青森県のワイナリー",
       "description": "2017年創業。青森県八戸市のエステートワイナリー「はちのへワイナリー」。八戸市南郷の自然の中でぶどう栽培と醸造を行う地域密着型の小規模ワイナリー。",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -453,7 +452,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/aomori/hachinohe-winery.html">日本語</a>
     <a class="lb" href="/wine/en/aomori/hachinohe-winery.html">EN</a>
-    <a class="lb" href="/wine/fr/aomori/hachinohe-winery.html">FR</a>
   </div>
 </nav>
 
@@ -546,7 +544,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">はちのへワイン</h3>
       <p class="brand-type"></p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%81%AF%E3%81%A1%E3%81%AE%E3%81%B8%E3%83%AF%E3%82%A4%E3%83%B3&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -744,19 +742,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

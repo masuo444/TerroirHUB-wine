@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/yamanashi/suzuran-winery.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/yamanashi/suzuran-winery.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/yamanashi/suzuran-winery.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/yamanashi/suzuran-winery.html",
       "name": "スズランワイナリー - 山梨県のワイナリー",
       "description": "明治38年（ワイン醸造開始）創業。山梨県笛吹市一宮町の小規模ワイナリー「スズランワイナリー」。「最良のワインは最良の葡萄づくりから」を信念に、明治38年に宮内省陸軍御用達として製造した「九重シャンパン」で知られる老舗ワイナリー。2004年に農業生産法人へ",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -507,7 +506,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/yamanashi/suzuran-winery.html">日本語</a>
     <a class="lb" href="/wine/en/yamanashi/suzuran-winery.html">EN</a>
-    <a class="lb" href="/wine/fr/yamanashi/suzuran-winery.html">FR</a>
   </div>
 </nav>
 
@@ -623,7 +621,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">九重シャンパン</h3>
       <p class="brand-type">スパークリングワイン</p>
       <p class="brand-desc">宮内省陸軍御用達として製造した歴史的銘柄</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E4%B9%9D%E9%87%8D%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%91%E3%83%B3&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">スズランワイン 甲州</span></div>
@@ -632,7 +630,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">スズランワイン 甲州</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">甲州種</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%82%BA%E3%83%A9%E3%83%B3%E3%83%AF%E3%82%A4%E3%83%B3%20%E7%94%B2%E5%B7%9E&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">スズランワイン 一宮</span></div>
@@ -641,7 +639,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">スズランワイン 一宮</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">笛吹市一宮産ぶどう使用</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%82%BA%E3%83%A9%E3%83%B3%E3%83%AF%E3%82%A4%E3%83%B3%20%E4%B8%80%E5%AE%AE&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -859,19 +857,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

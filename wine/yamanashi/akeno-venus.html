@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/yamanashi/akeno-venus.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/yamanashi/akeno-venus.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/yamanashi/akeno-venus.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/yamanashi/akeno-venus.html",
       "name": "ドメーヌ・ド・ラ・アケノ・ヴェニュス - 山梨県のワイナリー",
       "description": "平成30年創業。山梨県北杜市明野町の小規模ワイナリー「ドメーヌ・ド・ラ・アケノ・ヴェニュス」。年間2600時間超の日照時間を誇る北杜市明野の地に、定年退職を機に一念発起した醸造家が2018年に設立。山梨県立農林大学校で学び県内ワイナリーで実習を積んだ後に",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -477,7 +476,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/yamanashi/akeno-venus.html">日本語</a>
     <a class="lb" href="/wine/en/yamanashi/akeno-venus.html">EN</a>
-    <a class="lb" href="/wine/fr/yamanashi/akeno-venus.html">FR</a>
   </div>
 </nav>
 
@@ -584,7 +582,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">アケノ ヴェニュス カベルネ・ソーヴィニョン</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">カベルネ・ソーヴィニョン、減農薬自家畑</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%82%A2%E3%82%B1%E3%83%8E%20%E3%83%B4%E3%82%A7%E3%83%8B%E3%83%A5%E3%82%B9%20%E3%82%AB%E3%83%99%E3%83%AB%E3%83%8D%E3%83%BB%E3%82%BD%E3%83%BC%E3%83%B4%E3%82%A3%E3%83%8B%E3%83%A7%E3%83%B3&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">アケノ ヴェニュス 甲州</span></div>
@@ -593,7 +591,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">アケノ ヴェニュス 甲州</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">甲州種</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%82%A2%E3%82%B1%E3%83%8E%20%E3%83%B4%E3%82%A7%E3%83%8B%E3%83%A5%E3%82%B9%20%E7%94%B2%E5%B7%9E&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -811,19 +809,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

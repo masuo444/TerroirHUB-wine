@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/hokkaido/tokachigaoka-winery.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/hokkaido/tokachigaoka-winery.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/hokkaido/tokachigaoka-winery.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/hokkaido/tokachigaoka-winery.html",
       "name": "十勝が丘ワイナリー - 北海道のワイナリー",
       "description": "令和7年創業。北海道音更町のエステートワイナリー「十勝が丘ワイナリー」。中村利雄代表が運営する十勝ぶどう園が十勝川温泉公園北側に設立したワイナリー。有機栽培の北海道独自品種「山幸」「清舞」を使った赤ワインを醸造。年間12,800本の",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -490,7 +489,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/hokkaido/tokachigaoka-winery.html">日本語</a>
     <a class="lb" href="/wine/en/hokkaido/tokachigaoka-winery.html">EN</a>
-    <a class="lb" href="/wine/fr/hokkaido/tokachigaoka-winery.html">FR</a>
   </div>
 </nav>
 
@@ -606,7 +604,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">十勝が丘 山幸</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">山幸100%、有機栽培</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E5%8D%81%E5%8B%9D%E3%81%8C%E4%B8%98%20%E5%B1%B1%E5%B9%B8&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">十勝が丘 清舞</span></div>
@@ -615,7 +613,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">十勝が丘 清舞</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">清舞100%、有機栽培</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E5%8D%81%E5%8B%9D%E3%81%8C%E4%B8%98%20%E6%B8%85%E8%88%9E&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -833,19 +831,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

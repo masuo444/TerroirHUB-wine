@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/iwate/monnosuke-farm.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/iwate/monnosuke-farm.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/iwate/monnosuke-farm.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/iwate/monnosuke-farm.html",
       "name": "もんのすけ農園 - 岩手県のワイナリー",
       "description": "令和3年創業。岩手県花巻市の小規模ワイナリー「もんのすけ農園」。東北自動車道の花巻南ICから車で5分程、田園と住宅地の中にある、とても小さな醸造所。果実酒や林檎・葡萄を通じて、ふるさとを思い出すような果実の味わいを、いわて花",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -462,7 +461,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/iwate/monnosuke-farm.html">日本語</a>
     <a class="lb" href="/wine/en/iwate/monnosuke-farm.html">EN</a>
-    <a class="lb" href="/wine/fr/iwate/monnosuke-farm.html">FR</a>
   </div>
 </nav>
 
@@ -569,7 +567,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">もんのすけシードル</h3>
       <p class="brand-type">シードル（瓶内二次発酵）</p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%82%82%E3%82%93%E3%81%AE%E3%81%99%E3%81%91%E3%82%B7%E3%83%BC%E3%83%89%E3%83%AB&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -787,19 +785,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

@@ -216,7 +216,6 @@ def page_head(title, desc, canonical, lang, hreflangs):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex,follow">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{canonical}">
@@ -244,7 +243,6 @@ def root_page(lang):
     hreflangs = {
         "ja": "https://wine.terroirhub.com/",
         "en": "https://wine.terroirhub.com/en/",
-        "fr": "https://wine.terroirhub.com/fr/",
         "x-default": "https://wine.terroirhub.com/en/",
     }
     cards = []
@@ -320,7 +318,6 @@ def wine_page(b, pref, lang):
     hreflangs = {
         "ja": f"https://wine.terroirhub.com/wine/{pref}/{bid}.html",
         "en": f"https://wine.terroirhub.com/wine/en/{pref}/{bid}.html",
-        "fr": f"https://wine.terroirhub.com/wine/fr/{pref}/{bid}.html",
         "x-default": f"https://wine.terroirhub.com/wine/en/{pref}/{bid}.html",
     }
     intro = t["intro"].format(name=name, pref=pref_n)
@@ -371,7 +368,6 @@ def wine_page(b, pref, lang):
           <div class="buy-card-name">{esc(iname)}</div>
           <div class="buy-btns">
             <a class="bb bb-r" href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener">Rakuten</a>
-            <a class="bb bb-a" href="{esc(amazon_url(iname))}" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
           </div>
         </div>
       </div>"""
@@ -382,7 +378,7 @@ def wine_page(b, pref, lang):
     <h2 class="sec-title">{esc(buy_title)}</h2>
     <div class="buy-grid">{cards}
     </div>
-    <p class="buy-note">{esc(buy_note)}</p>
+    <p class="buy-note">[AD] This section contains affiliate links (Rakuten). {esc(buy_note)}</p>
   </div>
 </section>"""
 
@@ -412,7 +408,42 @@ def wine_page(b, pref, lang):
     visit_html = "\n".join(visit_bits) if visit_bits else "<p>—</p>"
 
     lang_back = "Back" if lang == "en" else "Retour"
-    return page_head(f"{name} — {pref_n} | Terroir HUB WINE", intro, canonical, lang, hreflangs) + f"""
+    # ── JSON-LD（en）──
+    _bn = [str(x.get("name","")) if isinstance(x, dict) else str(x) for x in brands[:5]]
+    _bn = [x for x in _bn if x]
+    _biz = {
+        "@type": "LocalBusiness",
+        "additionalType": "https://schema.org/Winery",
+        "name": name,
+        "url": canonical,
+        "address": {"@type": "PostalAddress", "addressRegion": pref_n, "addressCountry": "JP",
+                    **({"streetAddress": address} if address else {})},
+        **({"telephone": tel} if tel else {}),
+        **({"sameAs": url} if url else {}),
+        **({"foundingDate": founded} if founded else {}),
+    }
+    if _bn: _biz["brand"] = {"@type": "Brand", "name": _bn[0]}
+    if b.get("lat") and b.get("lng"):
+        _biz["geo"] = {"@type": "GeoCoordinates", "latitude": b["lat"], "longitude": b["lng"]}
+    _crumb = {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Terroir HUB WINE", "item": f"https://wine.terroirhub.com/{lang}/"},
+        {"@type": "ListItem", "position": 2, "name": pref_n, "item": f"https://wine.terroirhub.com/wine/{lang}/{pref}/"},
+        {"@type": "ListItem", "position": 3, "name": name, "item": canonical}]}
+    _faq = []
+    if _bn:
+        _faq.append({"@type": "Question", "name": f"What wines does {name} produce?",
+                     "acceptedAnswer": {"@type": "Answer", "text": f"{name} produces {', '.join(_bn)}."}})
+    if founded.isdigit():
+        _faq.append({"@type": "Question", "name": f"When was {name} founded?",
+                     "acceptedAnswer": {"@type": "Answer", "text": f"{name} was founded in {founded} in {pref_n}, Japan."}})
+    if url:
+        _faq.append({"@type": "Question", "name": f"Does {name} have an official website?",
+                     "acceptedAnswer": {"@type": "Answer", "text": f"Yes: {url}"}})
+    _graph = [_biz, _crumb]
+    if _faq: _graph.append({"@type": "FAQPage", "mainEntity": _faq})
+    _jsonld = '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": _graph}, ensure_ascii=False) + '</script>'
+
+    return page_head(f"{name} — {pref_n} | Terroir HUB WINE", intro, canonical, lang, hreflangs) + _jsonld + f"""
 <nav class="nav">
   <div class="nav-top">
     <a href="/{lang}/" class="nav-logo">Terroir HUB <span style="color:#722F37">WINE</span></a>
@@ -502,7 +533,6 @@ def pref_page(items, pref, lang):
     hreflangs = {
         "ja": f"https://wine.terroirhub.com/wine/{pref}/",
         "en": f"https://wine.terroirhub.com/wine/en/{pref}/index.html",
-        "fr": f"https://wine.terroirhub.com/wine/fr/{pref}/index.html",
         "x-default": f"https://wine.terroirhub.com/wine/en/{pref}/index.html",
     }
     cards = []
@@ -545,18 +575,18 @@ def pref_page(items, pref, lang):
 
 def main():
     json_files = sorted(glob.glob(os.path.join(BASE, "data", "data_*_wineries.json")))
-    for lang in ("en", "fr"):
+    for lang in ("en",):
         Path(os.path.join(BASE, lang)).mkdir(parents=True, exist_ok=True)
         with open(os.path.join(BASE, lang, "index.html"), "w", encoding="utf-8") as f:
             f.write(root_page(lang))
 
-    totals = {"en": 0, "fr": 0}
+    totals = {"en": 0}
     for jf in json_files:
         pref = os.path.basename(jf).replace("data_", "").replace("_wineries.json", "")
         with open(jf, "r", encoding="utf-8") as f:
             items = json.load(f)
 
-        for lang in ("en", "fr"):
+        for lang in ("en",):
             out_dir = os.path.join(BASE, "wine", lang, pref)
             os.makedirs(out_dir, exist_ok=True)
 
@@ -574,7 +604,7 @@ def main():
                 totals[lang] += 1
         print(f"{pref}: generated en/fr pages")
 
-    print(f"Done: en={totals['en']} fr={totals['fr']}")
+    print(f"Done: en={totals['en']}")
 
 
 if __name__ == "__main__":

@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/hokkaido/mongaku-valley.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/hokkaido/mongaku-valley.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/hokkaido/mongaku-valley.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/hokkaido/mongaku-valley.html",
       "name": "モンガク谷ワイナリー - 北海道のワイナリー",
       "description": "平成27年創業。北海道余市町のエステートワイナリー「モンガク谷ワイナリー」。7品種の醸造用ブドウを出来る限り自然に栽培している北海道の家族経営ワイナリー。ブドウ栽培からワイン醸造まで一貫して行う。フィールド・ブレンド（一つの畑に様々なブ",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -532,7 +531,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/hokkaido/mongaku-valley.html">日本語</a>
     <a class="lb" href="/wine/en/hokkaido/mongaku-valley.html">EN</a>
-    <a class="lb" href="/wine/fr/hokkaido/mongaku-valley.html">FR</a>
   </div>
 </nav>
 
@@ -648,7 +646,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">杤（トチ）</h3>
       <p class="brand-type">赤ワイン</p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E6%9D%A4%EF%BC%88%E3%83%88%E3%83%81%EF%BC%89&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">柏（ハク）</span></div>
@@ -657,7 +655,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">柏（ハク）</h3>
       <p class="brand-type">白ワイン</p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E6%9F%8F%EF%BC%88%E3%83%8F%E3%82%AF%EF%BC%89&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">楢（ナラ）</span></div>
@@ -666,7 +664,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">楢（ナラ）</h3>
       <p class="brand-type">赤ワイン</p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E6%A5%A2%EF%BC%88%E3%83%8A%E3%83%A9%EF%BC%89&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -884,19 +882,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

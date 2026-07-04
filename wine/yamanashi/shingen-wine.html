@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/yamanashi/shingen-wine.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/yamanashi/shingen-wine.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/yamanashi/shingen-wine.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/yamanashi/shingen-wine.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/yamanashi/shingen-wine.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/yamanashi/shingen-wine.html",
       "name": "信玄ワイン - 山梨県のワイナリー",
       "description": "平成2年頃創業。山梨県甲府市の小規模ワイナリー「信玄ワイン」。代表が一人でぶどう栽培から瓶詰めまでを行う「一人ワイナリー」。笛吹市・北杜市の自社畑でカベルネ・ソーヴィニョン、甲斐ノワール、甲斐ブラン、甲州などを栽培。甲府駅",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -502,7 +501,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/yamanashi/shingen-wine.html">日本語</a>
     <a class="lb" href="/wine/en/yamanashi/shingen-wine.html">EN</a>
-    <a class="lb" href="/wine/fr/yamanashi/shingen-wine.html">FR</a>
   </div>
 </nav>
 
@@ -609,7 +607,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">信玄ワイン 甲州</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">甲州種</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E4%BF%A1%E7%8E%84%E3%83%AF%E3%82%A4%E3%83%B3%20%E7%94%B2%E5%B7%9E&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">信玄ワイン 甲斐ノワール</span></div>
@@ -618,7 +616,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">信玄ワイン 甲斐ノワール</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">甲斐ノワール種</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E4%BF%A1%E7%8E%84%E3%83%AF%E3%82%A4%E3%83%B3%20%E7%94%B2%E6%96%90%E3%83%8E%E3%83%AF%E3%83%BC%E3%83%AB&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">信玄ワイン 甲斐ブラン</span></div>
@@ -627,7 +625,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">信玄ワイン 甲斐ブラン</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">甲斐ブラン種</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E4%BF%A1%E7%8E%84%E3%83%AF%E3%82%A4%E3%83%B3%20%E7%94%B2%E6%96%90%E3%83%96%E3%83%A9%E3%83%B3&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -845,19 +843,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

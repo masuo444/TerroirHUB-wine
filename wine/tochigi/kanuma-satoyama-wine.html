@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/tochigi/kanuma-satoyama-wine.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/tochigi/kanuma-satoyama-wine.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/tochigi/kanuma-satoyama-wine.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/tochigi/kanuma-satoyama-wine.html",
       "name": "かぬま里山わいん - 栃木県のワイナリー",
       "description": "平成30年創業。栃木県鹿沼市のエステートワイナリー「かぬま里山わいん」。鹿沼市の自社農園ぶどうだけで仕込むエステート型ワイナリー。里山の景観と一体になった素朴な味わいを目指す。",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -464,7 +463,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/tochigi/kanuma-satoyama-wine.html">日本語</a>
     <a class="lb" href="/wine/en/tochigi/kanuma-satoyama-wine.html">EN</a>
-    <a class="lb" href="/wine/fr/tochigi/kanuma-satoyama-wine.html">FR</a>
   </div>
 </nav>
 
@@ -564,7 +562,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">かぬま里山わいん 赤</h3>
       <p class="brand-type"></p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%81%8B%E3%81%AC%E3%81%BE%E9%87%8C%E5%B1%B1%E3%82%8F%E3%81%84%E3%82%93%20%E8%B5%A4&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">かぬま里山わいん 白</span></div>
@@ -573,7 +571,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">かぬま里山わいん 白</h3>
       <p class="brand-type"></p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%81%8B%E3%81%AC%E3%81%BE%E9%87%8C%E5%B1%B1%E3%82%8F%E3%81%84%E3%82%93%20%E7%99%BD&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -766,19 +764,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

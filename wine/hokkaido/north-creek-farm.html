@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/hokkaido/north-creek-farm.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/hokkaido/north-creek-farm.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/hokkaido/north-creek-farm.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/hokkaido/north-creek-farm.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/hokkaido/north-creek-farm.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/hokkaido/north-creek-farm.html",
       "name": "North Creek Farm - 北海道のワイナリー",
       "description": "令和2年創業。北海道仁木町のエステートワイナリー「North Creek Farm」。鈴木正光・彩子夫妻が余市川沿いの仁木町で2020年4月に葡萄栽培を開始。約2.3ヘクタールの畑で約4,000本を栽培。「北海道の大地が思い浮かぶワイン」を目指し",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -480,7 +479,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/hokkaido/north-creek-farm.html">日本語</a>
     <a class="lb" href="/wine/en/hokkaido/north-creek-farm.html">EN</a>
-    <a class="lb" href="/wine/fr/hokkaido/north-creek-farm.html">FR</a>
   </div>
 </nav>
 
@@ -596,7 +594,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">Blush field blend</h3>
       <p class="brand-type">ロゼワイン</p>
 
-      <div class="buy-btns"><a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00uniln.krtu4d90.g00uniln.krtu5468/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcraftwineshop%2F8658692112552%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fcraftwineshop%2Fi%2F10000925%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=Blush%20field%20blend&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"><a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00uniln.krtu4d90.g00uniln.krtu5468/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcraftwineshop%2F8658692112552%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fcraftwineshop%2Fi%2F10000925%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a></div>
     </div>
     </div>
   </div>
@@ -615,12 +613,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
           <div class="buy-card-name">North Creek Farm for Alice -Campbell Early 2023（赤泡）750ml</div>
           <div class="buy-btns">
             <a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00uniln.krtu4d90.g00uniln.krtu5468/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcraftwineshop%2F8658692112552%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fcraftwineshop%2Fi%2F10000925%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天</a>
-            <a class="bb bb-a" href="https://www.amazon.co.jp/s?k=North%20Creek%20Farm%20for%20Alice%20-Campbell%20Early%202023%EF%BC%88%E8%B5%A4%E6%B3%A1%EF%BC%89750ml&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
           </div>
         </div>
       </div>
     </div>
-    <p class="buy-note">※ 商品・価格は楽天市場の検索結果です（時点により変動）。Terroir HUB はワインの販売を行っていません。<br>価格・在庫・送料は各ストアでご確認ください。20歳未満の飲酒は法律で禁止されています。</p>
+    <p class="buy-note">【PR】本セクションはアフィリエイト広告（楽天）を含みます。<br>※ 商品・価格は楽天市場の検索結果です（時点により変動）。Terroir HUB はワインの販売を行っていません。<br>価格・在庫・送料は各ストアでご確認ください。20歳未満の飲酒は法律で禁止されています。</p>
   </div>
 </section>
 
@@ -842,19 +839,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

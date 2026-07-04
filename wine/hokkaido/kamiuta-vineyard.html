@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/hokkaido/kamiuta-vineyard.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/hokkaido/kamiuta-vineyard.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/hokkaido/kamiuta-vineyard.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/hokkaido/kamiuta-vineyard.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/hokkaido/kamiuta-vineyard.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/hokkaido/kamiuta-vineyard.html",
       "name": "上歌ヴィンヤード - 北海道のワイナリー",
       "description": "平成29年創業。北海道歌志内市のエステートワイナリー「上歌ヴィンヤード」。2016年に地域おこし協力隊の遠藤真人氏が畑の復興に着手。2017年・2018年に市民とボランティアが5,500本・6品種のぶどうの木を植栽。空知の廃れた炭鉱の",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -494,7 +493,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/hokkaido/kamiuta-vineyard.html">日本語</a>
     <a class="lb" href="/wine/en/hokkaido/kamiuta-vineyard.html">EN</a>
-    <a class="lb" href="/wine/fr/hokkaido/kamiuta-vineyard.html">FR</a>
   </div>
 </nav>
 
@@ -610,7 +608,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">泡沫（うたかた）</h3>
       <p class="brand-type">スパークリングワイン</p>
       <p class="brand-desc">冷涼な歌志内の酸を生かすフラッグシップ。</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E6%B3%A1%E6%B2%AB%EF%BC%88%E3%81%86%E3%81%9F%E3%81%8B%E3%81%9F%EF%BC%89&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">momo</span></div>
@@ -619,7 +617,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">momo</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">歌志内市上歌産ぶどうを10Rで委託醸造した赤。</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=momo&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -837,19 +835,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

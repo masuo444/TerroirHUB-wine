@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/nagano/funky-chateau.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/nagano/funky-chateau.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/nagano/funky-chateau.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/nagano/funky-chateau.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/nagano/funky-chateau.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/nagano/funky-chateau.html",
       "name": "ファンキー・シャトー - 長野県のワイナリー",
       "description": "平成23年創業。長野県青木村のエステートワイナリー「ファンキー・シャトー」。自然からのメッセージが感じられ、飲んで楽しく、精神的な豊かさを与えてくれるワイン造りを目指す",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -515,7 +514,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/nagano/funky-chateau.html">日本語</a>
     <a class="lb" href="/wine/en/nagano/funky-chateau.html">EN</a>
-    <a class="lb" href="/wine/fr/nagano/funky-chateau.html">FR</a>
   </div>
 </nav>
 
@@ -631,7 +629,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">ファンキー・シャトー シャルドネ</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">無濾過・無清澄</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%88%E3%83%BC%20%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%89%E3%83%8D&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">ファンキー・シャトー カベルネ・ソーヴィニヨン</span></div>
@@ -640,7 +638,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">ファンキー・シャトー カベルネ・ソーヴィニヨン</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">無濾過・無清澄</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%88%E3%83%BC%20%E3%82%AB%E3%83%99%E3%83%AB%E3%83%8D%E3%83%BB%E3%82%BD%E3%83%BC%E3%83%B4%E3%82%A3%E3%83%8B%E3%83%A8%E3%83%B3&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">グリグリ Gris et Gris</span></div>
@@ -649,7 +647,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">グリグリ Gris et Gris</h3>
       <p class="brand-type">ロゼワイン</p>
 
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%82%B0%E3%83%AA%E3%82%B0%E3%83%AA%20Gris%20et%20Gris&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -867,19 +865,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

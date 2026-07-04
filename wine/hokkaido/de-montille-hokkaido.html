@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/hokkaido/de-montille-hokkaido.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/hokkaido/de-montille-hokkaido.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/hokkaido/de-montille-hokkaido.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/hokkaido/de-montille-hokkaido.html",
       "name": "ド・モンティーユ＆北海道 - 北海道のワイナリー",
       "description": "令和5年創業。北海道函館市のエステートワイナリー「ド・モンティーユ＆北海道」。フランス・ブルゴーニュで約300年の歴史を持つ家族経営ワイナリー「ドメーヌ・ド・モンティーユ」が函館市に設立した醸造所。2016年よりプロジェクト開始、2019",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -492,7 +491,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/hokkaido/de-montille-hokkaido.html">日本語</a>
     <a class="lb" href="/wine/en/hokkaido/de-montille-hokkaido.html">EN</a>
-    <a class="lb" href="/wine/fr/hokkaido/de-montille-hokkaido.html">FR</a>
   </div>
 </nav>
 
@@ -608,7 +606,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">ド・モンティーユ＆北海道 ピノ・ノワール</h3>
       <p class="brand-type">赤ワイン</p>
       <p class="brand-desc">2022年産</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%83%89%E3%83%BB%E3%83%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%83%BC%E3%83%A6%EF%BC%86%E5%8C%97%E6%B5%B7%E9%81%93%20%E3%83%94%E3%83%8E%E3%83%BB%E3%83%8E%E3%83%AF%E3%83%BC%E3%83%AB&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">ド・モンティーユ＆北海道 ケルナー</span></div>
@@ -617,7 +615,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">ド・モンティーユ＆北海道 ケルナー</h3>
       <p class="brand-type">白ワイン</p>
       <p class="brand-desc">2022年産</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E3%83%89%E3%83%BB%E3%83%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%83%BC%E3%83%A6%EF%BC%86%E5%8C%97%E6%B5%B7%E9%81%93%20%E3%82%B1%E3%83%AB%E3%83%8A%E3%83%BC&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -835,19 +833,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();

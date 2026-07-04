@@ -17,7 +17,6 @@
 <link rel="canonical" href="https://wine.terroirhub.com/wine/yamagata/ringorillappa.html">
 <link rel="alternate" hreflang="ja" href="https://wine.terroirhub.com/wine/yamagata/ringorillappa.html">
 <link rel="alternate" hreflang="en" href="https://wine.terroirhub.com/wine/en/yamagata/ringorillappa.html">
-<link rel="alternate" hreflang="fr" href="https://wine.terroirhub.com/wine/fr/yamagata/ringorillappa.html">
 <link rel="alternate" hreflang="x-default" href="https://wine.terroirhub.com/wine/en/yamagata/ringorillappa.html">
 <script type="application/ld+json">
 {
@@ -29,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/yamagata/ringorillappa.html",
       "name": "リンゴリらっぱ醸造所 - 山形県のワイナリー",
       "description": "令和6年創業。山形県新庄市の小規模ワイナリー「リンゴリらっぱ醸造所」。4.7haのりんご園は全て有機JAS認証を取得し、国産初の有機シードルと有機リンゴジュースを製造しております。野生酵母による自然発酵で、添加物を最小限に抑えた製",
-      "dateModified": "2026-06-19",
+      "dateModified": "2026-07-04",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -461,7 +460,6 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   <div class="nav-r">
     <a class="lb active" href="/wine/yamagata/ringorillappa.html">日本語</a>
     <a class="lb" href="/wine/en/yamagata/ringorillappa.html">EN</a>
-    <a class="lb" href="/wine/fr/yamagata/ringorillappa.html">FR</a>
   </div>
 </nav>
 
@@ -568,7 +566,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
       <h3 class="brand-name">有機シードル</h3>
       <p class="brand-type">シードル</p>
       <p class="brand-desc">国産初有機JAS認証</p>
-      <div class="buy-btns"><a class="bb bb-a" href="https://www.amazon.co.jp/s?k=%E6%9C%89%E6%A9%9F%E3%82%B7%E3%83%BC%E3%83%89%E3%83%AB&amp;i=food-beverage&amp;tag=terroirhub-22" target="_blank" rel="nofollow sponsored noopener">Amazon</a></div>
+      <div class="buy-btns"></div>
     </div>
     </div>
   </div>
@@ -786,19 +784,21 @@ async function sendQuestion(q){
       }
     }catch(e){}
     var res=await fetch('https://sake.terroirhub.com/api/sakura',{method:'POST',headers:headers,body:JSON.stringify({question:q,history:chatHistory.slice(-10),context:ctx})});
+    if(res.status===429){
+      removeT();
+      var d429=null; try{d429=await res.json();}catch(e){}
+      addMsg('butler',(d429&&d429.message)||'本日のご利用上限に達しました。無料会員登録でもっとサクラと話せます 🌸');
+      renderSugs();return;
+    }
     if(res.status===401){
       removeT();
-      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。
-
-無料アカウントで今すぐ始められます 🌸');
+      addMsg('butler','サクラAIをご利用いただくにはログインが必要です。\n\n無料アカウントで今すぐ始められます 🌸');
       setTimeout(function(){if(typeof showAuth==='function')showAuth('login');},800);
       renderSugs();return;
     }
     if(res.status===402){
       removeT();
-      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸
-
-プレミアムプランでは無制限でご利用いただけます。');
+      addMsg('butler','本日のご利用上限に達しました。明日またお気軽にどうぞ 🌸\n\nプレミアムプランでは無制限でご利用いただけます。');
       renderSugs();return;
     }
     var data=await res.json();
