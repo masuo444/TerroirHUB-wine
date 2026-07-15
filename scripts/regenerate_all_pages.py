@@ -22,6 +22,91 @@ with open(os.path.join(BASE, 'template_wine.html'), 'r') as f:
     tmpl = f.read()
 CSS = tmpl[tmpl.find('<style>') + 7:tmpl.find('</style>')]
 
+# ── 新テンプレV2（早わかりカード・ページ内ナビ・アクセス刷新）のCSS ──
+CSS = CSS.rstrip() + '''
+/*QF-TEMPLATE-V2*/
+.qf-wrap{max-width:1060px;margin:-58px auto 0;padding:0 24px;position:relative;z-index:5;}
+.qf-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  box-shadow:0 18px 50px -18px rgba(42,32,24,.14);overflow:hidden;}
+.qf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);}
+.qf-item{padding:26px 22px 22px;background:var(--surface);display:flex;flex-direction:column;gap:7px;min-width:0;}
+.qf-lbl{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.24em;color:var(--text-muted);}
+.qf-val{font-family:'Zen Old Mincho',serif;font-size:17px;line-height:1.5;color:var(--text);}
+.qf-val small{display:block;font-size:12px;color:var(--text-muted);font-family:'Noto Serif JP',serif;margin-top:2px;font-weight:400;}
+.qf-note{font-family:'Noto Serif JP',serif;font-size:12px;color:var(--text-muted);line-height:1.7;}
+.qf-badges{display:flex;flex-wrap:wrap;gap:6px;}
+.qf-badge{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:.04em;
+  padding:4px 10px;border-radius:3px;background:var(--accent-pale,#F7EDEA);color:var(--accent);border:1px solid var(--border);}
+.qf-badge.ok{background:#EDF7F0;color:#2E7D53;border-color:#CBE7D6;}
+.qf-actions{display:flex;border-top:1px solid var(--border);}
+.qf-btn{flex:1;text-align:center;padding:14px 10px;font-family:'DM Sans','Noto Serif JP',sans-serif;font-size:12.5px;
+  font-weight:500;letter-spacing:.06em;color:var(--text-body);text-decoration:none;border-left:1px solid var(--border);
+  transition:background .2s,color .2s;background:var(--surface);cursor:pointer;}
+.qf-btn:first-child{border-left:none;}
+.qf-btn:hover{background:var(--surface-warm);color:var(--accent);}
+.qf-btn.primary{background:var(--accent);color:#fff;}
+.qf-btn.primary:hover{opacity:.9;}
+@media(max-width:760px){
+  .qf-wrap{margin-top:-40px;padding:0 14px;}
+  .qf-grid{grid-template-columns:1fr 1fr;}
+  .qf-item{padding:18px 16px 14px;}
+  .qf-actions{flex-wrap:wrap;}
+  .qf-btn{flex:1 1 50%;}
+  .qf-btn:nth-child(3){border-left:none;border-top:1px solid var(--border);}
+  .qf-btn:nth-child(4){border-top:1px solid var(--border);}
+}
+.pnav{position:sticky;top:54px;z-index:50;background:rgba(255,251,247,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);margin-top:34px;}
+.pnav-inner{max-width:1060px;margin:0 auto;padding:0 24px;display:flex;gap:4px;overflow-x:auto;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.pnav-inner::-webkit-scrollbar{display:none;}
+.pnav a{flex-shrink:0;font-family:'DM Sans','Noto Serif JP',sans-serif;font-size:13px;letter-spacing:.08em;
+  color:var(--text-muted);text-decoration:none;padding:14px 14px 12px;border-bottom:2px solid transparent;
+  transition:color .2s,border-color .2s;}
+.pnav a:hover{color:var(--text);}
+.pnav a.on{color:var(--accent);border-bottom-color:var(--accent);}
+.access-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1060px;margin:0 auto;
+  border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--surface);}
+.access-map{min-height:340px;position:relative;background:var(--surface-warm);}
+.access-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.12) saturate(.9);}
+.access-map-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;}
+.access-info{padding:34px 36px;display:flex;flex-direction:column;}
+.ai-row{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid var(--border);font-size:14px;}
+.ai-row:last-of-type{border-bottom:none;}
+.ai-k{flex-shrink:0;width:74px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:.18em;
+  color:var(--text-muted);padding-top:3px;}
+.ai-v{font-family:'Noto Serif JP',serif;color:var(--text-body);line-height:1.8;word-break:break-word;min-width:0;}
+.ai-v a{color:var(--accent);}
+.access-links{margin-top:auto;padding-top:20px;display:flex;gap:10px;flex-wrap:wrap;}
+.al-btn{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:.05em;
+  padding:10px 18px;border-radius:3px;text-decoration:none;border:1px solid var(--border);
+  color:var(--text-body);transition:all .2s;}
+.al-btn:hover{border-color:var(--accent);color:var(--accent);}
+.access-src{max-width:1060px;margin:14px auto 0;font-size:11px;color:var(--text-muted);}
+.access-src a{color:var(--accent);text-decoration:none;}
+@media(max-width:820px){.access-grid{grid-template-columns:1fr;}.access-map{min-height:260px;}.access-info{padding:24px 20px;}}
+.hero{min-height:72vh!important;}
+section[id]{scroll-margin-top:104px;}
+'''
+
+PNAV_SPY_JS = '''
+<script>
+(function(){
+  var links=document.querySelectorAll('.pnav a');
+  if(!links.length)return;
+  var obs=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});
+      }
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  links.forEach(function(a){var el=document.getElementById(a.getAttribute('href').slice(1));if(el)obs.observe(el);});
+  document.documentElement.style.scrollBehavior='smooth';
+})();
+</script>'''
+
+
 # ── 楽天商品データ（fetch_rakuten_items.py が生成）
 RAKUTEN_DB = {}
 _rk_path = os.path.join(BASE, 'wine', 'rakuten_items.json')
@@ -472,7 +557,7 @@ def generate_page(b, pref_slug, siblings=None):
         if area:
             sm += f'<div class="sm-item"><span class="sm-val">{esc(area)}</span><span class="sm-lbl">TERROIR</span><span class="sm-sub">産地</span></div>'
         story_section = f'''
-<section class="section story-redesign">
+<section class="section story-redesign" id="story">
   <div class="sec-inner">
     <label class="sec-label">STORY</label>
     <h2 class="sr-title">{esc(name)}の物語</h2>
@@ -486,7 +571,7 @@ def generate_page(b, pref_slug, siblings=None):
     features_section = ''
     if features:
         features_section = f'''
-<section class="section" style="background:var(--surface-warm);">
+<section class="section" style="background:var(--surface-warm);" id="features">
   <div class="sec-inner">
     <label class="sec-label">FEATURES</label>
     <h2 class="sec-title">{esc(name)}の特徴</h2>
@@ -504,7 +589,7 @@ def generate_page(b, pref_slug, siblings=None):
             cls = 'grape-pill main' if i == 0 else 'grape-pill'
             pills_html += f'<span class="{cls}">{esc(g)}</span>'
         grapes_section = f'''
-<section class="section" style="background:var(--bg);padding:48px 24px;">
+<section class="section" style="background:var(--bg);padding:48px 24px;" id="grapes">
   <div class="sec-inner">
     <label class="sec-label">GRAPE VARIETIES</label>
     <h2 class="sec-title">使用品種</h2>
@@ -532,7 +617,7 @@ def generate_page(b, pref_slug, siblings=None):
     brands_section = ''
     if brands:
         brands_section = f'''
-<section class="section brands-section">
+<section class="section brands-section" id="brands">
   <div class="sec-inner">
     <label class="sec-label">WINE</label>
     <h2 class="sec-title">代表銘柄</h2>
@@ -560,7 +645,7 @@ def generate_page(b, pref_slug, siblings=None):
         </div>
       </div>'''
         shop_section = f'''
-<section class="section buy-section" style="background:var(--surface-warm);">
+<section class="section buy-section" style="background:var(--surface-warm);" id="buy">
   <div class="sec-inner">
     <label class="sec-label">BUY</label>
     <h2 class="sec-title">このワイナリーのワイン</h2>
@@ -645,6 +730,111 @@ def generate_page(b, pref_slug, siblings=None):
                    f'<span style="font-size:28px;">📍</span>'
                    f'<div style="font-family:\'Zen Old Mincho\',serif;font-size:16px;color:var(--text);">{esc(name)}</div>'
                    f'<div style="font-size:13px;color:var(--text-muted);">{esc(pref_name)}{(" " + esc(area)) if area else ""}</div></div>')
+
+    # ══ V2: 早わかりカード ══
+    qf_cells = []
+    if founded:
+        _f_main = f'{esc(founded_era)}（{esc(founded)}年）' if founded_era else f'{esc(founded)}年'
+        _f_sub = f'<small>創業{years}年</small>' if years else ''
+        qf_cells.append(f'<div class="qf-item"><span class="qf-lbl">FOUNDED</span><span class="qf-val">{_f_main}{_f_sub}</span></div>')
+    if visit:
+        qf_cells.append(f'<div class="qf-item"><span class="qf-lbl">VISIT</span><span class="qf-note">{esc(visit[:64])}</span></div>')
+    else:
+        qf_cells.append('<div class="qf-item"><span class="qf-lbl">VISIT</span><span class="qf-note">見学情報は公式サイトでご確認ください</span></div>')
+    _terroir_sub = f'<small>{esc(station)}</small>' if station else ''
+    _gi_badge = f'<span class="qf-badges" style="margin-top:2px;"><span class="qf-badge ok">{esc(gi)}</span></span>' if gi else ''
+    qf_cells.append(f'<div class="qf-item"><span class="qf-lbl">TERROIR</span><span class="qf-val">{esc(pref_name)} {esc(area)}{_terroir_sub}</span>{_gi_badge}</div>')
+    if grapes:
+        qf_cells.append(f'<div class="qf-item"><span class="qf-lbl">GRAPES</span><span class="qf-val">{esc("・".join(grapes[:2]))}{f"<small>ほか{len(grapes)-2}品種</small>" if len(grapes)>2 else ""}</span></div>')
+    qf_actions = []
+    if url:
+        qf_actions.append(f'<a class="qf-btn" href="{esc(url)}" target="_blank" rel="noopener">公式サイト ↗</a>')
+    if brands:
+        qf_actions.append('<a class="qf-btn" href="#brands">代表銘柄</a>')
+    elif grapes:
+        qf_actions.append('<a class="qf-btn" href="#grapes">使用品種</a>')
+    qf_actions.append('<a class="qf-btn" href="#access">アクセス・地図</a>')
+    qf_actions.append('<a class="qf-btn primary" href="javascript:openPanel()">サクラに聞く</a>')
+    qf_card = f'''
+<div class="qf-wrap">
+  <div class="qf-card">
+    <div class="qf-grid">{''.join(qf_cells)}</div>
+    <div class="qf-actions">{''.join(qf_actions)}</div>
+  </div>
+</div>'''
+
+    # ══ V2: ページ内ナビ ══
+    _anchors = []
+    if desc or founded or area:
+        _anchors.append(('story', '物語'))
+    if features:
+        _anchors.append(('features', '特徴'))
+    if grapes:
+        _anchors.append(('grapes', '品種'))
+    if brands:
+        _anchors.append(('brands', '銘柄'))
+    if rk_items:
+        _anchors.append(('buy', '購入'))
+    _anchors.append(('access', 'アクセス'))
+    pnav = ('<nav class="pnav"><div class="pnav-inner">'
+            + ''.join(f'<a href="#{a}">{lb}</a>' for a, lb in _anchors)
+            + '</div></nav>')
+
+    # ══ V2: アクセス・基本情報セクション ══
+    _amap = ''
+    _gmap_url = ''
+    if lat and lng:
+        try:
+            _la, _ln = float(lat), float(lng)
+            _bbox = f"{_ln-0.011}%2C{_la-0.0068}%2C{_ln+0.011}%2C{_la+0.0068}"
+            _gmap_url = f'https://www.google.com/maps/search/?api=1&amp;query={_la}%2C{_ln}'
+            _amap = (f'<iframe src="https://www.openstreetmap.org/export/embed.html?bbox={_bbox}&amp;layer=mapnik&amp;marker={_la}%2C{_ln}" '
+                     f'loading="lazy" title="{esc(name)}の地図"></iframe>')
+        except (ValueError, TypeError):
+            _amap = ''
+    if not _amap:
+        _amap = (f'<div class="access-map-fallback"><span style="font-size:28px;">📍</span>'
+                 f'<div style="font-family:\'Zen Old Mincho\',serif;font-size:16px;color:var(--text);">{esc(name)}</div>'
+                 f'<div style="font-size:13px;color:var(--text-muted);">{esc(pref_name)}{(" " + esc(area)) if area else ""}</div></div>')
+    _arows = []
+    _company_sub = f'（{esc(b.get("company",""))}）' if b.get('company') and b.get('company') != name else ''
+    _arows.append(('名称', f'{esc(name)}{_company_sub}'))
+    if address:
+        _arows.append(('所在地', esc(address)))
+    if tel:
+        _arows.append(('電話', esc(tel)))
+    if founded:
+        _arows.append(('創業', f'{esc(founded_era)}（{esc(founded)}年）' if founded_era else f'{esc(founded)}年'))
+    if station:
+        _arows.append(('最寄駅', esc(station)))
+    if visit:
+        _arows.append(('見学・試飲', esc(visit)))
+    if url:
+        _u = url.replace('https://', '').replace('http://', '').rstrip('/')
+        _arows.append(('公式サイト', f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(_u)}</a>'))
+    _arows_html = ''.join(f'<div class="ai-row"><span class="ai-k">{k}</span><span class="ai-v">{v}</span></div>' for k, v in _arows)
+    _albtns = ''
+    if _gmap_url:
+        _albtns += f'<a class="al-btn" href="{_gmap_url}" target="_blank" rel="noopener">Googleマップで開く ↗</a>'
+    if url:
+        _albtns += f'<a class="al-btn" href="{esc(url)}" target="_blank" rel="noopener">公式サイト ↗</a>'
+    _asrc = (f'<p class="access-src">出典：<a href="{esc(source)}" target="_blank" rel="noopener">{esc(source)}</a></p>'
+             if source else '')
+    access_section = f'''
+<section class="section" id="access" style="background:var(--bg);">
+  <div class="sec-inner">
+    <label class="sec-label">ACCESS</label>
+    <h2 class="sec-title">アクセス・基本情報</h2>
+    <div class="sec-divider"></div>
+    <div class="access-grid">
+      <div class="access-map">{_amap}</div>
+      <div class="access-info">{_arows_html}
+        {f'<div class="access-links">{_albtns}</div>' if _albtns else ''}
+      </div>
+    </div>
+    {_asrc}
+  </div>
+</section>'''
 
     # ── FAQ HTML ──
     faq_section = ''
@@ -764,7 +954,8 @@ def generate_page(b, pref_slug, siblings=None):
     <span>SCROLL</span>
   </div>
 </section>
-
+{qf_card}
+{pnav}
 {story_section}
 
 {features_section}
@@ -779,21 +970,7 @@ def generate_page(b, pref_slug, siblings=None):
 {furusato_cta}
 {related_html}
 
-<section class="section" style="background:var(--bg);">
-  <div class="sec-inner">
-    <label class="sec-label">INFORMATION</label>
-    <h2 class="sec-title">基本情報</h2>
-    <div class="sec-divider"></div>
-    <div class="story-grid" style="gap:32px;">
-      <div style="display:flex;flex-direction:column;gap:22px;">
-        {visit_items}
-      </div>
-      <div>{map_box}</div>
-    </div>
-    {f'<p style="font-size:13px;color:var(--text-muted);margin-top:16px;">{esc(station)}</p>' if station else ''}
-    {f'<p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="{esc(source)}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">{esc(source)}</a></p>' if source else ''}
-  </div>
-</section>
+{access_section}
 
 {faq_section}
 

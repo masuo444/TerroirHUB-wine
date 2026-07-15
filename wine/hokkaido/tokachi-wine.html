@@ -28,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/hokkaido/tokachi-wine.html",
       "name": "池田町ブドウ・ブドウ酒研究所（十勝ワイン） - 北海道のワイナリー",
       "description": "昭和38年創業。北海道池田町の日本ワイナリー「池田町ブドウ・ブドウ酒研究所（十勝ワイン）」。町の財政危機を救うために町役場の職員が世界でトップクラスのワインを造った。それが十勝ワインの始まりの物語。",
-      "dateModified": "2026-07-04",
+      "dateModified": "2026-07-15",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -460,7 +460,69 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
 .petal:nth-child(2){left:25%;animation-delay:1.5s;animation-duration:9s;}
 .petal:nth-child(3){left:50%;animation-delay:3s;animation-duration:8s;width:8px;height:8px;}
 .petal:nth-child(4){left:75%;animation-delay:4.5s;animation-duration:10s;}
-
+/*QF-TEMPLATE-V2*/
+.qf-wrap{max-width:1060px;margin:-58px auto 0;padding:0 24px;position:relative;z-index:5;}
+.qf-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  box-shadow:0 18px 50px -18px rgba(42,32,24,.14);overflow:hidden;}
+.qf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);}
+.qf-item{padding:26px 22px 22px;background:var(--surface);display:flex;flex-direction:column;gap:7px;min-width:0;}
+.qf-lbl{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.24em;color:var(--text-muted);}
+.qf-val{font-family:'Zen Old Mincho',serif;font-size:17px;line-height:1.5;color:var(--text);}
+.qf-val small{display:block;font-size:12px;color:var(--text-muted);font-family:'Noto Serif JP',serif;margin-top:2px;font-weight:400;}
+.qf-note{font-family:'Noto Serif JP',serif;font-size:12px;color:var(--text-muted);line-height:1.7;}
+.qf-badges{display:flex;flex-wrap:wrap;gap:6px;}
+.qf-badge{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:.04em;
+  padding:4px 10px;border-radius:3px;background:var(--accent-pale,#F7EDEA);color:var(--accent);border:1px solid var(--border);}
+.qf-badge.ok{background:#EDF7F0;color:#2E7D53;border-color:#CBE7D6;}
+.qf-actions{display:flex;border-top:1px solid var(--border);}
+.qf-btn{flex:1;text-align:center;padding:14px 10px;font-family:'DM Sans','Noto Serif JP',sans-serif;font-size:12.5px;
+  font-weight:500;letter-spacing:.06em;color:var(--text-body);text-decoration:none;border-left:1px solid var(--border);
+  transition:background .2s,color .2s;background:var(--surface);cursor:pointer;}
+.qf-btn:first-child{border-left:none;}
+.qf-btn:hover{background:var(--surface-warm);color:var(--accent);}
+.qf-btn.primary{background:var(--accent);color:#fff;}
+.qf-btn.primary:hover{opacity:.9;}
+@media(max-width:760px){
+  .qf-wrap{margin-top:-40px;padding:0 14px;}
+  .qf-grid{grid-template-columns:1fr 1fr;}
+  .qf-item{padding:18px 16px 14px;}
+  .qf-actions{flex-wrap:wrap;}
+  .qf-btn{flex:1 1 50%;}
+  .qf-btn:nth-child(3){border-left:none;border-top:1px solid var(--border);}
+  .qf-btn:nth-child(4){border-top:1px solid var(--border);}
+}
+.pnav{position:sticky;top:54px;z-index:50;background:rgba(255,251,247,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);margin-top:34px;}
+.pnav-inner{max-width:1060px;margin:0 auto;padding:0 24px;display:flex;gap:4px;overflow-x:auto;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.pnav-inner::-webkit-scrollbar{display:none;}
+.pnav a{flex-shrink:0;font-family:'DM Sans','Noto Serif JP',sans-serif;font-size:13px;letter-spacing:.08em;
+  color:var(--text-muted);text-decoration:none;padding:14px 14px 12px;border-bottom:2px solid transparent;
+  transition:color .2s,border-color .2s;}
+.pnav a:hover{color:var(--text);}
+.pnav a.on{color:var(--accent);border-bottom-color:var(--accent);}
+.access-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1060px;margin:0 auto;
+  border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--surface);}
+.access-map{min-height:340px;position:relative;background:var(--surface-warm);}
+.access-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.12) saturate(.9);}
+.access-map-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;}
+.access-info{padding:34px 36px;display:flex;flex-direction:column;}
+.ai-row{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid var(--border);font-size:14px;}
+.ai-row:last-of-type{border-bottom:none;}
+.ai-k{flex-shrink:0;width:74px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:.18em;
+  color:var(--text-muted);padding-top:3px;}
+.ai-v{font-family:'Noto Serif JP',serif;color:var(--text-body);line-height:1.8;word-break:break-word;min-width:0;}
+.ai-v a{color:var(--accent);}
+.access-links{margin-top:auto;padding-top:20px;display:flex;gap:10px;flex-wrap:wrap;}
+.al-btn{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:.05em;
+  padding:10px 18px;border-radius:3px;text-decoration:none;border:1px solid var(--border);
+  color:var(--text-body);transition:all .2s;}
+.al-btn:hover{border-color:var(--accent);color:var(--accent);}
+.access-src{max-width:1060px;margin:14px auto 0;font-size:11px;color:var(--text-muted);}
+.access-src a{color:var(--accent);text-decoration:none;}
+@media(max-width:820px){.access-grid{grid-template-columns:1fr;}.access-map{min-height:260px;}.access-info{padding:24px 20px;}}
+.hero{min-height:72vh!important;}
+section[id]{scroll-margin-top:104px;}
 
 
 /* STORY 刷新（写真なし・タイポ中心） */
@@ -554,8 +616,15 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   </div>
 </section>
 
+<div class="qf-wrap">
+  <div class="qf-card">
+    <div class="qf-grid"><div class="qf-item"><span class="qf-lbl">FOUNDED</span><span class="qf-val">昭和38年（1963年）<small>創業63年</small></span></div><div class="qf-item"><span class="qf-lbl">VISIT</span><span class="qf-note">ワイン城（ヨーロッパ中世の古城を模した建物）でワインの製造・販売・見学。</span></div><div class="qf-item"><span class="qf-lbl">TERROIR</span><span class="qf-val">北海道 池田町<small>JR根室本線 池田駅（車約5分）</small></span><span class="qf-badges" style="margin-top:2px;"><span class="qf-badge ok">GI北海道</span></span></div><div class="qf-item"><span class="qf-lbl">GRAPES</span><span class="qf-val">山幸・清見<small>ほか2品種</small></span></div></div>
+    <div class="qf-actions"><a class="qf-btn" href="https://www.tokachi-wine.com/" target="_blank" rel="noopener">公式サイト ↗</a><a class="qf-btn" href="#brands">代表銘柄</a><a class="qf-btn" href="#access">アクセス・地図</a><a class="qf-btn primary" href="javascript:openPanel()">サクラに聞く</a></div>
+  </div>
+</div>
+<nav class="pnav"><div class="pnav-inner"><a href="#story">物語</a><a href="#features">特徴</a><a href="#grapes">品種</a><a href="#brands">銘柄</a><a href="#buy">購入</a><a href="#access">アクセス</a></div></nav>
 
-<section class="section story-redesign">
+<section class="section story-redesign" id="story">
   <div class="sec-inner">
     <label class="sec-label">STORY</label>
     <h2 class="sr-title">池田町ブドウ・ブドウ酒研究所（十勝ワイン）の物語</h2>
@@ -566,7 +635,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
 </section>
 
 
-<section class="section" style="background:var(--surface-warm);">
+<section class="section" style="background:var(--surface-warm);" id="features">
   <div class="sec-inner">
     <label class="sec-label">FEATURES</label>
     <h2 class="sec-title">池田町ブドウ・ブドウ酒研究所（十勝ワイン）の特徴</h2>
@@ -598,7 +667,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
 </section>
 
 
-<section class="section" style="background:var(--bg);padding:48px 24px;">
+<section class="section" style="background:var(--bg);padding:48px 24px;" id="grapes">
   <div class="sec-inner">
     <label class="sec-label">GRAPE VARIETIES</label>
     <h2 class="sec-title">使用品種</h2>
@@ -620,7 +689,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
 </section>
 
 
-<section class="section brands-section">
+<section class="section brands-section" id="brands">
   <div class="sec-inner">
     <label class="sec-label">WINE</label>
     <h2 class="sec-title">代表銘柄</h2>
@@ -658,7 +727,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
 </section>
 
 
-<section class="section buy-section" style="background:var(--surface-warm);">
+<section class="section buy-section" style="background:var(--surface-warm);" id="buy">
   <div class="sec-inner">
     <label class="sec-label">BUY</label>
     <h2 class="sec-title">このワイナリーのワイン</h2>
@@ -769,19 +838,19 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
   </div>
 </section>
 
-<section class="section" style="background:var(--bg);">
+
+<section class="section" id="access" style="background:var(--bg);">
   <div class="sec-inner">
-    <label class="sec-label">INFORMATION</label>
-    <h2 class="sec-title">基本情報</h2>
+    <label class="sec-label">ACCESS</label>
+    <h2 class="sec-title">アクセス・基本情報</h2>
     <div class="sec-divider"></div>
-    <div class="story-grid" style="gap:32px;">
-      <div style="display:flex;flex-direction:column;gap:22px;">
-        <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📍</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">所在地</div><div style="font-size:15px;color:var(--text-body);">北海道中川郡池田町清見83番地</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">015-572-2467</div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="https://www.tokachi-wine.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.tokachi-wine.com/</a></div></div></div><div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">ワイン城（ヨーロッパ中世の古城を模した建物）でワインの製造・販売・見学。</div></div></div>
+    <div class="access-grid">
+      <div class="access-map"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=143.429%2C43.1132%2C143.451%2C43.126799999999996&amp;layer=mapnik&amp;marker=43.12%2C143.44" loading="lazy" title="池田町ブドウ・ブドウ酒研究所（十勝ワイン）の地図"></iframe></div>
+      <div class="access-info"><div class="ai-row"><span class="ai-k">名称</span><span class="ai-v">池田町ブドウ・ブドウ酒研究所（十勝ワイン）（池田町ブドウ・ブドウ酒研究所）</span></div><div class="ai-row"><span class="ai-k">所在地</span><span class="ai-v">北海道中川郡池田町清見83番地</span></div><div class="ai-row"><span class="ai-k">電話</span><span class="ai-v">015-572-2467</span></div><div class="ai-row"><span class="ai-k">創業</span><span class="ai-v">昭和38年（1963年）</span></div><div class="ai-row"><span class="ai-k">最寄駅</span><span class="ai-v">JR根室本線 池田駅（車約5分）</span></div><div class="ai-row"><span class="ai-k">見学・試飲</span><span class="ai-v">ワイン城（ヨーロッパ中世の古城を模した建物）でワインの製造・販売・見学。</span></div><div class="ai-row"><span class="ai-k">公式サイト</span><span class="ai-v"><a href="https://www.tokachi-wine.com/" target="_blank" rel="noopener">www.tokachi-wine.com</a></span></div>
+        <div class="access-links"><a class="al-btn" href="https://www.google.com/maps/search/?api=1&amp;query=43.12%2C143.44" target="_blank" rel="noopener">Googleマップで開く ↗</a><a class="al-btn" href="https://www.tokachi-wine.com/" target="_blank" rel="noopener">公式サイト ↗</a></div>
       </div>
-      <div><div style="border:1px solid var(--border);border-radius:8px;overflow:hidden;"><iframe title="池田町ブドウ・ブドウ酒研究所（十勝ワイン）の地図" width="100%" height="280" frameborder="0" scrolling="no" loading="lazy" style="display:block;border:0;" src="https://www.openstreetmap.org/export/embed.html?bbox=143.428%2C43.111999999999995%2C143.452%2C43.128&amp;layer=mapnik&amp;marker=43.12%2C143.44"></iframe><div style="padding:8px 12px;background:var(--surface-warm);font-size:12px;text-align:right;"><a href="https://www.google.com/maps/search/?api=1&amp;query=43.12%2C143.44" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Googleマップで開く →</a></div></div></div>
     </div>
-    <p style="font-size:13px;color:var(--text-muted);margin-top:16px;">JR根室本線 池田駅（車約5分）</p>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:12px;">出典：<a href="https://www.tokachi-wine.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">https://www.tokachi-wine.com/</a></p>
+    <p class="access-src">出典：<a href="https://www.tokachi-wine.com/" target="_blank" rel="noopener">https://www.tokachi-wine.com/</a></p>
   </div>
 </section>
 
@@ -891,7 +960,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans','Noto Sans JP'
     <div class="p-handle"></div>
     <div class="p-hdr">
       <div class="p-hdr-l">
-        <div class="p-av"><img src="/img/sakura-fullbody.png?v=2" alt="サクラ" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+        <div class="p-av"><img src="/img/sakura-fullbody.png" alt="サクラ" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
         <div>
           <div class="p-title">サクラ <span id="p-plan-tag" style="font-size:10px;background:rgba(255,255,255,0.25);border-radius:6px;padding:1px 7px;font-weight:400;">Free</span></div>
           <div class="p-status"><div class="p-dot"></div><span>AIソムリエ · オンライン</span></div>
