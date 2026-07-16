@@ -16,9 +16,18 @@
     "wine_style": "white",
     "main_grape": "koshu",
     "gi": "",
-    "grapes": ["甲州"],
-    "brands": ["富士山シャルドネ", "富士の夢"],
-    "features": ["富士箱根伊豆国立公園内・標高900mに位置", "富士宮市および山梨県に自社畑を所有", "ボルドー大学醸造学部長・ドゥニ・デュブルデュー教授を招聘"],
+    "grapes": [
+      "甲州"
+    ],
+    "brands": [
+      "富士山シャルドネ",
+      "富士の夢"
+    ],
+    "features": [
+      "富士箱根伊豆国立公園内・標高900mに位置",
+      "富士宮市および山梨県に自社畑を所有",
+      "ボルドー大学醸造学部長・ドゥニ・デュブルデュー教授を招聘"
+    ],
     "nearest_station": "",
     "source": "https://www.fujisanwinery.co.jp/",
     "lat": 35.4168,
@@ -42,9 +51,22 @@
     "wine_style": "red,white",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": ["シャルドネ", "信濃リースリング", "メルロー", "プティ・ヴェルド", "ヤマソーヴィニヨン"],
-    "brands": ["伊豆シャルドネ", "信濃リースリング"],
-    "features": ["9品種・約30,000本のぶどうの木を栽培", "伊豆唯一のワイナリー", "グランピング施設「EAST WINDS VILLAGE」も隣接"],
+    "grapes": [
+      "シャルドネ",
+      "信濃リースリング",
+      "メルロー",
+      "プティ・ヴェルド",
+      "ヤマソーヴィニヨン"
+    ],
+    "brands": [
+      "伊豆シャルドネ",
+      "信濃リースリング"
+    ],
+    "features": [
+      "9品種・約30,000本のぶどうの木を栽培",
+      "伊豆唯一のワイナリー",
+      "グランピング施設「EAST WINDS VILLAGE」も隣接"
+    ],
     "nearest_station": "",
     "source": "https://nakaizuwinery.com/",
     "lat": 34.9561,
@@ -57,8 +79,8 @@
     "company": "富士山北山ワイン",
     "brand": "富士山北山ワイン",
     "winery_type": "estate",
-    "founded": "",
-    "founded_era": "",
+    "founded": "2019",
+    "founded_era": "令和元年",
     "address": "静岡県富士宮市北山4129",
     "tel": "0544-58-0005",
     "url": "https://fujisan-kitayama-wine.com/",
@@ -68,9 +90,19 @@
     "wine_style": "red,white",
     "main_grape": "fujinoyume",
     "gi": "",
-    "grapes": ["富士の夢", "北天の雫"],
-    "brands": ["富士の夢", "北天の雫"],
-    "features": ["「富士宮市果実酒リキュール特区」第一号案件", "ヤマブドウ交配の日本固有品種「富士の夢」「北天の雫」を主力に栽培"],
+    "grapes": [
+      "富士の夢",
+      "北天の雫"
+    ],
+    "brands": [
+      "富士の夢",
+      "北天の雫"
+    ],
+    "features": [
+      "「富士宮市果実酒リキュール特区」第一号案件（令和元年3月認定）",
+      "ヤマブドウ交配の日本固有品種「富士の夢」「北天の雫」を主力に栽培",
+      "2013年に先祖伝来の畑へワイン用ぶどうを植樹、2019年8月にワイナリー設立"
+    ],
     "nearest_station": "",
     "source": "https://nihonwine.jp/winery_intro/kitayama-wine/",
     "lat": 35.2883,
@@ -98,8 +130,13 @@
       "マスカット・オブ・アレキサンドリア",
       "園内果実"
     ],
-    "brands": ["トロピカルワインカーヴ"],
-    "features": ["静岡県西部唯一の果実酒製造所", "160種4300本の果樹を栽培する農業公園内に醸造所"],
+    "brands": [
+      "トロピカルワインカーヴ"
+    ],
+    "features": [
+      "静岡県西部唯一の果実酒製造所",
+      "160種4300本の果樹を栽培する農業公園内に醸造所"
+    ],
     "nearest_station": "",
     "source": "https://hamamatsu-fp.co.jp/",
     "lat": 34.8291,
