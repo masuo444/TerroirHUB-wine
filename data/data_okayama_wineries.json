@@ -205,14 +205,17 @@
       "ピオーネ",
       "マスカット"
     ],
-    "brands": ["是里ワイン 赤", "是里ワイン 白"],
+    "brands": [
+      "是里ワイン 赤",
+      "是里ワイン 白"
+    ],
     "features": [
       "是里地区産ぶどうに特化",
       "フルーティーなラインアップ",
       "見学無料・有料試飲あり"
     ],
     "nearest_station": "",
-    "source": "https://www.winery.or.jp/winery-map/1046/",
+    "source": "https://koresato-wine.jp/",
     "lat": 34.821,
     "lng": 134.07,
     "name_en": "Korezato Winery"
@@ -246,7 +249,7 @@
       "フランス・ローヌ出身のオーナーが岡山に開設"
     ],
     "nearest_station": "",
-  "source": "https://www.nobori-sake.com/shouhin/wine/japan/oooka/item.html",
+    "source": "https://www.nobori-sake.com/shouhin/wine/japan/oooka/item.html",
     "lat": 34.723,
     "lng": 133.889,
     "name_en": "La Grande Colline Japon"
@@ -304,20 +307,20 @@
       "マスカット・ベーリーA",
       "ソーヴィニヨン・ブラン"
     ],
-  "brands": [
-    {
-      "name": "Blanc",
-      "type": "白ワイン",
-      "specs": "自社農園のソーヴィニヨン・ブランを使う辛口白ワイン。",
-      "grapes": "ソーヴィニヨン・ブラン"
-    },
-    {
-      "name": "Rouge",
-      "type": "赤ワイン",
-      "specs": "自社農園産マスカット・ベーリーAの辛口赤ワイン。",
-      "grapes": "マスカット・ベーリーA"
-    }
-  ],
+    "brands": [
+      {
+        "name": "Blanc",
+        "type": "白ワイン",
+        "specs": "自社農園のソーヴィニヨン・ブランを使う辛口白ワイン。",
+        "grapes": "ソーヴィニヨン・ブラン"
+      },
+      {
+        "name": "Rouge",
+        "type": "赤ワイン",
+        "specs": "自社農園産マスカット・ベーリーAの辛口赤ワイン。",
+        "grapes": "マスカット・ベーリーA"
+      }
+    ],
     "features": [
       "自然発酵・無濾過",
       "年間生産量約1,200本",
@@ -393,15 +396,55 @@
     "wine_style": "sparkling",
     "main_grape": "muscat_of_alexandria",
     "gi": "",
-    "grapes": ["マスカット・オブ・アレキサンドリア", "ピオーネ"],
-    "brands": ["グレープシップ スパークリング"],
+    "grapes": [
+      "マスカット・オブ・アレキサンドリア",
+      "ピオーネ"
+    ],
+    "brands": [
+      "グレープシップ スパークリング"
+    ],
     "features": [
       "発泡性ワイン"
     ],
     "nearest_station": "",
-  "source": "https://ec.yamajin.com/items/56196573",
+    "source": "https://ec.yamajin.com/items/56196573",
     "lat": 34.587,
     "lng": 133.726,
     "name_en": "Grapeship"
+  },
+  {
+    "id": "kibi-valley",
+    "name": "キビバレー",
+    "company": "kibi foods株式会社",
+    "brand": "kibi VALLEY",
+    "winery_type": "small",
+    "founded": "2020",
+    "founded_era": "令和2年",
+    "address": "岡山県加賀郡吉備中央町吉川3340-285",
+    "tel": "0867-34-1215",
+    "url": "https://kibifoods.umc-net.co.jp/",
+    "area": "吉備中央町",
+    "desc": "2020年12月完成。吉備中央町唯一のワイナリーで、町内産ぶどう100%で醸造。白ワインは手摘みしたピオーネをすぐに低温貯蔵・熟成させてから搾汁し、赤ワインはマスカット・ベーリーA、メルロー、カベルネ・ソーヴィニヨンを木樽で熟成させている。「でぇれーうめぇワイン特区」の認定を受けている。",
+    "visit": "ワイナリーでの試飲可能。営業時間8:00〜16:30、不定休。",
+    "wine_style": "white,red",
+    "main_grape": "other",
+    "gi": "",
+    "grapes": [
+      "ピオーネ",
+      "マスカット・ベーリーA",
+      "メルロー",
+      "カベルネ・ソーヴィニヨン"
+    ],
+    "brands": [],
+    "features": [
+      "吉備中央町唯一のワイナリーで、町内産ぶどう100%で醸造",
+      "「でぇれーうめぇワイン特区」の認定を受けている",
+      "白ワインは手摘みピオーネを低温貯蔵・熟成後に搾汁、赤ワインは木樽熟成"
+    ],
+    "nearest_station": "",
+    "source": "https://kibichuo-kanko.jp/spot/8891/",
+    "lat": 34.819,
+    "lng": 133.732,
+    "name_en": "kibi VALLEY"
   }
 ]

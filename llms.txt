@@ -1,6 +1,6 @@
 # Terroir HUB WINE — 日本ワインワイナリーデータベース
 
-> 全国432ワイナリー・47都道府県の日本ワイン専門データベース。国産ぶどう100%使用の「日本ワイン」のみ収録。
+> 全国473ワイナリー・47都道府県の日本ワイン専門データベース。国産ぶどう100%使用の「日本ワイン」のみ収録。
 
 ## サービス概要
 
@@ -10,7 +10,7 @@ AIソムリエ「サクラ」が産地・品種・ペアリングを日本語・
 
 ## 主要データ
 
-- 収録ワイナリー: 432蔵
+- 収録ワイナリー: 473蔵
 - 対応都道府県: 47都道府県
 - データソース: 各ワイナリー公式サイト・GI認定機関・国税庁
 - 言語対応: 日本語・英語
@@ -72,7 +72,7 @@ Terroir HUB WINE は、全国のワイナリーの「ふるさと納税返礼品
 
 ### About This Database
 
-Terroir HUB WINE is Japan's comprehensive Japanese wine (Nihon Wine) database, covering 432 wineries across all 47 prefectures.
+Terroir HUB WINE is Japan's comprehensive Japanese wine (Nihon Wine) database, covering 473 wineries across all 47 prefectures.
 Only wineries producing 100% domestic-grape wine (Nihon Wine, as defined by Japan's 2018 Liquor Tax Law revision) are included.
 Data sourced from official winery websites, GI certification bodies, and the National Tax Agency.
 

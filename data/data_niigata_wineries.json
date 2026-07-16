@@ -74,7 +74,10 @@
     "grapes": [
       "アルバリーニョ"
     ],
-    "brands": ["アルバリーニョ", "ケルナー"],
+    "brands": [
+      "アルバリーニョ",
+      "ケルナー"
+    ],
     "features": [
       "カーブドッチで修行した本多孝氏が2006年に独立",
       "「海と砂のテロワールが育む新潟の個性溢れるワイン」をコンセプト",
@@ -112,7 +115,10 @@
       "シラー",
       "ピノ・ノワール"
     ],
-    "brands": ["Domaine Chaud Cabernet Sauvignon", "Domaine Chaud Chardonnay"],
+    "brands": [
+      "Domaine Chaud Cabernet Sauvignon",
+      "Domaine Chaud Chardonnay"
+    ],
     "features": [
       "夫婦で営む小規模ワイナリー",
       "無除草剤・減農薬・減肥料の栽培",
@@ -147,7 +153,10 @@
       "バルベーラ",
       "ランブルスコ"
     ],
-    "brands": ["ZIO SETTO Zweigeltrebe", "ZIO SETTO Nebbiolo"],
+    "brands": [
+      "ZIO SETTO Zweigeltrebe",
+      "ZIO SETTO Nebbiolo"
+    ],
     "features": [
       "2011年創業",
       "イタリア品種に特化",
@@ -176,8 +185,15 @@
     "wine_style": "red,white",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": ["シャルドネ", "メルロー", "カベルネ・ソーヴィニヨン"],
-    "brands": ["Le CINQ Chardonnay", "Le CINQ Merlot"],
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "カベルネ・ソーヴィニヨン"
+    ],
+    "brands": [
+      "Le CINQ Chardonnay",
+      "Le CINQ Merlot"
+    ],
     "features": [
       "新潟ワインコースト5番目のワイナリー（「サンク＝5」が名前の由来）",
       "2015年10月1日設立"
@@ -211,7 +227,10 @@
       "シャルドネ",
       "ソーヴィニヨン・ブラン"
     ],
-    "brands": ["胎内高原メルロー", "胎内高原シャルドネ"],
+    "brands": [
+      "胎内高原メルロー",
+      "胎内高原シャルドネ"
+    ],
     "features": [
       "胎内市が運営する公営ワイナリー",
       "交流人口増加と地域活性化を目的として設立"
@@ -221,36 +240,6 @@
     "lat": 38.0712,
     "lng": 139.4326,
     "name_en": "Tainai Winery"
-  },
-  {
-    "id": "cantina-zio-paris",
-    "name": "カンティーナ・ジーオ・パリ",
-    "company": "（株）中川屋",
-    "brand": "カンティーナ・ジーオ・パリ",
-    "winery_type": "small",
-    "founded": "1997",
-    "founded_era": "平成9年",
-    "address": "新潟県南魚沼市浦佐5144-1",
-    "tel": "",
-    "url": "https://cantinazioparis.com/",
-    "area": "南魚沼市",
-    "desc": "南魚沼でレストランと連携しながら展開する小規模ワイナリー。料理に寄り添うマスカット・ベーリーA主体のワインを造る。",
-    "visit": "営業日・試飲対応は事前確認推奨。",
-    "wine_style": "red",
-    "main_grape": "mba",
-    "gi": "",
-    "grapes": [
-      "マスカット・ベーリーA"
-    ],
-    "brands": ["Cantina Zio Pari Rosso", "MBA"],
-    "features": [
-      "内陸・南魚沼に位置するワイナリー"
-    ],
-    "nearest_station": "",
-    "source": "https://cantinazioparis.com/",
-    "lat": 37.2,
-    "lng": 138.9,
-    "name_en": "Cantina Zio Paris"
   },
   {
     "id": "echigo-winery",
@@ -350,7 +339,7 @@
       "新潟ワインコーストの一角"
     ],
     "nearest_station": "",
-    "source": "https://www.winery.or.jp/winery-map/931/",
+    "source": "https://www.lescargot.jp/",
     "lat": 37.561,
     "lng": 138.786,
     "name_en": "Lescargot"

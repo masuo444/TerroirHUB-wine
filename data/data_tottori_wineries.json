@@ -16,7 +16,11 @@
     "wine_style": "red,white",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA"],
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "マスカット・ベーリーA"
+    ],
     "brands": [
       {
         "name": "兎ッ兎ワイン",
@@ -25,11 +29,14 @@
         "grapes": ""
       }
     ],
-    "features": ["超低温発酵にこだわるフルーティーなワイン", "ワイナリー見学可"],
+    "features": [
+      "超低温発酵にこだわるフルーティーなワイン",
+      "ワイナリー見学可"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/17310010274/",
-    "lat": 35.4920,
-    "lng": 134.2770,
+    "lat": 35.492,
+    "lng": 134.277,
     "name_en": "Totto Winery"
   },
   {
@@ -49,13 +56,25 @@
     "wine_style": "red,white",
     "main_grape": "delaware",
     "gi": "",
-    "grapes": ["デラウェア", "甲州", "マスカット・ベーリーA", "シャルドネ"],
-    "brands": ["北条ワイン", "砂丘"],
-    "features": ["1944年創業の老舗", "北条砂丘の砂地テロワール", "直売所で試飲可能"],
+    "grapes": [
+      "デラウェア",
+      "甲州",
+      "マスカット・ベーリーA",
+      "シャルドネ"
+    ],
+    "brands": [
+      "北条ワイン",
+      "砂丘"
+    ],
+    "features": [
+      "1944年創業の老舗",
+      "北条砂丘の砂地テロワール",
+      "直売所で試飲可能"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/17310010275/",
-    "lat": 35.4810,
-    "lng": 133.7360,
+    "lat": 35.481,
+    "lng": 133.736,
     "name_en": "Hojo Wine Jozo"
   },
   {
@@ -75,7 +94,12 @@
     "wine_style": "red,white",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA", "山ぶどう"],
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "マスカット・ベーリーA",
+      "山ぶどう"
+    ],
     "brands": [
       {
         "name": "DAISEN WINERY Chardonnay",
@@ -90,11 +114,62 @@
         "grapes": "メルロー"
       }
     ],
-    "features": ["自社圃場6.5ha（シャルドネ・メルロー等欧州品種）", "2025年目標10haに拡大"],
+    "features": [
+      "自社圃場6.5ha（シャルドネ・メルロー等欧州品種）",
+      "2025年目標10haに拡大"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/17310010276/",
-    "lat": 35.3670,
-    "lng": 133.3750,
+    "lat": 35.367,
+    "lng": 133.375,
     "name_en": "Daisen Winery"
+  },
+  {
+    "id": "kurayoshi-winery",
+    "name": "倉吉ワイナリー",
+    "company": "株式会社いまむらワイン＆カンパニー",
+    "brand": "伯州",
+    "winery_type": "small",
+    "founded": "2018",
+    "founded_era": "平成30年",
+    "address": "鳥取県倉吉市西仲町2627",
+    "tel": "0858-27-1381",
+    "url": "https://www.kurayoshi-winery.com/",
+    "area": "倉吉市（打吹地区）",
+    "desc": "2017年12月に倉吉市・北栄町・湯梨浜町の1市2町による広域ワイン特区の認定を受け、2018年7月に株式会社いまむらワイン＆カンパニーを設立し倉吉市西仲町で醸造を開始。国の重要伝統的建造物群保存地区に選定された町屋を活用し、ぶどう栽培に適した鳥取県中央砂丘地の圃場（東伯郡北栄町江北）で栽培から醸造まで自社で行う。",
+    "visit": "カフェ・ショップ・試飲コーナーを併設。オンラインショップでも販売。",
+    "wine_style": "white,red,rose",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "カベルネ・ソーヴィニヨン",
+      "メルロー",
+      "ピオーネ"
+    ],
+    "brands": [
+      {
+        "name": "伯州 シャルドネ",
+        "type": "白ワイン",
+        "specs": "2021、2020等",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "HAWAI ピオーネ",
+        "type": "ロゼ",
+        "specs": "",
+        "grapes": "ピオーネ"
+      }
+    ],
+    "features": [
+      "国の重要伝統的建造物群保存地区の町屋を醸造所として活用",
+      "栽培から醸造まで自社で一貫して行う",
+      "鳥取県中央砂丘地の圃場でぶどうを栽培"
+    ],
+    "nearest_station": "",
+    "source": "https://www.kurayoshi-winery.com/",
+    "lat": 35.431,
+    "lng": 133.82,
+    "name_en": "Kurayoshi Winery"
   }
 ]

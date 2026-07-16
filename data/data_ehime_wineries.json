@@ -9,20 +9,28 @@
     "founded_era": "平成12年",
     "address": "愛媛県喜多郡内子町151番地",
     "tel": "0893-44-5650",
-    "url": "http://www.uchiko-winery151.co.jp/",
+    "url": "https://fujibudouen.sakura.ne.jp/uchikowinery/index.html",
     "area": "喜多郡内子町",
     "desc": "内子町の果樹産地で、巨峰やピオーネなど愛媛の生食用品種を活かしたやさしい味わいのワインを造るワイナリー。",
     "visit": "見学可・売店あり。営業日は事前確認推奨。",
     "wine_style": "red,white,rose",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["マスカット・ベーリーA", "ピオーネ", "巨峰"],
-    "brands": ["内子夢わいん"],
-    "features": ["ふるさと納税返礼品に展開"],
+    "grapes": [
+      "マスカット・ベーリーA",
+      "ピオーネ",
+      "巨峰"
+    ],
+    "brands": [
+      "内子夢わいん"
+    ],
+    "features": [
+      "ふるさと納税返礼品に展開"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/18380010290/",
-    "lat": 33.5430,
-    "lng": 132.6600,
+    "lat": 33.543,
+    "lng": 132.66,
     "name_en": "Uchiko Winery"
   },
   {
@@ -42,7 +50,11 @@
     "wine_style": "red,white",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA"],
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "マスカット・ベーリーA"
+    ],
     "brands": [
       {
         "name": "大三島みんなのワイン",
@@ -51,11 +63,46 @@
         "grapes": ""
       }
     ],
-    "features": ["しまなみ海道・大三島に位置"],
+    "features": [
+      "しまなみ海道・大三島に位置"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/18380010426/",
-    "lat": 34.2380,
-    "lng": 133.0000,
+    "lat": 34.238,
+    "lng": 133.0,
     "name_en": "Omishima Minna no Winery"
+  },
+  {
+    "id": "blue-wax-winery",
+    "name": "BLUE WAX WINERY",
+    "company": "株式会社BLUE WAX WINERY",
+    "brand": "BLUE WAX WINERY",
+    "winery_type": "small",
+    "founded": "2025",
+    "founded_era": "令和7年",
+    "address": "愛媛県松山市大街道1-4-19",
+    "tel": "",
+    "url": "https://bluewaxwinery.jp/",
+    "area": "松山市（大街道）",
+    "desc": "2025年12月2日、松山市の中心商店街・大街道に中四国初の都市型ワイナリーとして開業。延床面積約430平方メートルの2階建て施設で、1階に醸造設備とショップ・バーカフェ、2階にレストランを併設する。長野県高山村や愛媛県久万高原町で収穫したぶどうを使ったオリジナルワインを製造するほか、日本各地から選りすぐったワインも取り扱う。総務省「ローカル10,000プロジェクト」の採択を受け、国と松山市の補助金により開業した。",
+    "visit": "1階ショップ・バーカフェ、2階レストランで購入・飲食可",
+    "wine_style": "red",
+    "main_grape": "cabernet_sauvignon",
+    "gi": "",
+    "grapes": [
+      "カベルネ・ソーヴィニヨン",
+      "メルロー"
+    ],
+    "brands": [],
+    "features": [
+      "中四国初の都市型ワイナリーとして2025年12月2日開業",
+      "1階に醸造設備・ショップ・バーカフェ、2階にレストランを併設",
+      "総務省「ローカル10,000プロジェクト」採択、国・松山市の補助金を得て開業"
+    ],
+    "nearest_station": "伊予鉄道城南線 大街道停留場",
+    "source": "https://www.city.matsuyama.ehime.jp/hodo/202511/winery.html",
+    "lat": 33.847,
+    "lng": 132.766,
+    "name_en": "Blue Wax Winery"
   }
 ]

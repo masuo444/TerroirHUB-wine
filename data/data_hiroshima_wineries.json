@@ -16,13 +16,25 @@
     "wine_style": "red,white,sparkling",
     "main_grape": "pione",
     "gi": "",
-    "grapes": ["ピオーネ"],
-    "brands": ["TOMOE", "VILLAQUA", "三次ピオーネ", "霧里"],
-    "features": ["年間生産量約260,000本", "三次盆地の霧の影響で貴腐ブドウの収穫も期待できる環境", "国内外のコンクールで多数受賞", "カフェヴァイン・バーベキューガーデン併設"],
+    "grapes": [
+      "ピオーネ"
+    ],
+    "brands": [
+      "TOMOE",
+      "VILLAQUA",
+      "三次ピオーネ",
+      "霧里"
+    ],
+    "features": [
+      "年間生産量約260,000本",
+      "三次盆地の霧の影響で貴腐ブドウの収穫も期待できる環境",
+      "国内外のコンクールで多数受賞",
+      "カフェヴァイン・バーベキューガーデン併設"
+    ],
     "nearest_station": "",
     "source": "https://www.miyoshi-winery.co.jp/",
-    "lat": 34.7970,
-    "lng": 132.8530,
+    "lat": 34.797,
+    "lng": 132.853,
     "name_en": "Hiroshima Miyoshi Winery"
   },
   {
@@ -42,7 +54,9 @@
     "wine_style": "red,white",
     "main_grape": "honey_venus",
     "gi": "",
-    "grapes": ["ハニービーナス"],
+    "grapes": [
+      "ハニービーナス"
+    ],
     "brands": [
       "せらワイン"
     ],
@@ -53,8 +67,8 @@
     ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/17340010286/",
-    "lat": 34.6250,
-    "lng": 132.9840,
+    "lat": 34.625,
+    "lng": 132.984,
     "name_en": "Sera Winery"
   },
   {
@@ -74,7 +88,12 @@
     "wine_style": "red,white,sparkling",
     "main_grape": "pinot_noir",
     "gi": "",
-    "grapes": ["ピノ・ノワール", "ソーヴィニヨン・ブラン", "セミヨン", "シャルドネ"],
+    "grapes": [
+      "ピノ・ノワール",
+      "ソーヴィニヨン・ブラン",
+      "セミヨン",
+      "シャルドネ"
+    ],
     "brands": [
       {
         "name": "Pinot Noir",
@@ -102,8 +121,8 @@
     ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/17340010285/",
-    "lat": 34.8020,
-    "lng": 132.8400,
+    "lat": 34.802,
+    "lng": 132.84,
     "name_en": "Vinoble Vineyard"
   },
   {
@@ -123,13 +142,25 @@
     "wine_style": "red,white,sparkling",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["マスカット・ベーリーA", "シャルドネ"],
-    "brands": ["vin de fukuyama", "福泡"],
-    "features": ["自社畑約0.7ha", "年間生産量約13,000本", "スパークリングワインを中心", "フランス語対応可能", "JR福山駅から徒歩10分"],
+    "grapes": [
+      "マスカット・ベーリーA",
+      "シャルドネ"
+    ],
+    "brands": [
+      "vin de fukuyama",
+      "福泡"
+    ],
+    "features": [
+      "自社畑約0.7ha",
+      "年間生産量約13,000本",
+      "スパークリングワインを中心",
+      "フランス語対応可能",
+      "JR福山駅から徒歩10分"
+    ],
     "nearest_station": "JR福山駅",
     "source": "https://nippon.wine/winery/17340010287/",
-    "lat": 34.4870,
-    "lng": 133.3650,
+    "lat": 34.487,
+    "lng": 133.365,
     "name_en": "Fukuyama Wine Kobo"
   },
   {
@@ -149,7 +180,13 @@
     "wine_style": "red,white,sparkling",
     "main_grape": "campbell_early",
     "gi": "",
-    "grapes": ["キャンベル・アーリー", "カベルネ・ソーヴィニヨン", "ソーヴィニヨン・ブラン", "セミヨン", "シャルドネ"],
+    "grapes": [
+      "キャンベル・アーリー",
+      "カベルネ・ソーヴィニヨン",
+      "ソーヴィニヨン・ブラン",
+      "セミヨン",
+      "シャルドネ"
+    ],
     "brands": [
       {
         "name": "mio",
@@ -158,11 +195,15 @@
         "grapes": ""
       }
     ],
-    "features": ["2019年設立", "瀬戸内海の眺望・テロワールを表現", "ワインに加えシードルも展開"],
+    "features": [
+      "2019年設立",
+      "瀬戸内海の眺望・テロワールを表現",
+      "ワインに加えシードルも展開"
+    ],
     "nearest_station": "",
-    "source": "https://setouchijozojo.jp/locations/",
-    "lat": 34.3500,
-    "lng": 132.9200,
+    "source": "https://setouchijozojo.jp/company/",
+    "lat": 34.35,
+    "lng": 132.92,
     "name_en": "Setouchi Jozo"
   },
   {
@@ -182,7 +223,13 @@
     "wine_style": "red,white",
     "main_grape": "fujinoyume",
     "gi": "",
-    "grapes": ["富士の夢", "ピノ・グリ", "マルスラン", "シャルドネ", "ソーヴィニヨン・ブラン"],
+    "grapes": [
+      "富士の夢",
+      "ピノ・グリ",
+      "マルスラン",
+      "シャルドネ",
+      "ソーヴィニヨン・ブラン"
+    ],
     "brands": [
       {
         "name": "山野峡ワイン 富士の夢",
@@ -197,11 +244,62 @@
         "grapes": "ピノ・グリ"
       }
     ],
-    "features": ["泊まれるワイナリー", "福山市山野町の山あいで少量生産", "通販対応あり"],
+    "features": [
+      "泊まれるワイナリー",
+      "福山市山野町の山あいで少量生産",
+      "通販対応あり"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/17340010424/",
-    "lat": 34.6540,
-    "lng": 133.0630,
+    "lat": 34.654,
+    "lng": 133.063,
     "name_en": "Yamanokyo Ota Winery"
+  },
+  {
+    "id": "hokkoh-winery",
+    "name": "ホッコーわいなりー",
+    "company": "株式会社ホッコー",
+    "brand": "山紫野",
+    "winery_type": "small",
+    "founded": "2018",
+    "founded_era": "平成30年",
+    "address": "広島県山県郡北広島町宮迫389-4",
+    "tel": "0826-82-3672",
+    "url": "https://www.hokkoh-farm.jp/",
+    "area": "北広島町大朝",
+    "desc": "2007年に収穫醸造を開始した「ヤマソーヴィニョン」の収穫量が3tを超えたことから、2018年に新しい醸造所を北広島町からしろ館隣に建設。中国山地麓の冷涼で寒暖差の大きな土地で栽培したヤマソーヴィニョン、カベルネ・ソーヴィニヨンを使用し、重力式レイアウトの醸造所でポンプを使わずに醸造している。",
+    "visit": "オンラインショップ（thebase.in）、フレスタの日本ワインコーナー等で販売。ルッソダイニング等での試飲会実施実績あり。",
+    "wine_style": "red,white,rose",
+    "main_grape": "yamasauvignon",
+    "gi": "",
+    "grapes": [
+      "ヤマソーヴィニョン",
+      "カベルネ・ソーヴィニヨン",
+      "ピオーネ"
+    ],
+    "brands": [
+      {
+        "name": "山紫野",
+        "type": "赤ワイン",
+        "specs": "カベルネ・ソーヴィニヨン Reserve 2020",
+        "grapes": "ヤマソーヴィニョン、カベルネ・ソーヴィニヨン"
+      },
+      {
+        "name": "小枝ピオーネ",
+        "type": "ロゼ",
+        "specs": "",
+        "grapes": "ピオーネ"
+      }
+    ],
+    "features": [
+      "中国山地麓の冷涼で寒暖差の大きな土地でヤマソーヴィニョンを栽培",
+      "重力式レイアウトの醸造所でポンプを使用せず醸造",
+      "北広島町産りんごを使ったシードルも製造・販売"
+    ],
+    "nearest_station": "",
+    "source": "https://www.hokkoh-farm.jp/",
+    "lat": 34.75,
+    "lng": 132.361,
+    "name_en": "Hokkoh Winery"
   }
 ]

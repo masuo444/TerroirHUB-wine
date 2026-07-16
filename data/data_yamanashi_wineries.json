@@ -2844,7 +2844,7 @@
       "ベルフォーレ（甲斐市）・勝沼ワイナリー（甲州市）の2拠点体制",
       "日本ワインコンクール受賞歴あり"
     ],
-    "source": "https://www.belle-foret.co.jp",
+    "source": "http://www.belle-foret.co.jp/",
     "name_en": "Chateraise Belle Foret Winery",
     "lat": 0.0,
     "lng": 0.0
@@ -2859,7 +2859,7 @@
     "tel": "055-277-2805",
     "address": "〒400-1113 山梨県甲斐市亀沢3228",
     "area": "甲斐市",
-    "url": "http://www.mountwine.co.jp",
+    "url": "https://mountwine.jp/",
     "desc": "標高600mの昇仙峡南麓に位置し、自社農場産ぶどう100%・除草剤不使用・減農薬の自然農法で約30種の銘柄を製造。機械に頼らない手作業の栽培・醸造にこだわる。ぶどうの樹オーナー・樽ワインオーナー制度あり。",
     "visit": "常時工場見学・試飲受付。定期的なワイン勉強会も開催。",
     "nearest_station": "",
@@ -3063,7 +3063,7 @@
     "founded_era": "昭和14年",
     "address": "〒409-1313 山梨県甲州市勝沼町下岩崎880",
     "tel": "0553-44-0129",
-    "url": "https://diamond-winery.com/",
+    "url": "http://www.jade.dti.ne.jp/~chanter/",
     "area": "甲州市勝沼町",
     "desc": "1939年創業、1963年法人化。勝沼のぶどうにこだわり、地酒的な重厚なワインを製造。醸造家・雨宮吉男がブルゴーニュで修行した経験を活かした樽熟成が特徴。甲州・マスカットベリーAへの深いこだわりを持つ。",
     "visit": "営業10:00〜12:00 / 14:00〜16:00（土日祝は要予約）。試飲200円以上の募金。",
@@ -3100,7 +3100,7 @@
       "年間生産量約45,000本、国産ぶどう100%"
     ],
     "nearest_station": "JR中央本線 勝沼ぶどう郷駅（車約10分）",
-    "source": "https://diamond-winery.com/",
+    "source": "http://www.jade.dti.ne.jp/~chanter/",
     "name_en": "Diamond Winery"
   },
   {
@@ -3497,7 +3497,7 @@
     "founded_era": "昭和36年",
     "address": "山梨県山梨市正徳寺1220-1",
     "tel": "0553-23-2462",
-    "url": "https://yamanashi-hakko.jimdofree.com",
+    "url": "",
     "area": "山梨市",
     "desc": "昭和36年（1961年）に地元農家450軒が出資して設立した協同組合型ワイナリー。土壁と細い木組みの建物は夏涼しく冬寒い理想的な醸造環境。地産地消のワイン造りを続けている。",
     "visit": "9〜10月の発酵時期は醸造見学可・試飲購入可",
@@ -4636,7 +4636,7 @@
     "founded_era": "令和6年",
     "address": "山梨県南アルプス市",
     "tel": "",
-    "url": "https://nachumaru.com/store/blog/2025/07/09/la-pensee/",
+    "url": "https://nachumaru.com/store/blog/2025/07/09/%E5%8D%97%E3%82%A2%E3%83%AB%E3%83%97%E3%82%B9%E3%81%AB%E6%96%B0%E3%81%9F%E3%81%AA%E9%A2%A8%EF%BC%81%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E3%83%AF%E3%82%A4%E3%83%B3%E3%80%8Cla-pensee/",
     "area": "南アルプス市",
     "desc": "2024年9月に醸造免許を取得して設立した新鋭ナチュラルワイナリー。代表・髙橋厚芝氏はドメーヌ・ヒデで地域おこし協力隊として3年間研修。有機栽培農園から甲州・マスカットベリーA・ゲヴュルツトラミネールを栽培。野生酵母発酵・亜硫酸無添加が基本。",
     "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
@@ -4673,7 +4673,7 @@
       "数字をラベル名にした個性的なブランディング"
     ],
     "nearest_station": "JR身延線 甲府駅（車約30分）",
-    "source": "https://nachumaru.com/store/blog/2025/07/09/la-pensee/",
+    "source": "https://nachumaru.com/store/blog/2025/07/09/%E5%8D%97%E3%82%A2%E3%83%AB%E3%83%97%E3%82%B9%E3%81%AB%E6%96%B0%E3%81%9F%E3%81%AA%E9%A2%A8%EF%BC%81%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E3%83%AF%E3%82%A4%E3%83%B3%E3%80%8Cla-pensee/",
     "name_en": "LA PENSÉE"
   },
   {
@@ -4769,5 +4769,262 @@
     "nearest_station": "JR中央本線 山梨市駅（車約10分）",
     "source": "https://wine-labo.com/",
     "name_en": "Wine-Labo (Shinwa Foods Chemical)"
+  },
+  {
+    "id": "domaine-mie-ikeno",
+    "name": "ドメーヌ・ミエ・イケノ",
+    "company": "",
+    "brand": "ドメーヌ・ミエ・イケノ",
+    "winery_type": "estate",
+    "founded": "2011",
+    "founded_era": "平成23年",
+    "address": "山梨県北杜市小淵沢町下笹尾114-47",
+    "tel": "0551-45-9300",
+    "url": "https://www.mieikeno.com/",
+    "area": "北杜市小淵沢町",
+    "desc": "2007年春に八ヶ岳南麓の丘陵地でブドウ栽培を開始し、2011年秋に醸造所を建設してワイナリーが誕生した。標高750mの畑からは南アルプスや富士山を望み、雨上がりに雲が畑を包む景観から「天空のブドウ畑」と称される。シャルドネ・ピノ・ノワール・メルローを栽培し、ポンプを使わないグラビティ・フロー・システムでブドウへの衝撃を最小限に抑えて醸造している。",
+    "visit": "",
+    "wine_style": "white,red",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "ピノ・ノワール",
+      "メルロー"
+    ],
+    "brands": [
+      {
+        "name": "シャルドネ",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "ピノ・ノワール",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "メルロー",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "メルロー"
+      }
+    ],
+    "features": [
+      "標高750mの八ヶ岳南麓、南アルプスと富士山を望む畑でシャルドネ・ピノ・ノワール・メルローを栽培",
+      "ポンプを使わないグラビティ・フロー・システムを採用し、ブドウへの衝撃を最小限に抑えて醸造",
+      "建築家・今村幹氏設計の醸造施設を持つ"
+    ],
+    "nearest_station": "",
+    "source": "https://www.mieikeno.com/domaine-mie-ikeno",
+    "lat": 35.883,
+    "lng": 138.417,
+    "name_en": "Domaine Mie Ikeno"
+  },
+  {
+    "id": "vineyard-kikushima",
+    "name": "ヴィンヤード・キクシマ",
+    "company": "株式会社ヴィンヤード・キクシマ",
+    "brand": "ヴィンヤード・キクシマ",
+    "winery_type": "small",
+    "founded": "2020",
+    "founded_era": "令和2年",
+    "address": "山梨県甲州市勝沼町勝沼2543-8",
+    "tel": "",
+    "url": "https://vykikushima.greater.jp/",
+    "area": "甲州市勝沼町",
+    "desc": "2016年に甲州とメルローの委託醸造で少量生産を開始し、2020年6月に勝沼にブティックワイナリーを竣工、同年8月に製造免許を取得して自社醸造を開始した。化学農薬や殺虫剤を使用せず、野生酵母で醸造する「やさしいワインづくり」を理念とし、高齢化する農家から畑を借り受けてぶどう畑の維持とワイン文化の普及に取り組んでいる。",
+    "visit": "販売は4月・11月の第1土曜日と予約時のみ",
+    "wine_style": "red,white,rose",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "甲州",
+      "カベルネ・ソーヴィニヨン",
+      "メルロー",
+      "デラウェア"
+    ],
+    "brands": [
+      {
+        "name": "Nomujan ベーリーA Rouge",
+        "type": "赤ワイン",
+        "specs": "2022",
+        "grapes": "マスカット・ベーリーA主体、カベルネ・ソーヴィニヨン少量ブレンド"
+      },
+      {
+        "name": "甲州カルナヴァル",
+        "type": "白ワイン",
+        "specs": "2022",
+        "grapes": "甲州"
+      },
+      {
+        "name": "もるーじゅMV",
+        "type": "赤ワイン",
+        "specs": "2019-20",
+        "grapes": "カベルネ・ソーヴィニヨン主体、メルロー"
+      }
+    ],
+    "features": [
+      "化学農薬・殺虫剤不使用、野生酵母による「やさしいワインづくり」",
+      "高齢化する農家から畑を借り受け、耕作放棄地の維持とワイン文化普及に貢献",
+      "自社畑約90アールで甲州・メルロー・ピノ・ノワール・カベルネソーヴィニヨン・マスカットベーリーA・デラウエアを栽培"
+    ],
+    "nearest_station": "",
+    "source": "https://vykikushima.greater.jp/about-us/",
+    "lat": 35.662,
+    "lng": 138.734,
+    "name_en": "Vineyards Kikushima"
+  },
+  {
+    "id": "shigei-jozo",
+    "name": "紫藝醸造",
+    "company": "",
+    "brand": "翠翠",
+    "winery_type": "natural",
+    "founded": "2022",
+    "founded_era": "令和4年",
+    "address": "山梨県北杜市明野町浅尾33",
+    "tel": "",
+    "url": "",
+    "area": "北杜市明野町",
+    "desc": "2022年創業。ドメーヌ・オヤマダでの研修経験を持つ原田純氏が営む自然派ワイナリー。自社畑計2.4ha（明野・穂坂・一宮）で欧州系ワイン用品種を中心に栽培し、化学農薬・化学肥料不使用、自然酵母発酵、亜硫酸無添加でワインを醸造している。",
+    "visit": "一般見学不可",
+    "wine_style": "white,red,rose",
+    "main_grape": "koshu",
+    "gi": "",
+    "grapes": [
+      "甲州",
+      "デラウェア",
+      "シャルドネ",
+      "マスカット・ベーリーA",
+      "プティ・マンサン",
+      "ルーサンヌ",
+      "ソーヴィニヨン・ブラン",
+      "カベルネ・フラン",
+      "ガメイ"
+    ],
+    "brands": [
+      {
+        "name": "翠翠 スズ・ブラン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "甲州主体にデラウェア、シャルドネ少量ブレンド"
+      },
+      {
+        "name": "翠翠 スズ・ルージュ",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "マスカット・ベーリーA主体に複数品種をブレンド"
+      },
+      {
+        "name": "POCAN ポカン・ブラン",
+        "type": "白ワイン",
+        "specs": "2022",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "化学農薬・化学肥料不使用、自然酵母発酵・亜硫酸無添加のナチュラルワイン",
+      "自社畑計2.4ha（明野・穂坂・一宮）で欧州系ワイン用品種を中心に栽培",
+      "全国約80軒の酒販店で販売、委託醸造も受託"
+    ],
+    "nearest_station": "",
+    "source": "https://imadeya.co.jp/blogs/brewery/shigei-jyozo",
+    "lat": 35.782,
+    "lng": 138.437,
+    "name_en": "Shigei Jozo"
+  },
+  {
+    "id": "domaine-des-tengeijis",
+    "name": "ドメーヌ・デ・テンゲイジ",
+    "company": "農業生産法人株式会社CouCou-Lapin Domaine des Tengeijis",
+    "brand": "Domaine des Tengeijis",
+    "winery_type": "small",
+    "founded": "2017",
+    "founded_era": "平成29年",
+    "address": "山梨県北杜市明野町小笠原字大内窪3394番271",
+    "tel": "",
+    "url": "https://tengeijis.com/",
+    "area": "北杜市明野町",
+    "desc": "農業生産法人株式会社CouCou-Lapinが運営し、2017年にワイナリー「ドメーヌ・デ・テンゲイジ」を設立。伝統的な有機農法と最新の科学的知見を組み合わせた「サステイナブル農法」に取り組み、マスカット・ベーリーAなどを栽培してワインを醸造している。",
+    "visit": "セラードアあり、ワークショップ開催",
+    "wine_style": "red",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA"
+    ],
+    "brands": [],
+    "features": [
+      "伝統的な有機農法と最新の科学的知見を組み合わせた「サステイナブル農法」を実践",
+      "セラードアでの直売やワークショップを開催",
+      "代表・天花寺弓子氏のもと、マスカット・ベーリーAなどを栽培"
+    ],
+    "nearest_station": "",
+    "source": "https://tengeijis.com/company/",
+    "lat": 35.778,
+    "lng": 138.437,
+    "name_en": "Domaine des Tengeijis"
+  },
+  {
+    "id": "domaine-passerelle",
+    "name": "ドメーヌ パスレル",
+    "company": "八ヶ岳オーガニックヴィンヤード株式会社",
+    "brand": "Passerelle",
+    "winery_type": "natural",
+    "founded": "2022",
+    "founded_era": "令和4年",
+    "address": "山梨県北杜市大泉町谷戸558番地1",
+    "tel": "",
+    "url": "https://yov.co.jp/",
+    "area": "北杜市大泉町",
+    "desc": "八ヶ岳オーガニックヴィンヤード株式会社が運営し、2020年に法人化、2022年にワイナリーが稼働を開始した。JAS有機認証と自然栽培を実践し、環境再生型農業に取り組む「クリーン・ナチュラル」を基本方針とする。ワインメーカー・栽培責任者は高橋雄一郎氏。",
+    "visit": "見学不可（体制整備のため受付停止中）。取引酒販店での販売のみでネット通販・直販なし",
+    "wine_style": "white,rose,red,sparkling",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "カベルネ・フラン",
+      "ピノ・グリ",
+      "シュナン・ブラン",
+      "プティ・マンサン",
+      "アルバリーニョ",
+      "ゲヴュルツトラミネール"
+    ],
+    "brands": [
+      {
+        "name": "Passerelle Chardonnay",
+        "type": "白ワイン",
+        "specs": "2025（完売）",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "Passerelle Blanc",
+        "type": "白ワイン",
+        "specs": "2025",
+        "grapes": ""
+      },
+      {
+        "name": "Passerelle Rouge",
+        "type": "赤ワイン",
+        "specs": "2024",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "JAS有機認証・自然栽培による環境再生型農業を実践",
+      "「フォーパーミルイニシアチブ」に参加",
+      "シャルドネ、メルロー、カベルネ・フランなど欧州系品種を中心に栽培"
+    ],
+    "nearest_station": "",
+    "source": "https://yov.co.jp/",
+    "lat": 35.845,
+    "lng": 138.383,
+    "name_en": "Domaine Passerelle"
   }
 ]

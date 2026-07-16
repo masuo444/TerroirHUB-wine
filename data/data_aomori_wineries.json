@@ -16,13 +16,27 @@
     "wine_style": "mixed",
     "main_grape": "pinotnoir",
     "gi": "",
-    "grapes": ["ピノ・ノワール", "メルロ", "ライヒェンシュタイナー", "シュロンブルガー"],
-    "brands": [
-      {"name": "下北ワイン（Shimokita Wine）", "type": "赤・白・ロゼ・スパークリング", "specs": "", "grapes": ""}
+    "grapes": [
+      "ピノ・ノワール",
+      "メルロ",
+      "ライヒェンシュタイナー",
+      "シュロンブルガー"
     ],
-    "features": ["本州最北のワイナリー", "下北半島産ブドウ", "ブルゴーニュと類似した気候"],
+    "brands": [
+      {
+        "name": "下北ワイン（Shimokita Wine）",
+        "type": "赤・白・ロゼ・スパークリング",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "本州最北のワイナリー",
+      "下北半島産ブドウ",
+      "ブルゴーニュと類似した気候"
+    ],
     "nearest_station": "",
-    "source": "https://www.winery.or.jp/winery-map/878/",
+    "source": "https://www.sunmamoru.com/",
     "lat": 41.0678,
     "lng": 141.1478,
     "name_en": "Sunmamoru Winery (Shimokita Wine)"
@@ -44,11 +58,24 @@
     "wine_style": "mixed",
     "main_grape": "nebbiolo",
     "gi": "",
-    "grapes": ["ネッビオーロ", "マルヴァジア", "シャルドネ"],
-    "brands": [
-      {"name": "Fattoria da Sasino", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "ネッビオーロ",
+      "マルヴァジア",
+      "シャルドネ"
     ],
-    "features": ["岩木山を臨む畑", "イタリアン品種特化", "イタリアンレストラン併設"],
+    "brands": [
+      {
+        "name": "Fattoria da Sasino",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "岩木山を臨む畑",
+      "イタリアン品種特化",
+      "イタリアンレストラン併設"
+    ],
     "nearest_station": "",
     "source": "https://www.winery.or.jp/winery-map/12685/",
     "lat": 40.6067,
@@ -72,9 +99,16 @@
     "wine_style": "mixed",
     "main_grape": "yamabudou",
     "gi": "",
-    "grapes": ["山ぶどう", "キャンベル・アーリー"],
-    "brands": ["はちのへワイン"],
-    "features": ["八戸市南郷のワイナリー"],
+    "grapes": [
+      "山ぶどう",
+      "キャンベル・アーリー"
+    ],
+    "brands": [
+      "はちのへワイン"
+    ],
+    "features": [
+      "八戸市南郷のワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/12020010345/",
     "lat": 40.5017,
@@ -102,13 +136,61 @@
       "りんご"
     ],
     "brands": [
-      {"name": "ニッカシードル", "type": "スパークリングワイン（シードル）", "specs": "", "grapes": "国産りんご100%"}
+      {
+        "name": "ニッカシードル",
+        "type": "スパークリングワイン（シードル）",
+        "specs": "",
+        "grapes": "国産りんご100%"
+      }
     ],
-    "features": ["国産りんご100%シードル", "ニッカウヰスキー系列", "弘前市"],
+    "features": [
+      "国産りんご100%シードル",
+      "ニッカウヰスキー系列",
+      "弘前市"
+    ],
     "nearest_station": "",
     "source": "https://www.winery.or.jp/winery-map/487/",
     "lat": 40.6067,
     "lng": 140.4642,
     "name_en": "Nikka Cidre Hirosaki Factory"
+  },
+  {
+    "id": "sawauchi-jozo",
+    "name": "澤内醸造",
+    "company": "株式会社サンワーズ",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "2017",
+    "founded_era": "平成29年",
+    "address": "青森県八戸市柏崎2-10-4",
+    "tel": "0178-22-7638",
+    "url": "http://www.sawauchi.info/",
+    "area": "八戸市（醸造所は柏崎、原料ぶどうは南郷地区産）",
+    "desc": "2017年11月21日より醸造開始。イタリアンレストランのシェフである澤内昭宏氏が営むワイナリーで、八戸市南郷地区産ぶどうを使用した「八戸ワイン」、南部町産や山形県高畠町産ぶどうを使用した「日本ワイン」、県南産りんごを使用したシードルを醸造している。",
+    "visit": "併設のワインショップ「ブロンズグリル」でテイスティング・販売を実施（営業時間11:00〜17:00、定休日月曜）",
+    "wine_style": "white",
+    "main_grape": "chardonnay",
+    "gi": "",
+    "grapes": [
+      "シャルドネ"
+    ],
+    "brands": [
+      {
+        "name": "Ga Chardonnay 2021",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ（八戸市南郷産）"
+      }
+    ],
+    "features": [
+      "イタリアンレストランのシェフが営む自社醸造ワイナリー",
+      "八戸市南郷地区産ぶどうを使用した「八戸ワイン」を製造",
+      "県南産りんごを使用したシードルも製造"
+    ],
+    "nearest_station": "",
+    "source": "https://nihonwine.jp/winery_intro/sawauchi_jozo/",
+    "lat": 40.503,
+    "lng": 141.495,
+    "name_en": "Sawauchi Jozo"
   }
 ]

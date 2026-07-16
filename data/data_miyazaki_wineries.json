@@ -16,17 +16,24 @@
     "wine_style": "red,white",
     "main_grape": "campbell_early",
     "gi": "",
-    "grapes": ["キャンベル・アーリー", "シャルドネ"],
+    "grapes": [
+      "キャンベル・アーリー",
+      "シャルドネ"
+    ],
     "brands": [
       "都農ワイン",
       "キャンベル・アーリー",
       "シャルドネ・アンフィルタード"
     ],
-    "features": ["日向灘と尾鈴連山に囲まれた牧内台地・標高150〜200mに位置", "日本ワインコンクール最高金賞受賞（欧州系品種白部門 シャルドネ アンフィルタード 2005年）", "国内外から多数の受賞歴"],
+    "features": [
+      "日向灘と尾鈴連山に囲まれた牧内台地・標高150〜200mに位置",
+      "日本ワインコンクール最高金賞受賞（欧州系品種白部門 シャルドネ アンフィルタード 2005年）",
+      "国内外から多数の受賞歴"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/19450010303/",
-    "lat": 32.2540,
-    "lng": 131.5550,
+    "lat": 32.254,
+    "lng": 131.555,
     "name_en": "Tsuno Wine"
   },
   {
@@ -46,15 +53,25 @@
     "wine_style": "red,white,rose",
     "main_grape": "niagara",
     "gi": "",
-    "grapes": ["ナイアガラ", "キャンベル・アーリー", "シャルドネ", "デラウェア", "メルロー"],
+    "grapes": [
+      "ナイアガラ",
+      "キャンベル・アーリー",
+      "シャルドネ",
+      "デラウェア",
+      "メルロー"
+    ],
     "brands": [
       "五ヶ瀬ワイン"
     ],
-    "features": ["五ヶ瀬町産ぶどう100%使用", "標高約600mの冷涼地", "レストラン「雲の上のぶどう」併設"],
+    "features": [
+      "五ヶ瀬町産ぶどう100%使用",
+      "標高約600mの冷涼地",
+      "レストラン「雲の上のぶどう」併設"
+    ],
     "nearest_station": "",
-    "source": "https://www.winery.or.jp/winery-map/1072/",
-    "lat": 32.7140,
-    "lng": 131.2710,
+    "source": "https://gokase-winery.jp/",
+    "lat": 32.714,
+    "lng": 131.271,
     "name_en": "Gokase Winery"
   },
   {
@@ -77,12 +94,21 @@
     "grapes": [
       "マスカット・ベーリーA"
     ],
-    "brands": ["オモイカネ", "タジカラオ", "アメノコヤネ", "タマノオヤ", "イシコリドメ"],
-    "features": ["神話にちなんだブランド名を展開", "霧島山麓エリアのワイナリー"],
+    "brands": [
+      "オモイカネ",
+      "タジカラオ",
+      "アメノコヤネ",
+      "タマノオヤ",
+      "イシコリドメ"
+    ],
+    "features": [
+      "神話にちなんだブランド名を展開",
+      "霧島山麓エリアのワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/19450010305/",
-    "lat": 31.9810,
-    "lng": 130.8430,
+    "lat": 31.981,
+    "lng": 130.843,
     "name_en": "Miyakonojo Winery"
   },
   {
@@ -95,20 +121,28 @@
     "founded_era": "平成6年",
     "address": "宮崎県東諸県郡綾町大字南俣1800-19",
     "tel": "0985-77-2222",
-    "url": "http://kuramoto-aya-shusennomori.jp/shisetsu/winery.html",
+    "url": "https://kuramoto-aya-shusennomori.jp/shisetsu/winery/",
     "area": "東諸県郡綾町",
     "desc": "綾町の酒泉の杜エリアでワインとブランデーを手がける醸造所。観光施設と連動し、綾の食と一緒に楽しむワインを展開する。",
     "visit": "酒泉の杜内で売店・レストラン利用可。見学対応は事前確認推奨。",
     "wine_style": "red,white",
     "main_grape": "campbell_early",
     "gi": "",
-    "grapes": ["キャンベル・アーリー", "デラウェア"],
-    "brands": ["綾ワイン", "綾ブランデー"],
-    "features": ["ブランデー製品も展開"],
+    "grapes": [
+      "キャンベル・アーリー",
+      "デラウェア"
+    ],
+    "brands": [
+      "綾ワイン",
+      "綾ブランデー"
+    ],
+    "features": [
+      "ブランデー製品も展開"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/19450010304/",
-    "lat": 31.9980,
-    "lng": 131.2200,
+    "lat": 31.998,
+    "lng": 131.22,
     "name_en": "Unkai Grape Wine"
   },
   {
@@ -128,13 +162,22 @@
     "wine_style": "red,white",
     "main_grape": "merlot",
     "gi": "",
-    "grapes": ["メルロー"],
-    "brands": ["綾ルージュ", "綾ブラン"],
-    "features": ["化学肥料・殺虫剤・除草剤を使わない栽培に挑戦", "小量生産の手造りナチュラルワイン", "綾町のブティックワイナリー"],
+    "grapes": [
+      "メルロー"
+    ],
+    "brands": [
+      "綾ルージュ",
+      "綾ブラン"
+    ],
+    "features": [
+      "化学肥料・殺虫剤・除草剤を使わない栽培に挑戦",
+      "小量生産の手造りナチュラルワイン",
+      "綾町のブティックワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/19450010354/",
-    "lat": 32.0100,
-    "lng": 131.2300,
+    "lat": 32.01,
+    "lng": 131.23,
     "name_en": "Katsuki Wines"
   },
   {
@@ -154,16 +197,27 @@
     "wine_style": "red,white",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["マスカット・ベーリーA", "ピオーネ", "セミヨン", "ソーヴィニヨン・ブラン", "メルロー", "カベルネ・フラン"],
+    "grapes": [
+      "マスカット・ベーリーA",
+      "ピオーネ",
+      "セミヨン",
+      "ソーヴィニヨン・ブラン",
+      "メルロー",
+      "カベルネ・フラン"
+    ],
     "brands": [
       "ん・ダモシタン",
       "生駒高原"
     ],
-    "features": ["レストラン・ショップ・醸造見学を併設", "1本からオリジナルボトル制作に対応", "生駒高原の観光拠点型ワイナリー"],
+    "features": [
+      "レストラン・ショップ・醸造見学を併設",
+      "1本からオリジナルボトル制作に対応",
+      "生駒高原の観光拠点型ワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://www.np-k.co.jp/wine/",
-    "lat": 31.9750,
-    "lng": 130.9690,
+    "lat": 31.975,
+    "lng": 130.969,
     "name_en": "Kobayashi Ikoma Kogen Wine"
   }
 ]

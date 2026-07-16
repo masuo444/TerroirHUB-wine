@@ -1,7 +1,7 @@
 [
   {
     "id": "kobe-winery",
-    "name": "神戸ワイナリー",
+    "name": "こうべアグリパーク（旧神戸ワイナリー）",
     "company": "神戸ワイナリー（農業公園）",
     "brand": "神戸ワイン",
     "winery_type": "winery",
@@ -9,9 +9,9 @@
     "founded_era": "昭和58年",
     "address": "兵庫県神戸市西区押部谷町高和1557-1",
     "tel": "078-991-3911",
-    "url": "https://kobewinery.or.jp/",
+    "url": "https://kobeagripark.jp/",
     "area": "神戸市西区",
-    "desc": "神戸市西区の丘陵地に広がる神戸ワイン発祥のワイナリー。自社畑と契約農家のぶどうで神戸産ワインを醸す。",
+    "desc": "神戸市西区の農業公園として長年親しまれた「神戸ワイナリー」が、2025年4月12日に民間運営の「こうべアグリパーク」としてリニューアルオープン。神戸ワインの製造・販売事業は白鶴酒造株式会社が継承しており、園内でのワイン購入・体験も継続している。",
     "visit": "営業時間9:00〜17:00。見学可・無料。バーベキュー場・パターゴルフ・ゴーカート場あり。入園・駐車無料。",
     "wine_style": "red,white",
     "main_grape": "chardonnay",
@@ -33,10 +33,10 @@
       "広大な農業公園内にショップやBBQ施設を併設"
     ],
     "nearest_station": "",
-    "source": "https://nippon.wine/winery/16280010270/",
+    "source": "https://www.lmaga.jp/news/2025/03/893657/",
     "lat": 34.713,
     "lng": 134.969,
-    "name_en": "Kobe Winery"
+    "name_en": "Kobe Agri Park (former Kobe Winery)"
   },
   {
     "id": "tanba-aogaki-winery",

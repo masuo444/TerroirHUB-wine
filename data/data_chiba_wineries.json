@@ -9,7 +9,7 @@
     "founded_era": "令和2年",
     "address": "千葉県香取郡多古町船越2006",
     "tel": "047-985-5997",
-    "url": "https://funakoshi-winery.com/",
+    "url": "https://tako-wine.com/",
     "area": "香取郡多古町",
     "desc": "2020年に開業した多古町の小規模ワイナリー。千葉県内に約90年ぶりに誕生したワイナリーとして、多古町の風土を映すワインを造る。",
     "visit": "営業：11月〜8月の20日〜26日 11:00〜16:00。",
@@ -34,7 +34,7 @@
       "長野県・ル・ミリュウの塩瀬豪氏の指導を受けて醸造"
     ],
     "nearest_station": "",
-    "source": "https://funakoshi-winery.com/",
+    "source": "https://tako-wine.com/",
     "lat": 35.7508,
     "lng": 140.4669,
     "name_en": "Funakoshi Winery (Tako Wine)"
@@ -87,15 +87,15 @@
   },
   {
     "id": "vanvan-vineyard",
-    "name": "ヴァンヴァンヴィンヤード",
-    "company": "山本ぶどう園",
-    "brand": "VANVAN VINEYARD",
+    "name": "Sawa Wines（ヴァンヴァンヴィンヤード）",
+    "company": "山本ぶどう園（ヴァンヴァンヴィンヤード）",
+    "brand": "Sawa Wines",
     "winery_type": "estate",
     "founded": "2010",
     "founded_era": "平成22年",
     "address": "千葉県八街市",
     "tel": "",
-    "url": "https://nippon.wine/winery/12120010315/",
+    "url": "https://www.sawawines.com/",
     "area": "八街市",
     "desc": "2010年から八街市でワインぶどうを栽培するヴィンヤード。風通しのよい台地でマスカット・ベーリーAやシャルドネなどを育て、2014年に委託醸造でワイン造りを開始。2021年10月には八街市初のワイナリー「Sawa Wines」を設立した。",
     "visit": "公開営業情報が限られるため事前確認前提。",
@@ -116,9 +116,162 @@
       "2021年10月に八街市初のワイナリー「Sawa Wines」を設立"
     ],
     "nearest_station": "",
-    "source": "https://nippon.wine/winery/12120010315/",
+    "source": "https://www.sawawines.com/",
     "lat": 35.662,
     "lng": 140.318,
-    "name_en": "Vanvan Vineyard"
+    "name_en": "Sawa Wines"
+  },
+  {
+    "id": "funabashi-coq-winery",
+    "name": "船橋コックワイナリー（FUNABASHI COQ WINERY）",
+    "company": "株式会社船橋コックワイナリー",
+    "brand": "COQ WINERY",
+    "winery_type": "small",
+    "founded": "2021",
+    "founded_era": "令和3年",
+    "address": "千葉県船橋市南本町36-9",
+    "tel": "047-497-8171",
+    "url": "https://fcw.theshop.jp/",
+    "area": "船橋市南本町",
+    "desc": "ワインと肉料理の店「COQ DINER」を経営する小久保尊氏が、千葉県内3軒目のワイナリーとして2021年2月から製造免許を申請し、同年9月に果実酒製造免許を取得して開業。千葉県初の駅から徒歩圏内の都市型ワイナリーで、濾過をせずほとんど手作業でクラフトワインを製造している。",
+    "visit": "見学可（8名以上・日曜日限定プラン）。購入は直営店「ワインと肉 COQ DINER」（千葉県船橋市本町2-25-17）にて",
+    "wine_style": "red,white,rose,sparkling",
+    "main_grape": "",
+    "gi": "",
+    "grapes": [
+      "スチューベン",
+      "デラウェア",
+      "キャンベル",
+      "ナイアガラ",
+      "ブラック・クイーン",
+      "サンジョヴェーゼ"
+    ],
+    "brands": [
+      {
+        "name": "キャトられスチューベン 赤",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "スチューベン"
+      },
+      {
+        "name": "ちょうどいい2023",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "エックス",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "サンキュー デラウェア",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "デラウェア"
+      },
+      {
+        "name": "キャトられスチューベン ロゼ",
+        "type": "ロゼ",
+        "specs": "",
+        "grapes": "スチューベン"
+      },
+      {
+        "name": "ナゴミ キャンベル ロゼ",
+        "type": "ロゼ",
+        "specs": "",
+        "grapes": "キャンベル"
+      },
+      {
+        "name": "とりあえず",
+        "type": "スパークリング",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "とりあえず2023",
+        "type": "スパークリング（ロゼ）",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "君に晩腐",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ナイアガラ"
+      },
+      {
+        "name": "ファン ブラック・クイーン＆サンジョヴェーゼ",
+        "type": "赤ワイン",
+        "specs": "混醸",
+        "grapes": "ブラック・クイーン、サンジョヴェーゼ"
+      }
+    ],
+    "features": [
+      "千葉県初の都市型ワイナリー。2021年9月に果実酒製造免許を取得",
+      "濾過をせず、ほとんど手作業でクラフトワインを一本ずつ製造",
+      "直営の「ワインと肉 COQ DINER」でボトル・グラス提供"
+    ],
+    "nearest_station": "",
+    "source": "https://www.atpress.ne.jp/news/289589",
+    "lat": 35.695,
+    "lng": 139.983,
+    "name_en": "Funabashi COQ Winery"
+  },
+  {
+    "id": "chiba-winery-wakaba",
+    "name": "千葉ワイナリー",
+    "company": "株式会社トミオホールディングス",
+    "brand": "VINEYARD SERIES",
+    "winery_type": "medium",
+    "founded": "2025",
+    "founded_era": "令和7年",
+    "address": "千葉県千葉市若葉区高品町296-1（醸造所）／同250-1 tomio village高品内（ショップ）",
+    "tel": "043-309-5617",
+    "url": "https://chibawinery.com/",
+    "area": "千葉市若葉区高品町（tomio village高品）",
+    "desc": "住宅・リノベーション事業を手がける株式会社トミオホールディングスが2025年10月8日に果実酒製造免許を取得し、千葉市初のワイン醸造所として開業。代表は大澤成行氏。福祉事業所「アトリエひふみよ」の利用者がぶどう栽培やワイン製造に携わる農福連携モデルを採用し、利用者制作のアート作品をラベルに用いる。初醸造は佐倉市・柏市産ぶどうを用いた委託醸造からスタートし、千葉大学沼田農場のリンゴを使ったシードルや柏市産梨の発泡酒「なしあわ」も手がける。2026年の「千葉開府900年」の節目に、自社圃場（千葉市若葉区下田町）のぶどうのみを使う「オール千葉市産ワイン」の醸造を目指している。",
+    "visit": "ショップでの購入可（tomio village高品内）",
+    "wine_style": "red,rose",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "カベルネ・ソーヴィニヨン",
+      "シャルドネ",
+      "ソーヴィニヨン・ブラン",
+      "ヴィオニエ",
+      "アルバリーニョ",
+      "カベルネ・フラン",
+      "サンジョベーゼ",
+      "メルロー",
+      "ピノ・ノワール",
+      "シラー"
+    ],
+    "brands": [
+      {
+        "name": "VINEYARD SERIES Muscat Bailey A 2025",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "マスカット・ベーリーA"
+      },
+      {
+        "name": "VINEYARD SERIES Cabernet Sauvignon Clairet BEL TRAMONTO 2025",
+        "type": "ロゼ",
+        "specs": "クレレ（淡い赤）スタイル",
+        "grapes": "カベルネ・ソーヴィニヨン"
+      }
+    ],
+    "features": [
+      "千葉市初のワイン醸造所。2025年10月8日に果実酒製造免許を取得し開業",
+      "福祉事業所の利用者がぶどう栽培・ワイン製造に携わる農福連携モデル。ラベルに利用者のアート作品を採用",
+      "2026年の「千葉開府900年」に向け、自社圃場ぶどうのみの\"オール千葉市産ワイン\"醸造を計画"
+    ],
+    "nearest_station": "",
+    "source": "https://prtimes.jp/main/html/rd/p/000000016.000149064.html",
+    "lat": 35.629,
+    "lng": 140.187,
+    "name_en": "Chiba Winery"
   }
 ]

@@ -16,11 +16,23 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール"],
-    "brands": [
-      {"name": "ナナツモリ ピノノワール", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール"}
+    "grapes": [
+      "ピノ・ノワール"
     ],
-    "features": ["全房発酵", "野生酵母", "ビオディナミ農法", "亜硫酸無添加〜極少量"],
+    "brands": [
+      {
+        "name": "ナナツモリ ピノノワール",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      }
+    ],
+    "features": [
+      "全房発酵",
+      "野生酵母",
+      "ビオディナミ農法",
+      "亜硫酸無添加〜極少量"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://www.takahiko.co.jp/",
     "lat": 43.2,
@@ -44,14 +56,44 @@
     "wine_style": "white",
     "main_grape": "pinot_gris",
     "gi": "GI北海道",
-    "grapes": ["ピノ・グリ", "シャルドネ", "カベルネ", "アコロン", "バッカス"],
-    "brands": [
-      {"name": "OcciGabi Black Label", "type": "プレミアムライン", "specs": "", "grapes": ""},
-      {"name": "OcciGabi ルージュ スパークリング", "type": "スパークリングワイン", "specs": "", "grapes": ""},
-      {"name": "OcciGabi シャルドネ スパークリング", "type": "スパークリングワイン", "specs": "", "grapes": "シャルドネ"},
-      {"name": "OcciGabi バッカス スパークリング", "type": "スパークリングワイン", "specs": "", "grapes": "バッカス"}
+    "grapes": [
+      "ピノ・グリ",
+      "シャルドネ",
+      "カベルネ",
+      "アコロン",
+      "バッカス"
     ],
-    "features": ["レストラン併設", "ウエディング対応", "絶景テイスティング"],
+    "brands": [
+      {
+        "name": "OcciGabi Black Label",
+        "type": "プレミアムライン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "OcciGabi ルージュ スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "OcciGabi シャルドネ スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "OcciGabi バッカス スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "",
+        "grapes": "バッカス"
+      }
+    ],
+    "features": [
+      "レストラン併設",
+      "ウエディング対応",
+      "絶景テイスティング"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約15分）",
     "source": "https://www.occigabi.net/",
     "lat": 43.2,
@@ -75,14 +117,43 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "ピノ・ノワール", "ツヴァイゲルトレーベ", "シャルドネ"],
-    "brands": [
-      {"name": "おたるワイン", "type": "赤・白・ロゼ", "specs": "", "grapes": ""},
-      {"name": "葡萄作りの匠", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "北海道 シリーズ", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "鶴沼収穫 シリーズ", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "ケルナー",
+      "ピノ・ノワール",
+      "ツヴァイゲルトレーベ",
+      "シャルドネ"
     ],
-    "features": ["国産ぶどう100%使用", "非加熱生ワイン", "30年以上のピノ・ノワール栽培"],
+    "brands": [
+      {
+        "name": "おたるワイン",
+        "type": "赤・白・ロゼ",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "葡萄作りの匠",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "北海道 シリーズ",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "鶴沼収穫 シリーズ",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "国産ぶどう100%使用",
+      "非加熱生ワイン",
+      "30年以上のピノ・ノワール栽培"
+    ],
     "nearest_station": "JR函館本線 朝里駅（車約5分）",
     "source": "https://www.hokkaidowine.com/",
     "lat": 43.17,
@@ -106,11 +177,25 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "メルロー", "ピノ・ノワール", "シャルドネ"],
-    "brands": [
-      {"name": "北海道100 シリーズ", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "ケルナー",
+      "メルロー",
+      "ピノ・ノワール",
+      "シャルドネ"
     ],
-    "features": ["ISO9001取得", "フルーツワイン展開", "創業50周年（2023年）"],
+    "brands": [
+      {
+        "name": "北海道100 シリーズ",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "ISO9001取得",
+      "フルーツワイン展開",
+      "創業50周年（2023年）"
+    ],
     "nearest_station": "JR函館本線 七飯駅（車約5分）",
     "source": "https://www.hakodatewine.co.jp/company/",
     "lat": 41.82,
@@ -134,13 +219,38 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ふらの2号", "セイベル13053", "ツヴァイゲルトレーベ", "ケルナー", "バッカス"],
-    "brands": [
-      {"name": "ふらのワイン", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "羆の晩酌", "type": "赤ワイン", "specs": "", "grapes": "ふらの2号"},
-      {"name": "ふらのワイン アイスワイン", "type": "白ワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "ふらの2号",
+      "セイベル13053",
+      "ツヴァイゲルトレーベ",
+      "ケルナー",
+      "バッカス"
     ],
-    "features": ["自治体ワイナリー", "オリジナル品種ふらの2号", "無料見学可"],
+    "brands": [
+      {
+        "name": "ふらのワイン",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "羆の晩酌",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ふらの2号"
+      },
+      {
+        "name": "ふらのワイン アイスワイン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "自治体ワイナリー",
+      "オリジナル品種ふらの2号",
+      "無料見学可"
+    ],
     "nearest_station": "JR富良野線 富良野駅（車約5分）",
     "source": "https://www.furanowine.jp/about.html",
     "lat": 43.34,
@@ -164,13 +274,38 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸", "清見", "清舞", "トカップ"],
-    "brands": [
-      {"name": "十勝ワイン 山幸", "type": "赤ワイン", "specs": "", "grapes": "山幸"},
-      {"name": "十勝ワイン ブルームロゼ", "type": "ロゼワイン", "specs": "7年熟成", "grapes": ""},
-      {"name": "十勝ワイン 凍晴（いてばれ）", "type": "白ワイン", "specs": "Cryo-Extraction", "grapes": ""}
+    "grapes": [
+      "山幸",
+      "清見",
+      "清舞",
+      "トカップ"
     ],
-    "features": ["自治体ワイナリー", "日本初の公営ワイナリー", "山幸はOIV国際品種登録（2020年）", "ワイン城"],
+    "brands": [
+      {
+        "name": "十勝ワイン 山幸",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "山幸"
+      },
+      {
+        "name": "十勝ワイン ブルームロゼ",
+        "type": "ロゼワイン",
+        "specs": "7年熟成",
+        "grapes": ""
+      },
+      {
+        "name": "十勝ワイン 凍晴（いてばれ）",
+        "type": "白ワイン",
+        "specs": "Cryo-Extraction",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "自治体ワイナリー",
+      "日本初の公営ワイナリー",
+      "山幸はOIV国際品種登録（2020年）",
+      "ワイン城"
+    ],
     "nearest_station": "JR根室本線 池田駅（車約5分）",
     "source": "https://www.tokachi-wine.com/",
     "lat": 43.12,
@@ -194,13 +329,36 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "ピノ・ノワール", "シャルドネ"],
-    "brands": [
-      {"name": "北ワイン ケルナー", "type": "白ワイン", "specs": "", "grapes": "ケルナー"},
-      {"name": "北ワイン ピノノワール", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "北ワイン レイトハーベスト", "type": "白ワイン", "specs": "遅摘み", "grapes": "ケルナー"}
+    "grapes": [
+      "ケルナー",
+      "ピノ・ノワール",
+      "シャルドネ"
     ],
-    "features": ["山梨・中央葡萄酒の北海道拠点として創業", "2011年に分社独立", "木村農園契約"],
+    "brands": [
+      {
+        "name": "北ワイン ケルナー",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ケルナー"
+      },
+      {
+        "name": "北ワイン ピノノワール",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "北ワイン レイトハーベスト",
+        "type": "白ワイン",
+        "specs": "遅摘み",
+        "grapes": "ケルナー"
+      }
+    ],
+    "features": [
+      "山梨・中央葡萄酒の北海道拠点として創業",
+      "2011年に分社独立",
+      "木村農園契約"
+    ],
     "nearest_station": "JR千歳線 千歳駅（車約10分）",
     "source": "https://www.chitose-winery.com/",
     "lat": 42.82,
@@ -224,13 +382,38 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ", "ピノ・ノワール", "レンベルガー", "レゲント", "バッカス", "ケルナー"],
-    "brands": [
-      {"name": "雪の系譜", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "RICCA スパークリング", "type": "スパークリングワイン", "specs": "瓶内二次発酵", "grapes": "シャルドネ/ピノ・ノワール"},
-      {"name": "宝水ブラン/ルージュ", "type": "白・赤ワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "シャルドネ",
+      "ピノ・ノワール",
+      "レンベルガー",
+      "レゲント",
+      "バッカス",
+      "ケルナー"
     ],
-    "features": ["岩見沢市特産ぶどう振興組合から発展", "瓶内二次発酵スパークリング"],
+    "brands": [
+      {
+        "name": "雪の系譜",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "RICCA スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "瓶内二次発酵",
+        "grapes": "シャルドネ/ピノ・ノワール"
+      },
+      {
+        "name": "宝水ブラン/ルージュ",
+        "type": "白・赤ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "岩見沢市特産ぶどう振興組合から発展",
+      "瓶内二次発酵スパークリング"
+    ],
     "nearest_station": "JR函館本線 岩見沢駅（車約20分）",
     "source": "https://housui-winery.co.jp/company.html",
     "lat": 43.25,
@@ -254,12 +437,31 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "その他北海道産品種"],
-    "brands": [
-      {"name": "ノラ・ルージュ", "type": "赤ワイン", "specs": "", "grapes": ""},
-      {"name": "ノラ・ブラン", "type": "白ワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "その他北海道産品種"
     ],
-    "features": ["野生酵母発酵", "低〜無亜硫酸添加", "無ろ過", "夫婦2人運営"],
+    "brands": [
+      {
+        "name": "ノラ・ルージュ",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "ノラ・ブラン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "野生酵母発酵",
+      "低〜無亜硫酸添加",
+      "無ろ過",
+      "夫婦2人運営"
+    ],
     "nearest_station": "JR函館本線 函館駅（車約10分）",
     "source": "http://www.nora-kura.jp/",
     "lat": 41.77,
@@ -283,13 +485,42 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "バッカス", "シャルドネ", "ピノ・グリ", "ソーヴィニヨン・ブラン", "ツヴァイゲルトレーベ", "ピノ・ノワール", "メルロー"],
-    "brands": [
-      {"name": "HATSUYUKI（初雪）", "type": "白ワイン", "specs": "ケルナー100%のフラッグシップ白。", "grapes": "ケルナー"},
-      {"name": "NEIRO", "type": "白ワイン", "specs": "バッカス100%のセミドライ白。", "grapes": "バッカス"},
-      {"name": "YUHZOME（夕染）", "type": "赤ワイン", "specs": "ツヴァイゲルトレーベ100%の赤。", "grapes": "ツヴァイゲルトレーベ"}
+    "grapes": [
+      "ケルナー",
+      "バッカス",
+      "シャルドネ",
+      "ピノ・グリ",
+      "ソーヴィニヨン・ブラン",
+      "ツヴァイゲルトレーベ",
+      "ピノ・ノワール",
+      "メルロー"
     ],
-    "features": ["複合型ワイナリー", "宿泊施設完備", "レストラン・ガーデン併設", "グランドオープン2019年"],
+    "brands": [
+      {
+        "name": "HATSUYUKI（初雪）",
+        "type": "白ワイン",
+        "specs": "ケルナー100%のフラッグシップ白。",
+        "grapes": "ケルナー"
+      },
+      {
+        "name": "NEIRO",
+        "type": "白ワイン",
+        "specs": "バッカス100%のセミドライ白。",
+        "grapes": "バッカス"
+      },
+      {
+        "name": "YUHZOME（夕染）",
+        "type": "赤ワイン",
+        "specs": "ツヴァイゲルトレーベ100%の赤。",
+        "grapes": "ツヴァイゲルトレーベ"
+      }
+    ],
+    "features": [
+      "複合型ワイナリー",
+      "宿泊施設完備",
+      "レストラン・ガーデン併設",
+      "グランドオープン2019年"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約10分）",
     "source": "https://nikihills.co.jp/winery/",
     "lat": 43.25,
@@ -313,11 +544,28 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "シャルドネ", "バッカス", "ブラウフレンキッシュ", "ピノ・ノワール", "レジェント", "ツヴァイゲルト"],
-    "brands": [
-      {"name": "ケルナー", "type": "白ワイン", "specs": "", "grapes": "ケルナー"}
+    "grapes": [
+      "ケルナー",
+      "シャルドネ",
+      "バッカス",
+      "ブラウフレンキッシュ",
+      "ピノ・ノワール",
+      "レジェント",
+      "ツヴァイゲルト"
     ],
-    "features": ["総面積16.2ha", "イタリアンテクノロジー導入", "10品種栽培"],
+    "brands": [
+      {
+        "name": "ケルナー",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ケルナー"
+      }
+    ],
+    "features": [
+      "総面積16.2ha",
+      "イタリアンテクノロジー導入",
+      "10品種栽培"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://camelfarm.co.jp/",
     "lat": 43.2,
@@ -341,14 +589,44 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "ソーヴィニョン・ブラン", "ピノ・ノワール", "ロンド", "レゲンド"],
-    "brands": [
-      {"name": "Grande Cuvée", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "Cuvée Sélection", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "Terre de Yoichi", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "Cuvée Gastronomique", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "ケルナー",
+      "ソーヴィニョン・ブラン",
+      "ピノ・ノワール",
+      "ロンド",
+      "レゲンド"
     ],
-    "features": ["品種名を名乗らない土地個性のワイン", "余市西部南斜面", "東京広尾に直営店"],
+    "brands": [
+      {
+        "name": "Grande Cuvée",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "Cuvée Sélection",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "Terre de Yoichi",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "Cuvée Gastronomique",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "品種名を名乗らない土地個性のワイン",
+      "余市西部南斜面",
+      "東京広尾に直営店"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約15分）",
     "source": "https://hirakawawinery.jp/profile/",
     "lat": 43.2,
@@ -372,9 +650,16 @@
     "wine_style": "red",
     "main_grape": "zweigelt",
     "gi": "GI北海道",
-    "grapes": ["ツヴァイゲルト"],
-    "brands": ["登醸造 ツヴァイゲルト"],
-    "features": ["野生酵母発酵", "自社農園栽培"],
+    "grapes": [
+      "ツヴァイゲルト"
+    ],
+    "brands": [
+      "登醸造 ツヴァイゲルト"
+    ],
+    "features": [
+      "野生酵母発酵",
+      "自社農園栽培"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://www.winery.or.jp/winery-map/area/yoichi/",
     "lat": 43.2,
@@ -398,11 +683,27 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ツヴァイゲルトレーベ", "ピノ・ノワール", "メルロー", "キャンベルアーリー", "ケルナー", "ミュラートゥルガウ", "デラウェア"],
-    "brands": [
-      {"name": "余市ワイン（YOICHI ONLY WINE）", "type": "赤・白・ロゼ", "specs": "", "grapes": ""}
+    "grapes": [
+      "ツヴァイゲルトレーベ",
+      "ピノ・ノワール",
+      "メルロー",
+      "キャンベルアーリー",
+      "ケルナー",
+      "ミュラートゥルガウ",
+      "デラウェア"
     ],
-    "features": ["レストラン・カフェ・ショップ複合施設", "アート展示あり"],
+    "brands": [
+      {
+        "name": "余市ワイン（YOICHI ONLY WINE）",
+        "type": "赤・白・ロゼ",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "レストラン・カフェ・ショップ複合施設",
+      "アート展示あり"
+    ],
     "nearest_station": "JR函館本線 余市駅（徒歩圏内）",
     "source": "https://nipponseishu.co.jp/yoichiwine/",
     "lat": 43.19,
@@ -426,9 +727,23 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "ソーヴィニョン・ブラン", "メルロー", "デラウェア", "ナイアガラ"],
-    "brands": ["Rita Pinot Noir", "Rita Chardonnay"],
-    "features": ["余市ワイン特区活用第1号", "野生酵母自然発酵", "女性醸造家"],
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "ソーヴィニョン・ブラン",
+      "メルロー",
+      "デラウェア",
+      "ナイアガラ"
+    ],
+    "brands": [
+      "Rita Pinot Noir",
+      "Rita Chardonnay"
+    ],
+    "features": [
+      "余市ワイン特区活用第1号",
+      "野生酵母自然発酵",
+      "女性醸造家"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "http://www.rita-farm.jp/",
     "lat": 43.21,
@@ -452,14 +767,45 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "ピノ・タージュ", "ピノ・グリ", "ソーヴィニョン・ブラン"],
-    "brands": [
-      {"name": "杤（トチ）", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール主体"},
-      {"name": "柏（ハク）", "type": "白ワイン", "specs": "", "grapes": "シャルドネ主体"},
-      {"name": "楢（ナラ）", "type": "赤ワイン", "specs": "", "grapes": "ピノ・タージュ主体"},
-      {"name": "桧（ヒノキ）", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール主体"}
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "ピノ・タージュ",
+      "ピノ・グリ",
+      "ソーヴィニョン・ブラン"
     ],
-    "features": ["フィールド・ブレンド特化", "無濾過・無清澄", "野生酵母", "札幌軟石の石蔵醸造所"],
+    "brands": [
+      {
+        "name": "杤（トチ）",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール主体"
+      },
+      {
+        "name": "柏（ハク）",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ主体"
+      },
+      {
+        "name": "楢（ナラ）",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・タージュ主体"
+      },
+      {
+        "name": "桧（ヒノキ）",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール主体"
+      }
+    ],
+    "features": [
+      "フィールド・ブレンド特化",
+      "無濾過・無清澄",
+      "野生酵母",
+      "札幌軟石の石蔵醸造所"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約15分）",
     "source": "https://mongakuwinery.com/",
     "lat": 43.21,
@@ -483,9 +829,21 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "デラウェア", "ポートランド"],
-    "brands": ["Domaine Yui Pinot Noir", "Domaine Yui Chardonnay"],
-    "features": ["無農薬・無施肥栽培", "酸化防止剤不使用", "元東京在住の夫婦が設立"],
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "デラウェア",
+      "ポートランド"
+    ],
+    "brands": [
+      "Domaine Yui Pinot Noir",
+      "Domaine Yui Chardonnay"
+    ],
+    "features": [
+      "無農薬・無施肥栽培",
+      "酸化防止剤不使用",
+      "元東京在住の夫婦が設立"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://www.winery.or.jp/winery-map/area/yoichi/",
     "lat": 43.2,
@@ -509,9 +867,19 @@
     "wine_style": "rose",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "ピノ・ノワール"],
-    "brands": ["Mizuki Rose", "Mizuki Kerner"],
-    "features": ["余市町初・ぶどう農家直営ワイナリー", "5代目農家", "ドメーヌ・タカヒコ研修生出身"],
+    "grapes": [
+      "ケルナー",
+      "ピノ・ノワール"
+    ],
+    "brands": [
+      "Mizuki Rose",
+      "Mizuki Kerner"
+    ],
+    "features": [
+      "余市町初・ぶどう農家直営ワイナリー",
+      "5代目農家",
+      "ドメーヌ・タカヒコ研修生出身"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://www.domainemizuki.com/",
     "lat": 43.2,
@@ -535,9 +903,21 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "シャルドネ", "メルロー", "ピノ・ノワール"],
-    "brands": ["YAMAZAKI Pinot Noir", "YAMAZAKI Chardonnay"],
-    "features": ["道内初の個人農家による免許取得（2002年）", "全量自社栽培ぶどう使用", "12品種栽培"],
+    "grapes": [
+      "ケルナー",
+      "シャルドネ",
+      "メルロー",
+      "ピノ・ノワール"
+    ],
+    "brands": [
+      "YAMAZAKI Pinot Noir",
+      "YAMAZAKI Chardonnay"
+    ],
+    "features": [
+      "道内初の個人農家による免許取得（2002年）",
+      "全量自社栽培ぶどう使用",
+      "12品種栽培"
+    ],
     "nearest_station": "JR函館本線 三笠駅（車約15分）",
     "source": "http://www.yamazaki-winery.co.jp/",
     "lat": 43.43,
@@ -561,13 +941,38 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ソーヴィニヨン・ブラン", "シャルドネ", "旅路", "ケルナー"],
-    "brands": [
-      {"name": "旅路", "type": "白ワイン", "specs": "北海道固有品種・旅路を野生酵母で醸す辛口白。", "grapes": "旅路"},
-      {"name": "ピノ・ノワール", "type": "赤ワイン", "specs": "三笠市の自社畑ピノ・ノワールを使う赤。", "grapes": "ピノ・ノワール"},
-      {"name": "ケルナー", "type": "白ワイン", "specs": "北海道産ケルナーの香りと酸を生かした白。", "grapes": "ケルナー"}
+    "grapes": [
+      "ピノ・ノワール",
+      "ソーヴィニヨン・ブラン",
+      "シャルドネ",
+      "旅路",
+      "ケルナー"
     ],
-    "features": ["無農薬栽培", "自然酵母発酵", "生命力を感じるワイン造り"],
+    "brands": [
+      {
+        "name": "旅路",
+        "type": "白ワイン",
+        "specs": "北海道固有品種・旅路を野生酵母で醸す辛口白。",
+        "grapes": "旅路"
+      },
+      {
+        "name": "ピノ・ノワール",
+        "type": "赤ワイン",
+        "specs": "三笠市の自社畑ピノ・ノワールを使う赤。",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "ケルナー",
+        "type": "白ワイン",
+        "specs": "北海道産ケルナーの香りと酸を生かした白。",
+        "grapes": "ケルナー"
+      }
+    ],
+    "features": [
+      "無農薬栽培",
+      "自然酵母発酵",
+      "生命力を感じるワイン造り"
+    ],
     "nearest_station": "JR函館本線 三笠駅（車約20分）",
     "source": "https://www.enoteca.co.jp/producer/detail/1122",
     "lat": 43.4,
@@ -591,11 +996,24 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ガメイ", "ピノ・ムニエ", "プルサール"],
-    "brands": [
-      {"name": "10R エステート", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール主体"}
+    "grapes": [
+      "ピノ・ノワール",
+      "ガメイ",
+      "ピノ・ムニエ",
+      "プルサール"
     ],
-    "features": ["受託醸造所（カスタムクラッシュ）としてスタート", "ディジョンクローン8種のピノ・ノワール"],
+    "brands": [
+      {
+        "name": "10R エステート",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール主体"
+      }
+    ],
+    "features": [
+      "受託醸造所（カスタムクラッシュ）としてスタート",
+      "ディジョンクローン8種のピノ・ノワール"
+    ],
     "nearest_station": "JR函館本線 栗沢駅（車約10分）",
     "source": "https://www.10rwinery.jp/",
     "lat": 43.15,
@@ -619,9 +1037,23 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["メルロー", "バッカス", "ヤマソーヴィニョン", "セイベル13053", "ピノ・ノワール", "ツヴァイゲルトレーベ"],
-    "brands": ["藤野ピノ・ノワール", "藤野バッカス"],
-    "features": ["野生酵母発酵", "無濾過", "道内産ぶどう使用"],
+    "grapes": [
+      "メルロー",
+      "バッカス",
+      "ヤマソーヴィニョン",
+      "セイベル13053",
+      "ピノ・ノワール",
+      "ツヴァイゲルトレーベ"
+    ],
+    "brands": [
+      "藤野ピノ・ノワール",
+      "藤野バッカス"
+    ],
+    "features": [
+      "野生酵母発酵",
+      "無濾過",
+      "道内産ぶどう使用"
+    ],
     "nearest_station": "札幌市南区（定山渓温泉方面）",
     "source": "https://www.sapporo-fujino-winery.com/",
     "lat": 42.98,
@@ -645,9 +1077,25 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["メルロー", "シャルドネ", "ピノ・ノワール", "ピノ・グリ", "ツヴァイゲルトレーベ", "ケルナー", "山葡萄"],
-    "brands": ["奥尻メルロー", "奥尻ピノ・グリ"],
-    "features": ["離島ワイナリー", "奥尻島復興の象徴", "山葡萄から栽培開始", "10品種栽培"],
+    "grapes": [
+      "メルロー",
+      "シャルドネ",
+      "ピノ・ノワール",
+      "ピノ・グリ",
+      "ツヴァイゲルトレーベ",
+      "ケルナー",
+      "山葡萄"
+    ],
+    "brands": [
+      "奥尻メルロー",
+      "奥尻ピノ・グリ"
+    ],
+    "features": [
+      "離島ワイナリー",
+      "奥尻島復興の象徴",
+      "山葡萄から栽培開始",
+      "10品種栽培"
+    ],
     "nearest_station": "函館空港→フェリーまたは飛行機で奥尻島へ",
     "source": "https://okushiri-winery.com/",
     "lat": 42.17,
@@ -664,18 +1112,30 @@
     "founded_era": "平成28年",
     "address": "北海道虻田郡ニセコ町近藤194-8",
     "tel": "0136-44-3099",
-    "url": "http://yoteigreenbusiness.com/",
+    "url": "",
     "area": "ニセコ町",
     "desc": "ニセコの冷涼な畑で多品種を育て、リゾートエリアの食文化に寄り添うワインを目指す小規模ワイナリー。",
     "visit": "営業日・見学対応は事前確認推奨。",
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["バッカス", "ツヴァイゲルトレーベ", "ケルナー", "ドルンフェルダー"],
-    "brands": [
-      {"name": "ニセコワイナリー スパークリング", "type": "スパークリングワイン", "specs": "冷涼なニセコで造るオーガニックスパークリング。", "grapes": "バッカス、ケルナーほか"}
+    "grapes": [
+      "バッカス",
+      "ツヴァイゲルトレーベ",
+      "ケルナー",
+      "ドルンフェルダー"
     ],
-    "features": ["ニセコリゾートエリア立地"],
+    "brands": [
+      {
+        "name": "ニセコワイナリー スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "冷涼なニセコで造るオーガニックスパークリング。",
+        "grapes": "バッカス、ケルナーほか"
+      }
+    ],
+    "features": [
+      "ニセコリゾートエリア立地"
+    ],
     "nearest_station": "JR函館本線 ニセコ駅（車約5分）",
     "source": "https://nihonwine.jp/winery_intro/niseko_winery/",
     "lat": 42.82,
@@ -699,11 +1159,20 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ドルンフェルダー"],
-    "brands": [
-      {"name": "月浦ワイン ドルンフェルダー", "type": "赤ワイン", "specs": "", "grapes": "ドルンフェルダー"}
+    "grapes": [
+      "ドルンフェルダー"
     ],
-    "features": ["洞爺湖・有珠山望む絶景立地"],
+    "brands": [
+      {
+        "name": "月浦ワイン ドルンフェルダー",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ドルンフェルダー"
+      }
+    ],
+    "features": [
+      "洞爺湖・有珠山望む絶景立地"
+    ],
     "nearest_station": "JR室蘭本線 洞爺駅（車約15分）",
     "source": "https://www.winery.or.jp/winery-map/6992/",
     "lat": 42.56,
@@ -727,9 +1196,19 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ツヴァイゲルト"],
-    "brands": ["Lan Seqqua Pinot Noir", "Lan Seqqua Zweigelt"],
-    "features": ["工場型・純粋な醸造特化", "自社畑1.6ha 西南西斜面", "ドメーヌ・タカヒコ研修生出身"],
+    "grapes": [
+      "ピノ・ノワール",
+      "ツヴァイゲルト"
+    ],
+    "brands": [
+      "Lan Seqqua Pinot Noir",
+      "Lan Seqqua Zweigelt"
+    ],
+    "features": [
+      "工場型・純粋な醸造特化",
+      "自社畑1.6ha 西南西斜面",
+      "ドメーヌ・タカヒコ研修生出身"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://lanseqqua.jp/",
     "lat": 43.21,
@@ -753,9 +1232,18 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール"],
-    "brands": ["Domaine Mont Pinot Noir", "Domaine Mont Chardonnay"],
-    "features": ["ドメーヌ・タカヒコ研修生出身", "自社畑1.8ha", "有機栽培・野生酵母・亜硫酸不使用"],
+    "grapes": [
+      "ピノ・ノワール"
+    ],
+    "brands": [
+      "Domaine Mont Pinot Noir",
+      "Domaine Mont Chardonnay"
+    ],
+    "features": [
+      "ドメーヌ・タカヒコ研修生出身",
+      "自社畑1.8ha",
+      "有機栽培・野生酵母・亜硫酸不使用"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://domainemont.com/",
     "lat": 43.2,
@@ -779,9 +1267,23 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ピノ・タージュ", "シャルドネ", "ピノ・グリ", "ピノ・ブラン", "ソーヴィニョン・ブラン", "ゲヴュルツトラミネール"],
-    "brands": ["中富良野ミュラートゥルガウ", "中富良野ロゼ"],
-    "features": ["酸化防止剤極力不使用", "7品種栽培"],
+    "grapes": [
+      "ピノ・ノワール",
+      "ピノ・タージュ",
+      "シャルドネ",
+      "ピノ・グリ",
+      "ピノ・ブラン",
+      "ソーヴィニョン・ブラン",
+      "ゲヴュルツトラミネール"
+    ],
+    "brands": [
+      "中富良野ミュラートゥルガウ",
+      "中富良野ロゼ"
+    ],
+    "features": [
+      "酸化防止剤極力不使用",
+      "7品種栽培"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://www.town.yoichi.hokkaido.jp/wine-tourism/winery/",
     "lat": 43.2,
@@ -798,16 +1300,28 @@
     "founded_era": "平成27年",
     "address": "北海道余市郡余市町登町",
     "tel": "",
-    "url": "http://atsushi-suzuki.jp/",
+    "url": "",
     "area": "余市町",
     "desc": "2015年から自社ワイナリーでの醸造をスタート。できるだけ手を加えない自然なワインづくりを目指しており、化学農薬を使用せずに育てたぶどうを、自然酵母を使い発酵し、亜硫酸添加もゼロもしくは少量添加のみ。",
     "visit": "営業日・見学対応は事前確認推奨。",
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ツヴァイゲルト", "ケルナー", "ミュラートゥルガウ", "シャルドネ"],
-    "brands": ["MAOI Rouge", "MAOI Blanc"],
-    "features": ["化学農薬不使用", "自然酵母発酵", "亜硫酸無添加〜極少量"],
+    "grapes": [
+      "ツヴァイゲルト",
+      "ケルナー",
+      "ミュラートゥルガウ",
+      "シャルドネ"
+    ],
+    "brands": [
+      "MAOI Rouge",
+      "MAOI Blanc"
+    ],
+    "features": [
+      "化学農薬不使用",
+      "自然酵母発酵",
+      "亜硫酸無添加〜極少量"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://nihonwine.jp/winery_intro/domaine_atsushi_suzuki/",
     "lat": 43.21,
@@ -831,9 +1345,24 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "カベルネ・フラン", "ソーヴィニョン・ブラン", "アルバリーニョ", "デラウェア", "ナイアガラ"],
-    "brands": ["さっぽろブラン", "さっぽろルージュ"],
-    "features": ["有機肥料・無化学農薬栽培", "天然酵母・無添加・無濾過", "生物多様性農法"],
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "カベルネ・フラン",
+      "ソーヴィニョン・ブラン",
+      "アルバリーニョ",
+      "デラウェア",
+      "ナイアガラ"
+    ],
+    "brands": [
+      "さっぽろブラン",
+      "さっぽろルージュ"
+    ],
+    "features": [
+      "有機肥料・無化学農薬栽培",
+      "天然酵母・無添加・無濾過",
+      "生物多様性農法"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約5分）",
     "source": "https://misono-vineyard.com/",
     "lat": 43.19,
@@ -857,13 +1386,36 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ミュラー・トゥルガウ", "ナイアガラ"],
-    "brands": [
-      {"name": "山田堂 ピノ・ノワール", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "山田堂 ロゼ・ピノ・ノワール", "type": "ロゼワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "山田堂 ニアガラ・スパークリング", "type": "スパークリングワイン", "specs": "", "grapes": "ナイアガラ"}
+    "grapes": [
+      "ピノ・ノワール",
+      "ミュラー・トゥルガウ",
+      "ナイアガラ"
     ],
-    "features": ["ドメーヌ・タカヒコ研修生出身", "日常テーブルワイン志向", "納屋改修ワイナリー"],
+    "brands": [
+      {
+        "name": "山田堂 ピノ・ノワール",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "山田堂 ロゼ・ピノ・ノワール",
+        "type": "ロゼワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "山田堂 ニアガラ・スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "",
+        "grapes": "ナイアガラ"
+      }
+    ],
+    "features": [
+      "ドメーヌ・タカヒコ研修生出身",
+      "日常テーブルワイン志向",
+      "納屋改修ワイナリー"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://yamadado.jp/",
     "lat": 43.2,
@@ -887,12 +1439,30 @@
     "wine_style": "red",
     "main_grape": "zweigelt",
     "gi": "GI北海道",
-    "grapes": ["ピノ・グリ", "ツヴァイゲルトレーベ", "旅路"],
-    "brands": [
-      {"name": "TABIJI（旅路）", "type": "白ワイン", "specs": "旅路100%", "grapes": "旅路"},
-      {"name": "Roadrunner 旅路", "type": "白ワイン", "specs": "", "grapes": "旅路"}
+    "grapes": [
+      "ピノ・グリ",
+      "ツヴァイゲルトレーベ",
+      "旅路"
     ],
-    "features": ["石蔵改造ワイナリー", "日常向けワイン志向", "珍しい旅路品種使用"],
+    "brands": [
+      {
+        "name": "TABIJI（旅路）",
+        "type": "白ワイン",
+        "specs": "旅路100%",
+        "grapes": "旅路"
+      },
+      {
+        "name": "Roadrunner 旅路",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "旅路"
+      }
+    ],
+    "features": [
+      "石蔵改造ワイナリー",
+      "日常向けワイン志向",
+      "珍しい旅路品種使用"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://lowbrowcraft.jp/",
     "lat": 43.2,
@@ -916,9 +1486,20 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "ケルナー"],
-    "brands": ["Snow River Chardonnay", "Snow River Pinot Gris"],
-    "features": ["10Rワイナリーで技術習得", "自社畑2ha", "移住就農型ワイナリー"],
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "ケルナー"
+    ],
+    "brands": [
+      "Snow River Chardonnay",
+      "Snow River Pinot Gris"
+    ],
+    "features": [
+      "10Rワイナリーで技術習得",
+      "自社畑2ha",
+      "移住就農型ワイナリー"
+    ],
     "nearest_station": "JR函館本線 余市駅（車約10分）",
     "source": "https://harada-sake.jp/yoka.html",
     "lat": 43.21,
@@ -942,13 +1523,42 @@
     "wine_style": "sparkling",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ピノ・グリ", "シャルドネ", "ピノ・ノワール", "ムニエ", "トラミーナ", "ピノ・ブラン", "オーセロワ", "メルロー", "ドルンフェルダー"],
-    "brands": [
-      {"name": "MUSUBI Sparkling", "type": "スパークリングワイン", "specs": "5品種を自然酵母で醸す瓶内二次発酵スパークリング。", "grapes": "ピノ・グリ、シャルドネ、ピノ・ノワール、ムニエ、トラミーナ"},
-      {"name": "MUSUBI", "type": "白ワイン", "specs": "複数品種の混醸による食中酒向きの白。", "grapes": "ピノ・ノワール、ピノ・グリ、ムニエ、シャルドネほか"},
-      {"name": "ENISHI", "type": "赤ワイン", "specs": "ムニエを主体にした淡いルビー色の赤。", "grapes": "ピノ・ノワール、ムニエ"}
+    "grapes": [
+      "ピノ・グリ",
+      "シャルドネ",
+      "ピノ・ノワール",
+      "ムニエ",
+      "トラミーナ",
+      "ピノ・ブラン",
+      "オーセロワ",
+      "メルロー",
+      "ドルンフェルダー"
     ],
-    "features": ["宿泊施設完備", "南斜面自社畑", "ワイナリーツアー実施"],
+    "brands": [
+      {
+        "name": "MUSUBI Sparkling",
+        "type": "スパークリングワイン",
+        "specs": "5品種を自然酵母で醸す瓶内二次発酵スパークリング。",
+        "grapes": "ピノ・グリ、シャルドネ、ピノ・ノワール、ムニエ、トラミーナ"
+      },
+      {
+        "name": "MUSUBI",
+        "type": "白ワイン",
+        "specs": "複数品種の混醸による食中酒向きの白。",
+        "grapes": "ピノ・ノワール、ピノ・グリ、ムニエ、シャルドネほか"
+      },
+      {
+        "name": "ENISHI",
+        "type": "赤ワイン",
+        "specs": "ムニエを主体にした淡いルビー色の赤。",
+        "grapes": "ピノ・ノワール、ムニエ"
+      }
+    ],
+    "features": [
+      "宿泊施設完備",
+      "南斜面自社畑",
+      "ワイナリーツアー実施"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約10分）",
     "source": "https://domaine-bless.com/",
     "lat": 43.26,
@@ -972,14 +1582,44 @@
     "wine_style": "white",
     "main_grape": "pinot_gris",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ピノ・グリ", "ゲヴュルツトラミネール", "ナイアガラ", "ポートランド"],
-    "brands": [
-      {"name": "ICHIシリーズ Pinot Noir", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "ICHIシリーズ Pinot Gris", "type": "白ワイン", "specs": "", "grapes": "ピノ・グリ"},
-      {"name": "蝦夷泡", "type": "ペティヤン", "specs": "", "grapes": "ナイアガラ"},
-      {"name": "Natural Xシリーズ", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "ピノ・ノワール",
+      "ピノ・グリ",
+      "ゲヴュルツトラミネール",
+      "ナイアガラ",
+      "ポートランド"
     ],
-    "features": ["日本初オーガニックワイン認定（2010年）", "有機JAS認証", "オーガニックワイナリー認定"],
+    "brands": [
+      {
+        "name": "ICHIシリーズ Pinot Noir",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "ICHIシリーズ Pinot Gris",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ピノ・グリ"
+      },
+      {
+        "name": "蝦夷泡",
+        "type": "ペティヤン",
+        "specs": "",
+        "grapes": "ナイアガラ"
+      },
+      {
+        "name": "Natural Xシリーズ",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "日本初オーガニックワイン認定（2010年）",
+      "有機JAS認証",
+      "オーガニックワイナリー認定"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約5分）",
     "source": "https://domaine-1.com/",
     "lat": 43.25,
@@ -1003,12 +1643,30 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ナイアガラ", "ピノ・グリ", "ピノ・ノワール"],
-    "brands": [
-      {"name": "オーガニックワイン", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "蝦夷泡（ペティヤン）", "type": "スパークリング", "specs": "", "grapes": "ナイアガラ"}
+    "grapes": [
+      "ナイアガラ",
+      "ピノ・グリ",
+      "ピノ・ノワール"
     ],
-    "features": ["有機JAS認定農場", "50ha大規模農場", "オーガニックワイン特化"],
+    "brands": [
+      {
+        "name": "オーガニックワイン",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "蝦夷泡（ペティヤン）",
+        "type": "スパークリング",
+        "specs": "",
+        "grapes": "ナイアガラ"
+      }
+    ],
+    "features": [
+      "有機JAS認定農場",
+      "50ha大規模農場",
+      "オーガニックワイン特化"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約5分）",
     "source": "https://shop2.organicwine.jp/",
     "lat": 43.25,
@@ -1032,14 +1690,49 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ピノ・グリ", "ピノ・ノワール", "シャルドネ", "ゲヴュルツトラミネール", "アルバリーニョ", "ヴィオニエ", "マルヴァジア", "ケルナー", "旅路", "ツヴァイゲルトレーベ"],
-    "brands": [
-      {"name": "OTARUVALLEY", "type": "白ワイン", "specs": "小樽市塩谷の自社畑8品種から造るフラッグシップ白。", "grapes": "ピノ・グリ、ピノ・ノワール、シャルドネ、ゲヴュルツトラミネールほか"},
-      {"name": "tabi", "type": "白ワイン", "specs": "小樽発祥の希少品種・旅路を使う白。", "grapes": "旅路"},
-      {"name": "MATENI ROSE", "type": "ロゼワイン", "specs": "ツヴァイゲルトレーベ100%の辛口ロゼ。", "grapes": "ツヴァイゲルトレーベ"},
-      {"name": "ocean", "type": "白ワイン", "specs": "北海道らしい香りと食事に寄り添う味わいの白。", "grapes": ""}
+    "grapes": [
+      "ピノ・グリ",
+      "ピノ・ノワール",
+      "シャルドネ",
+      "ゲヴュルツトラミネール",
+      "アルバリーニョ",
+      "ヴィオニエ",
+      "マルヴァジア",
+      "ケルナー",
+      "旅路",
+      "ツヴァイゲルトレーベ"
     ],
-    "features": ["夫婦2人運営", "日本の食に寄り添う白ワイン", "小樽運河近くのショップ"],
+    "brands": [
+      {
+        "name": "OTARUVALLEY",
+        "type": "白ワイン",
+        "specs": "小樽市塩谷の自社畑8品種から造るフラッグシップ白。",
+        "grapes": "ピノ・グリ、ピノ・ノワール、シャルドネ、ゲヴュルツトラミネールほか"
+      },
+      {
+        "name": "tabi",
+        "type": "白ワイン",
+        "specs": "小樽発祥の希少品種・旅路を使う白。",
+        "grapes": "旅路"
+      },
+      {
+        "name": "MATENI ROSE",
+        "type": "ロゼワイン",
+        "specs": "ツヴァイゲルトレーベ100%の辛口ロゼ。",
+        "grapes": "ツヴァイゲルトレーベ"
+      },
+      {
+        "name": "ocean",
+        "type": "白ワイン",
+        "specs": "北海道らしい香りと食事に寄り添う味わいの白。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "夫婦2人運営",
+      "日本の食に寄り添う白ワイン",
+      "小樽運河近くのショップ"
+    ],
     "nearest_station": "JR函館本線 小樽駅（徒歩約7分）",
     "source": "https://osawinery.com/",
     "lat": 43.19,
@@ -1063,13 +1756,41 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["メルロー", "セイベル13053", "キャンベル", "ポートランド", "カベルネ・ソーヴィニヨン", "シラー", "アルモノワール"],
-    "brands": [
-      {"name": "恋ワインシリーズ", "type": "甘口ワイン", "specs": "独自のCuVT製法で造る北海道GI認定の甘口ワイン。", "grapes": "キャンベル、ポートランド"},
-      {"name": "KANONZ 赤ワイン", "type": "赤ワイン", "specs": "自社農園の欧州系品種やハイブリッド品種を使う赤。", "grapes": "メルロー、セイベル13053ほか"},
-      {"name": "K-Rouge#1", "type": "赤ワイン", "specs": "自家生産の複数品種を混醸した赤。", "grapes": "カベルネ・ソーヴィニヨン、シラー、アルモノワール"}
+    "grapes": [
+      "メルロー",
+      "セイベル13053",
+      "キャンベル",
+      "ポートランド",
+      "カベルネ・ソーヴィニヨン",
+      "シラー",
+      "アルモノワール"
     ],
-    "features": ["札幌都心から車30分の立地", "ワイナリーツアー実施", "八剣山キッチン＆マルシェ併設", "国際コンクール受賞"],
+    "brands": [
+      {
+        "name": "恋ワインシリーズ",
+        "type": "甘口ワイン",
+        "specs": "独自のCuVT製法で造る北海道GI認定の甘口ワイン。",
+        "grapes": "キャンベル、ポートランド"
+      },
+      {
+        "name": "KANONZ 赤ワイン",
+        "type": "赤ワイン",
+        "specs": "自社農園の欧州系品種やハイブリッド品種を使う赤。",
+        "grapes": "メルロー、セイベル13053ほか"
+      },
+      {
+        "name": "K-Rouge#1",
+        "type": "赤ワイン",
+        "specs": "自家生産の複数品種を混醸した赤。",
+        "grapes": "カベルネ・ソーヴィニヨン、シラー、アルモノワール"
+      }
+    ],
+    "features": [
+      "札幌都心から車30分の立地",
+      "ワイナリーツアー実施",
+      "八剣山キッチン＆マルシェ併設",
+      "国際コンクール受賞"
+    ],
     "nearest_station": "地下鉄南北線 真駒内駅（バスまたは車約20分）",
     "source": "https://hakkenzanwine.com/products/-/kanonz-redwine/",
     "lat": 42.96,
@@ -1093,12 +1814,34 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ミュラー・トゥルガウ", "ヴァイスブルグンダー（ピノ・ブラン）", "ツヴァイゲルト", "レンベルガー", "ゲヴュルツトラミネール", "バッカス", "ロンド"],
-    "brands": [
-      {"name": "鶴沼収穫 ゲヴュルツトラミネール", "type": "白ワイン", "specs": "", "grapes": "ゲヴュルツトラミネール"},
-      {"name": "鶴沼収穫 ツヴァイゲルト", "type": "赤ワイン", "specs": "", "grapes": "ツヴァイゲルト"}
+    "grapes": [
+      "ミュラー・トゥルガウ",
+      "ヴァイスブルグンダー（ピノ・ブラン）",
+      "ツヴァイゲルト",
+      "レンベルガー",
+      "ゲヴュルツトラミネール",
+      "バッカス",
+      "ロンド"
     ],
-    "features": ["日本最大の垣根式ぶどう畑（447ha）", "スマート農業・AIロボット導入", "40品種栽培"],
+    "brands": [
+      {
+        "name": "鶴沼収穫 ゲヴュルツトラミネール",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ゲヴュルツトラミネール"
+      },
+      {
+        "name": "鶴沼収穫 ツヴァイゲルト",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ツヴァイゲルト"
+      }
+    ],
+    "features": [
+      "日本最大の垣根式ぶどう畑（447ha）",
+      "スマート農業・AIロボット導入",
+      "40品種栽培"
+    ],
     "nearest_station": "JR学園都市線 浦臼駅（車約10分）",
     "source": "https://www.hokkaidowine.com/contents/tsurunuma/index.html",
     "lat": 43.63,
@@ -1122,13 +1865,39 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["セイベル13053", "メルロー", "ヤマソービニヨン", "ザラジェンジェ", "セイベル9110", "シャルドネ"],
-    "brands": [
-      {"name": "乙部醸造ワイン 赤", "type": "赤ワイン", "specs": "北海道産ぶどう100%のミディアム赤。", "grapes": "セイベル13053、メルロー、ヤマソービニヨン"},
-      {"name": "乙部醸造ワイン 白", "type": "白ワイン", "specs": "北海道産ぶどう100%の中口白。", "grapes": "ザラジェンジェ、セイベル9110、シャルドネ"},
-      {"name": "ミスタージンギスカン", "type": "赤ワイン", "specs": "ジンギスカン料理に合わせた赤。", "grapes": "セイベル13053、ヤマソービニヨン"}
+    "grapes": [
+      "セイベル13053",
+      "メルロー",
+      "ヤマソービニヨン",
+      "ザラジェンジェ",
+      "セイベル9110",
+      "シャルドネ"
     ],
-    "features": ["自社畑10ha", "年間25,000本生産", "道南乙部町の老舗ワイナリー"],
+    "brands": [
+      {
+        "name": "乙部醸造ワイン 赤",
+        "type": "赤ワイン",
+        "specs": "北海道産ぶどう100%のミディアム赤。",
+        "grapes": "セイベル13053、メルロー、ヤマソービニヨン"
+      },
+      {
+        "name": "乙部醸造ワイン 白",
+        "type": "白ワイン",
+        "specs": "北海道産ぶどう100%の中口白。",
+        "grapes": "ザラジェンジェ、セイベル9110、シャルドネ"
+      },
+      {
+        "name": "ミスタージンギスカン",
+        "type": "赤ワイン",
+        "specs": "ジンギスカン料理に合わせた赤。",
+        "grapes": "セイベル13053、ヤマソービニヨン"
+      }
+    ],
+    "features": [
+      "自社畑10ha",
+      "年間25,000本生産",
+      "道南乙部町の老舗ワイナリー"
+    ],
     "nearest_station": "JR函館本線 八雲駅（バスまたは車約30分）",
     "source": "https://www.sapporo-shusei.jp/otobewinery/",
     "lat": 42.21,
@@ -1152,12 +1921,32 @@
     "wine_style": "red",
     "main_grape": "merlot",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ", "ナイアガラ", "メルロー", "マルセラン", "セイベル"],
-    "brands": [
-      {"name": "上ノ国 シャルドネ", "type": "白ワイン", "specs": "", "grapes": "シャルドネ"},
-      {"name": "上ノ国 メルロー", "type": "赤ワイン", "specs": "", "grapes": "メルロー"}
+    "grapes": [
+      "シャルドネ",
+      "ナイアガラ",
+      "メルロー",
+      "マルセラン",
+      "セイベル"
     ],
-    "features": ["全国初サテライトオフィス併設（2021年11月開業）", "新規就農者募集", "ワイン教室・ツーリズムイベント"],
+    "brands": [
+      {
+        "name": "上ノ国 シャルドネ",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "上ノ国 メルロー",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "メルロー"
+      }
+    ],
+    "features": [
+      "全国初サテライトオフィス併設（2021年11月開業）",
+      "新規就農者募集",
+      "ワイン教室・ツーリズムイベント"
+    ],
     "nearest_station": "木古内駅（バスまたは車約1時間）",
     "source": "https://kaminokuni-winery.jp/",
     "lat": 41.93,
@@ -1181,14 +1970,43 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "メルロー", "シャルドネ", "バッカス"],
-    "brands": [
-      {"name": "多田ワイナリー ピノ・ノワール", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "多田ワイナリー シードル", "type": "シードル", "specs": "", "grapes": ""},
-      {"name": "ブラン・ド・ノワール", "type": "白ワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "オレンジワイン", "type": "オレンジワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "ピノ・ノワール",
+      "メルロー",
+      "シャルドネ",
+      "バッカス"
     ],
-    "features": ["除草剤・化学肥料不使用", "野生酵母発酵", "宿泊施設「ワイナリーの宿 田舎倶楽部」併設"],
+    "brands": [
+      {
+        "name": "多田ワイナリー ピノ・ノワール",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "多田ワイナリー シードル",
+        "type": "シードル",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "ブラン・ド・ノワール",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "オレンジワイン",
+        "type": "オレンジワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "除草剤・化学肥料不使用",
+      "野生酵母発酵",
+      "宿泊施設「ワイナリーの宿 田舎倶楽部」併設"
+    ],
     "nearest_station": "JR富良野線 上富良野駅（車約10分）",
     "source": "https://ninjin-koubou.com/",
     "lat": 43.47,
@@ -1212,13 +2030,36 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ソーヴィニヨン・ブラン", "シャルドネ"],
-    "brands": [
-      {"name": "中富良野ソーヴィニヨンブラン", "type": "白ワイン", "specs": "中富良野町の自社圃場産ソーヴィニヨン・ブラン100%。", "grapes": "ソーヴィニヨン・ブラン"},
-      {"name": "中富良野シャルドネ", "type": "白ワイン", "specs": "自園葡萄100%の樽発酵白。", "grapes": "シャルドネ"},
-      {"name": "中富良野ロゼ", "type": "ロゼワイン", "specs": "富良野エリアの自社圃場ぶどうを使うロゼ。", "grapes": ""}
+    "grapes": [
+      "ソーヴィニヨン・ブラン",
+      "シャルドネ"
     ],
-    "features": ["やぎ共生農法", "10ha自社圃場", "宿泊施設「一花」併設", "サスティナブルワイン造り"],
+    "brands": [
+      {
+        "name": "中富良野ソーヴィニヨンブラン",
+        "type": "白ワイン",
+        "specs": "中富良野町の自社圃場産ソーヴィニヨン・ブラン100%。",
+        "grapes": "ソーヴィニヨン・ブラン"
+      },
+      {
+        "name": "中富良野シャルドネ",
+        "type": "白ワイン",
+        "specs": "自園葡萄100%の樽発酵白。",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "中富良野ロゼ",
+        "type": "ロゼワイン",
+        "specs": "富良野エリアの自社圃場ぶどうを使うロゼ。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "やぎ共生農法",
+      "10ha自社圃場",
+      "宿泊施設「一花」併設",
+      "サスティナブルワイン造り"
+    ],
     "nearest_station": "JR富良野線 中富良野駅（車約10分）",
     "source": "https://domaine-raison.com/",
     "lat": 43.41,
@@ -1242,11 +2083,27 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ", "ミュラー・トゥルガウ", "ピノ・ブラン", "ピノ・グリ", "リースリング", "ピノ・ノワール", "ツヴァイゲルトレーベ"],
-    "brands": [
-      {"name": "Regenbogen（レーゲンボーゲン）", "type": "白ワイン", "specs": "滝川産ぶどう7品種を使う白ワイン。", "grapes": "シャルドネ、ミュラー・トゥルガウ、ピノ・ブラン、ピノ・グリ、リースリング、ピノ・ノワール、ツヴァイゲルトレーベ"}
+    "grapes": [
+      "シャルドネ",
+      "ミュラー・トゥルガウ",
+      "ピノ・ブラン",
+      "ピノ・グリ",
+      "リースリング",
+      "ピノ・ノワール",
+      "ツヴァイゲルトレーベ"
     ],
-    "features": ["空知・滝川産ぶどう使用", "黒ブドウ2品種・白ブドウ5品種栽培"],
+    "brands": [
+      {
+        "name": "Regenbogen（レーゲンボーゲン）",
+        "type": "白ワイン",
+        "specs": "滝川産ぶどう7品種を使う白ワイン。",
+        "grapes": "シャルドネ、ミュラー・トゥルガウ、ピノ・ブラン、ピノ・グリ、リースリング、ピノ・ノワール、ツヴァイゲルトレーベ"
+      }
+    ],
+    "features": [
+      "空知・滝川産ぶどう使用",
+      "黒ブドウ2品種・白ブドウ5品種栽培"
+    ],
     "nearest_station": "JR函館本線 江部乙駅（車約5分）",
     "source": "https://winecluster.org/contents/winery/",
     "lat": 43.65,
@@ -1270,12 +2127,28 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ミュラー・トゥルガウ"],
-    "brands": [
-      {"name": "松原農園 ミュラートゥルガウ", "type": "白ワイン", "specs": "", "grapes": "ミュラー・トゥルガウ"},
-      {"name": "松原農園 スパークリング", "type": "スパークリングワイン", "specs": "瓶内二次発酵", "grapes": ""}
+    "grapes": [
+      "ミュラー・トゥルガウ"
     ],
-    "features": ["1993年開拓、2014年自家醸造開始", "ミュラー・トゥルガウ特化", "後志・蘭越産"],
+    "brands": [
+      {
+        "name": "松原農園 ミュラートゥルガウ",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ミュラー・トゥルガウ"
+      },
+      {
+        "name": "松原農園 スパークリング",
+        "type": "スパークリングワイン",
+        "specs": "瓶内二次発酵",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1993年開拓、2014年自家醸造開始",
+      "ミュラー・トゥルガウ特化",
+      "後志・蘭越産"
+    ],
     "nearest_station": "JR函館本線 蘭越駅（車約10分）",
     "source": "https://terroir.media/?p=6732",
     "lat": 42.91,
@@ -1299,11 +2172,23 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山ソービニオン", "山ブドウ"],
-    "brands": [
-      {"name": "馬追ワイン", "type": "赤ワイン", "specs": "馬追丘陵の山ブドウ系品種を中心に醸造。", "grapes": "山ソービニオン、山ブドウ"}
+    "grapes": [
+      "山ソービニオン",
+      "山ブドウ"
     ],
-    "features": ["ワイン・ウイスキー・ブランデー複合蒸溜所", "スコットランド製蒸溜器導入", "馬追丘陵立地"],
+    "brands": [
+      {
+        "name": "馬追ワイン",
+        "type": "赤ワイン",
+        "specs": "馬追丘陵の山ブドウ系品種を中心に醸造。",
+        "grapes": "山ソービニオン、山ブドウ"
+      }
+    ],
+    "features": [
+      "ワイン・ウイスキー・ブランデー複合蒸溜所",
+      "スコットランド製蒸溜器導入",
+      "馬追丘陵立地"
+    ],
     "nearest_station": "JR千歳線 長沼駅（車約10分）",
     "source": "https://www.winery.or.jp/winery-map/6995/",
     "lat": 42.86,
@@ -1327,13 +2212,39 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ", "ケルナー", "シュナーベ", "リースリング", "ピノ・ノワール", "ツヴァイゲルト"],
-    "brands": [
-      {"name": "MARO Wines シャルドネ", "type": "白ワイン", "specs": "", "grapes": "シャルドネ"},
-      {"name": "MARO Wines ピノ・ノワール", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "KOYAMARO", "type": "赤・白", "specs": "コラボレーションライン", "grapes": ""}
+    "grapes": [
+      "シャルドネ",
+      "ケルナー",
+      "シュナーベ",
+      "リースリング",
+      "ピノ・ノワール",
+      "ツヴァイゲルト"
     ],
-    "features": ["日本初シェア型ワイナリー", "複数ワイナリー共同醸造設備", "新千歳空港から20分"],
+    "brands": [
+      {
+        "name": "MARO Wines シャルドネ",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "MARO Wines ピノ・ノワール",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "KOYAMARO",
+        "type": "赤・白",
+        "specs": "コラボレーションライン",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "日本初シェア型ワイナリー",
+      "複数ワイナリー共同醸造設備",
+      "新千歳空港から20分"
+    ],
     "nearest_station": "JR千歳線 長沼駅（車約15分）",
     "source": "https://hokkaido-space-winery.com/",
     "lat": 42.85,
@@ -1357,12 +2268,29 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["清見"],
-    "brands": [
-      {"name": "つながる", "type": "赤ワイン", "specs": "", "grapes": ""},
-      {"name": "めむろ 清見", "type": "赤ワイン", "specs": "", "grapes": "清見"}
+    "grapes": [
+      "清見"
     ],
-    "features": ["共同ドメーヌ方式", "十勝産ぶどう使用", "さくらアワード2026ダブルゴールド受賞", "北のハイグレード食品2026選定"],
+    "brands": [
+      {
+        "name": "つながる",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "めむろ 清見",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "清見"
+      }
+    ],
+    "features": [
+      "共同ドメーヌ方式",
+      "十勝産ぶどう使用",
+      "さくらアワード2026ダブルゴールド受賞",
+      "北のハイグレード食品2026選定"
+    ],
     "nearest_station": "JR根室本線 芽室駅（車約10分）",
     "source": "https://memurowinery.jp/",
     "lat": 42.91,
@@ -1386,12 +2314,31 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ヤマブドウ", "山幸", "清舞", "清見"],
-    "brands": [
-      {"name": "あいざわ農園 山幸", "type": "赤ワイン", "specs": "", "grapes": "山幸"},
-      {"name": "あいざわ農園 ヤマブドウ", "type": "赤ワイン", "specs": "", "grapes": "ヤマブドウ"}
+    "grapes": [
+      "ヤマブドウ",
+      "山幸",
+      "清舞",
+      "清見"
     ],
-    "features": ["JAS有機農産物認定（2017年）", "化学肥料・農薬不使用", "十勝在来品種使用"],
+    "brands": [
+      {
+        "name": "あいざわ農園 山幸",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "山幸"
+      },
+      {
+        "name": "あいざわ農園 ヤマブドウ",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ヤマブドウ"
+      }
+    ],
+    "features": [
+      "JAS有機農産物認定（2017年）",
+      "化学肥料・農薬不使用",
+      "十勝在来品種使用"
+    ],
     "nearest_station": "JR根室本線 帯広駅（車約20分）",
     "source": "https://aizawanouen.com/about/",
     "lat": 42.92,
@@ -1415,12 +2362,31 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ケルナー", "ツヴァイゲルト"],
-    "brands": [
-      {"name": "ド・モンティーユ＆北海道 ピノ・ノワール", "type": "赤ワイン", "specs": "2022年産", "grapes": "ピノ・ノワール"},
-      {"name": "ド・モンティーユ＆北海道 ケルナー", "type": "白ワイン", "specs": "2022年産", "grapes": "ケルナー"}
+    "grapes": [
+      "ピノ・ノワール",
+      "ケルナー",
+      "ツヴァイゲルト"
     ],
-    "features": ["フランス・ブルゴーニュ300年の名門ワイナリー進出", "2階建てワイナリー（延べ床1,500㎡）", "2階レストラン・テラス・試飲スペース", "約13ha栽培"],
+    "brands": [
+      {
+        "name": "ド・モンティーユ＆北海道 ピノ・ノワール",
+        "type": "赤ワイン",
+        "specs": "2022年産",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "ド・モンティーユ＆北海道 ケルナー",
+        "type": "白ワイン",
+        "specs": "2022年産",
+        "grapes": "ケルナー"
+      }
+    ],
+    "features": [
+      "フランス・ブルゴーニュ300年の名門ワイナリー進出",
+      "2階建てワイナリー（延べ床1,500㎡）",
+      "2階レストラン・テラス・試飲スペース",
+      "約13ha栽培"
+    ],
     "nearest_station": "JR函館本線 七飯駅（車約15分）",
     "source": "https://www.demontille-hokkaido.com/",
     "lat": 41.87,
@@ -1437,22 +2403,46 @@
     "founded_era": "平成30年",
     "address": "北海道余市郡仁木町旭台228-1",
     "tel": "",
-    "url": "http://vina-de-oro-bodega.net/",
+    "url": "https://bodega0405.thebase.in/",
     "area": "仁木町",
     "desc": "2018年に国内最年少ワインメーカーとして初醸造をスタート。仁木町内の葡萄や自社農園の葡萄でのワイン醸造を主軸にワイナリー経営を行っています。",
     "visit": "営業日・見学対応は事前確認推奨。",
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ナイアガラ", "リースリング", "ケルナー", "ソーヴィニヨン・ブラン"],
-    "brands": [
-      {"name": "The door Pinot Noir", "type": "赤ワイン", "specs": "ピノ・ノワールを使う赤。", "grapes": "ピノ・ノワール"},
-      {"name": "The day Sparkling", "type": "スパークリングワイン", "specs": "ナイアガラ主体のスパークリング。", "grapes": "ナイアガラ、リースリング"},
-      {"name": "The birth", "type": "ロゼスパークリング", "specs": "ピノ・ノワールを使うロゼスパークリング。", "grapes": "ピノ・ノワール"}
+    "grapes": [
+      "ピノ・ノワール",
+      "ナイアガラ",
+      "リースリング",
+      "ケルナー",
+      "ソーヴィニヨン・ブラン"
     ],
-    "features": ["国内最年少ワインメーカーとして創業（2018年）", "仁木町自社農園使用"],
+    "brands": [
+      {
+        "name": "The door Pinot Noir",
+        "type": "赤ワイン",
+        "specs": "ピノ・ノワールを使う赤。",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "The day Sparkling",
+        "type": "スパークリングワイン",
+        "specs": "ナイアガラ主体のスパークリング。",
+        "grapes": "ナイアガラ、リースリング"
+      },
+      {
+        "name": "The birth",
+        "type": "ロゼスパークリング",
+        "specs": "ピノ・ノワールを使うロゼスパークリング。",
+        "grapes": "ピノ・ノワール"
+      }
+    ],
+    "features": [
+      "国内最年少ワインメーカーとして創業（2018年）",
+      "仁木町自社農園使用"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約10分）",
-    "source": "https://niki-fruit-wine-maranic.jp/info/%E3%82%A8%E3%82%A4%E3%83%89%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%8F%90%E4%BE%9B%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%AE%E7%B4%B9%E4%BB%8B%EF%BC%81%EF%BC%81%EF%BC%8821%E3%8E%9E%E3%82%B3/",
+    "source": "https://bodega0405.thebase.in/",
     "lat": 43.26,
     "lng": 140.73,
     "name_en": "Vina de oro bodega"
@@ -1474,11 +2464,25 @@
     "wine_style": "white",
     "main_grape": "pinot_gris",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ソーヴィニョン・ブラン", "オーセロワ", "ピノ・グリ"],
-    "brands": [
-      {"name": "KONDOヴィンヤード クヴェヴリ", "type": "オレンジワイン", "specs": "クヴェヴリ醸造", "grapes": ""}
+    "grapes": [
+      "ピノ・ノワール",
+      "ソーヴィニョン・ブラン",
+      "オーセロワ",
+      "ピノ・グリ"
     ],
-    "features": ["クヴェヴリ（ジョージア製壷）醸造", "家族経営小規模ワイナリー", "馬搬農業実践"],
+    "brands": [
+      {
+        "name": "KONDOヴィンヤード クヴェヴリ",
+        "type": "オレンジワイン",
+        "specs": "クヴェヴリ醸造",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "クヴェヴリ（ジョージア製壷）醸造",
+      "家族経営小規模ワイナリー",
+      "馬搬農業実践"
+    ],
     "nearest_station": "JR函館本線 栗沢駅（車約10分）",
     "source": "https://www.kondo-vineyard.com/",
     "lat": 43.15,
@@ -1502,15 +2506,39 @@
     "wine_style": "red",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "ピノ・グリ", "バッカス", "ソーヴィニヨン・ブラン"],
-    "brands": [
-      {"name": "ヴィーニュ・シャンタント ヴォロンテ", "type": "ワイン", "specs": "宮本ヴィンヤード/濱田ヴィンヤードのラインナップ。", "grapes": ""},
-      {"name": "ヴィーニュ・シャンタント プリズム", "type": "ワイン", "specs": "空知・三笠の畑を表現するワイン。", "grapes": ""},
-      {"name": "濱田ヴィンヤード Blanc", "type": "白ワイン", "specs": "濱田ヴィンヤードの白。", "grapes": "バッカス、ソーヴィニヨン・ブランほか"}
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "ピノ・グリ",
+      "バッカス",
+      "ソーヴィニヨン・ブラン"
     ],
-    "features": ["三笠市立地", "空知エリアの新興ワイナリー"],
+    "brands": [
+      {
+        "name": "ヴィーニュ・シャンタント ヴォロンテ",
+        "type": "ワイン",
+        "specs": "宮本ヴィンヤード/濱田ヴィンヤードのラインナップ。",
+        "grapes": ""
+      },
+      {
+        "name": "ヴィーニュ・シャンタント プリズム",
+        "type": "ワイン",
+        "specs": "空知・三笠の畑を表現するワイン。",
+        "grapes": ""
+      },
+      {
+        "name": "濱田ヴィンヤード Blanc",
+        "type": "白ワイン",
+        "specs": "濱田ヴィンヤードの白。",
+        "grapes": "バッカス、ソーヴィニヨン・ブランほか"
+      }
+    ],
+    "features": [
+      "三笠市立地",
+      "空知エリアの新興ワイナリー"
+    ],
     "nearest_station": "JR函館本線 三笠駅（車約10分）",
-    "source": "https://www.pref.hokkaido.lg.jp/fs/1/1/2/9/0/6/6/8/_/01_%E7%A9%BA%E7%9F%A5%E3%82%A8%E3%83%AA%E3%82%A2%E3%80%90R7.2%E7%8F%BE%E5%9C%A8%E3%80%91.pdf",
+    "source": "https://www.winery.or.jp/winery-map/17431/",
     "lat": 43.4,
     "lng": 141.98,
     "name_en": "Les Vins de Tapcolline"
@@ -1532,22 +2560,28 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ", "ヤマソーヴィニョン"],
-  "brands": [
-    {
-      "name": "さっぽろワイン シャルドネ",
-      "type": "白ワイン",
-      "specs": "札幌近郊のぶどうを生かした白ワイン。",
-      "grapes": "シャルドネ"
-    },
-    {
-      "name": "さっぽろワイン ヤマソーヴィニョン",
-      "type": "赤ワイン",
-      "specs": "ヤマソーヴィニョンを使う地域密着型ワイン。",
-      "grapes": "ヤマソーヴィニョン"
-    }
-  ],
-    "features": ["札幌市4番目のワイナリー", "地域密着型ワイン造り"],
+    "grapes": [
+      "シャルドネ",
+      "ヤマソーヴィニョン"
+    ],
+    "brands": [
+      {
+        "name": "さっぽろワイン シャルドネ",
+        "type": "白ワイン",
+        "specs": "札幌近郊のぶどうを生かした白ワイン。",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "さっぽろワイン ヤマソーヴィニョン",
+        "type": "赤ワイン",
+        "specs": "ヤマソーヴィニョンを使う地域密着型ワイン。",
+        "grapes": "ヤマソーヴィニョン"
+      }
+    ],
+    "features": [
+      "札幌市4番目のワイナリー",
+      "地域密着型ワイン造り"
+    ],
     "nearest_station": "JR函館本線 手稲駅（車約5分）",
     "source": "https://en.sapporo-wine.com/",
     "lat": 43.09,
@@ -1571,12 +2605,29 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["バッカス", "小公子"],
-    "brands": [
-      {"name": "森臥 小公子", "type": "赤ワイン", "specs": "", "grapes": "小公子"},
-      {"name": "森臥 バッカス", "type": "白ワイン", "specs": "", "grapes": "バッカス"}
+    "grapes": [
+      "バッカス",
+      "小公子"
     ],
-    "features": ["日本最北エリアのワイナリー", "名寄産ぶどう特化", "小公子・バッカス主体"],
+    "brands": [
+      {
+        "name": "森臥 小公子",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "小公子"
+      },
+      {
+        "name": "森臥 バッカス",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "バッカス"
+      }
+    ],
+    "features": [
+      "日本最北エリアのワイナリー",
+      "名寄産ぶどう特化",
+      "小公子・バッカス主体"
+    ],
     "nearest_station": "JR宗谷本線 名寄駅（車約15分）",
     "source": "https://shinga-shinga.jimdofree.com/",
     "lat": 44.35,
@@ -1600,11 +2651,26 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸", "清見", "清舞", "ナイアガラ", "ニューナイアガラ"],
-    "brands": [
-      {"name": "まきばの家 山幸", "type": "赤ワイン", "specs": "", "grapes": "山幸"}
+    "grapes": [
+      "山幸",
+      "清見",
+      "清舞",
+      "ナイアガラ",
+      "ニューナイアガラ"
     ],
-    "features": ["牧場「まきばの家」が運営", "十勝在来品種使用", "池田町内ワイナリー"],
+    "brands": [
+      {
+        "name": "まきばの家 山幸",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "山幸"
+      }
+    ],
+    "features": [
+      "牧場「まきばの家」が運営",
+      "十勝在来品種使用",
+      "池田町内ワイナリー"
+    ],
     "nearest_station": "JR根室本線 池田駅（車約10分）",
     "source": "https://makibanoie.com/winery/",
     "lat": 43.11,
@@ -1628,34 +2694,45 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["ミュラー・トゥルガウ", "ピノ・グリ", "シャルドネ", "ナイアガラ", "ピノ・ノワール", "ソーヴィニョン・ブラン"],
-  "brands": [
-    {
-      "name": "スノーリバー ミュラー Hachi アンバー",
-      "type": "オレンジワイン",
-      "specs": "ミュラー・トゥルガウを醸したアンバーワイン。",
-      "grapes": "ミュラー・トゥルガウ"
-    },
-    {
-      "name": "スノーリバー ピノ・グリ Hachi",
-      "type": "白ワイン",
-      "specs": "東川・北海道の冷涼感を表すピノ・グリ。",
-      "grapes": "ピノ・グリ"
-    },
-    {
-      "name": "スノーリバー シャルドネ Hachi 樽熟成",
-      "type": "白ワイン",
-      "specs": "シャルドネ100%、樽熟成の白ワイン。",
-      "grapes": "シャルドネ"
-    },
-    {
-      "name": "スノーリバー ピノ・ノワール Hachi",
-      "type": "赤ワイン",
-      "specs": "北海道産ピノ・ノワールの赤ワイン。",
-      "grapes": "ピノ・ノワール"
-    }
-  ],
-    "features": ["大雪山麓立地", "雪解け水・寒暖差を活かしたテロワール", "南半球でも修業"],
+    "grapes": [
+      "ミュラー・トゥルガウ",
+      "ピノ・グリ",
+      "シャルドネ",
+      "ナイアガラ",
+      "ピノ・ノワール",
+      "ソーヴィニョン・ブラン"
+    ],
+    "brands": [
+      {
+        "name": "スノーリバー ミュラー Hachi アンバー",
+        "type": "オレンジワイン",
+        "specs": "ミュラー・トゥルガウを醸したアンバーワイン。",
+        "grapes": "ミュラー・トゥルガウ"
+      },
+      {
+        "name": "スノーリバー ピノ・グリ Hachi",
+        "type": "白ワイン",
+        "specs": "東川・北海道の冷涼感を表すピノ・グリ。",
+        "grapes": "ピノ・グリ"
+      },
+      {
+        "name": "スノーリバー シャルドネ Hachi 樽熟成",
+        "type": "白ワイン",
+        "specs": "シャルドネ100%、樽熟成の白ワイン。",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "スノーリバー ピノ・ノワール Hachi",
+        "type": "赤ワイン",
+        "specs": "北海道産ピノ・ノワールの赤ワイン。",
+        "grapes": "ピノ・ノワール"
+      }
+    ],
+    "features": [
+      "大雪山麓立地",
+      "雪解け水・寒暖差を活かしたテロワール",
+      "南半球でも修業"
+    ],
     "nearest_station": "旭川空港（車約15分）",
     "source": "https://www.snowriverwines.com/",
     "lat": 43.69,
@@ -1679,11 +2756,24 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["メルロー", "ピノ・ノワール", "ピノ・ブラン"],
-    "brands": [
-      {"name": "Due Punti 文月 白", "type": "白ワイン", "specs": "", "grapes": "ピノ・ブラン"}
+    "grapes": [
+      "メルロー",
+      "ピノ・ノワール",
+      "ピノ・ブラン"
     ],
-    "features": ["道南北斗市立地", "道南ワインガーデン参加", "新進気鋭の栽培・醸造家運営"],
+    "brands": [
+      {
+        "name": "Due Punti 文月 白",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ピノ・ブラン"
+      }
+    ],
+    "features": [
+      "道南北斗市立地",
+      "道南ワインガーデン参加",
+      "新進気鋭の栽培・醸造家運営"
+    ],
     "nearest_station": "北海道新幹線 新函館北斗駅（車約10分）",
     "source": "https://en.due-punti-vineyards.com/",
     "lat": 41.84,
@@ -1707,11 +2797,21 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ"],
-    "brands": [
-      {"name": "マルメガネ シャルドネ", "type": "白ワイン", "specs": "", "grapes": "シャルドネ"}
+    "grapes": [
+      "シャルドネ"
     ],
-    "features": ["ワインインポーター出身の醸造家", "ボジョレー研修後に北海道で創業"],
+    "brands": [
+      {
+        "name": "マルメガネ シャルドネ",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ"
+      }
+    ],
+    "features": [
+      "ワインインポーター出身の醸造家",
+      "ボジョレー研修後に北海道で創業"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約5分）",
     "source": "https://wineshop.tokyo/archives/marumegane.html",
     "lat": 43.25,
@@ -1735,30 +2835,37 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸", "清舞"],
-  "brands": [
-    {
-      "name": "北見PremiumRose",
-      "type": "ロゼワイン",
-      "specs": "北見産ぶどうを使うプレミアムロゼ。",
-      "grapes": "山幸、清舞ほか"
-    },
-    {
-      "name": "遅摘み山幸",
-      "type": "赤ワイン",
-      "specs": "山幸を遅摘みで仕込む赤ワイン。",
-      "grapes": "山幸"
-    },
-    {
-      "name": "Campbell Early Rose",
-      "type": "ロゼワイン",
-      "specs": "キャンベル・アーリーを使うロゼ。",
-      "grapes": "キャンベル・アーリー"
-    }
-  ],
-    "features": ["和牛農場が運営するワイナリー", "オホーツク立地", "山幸・清舞使用"],
+    "grapes": [
+      "山幸",
+      "清舞"
+    ],
+    "brands": [
+      {
+        "name": "北見PremiumRose",
+        "type": "ロゼワイン",
+        "specs": "北見産ぶどうを使うプレミアムロゼ。",
+        "grapes": "山幸、清舞ほか"
+      },
+      {
+        "name": "遅摘み山幸",
+        "type": "赤ワイン",
+        "specs": "山幸を遅摘みで仕込む赤ワイン。",
+        "grapes": "山幸"
+      },
+      {
+        "name": "Campbell Early Rose",
+        "type": "ロゼワイン",
+        "specs": "キャンベル・アーリーを使うロゼ。",
+        "grapes": "キャンベル・アーリー"
+      }
+    ],
+    "features": [
+      "和牛農場が運営するワイナリー",
+      "オホーツク立地",
+      "山幸・清舞使用"
+    ],
     "nearest_station": "JR石北本線 北見駅（車約20分）",
-  "source": "https://miraifarm.co.jp/wine/",
+    "source": "https://miraifarm.co.jp/wine/",
     "lat": 43.81,
     "lng": 143.89,
     "name_en": "Infield Winery"
@@ -1780,11 +2887,25 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ソーヴィニヨン・ブラン", "ソーヴィニヨン・グリ", "ゲヴュルツトラミネール", "サヴァニャン・ブラン"],
-    "brands": [
-      {"name": "ワイン畑 浦本", "type": "日本ワイン", "specs": "岩見沢市栗沢町の畑を表現する小規模生産。", "grapes": "ピノ・ノワールほか"}
+    "grapes": [
+      "ピノ・ノワール",
+      "ソーヴィニヨン・ブラン",
+      "ソーヴィニヨン・グリ",
+      "ゲヴュルツトラミネール",
+      "サヴァニャン・ブラン"
     ],
-    "features": ["岩見沢市立地の新興ワイナリー", "自社畑栽培"],
+    "brands": [
+      {
+        "name": "ワイン畑 浦本",
+        "type": "日本ワイン",
+        "specs": "岩見沢市栗沢町の畑を表現する小規模生産。",
+        "grapes": "ピノ・ノワールほか"
+      }
+    ],
+    "features": [
+      "岩見沢市立地の新興ワイナリー",
+      "自社畑栽培"
+    ],
     "nearest_station": "JR函館本線 岩見沢駅（車約20分）",
     "source": "https://www.winebatake.com/introduction/",
     "lat": 43.2,
@@ -1808,11 +2929,21 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸"],
-    "brands": [
-      {"name": "ミンツチ", "type": "赤微発泡ワイン", "specs": "山幸を使うナチュラルな赤微発泡。", "grapes": "山幸"}
+    "grapes": [
+      "山幸"
     ],
-    "features": ["アイヌ語名称のワイナリー", "上富良野・大雪山系立地"],
+    "brands": [
+      {
+        "name": "ミンツチ",
+        "type": "赤微発泡ワイン",
+        "specs": "山幸を使うナチュラルな赤微発泡。",
+        "grapes": "山幸"
+      }
+    ],
+    "features": [
+      "アイヌ語名称のワイナリー",
+      "上富良野・大雪山系立地"
+    ],
     "nearest_station": "JR富良野線 上富良野駅（車約10分）",
     "source": "https://www.furanobus.jp/winetour/",
     "lat": 43.45,
@@ -1836,13 +2967,38 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸", "清舞", "山ブドウ", "シャルドネ", "ケルナー"],
-    "brands": [
-      {"name": "桜夢雫 山幸", "type": "赤ワイン", "specs": "北見市端野町の自社ぶどうを使用。", "grapes": "山幸"},
-      {"name": "桜夢雫 おと", "type": "ロゼ微発泡", "specs": "山幸を使う辛口ロゼ微発泡。", "grapes": "山幸"},
-      {"name": "オホーツクブラン", "type": "白ワイン", "specs": "オホーツクエリアの白ワイン。", "grapes": ""}
+    "grapes": [
+      "山幸",
+      "清舞",
+      "山ブドウ",
+      "シャルドネ",
+      "ケルナー"
     ],
-    "features": ["オホーツク・北見市立地", "自社ぶどう100%を目指す家族経営ワイナリー", "山幸・清舞など耐寒性品種を活用"],
+    "brands": [
+      {
+        "name": "桜夢雫 山幸",
+        "type": "赤ワイン",
+        "specs": "北見市端野町の自社ぶどうを使用。",
+        "grapes": "山幸"
+      },
+      {
+        "name": "桜夢雫 おと",
+        "type": "ロゼ微発泡",
+        "specs": "山幸を使う辛口ロゼ微発泡。",
+        "grapes": "山幸"
+      },
+      {
+        "name": "オホーツクブラン",
+        "type": "白ワイン",
+        "specs": "オホーツクエリアの白ワイン。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "オホーツク・北見市立地",
+      "自社ぶどう100%を目指す家族経営ワイナリー",
+      "山幸・清舞など耐寒性品種を活用"
+    ],
     "nearest_station": "JR石北本線 緋牛内駅（車約5分）",
     "source": "https://kitamikanko.jp/gift/1100/",
     "lat": 43.81,
@@ -1866,13 +3022,36 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ケルナー", "ピノ・ノワール", "ソーヴィニョン・ブラン"],
-    "brands": [
-      {"name": "BONBORI", "type": "白ワイン", "specs": "ケルナー100%", "grapes": "ケルナー"},
-      {"name": "TAMAYUKI", "type": "ロゼ・赤ワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "BONBORI ringo", "type": "スパークリングシードル", "specs": "", "grapes": ""}
+    "grapes": [
+      "ケルナー",
+      "ピノ・ノワール",
+      "ソーヴィニョン・ブラン"
     ],
-    "features": ["移住就農型ワイナリー", "野生酵母発酵・亜硫酸最少", "和合共生の理念"],
+    "brands": [
+      {
+        "name": "BONBORI",
+        "type": "白ワイン",
+        "specs": "ケルナー100%",
+        "grapes": "ケルナー"
+      },
+      {
+        "name": "TAMAYUKI",
+        "type": "ロゼ・赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "BONBORI ringo",
+        "type": "スパークリングシードル",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "移住就農型ワイナリー",
+      "野生酵母発酵・亜硫酸最少",
+      "和合共生の理念"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約15分）",
     "source": "https://winery.yoichidreams.com/",
     "lat": 43.27,
@@ -1896,11 +3075,28 @@
     "wine_style": "white",
     "main_grape": "pinot_noir",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "ゲヴュルツトラミネール", "ソーヴィニョン・ブラン", "メルロー", "ピノ・グリ", "ケルナー", "シャルドネ"],
-    "brands": [
-      {"name": "Blush field blend", "type": "ロゼワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "ピノ・ノワール",
+      "ゲヴュルツトラミネール",
+      "ソーヴィニョン・ブラン",
+      "メルロー",
+      "ピノ・グリ",
+      "ケルナー",
+      "シャルドネ"
     ],
-    "features": ["夫妻で運営する小規模エステート", "野生酵母発酵・除草剤不使用", "余市川沿い仁木平坦地"],
+    "brands": [
+      {
+        "name": "Blush field blend",
+        "type": "ロゼワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "夫妻で運営する小規模エステート",
+      "野生酵母発酵・除草剤不使用",
+      "余市川沿い仁木平坦地"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約5分）",
     "source": "https://niki-wine-tourism.com/winery/10/",
     "lat": 43.25,
@@ -1924,11 +3120,26 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ゲヴュルツトラミネール", "ピノ・ノワール", "ソーヴィニョン・ブラン", "シュナン・ブラン", "ピノ・ムニエ"],
-    "brands": [
-      {"name": "Kamisato blanc", "type": "白ワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "ゲヴュルツトラミネール",
+      "ピノ・ノワール",
+      "ソーヴィニョン・ブラン",
+      "シュナン・ブラン",
+      "ピノ・ムニエ"
     ],
-    "features": ["NZ栽培経験を活かした農法", "南斜面3ha", "除草剤不使用・減農薬"],
+    "brands": [
+      {
+        "name": "Kamisato blanc",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "NZ栽培経験を活かした農法",
+      "南斜面3ha",
+      "除草剤不使用・減農薬"
+    ],
     "nearest_station": "JR函館本線 蘭越駅（車約10分）",
     "source": "https://kamisatovineyard.com/",
     "lat": 42.87,
@@ -1952,13 +3163,43 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ゲヴュルツトラミネール", "ピノ・ムニエ", "ピノ・グリ", "シャルドネ", "リースリング", "ピノ・ノワール", "ツヴァイゲルト", "ガメイ", "ケルナー", "ナイアガラ"],
-    "brands": [
-      {"name": "FRONTIER", "type": "白ワイン", "specs": "", "grapes": ""},
-      {"name": "Acolon Pétillant", "type": "ペティヤン", "specs": "", "grapes": "アコロン"},
-      {"name": "Kerner", "type": "白ワイン", "specs": "", "grapes": "ケルナー"}
+    "grapes": [
+      "ゲヴュルツトラミネール",
+      "ピノ・ムニエ",
+      "ピノ・グリ",
+      "シャルドネ",
+      "リースリング",
+      "ピノ・ノワール",
+      "ツヴァイゲルト",
+      "ガメイ",
+      "ケルナー",
+      "ナイアガラ"
     ],
-    "features": ["亜硫酸無添加・無清澄・無濾過", "10品種の多品種栽培", "函館山臨む道南立地"],
+    "brands": [
+      {
+        "name": "FRONTIER",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "Acolon Pétillant",
+        "type": "ペティヤン",
+        "specs": "",
+        "grapes": "アコロン"
+      },
+      {
+        "name": "Kerner",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ケルナー"
+      }
+    ],
+    "features": [
+      "亜硫酸無添加・無清澄・無濾過",
+      "10品種の多品種栽培",
+      "函館山臨む道南立地"
+    ],
     "nearest_station": "北海道新幹線 新函館北斗駅（車約15分）",
     "source": "https://toroccostore.com/pages/about",
     "lat": 41.88,
@@ -1982,14 +3223,41 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸", "清舞"],
-    "brands": [
-      {"name": "Viruwa ROSE", "type": "ロゼワイン", "specs": "", "grapes": ""},
-      {"name": "Caldera ROSE SPARKLING", "type": "スパークリングワイン", "specs": "", "grapes": ""},
-      {"name": "和～NAGI～ YAMASACHI ROUGE", "type": "赤ワイン", "specs": "", "grapes": "山幸"},
-      {"name": "琴～KOTO～ KIYOMAI ROUGE", "type": "赤ワイン", "specs": "", "grapes": "清舞"}
+    "grapes": [
+      "山幸",
+      "清舞"
     ],
-    "features": ["弟子屈テロワール・温泉水活用", "山幸・清舞特化", "無農薬・天然酵母・無添加"],
+    "brands": [
+      {
+        "name": "Viruwa ROSE",
+        "type": "ロゼワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "Caldera ROSE SPARKLING",
+        "type": "スパークリングワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "和～NAGI～ YAMASACHI ROUGE",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "山幸"
+      },
+      {
+        "name": "琴～KOTO～ KIYOMAI ROUGE",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "清舞"
+      }
+    ],
+    "features": [
+      "弟子屈テロワール・温泉水活用",
+      "山幸・清舞特化",
+      "無農薬・天然酵母・無添加"
+    ],
     "nearest_station": "JR釧網本線 摩周駅（車約10分）",
     "source": "https://www.cenavino.com/",
     "lat": 43.52,
@@ -2013,11 +3281,22 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸"],
-    "brands": [
-      {"name": "屈斜路カルデラ ナチュラルワイン", "type": "赤ワイン", "specs": "", "grapes": "山幸"}
+    "grapes": [
+      "山幸"
     ],
-    "features": ["屈斜路湖一望のテイスティングカウンター", "弟子屈町指定管理運営", "山幸使用ナチュラルワイン"],
+    "brands": [
+      {
+        "name": "屈斜路カルデラ ナチュラルワイン",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "山幸"
+      }
+    ],
+    "features": [
+      "屈斜路湖一望のテイスティングカウンター",
+      "弟子屈町指定管理運営",
+      "山幸使用ナチュラルワイン"
+    ],
     "nearest_station": "JR釧網本線 川湯温泉駅（車約15分）",
     "source": "https://teshikagafarm.com/kcwinery/",
     "lat": 43.6,
@@ -2041,12 +3320,30 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["ピノ・ノワール", "シャルドネ", "ツヴァイゲルト"],
-    "brands": [
-      {"name": "Series Clutch", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "Series 110", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "ツヴァイゲルト"
     ],
-    "features": ["ハンガリーワインにインスパイア", "ぶどうからワインまで全工程体験", "安平町立地"],
+    "brands": [
+      {
+        "name": "Series Clutch",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "Series 110",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "ハンガリーワインにインスパイア",
+      "ぶどうからワインまで全工程体験",
+      "安平町立地"
+    ],
     "nearest_station": "JR室蘭本線 追分駅（車約10分）",
     "source": "https://alomwinery.com/",
     "lat": 42.72,
@@ -2070,11 +3367,23 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ツヴァイゲルトレーベ", "ナイアガラ"],
-    "brands": [
-      {"name": "MILO", "type": "赤・白・シードル", "specs": "", "grapes": ""}
+    "grapes": [
+      "ツヴァイゲルトレーベ",
+      "ナイアガラ"
     ],
-    "features": ["都市型醸造所（札幌植物園前）", "障がい者雇用・社会還元モデル", "木村式自然栽培・AI管理"],
+    "brands": [
+      {
+        "name": "MILO",
+        "type": "赤・白・シードル",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "都市型醸造所（札幌植物園前）",
+      "障がい者雇用・社会還元モデル",
+      "木村式自然栽培・AI管理"
+    ],
     "nearest_station": "地下鉄東西線 西11丁目駅（徒歩5分）",
     "source": "https://libera-wine.jp/",
     "lat": 43.06,
@@ -2098,12 +3407,29 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["山幸", "清舞"],
-    "brands": [
-      {"name": "十勝が丘 山幸", "type": "赤ワイン", "specs": "山幸100%、有機栽培", "grapes": "山幸"},
-      {"name": "十勝が丘 清舞", "type": "赤ワイン", "specs": "清舞100%、有機栽培", "grapes": "清舞"}
+    "grapes": [
+      "山幸",
+      "清舞"
     ],
-    "features": ["十勝川温泉公園北側立地", "有機栽培山幸・清舞特化", "音更町初のワイナリー"],
+    "brands": [
+      {
+        "name": "十勝が丘 山幸",
+        "type": "赤ワイン",
+        "specs": "山幸100%、有機栽培",
+        "grapes": "山幸"
+      },
+      {
+        "name": "十勝が丘 清舞",
+        "type": "赤ワイン",
+        "specs": "清舞100%、有機栽培",
+        "grapes": "清舞"
+      }
+    ],
+    "features": [
+      "十勝川温泉公園北側立地",
+      "有機栽培山幸・清舞特化",
+      "音更町初のワイナリー"
+    ],
     "nearest_station": "JR根室本線 帯広駅（車約30分）",
     "source": "http://tokachigaoka-w.jp/",
     "lat": 43.03,
@@ -2127,13 +3453,36 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ヤマ・ソーヴィニヨン", "ピノ・グリ", "ナイアガラ"],
-    "brands": [
-      {"name": "峠の山ソービニオン", "type": "赤ワイン", "specs": "", "grapes": "ヤマ・ソーヴィニヨン"},
-      {"name": "峠のピノ・グリ", "type": "白・オレンジワイン", "specs": "", "grapes": "ピノ・グリ"},
-      {"name": "峠のナイアガラ", "type": "白ワイン", "specs": "", "grapes": "ナイアガラ"}
+    "grapes": [
+      "ヤマ・ソーヴィニヨン",
+      "ピノ・グリ",
+      "ナイアガラ"
     ],
-    "features": ["酸化防止剤無添加にこだわり", "札幌盤渓峠の立地", "オレンジワイン先駆け的存在"],
+    "brands": [
+      {
+        "name": "峠の山ソービニオン",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ヤマ・ソーヴィニヨン"
+      },
+      {
+        "name": "峠のピノ・グリ",
+        "type": "白・オレンジワイン",
+        "specs": "",
+        "grapes": "ピノ・グリ"
+      },
+      {
+        "name": "峠のナイアガラ",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ナイアガラ"
+      }
+    ],
+    "features": [
+      "酸化防止剤無添加にこだわり",
+      "札幌盤渓峠の立地",
+      "オレンジワイン先駆け的存在"
+    ],
     "nearest_station": "地下鉄東西線 円山公園駅（バス約20分）",
     "source": "https://sapporo-bankei-winery.jimdofree.com/",
     "lat": 43.07,
@@ -2157,12 +3506,30 @@
     "wine_style": "white",
     "main_grape": "kerner",
     "gi": "GI北海道",
-    "grapes": ["ツヴァイゲルトレーベ", "ケルナー", "ミュラー・トゥルガウ"],
-    "brands": [
-      {"name": "TOMAPU フユ ミュラー・トゥルガウ", "type": "白ワイン", "specs": "", "grapes": "ミュラー・トゥルガウ"},
-      {"name": "TOMAPU ケルナー", "type": "白ワイン", "specs": "", "grapes": "ケルナー"}
+    "grapes": [
+      "ツヴァイゲルトレーベ",
+      "ケルナー",
+      "ミュラー・トゥルガウ"
     ],
-    "features": ["100年続く農家を引継ぎ", "多彩な農産物との複合経営", "仁木旭台立地"],
+    "brands": [
+      {
+        "name": "TOMAPU フユ ミュラー・トゥルガウ",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ミュラー・トゥルガウ"
+      },
+      {
+        "name": "TOMAPU ケルナー",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ケルナー"
+      }
+    ],
+    "features": [
+      "100年続く農家を引継ぎ",
+      "多彩な農産物との複合経営",
+      "仁木旭台立地"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約15分）",
     "source": "https://tomapufarm.com/",
     "lat": 43.27,
@@ -2186,12 +3553,29 @@
     "wine_style": "white",
     "main_grape": "sauvignon_blanc",
     "gi": "GI北海道",
-    "grapes": ["ソーヴィニョン・ブラン", "ピノ・ノワール"],
-    "brands": [
-      {"name": "Kii's ピノ・ノワール ロゼ", "type": "ロゼワイン", "specs": "", "grapes": "ピノ・ノワール"},
-      {"name": "Kii's ソーヴィニョン・ブラン", "type": "白ワイン", "specs": "", "grapes": "ソーヴィニョン・ブラン"}
+    "grapes": [
+      "ソーヴィニョン・ブラン",
+      "ピノ・ノワール"
     ],
-    "features": ["果樹園と複合栽培", "樽熟成なし・フレッシュスタイル", "少農薬栽培"],
+    "brands": [
+      {
+        "name": "Kii's ピノ・ノワール ロゼ",
+        "type": "ロゼワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "Kii's ソーヴィニョン・ブラン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ソーヴィニョン・ブラン"
+      }
+    ],
+    "features": [
+      "果樹園と複合栽培",
+      "樽熟成なし・フレッシュスタイル",
+      "少農薬栽培"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約5分）",
     "source": "https://niki-wine-tourism.com/winery/01/",
     "lat": 43.24,
@@ -2215,11 +3599,25 @@
     "wine_style": "white",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ", "ピノ・グリ", "リースリング", "ピノ・ブラン"],
-    "brands": [
-      {"name": "Asahidai 245 Blanc", "type": "白ワイン", "specs": "", "grapes": "シャルドネ・ピノ・グリ・リースリング・ピノ・ブラン"}
+    "grapes": [
+      "シャルドネ",
+      "ピノ・グリ",
+      "リースリング",
+      "ピノ・ブラン"
     ],
-    "features": ["蕎麦とワインのペアリング体験", "旭台テロワール特化", "エレガントな白ワインスタイル"],
+    "brands": [
+      {
+        "name": "Asahidai 245 Blanc",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ・ピノ・グリ・リースリング・ピノ・ブラン"
+      }
+    ],
+    "features": [
+      "蕎麦とワインのペアリング体験",
+      "旭台テロワール特化",
+      "エレガントな白ワインスタイル"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約15分）",
     "source": "https://www.naritaya-niki.jp/",
     "lat": 43.27,
@@ -2243,13 +3641,40 @@
     "wine_style": "red",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["バッカス", "ゲヴュルツトラミネール", "ピノ・グリ", "シャルドネ", "ピノ・ノワール", "ピノ・ムニエ", "ツヴァイゲルト"],
-    "brands": [
-      {"name": "Bacchus", "type": "白ワイン", "specs": "バッカス100%の白。", "grapes": "バッカス"},
-      {"name": "L'assemblage Blanc", "type": "白ワイン", "specs": "ピノ・グリ主体のブレンド白。", "grapes": "ピノ・グリ、ゲヴュルツトラミネール、ケルナー"},
-      {"name": "L'assemblage Rouge", "type": "赤ワイン", "specs": "ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワールのブレンド赤。", "grapes": "ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワール"}
+    "grapes": [
+      "バッカス",
+      "ゲヴュルツトラミネール",
+      "ピノ・グリ",
+      "シャルドネ",
+      "ピノ・ノワール",
+      "ピノ・ムニエ",
+      "ツヴァイゲルト"
     ],
-    "features": ["社会福祉法人運営の農福連携ワイナリー", "道北・鷹栖町の冷涼な盆地で栽培", "白赤7品種を栽培し2024年から自社醸造を開始"],
+    "brands": [
+      {
+        "name": "Bacchus",
+        "type": "白ワイン",
+        "specs": "バッカス100%の白。",
+        "grapes": "バッカス"
+      },
+      {
+        "name": "L'assemblage Blanc",
+        "type": "白ワイン",
+        "specs": "ピノ・グリ主体のブレンド白。",
+        "grapes": "ピノ・グリ、ゲヴュルツトラミネール、ケルナー"
+      },
+      {
+        "name": "L'assemblage Rouge",
+        "type": "赤ワイン",
+        "specs": "ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワールのブレンド赤。",
+        "grapes": "ピノ・ムニエ、ツヴァイゲルト、ピノ・ノワール"
+      }
+    ],
+    "features": [
+      "社会福祉法人運営の農福連携ワイナリー",
+      "道北・鷹栖町の冷涼な盆地で栽培",
+      "白赤7品種を栽培し2024年から自社醸造を開始"
+    ],
     "nearest_station": "JR宗谷本線 鷹栖駅",
     "source": "https://domainetoi.jp/",
     "lat": 43.77,
@@ -2273,12 +3698,33 @@
     "wine_style": "white",
     "main_grape": "other",
     "gi": "GI北海道",
-    "grapes": ["ピノ・グリ", "ピノ・ノワール", "ソーヴィニヨン・ブラン", "オーセロワ", "ツヴァイゲルトレーベ", "ブラウフレンキッシュ"],
-    "brands": [
-      {"name": "泡沫（うたかた）", "type": "スパークリングワイン", "specs": "冷涼な歌志内の酸を生かすフラッグシップ。", "grapes": "ピノ・グリ、ピノ・ノワール、ソーヴィニヨン・ブランほか"},
-      {"name": "momo", "type": "赤ワイン", "specs": "歌志内市上歌産ぶどうを10Rで委託醸造した赤。", "grapes": "ツヴァイゲルトレーベ、ブラウフレンキッシュ、ピノ・ノワール、ピノ・グリ"}
+    "grapes": [
+      "ピノ・グリ",
+      "ピノ・ノワール",
+      "ソーヴィニヨン・ブラン",
+      "オーセロワ",
+      "ツヴァイゲルトレーベ",
+      "ブラウフレンキッシュ"
     ],
-    "features": ["地域おこし協力隊発のワイナリー", "炭鉱の街・歌志内の再生事業", "市民参加型ぶどう植栽"],
+    "brands": [
+      {
+        "name": "泡沫（うたかた）",
+        "type": "スパークリングワイン",
+        "specs": "冷涼な歌志内の酸を生かすフラッグシップ。",
+        "grapes": "ピノ・グリ、ピノ・ノワール、ソーヴィニヨン・ブランほか"
+      },
+      {
+        "name": "momo",
+        "type": "赤ワイン",
+        "specs": "歌志内市上歌産ぶどうを10Rで委託醸造した赤。",
+        "grapes": "ツヴァイゲルトレーベ、ブラウフレンキッシュ、ピノ・ノワール、ピノ・グリ"
+      }
+    ],
+    "features": [
+      "地域おこし協力隊発のワイナリー",
+      "炭鉱の街・歌志内の再生事業",
+      "市民参加型ぶどう植栽"
+    ],
     "nearest_station": "（路線バス 歌志内バスターミナル）",
     "source": "https://www.pref.hokkaido.lg.jp/fs/1/3/0/3/2/9/4/9/_/01_%E7%A9%BA%E7%9F%A5%E3%82%A8%E3%83%AA%E3%82%A2%E3%80%90R8.2%E7%8F%BE%E5%9C%A8%E3%80%91.pdf",
     "lat": 43.5,
@@ -2302,16 +3748,294 @@
     "wine_style": "red",
     "main_grape": "chardonnay",
     "gi": "GI北海道",
-    "grapes": ["シャルドネ", "ピノ・ノワール", "ピノ・グリ", "カベルネ・ドルサ", "ピノ・ムニエ", "ドルンフェルダー"],
-    "brands": [
-      {"name": "Pur. Chardonnay", "type": "白ワイン", "specs": "", "grapes": "シャルドネ"},
-      {"name": "Pur. Pinot Noir", "type": "赤ワイン", "specs": "", "grapes": "ピノ・ノワール"}
+    "grapes": [
+      "シャルドネ",
+      "ピノ・ノワール",
+      "ピノ・グリ",
+      "カベルネ・ドルサ",
+      "ピノ・ムニエ",
+      "ドルンフェルダー"
     ],
-    "features": ["仁木町最高標高の畑（130〜150m）", "多品種栽培", "ベーカリー連携計画中"],
+    "brands": [
+      {
+        "name": "Pur. Chardonnay",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "Pur. Pinot Noir",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      }
+    ],
+    "features": [
+      "仁木町最高標高の畑（130〜150m）",
+      "多品種栽培",
+      "ベーカリー連携計画中"
+    ],
     "nearest_station": "JR函館本線 仁木駅（車約10分）",
     "source": "https://niki-wine-tourism.com/winery/11/",
     "lat": 43.25,
     "lng": 140.76,
     "name_en": "Pur."
+  },
+  {
+    "id": "nakazawa-vineyard",
+    "name": "ナカザワヴィンヤード",
+    "company": "",
+    "brand": "クリサワブラン",
+    "winery_type": "small",
+    "founded": "2002",
+    "founded_era": "平成14年",
+    "address": "北海道岩見沢市栗沢町加茂川140",
+    "tel": "",
+    "url": "https://nakazawavineyard.jp/",
+    "area": "岩見沢市栗沢町",
+    "desc": "2002年、中澤一行・由紀子夫妻が新規就農し、岩見沢市（旧栗沢町）に約2.7haのワイン専用葡萄畑を開墾。2002〜2012年はココ・ファームで、2013年以降は10R（トアール）ワイナリーで委託醸造を行い、2017年からは自ら共同設立した醸造所「栗澤ワインズ」で醸造している。房のまま搾り、野生酵母で発酵させる製法を採用。",
+    "visit": "",
+    "wine_style": "white,red",
+    "main_grape": "other",
+    "gi": "GI北海道",
+    "grapes": [
+      "ゲヴュルツトラミネール",
+      "ピノ・グリ",
+      "ケルナー",
+      "シルヴァーナー",
+      "ピノ・ノワール"
+    ],
+    "brands": [
+      {
+        "name": "クリサワブラン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ゲヴュルツトラミネール、ピノ・グリ、ケルナー、シルヴァーナー等のブレンド"
+      }
+    ],
+    "features": [
+      "2002年、中澤一行・由紀子夫妻が岩見沢市栗沢町に新規就農しワイン専用葡萄畑を開墾",
+      "醸造は委託（ココ・ファーム→10Rワイナリー）を経て、2017年より共同設立した栗澤ワインズで実施",
+      "房のまま搾り野生酵母発酵する代表銘柄「クリサワブラン」"
+    ],
+    "nearest_station": "",
+    "source": "https://nihonwine.jp/winery_intro/nvineyard/",
+    "lat": 43.101,
+    "lng": 141.746,
+    "name_en": "Nakazawa Vineyard"
+  },
+  {
+    "id": "miyamoto-vineyard",
+    "name": "宮本ヴィンヤード",
+    "company": "",
+    "brand": "宮本ヴィンヤード",
+    "winery_type": "small",
+    "founded": "2012",
+    "founded_era": "平成24年",
+    "address": "北海道三笠市川内（達布地区）",
+    "tel": "",
+    "url": "http://miyamoto-vineyard.com/",
+    "area": "三笠市達布",
+    "desc": "2012年春、宮本亮平氏が北海道三笠市達布地区にワイン専用葡萄畑（約3ha、約8,000本）を開墾。小布施ワイナリーやニュージーランド、ブルゴーニュのジャッキー・トルショーでの研修を経て、ピノ・ノワール、シャルドネ、ピノ・グリを栽培。2020年ヴィンテージまでは隣接するタキザワワイナリーへの委託醸造。",
+    "visit": "",
+    "wine_style": "red,white",
+    "main_grape": "pinot_noir",
+    "gi": "GI北海道",
+    "grapes": [
+      "ピノ・ノワール",
+      "シャルドネ",
+      "ピノ・グリ"
+    ],
+    "brands": [],
+    "features": [
+      "2012年、宮本亮平氏が三笠市達布地区にワイン専用葡萄畑を開墾",
+      "小布施ワイナリー・ニュージーランド・ブルゴーニュでの研修を経てピノ・ノワールを中心に栽培",
+      "タキザワワイナリーに隣接する急斜面の畑（約3ha、約8,000本）で2020年ヴィンテージまで委託醸造"
+    ],
+    "nearest_station": "",
+    "source": "https://nihonwine.jp/winery_intro/miymoto-vineyard/",
+    "lat": 43.257,
+    "lng": 141.902,
+    "name_en": "Miyamoto Vineyard"
+  },
+  {
+    "id": "hamada-vineyard",
+    "name": "濱田ヴィンヤード",
+    "company": "",
+    "brand": "濱田ヴィンヤード",
+    "winery_type": "small",
+    "founded": "2018",
+    "founded_era": "平成30年",
+    "address": "北海道三笠市達布",
+    "tel": "",
+    "url": "https://hamadavineyard.com/",
+    "area": "三笠市達布",
+    "desc": "三笠市達布の丘に葡萄畑を持つ家族経営の小規模生産者。夫婦（濱田氏、東京大学医学部卒）が2013年の退職後、三笠市の山崎ワイナリーで約1年間研修したのち自らの葡萄栽培を開始。2018年秋に初収穫、2019年秋に醸造・熟成・瓶詰めを経て初リリース。2021年からは宮本ヴィンヤードと共同設立した「ドメーヌ・タプコリーヌ」で委託醸造している。",
+    "visit": "",
+    "wine_style": "white,red",
+    "main_grape": "other",
+    "gi": "GI北海道",
+    "grapes": [
+      "バッカス",
+      "ピノ・ノワール"
+    ],
+    "brands": [
+      {
+        "name": "濱田ヴィンヤード バッカス",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "バッカス"
+      },
+      {
+        "name": "濱田ヴィンヤード ブラン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "東京大学医学部卒の夫妻が運営する家族経営の小規模ワイナリー",
+      "三笠市の山崎ワイナリーでの研修を経て2018年秋に初収穫、2019年秋に初リリース",
+      "2021年よりドメーヌ・タプコリーヌ（宮本ヴィンヤードと共同設立）で委託醸造"
+    ],
+    "nearest_station": "",
+    "source": "https://hamadavineyard.com/welcome",
+    "lat": 43.257,
+    "lng": 141.902,
+    "name_en": "Hamada Vineyard"
+  },
+  {
+    "id": "irenka",
+    "name": "合同会社イレンカ（IRENKA）",
+    "company": "合同会社イレンカ",
+    "brand": "IRENKA",
+    "winery_type": "small",
+    "founded": "2012",
+    "founded_era": "平成24年",
+    "address": "北海道岩見沢市栗沢町上幌",
+    "tel": "080-5528-6936",
+    "url": "https://irenka.co.jp/",
+    "area": "岩見沢市栗沢町上幌",
+    "desc": "2012年1月、デイビッド・アシュリー氏と永井邦代氏が設立。同年、岩見沢市栗沢町上幌の休耕地約1.3haにピノ・ノワールを植栽し、現在は樹齢3〜5年の樹約4,000本を有する。醸造は隣接する10R（トアール）ワイナリーの施設を借りて行う委託醸造で、永井氏が中心となって醸造している。減農薬・減化学肥料の「リュット・レゾネ」で栽培し、サステナブルな「スロー・ワイン」造りを掲げる。「イレンカ」はアイヌ語で「理想・希望」を意味する。",
+    "visit": "畑の見学・収穫ボランティアはメールにて対応",
+    "wine_style": "red,rose",
+    "main_grape": "pinot_noir",
+    "gi": "GI北海道",
+    "grapes": [
+      "ピノ・ノワール"
+    ],
+    "brands": [
+      {
+        "name": "IRENKA PINOT NOIR",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール100%"
+      },
+      {
+        "name": "IRENKA PINOT NOIR ROSÉ",
+        "type": "ロゼ",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      }
+    ],
+    "features": [
+      "2012年、岩見沢市栗沢町上幌の休耕地約1.3haにピノ・ノワールを植栽",
+      "醸造は隣接する10Rワイナリーの施設を借りて行う委託醸造",
+      "「イレンカ」はアイヌ語で「理想・希望」の意味。リュット・レゾネによるサステナブル栽培"
+    ],
+    "nearest_station": "",
+    "source": "https://irenka.co.jp/about.html",
+    "lat": 43.101,
+    "lng": 141.746,
+    "name_en": "IRENKA"
+  },
+  {
+    "id": "nitori-winery",
+    "name": "ニトリワイナリー",
+    "company": "ニトリ果樹園",
+    "brand": "ニトリワイナリー",
+    "winery_type": "small",
+    "founded": "2025",
+    "founded_era": "令和7年",
+    "address": "北海道余市郡余市町登町",
+    "tel": "",
+    "url": "https://yoichi.furusato179.com/producer/nitoriwinery/",
+    "area": "余市町登町",
+    "desc": "観光果樹園「ニトリ果樹園」（代表・似鳥靖季氏）が2022年からピノ・ノワールやシャルドネなどの醸造用ブドウ栽培を開始。それまでは他ワイナリーへの委託醸造で、2023年に白ワイン約370本、2024年に白・赤・ロゼ計約1,800本を製造。2025年4月に果実酒製造免許を取得し、同年秋より「ニトリワイナリー」として自社醸造を開始した（初年度目標約3,000本）。",
+    "visit": "",
+    "wine_style": "white,red",
+    "main_grape": "chardonnay",
+    "gi": "GI北海道",
+    "grapes": [
+      "シャルドネ",
+      "ピノ・ノワール",
+      "ゲヴェルツトラミネール",
+      "アルモノワール",
+      "リースリング"
+    ],
+    "brands": [],
+    "features": [
+      "2022年からピノ・ノワールやシャルドネなど醸造用ブドウ栽培を開始した観光果樹園",
+      "2025年4月に果実酒製造免許を取得、同年秋より自社醸造を開始",
+      "免許取得前は委託醸造で、2024年に白・赤・ロゼ計約1,800本を製造"
+    ],
+    "nearest_station": "",
+    "source": "https://www.hokkaido-np.co.jp/article/1218454/",
+    "lat": 43.19,
+    "lng": 140.8,
+    "name_en": "Nitori Winery"
+  },
+  {
+    "id": "okudoya-winery",
+    "name": "奥洞爺ワイナリー",
+    "company": "仲とうや醸造所",
+    "brand": "奥洞爺",
+    "winery_type": "small",
+    "founded": "2025",
+    "founded_era": "令和7年",
+    "address": "北海道虻田郡壮瞥町仲洞爺",
+    "tel": "",
+    "url": "",
+    "area": "壮瞥町仲洞爺",
+    "desc": "「仲とうや醸造所」（代表・長妻和男氏）が運営。仲洞爺キャンプ場向かいの道道洞爺公園洞爺線沿いに醸造棟・貯蔵棟（床面積約500平方メートル、年間醸造量6,000〜7,500リットル）を建設し、令和7年（2025年）9月16日に果実酒製造免許を取得。仲洞爺の自社ほ場で栽培したシャルドネ・ヤマソービニオン・ナイアガラ等を用いて自社醸造を開始し、赤・白計7種類、約2,000本のデビューヴィンテージをリリースした。",
+    "visit": "ガラス張りの発酵室を見ながら試飲・購入できるショップを併設",
+    "wine_style": "white,red",
+    "main_grape": "chardonnay",
+    "gi": "GI北海道",
+    "grapes": [
+      "シャルドネ",
+      "ヤマソービニオン",
+      "ナイアガラ"
+    ],
+    "brands": [
+      {
+        "name": "奥洞爺シャルドネ",
+        "type": "白ワイン",
+        "specs": "辛口、4,290円",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "奥洞爺ナイアガラ",
+        "type": "白ワイン",
+        "specs": "辛口、3,300円",
+        "grapes": "ナイアガラ"
+      },
+      {
+        "name": "奥洞爺ヤマソービニオン",
+        "type": "赤ワイン",
+        "specs": "ミディアムボディ、3,300円",
+        "grapes": "ヤマソービニオン"
+      }
+    ],
+    "features": [
+      "令和7年（2025年）9月16日に果実酒製造免許を取得し、壮瞥町初の自社醸造ワイナリーとして誕生",
+      "仲洞爺の自社ほ場でシャルドネ・ヤマソービニオン・ナイアガラ等を栽培",
+      "ガラス張りの発酵室を見ながら試飲・購入できるショップを併設"
+    ],
+    "nearest_station": "",
+    "source": "https://hokkaido-nl.jp/article/42367",
+    "lat": 42.6,
+    "lng": 140.83,
+    "name_en": "Okudoya Winery"
   }
 ]

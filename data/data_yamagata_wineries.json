@@ -16,15 +16,48 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["デラウェア", "マスカット・ベーリーA", "ナイアガラ"],
-    "brands": [
-      {"name": "サン・スフル", "type": "白ワイン", "specs": "", "grapes": ""},
-      {"name": "ルージュ", "type": "赤ワイン", "specs": "", "grapes": ""},
-      {"name": "ブラン", "type": "白ワイン", "specs": "", "grapes": ""},
-      {"name": "ブラン・ド・ノワール", "type": "白ワイン", "specs": "", "grapes": ""},
-      {"name": "クリオエクストラクシオン", "type": "貴腐ワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "デラウェア",
+      "マスカット・ベーリーA",
+      "ナイアガラ"
     ],
-    "features": ["1920年開園", "蔵王連峰の麓", "日本初の瓶内二次発酵スパークリング成功"],
+    "brands": [
+      {
+        "name": "サン・スフル",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "ルージュ",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "ブラン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "ブラン・ド・ノワール",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "クリオエクストラクシオン",
+        "type": "貴腐ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1920年開園",
+      "蔵王連峰の麓",
+      "日本初の瓶内二次発酵スパークリング成功"
+    ],
     "nearest_station": "JR奥羽本線 かみのやま温泉駅（タクシー約5分）",
     "source": "https://giyamagata-wine.jp/maker/takeda/",
     "lat": 38.1478,
@@ -48,17 +81,65 @@
     "wine_style": "mixed",
     "main_grape": "chardonnay",
     "gi": "GI山形",
-    "grapes": ["シャルドネ", "メルロー", "カベルネ・ソーヴィニヨン", "デラウェア", "ピノ・ブラン", "マスカット・ベーリーA", "ピノ・ノワール", "ナイアガラ"],
-    "brands": [
-      {"name": "DOMAINE TAKAHATA Haut-Vigne", "type": "赤・白", "specs": "", "grapes": "カベルネ・ソーヴィニヨン、メルロー、シャルドネ"},
-      {"name": "ARKADIA", "type": "赤・白・スパークリング", "specs": "", "grapes": "メルロー、シャルドネ"},
-      {"name": "Majestique", "type": "赤・白", "specs": "", "grapes": "シャルドネ、メルロー"},
-      {"name": "Barrique", "type": "赤・白・ロゼ", "specs": "樽熟成", "grapes": "メルロー、シャルドネ"},
-      {"name": "Classique", "type": "赤・白", "specs": "", "grapes": "メルロー、シャルドネ"},
-      {"name": "Japanesque", "type": "赤・白", "specs": "", "grapes": "マスカット・ベーリーA、リースリング・フォルテ"},
-      {"name": "嘉（yoshi）", "type": "スパークリング", "specs": "", "grapes": "シャルドネ、ピノ・ノワール"}
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "デラウェア",
+      "ピノ・ブラン",
+      "マスカット・ベーリーA",
+      "ピノ・ノワール",
+      "ナイアガラ"
     ],
-    "features": ["東北出荷量No.1", "1990年創業", "観光ワイナリー"],
+    "brands": [
+      {
+        "name": "DOMAINE TAKAHATA Haut-Vigne",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": "カベルネ・ソーヴィニヨン、メルロー、シャルドネ"
+      },
+      {
+        "name": "ARKADIA",
+        "type": "赤・白・スパークリング",
+        "specs": "",
+        "grapes": "メルロー、シャルドネ"
+      },
+      {
+        "name": "Majestique",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": "シャルドネ、メルロー"
+      },
+      {
+        "name": "Barrique",
+        "type": "赤・白・ロゼ",
+        "specs": "樽熟成",
+        "grapes": "メルロー、シャルドネ"
+      },
+      {
+        "name": "Classique",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": "メルロー、シャルドネ"
+      },
+      {
+        "name": "Japanesque",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": "マスカット・ベーリーA、リースリング・フォルテ"
+      },
+      {
+        "name": "嘉（yoshi）",
+        "type": "スパークリング",
+        "specs": "",
+        "grapes": "シャルドネ、ピノ・ノワール"
+      }
+    ],
+    "features": [
+      "東北出荷量No.1",
+      "1990年創業",
+      "観光ワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/takahata/",
     "lat": 38.0078,
@@ -78,16 +159,35 @@
     "url": "http://www.sakai-winery.jp/",
     "area": "南陽市",
     "desc": "東北最古のワイナリー。化学肥料・農薬を使用せず、植栽の多様さと生き物の豊かに育つ畑を目指しています。地元赤湯の畑を蘇らせるべく圃場の拡大にも取り組んでいます。",
-  "visit": "ショップ営業時間10:00〜17:00。レストラン・ワイナリー施設あり。見学・利用条件は公式サイトで事前確認推奨。",
+    "visit": "ショップ営業時間10:00〜17:00。レストラン・ワイナリー施設あり。見学・利用条件は公式サイトで事前確認推奨。",
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["カベルネ・ソーヴィニヨン", "メルロ", "シャルドネ", "マスカットベーリーA", "ブラッククイーン"],
-    "brands": [
-      {"name": "名子山", "type": "赤ワイン", "specs": "フルボディ", "grapes": ""},
-      {"name": "シャルドネ", "type": "白ワイン", "specs": "辛口", "grapes": "シャルドネ"}
+    "grapes": [
+      "カベルネ・ソーヴィニヨン",
+      "メルロ",
+      "シャルドネ",
+      "マスカットベーリーA",
+      "ブラッククイーン"
     ],
-    "features": ["東北最古ワイナリー（1892年）", "農薬不使用・化学肥料不使用"],
+    "brands": [
+      {
+        "name": "名子山",
+        "type": "赤ワイン",
+        "specs": "フルボディ",
+        "grapes": ""
+      },
+      {
+        "name": "シャルドネ",
+        "type": "白ワイン",
+        "specs": "辛口",
+        "grapes": "シャルドネ"
+      }
+    ],
+    "features": [
+      "東北最古ワイナリー（1892年）",
+      "農薬不使用・化学肥料不使用"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/sakai/",
     "lat": 38.0488,
@@ -111,11 +211,25 @@
     "wine_style": "mixed",
     "main_grape": "yamabudou",
     "gi": "GI山形",
-    "grapes": ["甲州", "山ソービニオン", "セイベル", "山ぶどう"],
-    "brands": [
-      {"name": "月山ワイン", "type": "赤・白・ロゼ", "specs": "", "grapes": ""}
+    "grapes": [
+      "甲州",
+      "山ソービニオン",
+      "セイベル",
+      "山ぶどう"
     ],
-    "features": ["JA運営ワイナリー", "山ぶどう研究所", "庄内産ぶどう100%"],
+    "brands": [
+      {
+        "name": "月山ワイン",
+        "type": "赤・白・ロゼ",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "JA運営ワイナリー",
+      "山ぶどう研究所",
+      "庄内産ぶどう100%"
+    ],
     "nearest_station": "JR鶴岡駅（車約30分）",
     "source": "https://giyamagata-wine.jp/maker/gassan/",
     "lat": 38.5892,
@@ -139,11 +253,29 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["デラウェア", "マスカットベーリーA", "ナイアガラ", "ブラッククィーン", "リースリングフォルテ", "シャルドネ", "ソーヴィニヨンブラン", "メルロー"],
-    "brands": [
-      {"name": "マイスターセレクション バレルセレクションルージュ", "type": "赤ワイン", "specs": "", "grapes": "マスカットベーリーA"}
+    "grapes": [
+      "デラウェア",
+      "マスカットベーリーA",
+      "ナイアガラ",
+      "ブラッククィーン",
+      "リースリングフォルテ",
+      "シャルドネ",
+      "ソーヴィニヨンブラン",
+      "メルロー"
     ],
-    "features": ["1944年創業", "2013・2014年日本ワインコンクール連続金賞", "2016年G7伊勢志摩サミット提供ワイン"],
+    "brands": [
+      {
+        "name": "マイスターセレクション バレルセレクションルージュ",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "マスカットベーリーA"
+      }
+    ],
+    "features": [
+      "1944年創業",
+      "2013・2014年日本ワインコンクール連続金賞",
+      "2016年G7伊勢志摩サミット提供ワイン"
+    ],
     "nearest_station": "左沢線 左沢駅（バス15分）",
     "source": "https://giyamagata-wine.jp/maker/asahimachi/",
     "lat": 38.3578,
@@ -167,13 +299,38 @@
     "wine_style": "mixed",
     "main_grape": "delaware",
     "gi": "GI山形",
-    "grapes": ["デラウェア", "マスカットベーリーA", "ナイアガラ", "カベルネ・ソーヴィニヨン", "メルロー"],
-    "brands": [
-      {"name": "ナイ・ロゼ", "type": "ロゼワイン", "specs": "", "grapes": "ナイアガラ"},
-      {"name": "マスカット・ベリーA", "type": "赤ワイン", "specs": "", "grapes": "マスカット・ベーリーA"},
-      {"name": "ドルミテー", "type": "白ワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "デラウェア",
+      "マスカットベーリーA",
+      "ナイアガラ",
+      "カベルネ・ソーヴィニヨン",
+      "メルロー"
     ],
-    "features": ["1984年設立", "土蔵熟成", "盆地気候のブドウ産地"],
+    "brands": [
+      {
+        "name": "ナイ・ロゼ",
+        "type": "ロゼワイン",
+        "specs": "",
+        "grapes": "ナイアガラ"
+      },
+      {
+        "name": "マスカット・ベリーA",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "マスカット・ベーリーA"
+      },
+      {
+        "name": "ドルミテー",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1984年設立",
+      "土蔵熟成",
+      "盆地気候のブドウ産地"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/tendo/",
     "lat": 38.3617,
@@ -197,11 +354,26 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["デラウェア", "ベーリー・アリカントA", "カベルネソーヴィニヨン", "シャルドネ", "マスカットベーリーA"],
-    "brands": [
-      {"name": "赤湯の地ワイン", "type": "赤・白・ロゼ", "specs": "", "grapes": ""}
+    "grapes": [
+      "デラウェア",
+      "ベーリー・アリカントA",
+      "カベルネソーヴィニヨン",
+      "シャルドネ",
+      "マスカットベーリーA"
     ],
-    "features": ["1939年創業", "赤湯温泉街所在", "地元産ぶどう100%"],
+    "brands": [
+      {
+        "name": "赤湯の地ワイン",
+        "type": "赤・白・ロゼ",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1939年創業",
+      "赤湯温泉街所在",
+      "地元産ぶどう100%"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/oura/",
     "lat": 38.0488,
@@ -225,11 +397,28 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["デラウェア", "ナイアガラ", "マスカットベリーA", "ブラッククィーン", "北醇", "キャンベルアーリー", "ベリーアリカントA"],
-    "brands": [
-      {"name": "金渓ワイン", "type": "赤・白・ロゼ", "specs": "", "grapes": ""}
+    "grapes": [
+      "デラウェア",
+      "ナイアガラ",
+      "マスカットベリーA",
+      "ブラッククィーン",
+      "北醇",
+      "キャンベルアーリー",
+      "ベリーアリカントA"
     ],
-    "features": ["1940年創業", "山形県産原料100%", "家族経営の小さなワイナリー"],
+    "brands": [
+      {
+        "name": "金渓ワイン",
+        "type": "赤・白・ロゼ",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "1940年創業",
+      "山形県産原料100%",
+      "家族経営の小さなワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/sato/",
     "lat": 38.0488,
@@ -253,13 +442,40 @@
     "wine_style": "mixed",
     "main_grape": "delaware",
     "gi": "GI山形",
-    "grapes": ["デラウェア", "セイベル9110", "ナイアガラ", "マスカットベーリーA", "シャルドネ", "ブラッククィーン", "メルロー"],
-    "brands": [
-      {"name": "月山山麓醸造", "type": "赤・白・ロゼ・スパークリング", "specs": "", "grapes": ""},
-      {"name": "やまがた", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "GASSAN SANROKU JOZO", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "デラウェア",
+      "セイベル9110",
+      "ナイアガラ",
+      "マスカットベーリーA",
+      "シャルドネ",
+      "ブラッククィーン",
+      "メルロー"
     ],
-    "features": ["月山麓の立地", "山形県産果実使用", "フルーツワイン・シードルも製造"],
+    "brands": [
+      {
+        "name": "月山山麓醸造",
+        "type": "赤・白・ロゼ・スパークリング",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "やまがた",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "GASSAN SANROKU JOZO",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "月山麓の立地",
+      "山形県産果実使用",
+      "フルーツワイン・シードルも製造"
+    ],
     "nearest_station": "",
     "source": "https://wine.chiyokotobuki.com/winery",
     "lat": 38.4367,
@@ -283,13 +499,38 @@
     "wine_style": "red",
     "main_grape": "merlot",
     "gi": "GI山形",
-    "grapes": ["シャルドネ", "メルロ", "カベルネ・ソーヴィニヨン", "カベルネフラン", "プティ・マンサン"],
-    "brands": [
-      {"name": "プライベートリザーブ カベルネ・ソーヴィニヨン", "type": "赤ワイン", "specs": "", "grapes": "カベルネ・ソーヴィニヨン"},
-      {"name": "シャルドネ", "type": "白ワイン", "specs": "辛口", "grapes": "シャルドネ"},
-      {"name": "フィル・マンサン", "type": "白ワイン", "specs": "", "grapes": "プティ・マンサン"}
+    "grapes": [
+      "シャルドネ",
+      "メルロ",
+      "カベルネ・ソーヴィニヨン",
+      "カベルネフラン",
+      "プティ・マンサン"
     ],
-    "features": ["ドメーヌワイナリー", "蔵王山麓約9ha自社畑", "特別栽培認証"],
+    "brands": [
+      {
+        "name": "プライベートリザーブ カベルネ・ソーヴィニヨン",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "カベルネ・ソーヴィニヨン"
+      },
+      {
+        "name": "シャルドネ",
+        "type": "白ワイン",
+        "specs": "辛口",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "フィル・マンサン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "プティ・マンサン"
+      }
+    ],
+    "features": [
+      "ドメーヌワイナリー",
+      "蔵王山麓約9ha自社畑",
+      "特別栽培認証"
+    ],
     "nearest_station": "JR奥羽本線 かみのやま温泉駅",
     "source": "https://giyamagata-wine.jp/maker/woody/",
     "lat": 38.1478,
@@ -313,12 +554,30 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["マスカットベーリーA", "ブラッククイーン", "シャルドネ"],
-    "brands": [
-      {"name": "想い ベルウッドヴィンヤード マスカットベーリーA 2021", "type": "赤ワイン", "specs": "ミディアム", "grapes": "マスカットベーリーA"},
-      {"name": "想い ベルウッドヴィンヤード シャルドネ 2020", "type": "白ワイン", "specs": "辛口", "grapes": "シャルドネ"}
+    "grapes": [
+      "マスカットベーリーA",
+      "ブラッククイーン",
+      "シャルドネ"
     ],
-    "features": ["2020年新設ワイナリー", "ブドウ園は2017年開設", "テロワール表現"],
+    "brands": [
+      {
+        "name": "想い ベルウッドヴィンヤード マスカットベーリーA 2021",
+        "type": "赤ワイン",
+        "specs": "ミディアム",
+        "grapes": "マスカットベーリーA"
+      },
+      {
+        "name": "想い ベルウッドヴィンヤード シャルドネ 2020",
+        "type": "白ワイン",
+        "specs": "辛口",
+        "grapes": "シャルドネ"
+      }
+    ],
+    "features": [
+      "2020年新設ワイナリー",
+      "ブドウ園は2017年開設",
+      "テロワール表現"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/bellwood/",
     "lat": 38.1478,
@@ -342,12 +601,29 @@
     "wine_style": "orange",
     "main_grape": "delaware",
     "gi": "GI山形",
-    "grapes": ["デラウェア", "スチューベン"],
-    "brands": [
-      {"name": "アランチョーネ2021", "type": "オレンジワイン", "specs": "辛口", "grapes": "デラウェア"},
-      {"name": "Cuvee Shinden 2022", "type": "オレンジワイン", "specs": "辛口", "grapes": ""}
+    "grapes": [
+      "デラウェア",
+      "スチューベン"
     ],
-    "features": ["無添加ワイン", "酸化防止剤不使用", "テロワール重視"],
+    "brands": [
+      {
+        "name": "アランチョーネ2021",
+        "type": "オレンジワイン",
+        "specs": "辛口",
+        "grapes": "デラウェア"
+      },
+      {
+        "name": "Cuvee Shinden 2022",
+        "type": "オレンジワイン",
+        "specs": "辛口",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "無添加ワイン",
+      "酸化防止剤不使用",
+      "テロワール重視"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/republic/",
     "lat": 38.0488,
@@ -371,11 +647,22 @@
     "wine_style": "red",
     "main_grape": "merlot",
     "gi": "GI山形",
-    "grapes": ["メルロ"],
-    "brands": [
-      {"name": "OLD SCHOOL MERLOT 2020", "type": "赤ワイン", "specs": "ミディアムドライ", "grapes": "メルロ"}
+    "grapes": [
+      "メルロ"
     ],
-    "features": ["2019年設立", "赤湯温泉街所在", "メルロ特化"],
+    "brands": [
+      {
+        "name": "OLD SCHOOL MERLOT 2020",
+        "type": "赤ワイン",
+        "specs": "ミディアムドライ",
+        "grapes": "メルロ"
+      }
+    ],
+    "features": [
+      "2019年設立",
+      "赤湯温泉街所在",
+      "メルロ特化"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/ymw/",
     "lat": 38.0488,
@@ -392,18 +679,28 @@
     "founded_era": "大正10年",
     "address": "山形県南陽市赤湯2836",
     "tel": "0238-43-2578",
-    "url": "http://www.mmy.ne.jp/ywine/maker/sutho/sutho1.html",
+    "url": "",
     "area": "南陽市",
     "desc": "ぶどうの栽培から醸造、販売まで家族で行っている県内でも最小規模のワイナリー。原料を重視しており「良いワインは良いブドウから」を心がけて栽培に力を注いでいる。",
     "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
     "wine_style": "red",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["マスカット・ベーリーA"],
-    "brands": [
-      {"name": "南陽ワイン", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "マスカット・ベーリーA"
     ],
-    "features": ["家族経営の最小規模ワイナリー", "栽培から販売まで一貫"],
+    "brands": [
+      {
+        "name": "南陽ワイン",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "家族経営の最小規模ワイナリー",
+      "栽培から販売まで一貫"
+    ],
     "nearest_station": "",
     "source": "https://okibun.jp/wine-sudo",
     "lat": 38.0488,
@@ -433,9 +730,18 @@
       "シャルドネ"
     ],
     "brands": [
-      {"name": "シャトーモンサン", "type": "赤・白", "specs": "", "grapes": ""}
+      {
+        "name": "シャトーモンサン",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
     ],
-    "features": ["1866年酒造業として創業", "1973年垣根式密植栽培法成功", "ボルドー大学醸造技術習得"],
+    "features": [
+      "1866年酒造業として創業",
+      "1973年垣根式密植栽培法成功",
+      "ボルドー大学醸造技術習得"
+    ],
     "nearest_station": "",
     "source": "https://www.winery.or.jp/winery-map/2621/",
     "lat": 37.9178,
@@ -459,12 +765,33 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["シャインマスカット", "デラウェア", "ナイアガラ", "マスカットベーリーA", "ヤマブドウ", "ヤマソービニオン"],
-    "brands": [
-      {"name": "佐藤錦（さくらんぼ）", "type": "フルーツワイン", "specs": "", "grapes": ""},
-      {"name": "シャインマスカット", "type": "白ワイン", "specs": "", "grapes": "シャインマスカット"}
+    "grapes": [
+      "シャインマスカット",
+      "デラウェア",
+      "ナイアガラ",
+      "マスカットベーリーA",
+      "ヤマブドウ",
+      "ヤマソービニオン"
     ],
-    "features": ["さくらんぼ・西洋梨など果実ワインも製造", "JAPAN Wine Challenge銅賞受賞", "健康成分（ポリフェノール）分析"],
+    "brands": [
+      {
+        "name": "佐藤錦（さくらんぼ）",
+        "type": "フルーツワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "シャインマスカット",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャインマスカット"
+      }
+    ],
+    "features": [
+      "さくらんぼ・西洋梨など果実ワインも製造",
+      "JAPAN Wine Challenge銅賞受賞",
+      "健康成分（ポリフェノール）分析"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/higashine/",
     "lat": 38.3617,
@@ -488,30 +815,40 @@
     "wine_style": "mixed",
     "main_grape": "chardonnay",
     "gi": "GI山形",
-    "grapes": ["甲州", "シャルドネ", "ソーヴィニヨンブラン", "ピノノワール", "メルロー"],
-  "brands": [
-    {
-      "name": "フルフル ロゼ",
-      "type": "ロゼワイン",
-      "specs": "第一号ワイン。ピノ・ノワールと甲州を使用。",
-      "grapes": "ピノ・ノワール、甲州"
-    },
-    {
-      "name": "フルフル 白",
-      "type": "白ワイン",
-      "specs": "松ケ岡の自社畑ぶどうを使う白ワイン。",
-      "grapes": "シャルドネ、ソーヴィニヨン・ブラン"
-    },
-    {
-      "name": "鶴岡甲州",
-      "type": "白ワイン",
-      "specs": "鶴岡産甲州を使う白ワイン。",
-      "grapes": "甲州"
-    }
-  ],
-    "features": ["グラビティーフロー醸造", "鶴岡ユネスコ食文化創造都市内", "自社畑ドメーヌスタイル"],
+    "grapes": [
+      "甲州",
+      "シャルドネ",
+      "ソーヴィニヨンブラン",
+      "ピノノワール",
+      "メルロー"
+    ],
+    "brands": [
+      {
+        "name": "フルフル ロゼ",
+        "type": "ロゼワイン",
+        "specs": "第一号ワイン。ピノ・ノワールと甲州を使用。",
+        "grapes": "ピノ・ノワール、甲州"
+      },
+      {
+        "name": "フルフル 白",
+        "type": "白ワイン",
+        "specs": "松ケ岡の自社畑ぶどうを使う白ワイン。",
+        "grapes": "シャルドネ、ソーヴィニヨン・ブラン"
+      },
+      {
+        "name": "鶴岡甲州",
+        "type": "白ワイン",
+        "specs": "鶴岡産甲州を使う白ワイン。",
+        "grapes": "甲州"
+      }
+    ],
+    "features": [
+      "グラビティーフロー醸造",
+      "鶴岡ユネスコ食文化創造都市内",
+      "自社畑ドメーヌスタイル"
+    ],
     "nearest_station": "",
-  "source": "https://pinocollina.com/wine-cellar/",
+    "source": "https://pinocollina.com/wine-cellar/",
     "lat": 38.7278,
     "lng": 139.8278,
     "name_en": "Pino Collina Farm Garden & Winery Matsugaoka"
@@ -533,12 +870,29 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "GI山形",
-    "grapes": ["マスカット・ベーリーA", "シャルドネ"],
-    "brands": [
-      {"name": "シャルドネ", "type": "白ワイン", "specs": "辛口", "grapes": "シャルドネ"},
-      {"name": "あかキャン", "type": "赤ワイン", "specs": "", "grapes": "マスカット・ベーリーA"}
+    "grapes": [
+      "マスカット・ベーリーA",
+      "シャルドネ"
     ],
-    "features": ["山形弁をコンセプトにしたユニークなワイナリー", "「NOM DE KELOS＝飲んでください」のブランド哲学", "GI山形認定ワイナリー"],
+    "brands": [
+      {
+        "name": "シャルドネ",
+        "type": "白ワイン",
+        "specs": "辛口",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "あかキャン",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "マスカット・ベーリーA"
+      }
+    ],
+    "features": [
+      "山形弁をコンセプトにしたユニークなワイナリー",
+      "「NOM DE KELOS＝飲んでください」のブランド哲学",
+      "GI山形認定ワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://giyamagata-wine.jp/maker/kelos/",
     "lat": 38.3617,
@@ -566,9 +920,17 @@
       "マスカット・ベーリーA"
     ],
     "brands": [
-      {"name": "uccelli rosso 2023", "type": "赤ワイン", "specs": "ミディアム", "grapes": ""}
+      {
+        "name": "uccelli rosso 2023",
+        "type": "赤ワイン",
+        "specs": "ミディアム",
+        "grapes": ""
+      }
     ],
-    "features": ["果樹栽培の豊かな経験を持つ農家ワイナリー", "2024年GI山形認定"],
+    "features": [
+      "果樹栽培の豊かな経験を持つ農家ワイナリー",
+      "2024年GI山形認定"
+    ],
     "nearest_station": "",
     "source": "https://japancellar.com/breweries/250",
     "lat": 38.3617,
@@ -592,12 +954,29 @@
     "wine_style": "mixed",
     "main_grape": "merlot",
     "gi": "GI山形",
-    "grapes": ["メルロー", "ソーヴィニヨンブラン"],
-    "brands": [
-      {"name": "Drop Vendange Merlot 2023", "type": "赤ワイン", "specs": "", "grapes": "メルロー"},
-      {"name": "泡沫夢幻 2024", "type": "赤微発泡", "specs": "", "grapes": ""}
+    "grapes": [
+      "メルロー",
+      "ソーヴィニヨンブラン"
     ],
-    "features": ["2023年設立のアーバンワイナリー", "上山温泉街所在", "自然派・無添加志向"],
+    "brands": [
+      {
+        "name": "Drop Vendange Merlot 2023",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "メルロー"
+      },
+      {
+        "name": "泡沫夢幻 2024",
+        "type": "赤微発泡",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "2023年設立のアーバンワイナリー",
+      "上山温泉街所在",
+      "自然派・無添加志向"
+    ],
     "nearest_station": "JR奥羽本線 かみのやま温泉駅",
     "source": "https://giyamagata-wine.jp/maker/drop/",
     "lat": 38.1478,
@@ -621,12 +1000,33 @@
     "wine_style": "mixed",
     "main_grape": "delaware",
     "gi": "GI山形",
-    "grapes": ["メルロー", "カベルネ・ソーヴィニヨン", "シャルドネ", "ナイアガラ", "デラウェア", "マスカットベーリーA"],
-    "brands": [
-      {"name": "ナイアガラワイン（白）", "type": "白ワイン", "specs": "辛口", "grapes": "ナイアガラ"},
-      {"name": "2024 メルロー＆カベルネ・ソーヴィニヨン", "type": "赤ワイン", "specs": "辛口", "grapes": "メルロー、カベルネ・ソーヴィニヨン"}
+    "grapes": [
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "シャルドネ",
+      "ナイアガラ",
+      "デラウェア",
+      "マスカットベーリーA"
     ],
-    "features": ["農業と福祉の連携（ノウフク）ワイナリー", "障がい者就労支援", "2024年9月ワイナリー完成"],
+    "brands": [
+      {
+        "name": "ナイアガラワイン（白）",
+        "type": "白ワイン",
+        "specs": "辛口",
+        "grapes": "ナイアガラ"
+      },
+      {
+        "name": "2024 メルロー＆カベルネ・ソーヴィニヨン",
+        "type": "赤ワイン",
+        "specs": "辛口",
+        "grapes": "メルロー、カベルネ・ソーヴィニヨン"
+      }
+    ],
+    "features": [
+      "農業と福祉の連携（ノウフク）ワイナリー",
+      "障がい者就労支援",
+      "2024年9月ワイナリー完成"
+    ],
     "nearest_station": "JR奥羽本線 かみのやま温泉駅",
     "source": "https://giyamagata-wine.jp/maker/yuuai/",
     "lat": 38.1478,
@@ -654,9 +1054,18 @@
       "りんご"
     ],
     "brands": [
-      {"name": "有機シードル", "type": "シードル", "specs": "国産初有機JAS認証", "grapes": ""}
+      {
+        "name": "有機シードル",
+        "type": "シードル",
+        "specs": "国産初有機JAS認証",
+        "grapes": ""
+      }
     ],
-    "features": ["国産初の有機JAS認証シードル", "4.7haのりんご園全園有機JAS認証取得", "2024年醸造免許取得"],
+    "features": [
+      "国産初の有機JAS認証シードル",
+      "4.7haのりんご園全園有機JAS認証取得",
+      "2024年醸造免許取得"
+    ],
     "nearest_station": "JR奥羽本線 新庄駅",
     "source": "https://giyamagata-wine.jp/maker/ringo/",
     "lat": 38.7572,
@@ -680,12 +1089,30 @@
     "wine_style": "red",
     "main_grape": "cabernet_sauvignon",
     "gi": "GI山形",
-    "grapes": ["カベルネ・ソーヴィニヨン", "ピノ・ノワール", "スチューベン"],
-    "brands": [
-      {"name": "2024 つぼみ", "type": "赤ワイン", "specs": "アルコール9.5%", "grapes": "カベルネ・ソーヴィニヨン79%、北醇21%"},
-      {"name": "Steuben", "type": "ロゼスパークリング", "specs": "アルコール11.5%", "grapes": "スチューベン"}
+    "grapes": [
+      "カベルネ・ソーヴィニヨン",
+      "ピノ・ノワール",
+      "スチューベン"
     ],
-    "features": ["岡山ドメーヌテッタ出身の醸造家が設立", "2025年自社ワイナリー醸造開始", "上山産ブドウ使用"],
+    "brands": [
+      {
+        "name": "2024 つぼみ",
+        "type": "赤ワイン",
+        "specs": "アルコール9.5%",
+        "grapes": "カベルネ・ソーヴィニヨン79%、北醇21%"
+      },
+      {
+        "name": "Steuben",
+        "type": "ロゼスパークリング",
+        "specs": "アルコール11.5%",
+        "grapes": "スチューベン"
+      }
+    ],
+    "features": [
+      "岡山ドメーヌテッタ出身の醸造家が設立",
+      "2025年自社ワイナリー醸造開始",
+      "上山産ブドウ使用"
+    ],
     "nearest_station": "JR奥羽本線 かみのやま温泉駅",
     "source": "https://giyamagata-wine.jp/maker/agri/",
     "lat": 38.1478,
@@ -709,12 +1136,29 @@
     "wine_style": "mixed",
     "main_grape": "chardonnay",
     "gi": "GI山形",
-    "grapes": ["ピノ・グリ", "シャルドネ"],
-    "brands": [
-      {"name": "HOCCA Table Blanc", "type": "白ワイン", "specs": "", "grapes": "シャルドネ"},
-      {"name": "HOCCA Cidre Dry", "type": "シードル", "specs": "辛口", "grapes": ""}
+    "grapes": [
+      "ピノ・グリ",
+      "シャルドネ"
     ],
-    "features": ["日本酒蔵（奥羽自慢）が運営するワイナリー", "2023年2月GI山形認定", "庄内平野・赤川沿いの立地"],
+    "brands": [
+      {
+        "name": "HOCCA Table Blanc",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ"
+      },
+      {
+        "name": "HOCCA Cidre Dry",
+        "type": "シードル",
+        "specs": "辛口",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "日本酒蔵（奥羽自慢）が運営するワイナリー",
+      "2023年2月GI山形認定",
+      "庄内平野・赤川沿いの立地"
+    ],
     "nearest_station": "JR羽越本線 鶴岡駅",
     "source": "https://giyamagata-wine.jp/maker/hocca/",
     "lat": 38.7278,

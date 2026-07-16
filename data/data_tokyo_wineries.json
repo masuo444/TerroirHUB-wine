@@ -16,12 +16,24 @@
     "wine_style": "red,white,rose",
     "main_grape": "takaosan",
     "gi": "",
-    "grapes": ["高尾", "練馬ナイヤガラ", "立川ベリー", "立川ヤマブドウ", "青森産スチューベン"],
-    "brands": ["練馬ヌーボー"],
-    "features": ["2014年設立、東京都初のワイナリー", "東京各地の農産物を使ったワイン造り", "「練馬ヌーボー」など東京産ぶどうにこだわる"],
+    "grapes": [
+      "高尾",
+      "練馬ナイヤガラ",
+      "立川ベリー",
+      "立川ヤマブドウ",
+      "青森産スチューベン"
+    ],
+    "brands": [
+      "練馬ヌーボー"
+    ],
+    "features": [
+      "2014年設立、東京都初のワイナリー",
+      "東京各地の農産物を使ったワイン造り",
+      "「練馬ヌーボー」など東京産ぶどうにこだわる"
+    ],
     "nearest_station": "西武池袋線大泉学園駅（徒歩9分）",
     "source": "https://www.wine.tokyo.jp/",
-    "lat": 35.7540,
+    "lat": 35.754,
     "lng": 139.5801,
     "name_en": "Tokyo Winery"
   },
@@ -42,13 +54,23 @@
     "wine_style": "red,white,rose",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["マスカット・ベーリーA", "コンコード"],
-    "brands": ["深川ワイン", "東京メルロー"],
-    "features": ["2016年6月開業の都市型ワイナリー", "ワイン造りを見える化した醸造所", "併設試飲所・レストランあり"],
+    "grapes": [
+      "マスカット・ベーリーA",
+      "コンコード"
+    ],
+    "brands": [
+      "深川ワイン",
+      "東京メルロー"
+    ],
+    "features": [
+      "2016年6月開業の都市型ワイナリー",
+      "ワイン造りを見える化した醸造所",
+      "併設試飲所・レストランあり"
+    ],
     "nearest_station": "東京メトロ東西線門前仲町駅",
     "source": "https://www.winery.or.jp/winery-map/6756/",
     "lat": 35.6737,
-    "lng": 139.7980,
+    "lng": 139.798,
     "name_en": "Fukagawa Winery Tokyo"
   },
   {
@@ -68,13 +90,26 @@
     "wine_style": "red,white,rose",
     "main_grape": "delaware",
     "gi": "",
-    "grapes": ["デラウェア", "マスカット・ベーリーA", "メルロー", "シャルドネ", "巨峰"],
-    "brands": ["Tabletop Delaware", "マスカット・ベーリーA"],
-    "features": ["2015年6月オープン", "「産地と飲み手をつなぐ」都市型ワイナリー", "各産地から調達したぶどうを東京で醸造"],
+    "grapes": [
+      "デラウェア",
+      "マスカット・ベーリーA",
+      "メルロー",
+      "シャルドネ",
+      "巨峰"
+    ],
+    "brands": [
+      "Tabletop Delaware",
+      "マスカット・ベーリーA"
+    ],
+    "features": [
+      "2015年6月オープン",
+      "「産地と飲み手をつなぐ」都市型ワイナリー",
+      "各産地から調達したぶどうを東京で醸造"
+    ],
     "nearest_station": "東京メトロ半蔵門線清澄白河駅",
     "source": "https://www.winery.or.jp/winery-map/263/",
-    "lat": 35.6810,
-    "lng": 139.7950,
+    "lat": 35.681,
+    "lng": 139.795,
     "name_en": "Kiyosumi Fujimaru Jozo"
   },
   {
@@ -94,9 +129,20 @@
     "wine_style": "red,white",
     "main_grape": "delaware",
     "gi": "",
-    "grapes": ["アジロン", "北天の雫", "デラウェア"],
-    "brands": ["BookRoad Delaware", "BookRoad Aziron"],
-    "features": ["日本ワイナリーアワード三つ星を5年連続受賞", "全品種を単一品種で醸造", "長野・山梨・茨城の契約農家のぶどうを使用"],
+    "grapes": [
+      "アジロン",
+      "北天の雫",
+      "デラウェア"
+    ],
+    "brands": [
+      "BookRoad Delaware",
+      "BookRoad Aziron"
+    ],
+    "features": [
+      "日本ワイナリーアワード三つ星を5年連続受賞",
+      "全品種を単一品種で醸造",
+      "長野・山梨・茨城の契約農家のぶどうを使用"
+    ],
     "nearest_station": "JR御徒町駅（徒歩5分）",
     "source": "https://www.bookroad.tokyo/",
     "lat": 35.7064,
@@ -120,9 +166,22 @@
     "wine_style": "red,white",
     "main_grape": "yama-sauvignon",
     "gi": "",
-    "grapes": ["ヤマソーヴィニヨン", "モントブリエ", "ビジュノワール", "マスカット・ベーリーA", "ブラック・クイーン", "コンコード"],
-    "brands": ["Yama Sauvignon", "Montbrie"],
-    "features": ["あきる野市の自社農園でぶどう栽培", "循環型ワイナリー"],
+    "grapes": [
+      "ヤマソーヴィニヨン",
+      "モントブリエ",
+      "ビジュノワール",
+      "マスカット・ベーリーA",
+      "ブラック・クイーン",
+      "コンコード"
+    ],
+    "brands": [
+      "Yama Sauvignon",
+      "Montbrie"
+    ],
+    "features": [
+      "あきる野市の自社農園でぶどう栽培",
+      "循環型ワイナリー"
+    ],
     "nearest_station": "",
     "source": "https://vineyardtama.com/",
     "lat": 35.7368,
@@ -146,9 +205,21 @@
     "wine_style": "red,white",
     "main_grape": "sauvignon-blanc",
     "gi": "",
-    "grapes": ["ソーヴィニヨン・ブラン", "ピノ・ノワール", "ナイアガラ", "カベルネ・ソーヴィニヨン"],
-    "brands": ["渋谷ブラン", "渋谷ルージュ"],
-    "features": ["2020年8月MIYASHITA PARK内にオープン", "渋谷初のワイン醸造所", "ワインビストロ併設"],
+    "grapes": [
+      "ソーヴィニヨン・ブラン",
+      "ピノ・ノワール",
+      "ナイアガラ",
+      "カベルネ・ソーヴィニヨン"
+    ],
+    "brands": [
+      "渋谷ブラン",
+      "渋谷ルージュ"
+    ],
+    "features": [
+      "2020年8月MIYASHITA PARK内にオープン",
+      "渋谷初のワイン醸造所",
+      "ワインビストロ併設"
+    ],
     "nearest_station": "JR山手線渋谷駅",
     "source": "https://shibuya.wine/",
     "lat": 35.6627,
@@ -165,14 +236,19 @@
     "founded_era": "令和3年",
     "address": "東京都港区芝5-20-22",
     "tel": "03-6412-8251",
-    "url": "https://wineman.jp/",
+    "url": "https://winemanstore.base.shop/",
     "area": "港区芝",
     "desc": "港区芝の古民家を改装したレストラン・ワインショップ・アーバンワイナリーの複合施設。港区唯一のワイナリーとして少量醸造を行う。",
     "visit": "火〜土営業。1階レストラン、2階ショップ併設。営業時間は営業日ごとに要確認。",
     "wine_style": "red,white,sparkling",
     "main_grape": "delaware",
     "gi": "",
-    "grapes": ["デラウェア", "スチューベン", "シャインマスカット", "ナイアガラ"],
+    "grapes": [
+      "デラウェア",
+      "スチューベン",
+      "シャインマスカット",
+      "ナイアガラ"
+    ],
     "brands": [
       {
         "name": "WINEMAN NIAGARA",
@@ -187,7 +263,11 @@
         "grapes": "スチューベン"
       }
     ],
-    "features": ["2021年に三田・慶應仲通りで開業", "港区唯一のワイナリー", "レストラン・ショップ・醸造所の複合施設"],
+    "features": [
+      "2021年に三田・慶應仲通りで開業",
+      "港区唯一のワイナリー",
+      "レストラン・ショップ・醸造所の複合施設"
+    ],
     "nearest_station": "JR田町駅・都営三田駅",
     "source": "https://wa-syu.com/collections/wineman-factory",
     "lat": 35.6487,
@@ -211,7 +291,9 @@
     "wine_style": "white,rose,orange",
     "main_grape": "takaosan",
     "gi": "",
-    "grapes": ["高尾"],
+    "grapes": [
+      "高尾"
+    ],
     "brands": [
       {
         "name": "高尾ぶどうのワイン",
@@ -220,7 +302,11 @@
         "grapes": "高尾"
       }
     ],
-    "features": ["東京都産ぶどうを活用", "委託醸造・OEM対応", "地域資源と廃棄ロス低減を意識したワイン造り"],
+    "features": [
+      "東京都産ぶどうを活用",
+      "委託醸造・OEM対応",
+      "地域資源と廃棄ロス低減を意識したワイン造り"
+    ],
     "nearest_station": "JR中央線日野駅",
     "source": "https://www.tokawinery.jp/about/",
     "lat": 35.6809,

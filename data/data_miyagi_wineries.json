@@ -29,7 +29,11 @@
         "grapes": ""
       }
     ],
-    "features": ["秋保温泉郷の立地", "2015年設立", "ワイナリーカフェ併設"],
+    "features": [
+      "秋保温泉郷の立地",
+      "2015年設立",
+      "ワイナリーカフェ併設"
+    ],
     "nearest_station": "",
     "source": "https://www.winery.or.jp/winery-map/894/",
     "lat": 38.2178,
@@ -53,13 +57,36 @@
     "wine_style": "mixed",
     "main_grape": "merlot",
     "gi": "",
-    "grapes": ["メルロー", "シャルドネ", "甲州"],
-    "brands": [
-      {"name": "ゼフィール", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "ラセリー了", "type": "赤ワイン", "specs": "", "grapes": ""},
-      {"name": "ラセリー美", "type": "白ワイン", "specs": "", "grapes": ""}
+    "grapes": [
+      "メルロー",
+      "シャルドネ",
+      "甲州"
     ],
-    "features": ["自社畑100%", "七ツ森の麓", "Sakura Award・Decanter受賞歴"],
+    "brands": [
+      {
+        "name": "ゼフィール",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "ラセリー了",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "ラセリー美",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "自社畑100%",
+      "七ツ森の麓",
+      "Sakura Award・Decanter受賞歴"
+    ],
     "nearest_station": "",
     "source": "http://ryomi-wine.jp/",
     "lat": 38.4278,
@@ -83,15 +110,154 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["デラウェア", "マスカットベーリーA", "甲州", "ネオ・マスカット", "ロザリオビアンコ", "スチューベン", "メルロ", "シャインマスカット", "レッドミレニアム"],
-    "brands": [
-      {"name": "Fattoria AL FIORE", "type": "赤・白・オレンジ", "specs": "デラウェアやMBAなど多様な品種を使う自然派シリーズ。", "grapes": ""}
+    "grapes": [
+      "デラウェア",
+      "マスカットベーリーA",
+      "甲州",
+      "ネオ・マスカット",
+      "ロザリオビアンコ",
+      "スチューベン",
+      "メルロ",
+      "シャインマスカット",
+      "レッドミレニアム"
     ],
-    "features": ["旧小学校体育館をワイナリーに転用", "自然派無添加ワイン", "川崎町の里山立地"],
+    "brands": [
+      {
+        "name": "Fattoria AL FIORE",
+        "type": "赤・白・オレンジ",
+        "specs": "デラウェアやMBAなど多様な品種を使う自然派シリーズ。",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "旧小学校体育館をワイナリーに転用",
+      "自然派無添加ワイン",
+      "川崎町の里山立地"
+    ],
     "nearest_station": "",
     "source": "https://www.fattoriaalfiore.com/",
     "lat": 38.1278,
     "lng": 140.7078,
     "name_en": "Fattoria al Fiore"
+  },
+  {
+    "id": "minamisanriku-winery",
+    "name": "南三陸ワイナリー",
+    "company": "南三陸ワイナリー株式会社",
+    "brand": "",
+    "winery_type": "small",
+    "founded": "2020",
+    "founded_era": "令和2年",
+    "address": "宮城県本吉郡南三陸町志津川字旭ケ浦7-3",
+    "tel": "0226-48-5519",
+    "url": "https://www.msr-wine.com/",
+    "area": "志津川",
+    "desc": "地域おこし協力隊として着任した2人が2017年に南三陸ワインプロジェクトを開始し、2019年2月に法人化。2020年10月7日にショップとキッチン施設を備えたワイナリーがグランドオープンした。山形県内（天童市・鶴岡市・寒河江市・上山市・山形市本沢地区など）で栽培されたぶどうを用いてワインを醸造している。",
+    "visit": "ワイナリー内でショップ営業・ワイナリー体験を実施（水〜金13:00-18:00、土日祝10:00-18:00、月火定休）",
+    "wine_style": "red,white,sparkling",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": [
+      "メルロー",
+      "ヤマ・ソーヴィニヨン",
+      "シラー",
+      "ソーヴィニヨン・ブラン",
+      "デラウェア",
+      "甲州"
+    ],
+    "brands": [
+      {
+        "name": "メルロ/ヤマ・ソービニオン",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "メルロー、ヤマ・ソーヴィニヨン"
+      },
+      {
+        "name": "ソーヴィニヨン・ブラン",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ソーヴィニヨン・ブラン"
+      },
+      {
+        "name": "デラウェア",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "デラウェア"
+      },
+      {
+        "name": "甲州シュール・リー",
+        "type": "白ワイン",
+        "specs": "シュール・リー製法",
+        "grapes": "甲州"
+      },
+      {
+        "name": "デラウェア・スパークリング",
+        "type": "スパークリング",
+        "specs": "",
+        "grapes": "デラウェア"
+      }
+    ],
+    "features": [
+      "地域おこし協力隊出身の2人が2017年に立ち上げた南三陸町初のワイナリー",
+      "海が見えるロケーションにショップ・キッチン施設を併設",
+      "山形県内各地の畑で栽培されたぶどうを使用"
+    ],
+    "nearest_station": "",
+    "source": "https://www.msr-wine.com/",
+    "lat": 38.669,
+    "lng": 141.445,
+    "name_en": "Minamisanriku Winery"
+  },
+  {
+    "id": "chateau-kiri-kurikoma",
+    "name": "シャトー桐 くりこま高原醸造所",
+    "company": "有限会社キリシロ",
+    "brand": "",
+    "winery_type": "natural",
+    "founded": "",
+    "founded_era": "",
+    "address": "宮城県栗原市栗駒岩ケ崎桐木沢66",
+    "tel": "0228-45-2065",
+    "url": "https://kirishiro.com/",
+    "area": "栗駒岩ケ崎",
+    "desc": "農業・給食・福祉事業などを手がける有限会社キリシロが運営するワイナリー。栗駒産の自社栽培ぶどう（マスカット・ベーリーA、メルローなど）を選果し、畑に隣接する醸造所で酸化防止剤無添加・無濾過にこだわった製法でワインを醸造している。障がい者支援施設とのコラボ商品「39WINE」も手がける。",
+    "visit": "",
+    "wine_style": "red,rose",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "メルロー"
+    ],
+    "brands": [
+      {
+        "name": "Peace Wine",
+        "type": "赤ワイン",
+        "specs": "アルコール分9%、無濾過・酸化防止剤無添加、750ml",
+        "grapes": "マスカット・ベーリーA（栗駒産）"
+      },
+      {
+        "name": "Merlot 2022 Kurikoma Wine",
+        "type": "赤ワイン",
+        "specs": "自社栽培メルロー使用、酸化防止剤無添加",
+        "grapes": "メルロー（栗駒産）"
+      },
+      {
+        "name": "39WINE",
+        "type": "ロゼ",
+        "specs": "淡いピンク色、微発泡",
+        "grapes": "マスカット・ベーリーA"
+      }
+    ],
+    "features": [
+      "農福連携事業として地域の就労支援事業所と協力しブドウ栽培・ラベル貼りを実施",
+      "栗駒産の自社栽培ぶどうを畑に隣接する醸造所で醸造",
+      "酸化防止剤無添加・無濾過にこだわった製法"
+    ],
+    "nearest_station": "",
+    "source": "https://kirishiro.com/peace-wine/",
+    "lat": 38.743,
+    "lng": 140.94,
+    "name_en": "Chateau Kiri Kurikoma Kogen Winery"
   }
 ]

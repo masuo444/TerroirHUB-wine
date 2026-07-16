@@ -159,8 +159,14 @@
     "wine_style": "red,white",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["マスカット・ベーリーA", "シャルドネ"],
-    "brands": ["かぬま里山わいん 赤", "かぬま里山わいん 白"],
+    "grapes": [
+      "マスカット・ベーリーA",
+      "シャルドネ"
+    ],
+    "brands": [
+      "かぬま里山わいん 赤",
+      "かぬま里山わいん 白"
+    ],
     "features": [
       "自社農園産ぶどうのみで丁寧に醸造",
       "2003年からブドウ栽培を開始"
@@ -181,21 +187,27 @@
     "founded_era": "平成28年",
     "address": "栃木県芳賀郡市貝町市塙3388-3",
     "tel": "",
-    "url": "https://www.kusakavineyards.com/",
+    "url": "https://www.instagram.com/kusaka_vineyards/",
     "area": "芳賀郡市貝町",
     "desc": "芳賀郡市貝町で栽培から醸造、加工品づくりまで行う小規模ヴィンヤード。地域の農産物と連動した運営が特徴。",
     "visit": "営業日・見学対応は事前確認推奨。",
     "wine_style": "red,white",
     "main_grape": "merlot",
     "gi": "",
-    "grapes": ["メルロー", "シャルドネ"],
-    "brands": ["Kusaka Merlot", "Kusaka Chardonnay"],
+    "grapes": [
+      "メルロー",
+      "シャルドネ"
+    ],
+    "brands": [
+      "Kusaka Merlot",
+      "Kusaka Chardonnay"
+    ],
     "features": [
       "農家が栽培した美味しいぶどうで赤白ワイン製造",
       "ぶどう園でレーズン・ぶどうジュースも生産"
     ],
     "nearest_station": "",
-    "source": "https://www.kusakavineyards.com/",
+    "source": "https://www.instagram.com/kusaka_vineyards/",
     "lat": 36.5215,
     "lng": 140.2196,
     "name_en": "Kusaka Vineyards"
@@ -217,8 +229,15 @@
     "wine_style": "red,white",
     "main_grape": "chardonnay",
     "gi": "",
-    "grapes": ["シャルドネ", "メルロー", "マスカット・ベーリーA"],
-    "brands": ["NASU 661 Chardonnay", "NASU 661 Merlot"],
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "マスカット・ベーリーA"
+    ],
+    "brands": [
+      "NASU 661 Chardonnay",
+      "NASU 661 Merlot"
+    ],
     "features": [
       "2022年7月オープン",
       "那須高原の広大な敷地で栽培",
@@ -250,7 +269,9 @@
     "grapes": [
       "メルロー"
     ],
-    "brands": ["Hinoe Merlot"],
+    "brands": [
+      "Hinoe Merlot"
+    ],
     "features": [
       "宇都宮市初のワイナリー",
       "耕作断念地を再生してぶどう栽培",
@@ -284,7 +305,10 @@
       "プチマンサン",
       "ツヴァイゲルトレーベ"
     ],
-    "brands": ["Y's Chardonnay", "Y's Zweigeltrebe"],
+    "brands": [
+      "Y's Chardonnay",
+      "Y's Zweigeltrebe"
+    ],
     "features": [
       "2017年から栽培開始",
       "那須塩原市ワイン特区を活用",

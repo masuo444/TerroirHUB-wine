@@ -31,7 +31,11 @@
         "grapes": ""
       }
     ],
-    "features": ["郡山市逢瀬町", "2015年設立", "桃・梨・林檎などの果実酒も製造"],
+    "features": [
+      "郡山市逢瀬町",
+      "2015年設立",
+      "桃・梨・林檎などの果実酒も製造"
+    ],
     "nearest_station": "",
     "source": "https://www.winery.or.jp/winery-map/6562/",
     "lat": 37.4278,
@@ -55,7 +59,13 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["シャルドネ", "メルロー", "ピノノワール", "シラー", "マスカットベーリーA"],
+    "grapes": [
+      "シャルドネ",
+      "メルロー",
+      "ピノノワール",
+      "シラー",
+      "マスカットベーリーA"
+    ],
     "brands": [
       {
         "name": "いわきワイナリー メルロー",
@@ -64,7 +74,11 @@
         "grapes": "メルロー"
       }
     ],
-    "features": ["NPO法人運営", "福祉施設のワイナリー", "2009年設立"],
+    "features": [
+      "NPO法人運営",
+      "福祉施設のワイナリー",
+      "2009年設立"
+    ],
     "nearest_station": "",
     "source": "https://www.winery.or.jp/winery-map/9498/",
     "lat": 37.0578,
@@ -100,7 +114,11 @@
         "grapes": ""
       }
     ],
-    "features": ["2019年設立", "吾妻山麓の立地", "カスタムクラッシュサービスあり"],
+    "features": [
+      "2019年設立",
+      "吾妻山麓の立地",
+      "カスタムクラッシュサービスあり"
+    ],
     "nearest_station": "",
     "source": "https://www.winery.or.jp/winery-map/12936/",
     "lat": 37.7678,
@@ -124,15 +142,51 @@
     "wine_style": "mixed",
     "main_grape": "yamasouvignon",
     "gi": "",
-    "grapes": ["ヤマソービニオン", "マスカットベーリーA", "セイベル", "ミューラートルガウ", "甲州"],
-    "brands": [
-      {"name": "一慶", "type": "赤ワイン", "specs": "", "grapes": ""},
-      {"name": "一仁", "type": "白ワイン", "specs": "", "grapes": ""},
-      {"name": "をちこち", "type": "赤・白", "specs": "", "grapes": ""},
-      {"name": "いまっと", "type": "果実酒", "specs": "", "grapes": ""},
-      {"name": "夢のつぶ", "type": "果実酒", "specs": "", "grapes": ""}
+    "grapes": [
+      "ヤマソービニオン",
+      "マスカットベーリーA",
+      "セイベル",
+      "ミューラートルガウ",
+      "甲州"
     ],
-    "features": ["ファーマーズワイナリー", "2012年設立", "自社管理1.5ha・契約管理4ha", "年間約20,000本生産"],
+    "brands": [
+      {
+        "name": "一慶",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "一仁",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "をちこち",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "いまっと",
+        "type": "果実酒",
+        "specs": "",
+        "grapes": ""
+      },
+      {
+        "name": "夢のつぶ",
+        "type": "果実酒",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "ファーマーズワイナリー",
+      "2012年設立",
+      "自社管理1.5ha・契約管理4ha",
+      "年間約20,000本生産"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/12070010077/",
     "lat": 37.6178,
@@ -156,11 +210,23 @@
     "wine_style": "mixed",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["ベーリーA"],
-    "brands": [
-      {"name": "ワイン工房あいづ", "type": "赤・白", "specs": "", "grapes": ""}
+    "grapes": [
+      "ベーリーA"
     ],
-    "features": ["磐梯山の麓", "猪苗代町", "ガラス樽使用", "2025年4月に昭和化工株式会社果樹研究所に移管"],
+    "brands": [
+      {
+        "name": "ワイン工房あいづ",
+        "type": "赤・白",
+        "specs": "",
+        "grapes": ""
+      }
+    ],
+    "features": [
+      "磐梯山の麓",
+      "猪苗代町",
+      "ガラス樽使用",
+      "2025年4月に昭和化工株式会社果樹研究所に移管"
+    ],
     "nearest_station": "",
     "source": "http://www.hondawinery.co.jp/",
     "lat": 37.5778,
@@ -184,7 +250,12 @@
     "wine_style": "red,white,rose",
     "main_grape": "mba",
     "gi": "",
-    "grapes": ["マスカット・ベーリーA", "カベルネ・ソーヴィニヨン", "ミュラートゥルガウ", "デラウェア"],
+    "grapes": [
+      "マスカット・ベーリーA",
+      "カベルネ・ソーヴィニヨン",
+      "ミュラートゥルガウ",
+      "デラウェア"
+    ],
     "brands": [
       {
         "name": "北会津ワイン 赤",
@@ -199,11 +270,78 @@
         "grapes": "ミュラートゥルガウ、デラウェア"
       }
     ],
-    "features": ["1893年からぶどう栽培", "1900年から葡萄酒醸造", "栽培から醸造・瓶詰めまで自園一貫"],
+    "features": [
+      "1893年からぶどう栽培",
+      "1900年から葡萄酒醸造",
+      "栽培から醸造・瓶詰めまで自園一貫"
+    ],
     "nearest_station": "",
     "source": "https://www.fukunosake.com/sakagura-others/ootake-vin/",
-    "lat": 37.5290,
-    "lng": 139.9030,
+    "lat": 37.529,
+    "lng": 139.903,
     "name_en": "Kitaaizu Wine"
+  },
+  {
+    "id": "kawauchi-wine",
+    "name": "かわうちワイナリー",
+    "company": "かわうちワイン株式会社",
+    "brand": "",
+    "winery_type": "medium",
+    "founded": "2021",
+    "founded_era": "令和3年",
+    "address": "福島県双葉郡川内村大字上川内字大平2番地の1",
+    "tel": "0240-25-8868",
+    "url": "https://kawauchi-wine.com/",
+    "area": "川内村",
+    "desc": "阿武隈高地中央部、標高約750mに位置する川内村で2015年からぶどう栽培を開始し、2021年に醸造施設が完成。村産ぶどうを使用する「ヴィラージュ」シリーズと、購入ぶどう（北海道余市産等）を使用する「リベル」シリーズを展開し、2022年3月に初ヴィンテージを発売した。",
+    "visit": "",
+    "wine_style": "red,white",
+    "main_grape": "merlot",
+    "gi": "",
+    "grapes": [
+      "メルロー",
+      "カベルネ・ソーヴィニヨン",
+      "シャルドネ",
+      "ピノ・ノワール",
+      "シラー",
+      "ケルナー",
+      "ミュラー・トゥルガウ"
+    ],
+    "brands": [
+      {
+        "name": "ヴィラージュ メルロー&カベルネソーヴィニヨン2023",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "メルロー、カベルネ・ソーヴィニヨン（川内村産）"
+      },
+      {
+        "name": "ヴィラージュ シャルドネ2024",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "シャルドネ（川内村産）"
+      },
+      {
+        "name": "リベル ピノノワール de Ho 2022",
+        "type": "赤ワイン",
+        "specs": "",
+        "grapes": "ピノ・ノワール"
+      },
+      {
+        "name": "リベル ケルナー de Ho Blanc 2023",
+        "type": "白ワイン",
+        "specs": "",
+        "grapes": "ケルナー"
+      }
+    ],
+    "features": [
+      "村人とボランティアが荒れ地を開墾して整備した畑からワイン造りを開始",
+      "村産ぶどう使用の「ヴィラージュ」と購入ぶどう使用の「リベル」の2シリーズを展開",
+      "サクラアワード2026・日本ワイナリーアワード2026で受賞"
+    ],
+    "nearest_station": "",
+    "source": "https://kawauchi-wine.com/",
+    "lat": 37.357,
+    "lng": 140.756,
+    "name_en": "Kawauchi Winery"
   }
 ]

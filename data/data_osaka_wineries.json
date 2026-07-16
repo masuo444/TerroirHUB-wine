@@ -200,7 +200,10 @@
       "デラウェア",
       "マスカット・ベーリーA"
     ],
-    "brands": ["デラウェア", "マスカット・ベーリーA"],
+    "brands": [
+      "デラウェア",
+      "マスカット・ベーリーA"
+    ],
     "features": [
       "2013年開業の都市型ワイナリー",
       "自社畑と全国のぶどうを使い分けて醸造",
@@ -218,11 +221,11 @@
     "company": "天使の羽ワイナリー",
     "brand": "",
     "winery_type": "small",
-  "founded": "1947",
-  "founded_era": "昭和22年",
+    "founded": "1947",
+    "founded_era": "昭和22年",
     "address": "大阪府柏原市大県697-2",
     "tel": "072-975-3303",
-    "url": "http://www.n-farms.com/",
+    "url": "",
     "area": "柏原市",
     "desc": "柏原市の農園が手がける小規模ワイナリー。大阪・柏原産ぶどうを生かしたGI大阪のワインを展開する。",
     "visit": "営業日・見学対応は事前確認推奨。",
@@ -233,10 +236,23 @@
       "マスカット・ベーリーA"
     ],
     "brands": [
-      {"name": "NI CO RI 白", "type": "白ワイン", "specs": "にごりワイン", "grapes": "デラウェア"},
-      {"name": "NI CO RI 赤", "type": "赤ワイン", "specs": "にごりワイン", "grapes": "マスカット・ベーリーA、コンコード"}
+      {
+        "name": "NI CO RI 白",
+        "type": "白ワイン",
+        "specs": "にごりワイン",
+        "grapes": "デラウェア"
+      },
+      {
+        "name": "NI CO RI 赤",
+        "type": "赤ワイン",
+        "specs": "にごりワイン",
+        "grapes": "マスカット・ベーリーA、コンコード"
+      }
     ],
-    "features": ["柏原市の小規模ワイナリー", "GI大阪に対応した地域密着型の醸造"],
+    "features": [
+      "柏原市の小規模ワイナリー",
+      "GI大阪に対応した地域密着型の醸造"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/16270010269/",
     "lat": 34.583,
@@ -264,9 +280,12 @@
       "デラウェア"
     ],
     "brands": [],
-    "features": ["柏原市の飲料メーカー系製造所", "GI大阪の製造事業者"],
+    "features": [
+      "柏原市の飲料メーカー系製造所",
+      "GI大阪の製造事業者"
+    ],
     "nearest_station": "",
-  "source": "https://kashiwara-machi-hito-shigoto.net/archives/business_info/%E5%AF%BF%E5%B1%8B%E6%B8%85%E6%B6%BC%E9%A3%9F%E5%93%81%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE",
+    "source": "https://kashiwara-machi-hito-shigoto.net/archives/business_info/%E5%AF%BF%E5%B1%8B%E6%B8%85%E6%B6%BC%E9%A3%9F%E5%93%81%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE",
     "lat": 34.575,
     "lng": 135.635,
     "name_en": "Kotobukiya Seiryo Shokuhin"
@@ -335,11 +354,80 @@
       "NEXT to 「．．．」",
       "HIRAKATA NOVA"
     ],
-    "features": ["枚方市の里山型ワイナリー", "農体験と連動した少量生産"],
+    "features": [
+      "枚方市の里山型ワイナリー",
+      "農体験と連動した少量生産"
+    ],
     "nearest_station": "",
     "source": "https://nippon.wine/winery/16270010335/",
     "lat": 34.818,
     "lng": 135.657,
     "name_en": "Hirakata Suguri Ricoro Farm"
+  },
+  {
+    "id": "toyono-takayama-winery",
+    "name": "とよの高山ワイナリー",
+    "company": "株式会社里山創生研究所",
+    "brand": "とよのワイン",
+    "winery_type": "small",
+    "founded": "2024",
+    "founded_era": "令和6年",
+    "address": "大阪府豊能郡豊能町高山23",
+    "tel": "072-734-7365",
+    "url": "https://www.satoyamasouken.co.jp/winery",
+    "area": "豊能郡豊能町（高山）",
+    "desc": "株式会社里山創生研究所（2020年6月設立）が、荒れた棚田を開墾して整備したワイナリー。2024年3月に酒類製造免許を取得し、標高約500mの冷涼な気候と清らかな湧水を生かして栽培から醸造までを里山で一貫して行う。マスカット・ベーリーA、ソーヴィニヨン・ブラン、デラウェア、ヤマ・ソーヴィニヨンなどを用いて2025年ヴィンテージを初リリースした。",
+    "visit": "ワイン特区制度により「オーベルジュ ヤマガミ」および豊能町内のイベントで提供",
+    "wine_style": "white,red,sparkling",
+    "main_grape": "mba",
+    "gi": "",
+    "grapes": [
+      "マスカット・ベーリーA",
+      "ソーヴィニヨン・ブラン",
+      "デラウェア",
+      "ヤマ・ソーヴィニヨン"
+    ],
+    "brands": [
+      {
+        "name": "マスカット・ベーリーA ペティアン",
+        "type": "スパークリング",
+        "specs": "微発泡、軽やかな泡立ち",
+        "grapes": "マスカット・ベーリーA"
+      },
+      {
+        "name": "ソーヴィニヨン・ブラン",
+        "type": "白ワイン",
+        "specs": "グレープフルーツの香り、フレッシュなスタイル",
+        "grapes": "ソーヴィニヨン・ブラン"
+      },
+      {
+        "name": "デラウェア",
+        "type": "白ワイン",
+        "specs": "樽仕込み、ドライなテイスト",
+        "grapes": "デラウェア"
+      },
+      {
+        "name": "マスカット・ベーリーA ルージュ",
+        "type": "赤ワイン",
+        "specs": "親しみやすいライトボディ",
+        "grapes": "マスカット・ベーリーA"
+      },
+      {
+        "name": "ヤマ・ソーヴィニヨン",
+        "type": "赤ワイン",
+        "specs": "フルボディ、濃厚な骨格",
+        "grapes": "ヤマ・ソーヴィニヨン"
+      }
+    ],
+    "features": [
+      "荒れた棚田を開墾し、栽培から醸造までを里山で一貫生産",
+      "標高約500mの冷涼な気候と清らかな湧水を活用したテロワール表現",
+      "ワイン特区制度を活用し「オーベルジュ ヤマガミ」等で提供"
+    ],
+    "nearest_station": "阪急箕面萱野駅から阪急バス28系統「高山」バス停下車、徒歩5分",
+    "source": "https://www.satoyamasouken.co.jp/winery",
+    "lat": 34.938,
+    "lng": 135.474,
+    "name_en": "Toyono Takayama Winery"
   }
 ]
