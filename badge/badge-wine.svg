@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60" role="img" aria-label="Terroir HUB WINE 掲載ワイナリー">
+  <rect x="0.5" y="0.5" width="219" height="59" rx="6" fill="#FFFBF7" stroke="#E4D5CB"/>
+  <rect x="0.5" y="0.5" width="4" height="59" rx="2" fill="#722F37"/>
+  <circle cx="30" cy="30" r="14" fill="none" stroke="#722F37" stroke-width="1.2"/>
+  <text x="30" y="35.5" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#722F37" text-anchor="middle" font-style="italic">T</text>
+  <text x="52" y="24" font-family="Verdana,Arial,sans-serif" font-size="8.5" letter-spacing="2.5" fill="#8A7A6E">TERROIR HUB WINE</text>
+  <text x="52" y="43" font-family="Georgia,'Hiragino Mincho ProN','Yu Mincho',serif" font-size="14" fill="#3A2E28">掲載ワイナリー</text>
+</svg>
