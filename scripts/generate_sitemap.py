@@ -10,12 +10,17 @@ TODAY = date.today().isoformat()
 
 urls = []
 
-def add(loc, priority, changefreq='monthly'):
-    urls.append({'loc': loc, 'priority': priority, 'changefreq': changefreq})
+def add(loc, priority, changefreq='monthly', alt=None):
+    urls.append({'loc': loc, 'priority': priority, 'changefreq': changefreq, 'alt': alt})
+
+def hreflang_pair(ja_url, en_url):
+    """JA/EN の相互参照（x-default は en を採用）"""
+    return {'ja': ja_url, 'en': en_url, 'x-default': en_url}
 
 # ── トップ・固定ページ ──
-add(f'{DOMAIN}/',               '1.0', 'weekly')
-add(f'{DOMAIN}/en/',            '0.9', 'weekly')
+_ja_root, _en_root = f'{DOMAIN}/', f'{DOMAIN}/en/'
+add(_ja_root,                   '1.0', 'weekly', hreflang_pair(_ja_root, _en_root))
+add(_en_root,                   '0.9', 'weekly', hreflang_pair(_ja_root, _en_root))
 add(f'{DOMAIN}/wine/guide/',    '0.9', 'monthly')
 add(f'{DOMAIN}/wine/mypage/',   '0.7', 'monthly')
 add(f'{DOMAIN}/wine/search/',   '0.8', 'weekly')
@@ -40,8 +45,10 @@ for r in ['hokkaido','tohoku','kanto','chubu','kinki','chugoku','shikoku','kyush
 json_files = sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json')))
 for jf in json_files:
     pref = os.path.basename(jf).replace('data_','').replace('_wineries.json','')
-    add(f'{DOMAIN}/wine/{pref}/', '0.85', 'weekly')
-    add(f'{DOMAIN}/wine/en/{pref}/', '0.8', 'weekly')
+    _ja_pref, _en_pref = f'{DOMAIN}/wine/{pref}/', f'{DOMAIN}/wine/en/{pref}/'
+    _pref_pair = hreflang_pair(_ja_pref, _en_pref)
+    add(_ja_pref, '0.85', 'weekly', _pref_pair)
+    add(_en_pref, '0.8', 'weekly', _pref_pair)
 
     with open(jf, 'r', encoding='utf-8') as f:
         wineries = json.load(f)
@@ -51,18 +58,31 @@ for jf in json_files:
         is_a = bool(b.get('url') and b.get('founded') and
                     len(b.get('brands',[])) >= 1 and len(b.get('features',[])) >= 2)
         prio = '0.8' if is_a else '0.6'
-        add(f'{DOMAIN}/wine/{pref}/{b["id"]}.html', prio, 'monthly')
-        add(f'{DOMAIN}/wine/en/{pref}/{b["id"]}.html', '0.7' if is_a else '0.5', 'monthly')
+        _ja_u = f'{DOMAIN}/wine/{pref}/{b["id"]}.html'
+        _en_u = f'{DOMAIN}/wine/en/{pref}/{b["id"]}.html'
+        _w_pair = hreflang_pair(_ja_u, _en_u)
+        add(_ja_u, prio, 'monthly', _w_pair)
+        add(_en_u, '0.7' if is_a else '0.5', 'monthly', _w_pair)
 
 # ── XML出力 ──
 lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+    '        xmlns:xhtml="http://www.w3.org/1999/xhtml">'
 ]
 for u in urls:
     lines += [
         '  <url>',
         f'    <loc>{u["loc"]}</loc>',
+    ]
+    alt = u.get('alt')
+    if alt:
+        lines += [
+            f'    <xhtml:link rel="alternate" hreflang="ja" href="{alt["ja"]}"/>',
+            f'    <xhtml:link rel="alternate" hreflang="en" href="{alt["en"]}"/>',
+            f'    <xhtml:link rel="alternate" hreflang="x-default" href="{alt["x-default"]}"/>',
+        ]
+    lines += [
         f'    <lastmod>{TODAY}</lastmod>',
         f'    <changefreq>{u["changefreq"]}</changefreq>',
         f'    <priority>{u["priority"]}</priority>',

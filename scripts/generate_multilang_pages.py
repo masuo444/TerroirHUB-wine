@@ -220,6 +220,11 @@ def page_head(title, desc, canonical, lang, hreflangs):
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{canonical}">
 {links}
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{canonical}">
+<meta property="og:site_name" content="Terroir HUB WINE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 <style>{CSS}</style>
