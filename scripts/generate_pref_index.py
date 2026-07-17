@@ -463,6 +463,8 @@ def generate_pref_page(pref_slug, wineries):
   </div>
 </section>
 
+<div style="max-width:1080px;margin:36px auto 0;padding:0 24px;text-align:center;"><a href="https://www.terroirhub.com/terroir/{pref_slug}.html" style="font-size:13px;color:var(--accent);text-decoration:none;letter-spacing:0.03em;">{esc(pref_name)}のテロワールを見る — 日本酒・ワイン・焼酎・ウイスキーを横断 →</a></div>
+
 <footer class="site-footer">
   <div class="footer-brand">
     <p class="footer-tagline">日本ワインの世界を、もっと深く。</p>
