@@ -302,6 +302,19 @@ def root_page(lang):
 """
 
 
+# 編集品質の英語コンテンツ上書き（data/en_content.json、県:IDキー）。EN_CONTENT_GUIDE.md参照
+_EN_CONTENT = {}
+_enc_path = os.path.join(BASE, "data", "en_content.json")
+if os.path.exists(_enc_path):
+    try:
+        _EN_CONTENT = json.load(open(_enc_path, encoding="utf-8"))
+    except Exception as _e:
+        print("WARN: en_content.json load failed:", _e)
+
+_TYPE_EN = {"赤ワイン": "Red", "白ワイン": "White", "ロゼワイン": "Rosé", "ロゼ": "Rosé",
+            "スパークリングワイン": "Sparkling", "スパークリング": "Sparkling", "オレンジワイン": "Orange",
+            "赤": "Red", "白": "White", "赤・白": "Red & White", "デザートワイン": "Dessert"}
+
 def wine_page(b, pref, lang):
     t = UI[lang]
     pref_n = pref_name(pref, lang)
@@ -319,6 +332,30 @@ def wine_page(b, pref, lang):
     features = b.get("features", []) or []
     brands = b.get("brands", []) or []
 
+    # 英語編集コンテンツの適用（あれば）
+    tagline_ov = ""
+    _ov = _EN_CONTENT.get(f"{pref}:{bid}") if lang == "en" else None
+    if _ov:
+        desc = _ov.get("desc_en") or desc
+        tagline_ov = _ov.get("tagline_en") or ""
+        features = _ov.get("features_en") or features
+        _bmap = _ov.get("brands_en") or {}
+        if _bmap:
+            _newbrands = []
+            for _br in brands:
+                if isinstance(_br, str): _br = {"name": _br, "specs": "", "type": ""}
+                if not isinstance(_br, dict): continue
+                _e = _bmap.get(str(_br.get("name", "")))
+                if _e:
+                    _jn = str(_br.get("name", ""))
+                    _en2 = _e.get("name_en") or _jn
+                    _nm = f"{_en2} ({_jn})" if _en2 != _jn else _en2
+                    _newbrands.append({"name": _nm, "specs": _e.get("specs_en") or _br.get("specs", ""),
+                                       "type": _br.get("type", "")})
+                else:
+                    _newbrands.append(_br)
+            brands = _newbrands
+
     canonical = f"https://wine.terroirhub.com/wine/{lang}/{pref}/{bid}.html"
     hreflangs = {
         "ja": f"https://wine.terroirhub.com/wine/{pref}/{bid}.html",
@@ -330,6 +367,8 @@ def wine_page(b, pref, lang):
     meta = f"{name} — {pref_n} {('winery' if lang == 'en' else 'domaine') if lang == 'fr' else 'winery'}"
     if founded:
         meta = f"{name} — {founded} {t['founded']} {pref_n}"
+    if _ov and tagline_ov:
+        meta = tagline_ov[:158]
 
     brand_cards = []
     for br in brands[:3]:
@@ -337,7 +376,10 @@ def wine_page(b, pref, lang):
             br = {"name": br, "specs": "", "type": ""}
         br_name = esc(br.get("name", ""))
         br_specs = esc(br.get("specs", ""))
-        br_type = esc(br.get("type", ""))
+        _rawtype = br.get("type", "")
+        if lang in ("en", "fr") and _rawtype in _TYPE_EN:
+            _rawtype = _TYPE_EN[_rawtype]
+        br_type = esc(_rawtype)
         card = f'<div class="feature-card"><div class="fc-icon">🍷</div><div class="fc-name">{br_name}</div>'
         if br_type:
             card += f'<div class="fc-desc">{esc(t["brand_hint"])}: {br_type}</div>'
@@ -462,7 +504,7 @@ def wine_page(b, pref, lang):
   <div class="hero-left">
     <div class="hero-catch">TERROIR HUB WINE</div>
     <h1 class="hero-brand">{esc(name)}</h1>
-    <p class="hero-sub">{esc(intro)} {esc(intro2)}</p>
+    <p class="hero-sub">{esc(tagline_ov) if tagline_ov else (esc(intro) + " " + esc(intro2))}</p>
     <div class="hero-role-row">
       <span class="hero-role-pill"><strong>{esc(pref_n)}</strong></span>
       {f'<span class="hero-role-pill"><strong>{esc(founded)}</strong> {esc(t["founded"])}</span>' if founded else ''}
