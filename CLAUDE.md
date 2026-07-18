@@ -51,7 +51,7 @@ var res = await fetch('https://sake.terroirhub.com/api/sakura', {
 
 ### ワイナリーページ再生成
 ```bash
-cd "/Users/masuo/Desktop/テロワールハブ　総合/terroirHUB wine"
+cd "/Users/masuo/Desktop/project2/テロワールハブ　総合/terroirHUB wine"
 python3 scripts/regenerate_all_pages.py
 git add -A && git commit -m "メッセージ" && git push
 # Vercelが約30秒で自動デプロイ
@@ -59,7 +59,7 @@ git add -A && git commit -m "メッセージ" && git push
 
 ### 手動デプロイ（即時反映したいとき）
 ```bash
-cd "/Users/masuo/Desktop/テロワールハブ　総合/terroirHUB wine"
+cd "/Users/masuo/Desktop/project2/テロワールハブ　総合/terroirHUB wine"
 vercel --prod
 ```
 
@@ -91,7 +91,7 @@ vercel --prod
 ## ファイル構成
 
 ```
-/Users/masuo/Desktop/テロワールハブ　総合/terroirHUB wine/
+/Users/masuo/Desktop/project2/テロワールハブ　総合/terroirHUB wine/
 ├── index.html                          # トップページ
 ├── RULES.md                            # 情報正確性ルール（必読）
 ├── CLAUDE.md                           # このファイル
