@@ -3761,5 +3761,1278 @@
   },
   "by": "sonnet",
   "audited": true
+ },
+ "yamagata:grape-republic": {
+  "tagline_en": "Grape Republic in Nanyo, Yamagata puts terroir first, growing Delaware and Steuben grapes into sulfite-free '100% Grapes' orange wines.",
+  "desc_en": "Grape Republic makes wine in Nanyo, Yamagata, with terroir as its first priority in the vineyard. In both growing and winemaking, the winery avoids anything it considers unnecessary, including added sulfites, aiming for wines that are, in its words, '100% Grapes.' Its grapes include Delaware and Steuben, grown under GI Yamagata.",
+  "features_en": [
+   "Made without unnecessary additives",
+   "No added sulfites",
+   "Terroir-focused winemaking"
+  ],
+  "brands_en": {
+   "アランチョーネ2021": {
+    "name_en": "Arancione 2021",
+    "specs_en": "Orange — dry, Delaware"
+   },
+   "Cuvee Shinden 2022": {
+    "name_en": "Cuvée Shinden 2022",
+    "specs_en": "Orange — dry"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:matsubara-wine": {
+  "tagline_en": "Matsubara Noen has grown Müller-Thurgau in Rankoshi, Hokkaido since 1993, turning to its own winemaking in 2014.",
+  "desc_en": "Matsubara Noen settled on a cleared plot of forest in the Kamisato area of Rankoshi in 1993 and began growing grapes, releasing its first vintage in 1995. It started making its own wine as a winery in 2014, with Müller-Thurgau as its signature grape.",
+  "features_en": [
+   "Cleared and planted in 1993; began estate winemaking in 2014",
+   "Specializes in Müller-Thurgau",
+   "Grown in Rankoshi, Shiribeshi"
+  ],
+  "brands_en": {
+   "松原農園 ミュラートゥルガウ": {
+    "name_en": "Matsubara Noen Müller-Thurgau",
+    "specs_en": "White — Müller-Thurgau"
+   },
+   "松原農園 スパークリング": {
+    "name_en": "Matsubara Noen Sparkling",
+    "specs_en": "Sparkling — traditional method, bottle-fermented"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "kagawa:224winery": {
+  "tagline_en": "Winemaker Ryuta Shiga cleared untouched hillside on Shodoshima from 2017, opening the island's first winery in summer 2022.",
+  "desc_en": "224 Winery was founded by winemaker Ryuta Shiga, who began clearing untouched hillside on Shodoshima in 2017 to plant vineyards, opening the island's first winery in the summer of 2022. Alongside fruit from its own vineyard, it also sources grapes suited to each variety's ideal growing conditions to make wine.",
+  "features_en": [
+   "Winemaker Ryuta Shiga began clearing untouched hillside for vineyards in 2017",
+   "Opened as Shodoshima's first winery in summer 2022",
+   "Set on hillside overlooking the Seto Inland Sea"
+  ],
+  "brands_en": {
+   "島シャン": {
+    "name_en": "Shima Shan",
+    "specs_en": "Sparkling — Delaware, Chardonnay"
+   },
+   "小豆シャン 2025": {
+    "name_en": "Azuki Shan 2025",
+    "specs_en": "Sparkling"
+   },
+   "小豆シャンロゼ 2025": {
+    "name_en": "Azuki Shan Rosé 2025",
+    "specs_en": "Rosé"
+   },
+   "メルローロゼ～Vin d'une Nuit 2025": {
+    "name_en": "Merlot Rosé — Vin d'une Nuit 2025",
+    "specs_en": "Rosé — Merlot"
+   },
+   "デラウェア～Setouchi Mist 2025": {
+    "name_en": "Delaware — Setouchi Mist 2025",
+    "specs_en": "White — Delaware"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:tendo-wine": {
+  "tagline_en": "Tendo Wine ages its wine quietly in a traditional earthen storehouse, drawing on Tendo's basin climate ideal for grape growing.",
+  "desc_en": "Tendo, with its low rainfall from flowering through harvest and long hours of sunshine, is a textbook basin climate that Tendo Wine considers ideal grape-growing terroir. Since 1984, it has quietly aged its wine from quality grapes in a traditional earthen storehouse with steady temperature and humidity.",
+  "features_en": [
+   "Founded in 1984",
+   "Ages wine in a traditional earthen storehouse",
+   "Located in a basin climate suited to grape growing"
+  ],
+  "brands_en": {
+   "ナイ・ロゼ": {
+    "name_en": "Nai Rosé",
+    "specs_en": "Rosé — Niagara"
+   },
+   "マスカット・ベリーA": {
+    "name_en": "Muscat Bailey A",
+    "specs_en": "Red — Muscat Bailey A (a Japanese-bred red)"
+   },
+   "ドルミテー": {
+    "name_en": "Dorumite",
+    "specs_en": "White"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:marufuji-winery": {
+  "tagline_en": "Founded in a home garden in 1890, Marufuji Winery has spent four generations making Koshu and international-variety wines as Rubaiyat.",
+  "desc_en": "In May 1890, founder Jisaku Omura built a small winery in his home garden. Four generations of the family have since worked steadily at winemaking, driven by the wish to let as many people as possible taste real, honest flavor. Marufuji grows grapes and makes wine in-house, producing both Koshu (Japan's indigenous white grape) and international varieties under GI Yamanashi.",
+  "features_en": [
+   "Founded in 1890 (Meiji 23); four generations of family winemaking",
+   "Makes both Koshu and international varieties",
+   "Grows grapes and makes wine in-house, start to finish"
+  ],
+  "brands_en": {
+   "ルバイヤート 甲州": {
+    "name_en": "Rubaiyat Koshu",
+    "specs_en": "White — Koshu"
+   },
+   "ルバイヤート マスカット・ベーリーA": {
+    "name_en": "Rubaiyat Muscat Bailey A",
+    "specs_en": "Red — Muscat Bailey A"
+   },
+   "ルバイヤート カベルネ・ソーヴィニヨン": {
+    "name_en": "Rubaiyat Cabernet Sauvignon",
+    "specs_en": "Red — Cabernet Sauvignon"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:belle-vigne": {
+  "tagline_en": "La Belle Vigne, one of eight Katsunuma Wine Village wineries, farms by lutte raisonnée along the Hikawa River since 2019.",
+  "desc_en": "La Belle Vigne is a small winery founded in 2019 along the Hikawa River in Katsunuma, one of eight wineries that make up the Katsunuma Wine Village. It builds its winemaking on soil health and harmony with nature, farming by the lutte raisonnée method as an extension of how it raises its grapes.",
+  "features_en": [
+   "One of eight wineries in the Katsunuma Wine Village",
+   "Farms using the lutte raisonnée method",
+   "Winemaking built around harmony with nature"
+  ],
+  "brands_en": {
+   "甲州 樽発酵": {
+    "name_en": "Koshu Barrel-Fermented",
+    "specs_en": "White — Koshu (Japan's indigenous white grape), GI Yamanashi certified"
+   },
+   "Delaware": {
+    "name_en": "Delaware",
+    "specs_en": "White — dry, unfiltered, Delaware"
+   },
+   "Muscat Bailey A Rose Petillant": {
+    "name_en": "Muscat Bailey A Rosé Pétillant",
+    "specs_en": "Rosé pétillant — bottle-fermented, lightly sparkling, Muscat Bailey A (a Japanese-bred red)"
+   },
+   "河口湖ピノ": {
+    "name_en": "Kawaguchiko Pinot",
+    "specs_en": "Red — dry, Pinot Noir"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:ikeda-winery": {
+  "tagline_en": "Captivated by wine, Toshikazu Ikeda moved to Katsunuma and took over a winery in 1995, now known for old-barrel-aged Koshu.",
+  "desc_en": "Founder Toshikazu Ikeda, captivated by wine, moved to Katsunuma and took over a food-group winery through a share transfer in 1995, going independent. His eldest son, Hidetoshi Ikeda, took over the business in 2023. The winery has won gold at the Japan Wine Competition.",
+  "features_en": [
+   "Family-run winery founded in 1995",
+   "Gold medal winner at the Japan Wine Competition",
+   "Old-barrel-aged Koshu (Japan's indigenous white grape) is its signature wine"
+  ],
+  "brands_en": {
+   "樽熟甲州": {
+    "name_en": "Taru-juku Koshu (Barrel-Aged Koshu)",
+    "specs_en": "White — 100% Katsunuma Koshu, tank-fermented and aged in old barrels, off-dry, citrus aromas with a mellow, aged character"
+   },
+   "ヴァン・ロゼ": {
+    "name_en": "Vin Rosé",
+    "specs_en": "Rosé — strawberry aromas and fresh fruit character, made for spring, Muscat Bailey A and Koshu"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:sanyo-jozo": {
+  "tagline_en": "A fourth-generation family winery since 1933, Sanyo Jozo farms 1.2 organic hectares in Makioka, co-harvesting and co-fermenting field-blended grapes.",
+  "desc_en": "Sanyo Jozo is a family winery in Makioka, Yamanashi City, founded in 1933 and now run by fourth-generation head Keiji Yamada. Its signature method is field blending — planting several varieties together, then harvesting and fermenting them at the same time. The winery farms about 1.2 hectares of its own vineyards without herbicides or Bordeaux mixture.",
+  "features_en": [
+   "Founded in 1933 (Showa 8); run by the fourth generation",
+   "Known for field blending — mixed planting, simultaneous harvest and co-fermentation",
+   "Practices organic farming without herbicides or Bordeaux mixture"
+  ],
+  "brands_en": {
+   "mii 甲州ペティヤン": {
+    "name_en": "mii Koshu Pétillant",
+    "specs_en": "Sparkling — 100% Koshu, no added sulfites, unfiltered, lightly sparkling"
+   },
+   "Field Blend mäkioka": {
+    "name_en": "Field Blend Mäkioka",
+    "specs_en": "White — multiple varieties, mixed-planted, harvested and co-fermented together"
+   },
+   "デラウェア": {
+    "name_en": "Delaware",
+    "specs_en": "White — 100% Delaware, no added sulfites"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:komorokko-farm-winery": {
+  "tagline_en": "Born from reclaimed abandoned farmland in Komoro, Komorokko grows grapes across roughly ten vineyards to express the local terroir.",
+  "desc_en": "Komorokko Farm & Winery was born from the revival of abandoned farmland in Komoro, a town known for low rainfall, abundant sunshine and wide temperature swings. Its wines aim to express that terroir. The winery farms about 18,000 to 20,000 vines across roughly ten vineyard plots, certified under GI Nagano.",
+  "features_en": [
+   "Revived abandoned farmland in Komoro, in the Chikuma River Wine Valley's eastern district",
+   "Farms about 20,000 vines across more than ten vineyard plots",
+   "Minimizes pesticide use to express local terroir"
+  ],
+  "brands_en": {
+   "こもろっこ ブラン": {
+    "name_en": "Komorokko Blanc",
+    "specs_en": "White — blend of Chardonnay, Riesling and Sauvignon Blanc"
+   },
+   "こもろっこ ルージュ": {
+    "name_en": "Komorokko Rouge",
+    "specs_en": "Red — blend of Merlot and Cabernet Franc"
+   },
+   "こもろっこ ロゼ": {
+    "name_en": "Komorokko Rosé",
+    "specs_en": "Rosé — blend led by Pinot Noir and Pinot Gris"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "aomori:fattoria-da-sasino": {
+  "tagline_en": "Overlooking sacred Mount Iwaki, Fattoria da Sasino grows Nebbiolo, Malvasia and Chardonnay for the wines of its own Italian restaurant.",
+  "desc_en": "Fattoria da Sasino grows and makes wine mainly from Nebbiolo, Malvasia and Chardonnay in vineyards overlooking the sacred Mount Iwaki. It was started by the owner of an Italian restaurant committed to local, seasonal ingredients, who began making wine from grapes grown by his own hand.",
+  "features_en": [
+   "Vineyards overlooking Mount Iwaki",
+   "Focuses on Italian grape varieties",
+   "Attached to its own Italian restaurant"
+  ],
+  "brands_en": {
+   "Fattoria da Sasino": {
+    "name_en": "Fattoria da Sasino",
+    "specs_en": "Red and white"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:rita-farm": {
+  "tagline_en": "The first winery under Yoichi's wine special zone system, Rita Farm grows low-spray grapes and ferments with wild yeast.",
+  "desc_en": "Rita Farm & Winery opened in 2013 as the first winery to use Yoichi's wine special zone system. It grows grapes with minimal pesticide use on a scenic, sun-facing south slope, and ferments naturally with wild yeast, aiming to work with nature rather than against it wherever possible.",
+  "features_en": [
+   "First winery under the Yoichi wine special zone system",
+   "Natural fermentation with wild yeast",
+   "Led by a female winemaker"
+  ],
+  "brands_en": {
+   "Rita Pinot Noir": {
+    "name_en": "Rita Pinot Noir",
+    "specs_en": "Pinot Noir"
+   },
+   "Rita Chardonnay": {
+    "name_en": "Rita Chardonnay",
+    "specs_en": "Chardonnay"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:kaminokuni-winery": {
+  "tagline_en": "Japan's first winery paired with a satellite office, Kaminokuni Winery opened in 2021 with wine classes and tourism events.",
+  "desc_en": "Kaminokuni Winery is a combined facility that shares information not only about its wine but also about its attached satellite office — Japan's first winery to include one, opened in November 2021. It runs wine classes and tourism events, and recruits new farmers and winemakers.",
+  "features_en": [
+   "Japan's first winery with an attached satellite office (opened November 2021)",
+   "Recruits new farmers",
+   "Hosts wine classes and tourism events"
+  ],
+  "brands_en": {
+   "上ノ国 シャルドネ": {
+    "name_en": "Kaminokuni Chardonnay",
+    "specs_en": "White — Chardonnay"
+   },
+   "上ノ国 メルロー": {
+    "name_en": "Kaminokuni Merlot",
+    "specs_en": "Red — Merlot"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:manns-wine-komoro": {
+  "tagline_en": "A pioneer of the Chikuma River Wine Valley since 1973, Manns Wines Komoro grows some of Japan's oldest Chardonnay vines.",
+  "desc_en": "Manns Wines opened its Komoro winery in 1973 as a pioneer of the Chikuma River Wine Valley. Highlights include some of Japan's oldest Chardonnay vines and Manzuien, a roughly 3,000-tsubo Japanese garden planted with a 32-variety grape collection. The winery is home to the premium Solaris series, made from Chardonnay, Merlot and other varieties.",
+  "features_en": [
+   "Pioneer of the Chikuma River Wine Valley, opened in 1973",
+   "Produces the premium Solaris series",
+   "Home to some of Japan's oldest Chardonnay vines",
+   "Manzuien, a Japanese garden with a 32-variety grape collection"
+  ],
+  "brands_en": {
+   "ソラリス": {
+    "name_en": "Solaris",
+    "specs_en": "Red and white — premium series, Chardonnay, Merlot and other varieties"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:domaine-hase": {
+  "tagline_en": "A former record-label employee, Mitsuhiro Hase founded Domaine Hase in 2017, interplanting grapes and fermenting with wild yeast.",
+  "desc_en": "Mitsuhiro Hase, who once worked at a major foreign-affiliated record company, founded Domaine Hase in 2017 after his love of wine took over. He grows several grape varieties interplanted in the same vineyard and ferments with wild yeast, producing wines that clearly express their terroir.",
+  "features_en": [
+   "Interplants multiple grape varieties in the same vineyard",
+   "Ferments with wild yeast",
+   "Committed to expressing terroir"
+  ],
+  "brands_en": {
+   "FUKUIHARA 88ペティアン": {
+    "name_en": "Fukuihara 88 Pétillant",
+    "specs_en": "Sparkling — lightly sparkling, wild-yeast fermented, Chardonnay and others"
+   },
+   "FUKUIHARA マセラシオン": {
+    "name_en": "Fukuihara Maceration",
+    "specs_en": "White — skin-contact, no added sulfites, Chardonnay and others"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:kinkei-wine": {
+  "tagline_en": "In the hot-spring town of Akayu, family-run Kinkei Wine has made wine from 100% Yamagata grapes since 1940.",
+  "desc_en": "Kinkei Wine uses 100% Yamagata-grown ingredients across all its products. The winery sits in the hot-spring town of Akayu in Nanyo, and though it is a small, family-run operation, it avoids mass production in favor of careful, attentive winemaking.",
+  "features_en": [
+   "Founded in 1940",
+   "Uses 100% Yamagata-grown ingredients",
+   "Small, family-run winery"
+  ],
+  "brands_en": {
+   "金渓ワイン": {
+    "name_en": "Kinkei Wine",
+    "specs_en": "Red, white and rosé"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "fukushima:iwaki-winery": {
+  "tagline_en": "Run by an NPO since 2009, Iwaki Winery makes wine through farm work meant to support people with disabilities.",
+  "desc_en": "Iwaki Winery began making wine out of a wish to let people with disabilities live secure, independent lives through farm work. It is run by an NPO welfare organization, founded in 2009. As a small winery, it makes each bottle carefully and with heartfelt attention.",
+  "features_en": [
+   "Run by an NPO (nonprofit welfare organization)",
+   "A winery connected to a welfare facility",
+   "Founded in 2009"
+  ],
+  "brands_en": {
+   "いわきワイナリー メルロー": {
+    "name_en": "Iwaki Winery Merlot",
+    "specs_en": "Red — the winery's flagship Merlot, from estate and local grapes"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:lanseqqua": {
+  "tagline_en": "A production-focused winery on a 1.6-hectare slope in Yoichi, Lan Seqqua makes about 15,000 bottles a year, released each March.",
+  "desc_en": "Lan Seqqua grows grapes on a 1.6-hectare, west-southwest-facing slope in Yoichi. It has no tasting room or lodging, operating as a production-focused winery that makes about 15,000 bottles a year. Wine is sold only through liquor retailers, not directly, with releases typically each March.",
+  "features_en": [
+   "A production-focused winery with no tasting room or lodging",
+   "1.6-hectare estate vineyard on a west-southwest slope",
+   "Winemaker trained under Domaine Takahiko"
+  ],
+  "brands_en": {
+   "Lan Seqqua Pinot Noir": {
+    "name_en": "Lan Seqqua Pinot Noir",
+    "specs_en": "Pinot Noir"
+   },
+   "Lan Seqqua Zweigelt": {
+    "name_en": "Lan Seqqua Zweigelt",
+    "specs_en": "Zweigelt"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:snow-river-wines": {
+  "tagline_en": "In Higashikawa at the foot of the Daisetsuzan range, Snow River Wines draws on mineral-rich snowmelt and wide temperature swings.",
+  "desc_en": "Snow River Wines is a small winery in Higashikawa, at the foot of the Daisetsuzan mountains in the middle of Hokkaido. It makes wine drawing on the natural gifts unique to the Kamikawa-Furano area, including mineral-rich snowmelt water and wide swings between day and night temperatures.",
+  "features_en": [
+   "Located at the foot of the Daisetsuzan mountains",
+   "Terroir shaped by snowmelt water and wide temperature swings",
+   "Winemaker trained in the Southern Hemisphere as well"
+  ],
+  "brands_en": {
+   "スノーリバー ミュラー Hachi アンバー": {
+    "name_en": "Snow River Müller Hachi Amber",
+    "specs_en": "Orange/amber — skin-contact Müller-Thurgau"
+   },
+   "スノーリバー ピノ・グリ Hachi": {
+    "name_en": "Snow River Pinot Gris Hachi",
+    "specs_en": "White — Pinot Gris, expressing Higashikawa/Hokkaido's cool climate"
+   },
+   "スノーリバー シャルドネ Hachi 樽熟成": {
+    "name_en": "Snow River Chardonnay Hachi Barrel-Aged",
+    "specs_en": "White — 100% Chardonnay, barrel-aged"
+   },
+   "スノーリバー ピノ・ノワール Hachi": {
+    "name_en": "Snow River Pinot Noir Hachi",
+    "specs_en": "Red — Hokkaido-grown Pinot Noir"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:woody-farm-winery": {
+  "tagline_en": "A domaine winery on Mount Zao's slopes, Woody Farm makes wine only from its own 9 hectares, certified for reduced pesticide use.",
+  "desc_en": "Woody Farm & Winery is a domaine winery at the foot of Mount Zao, making wine only from about 9 hectares of its own vineyards. The fields are certified under Yamagata Prefecture's special cultivation program, which includes cutting chemical pesticide use in half, aiming for safe, flavor-rich wine.",
+  "features_en": [
+   "A domaine winery, using only its own grapes",
+   "About 9 hectares of estate vineyards at the foot of Mount Zao",
+   "Certified under Yamagata's special cultivation program"
+  ],
+  "brands_en": {
+   "プライベートリザーブ カベルネ・ソーヴィニヨン": {
+    "name_en": "Private Reserve Cabernet Sauvignon",
+    "specs_en": "Red — Cabernet Sauvignon"
+   },
+   "シャルドネ": {
+    "name_en": "Chardonnay",
+    "specs_en": "White — dry, Chardonnay"
+   },
+   "フィル・マンサン": {
+    "name_en": "Fil Manseng",
+    "specs_en": "White — Petit Manseng"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:yawata-yosyu": {
+  "tagline_en": "Since 1961, farmers in Yawata have pooled their grapes at this community winery, producing a different wine every vintage.",
+  "desc_en": "Yawata Yoshu began in 1961 when farmers in the local Yawata district started pooling their grapes together. The winery draws out the full character of grapes whose sweetness and aroma shift with each year's climate and harvest timing, resulting in a wine that tastes a little different every year.",
+  "features_en": [
+   "A community winery founded in 1961 by farmers pooling their grapes",
+   "Individualistic wine whose character changes with each vintage",
+   "Also sold at the local JA farm shop"
+  ],
+  "brands_en": {
+   "甲州（辛口）": {
+    "name_en": "Koshu (Dry)",
+    "specs_en": "White — dry, Koshu (Japan's indigenous white grape)"
+   },
+   "八幡のデラ": {
+    "name_en": "Yawata no Dera",
+    "specs_en": "White — Delaware"
+   },
+   "マスカットベーリーA": {
+    "name_en": "Muscat Bailey A",
+    "specs_en": "Red — Muscat Bailey A (a Japanese-bred red)"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:kashiwa-budoushu": {
+  "tagline_en": "At Daizenji, Japan's only temple winery, the head priest and local parishioners pool their own grapes into small-batch wine.",
+  "desc_en": "Kashiwa Budoushu is a unique winery made by the head priest of Daizenji temple together with nearby parishioners. Grapes grown by the priest himself in the temple grounds are used alongside fruit that union members bring from their own gardens, distributed by weight, and fermented in a brewing hut on the temple grounds.",
+  "features_en": [
+   "Japan's only temple-run winery, operated by Daizenji",
+   "Community winemaking using grapes brought by parishioner union members",
+   "Sold at the Daizenji temple shop"
+  ],
+  "brands_en": {
+   "柏和 白": {
+    "name_en": "Kashiwa White",
+    "specs_en": "White — Koshu, small-batch"
+   },
+   "柏和 赤": {
+    "name_en": "Kashiwa Red",
+    "specs_en": "Red — Muscat Bailey A, small-batch"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:spring-wine": {
+  "tagline_en": "A new Yamanashi winery, Spring Wine began making wine in September 2024, founded by Izumi Sano after training in viticulture.",
+  "desc_en": "Spring Wine is a new winery in Kofu, Yamanashi, that built its brewery in April 2024, obtained its liquor manufacturing license that July, and began making wine in September. Founder Izumi Sano went independent after growing grapes at an agricultural production corporation and training at a winery.",
+  "features_en": [
+   "Uses its own estate-grown grapes",
+   "Small-scale winemaking based in Kofu",
+   "Makes Koshu, Chardonnay and other varieties"
+  ],
+  "brands_en": {
+   "甲州": {
+    "name_en": "Koshu",
+    "specs_en": "White — dry, Koshu (Japan's indigenous white grape)"
+   },
+   "シャルドネ": {
+    "name_en": "Chardonnay",
+    "specs_en": "White — dry, Chardonnay"
+   },
+   "マスカット・ベーリーA": {
+    "name_en": "Muscat Bailey A",
+    "specs_en": "Red — dry, Muscat Bailey A (a Japanese-bred red)"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:otobe-winery": {
+  "tagline_en": "Otobe Winery farms 10 hectares in mild, long-daylight southern Hokkaido, making about 25,000 bottles a year.",
+  "desc_en": "Otobe Winery benefits from a mild climate, the long hours of daylight typical of northern Japan, and wide swings between day and night temperature during grape ripening — conditions well suited to high-quality winemaking. Its own vineyards cover 10 hectares in total, producing about 25,000 bottles a year.",
+  "features_en": [
+   "10 hectares of estate vineyards",
+   "Produces about 25,000 bottles a year",
+   "A long-established winery in Otobe, southern Hokkaido"
+  ],
+  "brands_en": {
+   "乙部醸造ワイン 赤": {
+    "name_en": "Otobe Jozo Wine Red",
+    "specs_en": "Red — medium-bodied, 100% Hokkaido grapes, Seibel 13053, Merlot and Yama Sauvignon"
+   },
+   "乙部醸造ワイン 白": {
+    "name_en": "Otobe Jozo Wine White",
+    "specs_en": "White — medium-dry, 100% Hokkaido grapes, Zarajenje, Seibel 9110 and Chardonnay"
+   },
+   "ミスタージンギスカン": {
+    "name_en": "Mister Jingisukan",
+    "specs_en": "Red — paired with Jingisukan (grilled lamb), Seibel 13053 and Yama Sauvignon"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:aperture-farm-winery": {
+  "tagline_en": "Growing grapes since 2011, Aperture Farm opened its own winery in Tomi in 2022, making natural wine with wild yeast.",
+  "desc_en": "Aperture Farm and Winery began growing grapes in 2011 and opened its own winery in Tomi in August 2022. It makes natural wine fermented with wild yeast and minimal added sulfites, taking over Kyoho vineyards from an aging farmer and experimenting with new winemaking methods.",
+  "features_en": [
+   "Natural winemaking with wild yeast and minimal sulfites",
+   "Organic estate winery in Nezu, Tomi (opened 2022)",
+   "Uses Kyoho vineyards taken over from an aging farmer"
+  ],
+  "brands_en": {
+   "Landscape": {
+    "name_en": "Landscape",
+    "specs_en": "Red — top cuvée, wild yeast, no added sulfites, Merlot-led"
+   },
+   "Still life": {
+    "name_en": "Still Life",
+    "specs_en": "White — second cuvée"
+   },
+   "Non Portrait": {
+    "name_en": "Non Portrait",
+    "specs_en": "Red — Kyoho-led, released annually"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:oura-budo-wine": {
+  "tagline_en": "In Akayu, known as the birthplace of Yamagata grape-growing, Oura Budo-shu has made wine only from quality local grapes since 1939.",
+  "desc_en": "Akayu, in Nanyo City within the Okitama Basin, is known as the birthplace of grape-growing in Yamagata and remains one of the prefecture's leading grape regions. Since its founding, Oura Budo-shu has focused solely on high-quality local grapes for its Akayu jiwain (local wine).",
+  "features_en": [
+   "Founded in 1939",
+   "Located in the Akayu hot-spring district",
+   "Uses 100% locally grown grapes"
+  ],
+  "brands_en": {
+   "赤湯の地ワイン": {
+    "name_en": "Akayu Jiwain (Akayu Local Wine)",
+    "specs_en": "Red, white and rosé"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:hakodate-wine": {
+  "tagline_en": "Since 1973, Hakodate Wine has made both grape and fruit wine, aiming for 'Japanese wine' suited to Japanese palates.",
+  "desc_en": "Hakodate Wine has long made full-fledged wine from grapes as well as fruit wine from the various fruits of the land. Based in Hokkaido since 1973, it aims to create 'wine of Japan' suited to Japanese tastes.",
+  "features_en": [
+   "ISO 9001 certified",
+   "Also produces fruit wines",
+   "Marked its 50th anniversary in 2023"
+  ],
+  "brands_en": {
+   "北海道100 シリーズ": {
+    "name_en": "Hokkaido 100 Series",
+    "specs_en": "Red and white"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:osa-winery": {
+  "tagline_en": "Run by a husband-and-wife team, OSA Winery grows, makes and sells wine start to finish, mostly white, from Otaru and Yoichi grapes.",
+  "desc_en": "OSA Winery is a small operation run by a husband-and-wife team, handling everything from growing grapes to winemaking and sales. It focuses mainly on white wine, made to complement Japanese cuisine, using grapes harvested from its own vineyards in Otaru and Yoichi.",
+  "features_en": [
+   "Run by a husband-and-wife team",
+   "White wine made to complement Japanese food",
+   "A shop near the Otaru Canal"
+  ],
+  "brands_en": {
+   "OTARUVALLEY": {
+    "name_en": "Otaru Valley",
+    "specs_en": "White — flagship blend of 8 varieties from the estate vineyard in Shiotani, Otaru"
+   },
+   "tabi": {
+    "name_en": "Tabi",
+    "specs_en": "White — Tabiji, a rare grape variety originating in Otaru"
+   },
+   "MATENI ROSE": {
+    "name_en": "Mateni Rosé",
+    "specs_en": "Rosé — dry, 100% Zweigeltrebe"
+   },
+   "ocean": {
+    "name_en": "Ocean",
+    "specs_en": "White — Hokkaido-inspired aromas, made to pair with food"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:ebeotsu-wein": {
+  "tagline_en": "Planted in 2016 with 1,000 vines, Ebeotsu Wein released its first vintage, Regenbogen, in 2019.",
+  "desc_en": "Ebeotsu Wein makes wine from grapes grown in Takikawa, cultivating two black and five white grape varieties. It planted 1,000 vines in 2016 and completed its first vintage, Regenbogen (German for 'rainbow'), in 2019.",
+  "features_en": [
+   "Uses grapes grown in Takikawa, Sorachi",
+   "Grows two black and five white grape varieties"
+  ],
+  "brands_en": {
+   "Regenbogen（レーゲンボーゲン）": {
+    "name_en": "Regenbogen",
+    "specs_en": "White — blend of seven Takikawa-grown varieties (Chardonnay, Müller-Thurgau, Pinot Blanc, Pinot Gris, Riesling, Pinot Noir, Zweigeltrebe)"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:ringorillappa": {
+  "tagline_en": "Ringorillappa's 4.7-hectare orchard is entirely organic-JAS certified, producing Japan's first domestically certified organic cider through wild-yeast fermentation.",
+  "desc_en": "Ringorillappa Brewery's 4.7-hectare apple orchard is entirely certified organic JAS, and it produces Japan's first domestically made organic cider and organic apple juice. Fermentation relies on wild yeast, keeping added ingredients to a minimum.",
+  "features_en": [
+   "Japan's first organic-JAS-certified cider",
+   "Entire 4.7-hectare apple orchard is organic-JAS certified",
+   "Obtained its brewing license in 2024"
+  ],
+  "brands_en": {
+   "有機シードル": {
+    "name_en": "Organic Cider",
+    "specs_en": "Cider — Japan's first domestically made organic-JAS certified"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:arcanvigne": {
+  "tagline_en": "A cradle winery for grape growers in Tomi City, Arcanvigne brews purchased and contract-brewed fruit while running Japan's first private wine academy.",
+  "desc_en": "Arcanvigne, run by the Japan Wine Agriculture Research Institute, was founded in 2019 in Tomi City as a 'cradle winery' — a receiving point for local grape growers, buying in fruit to brew its own wines or contract-brewing on their behalf. The winery also operates Japan's first private wine school, the Chikuma River Wine Academy, and is a sibling operation of Villa d'Est Winery. Its name comes from the French arc-en-ciel, meaning rainbow.",
+  "features_en": [
+   "A 'cradle winery' that buys in local growers' grapes to brew its own wine or contract-brew for producers",
+   "Runs the Chikuma River Wine Academy, Japan's first private wine school",
+   "A sibling winery of Villa d'Est Winery",
+   "Its name derives from the French arc-en-ciel, meaning rainbow"
+  ],
+  "brands_en": {
+   "シャルドネ ヴィラージュ": {
+    "name_en": "Chardonnay Village",
+    "specs_en": "White — barrel-fermented, aged 7 months"
+   },
+   "メルロー ヴィラージュ": {
+    "name_en": "Merlot Village",
+    "specs_en": "Red — 100% Merlot from designated Tomi City growers"
+   },
+   "ブラン": {
+    "name_en": "Blanc",
+    "specs_en": "White — Chardonnay and other varieties"
+   },
+   "ジュベニール ピノ・ノワール": {
+    "name_en": "Juvénile Pinot Noir",
+    "specs_en": "Red — Pinot Noir"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:cantina-riezo": {
+  "tagline_en": "In one of Japan's 'most beautiful villages,' Cantina Riezo is a small family winery begun by a grower trained at Sainte-Neige, farming Chardonnay, Merlot and Barbera in Takayama since 2007.",
+  "desc_en": "Cantina Riezo is a small, family-run winery in Takayama, a village designated one of the 'most beautiful villages in Japan.' Yasuyuki Yumoto, who trained in viticulture and winemaking at Sainte-Neige, began growing grapes in Takayama in 2007 and completed the winery in 2015.",
+  "features_en": [
+   "Located in Takayama, designated one of the 'most beautiful villages in Japan'",
+   "A small, family-run winery",
+   "Grape growing began in 2007; the winery was completed in 2015"
+  ],
+  "brands_en": {
+   "Merlot Strada Nuova": {
+    "name_en": "Merlot Strada Nuova",
+    "specs_en": "Red — Merlot, released only in good vintages"
+   },
+   "リエゾー ロッソ メルロー": {
+    "name_en": "Riezo Rosso Merlot",
+    "specs_en": "Red — Merlot"
+   },
+   "シャルドネ": {
+    "name_en": "Chardonnay",
+    "specs_en": "White — Chardonnay"
+   },
+   "Ciao Ciao BIANCO il vento": {
+    "name_en": "Ciao Ciao BIANCO il vento",
+    "specs_en": "Rosé wine"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:northern-alps-vineyard": {
+  "tagline_en": "Below the Northern Alps in Omachi, Masaki Wakabayashi turned a childhood dream into vineyards in 2008, crafting wine like handmade artisan work.",
+  "desc_en": "Northern Alps Vineyard sits at the foot of the Northern Alps in Omachi. Owner Masaki Wakabayashi began growing grapes on his family's farmland in 2008 to fulfill a dream held since his twenties, and the winery was established in 2015. It aims to make wine like a craftsman's handmade work, and holds national certification as a sixth-sector-industrialization winery.",
+  "features_en": [
+   "Located at the foot of the Northern Alps in Omachi",
+   "Grape growing began in 2008; the winery was established in 2015",
+   "Certified by the national government as a sixth-sector-industrialization winery"
+  ],
+  "brands_en": {
+   "ノーザンアルプス シャルドネ": {
+    "name_en": "Northern Alps Chardonnay",
+    "specs_en": "White — Chardonnay; first vintage 2012"
+   },
+   "ノーザンアルプス メルロー": {
+    "name_en": "Northern Alps Merlot",
+    "specs_en": "Red — Merlot"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:bonjour-farm": {
+  "tagline_en": "A physician's grape-growing hobby begun in 2008 matured into Bonjour Farm's own winery in 2021, growing Pinot Noir, Chardonnay and the rare Aligoté in Tomi City.",
+  "desc_en": "Bonjour Farm was founded by physician Yasushi Minowa, who began growing grapes in Nagano in 2008 (in Tomi City from 2010). After thirteen years of viticulture, he opened the winery in 2021. The farm grows Pinot Noir, Chardonnay and the rare Aligoté variety.",
+  "features_en": [
+   "Founded by a physician who turned a grape-growing hobby into a full winery business",
+   "Grape growing began in 2008; the winery opened in 2021",
+   "Grows the rare Aligoté variety"
+  ],
+  "brands_en": {
+   "ぼんじゅーる農園 ピノ・ノワール": {
+    "name_en": "Bonjour Farm Pinot Noir",
+    "specs_en": "Red — Pinot Noir"
+   },
+   "ぼんじゅーる農園 シャルドネ": {
+    "name_en": "Bonjour Farm Chardonnay",
+    "specs_en": "White — Chardonnay"
+   },
+   "ぼんじゅーる農園 アリゴテ": {
+    "name_en": "Bonjour Farm Aligoté",
+    "specs_en": "White — a rare planting of Aligoté"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:nishiida-sake": {
+  "tagline_en": "A sake brewery since the late Edo period, Nishiida also crafts Merows wine from local Niagara grapes, fermented with a flower yeast developed with Tokyo University of Agriculture.",
+  "desc_en": "Nishiida Sake Brewery, founded in the late Edo period, also produces Shinshu Local Wine Merows, a handcrafted wine made from locally grown Niagara grapes. Working with Tokyo University of Agriculture, the brewery uses a yeast isolated from vinca (periwinkle) flowers to ferment the wine.",
+  "features_en": [
+   "A sake brewery founded in the late Edo period",
+   "Developed a flower-yeast wine in partnership with Tokyo University of Agriculture",
+   "Uses yeast isolated from vinca (periwinkle) flowers"
+  ],
+  "brands_en": {
+   "信州の地ワイン メローズ": {
+    "name_en": "Shinshu Local Wine Merows",
+    "specs_en": "White — made with vinca flower yeast, Niagara"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:cyclo-vineyards": {
+  "tagline_en": "Former professional cyclists, the Iijima couple planted vines in Tomi City's clay-rich Yaehara district from 2014 and opened Cyclo Vineyards in 2019.",
+  "desc_en": "Cyclo Vineyards was founded by former professional cyclist Iijima and his wife, who began growing grapes in the Yaehara district of Tomi City — part of the Chikuma River Wine Valley's eastern area, known for its strong clay soils — in 2014, completing their own winery in 2019. The company's name is French for 'bicycle.' Its wines have been selected by restaurants listed in the Michelin Guide.",
+  "features_en": [
+   "Founded by a former professional cyclist; the name is French for 'bicycle'",
+   "Located in Yaehara, the Chikuma River Wine Valley's eastern district, known for strong clay soils",
+   "Wines selected by Michelin Guide-listed restaurants"
+  ],
+  "brands_en": {
+   "パシュート シャルドネ": {
+    "name_en": "Pursuit Chardonnay",
+    "specs_en": "White — fermented and aged in stainless steel tanks, Chardonnay"
+   },
+   "グルペット シャルドネ": {
+    "name_en": "Gruppetto Chardonnay",
+    "specs_en": "White — Chardonnay"
+   },
+   "メルロー": {
+    "name_en": "Merlot",
+    "specs_en": "Red — aged 18 months in French oak, Merlot"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:tsuiji-lab": {
+  "tagline_en": "Winemaker Takahiro Suga, trained in Australia and Europe, leads Tsuiji Lab's experimental winemaking with grapes from Tomi City producers since 2020.",
+  "desc_en": "Tsuiji Lab was established in 2020 in Tomi City, bringing in winemaker Takahiro Suga, who trained in Australia and Europe, to pursue experimental winemaking using grapes from local producers. The winery, part of the Chikuma River Wine Valley's eastern district, also takes on contract brewing for area growers.",
+  "features_en": [
+   "A collaborative winery led by a winemaker trained in Australia and Europe",
+   "Also contract-brews wine using grapes from local producers",
+   "Located in the Chikuma River Wine Valley's eastern district"
+  ],
+  "brands_en": {
+   "ももわん": {
+    "name_en": "Momowan",
+    "specs_en": "White — Chardonnay"
+   },
+   "くるみん": {
+    "name_en": "Kurumin",
+    "specs_en": "White"
+   },
+   "YONKISEI シャルドネ": {
+    "name_en": "YONKISEI Chardonnay",
+    "specs_en": "White — Chardonnay"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:kawashima-jozo": {
+  "tagline_en": "Moving to Takayama village in 2015, Kawashima Jozo farms organically and ferments with wild yeast and no added sulfites for a fully natural white.",
+  "desc_en": "Kawashima Jozo relocated to Takayama village in 2015 to begin organic (bio) grape growing, using only the permitted lime-sulfur mixture and Bordeaux mixture. Its wine is fermented with wild yeast and made without added sulfites, in a fully natural style.",
+  "features_en": [
+   "Organic (bio) grape cultivation",
+   "Fully natural winemaking with wild yeast and no added sulfites",
+   "A notable new producer in Takayama village"
+  ],
+  "brands_en": {
+   "Ou白": {
+    "name_en": "Ou Blanc",
+    "specs_en": "White — wild yeast, no added sulfites; Semillon and Riesling"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:kifutato-wines": {
+  "tagline_en": "At 900 to 1,300 meters on the cool west flank of Yatsugatake, Kifutato Wines — named for its family's initials — became the valley's fifth winery in 2024.",
+  "desc_en": "Kifutato Wines is a family farm at 900 to 1,300 meters elevation on the cool western foot of Yatsugatake, its name formed from the initials of family members. The winery was completed in 2024, becoming the fifth winery in the Yatsugatake west-foot wine valley, and harvested its first estate vintage that year.",
+  "features_en": [
+   "Situated at 900-1,300 meters, an unusually high and cool elevation",
+   "The fifth winery in the Yatsugatake west-foot wine valley, opened in 2024",
+   "A family-run domaine winery"
+  ],
+  "brands_en": {
+   "Unwind Blanc": {
+    "name_en": "Unwind Blanc",
+    "specs_en": "White — Chardonnay, Sauvignon Blanc, Riesling, Pinot Gris and Pinot Blanc blend"
+   },
+   "INTROFIZZ": {
+    "name_en": "INTROFIZZ",
+    "specs_en": "Sparkling (pétillant) — Sauvignon Blanc"
+   },
+   "Ohayou Geraldo Rouge": {
+    "name_en": "Ohayou Geraldo Rouge",
+    "specs_en": "Red — Merlot and Pinot Noir blend"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:sail-the-ship": {
+  "tagline_en": "On a small hill in Ueda's Higashiyama, Sail the Ship Winery farms Cabernet Franc without herbicides or synthetic pesticides, tending soil, insects and microbes since 2016.",
+  "desc_en": "Sail the Ship Winery planted its vines on a small hill in Higashiyama, Ueda, in 2016. Grapes are farmed without herbicides or synthetic pesticides, in cultivation that values the soil, insects and microbes, with Cabernet Franc as the winery's main variety.",
+  "features_en": [
+   "Natural cultivation without herbicides or synthetic pesticides",
+   "Located on a hill in Higashiyama, Ueda",
+   "A Cabernet Franc-focused winery"
+  ],
+  "brands_en": {
+   "ケシキ": {
+    "name_en": "Keshiki",
+    "specs_en": "Red — grown without herbicides or synthetic pesticides, Cabernet Franc"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "nagano:cave-de-mido": {
+  "tagline_en": "Backed by the Rue de Vin group, Cave de Mido is a cradle winery supporting Mido-district growers with mechanized viticulture, brewing know-how and sales in one operation.",
+  "desc_en": "Cave de Mido was established by the Rue de Vin group as a cradle-type winery in the Nezu Mido area of Tomi City. It supports local growers with mechanized viticulture assistance, winemaking technical support and wine sales, all in one operation.",
+  "features_en": [
+   "A cradle-type winery established by the Rue de Vin group",
+   "Provides growers with combined cultivation, brewing and sales support",
+   "Located in the Nezu Mido area of Tomi City"
+  ],
+  "brands_en": {
+   "MIDO Chardonnay": {
+    "name_en": "MIDO Chardonnay",
+    "specs_en": ""
+   },
+   "MIDO Merlot": {
+    "name_en": "MIDO Merlot",
+    "specs_en": ""
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:sakai-winery": {
+  "tagline_en": "Tohoku's oldest winery, Sakai Winery has farmed without chemical fertilizers or pesticides since 1892, working to revive fallow fields in Akayu.",
+  "desc_en": "Sakai Winery, founded in 1892 in Akayu, Nan'yo, is Tohoku's oldest winery. It farms without chemical fertilizers or pesticides, aiming for diverse plantings and a vineyard rich in wildlife, and is working to expand its fields to revive fallow land in the area.",
+  "features_en": [
+   "Tohoku's oldest winery, founded in 1892",
+   "Farmed without pesticides or chemical fertilizers"
+  ],
+  "brands_en": {
+   "名子山": {
+    "name_en": "名子山",
+    "specs_en": "Red — full-bodied"
+   },
+   "シャルドネ": {
+    "name_en": "Chardonnay",
+    "specs_en": "White — dry, Chardonnay"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:asahimachi-wine": {
+  "tagline_en": "Since 1944, Asahimachi Wine has paired grape farmers with winemakers under one belief — no good wine without good grapes — earning golds and a place at the 2016 G7 summit.",
+  "desc_en": "Asahimachi Wine was founded in 1944 on the principle that there is no good wine without good grapes, bringing grape farmers and winemaking technicians together to pursue quality. The winery won consecutive gold medals at the Japan Wine Competition in 2013 and 2014, and its wine was served at the 2016 G7 Ise-Shima Summit.",
+  "features_en": [
+   "Founded in 1944",
+   "Consecutive gold medals at the Japan Wine Competition in 2013 and 2014",
+   "Wine served at the 2016 G7 Ise-Shima Summit"
+  ],
+  "brands_en": {
+   "マイスターセレクション バレルセレクションルージュ": {
+    "name_en": "Meister Selection Barrel Selection Rouge",
+    "specs_en": "Red — Muscat Bailey A"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamagata:sudo-budo-wine": {
+  "tagline_en": "Founded in 1921, Sudo Grape Wine Factory is one of Yamagata's smallest wineries, a family running everything from Muscat Bailey A cultivation to brewing and sales.",
+  "desc_en": "Sudo Grape Wine Factory, maker of Nan'yo Wine, has been run as a family operation since 1921, handling everything from Muscat Bailey A grape cultivation through brewing to sales. It is one of the smallest wineries in Yamagata Prefecture, placing particular emphasis on the quality of its raw grapes.",
+  "features_en": [
+   "A family-run operation, one of the smallest wineries in Yamagata Prefecture",
+   "Handles cultivation through sales in-house"
+  ],
+  "brands_en": {
+   "南陽ワイン": {
+    "name_en": "Nanyo Wine",
+    "specs_en": "Red and white"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:domaine-mizuki": {
+  "tagline_en": "Yoichi's first grower-owned winery, Domaine Mizuki Nakai is run by fifth-generation farmer Mizuki Nakai, trained at Domaine Takahiko, crafting deep, flavorful Pinot Noir rosé.",
+  "desc_en": "Domaine Mizuki Nakai, founded in 2023, is Yoichi town's first winery run directly by a grape-growing family. It focuses on Pinot Noir, aiming for a deep, flavorful rosé. Mizuki Nakai, born in Yoichi in 1996, is the fifth generation of the Nakai Kanko orchard family and trained at Domaine Takahiko.",
+  "features_en": [
+   "Yoichi's first grower-owned winery",
+   "Run by fifth-generation farmer Mizuki Nakai",
+   "Trained at Domaine Takahiko"
+  ],
+  "brands_en": {
+   "Mizuki Rose": {
+    "name_en": "Mizuki Rosé",
+    "specs_en": ""
+   },
+   "Mizuki Kerner": {
+    "name_en": "Mizuki Kerner",
+    "specs_en": ""
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:okushiri-winery": {
+  "tagline_en": "Born from Okushiri Island's recovery after the 1993 earthquake, Okushiri Winery began with native wild grapevines before expanding into ten wine varieties.",
+  "desc_en": "Okushiri Winery was established in 2007 to support the recovery of Okushiri Island following the 1993 earthquake. It began by planting seedlings of the island's native wild grape (yamabudo), before moving into full-scale cultivation of wine-specific varieties, and now grows ten grape varieties.",
+  "features_en": [
+   "An island winery",
+   "A symbol of Okushiri Island's earthquake recovery",
+   "Began with native wild grapevines; now grows ten varieties"
+  ],
+  "brands_en": {
+   "奥尻メルロー": {
+    "name_en": "Okushiri Merlot",
+    "specs_en": ""
+   },
+   "奥尻ピノ・グリ": {
+    "name_en": "Okushiri Pinot Gris",
+    "specs_en": ""
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:berry-berry-farm": {
+  "tagline_en": "A JAS-certified organic 50-hectare farm in Niki, Berry Berry Farm & Winery grows berries alongside Niagara, Pinot Gris and Pinot Noir for its organic wines.",
+  "desc_en": "Berry Berry Farm & Winery Niki operates a 50-hectare farm certified organic under JAS standards and as a specially cultivated farm. Alongside blueberries and raspberries, it grows Niagara, Pinot Gris and Pinot Noir grapes, which it brews into organic wine.",
+  "features_en": [
+   "JAS organic-certified farm",
+   "A large-scale, 50-hectare farm",
+   "Specializes in organic wine"
+  ],
+  "brands_en": {
+   "オーガニックワイン": {
+    "name_en": "Organic Wine",
+    "specs_en": "Red and white"
+   },
+   "蝦夷泡（ペティヤン）": {
+    "name_en": "Ezo Awa (Pétillant)",
+    "specs_en": "Sparkling — Niagara"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:vina-de-oro-bodega": {
+  "tagline_en": "Started in 2018 by Japan's youngest winemaker at the time, Vina de Oro Bodega crafts Pinot Noir reds and Niagara-based sparkling wines from its own Niki-town vineyard.",
+  "desc_en": "Vina de Oro Bodega began in 2018 with its founder's first vintage as Japan's youngest winemaker at the time. The winery's brewing centers on grapes from Niki town, including its own estate vineyard.",
+  "features_en": [
+   "Founded in 2018 by Japan's youngest winemaker at the time",
+   "Uses grapes from its own vineyard in Niki town"
+  ],
+  "brands_en": {
+   "The door Pinot Noir": {
+    "name_en": "The Door Pinot Noir",
+    "specs_en": "Red — Pinot Noir"
+   },
+   "The day Sparkling": {
+    "name_en": "The Day Sparkling",
+    "specs_en": "Sparkling — Niagara-led, with Riesling"
+   },
+   "The birth": {
+    "name_en": "The Birth",
+    "specs_en": "Rosé sparkling — Pinot Noir"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:sapporo-wine": {
+  "tagline_en": "Sapporo's fourth winery, founded in May 2020, Sapporo Wine brews Chardonnay and Yama Sauvignon from grapes grown near the city for a community-loved wine.",
+  "desc_en": "Sapporo Wine was founded in May 2020 as the fourth winery in Sapporo city, brewing wine from grapes grown in the area around the city with the aim of making wine loved widely by the local community.",
+  "features_en": [
+   "Sapporo's fourth winery",
+   "Community-oriented winemaking using grapes grown near the city"
+  ],
+  "brands_en": {
+   "さっぽろワイン シャルドネ": {
+    "name_en": "Sapporo Wine Chardonnay",
+    "specs_en": "White — Chardonnay grown near Sapporo"
+   },
+   "さっぽろワイン ヤマソーヴィニョン": {
+    "name_en": "Sapporo Wine Yama Sauvignon",
+    "specs_en": "Red — Yama Sauvignon, a community-rooted wine"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:tokachi-makiba-winery": {
+  "tagline_en": "Run by the Makiba no Ie ranch in Ikeda town, this Tokachi winery grows native varieties — Yamasachi, Kiyomi, Kiyomai and Niagara — for its 2021 debut.",
+  "desc_en": "Tokachi Makiba no Ie Winery is operated by the Makiba no Ie ranch in Ikeda town, using grapes grown in the Tokachi region. It cultivates native Tokachi varieties, including Yamasachi, Kiyomi, Kiyomai, Niagara and New Niagara.",
+  "features_en": [
+   "Operated by the Makiba no Ie ranch",
+   "Grows native Tokachi grape varieties",
+   "Located within Ikeda town"
+  ],
+  "brands_en": {
+   "まきばの家 山幸": {
+    "name_en": "Makiba no Ie Yamasachi",
+    "specs_en": "Red — Yamasachi"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hokkaido:due-punti": {
+  "tagline_en": "A rising Donan winery in Hokuto's Fuzuki district, DUE PUNTI Vineyards grows Merlot, Pinot Noir and Pinot Blanc and takes part in the Donan Wine Garden.",
+  "desc_en": "DUE PUNTI Vineyards is a new winery in the Fuzuki district of Hokuto city, in Hokkaido's Donan region, growing Merlot, Pinot Noir and Pinot Blanc. It takes an active part in local events such as the Donan Wine Garden.",
+  "features_en": [
+   "Located in the Donan region of Hokuto city",
+   "Takes part in the Donan Wine Garden event",
+   "Run by an up-and-coming grower and winemaker"
+  ],
+  "brands_en": {
+   "Due Punti 文月 白": {
+    "name_en": "Due Punti Fuzuki Bianco",
+    "specs_en": "White — Pinot Blanc"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "fukushima:wine-kobo-aizu": {
+  "tagline_en": "At the foot of Mt. Bandai in Inawashiro, Wine Kobo Aizu ferments and ages its wine in glass barrels, crafting a rare Aizu wine from local fruit since 1998.",
+  "desc_en": "Wine Kobo Aizu is a small winery at the foot of Mt. Bandai in Inawashiro town, Fukushima. It ferments and ages its wine mainly in glass barrels, brewing a rare Aizu wine using locally grown fruit. In April 2025, the winery was transferred to the Fruit Research Institute of Showa Kako Corporation.",
+  "features_en": [
+   "Located at the foot of Mt. Bandai in Inawashiro town",
+   "Ferments and ages wine mainly in glass barrels",
+   "Transferred to Showa Kako Corporation's Fruit Research Institute in April 2025"
+  ],
+  "brands_en": {
+   "ワイン工房あいづ": {
+    "name_en": "Wine Kobo Aizu",
+    "specs_en": "Red and white"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "kyoto:tamba-wine": {
+  "tagline_en": "Kyoto's first winery, Tamba Wine has grown more than fifty grape varieties since 1979, pursuing wine that is simple yet rich enough to be one of a kind.",
+  "desc_en": "Tamba Wine, founded in 1979 as Kyoto's first winery, set out to permanently produce wine that carries forward part of the city's historic food culture — modest and simple, yet rich in warmth and joy, and unlike any other in the world. The winery grows more than fifty grape varieties and operates the attached restaurant du Tamba.",
+  "features_en": [
+   "Kyoto's first winery, founded in 1979",
+   "Grows more than fifty grape varieties",
+   "Restaurant du Tamba is attached to the winery"
+  ],
+  "brands_en": {
+   "京都丹波ワイン": {
+    "name_en": "Kyoto Tamba Wine",
+    "specs_en": ""
+   },
+   "京都ワイン": {
+    "name_en": "Kyoto Wine",
+    "specs_en": ""
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "iwate:kuzumaki-wine": {
+  "tagline_en": "In Kuzumaki, Iwate's yamabudo country, this town-backed winery has drawn out the wild grape's bright acidity since 1986, earning honors at international competitions.",
+  "desc_en": "Kuzumaki Wine specializes in cultivating and brewing yamabudo, Japan's native wild grape, in Kuzumaki town, Iwate — a region known for the variety. The winery, operated as a third-sector venture with the town, aims to bring out yamabudo's clean, lively acidity and wild character, and has won awards at multiple international competitions.",
+  "features_en": [
+   "Located in Kuzumaki, a region known for yamabudo (native wild grape)",
+   "Operated as a third-sector venture with the town",
+   "Committed to yamabudo-focused winemaking",
+   "Winner of awards at multiple international wine competitions"
+  ],
+  "brands_en": {
+   "山ぶどうワイン": {
+    "name_en": "Yamabudo Wine",
+    "specs_en": "Red — yamabudo (Japan's native wild grape)"
+   },
+   "くずまきワイン 蒼（あお）": {
+    "name_en": "Kuzumaki Wine Ao",
+    "specs_en": "White"
+   },
+   "フォーレ・ロゼ": {
+    "name_en": "Forêt Rosé",
+    "specs_en": "Rosé"
+   },
+   "さくらワイン": {
+    "name_en": "Sakura Wine",
+    "specs_en": "Fruit wine"
+   },
+   "澤登ブラックペガール": {
+    "name_en": "Sawanobori Black Pegal",
+    "specs_en": "Red — Black Pegal"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "okinawa:wine-kobo-raout": {
+  "tagline_en": "Japan's southernmost winery, Wine Kobo RAOUT grows and brews Okinawa's native Ryukyu Ganebu wild grape 100%, capturing the island's terroir in its 2023 debut.",
+  "desc_en": "Wine Kobo RAOUT, founded in 2023 in Onna village, is Japan's southernmost small winery. It grows and brews its wine entirely from Ryukyu Ganebu, Okinawa's native wild grape, aiming to express Okinawa's terroir directly. The winery was established by taking advantage of Onna village's special wine zone, and is Okinawa's first small winery to handle cultivation through brewing in-house.",
+  "features_en": [
+   "Japan's southernmost winery, opened in 2023",
+   "Uses 100% Ryukyu Ganebu, Okinawa's native wild grape",
+   "Established under Onna village's special wine zone",
+   "Okinawa's first small winery to handle cultivation through brewing in-house"
+  ],
+  "brands_en": {
+   "涙（NADA）": {
+    "name_en": "Namida (NADA)",
+    "specs_en": "Red — 100% Ryukyu Ganebu"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hiroshima:sera-winery": {
+  "tagline_en": "At 400 to 500 meters on the Sera plateau, Sera Winery brews grapes from some twenty local growers, including the Honey Venus variety, behind a glass-walled viewing corridor.",
+  "desc_en": "Sera Winery sits at 400 to 500 meters elevation on the Sera plateau, brewing wine from grapes grown by about twenty farming households in the town, including the Honey Venus variety. The winery complex includes a viewing corridor over the brewing process, a restaurant and a shop.",
+  "features_en": [
+   "A cool, high-elevation site on the Sera plateau",
+   "Uses grapes from about twenty growers in Sera town",
+   "A complex with a brewing-viewing corridor, restaurant and shop"
+  ],
+  "brands_en": {
+   "せらワイン": {
+    "name_en": "Sera Wine",
+    "specs_en": ""
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "hiroshima:vinoble-vineyard": {
+  "tagline_en": "In Miyoshi city, Vinoble Vineyard grows European varieties — Pinot Noir, Sauvignon Blanc, Semillon and Chardonnay — in a small-batch, vineyard-led estate style.",
+  "desc_en": "Vinoble Vineyard grows mainly European grape varieties in Miyoshi city, Hiroshima, producing wines that showcase the character of Pinot Noir, Sauvignon Blanc and other varieties. The estate takes a vineyard-focused approach with small-batch production of its Pinot Noir and Semillon.",
+  "features_en": [
+   "Grows mainly European varieties, centered in Miyoshi city",
+   "Small-batch production of Pinot Noir and Semillon",
+   "A vineyard-focused estate winery"
+  ],
+  "brands_en": {
+   "Pinot Noir": {
+    "name_en": "Pinot Noir",
+    "specs_en": "Red — Miyoshi's representative Pinot Noir"
+   },
+   "Sauvignon Blanc": {
+    "name_en": "Sauvignon Blanc",
+    "specs_en": "White — a cool-climate expression"
+   },
+   "Semillon Sparkling": {
+    "name_en": "Semillon Sparkling",
+    "specs_en": "Sparkling — Semillon-led"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamanashi:katsunuma-winery": {
+  "tagline_en": "Since 1937, Katsunuma Winery has devoted itself entirely to Koshu, carrying Japan's indigenous white grape onto JAL international flights and into EU export markets.",
+  "desc_en": "Katsunuma Winery, founded in 1937, has committed itself to a single guiding belief — 'even if just one barrel, only the best' — and has focused exclusively on Koshu (Japan's indigenous white grape), actively pursuing its international reputation. Its wines have been served on JAL international flights since 2007 and exported to the EU since 2008.",
+  "features_en": [
+   "Focuses exclusively on the Koshu grape variety",
+   "Served on JAL international flights since 2007",
+   "Exported to the EU since 2008"
+  ],
+  "brands_en": {
+   "アルガブランカ": {
+    "name_en": "Aruga Branca",
+    "specs_en": "White, premium — 100% Koshu"
+   },
+   "アルガーノ": {
+    "name_en": "Argano",
+    "specs_en": "White, everyday — 100% Koshu"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
+ },
+ "yamaguchi:yamaguchi-winery": {
+  "tagline_en": "Part of the Nagayama Sake Brewery Group, Yamaguchi Winery set out in 1999 to build Yamaguchi into a globally recognized wine region, growing Cabernet Sauvignon, Chardonnay and Koshu.",
+  "desc_en": "Yamaguchi Winery, the wine division of the Nagayama Sake Brewery Group, was founded in 1999 with the goal of developing Yamaguchi into a wine region recognized around the world. It brews with grapes from its own and contracted farms, working with Yamaguchi Wine Farmland on estate cultivation, and offers both its oak-aged Chateau Yamaguchi line and the more approachable Soleine series.",
+  "features_en": [
+   "Founded in 1999 to develop Yamaguchi into a globally recognized wine region",
+   "Partners with Yamaguchi Wine Farmland for estate grape growing",
+   "Produces the oak-aged Chateau Yamaguchi line and the approachable Soleine series"
+  ],
+  "brands_en": {
+   "シャトーヤマグチ カベルネソーヴィニヨン": {
+    "name_en": "Chateau Yamaguchi Cabernet Sauvignon",
+    "specs_en": "Red, full-bodied — oak-aged, estate-grown Cabernet Sauvignon"
+   },
+   "シャトーヤマグチ シャルドネ": {
+    "name_en": "Chateau Yamaguchi Chardonnay",
+    "specs_en": "White, dry — barrel-aged, estate-grown Chardonnay"
+   },
+   "山口ワイン ソレイネ": {
+    "name_en": "Yamaguchi Wine Soleine",
+    "specs_en": "Red and white — an approachable series made with Yamaguchi-grown grapes, Muscat Bailey A and Koshu"
+   }
+  },
+  "by": "sonnet",
+  "audited": true
  }
 }
