@@ -1,0 +1,3756 @@
+[
+ {
+  "key": "azucca-e-azucco",
+  "name": "アズッカ・エ・アズッコ 風の丘のワイナリー",
+  "url": "https://azu-azu.sakura.ne.jp/",
+  "code": 200,
+  "final": "https://azu-azu.sakura.ne.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "komaki-winery",
+  "name": "小牧ワイナリー",
+  "url": "https://komakiwinery.com/",
+  "code": 200,
+  "final": "https://komakiwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "tokoname-winery",
+  "name": "常滑ワイナリー",
+  "url": "https://tokonamewinery.jp/",
+  "code": 200,
+  "final": "https://www.tokonamewinery.jp/index.php",
+  "status": "ok"
+ },
+ {
+  "key": "winar-nagoya",
+  "name": "名古屋ワイナリー WINAR（ワイナル）",
+  "url": "https://winar-nagoya.com/",
+  "code": 200,
+  "final": "https://winar-nagoya.com/",
+  "status": "ok"
+ },
+ {
+  "key": "winery-konohana",
+  "name": "ワイナリーこのはな",
+  "url": "https://www.mkpaso.jp/",
+  "code": 200,
+  "final": "https://www.mkpaso.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "towada-wine",
+  "name": "十和田ワイン",
+  "url": "https://nippon.wine/winery/12050010058/",
+  "code": 200,
+  "final": "https://nippon.wine/winery/12050010058/",
+  "status": "ok"
+ },
+ {
+  "key": "kosaka-nanataki-winery",
+  "name": "小坂七滝ワイナリー",
+  "url": "https://kosaka-7falls-winery.com/",
+  "code": 200,
+  "final": "https://kosaka-7falls-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "akitano-winery",
+  "name": "天鷺ワイン",
+  "url": "https://akitano-wgf.com/",
+  "code": 200,
+  "final": "https://www.akitano-wgf.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sunmamoru-winery",
+  "name": "サンマモルワイナリー（下北ワイン）",
+  "url": "https://www.sunmamoru.com/",
+  "code": 200,
+  "final": "https://www.sunmamoru.com/",
+  "status": "ok"
+ },
+ {
+  "key": "fattoria-da-sasino",
+  "name": "ファットリア ダ・サスィーノ",
+  "url": "https://dasasino.com/",
+  "code": 200,
+  "final": "https://dasasino.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hachinohe-winery",
+  "name": "はちのへワイナリー",
+  "url": "http://www.h-winery.com/",
+  "code": 200,
+  "final": "http://www.h-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "nikka-cidre-hirosaki",
+  "name": "ニッカシードル弘前工場",
+  "url": "https://www.nikka.com/company/facility.html",
+  "code": 200,
+  "final": "https://www.nikka.com/about/",
+  "status": "ok"
+ },
+ {
+  "key": "sawauchi-jozo",
+  "name": "澤内醸造",
+  "url": "http://www.sawauchi.info/",
+  "code": 200,
+  "final": "http://www.sawauchi.info/",
+  "status": "ok"
+ },
+ {
+  "key": "funakoshi-winery",
+  "name": "多古ワイン",
+  "url": "https://tako-wine.com/",
+  "code": 200,
+  "final": "https://tako-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "saito-budoen",
+  "name": "齊藤ぶどう園",
+  "url": "http://www.saito-winery.com/",
+  "code": 200,
+  "final": "http://www.saito-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "vanvan-vineyard",
+  "name": "Sawa Wines（ヴァンヴァンヴィンヤード）",
+  "url": "https://www.sawawines.com/",
+  "code": 200,
+  "final": "https://www.sawawines.com/",
+  "status": "ok"
+ },
+ {
+  "key": "funabashi-coq-winery",
+  "name": "船橋コックワイナリー（FUNABASHI COQ WINERY）",
+  "url": "https://fcw.theshop.jp/",
+  "code": 200,
+  "final": "https://fcw.theshop.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "chiba-winery-wakaba",
+  "name": "千葉ワイナリー",
+  "url": "https://chibawinery.com/",
+  "code": 200,
+  "final": "https://chibawinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "uchiko-winery",
+  "name": "内子ワイナリー",
+  "url": "https://fujibudouen.sakura.ne.jp/uchikowinery/index.html",
+  "code": 200,
+  "final": "https://fujibudouen.sakura.ne.jp/uchikowinery/index.html",
+  "status": "ok"
+ },
+ {
+  "key": "omishima-minna-winery",
+  "name": "大三島みんなのワイナリー",
+  "url": "http://www.ohmishimawine.com/",
+  "code": 200,
+  "final": "http://www.ohmishimawine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "blue-wax-winery",
+  "name": "BLUE WAX WINERY",
+  "url": "https://bluewaxwinery.jp/",
+  "code": 200,
+  "final": "https://bluewaxwinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "hakusan-winery",
+  "name": "白山ワイナリー",
+  "url": "https://www.yamabudou.co.jp/",
+  "code": 200,
+  "final": "https://www.yamabudou.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "six-three-estate-winery",
+  "name": "シックス スリー エステート ワイナリー",
+  "url": "https://six-three-estate.jp/cms",
+  "code": 200,
+  "final": "https://six-three-estate.jp/cms",
+  "status": "ok"
+ },
+ {
+  "key": "kyoho-wine",
+  "name": "巨峰ワイン",
+  "url": "http://www.kyoho-winery.com/",
+  "code": 200,
+  "final": "http://www.kyoho-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "watarise-farm-winery",
+  "name": "ワタリセ ファーム＆ワイナリー",
+  "url": "https://watarise.yoka-yoka.jp/",
+  "code": 200,
+  "final": "https://watarise.yoka-yoka.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ouse-winery",
+  "name": "ふくしま逢瀬ワイナリー",
+  "url": "https://ousewinery.jp/",
+  "code": 200,
+  "final": "https://ousewinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "iwaki-winery",
+  "name": "いわきワイナリー",
+  "url": "https://iwakiwinery.com/",
+  "code": 200,
+  "final": "https://iwakiwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "azuma-sanroku-winery",
+  "name": "吾妻山麓醸造所",
+  "url": "https://azumasanroku-winery.co.jp/",
+  "code": 200,
+  "final": "https://azumasanroku-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "fukuyume-wine",
+  "name": "ふくしま農家の夢ワイン",
+  "url": "https://nippon.wine/winery/12070010077/",
+  "code": 200,
+  "final": "https://nippon.wine/winery/12070010077/",
+  "status": "ok"
+ },
+ {
+  "key": "wine-kobo-aizu",
+  "name": "ワイン工房あいづ",
+  "url": "http://www.hondawinery.co.jp/",
+  "code": 200,
+  "final": "https://www.hondawinery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kitaaizu-wine",
+  "name": "北会津ワイン",
+  "url": "https://www.ootake-vin.jp/",
+  "code": 200,
+  "final": "https://www.ootake-vin.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kawauchi-wine",
+  "name": "かわうちワイナリー",
+  "url": "https://kawauchi-wine.com/",
+  "code": 200,
+  "final": "https://kawauchi-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "tajimi-shudoin",
+  "name": "神言会多治見修道院",
+  "url": "https://svdtajimi.com/",
+  "code": 200,
+  "final": "https://svdtajimi.com/",
+  "status": "ok"
+ },
+ {
+  "key": "nagara-natural-wine",
+  "name": "長良天然ワイン醸造",
+  "url": "https://nihonwine.jp/winery_intro/nagarawinery/",
+  "code": 200,
+  "final": "https://nihonwine.jp/winery_intro/nagarawinery/",
+  "status": "ok"
+ },
+ {
+  "key": "shintou-winery",
+  "name": "しんとうワイナリー",
+  "url": "https://www.shintou-wine.co.jp/",
+  "code": 200,
+  "final": "https://www.shintou-wine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "okutone-winery",
+  "name": "奥利根ワイナリー",
+  "url": "https://oze.co.jp/",
+  "code": 200,
+  "final": "https://oze.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "miyama-wine",
+  "name": "ミヤマワイン",
+  "url": "http://www.tsukada-wine.jp/",
+  "code": 200,
+  "final": "http://www.tsukada-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "hiroshima-miyoshi-winery",
+  "name": "広島三次ワイナリー",
+  "url": "https://www.miyoshi-winery.co.jp/",
+  "code": 200,
+  "final": "https://www.miyoshi-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "sera-winery",
+  "name": "せらワイナリー",
+  "url": "http://www.serawinery.jp/",
+  "code": 200,
+  "final": "https://www.serawinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "vinoble-vineyard",
+  "name": "ヴィノーブルヴィンヤード",
+  "url": "http://vinoble-vineyard.jp/",
+  "code": 200,
+  "final": "http://vinoble-vineyard.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "fukuyama-wine-kobo",
+  "name": "福山わいん工房",
+  "url": "http://www.enivrant.co.jp/vindefukuyama/",
+  "code": 200,
+  "final": "https://enivrant.co.jp/vindefukuyama/",
+  "status": "ok"
+ },
+ {
+  "key": "setouchi-jozo",
+  "name": "瀬戸内醸造所",
+  "url": "https://setouchijozojo.jp/",
+  "code": 200,
+  "final": "https://setouchijozojo.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yamano-winery",
+  "name": "山野峡大田ワイナリー",
+  "url": "https://yamano-wine.com/",
+  "code": 200,
+  "final": "https://yamano-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hokkoh-winery",
+  "name": "ホッコーわいなりー",
+  "url": "https://www.hokkoh-farm.jp/",
+  "code": 200,
+  "final": "https://www.hokkoh-farm.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-takahiko",
+  "name": "ドメーヌ・タカヒコ",
+  "url": "https://www.takahiko.co.jp/",
+  "code": 200,
+  "final": "https://www.takahiko.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "occigabi",
+  "name": "OcciGabi ワイナリー",
+  "url": "https://www.occigabi.net/",
+  "code": 200,
+  "final": "https://www.occigabi.net/",
+  "status": "ok"
+ },
+ {
+  "key": "hokkaido-wine",
+  "name": "北海道ワイン株式会社",
+  "url": "https://www.hokkaidowine.com/",
+  "code": 200,
+  "final": "https://www.hokkaidowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hakodate-wine",
+  "name": "株式会社はこだてわいん",
+  "url": "https://www.hakodatewine.co.jp/",
+  "code": 200,
+  "final": "https://www.hakodatewine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "furano-wine",
+  "name": "富良野市ぶどう果樹研究所（ふらのワイン）",
+  "url": "https://www.furanowine.jp/",
+  "code": 200,
+  "final": "https://www.furanowine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tokachi-wine",
+  "name": "池田町ブドウ・ブドウ酒研究所（十勝ワイン）",
+  "url": "https://www.tokachi-wine.com/",
+  "code": 200,
+  "final": "https://www.tokachi-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "chitose-winery",
+  "name": "北海道中央葡萄酒（千歳ワイナリー）",
+  "url": "https://www.chitose-winery.com/",
+  "code": 200,
+  "final": "https://www.chitose-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "housui-winery",
+  "name": "宝水ワイナリー",
+  "url": "https://housui-winery.co.jp/",
+  "code": 200,
+  "final": "https://housui-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "norakura",
+  "name": "農楽蔵",
+  "url": "http://www.nora-kura.jp/",
+  "code": 200,
+  "final": "http://www.nora-kura.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "niki-hills",
+  "name": "NIKI Hills Winery",
+  "url": "https://nikihills.co.jp/",
+  "code": 200,
+  "final": "https://nikihills.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "camel-farm",
+  "name": "キャメルファームワイナリー",
+  "url": "https://camelfarm.co.jp/",
+  "code": 200,
+  "final": "https://camelfarm.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "hirakawa-winery",
+  "name": "平川ワイナリー",
+  "url": "https://hirakawawinery.jp/",
+  "code": 200,
+  "final": "https://hirakawawinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "nobori-jozo",
+  "name": "登醸造",
+  "url": "http://www.noborijozo.com",
+  "code": 200,
+  "final": "https://www.noborijozo.com/",
+  "status": "ok"
+ },
+ {
+  "key": "yoichi-winery-nipponseishu",
+  "name": "余市ワイナリー（日本清酒）",
+  "url": "https://nipponseishu.co.jp/yoichiwine/",
+  "code": 200,
+  "final": "https://nipponseishu.co.jp/yoichiwine/",
+  "status": "ok"
+ },
+ {
+  "key": "rita-farm",
+  "name": "リタファーム＆ワイナリー",
+  "url": "http://www.rita-farm.jp/",
+  "code": 200,
+  "final": "http://www.rita-farm.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "mongaku-valley",
+  "name": "モンガク谷ワイナリー",
+  "url": "https://mongakuwinery.com/",
+  "code": 200,
+  "final": "https://mongakuwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-yui",
+  "name": "ドメーヌユイ",
+  "url": "http://domaineyui.jp/",
+  "code": 200,
+  "final": "http://domaineyui.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-mizuki",
+  "name": "ドメーヌ・ミズキ ナカイ",
+  "url": "https://www.domainemizuki.com/",
+  "code": 200,
+  "final": "https://www.domainemizuki.com/",
+  "status": "ok"
+ },
+ {
+  "key": "yamazaki-winery",
+  "name": "山崎ワイナリー",
+  "url": "http://www.yamazaki-winery.co.jp/",
+  "code": 200,
+  "final": "http://www.yamazaki-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "takizawa-winery",
+  "name": "タキザワワイナリー",
+  "url": "https://www.enoteca.co.jp/producer/detail/1122",
+  "code": 200,
+  "final": "https://www.enoteca.co.jp/producer/detail/1122",
+  "status": "ok"
+ },
+ {
+  "key": "10r-winery",
+  "name": "10Rワイナリー（トアール）",
+  "url": "https://www.10rwinery.jp/",
+  "code": 200,
+  "final": "https://www.10rwinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "sapporo-fujino-winery",
+  "name": "さっぽろ藤野ワイナリー",
+  "url": "https://www.sapporo-fujino-winery.com/",
+  "code": 200,
+  "final": "https://www.sapporo-fujino-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "okushiri-winery",
+  "name": "奥尻ワイナリー",
+  "url": "https://okushiri-winery.com/",
+  "code": 200,
+  "final": "https://okushiri-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "niseko-winery",
+  "name": "ニセコワイナリー",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "tsukiura-wine",
+  "name": "月浦ワイナリー",
+  "url": "http://www.tsukiurawine.jp/",
+  "code": 200,
+  "final": "http://www.tsukiurawine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "lanseqqua",
+  "name": "ランセッカ",
+  "url": "https://lanseqqua.jp/",
+  "code": 200,
+  "final": "https://lanseqqua.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "domainemont",
+  "name": "ドメーヌモン",
+  "url": "https://domainemont.com/",
+  "code": 200,
+  "final": "https://domainemont.com/",
+  "status": "ok"
+ },
+ {
+  "key": "winery-yumenomori",
+  "name": "ワイナリー夢の森",
+  "url": "https://winery-yumenomori.com/",
+  "code": 200,
+  "final": "https://winery-yumenomori.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-atsushi-suzuki",
+  "name": "ドメーヌアツシスズキ",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "misono-vineyard",
+  "name": "Misono Vineyard",
+  "url": "https://misono-vineyard.com/",
+  "code": 200,
+  "final": "https://misono-vineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "yamadado",
+  "name": "山田堂",
+  "url": "https://yamadado.jp/",
+  "code": 200,
+  "final": "https://yamadado.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "lowbrow-craft",
+  "name": "LOWBROW CRAFT",
+  "url": "https://lowbrowcraft.jp/",
+  "code": 200,
+  "final": "https://lowbrowcraft.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yoka-winery",
+  "name": "YOKA WINERY",
+  "url": "https://www.yoka-winery.com/",
+  "code": 200,
+  "final": "https://www.yoka-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-bless",
+  "name": "Domaine Bless",
+  "url": "https://domaine-bless.com/",
+  "code": 200,
+  "final": "https://domaine-bless.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-ichi",
+  "name": "ドメーヌ・ICHI",
+  "url": "https://domaine-1.com/",
+  "code": 200,
+  "final": "https://domaine-1.com/",
+  "status": "ok"
+ },
+ {
+  "key": "berry-berry-farm",
+  "name": "ベリーベリーファーム＆ワイナリー仁木",
+  "url": "https://shop2.organicwine.jp/",
+  "code": 200,
+  "final": "https://shop2.organicwine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "osa-winery",
+  "name": "OSAワイナリー",
+  "url": "https://osawinery.com/",
+  "code": 200,
+  "final": "https://osawinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hakkenzan-winery",
+  "name": "八剣山ワイナリー",
+  "url": "https://hakkenzanwine.com/",
+  "code": 200,
+  "final": "https://hakkenzanwine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "tsurunuma-winery",
+  "name": "北海道ワイン鶴沼ワイナリー",
+  "url": "https://www.hokkaidowine.com/contents/tsurunuma/index.html",
+  "code": 200,
+  "final": "https://www.hokkaidowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "otobe-winery",
+  "name": "おとべワイナリー",
+  "url": "https://www.sapporo-shusei.jp/otobewinery/",
+  "code": 200,
+  "final": "https://www.sapporo-shusei.jp/otobewinery/",
+  "status": "ok"
+ },
+ {
+  "key": "kaminokuni-winery",
+  "name": "上ノ国ワイナリー",
+  "url": "https://kaminokuni-winery.jp/",
+  "code": 200,
+  "final": "https://kaminokuni-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tada-winery",
+  "name": "多田ワイナリー",
+  "url": "https://ninjin-koubou.com/",
+  "code": 200,
+  "final": "https://ninjin-koubou.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-raison",
+  "name": "ドメーヌレゾン",
+  "url": "https://domaine-raison.com/",
+  "code": 200,
+  "final": "https://domaine-raison.com/",
+  "status": "ok"
+ },
+ {
+  "key": "ebeotsu-wein",
+  "name": "えべおつWein",
+  "url": "https://winecluster.org/contents/winery/",
+  "code": 200,
+  "final": "https://winecluster.org/contents/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "matsubara-wine",
+  "name": "松原農園",
+  "url": "http://matsubarawine.com/",
+  "code": 200,
+  "final": "http://matsubarawine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "maoi-distillery",
+  "name": "馬追蒸溜所",
+  "url": "https://maoidistillery.com/",
+  "code": 200,
+  "final": "https://maoidistillery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hokkaido-space-winery",
+  "name": "Hokkaido SPACE Winery",
+  "url": "https://hokkaido-space-winery.com/",
+  "code": 200,
+  "final": "https://hokkaido-space-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "memuro-winery",
+  "name": "めむろワイナリー",
+  "url": "https://memurowinery.jp/",
+  "code": 200,
+  "final": "https://memurowinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "aizawa-winery",
+  "name": "あいざわ農園（相澤ワイナリー）",
+  "url": "https://aizawanouen.com/",
+  "code": 200,
+  "final": "https://aizawanouen.com/",
+  "status": "ok"
+ },
+ {
+  "key": "de-montille-hokkaido",
+  "name": "ド・モンティーユ＆北海道",
+  "url": "https://www.demontille-hokkaido.com/",
+  "code": 200,
+  "final": "https://www.demontille-hokkaido.com/",
+  "status": "ok"
+ },
+ {
+  "key": "vina-de-oro-bodega",
+  "name": "ヴィニャ・デ・オロ・ボデガ",
+  "url": "https://bodega0405.thebase.in/",
+  "code": 200,
+  "final": "https://bodega0405.thebase.in/",
+  "status": "ok"
+ },
+ {
+  "key": "kurisawa-wines",
+  "name": "栗澤ワインズ（KONDOヴィンヤード）",
+  "url": "https://www.kondo-vineyard.com/",
+  "code": 200,
+  "final": "https://www.kondo-vineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "les-vins-de-tapcolline",
+  "name": "Les Vins de Tapcolline",
+  "url": "http://miyamoto-vineyard.com/",
+  "code": 200,
+  "final": "http://miyamoto-vineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sapporo-wine",
+  "name": "さっぽろワイン",
+  "url": "https://en.sapporo-wine.com/",
+  "code": 200,
+  "final": "https://en.sapporo-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "shinga-winery",
+  "name": "森臥ワイナリー",
+  "url": "https://shinga-shinga.jimdofree.com/",
+  "code": 200,
+  "final": "https://shinga-shinga.jimdofree.com/",
+  "status": "ok"
+ },
+ {
+  "key": "tokachi-makiba-winery",
+  "name": "十勝まきばの家ワイナリー",
+  "url": "https://makibanoie.com/winery/",
+  "code": 200,
+  "final": "https://makibanoie.com/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "snow-river-wines",
+  "name": "雪川醸造",
+  "url": "https://www.snowriverwines.com/",
+  "code": 200,
+  "final": "https://www.snowriverwines.com/",
+  "status": "ok"
+ },
+ {
+  "key": "due-punti",
+  "name": "DUE PUNTI Vineyards",
+  "url": "https://en.due-punti-vineyards.com/",
+  "code": 200,
+  "final": "https://en.due-punti-vineyards.com/",
+  "status": "ok"
+ },
+ {
+  "key": "marumegane",
+  "name": "ドメーヌ・マルメガネ",
+  "url": "https://wineshop.tokyo/archives/marumegane.html",
+  "code": 200,
+  "final": "https://wineshop.tokyo/archives/marumegane.html",
+  "status": "ok"
+ },
+ {
+  "key": "infield-winery",
+  "name": "インフィールドワイナリー",
+  "url": "https://miraifarm.co.jp/wine/",
+  "code": 200,
+  "final": "https://miraifarm.co.jp/wine/",
+  "status": "ok"
+ },
+ {
+  "key": "wine-hatake-uramoto",
+  "name": "ワイン畑 浦本",
+  "url": "https://www.winebatake.com/",
+  "code": 200,
+  "final": "https://www.winebatake.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kamui-metto-nupuri",
+  "name": "カムイ・メトッ・ヌプリ",
+  "url": "https://www.furanobus.jp/winetour/",
+  "code": 200,
+  "final": "https://www.furanobus.jp/winetour/",
+  "status": "ok"
+ },
+ {
+  "key": "boss-agri-winery",
+  "name": "ボスアグリワイナリー",
+  "url": "https://kitamikanko.jp/gift/1100/",
+  "code": 200,
+  "final": "https://kitamikanko.jp/gift/1100/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-harbiose",
+  "name": "ドメーヌ・アルビオーズ",
+  "url": "https://winery.yoichidreams.com/",
+  "code": 200,
+  "final": "https://winery.yoichidreams.com/",
+  "status": "ok"
+ },
+ {
+  "key": "north-creek-farm",
+  "name": "North Creek Farm",
+  "url": "https://niki-wine-tourism.com/winery/10/",
+  "code": 200,
+  "final": "https://niki-wine-tourism.com/winery/10/",
+  "status": "ok"
+ },
+ {
+  "key": "kamisato-vineyard",
+  "name": "kamisato vineyard",
+  "url": "https://kamisatovineyard.com/",
+  "code": 200,
+  "final": "https://kamisatovineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "torocco-winery",
+  "name": "torocco winery",
+  "url": "https://toroccostore.com/",
+  "code": 200,
+  "final": "https://toroccostore.com/",
+  "status": "ok"
+ },
+ {
+  "key": "cenavino-teshikaga",
+  "name": "弟子屈ワイナリー",
+  "url": "https://www.cenavino.com/",
+  "code": 200,
+  "final": "https://www.cenavino.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kussharo-caldera-winery",
+  "name": "屈斜路カルデラワイナリー",
+  "url": "https://teshikagafarm.com/kcwinery/",
+  "code": 200,
+  "final": "https://teshikagafarm.com/kcwinery/",
+  "status": "ok"
+ },
+ {
+  "key": "alom-winery",
+  "name": "ダイナックス アーロムワイナリー",
+  "url": "https://alomwinery.com/",
+  "code": 200,
+  "final": "https://www.alomwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "libera-wine-terrace",
+  "name": "LIBERA WINE TERRACE",
+  "url": "https://libera-wine.jp/",
+  "code": 200,
+  "final": "https://libera-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tokachigaoka-winery",
+  "name": "十勝が丘ワイナリー",
+  "url": "http://tokachigaoka-w.jp/",
+  "code": 200,
+  "final": "https://tokachigaoka-w.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "bankei-winery",
+  "name": "ばんけい峠のワイナリー",
+  "url": "https://sapporo-bankei-winery.jimdofree.com/",
+  "code": 200,
+  "final": "https://sapporo-bankei-winery.jimdofree.com/",
+  "status": "ok"
+ },
+ {
+  "key": "tomapu-farm",
+  "name": "TOMAPU FARM",
+  "url": "https://tomapufarm.com/",
+  "code": 200,
+  "final": "https://tomapufarm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kiis-open-field",
+  "name": "Kii's Open Field",
+  "url": "https://sites.google.com/view/kiisopenfield/",
+  "code": 200,
+  "final": "https://sites.google.com/view/kiisopenfield/",
+  "status": "ok"
+ },
+ {
+  "key": "naritaya-winery",
+  "name": "naritaya",
+  "url": "https://www.naritaya-niki.jp/",
+  "code": 200,
+  "final": "https://www.naritaya-niki.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-towa",
+  "name": "ドメーヌトワ",
+  "url": "https://domainetoi.jp/",
+  "code": 200,
+  "final": "https://domainetoi.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kamiuta-vineyard",
+  "name": "上歌ヴィンヤード",
+  "url": "https://694.base.shop/",
+  "code": 200,
+  "final": "https://694.base.shop/",
+  "status": "ok"
+ },
+ {
+  "key": "pur-winery",
+  "name": "Pur.",
+  "url": "https://niki-wine-tourism.com/winery/11/",
+  "code": 200,
+  "final": "https://niki-wine-tourism.com/winery/11/",
+  "status": "ok"
+ },
+ {
+  "key": "nakazawa-vineyard",
+  "name": "ナカザワヴィンヤード",
+  "url": "https://nakazawavineyard.jp/",
+  "code": 200,
+  "final": "https://nakazawavineyard.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "miyamoto-vineyard",
+  "name": "宮本ヴィンヤード",
+  "url": "http://miyamoto-vineyard.com/",
+  "code": 200,
+  "final": "http://miyamoto-vineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hamada-vineyard",
+  "name": "濱田ヴィンヤード",
+  "url": "https://hamadavineyard.com/",
+  "code": 200,
+  "final": "https://hamadavineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "irenka",
+  "name": "合同会社イレンカ（IRENKA）",
+  "url": "https://irenka.co.jp/",
+  "code": 200,
+  "final": "https://irenka.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "nitori-winery",
+  "name": "ニトリワイナリー",
+  "url": "https://yoichi.furusato179.com/producer/nitoriwinery/",
+  "code": 200,
+  "final": "https://yoichi.furusato179.com/producer/nitoriwinery/",
+  "status": "ok"
+ },
+ {
+  "key": "okudoya-winery",
+  "name": "奥洞爺ワイナリー",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "kobe-winery",
+  "name": "こうべアグリパーク（旧神戸ワイナリー）",
+  "url": "https://kobeagripark.jp/",
+  "code": 200,
+  "final": "https://kobeagripark.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tanba-aogaki-winery",
+  "name": "丹波青垣ワイナリー",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "kiraka-budoshu-jozo",
+  "name": "きら香ぶどう酒醸造",
+  "url": "https://www.kiraka.jp/",
+  "code": 200,
+  "final": "https://www.kiraka.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ushiku-chateau",
+  "name": "牛久シャトー",
+  "url": "https://ushiku-chateau.com/",
+  "code": 200,
+  "final": "https://ushiku-chateau.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kiuchi-shuzou",
+  "name": "木内酒造",
+  "url": "https://kodawari.cc/",
+  "code": 200,
+  "final": "https://kiuchibrewery.co.jp/",
+  "status": "redirect_other_host"
+ },
+ {
+  "key": "hiyama-shuzou-hitachi-wine",
+  "name": "檜山酒造 常陸ワイン",
+  "url": "https://hiyama.hitachiota.jp/",
+  "code": 200,
+  "final": "https://hiyama.hitachiota.jp/index.html",
+  "status": "ok"
+ },
+ {
+  "key": "tsukuba-winery",
+  "name": "つくばワイナリー",
+  "url": "https://tsukuba-winery.kadoya-company.com/",
+  "code": 200,
+  "final": "https://tsukuba-winery.kadoya-company.com/",
+  "status": "ok"
+ },
+ {
+  "key": "bees-knees-vineyards",
+  "name": "Bee’s Knees Vineyards",
+  "url": "https://beesknees.amebaownd.com/",
+  "code": 200,
+  "final": "https://beesknees.amebaownd.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-mito",
+  "name": "ドメーヌ水戸",
+  "url": "https://domaine-mito.jp/",
+  "code": 200,
+  "final": "https://domaine-mito.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "buryu-winery",
+  "name": "武龍ワイナリー",
+  "url": "https://buryuwinery.com/",
+  "code": 200,
+  "final": "https://buryuwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "raifuku-shuzou-wine",
+  "name": "来福酒造",
+  "url": "https://raifuku.co.jp/",
+  "code": 200,
+  "final": "https://raifuku.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tsukuba-vineyard-kurihara",
+  "name": "Tsukuba Vineyard 栗原醸造所",
+  "url": "https://tsukuba-vineyard.sakura.ne.jp/",
+  "code": 200,
+  "final": "https://tsukuba-vineyard.sakura.ne.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "noto-wine",
+  "name": "能登ワイン",
+  "url": "https://notowine.com/",
+  "code": 200,
+  "final": "https://notowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "heidee-winery",
+  "name": "ハイディワイナリー",
+  "url": "https://heidee-winery.jp/",
+  "code": 200,
+  "final": "https://heidee-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kanazawa-winery",
+  "name": "金沢ワイナリー",
+  "url": "https://k-wine.jp/",
+  "code": 200,
+  "final": "https://k-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "vin-de-la-bocchi",
+  "name": "ヴァン・ド・ラ・ボッチ",
+  "url": "https://labocchi.jp/",
+  "code": 200,
+  "final": "https://labocchi.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "edelwein",
+  "name": "エーデルワイン",
+  "url": "https://edelwein.co.jp/",
+  "code": 200,
+  "final": "https://edelwein.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kuzumaki-wine",
+  "name": "くずまきワイン",
+  "url": "https://kuzumakiwine.co.jp/",
+  "code": 200,
+  "final": "https://kuzumakiwine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "shiwa-fruitspark",
+  "name": "紫波ワイン",
+  "url": "https://www.shiwa-fruitspark.co.jp/winery/",
+  "code": 200,
+  "final": "https://www.shiwa-fruitspark.co.jp/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "hiraizumi-winery",
+  "name": "平泉ワイナリー",
+  "url": "https://agri-hiraizumi.com",
+  "code": 200,
+  "final": "https://agri-hiraizumi.com",
+  "status": "ok"
+ },
+ {
+  "key": "kanda-budo-wine",
+  "name": "神田葡萄園　かんだわいん",
+  "url": "https://riaswine.com/",
+  "code": 200,
+  "final": "https://riaswine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "suzumino-oka-winery",
+  "name": "涼海の丘ワイナリー",
+  "url": "https://winery.nodaeki.com/",
+  "code": 200,
+  "final": "https://winery.nodaeki.com/",
+  "status": "ok"
+ },
+ {
+  "key": "social-farm-winery",
+  "name": "ソーシャルファーム＆ワイナリー",
+  "url": "https://tonomagokoro.net/",
+  "code": 200,
+  "final": "https://tonomagokoro.net/",
+  "status": "ok"
+ },
+ {
+  "key": "kamegamori-winery",
+  "name": "亀ヶ森醸造",
+  "url": "http://www.kamegamori.com/",
+  "code": 200,
+  "final": "http://www.kamegamori.com/",
+  "status": "ok"
+ },
+ {
+  "key": "gomaibashi-winery",
+  "name": "五枚橋ワイナリー",
+  "url": "https://www.gomaibashi.com/",
+  "code": 200,
+  "final": "https://www.gomaibashi.com/",
+  "status": "ok"
+ },
+ {
+  "key": "art-paysan-winery",
+  "name": "アールペイザンワイナリー",
+  "url": "https://artpaysanwinery.wixsite.com/website",
+  "code": 200,
+  "final": "https://artpaysanwinery.wixsite.com/website",
+  "status": "ok"
+ },
+ {
+  "key": "takahashi-vineyard",
+  "name": "高橋葡萄園",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "three-peaks",
+  "name": "THREE PEAKS",
+  "url": "https://3peaks.jp/",
+  "code": 200,
+  "final": "https://3peaks.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ohsama-sato-vineyard",
+  "name": "大迫佐藤葡萄園",
+  "url": "https://ohsmsatovineyard.com/",
+  "code": 200,
+  "final": "https://ohsmsatovineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "monnosuke-farm",
+  "name": "もんのすけ農園",
+  "url": "https://monnosukefarm.com/",
+  "code": 200,
+  "final": "https://monnosukefarm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "koto-wine-morioka",
+  "name": "KOTOワイン盛岡",
+  "url": "https://koto-wine.com/",
+  "code": 200,
+  "final": "https://koto-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "iwate-kantin-winery",
+  "name": "岩手缶詰 岩手町ワイナリー",
+  "url": "https://www.iwa-kan.com/",
+  "code": 200,
+  "final": "https://www.iwa-kan.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sanuki-winery",
+  "name": "さぬきワイナリー",
+  "url": "https://wine.sanuki-sa.jp/",
+  "code": 200,
+  "final": "https://wine.sanuki-sa.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "224winery",
+  "name": "224WINERY",
+  "url": "https://224winery.com/",
+  "code": 200,
+  "final": "https://224winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sakura-farms-winery",
+  "name": "さくら農園ワイン製造所",
+  "url": "https://sakurafarms.jp/",
+  "code": 200,
+  "final": "https://sakurafarms.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yokohama-winery",
+  "name": "横濱ワイナリー",
+  "url": "https://yokohamawinery.com/",
+  "code": 200,
+  "final": "https://yokohamawinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "oppama-verny-wine",
+  "name": "追浜ワイナリー（VERNY WINE）",
+  "url": "https://oppama-town.com/wine/",
+  "code": 200,
+  "final": "https://oppama-town.com/wine/",
+  "status": "ok"
+ },
+ {
+  "key": "mercian-fujisawa",
+  "name": "メルシャン　藤沢工場",
+  "url": "https://www.kirinholdings.com/jp/company/group/mercian/office/",
+  "code": 200,
+  "final": "https://www.kirinholdings.com/jp/company/group/mercian/office/",
+  "status": "ok"
+ },
+ {
+  "key": "yokohama-kajitsu-jozo",
+  "name": "横浜果実醸造",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "kentoku-winery",
+  "name": "ケントクワイナリー（Kentoku Winery）",
+  "url": "https://www.kentokuestate-winery.com/",
+  "code": 200,
+  "final": "https://www.kentokuestate-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kuratei-winery-domaine-yamada",
+  "name": "蔵邸ワイナリー Domaine Yamada",
+  "url": "https://carnaest.jp/domaine_yamada/",
+  "code": 200,
+  "final": "https://carnaest.jp/domaine_yamada/",
+  "status": "ok"
+ },
+ {
+  "key": "inoue-winery",
+  "name": "井上ワイナリー",
+  "url": "https://www.inoue-winery.co.jp/",
+  "code": 200,
+  "final": "https://www.inoue-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yosakoi-winery",
+  "name": "よさ来いワイナリー",
+  "url": "https://yosakoi-winery.com/",
+  "code": 200,
+  "final": "https://yosakoi-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "mishima-farm-winery",
+  "name": "ミシマファームワイナリー",
+  "url": "https://www.mishimafarm.com/",
+  "code": 200,
+  "final": "https://www.mishimafarm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kumamoto-wine",
+  "name": "熊本ワイン",
+  "url": "https://www.kumamotowine.co.jp/",
+  "code": 403,
+  "status": "http_error"
+ },
+ {
+  "key": "kikuka-winery",
+  "name": "菊鹿ワイナリー",
+  "url": "https://kumamotowinefarm.co.jp/",
+  "code": 200,
+  "final": "https://kumamotowinefarm.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "aozora-wine",
+  "name": "青空ワイン",
+  "url": "https://www.instagram.com/aoken.2005/",
+  "code": 200,
+  "final": "https://www.instagram.com/aoken.2005/",
+  "status": "ok"
+ },
+ {
+  "key": "mercian-yatsushiro",
+  "name": "メルシャン　八代工場",
+  "url": "https://www.mercian.co.jp/",
+  "code": 200,
+  "final": "https://www.mercian.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "takahama-wine",
+  "name": "高浜ワイン",
+  "url": "http://takahamabudou.amakusa-web.jp/",
+  "code": 200,
+  "final": "http://takahamabudou.amakusa-web.jp/MyHp/Pub/",
+  "status": "ok"
+ },
+ {
+  "key": "tamba-wine",
+  "name": "丹波ワイン",
+  "url": "https://www.tambawine.co.jp/",
+  "code": 200,
+  "final": "https://www.tambawine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "amanohashidate-winery",
+  "name": "天橋立ワイナリー",
+  "url": "http://www.amanohashidate.org/wein/",
+  "code": 200,
+  "final": "https://www.amanohashidate.org/wein/",
+  "status": "ok"
+ },
+ {
+  "key": "kunitsu-kajitsushu-jozo",
+  "name": "國津果實酒醸造所",
+  "url": "https://www.kunitsu-wine.com/",
+  "code": 200,
+  "final": "https://www.kunitsu-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "style-winery",
+  "name": "スタイルワイナリー",
+  "url": "https://nihonwine.jp/winery_intro/npostyle_winery/",
+  "code": 200,
+  "final": "https://nihonwine.jp/winery_intro/npostyle_winery/",
+  "status": "ok"
+ },
+ {
+  "key": "iseshima-winery",
+  "name": "伊勢美し国醸造所",
+  "url": "https://iseshima-winery.co.jp/",
+  "code": 200,
+  "final": "https://iseshima-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ise-wine",
+  "name": "伊勢ワイン株式会社",
+  "url": "https://ise-wine.co.jp/",
+  "code": 200,
+  "final": "https://ise-wine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "akiu-winery",
+  "name": "秋保ワイナリー",
+  "url": "http://akiuwinery.co.jp/",
+  "code": 200,
+  "final": "https://akiuwinery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ryomi-winery",
+  "name": "了美ワイナリー",
+  "url": "http://ryomi-wine.jp/",
+  "code": 200,
+  "final": "https://ryomi-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "fattoria-al-fiore",
+  "name": "ファットリア アル フィオーレ",
+  "url": "https://www.fattoriaalfiore.com/",
+  "code": 200,
+  "final": "https://www.fattoriaalfiore.com/",
+  "status": "ok"
+ },
+ {
+  "key": "minamisanriku-winery",
+  "name": "南三陸ワイナリー",
+  "url": "https://www.msr-wine.com/",
+  "code": 200,
+  "final": "https://www.msr-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "chateau-kiri-kurikoma",
+  "name": "シャトー桐 くりこま高原醸造所",
+  "url": "https://kirishiro.com/",
+  "code": 200,
+  "final": "https://kirishiro.com/",
+  "status": "ok"
+ },
+ {
+  "key": "tsuno-wine",
+  "name": "都農ワイナリー",
+  "url": "https://tsunowine.com/",
+  "code": 200,
+  "final": "https://tsunowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "gokase-winery",
+  "name": "五ヶ瀬ワイナリー",
+  "url": "http://gokase-winery.jp/",
+  "code": 200,
+  "final": "https://gokase-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "miyakonojo-winery",
+  "name": "都城ワイナリー",
+  "url": "http://www.bonchi.jp/wine/",
+  "code": 200,
+  "final": "http://www.bonchi.jp/wine/",
+  "status": "ok"
+ },
+ {
+  "key": "unkai-grape-wine",
+  "name": "雲海葡萄酒醸造所",
+  "url": "https://kuramoto-aya-shusennomori.jp/shisetsu/winery/",
+  "code": 200,
+  "final": "https://kuramoto-aya-shusennomori.jp/shisetsu/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "katsuki-wines",
+  "name": "香月ワインズ",
+  "url": "https://www.katsukiwines.com/",
+  "code": 200,
+  "final": "https://www.katsukiwines.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kobayashi-ikoma-kogen-wine",
+  "name": "小林生駒高原葡萄酒工房",
+  "url": "https://www.np-k.co.jp/wine/",
+  "code": 200,
+  "final": "https://www.np-k.co.jp/wine/",
+  "status": "ok"
+ },
+ {
+  "key": "chateau-mercian-mariko",
+  "name": "シャトー・メルシャン 椀子ワイナリー",
+  "url": "https://www.chateaumercian.com/winery/mariko/",
+  "code": 200,
+  "final": "https://www.chateaumercian.com/winery/mariko/",
+  "status": "ok"
+ },
+ {
+  "key": "chateau-mercian-kikyogahara",
+  "name": "シャトー・メルシャン 桔梗ヶ原ワイナリー",
+  "url": "https://www.chateaumercian.com/winery/kikyogahara/",
+  "code": 200,
+  "final": "https://www.chateaumercian.com/winery/kikyogahara/",
+  "status": "ok"
+ },
+ {
+  "key": "izutsu-wine",
+  "name": "井筒ワイン",
+  "url": "http://www.izutsuwine.co.jp",
+  "code": 200,
+  "final": "http://www.izutsuwine.co.jp",
+  "status": "ok"
+ },
+ {
+  "key": "goichi-wine",
+  "name": "林農園 五一わいん",
+  "url": "http://www.goichiwine.co.jp",
+  "code": 200,
+  "final": "https://www.goichiwine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "shinano-wine",
+  "name": "信濃ワイン",
+  "url": "https://www.sinanowine.co.jp",
+  "code": 200,
+  "final": "https://sinanowine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "alps-wine",
+  "name": "アルプスワイン",
+  "url": "http://www.alpswine.com",
+  "code": 200,
+  "final": "http://www.alpswine.com",
+  "status": "ok"
+ },
+ {
+  "key": "suntory-shiojiri",
+  "name": "サントリー 塩尻ワイナリー",
+  "url": "https://www.suntory.co.jp/wine/nihon/wine-cellar/shiojiri.html",
+  "code": 403,
+  "status": "http_error"
+ },
+ {
+  "key": "kido-winery",
+  "name": "Kidoワイナリー",
+  "url": "https://sites.google.com/view/kido-winery/top",
+  "code": 200,
+  "final": "https://sites.google.com/view/kido-winery/top",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-kosei",
+  "name": "ドメーヌコーセイ",
+  "url": "https://domaine-kosei.com/",
+  "code": 200,
+  "final": "https://domaine-kosei.com/",
+  "status": "ok"
+ },
+ {
+  "key": "votano-wine",
+  "name": "ヴォータノワイン",
+  "url": "http://www.votanowine.info/index.php",
+  "code": 200,
+  "final": "https://votanowine.info/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-sourire",
+  "name": "塩尻ファーム ドメーヌスリエ",
+  "url": "https://www.domaine-sourire.jp/",
+  "code": 200,
+  "final": "https://www.domaine-sourire.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ruedevin",
+  "name": "リュードヴァン",
+  "url": "http://www.ruedevin.jp",
+  "code": 200,
+  "final": "https://ruedevin.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "arcanvigne",
+  "name": "日本ワイン農業研究所 アルカンヴィーニュ",
+  "url": "http://jw-arc.co.jp/",
+  "code": 200,
+  "final": "https://jw-arc.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "villadest",
+  "name": "ヴィラデストワイナリー",
+  "url": "http://www.villadest.com",
+  "code": 200,
+  "final": "https://www.villadest.com/",
+  "status": "ok"
+ },
+ {
+  "key": "manns-wine-komoro",
+  "name": "マンズワイン 小諸ワイナリー",
+  "url": "https://mannswines.com/",
+  "code": 200,
+  "final": "https://mannswines.com/",
+  "status": "ok"
+ },
+ {
+  "key": "funky-chateau",
+  "name": "ファンキー・シャトー",
+  "url": "http://funkychateau.com",
+  "code": 200,
+  "final": "https://funkychateau.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hasumi-farm",
+  "name": "のらのらふぁーむ＆ワイナリー（旧はすみふぁーむ）",
+  "url": "https://noranorah-farm.com/",
+  "code": 200,
+  "final": "https://noranorah-farm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "saint-cousair",
+  "name": "サンクゼール",
+  "url": "http://www.stcousair.co.jp",
+  "code": 200,
+  "final": "https://www.stcousair.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "azumino-winery",
+  "name": "安曇野ワイナリー",
+  "url": "http://www.ch-azumino.com",
+  "code": 200,
+  "final": "https://www.ch-azumino.com/",
+  "status": "ok"
+ },
+ {
+  "key": "yamabe-winery",
+  "name": "山辺ワイナリー",
+  "url": "http://www.yamabewine.com",
+  "code": 200,
+  "final": "http://www.yamabewine.com",
+  "status": "ok"
+ },
+ {
+  "key": "mashino-wine",
+  "name": "信州まし野ワイン",
+  "url": "http://www.mashinowine.com",
+  "code": 200,
+  "final": "https://www.mashinowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "shinshu-takayama-winery",
+  "name": "信州たかやまワイナリー",
+  "url": "http://www.shinshu-takayama.wine/",
+  "code": 200,
+  "final": "https://www.shinshu-takayama.wine/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-hase",
+  "name": "ドメーヌ長谷",
+  "url": "https://domainehase-hikarufarm.com/",
+  "code": 200,
+  "final": "https://domainehase-hikarufarm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "cantina-riezo",
+  "name": "カンティーナ・リエゾー",
+  "url": "http://cantinariezo.jp/",
+  "code": 200,
+  "final": "http://cantinariezo.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "takayashiro-farm",
+  "name": "たかやしろファーム",
+  "url": "http://www.takayashirofarm.com",
+  "code": 200,
+  "final": "https://www.takayashirofarm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kusunoki-winery",
+  "name": "楠わいなりー",
+  "url": "http://www.kusunoki-winery.com",
+  "code": 200,
+  "final": "http://www.kusunoki-winery.com",
+  "status": "ok"
+ },
+ {
+  "key": "yamato-grape-wine-shiga",
+  "name": "大和葡萄酒 四賀ワイナリー",
+  "url": "http://www.yamatowine.com/contents/winery/shiga.php",
+  "code": 200,
+  "final": "https://www.yamatowine.com/contents/winery/shiga.php",
+  "status": "ok"
+ },
+ {
+  "key": "northern-alps-vineyard",
+  "name": "ノーザン・アルプス・ヴィンヤード",
+  "url": "http://navineyards.lolipop.jp/index.html",
+  "code": 200,
+  "final": "http://navineyards.lolipop.jp/index.html",
+  "status": "ok"
+ },
+ {
+  "key": "nagomi-vineyards",
+  "name": "ナゴミヴィンヤーズ",
+  "url": "http://www.nagomivineyards.jp/",
+  "code": 200,
+  "final": "http://www.nagomivineyards.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "bonjour-farm",
+  "name": "ぼんじゅーる農園",
+  "url": "https://bonjour.wine/",
+  "code": 200,
+  "final": "https://bonjour.wine/",
+  "status": "ok"
+ },
+ {
+  "key": "levans-vivants",
+  "name": "レヴァンヴィヴァン",
+  "url": "https://www.nagano-wine.jp/winery/chikuma/post-36/",
+  "code": 200,
+  "final": "https://www.nagano-wine.jp/winery/chikuma/post-36/",
+  "status": "ok"
+ },
+ {
+  "key": "terre-de-ciel",
+  "name": "テールドシエル",
+  "url": "https://www.terredeciel.jp/",
+  "code": 200,
+  "final": "https://www.terredeciel.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "geo-hills-winery",
+  "name": "ジオヒルズワイナリー",
+  "url": "http://giohills.jp/",
+  "code": 200,
+  "final": "https://giohills.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tateshinapple-winery",
+  "name": "たてしなップルワイナリー",
+  "url": "https://tateshinapple.jp/winery/",
+  "code": 200,
+  "final": "https://tateshinapple.jp/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "kirinoka-vineyards",
+  "name": "キリノカ ヴィンヤーズ & ワイナリー",
+  "url": "https://kirinoka.com/",
+  "code": 200,
+  "final": "https://kirinoka.com/",
+  "status": "ok"
+ },
+ {
+  "key": "nishiida-sake",
+  "name": "西飯田酒造店",
+  "url": "http://w2.avis.ne.jp/~nishiida/index.html",
+  "code": 200,
+  "final": "http://w2.avis.ne.jp/~nishiida/index.html",
+  "status": "ok"
+ },
+ {
+  "key": "obuse-winery",
+  "name": "小布施ワイナリー",
+  "url": "http://obusewinery.com/",
+  "code": 200,
+  "final": "http://obusewinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-hiroki",
+  "name": "ドメーヌ・ヒロキ",
+  "url": "https://domaine-hiroki.wine/",
+  "code": 200,
+  "final": "https://domaine-hiroki.wine/",
+  "status": "ok"
+ },
+ {
+  "key": "il-fait-beau",
+  "name": "イルフェボー",
+  "url": "https://il-faitbeau.com/",
+  "code": 200,
+  "final": "https://il-faitbeau.com/",
+  "status": "ok"
+ },
+ {
+  "key": "cyclo-vineyards",
+  "name": "シクロヴィンヤード",
+  "url": "https://www.cyclovineyards.com/",
+  "code": 200,
+  "final": "https://www.cyclovineyards.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-nakajima",
+  "name": "ドメーヌ ナカジマ",
+  "url": "https://d-nakajima.jp/",
+  "code": 200,
+  "final": "https://d-nakajima.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tsuiji-lab",
+  "name": "ツイヂラボ",
+  "url": "https://www.nagano-wine.jp/special/winery/vol80tsuijilab.html",
+  "code": 200,
+  "final": "https://www.nagano-wine.jp/special/winery/vol80tsuijilab.html",
+  "status": "ok"
+ },
+ {
+  "key": "swiss-village-winery",
+  "name": "スイス村ワイナリー",
+  "url": "https://swissmurawinery.com/",
+  "code": 200,
+  "final": "https://swissmurawinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "viniqrobe",
+  "name": "VINIQROBE",
+  "url": "https://viniqrobe.studio.site/",
+  "code": 200,
+  "final": "https://viniqrobe.studio.site/",
+  "status": "ok"
+ },
+ {
+  "key": "kawashima-jozo",
+  "name": "川島醸造",
+  "url": "https://www.nagano-wine.jp/winery/chikuma/",
+  "code": 200,
+  "final": "https://www.nagano-wine.jp/winery/chikuma/",
+  "status": "ok"
+ },
+ {
+  "key": "utabi-winery",
+  "name": "有旅ワイナリー",
+  "url": "https://www.nagano-wine.jp/special/winery/utabi.html",
+  "code": 200,
+  "final": "https://www.nagano-wine.jp/special/winery/utabi.html",
+  "status": "ok"
+ },
+ {
+  "key": "haramura-winery",
+  "name": "八ヶ岳はらむらワイナリー",
+  "url": "https://www.haramura-winery.com",
+  "code": 200,
+  "final": "https://www.haramura-winery.com",
+  "status": "ok"
+ },
+ {
+  "key": "kifutato-wines",
+  "name": "キフタトワインズ",
+  "url": "https://kifutato.stores.jp/",
+  "code": 403,
+  "status": "http_error"
+ },
+ {
+  "key": "sail-the-ship",
+  "name": "セイル・ザ・シップ・ワイナリー",
+  "url": "https://www.nagano-wine.jp/winery/chikuma/",
+  "code": 200,
+  "final": "https://www.nagano-wine.jp/winery/chikuma/",
+  "status": "ok"
+ },
+ {
+  "key": "yamato-grape-wine-azusagawa",
+  "name": "大和葡萄酒 梓川ワイナリー",
+  "url": "http://www.yamatowine.com/",
+  "code": 200,
+  "final": "https://www.yamatowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "cave-de-mido",
+  "name": "カーヴ・ド・ミドウ",
+  "url": "https://www.cavedemido.jp/",
+  "code": 200,
+  "final": "https://cavedemido.storeinfo.jp/",
+  "status": "redirect_other_host"
+ },
+ {
+  "key": "mother-vines-nagano",
+  "name": "マザーバインズ長野醸造所",
+  "url": "https://www.nagano-wine.jp/winery/chikuma/",
+  "code": 200,
+  "final": "https://www.nagano-wine.jp/winery/chikuma/",
+  "status": "ok"
+ },
+ {
+  "key": "cave-hatano",
+  "name": "カーヴハタノ",
+  "url": "https://www.c-hatano.com/",
+  "code": 200,
+  "final": "https://www.c-hatano.com/",
+  "status": "ok"
+ },
+ {
+  "key": "aperture-farm-winery",
+  "name": "アパチャーファーム＆ワイナリー",
+  "url": "https://www.facebook.com/ApertureFarm/?locale=ja_JP",
+  "code": 400,
+  "status": "http_error"
+ },
+ {
+  "key": "veraison-note",
+  "name": "ヴェレゾン・ノート",
+  "url": "https://www.veraison-note.com/",
+  "code": 200,
+  "final": "https://www.veraison-note.com/",
+  "status": "ok"
+ },
+ {
+  "key": "deux-montagnes-tateshina",
+  "name": "ドゥ モンターニュ タテシナ醸造所",
+  "url": "https://www.deux-montagnes.jp/",
+  "code": 200,
+  "final": "https://www.deux-montagnes.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-de-yunohara",
+  "name": "ドメーヌ・ド・ユノハラ",
+  "url": "https://shop.oiwakeya.com/",
+  "code": 200,
+  "final": "https://shop.oiwakeya.com/",
+  "status": "ok"
+ },
+ {
+  "key": "venus-line-jozo",
+  "name": "ビーナスライン醸造場",
+  "url": "https://www.odcwine.com/",
+  "code": 200,
+  "final": "https://www.odcwine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "gaku-farm-winery",
+  "name": "ガクファーム＆ワイナリー",
+  "url": "https://gakufarm.jp/",
+  "code": 200,
+  "final": "https://gakufarm.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "vinvie",
+  "name": "VinVie",
+  "url": "https://vinvie.jp/",
+  "code": 200,
+  "final": "https://vinvie.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "oike-winery",
+  "name": "大池ワイナリー",
+  "url": "https://www.taikewine.jp/",
+  "code": 200,
+  "final": "https://taikewine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ina-wine-kobo",
+  "name": "伊那ワイン工房",
+  "url": "http://inawine.net",
+  "code": 200,
+  "final": "http://inawine.net",
+  "status": "ok"
+ },
+ {
+  "key": "komorokko-farm-winery",
+  "name": "こもろっこファーム＆ワイナリー",
+  "url": "https://greve-t.co.jp/",
+  "code": 200,
+  "final": "https://greve-t.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "anne-winery-karuizawa",
+  "name": "軽井沢アンワイナリー",
+  "url": "https://karuizawawinery.com/",
+  "code": 200,
+  "final": "https://karuizawawinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "budoyabu",
+  "name": "ぶどうやぶ",
+  "url": "https://budoyabu.official.ec/",
+  "code": 200,
+  "final": "https://budoyabu.official.ec/",
+  "status": "ok"
+ },
+ {
+  "key": "hase-de-kodawaar",
+  "name": "HASE de KODAWAAR",
+  "url": "https://hasedekodawaar.jp/",
+  "code": 200,
+  "final": "https://hasedekodawaar.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "atelier-du-vin-tomi",
+  "name": "アトリエ・デュ・ヴァン",
+  "url": "https://www.winery.or.jp/winery-map/10054/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/10054/",
+  "status": "ok"
+ },
+ {
+  "key": "vino-della-gatta-sakaki",
+  "name": "ヴィーノ・デッラ・ガッタ・サカキ",
+  "url": "https://sakaki.wine/",
+  "code": 200,
+  "final": "https://sakaki.wine/",
+  "status": "ok"
+ },
+ {
+  "key": "vin-domachi-ferme36",
+  "name": "ヴァン・ドマチ・フェルム36",
+  "url": "https://tatsunokovin.blogspot.com/",
+  "code": 200,
+  "final": "https://tatsunokovin.blogspot.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sunsun-winery",
+  "name": "サンサンワイナリー",
+  "url": "https://sun-vision.or.jp/activity/winery/",
+  "code": 200,
+  "final": "https://sun-vision.or.jp/activity/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "closdetenryu-chateau-kiribayashi",
+  "name": "クロ・デ・テンリュウ シャトーキリバヤシ",
+  "url": "https://www.closdetenryu.com/",
+  "code": 200,
+  "final": "https://www.closdetenryu.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-fujita",
+  "name": "ドメーヌ・フジタ",
+  "url": "https://kaze-nukaji.com/",
+  "code": 200,
+  "final": "https://kaze-nukaji.com/",
+  "status": "ok"
+ },
+ {
+  "key": "bellybeads-winery",
+  "name": "ベリービーズワイナリー",
+  "url": "https://bellybeadswinery.com/",
+  "code": 200,
+  "final": "https://bellybeadswinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "minakata-jozo",
+  "name": "南向醸造",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "le-milieu",
+  "name": "Le Milieu（ル・ミリュウ）",
+  "url": "https://le-milieu.co.jp/",
+  "code": 200,
+  "final": "https://le-milieu.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "goto-winery",
+  "name": "五島ワイナリー",
+  "url": "https://www.goto-winery.net/",
+  "code": 200,
+  "final": "https://www.goto-winery.net/",
+  "status": "ok"
+ },
+ {
+  "key": "obama-onsen-winery",
+  "name": "小浜温泉ワイナリー",
+  "url": "https://obamawinery.base.shop/",
+  "code": 200,
+  "final": "https://obamawinery.base.shop/",
+  "status": "ok"
+ },
+ {
+  "key": "kitani-wine",
+  "name": "木谷ワイン",
+  "url": "https://narawine.com/",
+  "code": 200,
+  "final": "https://narawine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "cave-docci",
+  "name": "カーブドッチワイナリー",
+  "url": "https://www.docci.com/",
+  "code": 200,
+  "final": "https://www.docci.com/",
+  "status": "ok"
+ },
+ {
+  "key": "fermier",
+  "name": "フェルミエ",
+  "url": "https://fermier.jp/",
+  "code": 200,
+  "final": "https://fermier.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-chaud",
+  "name": "ドメーヌ・ショオ",
+  "url": "https://domainechaud.net/",
+  "code": 200,
+  "final": "https://domainechaud.net/",
+  "status": "ok"
+ },
+ {
+  "key": "cantina-ziosetto",
+  "name": "セトワイナリー",
+  "url": "http://ziosetto.com/",
+  "code": 200,
+  "final": "http://ziosetto.com/",
+  "status": "ok"
+ },
+ {
+  "key": "le-cinq-winery",
+  "name": "ルサンクワイナリー",
+  "url": "https://lecinqwinery.com/",
+  "code": 200,
+  "final": "https://lecinqwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "tainai-winery",
+  "name": "胎内高原ワイン",
+  "url": "https://tainaiwinery.stores.jp/",
+  "code": 403,
+  "status": "http_error"
+ },
+ {
+  "key": "echigo-winery",
+  "name": "アグリコア越後ワイナリー",
+  "url": "https://www.echigowinery.com/",
+  "code": 200,
+  "final": "https://www.echigowinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "lescargot",
+  "name": "レスカルゴ",
+  "url": "https://www.lescargot.jp/",
+  "code": 200,
+  "final": "https://www.lescargot.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "iwanohara-budouen",
+  "name": "岩の原ワイン",
+  "url": "https://www.iwanohara.sgn.ne.jp/",
+  "code": 403,
+  "status": "http_error"
+ },
+ {
+  "key": "wine-farm-tochio",
+  "name": "ワインファームとちお",
+  "url": "https://www.tochio-wine.com/",
+  "code": 200,
+  "final": "https://www.tochio-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kuju-winery",
+  "name": "久住ワイナリー",
+  "url": "http://www.kuju-winery.co.jp/",
+  "code": 200,
+  "final": "https://kuju-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yufuin-winery",
+  "name": "由布院ワイナリー",
+  "url": "http://www.yufuin-winery.jp/",
+  "code": 200,
+  "final": "https://www.yufuin-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ajimu-budoshu-kobo",
+  "name": "安心院葡萄酒工房",
+  "url": "http://www.ajimu-winery.co.jp/",
+  "code": 200,
+  "final": "https://www.ajimu-winery.co.jp:443/",
+  "status": "redirect_other_host"
+ },
+ {
+  "key": "ajimu-chiisana-wine-kobo",
+  "name": "安心院＊小さなワイン工房",
+  "url": "http://hyakusho-ikki.wixsite.com/chiisana-wine-koubou",
+  "code": 200,
+  "final": "https://www.ajimu-chiisana-wine-koubou.com/",
+  "status": "redirect_other_host"
+ },
+ {
+  "key": "takakura-budoen",
+  "name": "高倉ぶどう園",
+  "url": "http://www.oct-net.ne.jp/k-46/",
+  "code": 200,
+  "final": "http://www.oct-net.ne.jp/k-46/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-tetta",
+  "name": "ドメーヌ・テッタ",
+  "url": "http://tetta.jp/",
+  "code": 200,
+  "final": "https://tetta.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "funao-winery",
+  "name": "ふなおワイナリー",
+  "url": "http://www.funaowinery.com/",
+  "code": 200,
+  "final": "https://www.funaowinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hiruzen-wine",
+  "name": "ひるぜんワイン",
+  "url": "https://hiruzenwine.com/",
+  "code": 200,
+  "final": "https://hiruzenwine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sapporo-wine-okayama",
+  "name": "サッポロワイン岡山ワイナリー",
+  "url": "https://www.sapporobeer.jp/brewery/okayama/",
+  "code": 200,
+  "final": "https://www.sapporobeer.jp/brewery/okayama/",
+  "status": "ok"
+ },
+ {
+  "key": "korezato-winery",
+  "name": "是里ワイン醸造場",
+  "url": "https://koresato-wine.jp/",
+  "code": 200,
+  "final": "https://koresato-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "la-grande-colline-japon",
+  "name": "ラ・グランド・コリーヌ・ジャポン",
+  "url": "http://www.lagrandecolline.fr/j_okayama.html",
+  "code": 200,
+  "final": "http://www.lagrandecolline.fr/j_okayama.html",
+  "status": "ok"
+ },
+ {
+  "key": "coltrada",
+  "name": "コルトラーダ",
+  "url": "https://shop.coltrada.com/",
+  "code": 200,
+  "final": "https://shop.coltrada.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kurokamiyama-budoen",
+  "name": "黒髪山葡萄園",
+  "url": "http://www.kurokamiyama.sakura.ne.jp/",
+  "code": 200,
+  "final": "http://www.kurokamiyama.sakura.ne.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "okayama-wine-valley",
+  "name": "岡山ワインバレー",
+  "url": "https://okayamawine.jp/",
+  "code": 200,
+  "final": "https://okayamawine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "grapeship",
+  "name": "グレープシップ",
+  "url": "https://www.grapeship.jp/",
+  "code": 200,
+  "final": "https://www.grapeship.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kibi-valley",
+  "name": "キビバレー",
+  "url": "https://kibifoods.umc-net.co.jp/",
+  "code": 200,
+  "final": "https://kibifoods.umc-net.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "wine-kobo-raout",
+  "name": "ワイン工房ラウー",
+  "url": "https://raout.com/winery/",
+  "code": 200,
+  "final": "https://raout.com/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "katashimo-winery",
+  "name": "カタシモワイナリー",
+  "url": "https://kashiwara-wine.com/",
+  "code": 200,
+  "final": "https://kashiwara-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "asuka-wine",
+  "name": "飛鳥ワイン",
+  "url": "https://asukawine.co.jp/",
+  "code": 200,
+  "final": "https://asukawine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kawachi-wine",
+  "name": "河内ワイン",
+  "url": "https://www.kawachi-wine.co.jp/",
+  "code": 200,
+  "final": "https://www.kawachi-wine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "nakamura-wine-kobo",
+  "name": "仲村わいん工房",
+  "url": "http://www.nakamura-wine.jp/",
+  "code": 200,
+  "final": "http://www.nakamura-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "shimanouchi-fujimaru",
+  "name": "島之内フジマル醸造所",
+  "url": "http://www.papilles.net/",
+  "code": 200,
+  "final": "https://www.papilles.net/",
+  "status": "ok"
+ },
+ {
+  "key": "tenshi-no-hane-winery",
+  "name": "天使の羽ワイナリー",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "kotobukiya-seiryo-shokuhin",
+  "name": "寿屋清涼食品",
+  "url": "http://www.kotobukiyadrink.co.jp/",
+  "code": 200,
+  "final": "http://www.kotobukiyadrink.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "osaka-airport-winery",
+  "name": "大阪エアポートワイナリー",
+  "url": "http://www.airportwinery.osaka/",
+  "code": 200,
+  "final": "http://www.airportwinery.osaka/",
+  "status": "ok"
+ },
+ {
+  "key": "hirakata-suguri-coro-farm",
+  "name": "枚方杉リコロファーム",
+  "url": "https://rsuzuki2.wixsite.com/ricoro-farm",
+  "code": 200,
+  "final": "https://rsuzuki2.wixsite.com/ricoro-farm",
+  "status": "ok"
+ },
+ {
+  "key": "toyono-takayama-winery",
+  "name": "とよの高山ワイナリー",
+  "url": "https://www.satoyamasouken.co.jp/winery",
+  "code": 200,
+  "final": "https://www.satoyamasouken.co.jp/winery",
+  "status": "ok"
+ },
+ {
+  "key": "chichibu-wine",
+  "name": "秩父ワイン",
+  "url": "https://chichibuwine.co.jp/",
+  "code": 200,
+  "final": "https://chichibuwine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "usagida-winery",
+  "name": "兎田ワイナリー",
+  "url": "https://chichibu-ff.com/",
+  "code": 200,
+  "final": "https://chichibu-ff.com/",
+  "status": "ok"
+ },
+ {
+  "key": "musashi-winery",
+  "name": "武蔵ワイナリー",
+  "url": "https://musashiwinery.com/",
+  "code": 200,
+  "final": "https://musashiwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "asahara-shuzou",
+  "name": "麻原酒造",
+  "url": "https://www.musashino-asahara.jp/",
+  "code": 200,
+  "final": "https://www.musashino-asahara.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "hitomi-winery",
+  "name": "ヒトミワイナリー",
+  "url": "http://www.nigoriwine.jp/",
+  "code": 200,
+  "final": "https://nigoriwine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ritto-winery",
+  "name": "栗東ワイナリー",
+  "url": "http://www.ohta-shuzou.co.jp/",
+  "code": 200,
+  "final": "https://www.ohta-shuzou.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "shimane-winery",
+  "name": "島根ワイナリー",
+  "url": "https://www.shimane-winery.jp/",
+  "code": 200,
+  "final": "https://www.shimane-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "okuizumo-budoen",
+  "name": "奥出雲葡萄園",
+  "url": "https://okuizumo.com/",
+  "code": 200,
+  "final": "https://okuizumo.com/",
+  "status": "ok"
+ },
+ {
+  "key": "iwami-winery",
+  "name": "石見ワイナリー",
+  "url": "https://iwami.wine/",
+  "code": 200,
+  "final": "https://iwami.wine/",
+  "status": "ok"
+ },
+ {
+  "key": "fujisan-winery",
+  "name": "富士山ワイナリー",
+  "url": "https://www.fujisanwinery.co.jp/",
+  "code": 200,
+  "final": "https://www.fujisanwinery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "nakaizu-winery",
+  "name": "中伊豆ワイナリーシャトーT.S",
+  "url": "https://nakaizuwinery.com/",
+  "code": 200,
+  "final": "https://nakaizuwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "fujisan-kitayama-wine",
+  "name": "富士山北山ワイン",
+  "url": "https://fujisan-kitayama-wine.com/",
+  "code": 200,
+  "final": "https://fujisan-kitayama-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hamamatsu-fruits-park",
+  "name": "はままつ フルーツパーク時之栖",
+  "url": "https://hamamatsu-fp.co.jp/",
+  "code": 200,
+  "final": "https://hamamatsu-fp.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "coco-farm-winery",
+  "name": "ココ・ファーム・ワイナリー",
+  "url": "https://cocowine.com/",
+  "code": 200,
+  "final": "https://cocowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "nasu-wine",
+  "name": "渡邊葡萄園醸造",
+  "url": "https://nasuwine.com/",
+  "status": "unreachable",
+  "error": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "cfa-backyard-winery",
+  "name": "cfaバックヤード・ワイナリー",
+  "url": "https://www.winemaker.jp/",
+  "code": 200,
+  "final": "https://www.winemaker.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kanuma-satoyama-wine",
+  "name": "かぬま里山わいん",
+  "url": "http://www.bc9.jp/~ryokuhan/",
+  "code": 200,
+  "final": "http://www.bc9.jp/~ryokuhan/",
+  "status": "ok"
+ },
+ {
+  "key": "kusaka-vineyards",
+  "name": "Kusaka Vineyards",
+  "url": "https://www.instagram.com/kusaka_vineyards/",
+  "code": 200,
+  "final": "https://www.instagram.com/kusaka_vineyards/",
+  "status": "ok"
+ },
+ {
+  "key": "nasu-661-wine-hills",
+  "name": "Nasu 661 WINE HILLS",
+  "url": "https://www.nasu661winehills.net/",
+  "code": 200,
+  "final": "https://www.nasu661winehills.net/",
+  "status": "ok"
+ },
+ {
+  "key": "hinoe-winery",
+  "name": "Hinoe Winery",
+  "url": "https://www.hinoewinery.com/",
+  "code": 200,
+  "final": "https://www.hinoewinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "ys-vineyards",
+  "name": "ワイズヴィンヤーズ",
+  "url": "https://ysvineyards.com/",
+  "code": 200,
+  "final": "https://ysvineyards.com/",
+  "status": "ok"
+ },
+ {
+  "key": "ateus-wine",
+  "name": "アテウスワイン",
+  "url": "https://ateuswine.com/",
+  "code": 200,
+  "final": "https://ateuswine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "natan-wine",
+  "name": "Natan葡萄酒醸造所",
+  "url": "https://natan.jp/",
+  "code": 200,
+  "final": "https://natan.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tokyo-winery",
+  "name": "東京ワイナリー",
+  "url": "https://www.wine.tokyo.jp/",
+  "code": 200,
+  "final": "https://www.wine.tokyo.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "fukagawa-winery",
+  "name": "深川ワイナリー",
+  "url": "https://fukagawine.tokyo/",
+  "code": 200,
+  "final": "https://fukagawine.tokyo/",
+  "status": "ok"
+ },
+ {
+  "key": "kiyosumi-fujimaru",
+  "name": "清澄白河フジマル醸造所",
+  "url": "https://www.papilles.net/",
+  "code": 200,
+  "final": "https://www.papilles.net/",
+  "status": "ok"
+ },
+ {
+  "key": "bookroad-winery",
+  "name": "ブックロードワイナリー",
+  "url": "https://www.bookroad.tokyo/",
+  "code": 200,
+  "final": "https://www.bookroad.tokyo/",
+  "status": "ok"
+ },
+ {
+  "key": "vineyard-tama",
+  "name": "ヴィンヤード多摩",
+  "url": "https://vineyardtama.com/",
+  "code": 200,
+  "final": "https://vineyardtama.com/",
+  "status": "ok"
+ },
+ {
+  "key": "shibuya-winery-tokyo",
+  "name": "渋谷ワイナリー東京",
+  "url": "https://shibuya.wine/",
+  "code": 200,
+  "final": "https://shibuya.wine/",
+  "status": "ok"
+ },
+ {
+  "key": "wineman-factory",
+  "name": "ワインマンファクトリー",
+  "url": "https://winemanstore.base.shop/",
+  "code": 200,
+  "final": "https://winemanstore.base.shop/",
+  "status": "ok"
+ },
+ {
+  "key": "toka-winery",
+  "name": "都下ワイナリー",
+  "url": "https://www.tokawinery.jp/",
+  "code": 200,
+  "final": "https://www.tokawinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "totto-winery",
+  "name": "兎ッ兎ワイナリー",
+  "url": "https://www.tottowinery.com/",
+  "code": 200,
+  "final": "https://www.tottowinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hojo-wine-jozo",
+  "name": "北条ワイン醸造所",
+  "url": "http://www.hojyowine.jp/",
+  "code": 200,
+  "final": "https://hojyowine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "daisen-winery",
+  "name": "大山ワイナリー",
+  "url": "http://daisenwinery.com/",
+  "code": 200,
+  "final": "https://daisenwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kurayoshi-winery",
+  "name": "倉吉ワイナリー",
+  "url": "https://www.kurayoshi-winery.com/",
+  "code": 200,
+  "final": "https://www.kurayoshi-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "yamafuji-budoen",
+  "name": "やまふじぶどう園（ホーライサンワイナリー）",
+  "url": "https://www.winery.co.jp/",
+  "code": 200,
+  "final": "https://www.winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "says-farm",
+  "name": "セイズ・ファーム",
+  "url": "https://www.saysfarm.com/",
+  "code": 200,
+  "final": "https://www.saysfarm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-beau",
+  "name": "ドメーヌボー",
+  "url": "https://tresbeau.co.jp/",
+  "code": 200,
+  "final": "https://tresbeau.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kanata-winery",
+  "name": "カナタワイナリー",
+  "url": "https://kanatawinery.com/",
+  "code": 200,
+  "final": "https://kanatawinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "wakayama-winery",
+  "name": "和歌山ワイナリー",
+  "url": "http://wakayama-wine.jp/",
+  "code": 200,
+  "final": "https://wakayama-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "wakayama-yuasa-winery",
+  "name": "和歌山湯浅ワイナリー",
+  "url": "https://yuasa-winery.jp/",
+  "code": 200,
+  "final": "https://yuasa-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "takeda-winery",
+  "name": "タケダワイナリー",
+  "url": "http://www.takeda-wine.co.jp/",
+  "code": 200,
+  "final": "https://takeda-wine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "takahata-winery",
+  "name": "高畠ワイナリー",
+  "url": "https://www.takahata-winery.jp/",
+  "code": 200,
+  "final": "https://www.takahata-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "sakai-winery",
+  "name": "酒井ワイナリー",
+  "url": "http://www.sakai-winery.jp/",
+  "code": 200,
+  "final": "http://www.sakai-winery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "gassan-wine",
+  "name": "月山ワイン山ぶどう研究所",
+  "url": "https://www.gassan-wine.com/",
+  "code": 200,
+  "final": "https://gassan-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "asahimachi-wine",
+  "name": "朝日町ワイン",
+  "url": "https://asahimachi-wine.jp/",
+  "code": 200,
+  "final": "https://asahimachi-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "tendo-wine",
+  "name": "天童ワイン",
+  "url": "https://www.tendowine.co.jp/",
+  "code": 200,
+  "final": "https://www.tendowine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "oura-budo-wine",
+  "name": "大浦ぶどう酒",
+  "url": "https://ourawine.com/",
+  "code": 200,
+  "final": "https://ourawine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kinkei-wine",
+  "name": "佐藤ぶどう酒　金渓ワイン",
+  "url": "http://www.kinkei.net/",
+  "code": 200,
+  "final": "https://www.kinkei.net/",
+  "status": "ok"
+ },
+ {
+  "key": "gassan-toraya-winery",
+  "name": "月山トラヤワイナリー",
+  "url": "http://wine.chiyokotobuki.com/",
+  "code": 200,
+  "final": "https://wine.chiyokotobuki.com/",
+  "status": "ok"
+ },
+ {
+  "key": "woody-farm-winery",
+  "name": "ウッディファーム&ワイナリー",
+  "url": "http://www.woodyfarm.com/",
+  "code": 200,
+  "final": "https://www.woodyfarm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "bellwood-vineyard",
+  "name": "ベルウッドヴィンヤード",
+  "url": "https://bellwoodvineyard.com/",
+  "code": 200,
+  "final": "https://bellwoodvineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "grape-republic",
+  "name": "グレープリパブリック",
+  "url": "https://grape-republic.com/",
+  "code": 200,
+  "final": "https://grape-republic.com/",
+  "status": "ok"
+ },
+ {
+  "key": "yellow-magic-winery",
+  "name": "イエローマジックワイナリー",
+  "url": "https://www.yellowmagicwinery.com/",
+  "code": 200,
+  "final": "https://www.yellowmagicwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sudo-budo-wine",
+  "name": "須藤ぶどう酒工場 桜水ワイン",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "hamada-winery",
+  "name": "モンサンワイン",
+  "url": "https://www.okimasamune.com/",
+  "code": 200,
+  "final": "https://www.okimasamune.com/",
+  "status": "ok"
+ },
+ {
+  "key": "fruit-winery-esprit",
+  "name": "東根フルーツワイン",
+  "url": "https://www.h-fruitwine.com/",
+  "code": 200,
+  "final": "https://www.h-fruitwine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "pino-collina-matsugaoka",
+  "name": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡",
+  "url": "https://pinocollina.com/",
+  "code": 200,
+  "final": "https://pinocollina.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-kelos",
+  "name": "ドメーヌケロス",
+  "url": "https://www.kelos.co.jp/",
+  "code": 200,
+  "final": "https://www.kelos.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "oizumi-vines-winery",
+  "name": "OIZUMI VINES WINERY（フルーツ農園大泉）",
+  "url": "https://fruitfarmoizumi.com/",
+  "code": 200,
+  "final": "https://fruitfarmoizumi.com/",
+  "status": "ok"
+ },
+ {
+  "key": "drop-winery",
+  "name": "DROP",
+  "url": "https://giyamagata-wine.jp/maker/drop/",
+  "code": 200,
+  "final": "https://giyamagata-wine.jp/maker/drop/",
+  "status": "ok"
+ },
+ {
+  "key": "voyage-de-yuuai",
+  "name": "Voyage de YUUAI",
+  "url": "https://yuuai-kai.or.jp/wine",
+  "code": 200,
+  "final": "https://yuuai-kai.or.jp/wine",
+  "status": "ok"
+ },
+ {
+  "key": "ringorillappa",
+  "name": "リンゴリらっぱ醸造所",
+  "url": "https://www.ringorillappa.jp/",
+  "code": 200,
+  "final": "https://www.ringorillappa.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "agri-coeur",
+  "name": "Agri-Cœur",
+  "url": "https://agricoeur.base.shop/",
+  "code": 200,
+  "final": "https://agricoeur.base.shop/",
+  "status": "ok"
+ },
+ {
+  "key": "hocca-winery",
+  "name": "HOCCAワイナリー",
+  "url": "https://hocca.jp/",
+  "code": 200,
+  "final": "https://hocca.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yamaguchi-winery",
+  "name": "山口ワイナリー",
+  "url": "http://www.yamanosake.com/products/list.php?category_id=6",
+  "code": 200,
+  "final": "https://www.yamanosake.com/products/list.php?category_id=6",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-pinot-livre",
+  "name": "周防大島ワイナリー ドメーヌ ピノ・リーブル",
+  "url": "https://www.domaine-pinot-livre.com/",
+  "code": 200,
+  "final": "https://www.domaine-pinot-livre.com/",
+  "status": "ok"
+ },
+ {
+  "key": "grace-wine",
+  "name": "グレイスワイン（中央葡萄酒）",
+  "url": "https://www.grace-wine.com/",
+  "code": 200,
+  "final": "https://www.grace-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "chateau-mercian",
+  "name": "シャトー・メルシャン 勝沼ワイナリー",
+  "url": "https://www.chateaumercian.com/",
+  "code": 200,
+  "final": "https://www.chateaumercian.com/",
+  "status": "ok"
+ },
+ {
+  "key": "lumiere",
+  "name": "ルミエール",
+  "url": "https://www.lumiere.jp/",
+  "code": 200,
+  "final": "https://www.lumiere.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "mannswines-katsunuma",
+  "name": "マンズワイン 勝沼ワイナリー",
+  "url": "https://www.mannswines.com/winery/katsunuma/",
+  "code": 200,
+  "final": "https://mannswines.com/winery/katsunuma/",
+  "status": "ok"
+ },
+ {
+  "key": "yamatowine",
+  "name": "大和葡萄酒（ハギーワイン）",
+  "url": "http://www.yamatowine.com/",
+  "code": 200,
+  "final": "https://www.yamatowine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "chateau-katsunuma",
+  "name": "シャトー勝沼",
+  "url": "https://www.chateauk.co.jp/",
+  "code": 200,
+  "final": "https://www.chateauk.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "marufuji-winery",
+  "name": "丸藤葡萄酒工業（ルバイヤートワイン）",
+  "url": "http://www.rubaiyat.jp/",
+  "code": 200,
+  "final": "http://www.rubaiyat.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "haramo-wine",
+  "name": "原茂ワイン",
+  "url": "http://www.haramo.com/",
+  "code": 200,
+  "final": "http://www.haramo.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kurambon-wine",
+  "name": "くらむぼんワイン",
+  "url": "https://www.kurambon.com/",
+  "code": 200,
+  "final": "https://kurambon.com/",
+  "status": "ok"
+ },
+ {
+  "key": "katsunuma-winery",
+  "name": "勝沼醸造",
+  "url": "https://www.katsunuma-winery.com/",
+  "code": 200,
+  "final": "https://www.katsunuma-winery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "shirayuri-jozo",
+  "name": "白百合醸造（ロリアンワイン）",
+  "url": "https://www.shirayuriwine.com/",
+  "code": 200,
+  "final": "https://shirayuriwine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "maruki-wine",
+  "name": "まるき葡萄酒",
+  "url": "http://www.marukiwine.co.jp/",
+  "code": 200,
+  "final": "https://www.marukiwine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "sadoya",
+  "name": "サドヤワイナリー",
+  "url": "https://www.sadoya.co.jp/",
+  "code": 200,
+  "final": "https://www.sadoya.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "chateau-sakaori",
+  "name": "シャトー酒折ワイナリー",
+  "url": "https://www.sakaoriwine.com/",
+  "code": 200,
+  "final": "https://www.sakaoriwine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "monde-wine",
+  "name": "モンデ酒造",
+  "url": "https://www.mondewinery.co.jp/",
+  "code": 200,
+  "final": "https://www.mondewinery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "mars-yamanashi",
+  "name": "本坊酒造 マルス山梨ワイナリー",
+  "url": "http://www.hombo.co.jp/company/kura/yamanashi.html",
+  "code": 200,
+  "final": "https://www.hombo.co.jp/visiting/yamanashi/",
+  "status": "ok"
+ },
+ {
+  "key": "suntory-tominooka",
+  "name": "サントリー 登美の丘ワイナリー",
+  "url": "https://www.suntory.co.jp/factory/tominooka/",
+  "code": 403,
+  "status": "http_error"
+ },
+ {
+  "key": "kizan-wine",
+  "name": "機山洋酒工業（キザンワイン）",
+  "url": "https://www.kizan.co.jp/",
+  "code": 200,
+  "final": "https://kizan.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "chateau-jun",
+  "name": "シャトージュン",
+  "url": "https://www.chateaujun.com/",
+  "code": 200,
+  "final": "https://www.chateaujun.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hojo-wine",
+  "name": "ホンジョーワイン（岩崎醸造）",
+  "url": "https://www.iwasaki-jozo.com/",
+  "code": 200,
+  "final": "https://www.iwasaki-jozo.com/",
+  "status": "ok"
+ },
+ {
+  "key": "mgvs-winery",
+  "name": "MGVsワイナリー",
+  "url": "https://mgvs.jp/",
+  "code": 200,
+  "final": "https://mgvs.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "fujiclair-wine",
+  "name": "フジクレールワイナリー",
+  "url": "https://www.fujiclairwine.jp/",
+  "code": 200,
+  "final": "https://fujiclairwine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "sainte-neige",
+  "name": "サントネージュワイン",
+  "url": "https://www.sainteneige.co.jp/",
+  "code": 200,
+  "final": "https://www.sainteneige.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "shion-winery",
+  "name": "四恩醸造",
+  "url": "https://shion-winery.co.jp/",
+  "code": 200,
+  "final": "https://shion-winery.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "aramaki-winery",
+  "name": "新巻葡萄酒",
+  "url": "https://aramakiwinery.jp/",
+  "code": 200,
+  "final": "https://aramakiwinery.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "charmant-wine",
+  "name": "シャルマンワイン（江井ヶ嶋酒造 山梨ワイナリー）",
+  "url": "https://www.charmant-wine.com/",
+  "code": 200,
+  "final": "https://www.charmant-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "98wines",
+  "name": "98WINEs",
+  "url": "https://98wines.jp/",
+  "code": 200,
+  "final": "https://98wines.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "soryuwine",
+  "name": "蒼龍葡萄酒",
+  "url": "http://www.soryu-wine.co.jp/",
+  "code": 200,
+  "final": "http://www.soryu-wine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "alps-wine",
+  "name": "アルプスワイン",
+  "url": "http://www.alpswine.co.jp/",
+  "code": 200,
+  "final": "http://www.alpswine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kisvin-winery",
+  "name": "Kisvin Winery",
+  "url": "http://www.kisvin.co.jp/",
+  "code": 200,
+  "final": "https://www.kisvin.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "cantina-hiro",
+  "name": "カンティーナ・ヒロ",
+  "url": "https://cantina-hiro.jp/",
+  "code": 200,
+  "final": "https://cantina-hiro.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "spring-wine",
+  "name": "スプリングワイン",
+  "url": "https://springwine.jp",
+  "code": 200,
+  "final": "https://springwine.jp",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-kayagatake",
+  "name": "ドメーヌ茅ヶ岳",
+  "url": "http://d-kayagatake.com",
+  "code": 200,
+  "final": "http://d-kayagatake.com",
+  "status": "ok"
+ },
+ {
+  "key": "asaya-winery",
+  "name": "あさや葡萄酒",
+  "url": "http://www.asaya-winery.jp",
+  "code": 200,
+  "final": "http://www.asaya-winery.jp",
+  "status": "ok"
+ },
+ {
+  "key": "enzan-wine",
+  "name": "塩山洋酒醸造",
+  "url": "http://www.enzanwine.co.jp",
+  "code": 200,
+  "final": "http://www.enzanwine.co.jp",
+  "status": "ok"
+ },
+ {
+  "key": "kai-winery",
+  "name": "甲斐ワイナリー",
+  "url": "http://www.kaiwinery.com",
+  "code": 200,
+  "final": "https://kaiwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "nikkawa-winery",
+  "name": "Nikkawa Winery",
+  "url": "https://nikkawa-winery.com",
+  "code": 200,
+  "final": "https://nikkawa-winery.com",
+  "status": "ok"
+ },
+ {
+  "key": "belle-vigne",
+  "name": "ラベルヴィーニュ",
+  "url": "https://belle-vigne.net",
+  "code": 200,
+  "final": "https://belle-vigne.net",
+  "status": "ok"
+ },
+ {
+  "key": "toumu-winery",
+  "name": "東夢ワイナリー",
+  "url": "http://www.toumuwinery.com",
+  "code": 200,
+  "final": "https://toumuwinery.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kinjyo-wine",
+  "name": "錦城葡萄酒",
+  "url": "http://kinjyo-wine.com",
+  "code": 200,
+  "final": "https://kinjyo-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hishiyama-chuo-jozo",
+  "name": "菱山中央醸造",
+  "url": "http://budoubatake.net",
+  "code": 200,
+  "final": "https://budoubatake.net/",
+  "status": "ok"
+ },
+ {
+  "key": "ohizumi-wine",
+  "name": "大泉葡萄酒",
+  "url": "http://ohizumi-wine.co.jp",
+  "code": 200,
+  "final": "https://ohizumi-wine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ikeda-winery",
+  "name": "イケダワイナリー",
+  "url": "https://www.ikedawinery.com",
+  "code": 200,
+  "final": "https://www.ikedawinery.com",
+  "status": "ok"
+ },
+ {
+  "key": "morita-koshu-winery",
+  "name": "盛田甲州ワイナリー",
+  "url": "https://www.chanmoris.co.jp",
+  "code": 200,
+  "final": "https://www.chanmoris.co.jp",
+  "status": "ok"
+ },
+ {
+  "key": "kitanoro-jozo",
+  "name": "北野呂醸造",
+  "url": "http://www.kitanoro-wine.jp",
+  "code": 200,
+  "final": "https://www.kitanoro-wine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "nikawa-chuo-wine",
+  "name": "日川中央葡萄酒",
+  "url": "http://liaisonwine.jp",
+  "code": 200,
+  "final": "http://liaisonwine.jp",
+  "status": "ok"
+ },
+ {
+  "key": "fuefuki-wine",
+  "name": "笛吹ワイン",
+  "url": "https://fuefuki-wine.com/",
+  "code": 200,
+  "final": "https://fuefuki-wine.com/",
+  "status": "ok"
+ },
+ {
+  "key": "new-yamanashi-wine",
+  "name": "ニュー山梨ワイン醸造",
+  "url": "https://8vin-yard.jp",
+  "code": 200,
+  "final": "https://8vin-yard.jp",
+  "status": "ok"
+ },
+ {
+  "key": "seven-cedars-winery",
+  "name": "セブンシダーズワイナリー",
+  "url": "https://www.7cwinery.com",
+  "code": 200,
+  "final": "https://www.7cwinery.com",
+  "status": "ok"
+ },
+ {
+  "key": "kanai-jozo",
+  "name": "金井醸造場",
+  "url": "http://www.fruits.jp/~caney/",
+  "code": 200,
+  "final": "https://www.fruits.jp/~caney/",
+  "status": "ok"
+ },
+ {
+  "key": "belle-foret-winery",
+  "name": "シャトレーゼ ベルフォーレワイナリー",
+  "url": "http://www.belle-foret.co.jp",
+  "code": 200,
+  "final": "http://www.belle-foret.co.jp",
+  "status": "ok"
+ },
+ {
+  "key": "shikishima-jozo",
+  "name": "敷島醸造",
+  "url": "https://mountwine.jp/",
+  "code": 200,
+  "final": "https://mountwine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-hide",
+  "name": "ドメーヌ ヒデ",
+  "url": "https://www.domainehide.com",
+  "code": 200,
+  "final": "https://www.domainehide.com",
+  "status": "ok"
+ },
+ {
+  "key": "higashi-shin-yoshu",
+  "name": "東晨洋酒",
+  "url": "https://yn-sunriver.jimdofree.com/",
+  "code": 200,
+  "final": "https://yn-sunriver.jimdofree.com/",
+  "status": "ok"
+ },
+ {
+  "key": "sanyo-jozo",
+  "name": "三養醸造",
+  "url": "https://sanyowine.com",
+  "code": 200,
+  "final": "https://sanyowine.com",
+  "status": "ok"
+ },
+ {
+  "key": "diamond-winery",
+  "name": "ダイヤモンド酒造",
+  "url": "http://www.jade.dti.ne.jp/~chanter/",
+  "code": 200,
+  "final": "http://www.jade.dti.ne.jp/~chanter/",
+  "status": "ok"
+ },
+ {
+  "key": "okunota-winery",
+  "name": "奥野田葡萄酒醸造",
+  "url": "http://www.okunota.com/",
+  "code": 200,
+  "final": "https://web.okunota.com/",
+  "status": "redirect_other_host"
+ },
+ {
+  "key": "comazono-vineyard",
+  "name": "駒園ヴィンヤード",
+  "url": "https://comazono.com/",
+  "code": 200,
+  "final": "https://comazono.com/",
+  "status": "ok"
+ },
+ {
+  "key": "suzuran-winery",
+  "name": "スズランワイナリー",
+  "url": "http://www.suzuran-w.co.jp/",
+  "code": 200,
+  "final": "http://www.suzuran-w.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yahagi-wine",
+  "name": "矢作洋酒",
+  "url": "http://www.yahagi-wine.co.jp/",
+  "code": 200,
+  "final": "http://www.yahagi-wine.co.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yatsushiro-jozo",
+  "name": "八代醸造",
+  "url": "https://r.goope.jp/sr-19-192111s0057/",
+  "code": 200,
+  "final": "https://r.goope.jp/sr-19-192111s0057/",
+  "status": "ok"
+ },
+ {
+  "key": "montanus-wine",
+  "name": "モンターナスワイン",
+  "url": "https://www.winery.or.jp/winery-map/2691/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/2691/",
+  "status": "ok"
+ },
+ {
+  "key": "ushioku-daiichi",
+  "name": "牛奥第一葡萄酒",
+  "url": "https://www.winery.or.jp/winery-map/2680/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/2680/",
+  "status": "ok"
+ },
+ {
+  "key": "asahi-yosyu-soleil",
+  "name": "旭洋酒（ソレイユワイン）",
+  "url": "https://soleilwine.jp/",
+  "code": 200,
+  "final": "https://soleilwine.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "yamanashi-hakko",
+  "name": "山梨醗酵工業",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "yawata-yosyu",
+  "name": "八幡洋酒",
+  "url": "https://www.winery.or.jp/winery-map/2674/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/2674/",
+  "status": "ok"
+ },
+ {
+  "key": "cave-an",
+  "name": "Cave an",
+  "url": "https://cave-an.com/",
+  "code": 200,
+  "final": "https://cave-an.com/",
+  "status": "ok"
+ },
+ {
+  "key": "kyoeido-winery",
+  "name": "共栄堂（室伏ワイナリー）",
+  "url": "http://kyo-edo.main.jp/",
+  "code": 200,
+  "final": "https://kyo-edo.main.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "mirai-yume-winery",
+  "name": "未来夢ワイナリー",
+  "url": "https://www.winery.or.jp/winery-map/16465/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/16465/",
+  "status": "ok"
+ },
+ {
+  "key": "shingen-wine",
+  "name": "信玄ワイン",
+  "url": "http://ccnet.easymyweb.jp/member/shingen/",
+  "code": 200,
+  "final": "https://ccnet.easymyweb.jp:443/member/shingen/",
+  "status": "redirect_other_host"
+ },
+ {
+  "key": "beau-paysage",
+  "name": "ボーペイサージュ",
+  "url": "https://www.beaupaysage.com/",
+  "code": 200,
+  "final": "https://www.beaupaysage.com/",
+  "status": "ok"
+ },
+ {
+  "key": "mars-hosaka",
+  "name": "マルス穂坂ワイナリー",
+  "url": "https://www.hombo.co.jp/winery/hosaka/",
+  "code": 200,
+  "final": "https://www.hombo.co.jp/visiting/hosaka/",
+  "status": "ok"
+ },
+ {
+  "key": "kawanishi-winery",
+  "name": "能見園 河西ワイナリー",
+  "url": "https://www.winery.or.jp/winery-map/2772/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/2772/",
+  "status": "ok"
+ },
+ {
+  "key": "creation-farm",
+  "name": "Domaine Creation Farm",
+  "url": "https://r.goope.jp/creation-farm/",
+  "code": 200,
+  "final": "https://r.goope.jp/creation-farm/",
+  "status": "ok"
+ },
+ {
+  "key": "akeno-venus",
+  "name": "ドメーヌ・ド・ラ・アケノ・ヴェニュス",
+  "url": "https://nihonwine.jp/winery_intro/akenovenus/",
+  "code": 200,
+  "final": "https://nihonwine.jp/winery_intro/akenovenus/",
+  "status": "ok"
+ },
+ {
+  "key": "komaki-vineyard",
+  "name": "Komaki Vineyard（小牧ヴィンヤード）",
+  "url": "https://komaki-vineyard.com/",
+  "code": 200,
+  "final": "https://komaki-vineyard.com/",
+  "status": "ok"
+ },
+ {
+  "key": "grandvert-vineyard",
+  "name": "八ヶ岳グランヴェールヴィンヤード",
+  "url": "https://www.grandvertvineyard.jp/",
+  "code": 200,
+  "final": "https://www.grandvertvineyard.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "ogasawara-farm",
+  "name": "小笠原ファーム",
+  "url": "https://shop.ogasawara-farm.com/",
+  "code": 200,
+  "final": "https://shop.ogasawara-farm.com/",
+  "status": "ok"
+ },
+ {
+  "key": "midaigawa-winery",
+  "name": "御勅使川ワイナリー",
+  "url": "https://www.miyairi-valve.co.jp/shop/category/item/wine/",
+  "code": 200,
+  "final": "https://www.miyairi-valve.co.jp/shop/category/item/wine/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-q",
+  "name": "ドメーヌ久（甲府ワインポート）",
+  "url": "https://www.kofuwineport.jp/",
+  "code": 200,
+  "final": "https://www.kofuwineport.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "sasaichi-winery",
+  "name": "笹一酒造（オリファンワイン）",
+  "url": "https://www.sasaichi.com/",
+  "code": 200,
+  "final": "https://www.sasaichi.com/",
+  "status": "ok"
+ },
+ {
+  "key": "rakuen-winery",
+  "name": "楽園葡萄酒醸造場",
+  "url": "https://wine1940.securesite.jp/",
+  "code": 200,
+  "final": "https://wine1940.securesite.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "kashiwa-budoushu",
+  "name": "柏和葡萄酒",
+  "url": "http://daizenji.org/",
+  "code": 200,
+  "final": "http://daizenji.org/",
+  "status": "ok"
+ },
+ {
+  "key": "carefit-farm-winery",
+  "name": "ケアフィットファームワイナリー",
+  "url": "https://www.carefit.org/farm/winery/",
+  "code": 200,
+  "final": "https://www.carefit.org/farm/winery/",
+  "status": "ok"
+ },
+ {
+  "key": "marusan-budoushu",
+  "name": "マルサン葡萄酒",
+  "url": "https://marusan-wakao.com/",
+  "code": 200,
+  "final": "https://marusan-wakao.com/",
+  "status": "ok"
+ },
+ {
+  "key": "hiyori-winery",
+  "name": "日和ワイナリー",
+  "url": "https://hiyori-corp.com/",
+  "code": 200,
+  "final": "https://hiyori-corp.com/",
+  "status": "ok"
+ },
+ {
+  "key": "nakahara-winery",
+  "name": "中原ワイナリー",
+  "url": "https://www.winery.or.jp/winery-map/2724/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/2724/",
+  "status": "ok"
+ },
+ {
+  "key": "sanfoods-nirasaki",
+  "name": "株式会社サン・フーズ（韮崎ワイン）",
+  "url": "https://www.sanfoods.jp/",
+  "code": 200,
+  "final": "https://www.sanfoods.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "la-pensee-winery",
+  "name": "LA PENSÉE（ラ・パンセ）",
+  "url": "https://nachumaru.com/store/blog/2025/07/09/%E5%8D%97%E3%82%A2%E3%83%AB%E3%83%97%E3%82%B9%E3%81%AB%E6%96%B0%E3%81%9F%E3%81%AA%E9%A2%A8%EF%BC%81%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E3%83%AF%E3%82%A4%E3%83%B3%E3%80%8Cla-pensee/",
+  "code": 200,
+  "final": "https://nachumaru.com/store/blog/2026/05/10/%e5%8d%97%e3%82%a2%e3%83%ab%e3%83%97%e3%82%b9%e3%81%ab%e6%96%b0%e3%81%9f%e3%81%aa%e9%a2%a8%ef%bc%81%e5%80%8b%e6%80%a7%e8%b1%8a%e3%81%8b%e3%81%aa%e3%83%af%e3%82%a4%e3%83%b3%e3%80%8cla-pensee/",
+  "status": "ok"
+ },
+ {
+  "key": "katsunuma-daihachi",
+  "name": "勝沼第八葡萄酒",
+  "url": "https://www.winery.or.jp/winery-map/2697/",
+  "code": 200,
+  "final": "https://www.winery.or.jp/winery-map/2697/",
+  "status": "ok"
+ },
+ {
+  "key": "wine-labo",
+  "name": "ワインづくり研究所",
+  "url": "https://wine-labo.com/",
+  "code": 200,
+  "final": "https://wine-labo.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-mie-ikeno",
+  "name": "ドメーヌ・ミエ・イケノ",
+  "url": "https://www.mieikeno.com/",
+  "code": 200,
+  "final": "https://www.mieikeno.com/",
+  "status": "ok"
+ },
+ {
+  "key": "vineyard-kikushima",
+  "name": "ヴィンヤード・キクシマ",
+  "url": "https://vykikushima.greater.jp/",
+  "code": 200,
+  "final": "https://vykikushima.greater.jp/",
+  "status": "ok"
+ },
+ {
+  "key": "shigei-jozo",
+  "name": "紫藝醸造",
+  "url": "",
+  "status": "empty"
+ },
+ {
+  "key": "domaine-des-tengeijis",
+  "name": "ドメーヌ・デ・テンゲイジ",
+  "url": "https://tengeijis.com/",
+  "code": 200,
+  "final": "https://tengeijis.com/",
+  "status": "ok"
+ },
+ {
+  "key": "domaine-passerelle",
+  "name": "ドメーヌ パスレル",
+  "url": "https://yov.co.jp/",
+  "code": 200,
+  "final": "https://yov.co.jp/",
+  "status": "ok"
+ }
+]
