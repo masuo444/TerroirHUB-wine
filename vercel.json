@@ -74,6 +74,11 @@
       "source": "/fr/:path*",
       "destination": "/en/:path*",
       "permanent": true
+    },
+    {
+      "source": "/wine/yamagata/higashine-fruit-winery.html",
+      "destination": "/wine/yamagata/fruit-winery-esprit.html",
+      "permanent": true
     }
   ]
 }
