@@ -29,10 +29,14 @@ add(f'{DOMAIN}/badge/',         '0.5', 'monthly')
 add(f'{DOMAIN}/en/wine/search/', '0.8', 'weekly')
 add(f'{DOMAIN}/en/wine/plans/',  '0.8', 'monthly')
 add(f'{DOMAIN}/en/wine/mypage/', '0.7', 'monthly')
-for g in ['index','beginner','visit','compare','yamanashi-vs-nagano','koshu-vs-pinot','beginner-white','koshu','hokkaido-pinot-noir','nagano-merlot']:
-    add(f'{DOMAIN}/en/wine/guide/{g}.html', '0.7', 'monthly')
-for g in ['regions','varieties','production','drinking','pairing','history','glossary']:
-    add(f'{DOMAIN}/en/wine/guide/{g}.html', '0.7', 'monthly')
+# 英語ガイドは2系統ある。/wine/guide/en/ が本文まで英語化された本物で、
+# /en/wine/guide/ は見出しだけ英語で日本語本文が残る殻ページ（2026-07-27にnoindex化）。
+# サイトマップには本物だけを載せる（殻ページを載せると英語圏に薄い内容が出てしまう）。
+for g in ['index','choose','regions','varieties','production','pairing','history','glossary']:
+    add(f'{DOMAIN}/wine/guide/en/{g}.html', '0.7', 'monthly')
+# 殻ページのうち本物の英語版が存在しないものだけ残す（canonicalは日本語版へ向けている）
+for g in ['beginner','visit','compare','yamanashi-vs-nagano','koshu-vs-pinot','beginner-white','koshu','hokkaido-pinot-noir','nagano-merlot','drinking']:
+    add(f'{DOMAIN}/en/wine/guide/{g}.html', '0.6', 'monthly')
 
 for g in ['index','beginner','visit','compare','yamanashi-vs-nagano','koshu-vs-pinot','beginner-white','koshu','hokkaido-pinot-noir','nagano-merlot','varieties','production','drinking','pairing','history','regions','glossary']:
     add(f'{DOMAIN}/wine/guide/{g}.html', '0.7', 'monthly')
@@ -40,6 +44,7 @@ for g in ['index','beginner','visit','compare','yamanashi-vs-nagano','koshu-vs-p
 # ── 産地ページ ──
 for r in ['hokkaido','tohoku','kanto','chubu','kinki','chugoku','shikoku','kyushu']:
     add(f'{DOMAIN}/wine/region/{r}.html', '0.8', 'monthly')
+    add(f'{DOMAIN}/en/wine/region/{r}.html', '0.7', 'monthly')
 
 # ── 県別インデックス + 個別ワイナリーページ ──
 json_files = sorted(glob.glob(os.path.join(BASE, 'data', 'data_*_wineries.json')))
