@@ -807,6 +807,16 @@ def generate_page(b, pref_slug, siblings=None):
         _arows.append(('創業', f'{esc(founded_era)}（{esc(founded)}年）' if founded_era else f'{esc(founded)}年'))
     if station:
         _arows.append(('最寄駅', esc(station)))
+    elif b.get('nearest_station_calc'):
+        # 公式記載が無い場合のみ、座標から求めた最寄駅を出す。公式の「徒歩○分」とは
+        # 性質が違うので、直線距離であることをラベルに明記して区別する
+        _ns = b['nearest_station_calc']
+        _d = _ns.get('distance_m')
+        _txt = f"{_ns.get('line','')} {_ns.get('station','')}駅"
+        if _d:
+            _txt += f"（直線 約{_d:,}m）"
+        _arows.append(('最寄駅<small style="display:block;font-size:9px;opacity:.75;">直線距離</small>',
+                       esc(_txt.strip())))
     if visit:
         _arows.append(('見学・試飲', esc(visit)))
     if url:

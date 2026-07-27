@@ -1,162 +1,176 @@
 [
-  {
-    "id": "shimane-winery",
-    "name": "島根ワイナリー",
-    "company": "株式会社島根ワイナリー",
-    "brand": "島根わいん",
-    "winery_type": "winery",
-    "founded": "1959",
-    "founded_era": "昭和34年",
-    "address": "島根県出雲市大社町菱根264-2",
-    "tel": "0853-53-5577",
-    "url": "https://www.shimane-winery.jp/",
-    "area": "出雲市大社町",
-    "desc": "出雲大社近くの観光型ワイナリー。島根ぶどうから造る島根わいんの製造と、工場見学・試飲・食の発信を担う拠点施設。",
-    "visit": "9:30〜17:00（年中無休）。工場見学無料。試飲・バーベキューハウス・土産店あり。",
-    "wine_style": "red,white",
-    "main_grape": "delaware",
-    "gi": "",
-    "grapes": [
-      "デラウェア",
-      "甲州",
-      "マスカット・ベーリーA"
-    ],
-    "brands": [
-      {
-        "name": "島根わいん",
-        "type": "白・赤・ロゼ・甘味果実酒",
-        "specs": "島根ぶどうの果実味を生かした基幹ブランド。",
-        "grapes": ""
-      }
-    ],
-    "features": [
-      "出雲大社から車5分",
-      "無料工場見学可",
-      "バーベキューハウス（最大500名）",
-      "日本ワイナリーアワード2025 4つ星",
-      "日本ワインコンクール2025 金賞受賞"
-    ],
-    "nearest_station": "",
-    "source": "https://www.shimane-winery.jp/",
-    "lat": 35.4,
-    "lng": 132.684,
-    "name_en": "Shimane Winery"
-  },
-  {
-    "id": "okuizumo-budoen",
-    "name": "奥出雲葡萄園",
-    "company": "有限会社奥出雲葡萄園",
-    "brand": "",
-    "winery_type": "estate",
-    "founded": "2007",
-    "founded_era": "平成19年",
-    "address": "島根県雲南市木次町寺領2273-1",
-    "tel": "0854-42-3480",
-    "url": "https://okuizumo.com/",
-    "area": "雲南市木次町",
-    "desc": "ここだけの土、水、空気　ここだからできるものを",
-    "visit": "ガーデンカフェ・ショップ併設。営業日時は季節変動のため事前確認推奨。",
-    "wine_style": "red,white",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "シャルドネ",
-      "ソーヴィニヨン・ブラン",
-      "メルロー",
-      "カベルネ・ソーヴィニヨン",
-      "小公子"
-    ],
-    "brands": [
-      {
-        "name": "小公子",
-        "type": "赤ワイン",
-        "specs": "奥出雲葡萄園を代表する赤。",
-        "grapes": "小公子"
-      },
-      {
-        "name": "シャルドネ",
-        "type": "白ワイン",
-        "specs": "冷涼な山間地らしい酸を生かした白。",
-        "grapes": "シャルドネ"
-      }
-    ],
-    "features": [
-      "広島との県境・山間部に位置",
-      "自然との共生を目指したワイン造り",
-      "年間収穫イベントを開催",
-      "ガーデンカフェ・ショップ併設"
-    ],
-    "nearest_station": "",
-    "source": "https://okuizumo.com/",
-    "lat": 35.188,
-    "lng": 132.94,
-    "name_en": "Okuizumo Vineyard"
-  },
-  {
-    "id": "iwami-winery",
-    "name": "石見ワイナリー",
-    "company": "石見ワイナリー株式会社",
-    "brand": "三瓶（Sanbe）",
-    "winery_type": "medium",
-    "founded": "2018",
-    "founded_era": "平成30年",
-    "address": "島根県大田市三瓶町志学ロ1640-2",
-    "tel": "0854-83-9103",
-    "url": "https://iwami.wine/",
-    "area": "大田市三瓶町",
-    "desc": "平成27年10月に石見ワイナリー株式会社を設立し、三瓶山麓に醸造施設を整備。平成30年4月に操業を開始した。広島市の山陽空調工業株式会社グループ会社が運営し、三瓶山の草原に囲まれた敷地でワインのテイスティングや飲食も楽しめる。",
-    "visit": "テイスティング・売店あり。毎週火曜定休（変更の場合あり）。オンラインショップ（https://store.iwami.wine/）でも販売。",
-    "wine_style": "red,white",
-    "main_grape": "merlot",
-    "gi": "",
-    "grapes": [
-      "メルロー",
-      "マルスラン",
-      "シャルドネ",
-      "モスカート",
-      "北天の雫"
-    ],
-    "brands": [
-      {
-        "name": "Sanbe Merlot",
-        "type": "赤ワイン",
-        "specs": "2022、2020",
-        "grapes": "メルロー"
-      },
-      {
-        "name": "Sanbe Marslan",
-        "type": "赤ワイン",
-        "specs": "2022、2021",
-        "grapes": "マルスラン"
-      },
-      {
-        "name": "Pure Sanbe Chardonnay",
-        "type": "白ワイン",
-        "specs": "2021",
-        "grapes": "シャルドネ"
-      },
-      {
-        "name": "Shine Moscato",
-        "type": "白ワイン",
-        "specs": "2021",
-        "grapes": "モスカート"
-      },
-      {
-        "name": "Pure Sanbe 北天の雫",
-        "type": "白ワイン",
-        "specs": "2021",
-        "grapes": "北天の雫"
-      }
-    ],
-    "features": [
-      "三瓶山の草原に囲まれた敷地でワインのテイスティングが楽しめる",
-      "野外型フードコート「石見の星空のレストラン」を併設",
-      "広島市の山陽空調工業株式会社グループ会社が運営"
-    ],
-    "nearest_station": "",
-    "source": "https://iwami.wine/",
-    "lat": 35.113,
-    "lng": 132.636,
-    "name_en": "Iwami Winery"
+ {
+  "id": "shimane-winery",
+  "name": "島根ワイナリー",
+  "company": "株式会社島根ワイナリー",
+  "brand": "島根わいん",
+  "winery_type": "winery",
+  "founded": "1959",
+  "founded_era": "昭和34年",
+  "address": "島根県出雲市大社町菱根264-2",
+  "tel": "0853-53-5577",
+  "url": "https://www.shimane-winery.jp/",
+  "area": "出雲市大社町",
+  "desc": "出雲大社近くの観光型ワイナリー。島根ぶどうから造る島根わいんの製造と、工場見学・試飲・食の発信を担う拠点施設。",
+  "visit": "9:30〜17:00（年中無休）。工場見学無料。試飲・バーベキューハウス・土産店あり。",
+  "wine_style": "red,white",
+  "main_grape": "delaware",
+  "gi": "",
+  "grapes": [
+   "デラウェア",
+   "甲州",
+   "マスカット・ベーリーA"
+  ],
+  "brands": [
+   {
+    "name": "島根わいん",
+    "type": "白・赤・ロゼ・甘味果実酒",
+    "specs": "島根ぶどうの果実味を生かした基幹ブランド。",
+    "grapes": ""
+   }
+  ],
+  "features": [
+   "出雲大社から車5分",
+   "無料工場見学可",
+   "バーベキューハウス（最大500名）",
+   "日本ワイナリーアワード2025 4つ星",
+   "日本ワインコンクール2025 金賞受賞"
+  ],
+  "nearest_station": "",
+  "source": "https://www.shimane-winery.jp/",
+  "lat": 35.4,
+  "lng": 132.684,
+  "name_en": "Shimane Winery",
+  "nearest_station_calc": {
+   "station": "出雲大社前",
+   "line": "一畑電車大社線",
+   "distance_m": 820,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ },
+ {
+  "id": "okuizumo-budoen",
+  "name": "奥出雲葡萄園",
+  "company": "有限会社奥出雲葡萄園",
+  "brand": "",
+  "winery_type": "estate",
+  "founded": "2007",
+  "founded_era": "平成19年",
+  "address": "島根県雲南市木次町寺領2273-1",
+  "tel": "0854-42-3480",
+  "url": "https://okuizumo.com/",
+  "area": "雲南市木次町",
+  "desc": "ここだけの土、水、空気　ここだからできるものを",
+  "visit": "ガーデンカフェ・ショップ併設。営業日時は季節変動のため事前確認推奨。",
+  "wine_style": "red,white",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "シャルドネ",
+   "ソーヴィニヨン・ブラン",
+   "メルロー",
+   "カベルネ・ソーヴィニヨン",
+   "小公子"
+  ],
+  "brands": [
+   {
+    "name": "小公子",
+    "type": "赤ワイン",
+    "specs": "奥出雲葡萄園を代表する赤。",
+    "grapes": "小公子"
+   },
+   {
+    "name": "シャルドネ",
+    "type": "白ワイン",
+    "specs": "冷涼な山間地らしい酸を生かした白。",
+    "grapes": "シャルドネ"
+   }
+  ],
+  "features": [
+   "広島との県境・山間部に位置",
+   "自然との共生を目指したワイン造り",
+   "年間収穫イベントを開催",
+   "ガーデンカフェ・ショップ併設"
+  ],
+  "nearest_station": "",
+  "source": "https://okuizumo.com/",
+  "lat": 35.188,
+  "lng": 132.94,
+  "name_en": "Okuizumo Vineyard",
+  "nearest_station_calc": {
+   "station": "出雲三成",
+   "line": "JR木次線",
+   "distance_m": 6420,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "iwami-winery",
+  "name": "石見ワイナリー",
+  "company": "石見ワイナリー株式会社",
+  "brand": "三瓶（Sanbe）",
+  "winery_type": "medium",
+  "founded": "2018",
+  "founded_era": "平成30年",
+  "address": "島根県大田市三瓶町志学ロ1640-2",
+  "tel": "0854-83-9103",
+  "url": "https://iwami.wine/",
+  "area": "大田市三瓶町",
+  "desc": "平成27年10月に石見ワイナリー株式会社を設立し、三瓶山麓に醸造施設を整備。平成30年4月に操業を開始した。広島市の山陽空調工業株式会社グループ会社が運営し、三瓶山の草原に囲まれた敷地でワインのテイスティングや飲食も楽しめる。",
+  "visit": "テイスティング・売店あり。毎週火曜定休（変更の場合あり）。オンラインショップ（https://store.iwami.wine/）でも販売。",
+  "wine_style": "red,white",
+  "main_grape": "merlot",
+  "gi": "",
+  "grapes": [
+   "メルロー",
+   "マルスラン",
+   "シャルドネ",
+   "モスカート",
+   "北天の雫"
+  ],
+  "brands": [
+   {
+    "name": "Sanbe Merlot",
+    "type": "赤ワイン",
+    "specs": "2022、2020",
+    "grapes": "メルロー"
+   },
+   {
+    "name": "Sanbe Marslan",
+    "type": "赤ワイン",
+    "specs": "2022、2021",
+    "grapes": "マルスラン"
+   },
+   {
+    "name": "Pure Sanbe Chardonnay",
+    "type": "白ワイン",
+    "specs": "2021",
+    "grapes": "シャルドネ"
+   },
+   {
+    "name": "Shine Moscato",
+    "type": "白ワイン",
+    "specs": "2021",
+    "grapes": "モスカート"
+   },
+   {
+    "name": "Pure Sanbe 北天の雫",
+    "type": "白ワイン",
+    "specs": "2021",
+    "grapes": "北天の雫"
+   }
+  ],
+  "features": [
+   "三瓶山の草原に囲まれた敷地でワインのテイスティングが楽しめる",
+   "野外型フードコート「石見の星空のレストラン」を併設",
+   "広島市の山陽空調工業株式会社グループ会社が運営"
+  ],
+  "nearest_station": "",
+  "source": "https://iwami.wine/",
+  "lat": 35.113,
+  "lng": 132.636,
+  "name_en": "Iwami Winery"
+ }
 ]

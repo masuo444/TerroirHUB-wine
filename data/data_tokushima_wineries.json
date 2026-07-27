@@ -1,75 +1,82 @@
 [
-  {
-    "id": "natan-wine",
-    "name": "Natan葡萄酒醸造所",
-    "company": "有限会社WORLD COLLECTION",
-    "brand": "Natan",
-    "winery_type": "small",
-    "founded": "2021",
-    "founded_era": "令和3年",
-    "address": "徳島県三好市池田町マチ2187-7",
-    "tel": "0883-87-8688",
-    "url": "https://natan.jp/",
-    "area": "三好市（池田町マチ）",
-    "desc": "2021年、井下奈未香氏が徳島県内初のワイナリーとして設立。ぶどうそれぞれの個性と、その時々の味わいを表現することを大切にワインを醸造している。店舗での対面販売とオンラインショップでワインを販売する。",
-    "visit": "店舗での対面販売あり（営業時間9:00〜16:30）、オンラインショップでも購入可",
-    "wine_style": "",
-    "main_grape": "",
-    "gi": "",
-    "grapes": [
-      "ヤマ・ソーヴィニヨン",
-      "ピノ・ノワール",
-      "リースリング・リオン",
-      "ゲヴェルツトラミネール",
-      "ソーヴィニヨン・ブラン",
-      "甲斐ブラン",
-      "デラウェア",
-      "マスカット・ベーリーA",
-      "キャンベルアーリー",
-      "巨峰",
-      "モンドブリエ"
-    ],
-    "brands": [
-      {
-        "name": "DEEPER DEEPER",
-        "type": "",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "Rebell",
-        "type": "",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "No pasa nada",
-        "type": "",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "MULA",
-        "type": "",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "Setouchi mix",
-        "type": "",
-        "specs": "",
-        "grapes": ""
-      }
-    ],
-    "features": [
-      "2021年設立の徳島県内初のワイナリー",
-      "代表・醸造家の井下奈未香氏がぶどう個々の味わいを生かしたワイン造りを行う",
-      "DEEPER DEEPER、Rebell、MULAなど多彩な銘柄をリリース"
-    ],
-    "nearest_station": "",
-    "source": "https://natan.jp/",
-    "lat": 33.987,
-    "lng": 133.804,
-    "name_en": "Natan Winery"
+ {
+  "id": "natan-wine",
+  "name": "Natan葡萄酒醸造所",
+  "company": "有限会社WORLD COLLECTION",
+  "brand": "Natan",
+  "winery_type": "small",
+  "founded": "2021",
+  "founded_era": "令和3年",
+  "address": "徳島県三好市池田町マチ2187-7",
+  "tel": "0883-87-8688",
+  "url": "https://natan.jp/",
+  "area": "三好市（池田町マチ）",
+  "desc": "2021年、井下奈未香氏が徳島県内初のワイナリーとして設立。ぶどうそれぞれの個性と、その時々の味わいを表現することを大切にワインを醸造している。店舗での対面販売とオンラインショップでワインを販売する。",
+  "visit": "店舗での対面販売あり（営業時間9:00〜16:30）、オンラインショップでも購入可",
+  "wine_style": "",
+  "main_grape": "",
+  "gi": "",
+  "grapes": [
+   "ヤマ・ソーヴィニヨン",
+   "ピノ・ノワール",
+   "リースリング・リオン",
+   "ゲヴェルツトラミネール",
+   "ソーヴィニヨン・ブラン",
+   "甲斐ブラン",
+   "デラウェア",
+   "マスカット・ベーリーA",
+   "キャンベルアーリー",
+   "巨峰",
+   "モンドブリエ"
+  ],
+  "brands": [
+   {
+    "name": "DEEPER DEEPER",
+    "type": "",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "Rebell",
+    "type": "",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "No pasa nada",
+    "type": "",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "MULA",
+    "type": "",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "Setouchi mix",
+    "type": "",
+    "specs": "",
+    "grapes": ""
+   }
+  ],
+  "features": [
+   "2021年設立の徳島県内初のワイナリー",
+   "代表・醸造家の井下奈未香氏がぶどう個々の味わいを生かしたワイン造りを行う",
+   "DEEPER DEEPER、Rebell、MULAなど多彩な銘柄をリリース"
+  ],
+  "nearest_station": "",
+  "source": "https://natan.jp/",
+  "lat": 33.987,
+  "lng": 133.804,
+  "name_en": "Natan Winery",
+  "nearest_station_calc": {
+   "station": "三縄",
+   "line": "JR土讃線",
+   "distance_m": 2690,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ }
 ]

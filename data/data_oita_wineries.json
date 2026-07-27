@@ -70,7 +70,14 @@
   "source": "https://nippon.wine/winery/19440010300/",
   "lat": 33.268,
   "lng": 131.37,
-  "name_en": "Yufuin Winery"
+  "name_en": "Yufuin Winery",
+  "nearest_station_calc": {
+   "station": "由布院",
+   "line": "JR久大本線",
+   "distance_m": 1520,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "ajimu-budoshu-kobo",

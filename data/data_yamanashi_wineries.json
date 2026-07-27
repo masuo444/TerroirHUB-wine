@@ -1819,6 +1819,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲府市朝日四丁目５番３号",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "甲府",
+   "line": "JR中央本線",
+   "distance_m": 650,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -1874,6 +1881,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県韮崎市上ノ山",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "韮崎",
+   "line": "JR中央本線",
+   "distance_m": 1250,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -1945,6 +1959,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町等々力１６６番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 2680,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2008,6 +2029,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市塩山千野６９３番地",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "塩山",
+   "line": "JR中央本線",
+   "distance_m": 1310,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -2182,6 +2210,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町勝沼",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 1740,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2237,6 +2272,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町勝沼",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 1740,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -2301,6 +2343,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町小佐手１８３３番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 1080,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2361,6 +2410,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町菱山１４２５番地",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 380,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -2471,6 +2527,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町下岩崎１９４３番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 2840,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2540,6 +2603,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町勝沼２８４２番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 2220,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2599,6 +2669,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県笛吹市一宮町新巻４８０番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "春日居町",
+   "line": "JR中央本線",
+   "distance_m": 5770,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2654,6 +2731,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県笛吹市一宮町市之蔵１１８番地",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "春日居町",
+   "line": "JR中央本線",
+   "distance_m": 6240,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -2713,6 +2797,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県笛吹市御坂町夏目原９９２番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "石和温泉",
+   "line": "JR中央本線",
+   "distance_m": 4070,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2769,6 +2860,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県笛吹市御坂町二之宮６１１番地",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "石和温泉",
+   "line": "JR中央本線",
+   "distance_m": 3540,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -2831,6 +2929,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県富士河口湖町河口",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "河口湖",
+   "line": "富士急行線",
+   "distance_m": 5100,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -2887,6 +2992,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県山梨市万力８０６番地",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "山梨市",
+   "line": "JR中央本線",
+   "distance_m": 1120,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -2947,6 +3059,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲斐市下今井１９５４番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "塩崎",
+   "line": "JR中央本線",
+   "distance_m": 330,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -3005,6 +3124,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲斐市亀沢",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "塩崎",
+   "line": "JR中央本線",
+   "distance_m": 5630,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -3054,6 +3180,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県南アルプス市小笠原４３６番地",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "小井川",
+   "line": "JR身延線",
+   "distance_m": 5990,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -3113,6 +3246,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県山梨市歌田６６番地",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "山梨市",
+   "line": "JR中央本線",
+   "distance_m": 2520,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -3170,6 +3310,13 @@
   "geo_source": {
    "by": "国土地理院 住所検索API",
    "matched": "山梨県山梨市牧丘町窪平",
+   "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "塩山",
+   "line": "JR中央本線",
+   "distance_m": 4460,
+   "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
   }
  },
@@ -5198,7 +5345,14 @@
   "source": "https://www.mieikeno.com/domaine-mie-ikeno",
   "lat": 35.883,
   "lng": 138.417,
-  "name_en": "Domaine Mie Ikeno"
+  "name_en": "Domaine Mie Ikeno",
+  "nearest_station_calc": {
+   "station": "甲斐大泉",
+   "line": "JR小海線",
+   "distance_m": 1620,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "vineyard-kikushima",
@@ -5253,7 +5407,14 @@
   "source": "https://vykikushima.greater.jp/about-us/",
   "lat": 35.662,
   "lng": 138.734,
-  "name_en": "Vineyards Kikushima"
+  "name_en": "Vineyards Kikushima",
+  "nearest_station_calc": {
+   "station": "勝沼ぶどう郷",
+   "line": "JR中央本線",
+   "distance_m": 1460,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "shigei-jozo",
@@ -5312,7 +5473,14 @@
   "source": "https://imadeya.co.jp/blogs/brewery/shigei-jyozo",
   "lat": 35.782,
   "lng": 138.437,
-  "name_en": "Shigei Jozo"
+  "name_en": "Shigei Jozo",
+  "nearest_station_calc": {
+   "station": "日野春",
+   "line": "JR中央本線",
+   "distance_m": 3970,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "domaine-des-tengeijis",
@@ -5344,7 +5512,14 @@
   "source": "https://tengeijis.com/company/",
   "lat": 35.778,
   "lng": 138.437,
-  "name_en": "Domaine des Tengeijis"
+  "name_en": "Domaine des Tengeijis",
+  "nearest_station_calc": {
+   "station": "穴山",
+   "line": "JR中央本線",
+   "distance_m": 3650,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "domaine-passerelle",
@@ -5402,6 +5577,13 @@
   "source": "https://yov.co.jp/",
   "lat": 35.845,
   "lng": 138.383,
-  "name_en": "Domaine Passerelle"
+  "name_en": "Domaine Passerelle",
+  "nearest_station_calc": {
+   "station": "長坂",
+   "line": "JR中央本線",
+   "distance_m": 2490,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  }
 ]

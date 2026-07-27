@@ -61,7 +61,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/post-35/",
   "lat": 36.4197,
   "lng": 138.2207,
-  "name_en": "Chateau Mercian Mariko Winery"
+  "name_en": "Chateau Mercian Mariko Winery",
+  "nearest_station_calc": {
+   "station": "西上田",
+   "line": "しなの鉄道線",
+   "distance_m": 1120,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "chateau-mercian-kikyogahara",
@@ -100,7 +107,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-21/",
   "lat": 36.0908,
   "lng": 137.9615,
-  "name_en": "Chateau Mercian Kikyogahara Winery"
+  "name_en": "Chateau Mercian Kikyogahara Winery",
+  "nearest_station_calc": {
+   "station": "みどり湖",
+   "line": "JR中央本線",
+   "distance_m": 1880,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "izutsu-wine",
@@ -161,7 +175,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-25/",
   "lat": 36.0908,
   "lng": 137.9615,
-  "name_en": "Izutsu Wine"
+  "name_en": "Izutsu Wine",
+  "nearest_station_calc": {
+   "station": "みどり湖",
+   "line": "JR中央本線",
+   "distance_m": 1880,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "goichi-wine",
@@ -215,7 +236,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-40/",
   "lat": 36.0895,
   "lng": 137.9605,
-  "name_en": "Hayashi Noen Goichi Wine"
+  "name_en": "Hayashi Noen Goichi Wine",
+  "nearest_station_calc": {
+   "station": "みどり湖",
+   "line": "JR中央本線",
+   "distance_m": 2000,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "shinano-wine",
@@ -275,7 +303,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-39/",
   "lat": 36.0963,
   "lng": 137.9571,
-  "name_en": "Shinano Wine"
+  "name_en": "Shinano Wine",
+  "nearest_station_calc": {
+   "station": "塩尻",
+   "line": "JR篠ノ井線",
+   "distance_m": 2170,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "alps-wine",
@@ -345,7 +380,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-24/",
   "lat": 36.1004,
   "lng": 137.9597,
-  "name_en": "Alps Wine"
+  "name_en": "Alps Wine",
+  "nearest_station_calc": {
+   "station": "塩尻",
+   "line": "JR中央本線",
+   "distance_m": 1880,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "suntory-shiojiri",
@@ -393,7 +435,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-27/",
   "lat": 36.1073,
   "lng": 137.9545,
-  "name_en": "Suntory Shiojiri Winery"
+  "name_en": "Suntory Shiojiri Winery",
+  "nearest_station_calc": {
+   "station": "塩尻",
+   "line": "JR中央本線",
+   "distance_m": 980,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "kido-winery",
@@ -457,7 +506,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/kido/",
   "lat": 36.0908,
   "lng": 137.9615,
-  "name_en": "Kido Winery"
+  "name_en": "Kido Winery",
+  "nearest_station_calc": {
+   "station": "みどり湖",
+   "line": "JR中央本線",
+   "distance_m": 1880,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "domaine-kosei",
@@ -514,7 +570,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/domaine-kosei/",
   "lat": 36.12,
   "lng": 137.985,
-  "name_en": "Domaine Kosei"
+  "name_en": "Domaine Kosei",
+  "nearest_station_calc": {
+   "station": "みどり湖",
+   "line": "JR中央本線",
+   "distance_m": 2890,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "votano-wine",
@@ -562,7 +625,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-26/",
   "lat": 36.098,
   "lng": 137.953,
-  "name_en": "Votano Wine"
+  "name_en": "Votano Wine",
+  "nearest_station_calc": {
+   "station": "塩尻",
+   "line": "JR篠ノ井線",
+   "distance_m": 1880,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "domaine-sourire",
@@ -617,7 +687,14 @@
   "source": "https://www.nagano-wine.jp/winery/kikyogahara/post-23/",
   "lat": 36.115,
   "lng": 137.97,
-  "name_en": "Shiojiri Farm Domaine Sourire"
+  "name_en": "Shiojiri Farm Domaine Sourire",
+  "nearest_station_calc": {
+   "station": "塩尻",
+   "line": "JR中央本線支線",
+   "distance_m": 1980,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "ruedevin",
@@ -894,7 +971,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/post-52/",
   "lat": 36.35,
   "lng": 138.15,
-  "name_en": "Funky Chateau"
+  "name_en": "Funky Chateau",
+  "nearest_station_calc": {
+   "station": "別所温泉",
+   "line": "上田電鉄別所線",
+   "distance_m": 1120,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "hasumi-farm",
@@ -1013,7 +1097,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/post-54/",
   "lat": 36.725,
   "lng": 138.21,
-  "name_en": "St. Cousair"
+  "name_en": "St. Cousair",
+  "nearest_station_calc": {
+   "station": "牟礼",
+   "line": "北しなの線",
+   "distance_m": 4570,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "azumino-winery",
@@ -1263,7 +1354,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/post-38/",
   "lat": 36.665,
   "lng": 138.26,
-  "name_en": "Shinshu Takayama Winery"
+  "name_en": "Shinshu Takayama Winery",
+  "nearest_station_calc": {
+   "station": "柳原",
+   "line": "長野電鉄長野線",
+   "distance_m": 230,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "domaine-hase",
@@ -1313,7 +1411,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/post-15/",
   "lat": 36.668,
   "lng": 138.265,
-  "name_en": "Domaine Hase"
+  "name_en": "Domaine Hase",
+  "nearest_station_calc": {
+   "station": "柳原",
+   "line": "長野電鉄長野線",
+   "distance_m": 780,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "cantina-riezo",
@@ -1372,7 +1477,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/post-14/",
   "lat": 36.67,
   "lng": 138.27,
-  "name_en": "Cantina Riezo"
+  "name_en": "Cantina Riezo",
+  "nearest_station_calc": {
+   "station": "柳原",
+   "line": "長野電鉄長野線",
+   "distance_m": 1270,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "takayashiro-farm",
@@ -2405,7 +2517,14 @@
   "source": "https://www.nagano-wine.jp/special/winery/Vol87viniqrobe.html",
   "lat": 36.66,
   "lng": 138.25,
-  "name_en": "VINIQROBE"
+  "name_en": "VINIQROBE",
+  "nearest_station_calc": {
+   "station": "附属中学前",
+   "line": "長野電鉄長野線",
+   "distance_m": 320,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "kawashima-jozo",
@@ -2445,7 +2564,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/",
   "lat": 36.655,
   "lng": 138.245,
-  "name_en": "Kawashima Jozo"
+  "name_en": "Kawashima Jozo",
+  "nearest_station_calc": {
+   "station": "附属中学前",
+   "line": "長野電鉄長野線",
+   "distance_m": 880,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "utabi-winery",
@@ -2492,7 +2618,14 @@
   "source": "https://www.nagano-wine.jp/special/winery/utabi.html",
   "lat": 36.59,
   "lng": 138.08,
-  "name_en": "Utabi Winery"
+  "name_en": "Utabi Winery",
+  "nearest_station_calc": {
+   "station": "稲荷山",
+   "line": "JR篠ノ井線",
+   "distance_m": 4860,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "haramura-winery",
@@ -2643,7 +2776,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/",
   "lat": 36.405,
   "lng": 138.26,
-  "name_en": "Sail the Ship Winery"
+  "name_en": "Sail the Ship Winery",
+  "nearest_station_calc": {
+   "station": "上田",
+   "line": "北陸新幹線",
+   "distance_m": 1340,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "yamato-grape-wine-azusagawa",
@@ -2767,7 +2907,14 @@
   "source": "https://www.nagano-wine.jp/winery/chikuma/",
   "lat": 36.66,
   "lng": 138.25,
-  "name_en": "Mother Vines Nagano"
+  "name_en": "Mother Vines Nagano",
+  "nearest_station_calc": {
+   "station": "附属中学前",
+   "line": "長野電鉄長野線",
+   "distance_m": 320,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "cave-hatano",
@@ -3499,7 +3646,14 @@
   "source": "https://www.winery.or.jp/winery-map/16753/",
   "lat": 36.62,
   "lng": 137.92,
-  "name_en": "Budoyabu"
+  "name_en": "Budoyabu",
+  "nearest_station_calc": {
+   "station": "南神城",
+   "line": "JR大糸線",
+   "distance_m": 7260,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "hase-de-kodawaar",
@@ -3718,7 +3872,14 @@
   "source": "https://sun-vision.or.jp/activity/winery/",
   "lat": 36.146,
   "lng": 137.944,
-  "name_en": "Sun Sun Winery"
+  "name_en": "Sun Sun Winery",
+  "nearest_station_calc": {
+   "station": "広丘",
+   "line": "JR篠ノ井線",
+   "distance_m": 550,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "closdetenryu-chateau-kiribayashi",
@@ -3762,7 +3923,14 @@
   "source": "https://www.nagano-wine.jp/special/winery/vol81closdetenryu.html",
   "lat": 35.466,
   "lng": 137.859,
-  "name_en": "Clos de Tenryu Chateau Kiribayashi"
+  "name_en": "Clos de Tenryu Chateau Kiribayashi",
+  "nearest_station_calc": {
+   "station": "駄科",
+   "line": "JR飯田線",
+   "distance_m": 2040,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "domaine-fujita",
@@ -3821,7 +3989,14 @@
   "source": "https://chikumagawa-wine-club.org/info/2021/210906.html",
   "lat": 36.32,
   "lng": 138.42,
-  "name_en": "Domaine Fujita"
+  "name_en": "Domaine Fujita",
+  "nearest_station_calc": {
+   "station": "小諸",
+   "line": "JR小海線",
+   "distance_m": 730,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "bellybeads-winery",
@@ -3945,7 +4120,14 @@
   "source": "https://www.nagano-wine.jp/special/winery/Vol82.html",
   "lat": 35.622,
   "lng": 137.917,
-  "name_en": "Minakata Jozo"
+  "name_en": "Minakata Jozo",
+  "nearest_station_calc": {
+   "station": "伊那田島",
+   "line": "JR飯田線",
+   "distance_m": 840,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "le-milieu",
@@ -3998,6 +4180,13 @@
   "source": "https://le-milieu.co.jp/winery/",
   "lat": 36.372,
   "lng": 137.905,
-  "name_en": "Le Milieu"
+  "name_en": "Le Milieu",
+  "nearest_station_calc": {
+   "station": "有明",
+   "line": "JR大糸線",
+   "distance_m": 2750,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  }
 ]

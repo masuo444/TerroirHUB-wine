@@ -1,117 +1,124 @@
 [
-  {
-    "id": "kyoho-wine",
-    "name": "巨峰ワイン",
-    "company": "KYOHO JAPAN株式会社",
-    "brand": "巨峰葡萄酒",
-    "winery_type": "winery",
-    "founded": "1972",
-    "founded_era": "昭和47年",
-    "address": "福岡県久留米市田主丸町益生田246-1",
-    "tel": "0943-72-2382",
-    "url": "http://www.kyoho-winery.com/",
-    "area": "久留米市田主丸町",
-    "desc": "巨峰開植の地・田主丸で1972年に日本初の巨峰ワインを生み出した、福岡を代表するフルーツワイナリー。地元果実を丁寧に仕込む。",
-    "visit": "ショップ9:00〜17:00。地下貯蔵庫見学、試飲、レストラン、バーベキュー施設あり。",
-    "wine_style": "red,white",
-    "main_grape": "kyoho",
-    "gi": "",
-    "grapes": [
-      "巨峰",
-      "ブルーベリー"
-    ],
-    "brands": [
-      {
-        "name": "巨峰葡萄酒ドライ",
-        "type": "赤ワイン",
-        "specs": "田主丸特産巨峰から造るすっきりした辛口。",
-        "grapes": "巨峰"
-      },
-      {
-        "name": "巨峰葡萄酒ルージュ",
-        "type": "赤ワイン",
-        "specs": "巨峰らしいやわらかな果実味を生かした中核商品。",
-        "grapes": "巨峰"
-      },
-      {
-        "name": "巨峰葡萄酒スウィート",
-        "type": "甘口ワイン",
-        "specs": "巨峰の香りを前面に出した甘口。",
-        "grapes": "巨峰"
-      }
-    ],
-    "features": [
-      "日本初の巨峰ワインが誕生した福岡で最も古いワイナリー",
-      "耳納連山の森の中に立地",
-      "ブルーベリー・あまおう・キウイなど多彩なフルーツワインも展開"
-    ],
-    "nearest_station": "JR久大本線田主丸駅",
-    "source": "https://www.kyoho-winery.com/",
-    "lat": 33.406,
-    "lng": 130.728,
-    "name_en": "Kyoho Wine"
-  },
-  {
-    "id": "watarise-farm-winery",
-    "name": "ワタリセ ファーム＆ワイナリー",
-    "company": "ワタリセファーム＆ワイナリー（代表：藤田佳三）",
-    "brand": "ワタリセ",
-    "winery_type": "small",
-    "founded": "2018",
-    "founded_era": "平成30年",
-    "address": "福岡県北九州市若松区有毛1788",
-    "tel": "",
-    "url": "https://watarise.yoka-yoka.jp/",
-    "area": "北九州市若松区（有毛）",
-    "desc": "江戸時代から代々続く農家の藤田佳三氏が、平成28年10月認定の「汐風香る魅惑のワイン特区」を活用し、平成30年2月26日に醸造免許を取得して開業した北九州産第1号ワイナリー。自家栽培・自家醸造100%のワイン造りを行う家族経営の小さなワイナリー。",
-    "visit": "営業時間9:00〜17:00、不定休（見学可否は要問合せ）",
-    "wine_style": "red,white,rose",
-    "main_grape": "merlot",
-    "gi": "",
-    "grapes": [
-      "メルロー",
-      "カベルネ・フラン",
-      "シャルドネ",
-      "シュナン・ブラン",
-      "ケルナー",
-      "キャンベルアーリー",
-      "巨峰"
-    ],
-    "brands": [
-      {
-        "name": "ワタリセ メルロー2017",
-        "type": "赤ワイン",
-        "specs": "",
-        "grapes": "メルロー"
-      },
-      {
-        "name": "ワタリセ ルージュ2022",
-        "type": "赤ワイン",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "ワタリセ ロゼ2022",
-        "type": "ロゼ",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "ピノ・ノワール2022",
-        "type": "赤ワイン",
-        "specs": "",
-        "grapes": "ピノ・ノワール"
-      }
-    ],
-    "features": [
-      "北九州市若松区で江戸時代から続く農家が営む家族経営のワイナリー",
-      "「汐風香る魅惑のワイン特区」を活用し平成30年2月に醸造免許を取得、北九州産第1号ワイナリーとなった",
-      "自家栽培・自家醸造100%のワイン造り"
-    ],
-    "nearest_station": "",
-    "source": "https://www.city.kitakyushu.lg.jp/kikaku/28500124.html",
-    "lat": 33.862,
-    "lng": 130.681,
-    "name_en": "Watarise Farm & Winery"
+ {
+  "id": "kyoho-wine",
+  "name": "巨峰ワイン",
+  "company": "KYOHO JAPAN株式会社",
+  "brand": "巨峰葡萄酒",
+  "winery_type": "winery",
+  "founded": "1972",
+  "founded_era": "昭和47年",
+  "address": "福岡県久留米市田主丸町益生田246-1",
+  "tel": "0943-72-2382",
+  "url": "http://www.kyoho-winery.com/",
+  "area": "久留米市田主丸町",
+  "desc": "巨峰開植の地・田主丸で1972年に日本初の巨峰ワインを生み出した、福岡を代表するフルーツワイナリー。地元果実を丁寧に仕込む。",
+  "visit": "ショップ9:00〜17:00。地下貯蔵庫見学、試飲、レストラン、バーベキュー施設あり。",
+  "wine_style": "red,white",
+  "main_grape": "kyoho",
+  "gi": "",
+  "grapes": [
+   "巨峰",
+   "ブルーベリー"
+  ],
+  "brands": [
+   {
+    "name": "巨峰葡萄酒ドライ",
+    "type": "赤ワイン",
+    "specs": "田主丸特産巨峰から造るすっきりした辛口。",
+    "grapes": "巨峰"
+   },
+   {
+    "name": "巨峰葡萄酒ルージュ",
+    "type": "赤ワイン",
+    "specs": "巨峰らしいやわらかな果実味を生かした中核商品。",
+    "grapes": "巨峰"
+   },
+   {
+    "name": "巨峰葡萄酒スウィート",
+    "type": "甘口ワイン",
+    "specs": "巨峰の香りを前面に出した甘口。",
+    "grapes": "巨峰"
+   }
+  ],
+  "features": [
+   "日本初の巨峰ワインが誕生した福岡で最も古いワイナリー",
+   "耳納連山の森の中に立地",
+   "ブルーベリー・あまおう・キウイなど多彩なフルーツワインも展開"
+  ],
+  "nearest_station": "JR久大本線田主丸駅",
+  "source": "https://www.kyoho-winery.com/",
+  "lat": 33.406,
+  "lng": 130.728,
+  "name_en": "Kyoho Wine"
+ },
+ {
+  "id": "watarise-farm-winery",
+  "name": "ワタリセ ファーム＆ワイナリー",
+  "company": "ワタリセファーム＆ワイナリー（代表：藤田佳三）",
+  "brand": "ワタリセ",
+  "winery_type": "small",
+  "founded": "2018",
+  "founded_era": "平成30年",
+  "address": "福岡県北九州市若松区有毛1788",
+  "tel": "",
+  "url": "https://watarise.yoka-yoka.jp/",
+  "area": "北九州市若松区（有毛）",
+  "desc": "江戸時代から代々続く農家の藤田佳三氏が、平成28年10月認定の「汐風香る魅惑のワイン特区」を活用し、平成30年2月26日に醸造免許を取得して開業した北九州産第1号ワイナリー。自家栽培・自家醸造100%のワイン造りを行う家族経営の小さなワイナリー。",
+  "visit": "営業時間9:00〜17:00、不定休（見学可否は要問合せ）",
+  "wine_style": "red,white,rose",
+  "main_grape": "merlot",
+  "gi": "",
+  "grapes": [
+   "メルロー",
+   "カベルネ・フラン",
+   "シャルドネ",
+   "シュナン・ブラン",
+   "ケルナー",
+   "キャンベルアーリー",
+   "巨峰"
+  ],
+  "brands": [
+   {
+    "name": "ワタリセ メルロー2017",
+    "type": "赤ワイン",
+    "specs": "",
+    "grapes": "メルロー"
+   },
+   {
+    "name": "ワタリセ ルージュ2022",
+    "type": "赤ワイン",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "ワタリセ ロゼ2022",
+    "type": "ロゼ",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "ピノ・ノワール2022",
+    "type": "赤ワイン",
+    "specs": "",
+    "grapes": "ピノ・ノワール"
+   }
+  ],
+  "features": [
+   "北九州市若松区で江戸時代から続く農家が営む家族経営のワイナリー",
+   "「汐風香る魅惑のワイン特区」を活用し平成30年2月に醸造免許を取得、北九州産第1号ワイナリーとなった",
+   "自家栽培・自家醸造100%のワイン造り"
+  ],
+  "nearest_station": "",
+  "source": "https://www.city.kitakyushu.lg.jp/kikaku/28500124.html",
+  "lat": 33.862,
+  "lng": 130.681,
+  "name_en": "Watarise Farm & Winery",
+  "nearest_station_calc": {
+   "station": "水巻",
+   "line": "JR鹿児島本線",
+   "distance_m": 1660,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ }
 ]

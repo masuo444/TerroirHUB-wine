@@ -1,196 +1,231 @@
 [
-  {
-    "id": "sunmamoru-winery",
-    "name": "サンマモルワイナリー（下北ワイン）",
-    "company": "有限会社サンマモルワイナリー",
-    "brand": "下北ワイン",
-    "winery_type": "estate",
-    "founded": "2006",
-    "founded_era": "平成18年（醸造開始）",
-    "address": "青森県むつ市川内町川代1-6",
-    "tel": "0175-42-3870",
-    "url": "https://www.sunmamoru.com/",
-    "area": "むつ市",
-    "desc": "本州最北の下北半島でぶどうを育て、冷涼で昼夜差の大きい気候を生かした下北ワインを展開するワイナリー。",
-    "visit": "営業時間：10:00〜17:00",
-    "wine_style": "mixed",
-    "main_grape": "pinotnoir",
-    "gi": "",
-    "grapes": [
-      "ピノ・ノワール",
-      "メルロ",
-      "ライヒェンシュタイナー",
-      "シュロンブルガー"
-    ],
-    "brands": [
-      {
-        "name": "下北ワイン（Shimokita Wine）",
-        "type": "赤・白・ロゼ・スパークリング",
-        "specs": "",
-        "grapes": ""
-      }
-    ],
-    "features": [
-      "本州最北のワイナリー",
-      "下北半島産ブドウ",
-      "ブルゴーニュと類似した気候"
-    ],
-    "nearest_station": "",
-    "source": "https://www.sunmamoru.com/",
-    "lat": 41.0678,
-    "lng": 141.1478,
-    "name_en": "Sunmamoru Winery (Shimokita Wine)"
-  },
-  {
-    "id": "fattoria-da-sasino",
-    "name": "ファットリア ダ・サスィーノ",
-    "company": "Fattoria da Sasino（運営者：笹森通彰）",
-    "brand": "Fattoria da Sasino",
-    "winery_type": "estate",
-    "founded": "2010",
-    "founded_era": "平成22年（醸造免許取得）",
-    "address": "青森県弘前市大字高屋字安田185",
-    "tel": "0172-26-6368",
-    "url": "https://dasasino.com/",
-    "area": "弘前市",
-    "desc": "霊峰岩木山を臨む畑でネッビオーロ、マルヴァジア、シャルドネなどを中心に栽培・醸造を行う施設。地産地消にこだわるイタリアンレストランの経営者が自身で栽培するブドウからワイン製造を開始しました。",
-    "visit": "営業日・レストラン営業は事前確認推奨。",
-    "wine_style": "mixed",
-    "main_grape": "nebbiolo",
-    "gi": "",
-    "grapes": [
-      "ネッビオーロ",
-      "マルヴァジア",
-      "シャルドネ"
-    ],
-    "brands": [
-      {
-        "name": "Fattoria da Sasino",
-        "type": "赤・白",
-        "specs": "",
-        "grapes": ""
-      }
-    ],
-    "features": [
-      "岩木山を臨む畑",
-      "イタリアン品種特化",
-      "イタリアンレストラン併設"
-    ],
-    "nearest_station": "",
-    "source": "https://www.winery.or.jp/winery-map/12685/",
-    "lat": 40.6067,
-    "lng": 140.4078,
-    "name_en": "Fattoria da Sasino"
-  },
-  {
-    "id": "hachinohe-winery",
-    "name": "はちのへワイナリー",
-    "company": "",
-    "brand": "",
-    "winery_type": "estate",
-    "founded": "2017",
-    "founded_era": "",
-    "address": "青森県八戸市南郷大字中野字志民長根23-1",
-    "tel": "0178-44-7655",
-    "url": "http://www.h-winery.com/",
-    "area": "八戸市",
-    "desc": "八戸市南郷の自然の中でぶどう栽培と醸造を行う地域密着型の小規模ワイナリー。",
-    "visit": "営業日・見学対応は事前確認推奨。",
-    "wine_style": "mixed",
-    "main_grape": "yamabudou",
-    "gi": "",
-    "grapes": [
-      "山ぶどう",
-      "キャンベル・アーリー"
-    ],
-    "brands": [
-      "はちのへワイン"
-    ],
-    "features": [
-      "八戸市南郷のワイナリー"
-    ],
-    "nearest_station": "",
-    "source": "https://nippon.wine/winery/12020010345/",
-    "lat": 40.5017,
-    "lng": 141.5078,
-    "name_en": "Hachinohe Winery"
-  },
-  {
-    "id": "nikka-cidre-hirosaki",
-    "name": "ニッカシードル弘前工場",
-    "company": "ニッカウヰスキー株式会社",
-    "brand": "ニッカシードル",
-    "winery_type": "large",
-    "founded": "1969",
-    "founded_era": "",
-    "address": "青森県弘前市大字栄町2-1-1",
-    "tel": "0172-35-2511",
-    "url": "https://www.nikka.com/company/facility.html",
-    "area": "弘前市",
-    "desc": "国産リンゴ100％のスパークリングワイン「ニッカシードル」を製造しております。",
-    "visit": "工場見学は受け付けていない",
-    "wine_style": "sparkling",
-    "main_grape": "apple",
-    "gi": "",
-    "grapes": [
-      "りんご"
-    ],
-    "brands": [
-      {
-        "name": "ニッカシードル",
-        "type": "スパークリングワイン（シードル）",
-        "specs": "",
-        "grapes": "国産りんご100%"
-      }
-    ],
-    "features": [
-      "国産りんご100%シードル",
-      "ニッカウヰスキー系列",
-      "弘前市"
-    ],
-    "nearest_station": "",
-    "source": "https://www.winery.or.jp/winery-map/487/",
-    "lat": 40.6067,
-    "lng": 140.4642,
-    "name_en": "Nikka Cidre Hirosaki Factory"
-  },
-  {
-    "id": "sawauchi-jozo",
-    "name": "澤内醸造",
-    "company": "株式会社サンワーズ",
-    "brand": "",
-    "winery_type": "small",
-    "founded": "2017",
-    "founded_era": "平成29年",
-    "address": "青森県八戸市柏崎2-10-4",
-    "tel": "0178-22-7638",
-    "url": "http://www.sawauchi.info/",
-    "area": "八戸市（醸造所は柏崎、原料ぶどうは南郷地区産）",
-    "desc": "2017年11月21日より醸造開始。イタリアンレストランのシェフである澤内昭宏氏が営むワイナリーで、八戸市南郷地区産ぶどうを使用した「八戸ワイン」、南部町産や山形県高畠町産ぶどうを使用した「日本ワイン」、県南産りんごを使用したシードルを醸造している。",
-    "visit": "併設のワインショップ「ブロンズグリル」でテイスティング・販売を実施（営業時間11:00〜17:00、定休日月曜）",
-    "wine_style": "white",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "シャルドネ"
-    ],
-    "brands": [
-      {
-        "name": "Ga Chardonnay 2021",
-        "type": "白ワイン",
-        "specs": "",
-        "grapes": "シャルドネ（八戸市南郷産）"
-      }
-    ],
-    "features": [
-      "イタリアンレストランのシェフが営む自社醸造ワイナリー",
-      "八戸市南郷地区産ぶどうを使用した「八戸ワイン」を製造",
-      "県南産りんごを使用したシードルも製造"
-    ],
-    "nearest_station": "",
-    "source": "https://nihonwine.jp/winery_intro/sawauchi_jozo/",
-    "lat": 40.503,
-    "lng": 141.495,
-    "name_en": "Sawauchi Jozo"
+ {
+  "id": "sunmamoru-winery",
+  "name": "サンマモルワイナリー（下北ワイン）",
+  "company": "有限会社サンマモルワイナリー",
+  "brand": "下北ワイン",
+  "winery_type": "estate",
+  "founded": "2006",
+  "founded_era": "平成18年（醸造開始）",
+  "address": "青森県むつ市川内町川代1-6",
+  "tel": "0175-42-3870",
+  "url": "https://www.sunmamoru.com/",
+  "area": "むつ市",
+  "desc": "本州最北の下北半島でぶどうを育て、冷涼で昼夜差の大きい気候を生かした下北ワインを展開するワイナリー。",
+  "visit": "営業時間：10:00〜17:00",
+  "wine_style": "mixed",
+  "main_grape": "pinotnoir",
+  "gi": "",
+  "grapes": [
+   "ピノ・ノワール",
+   "メルロ",
+   "ライヒェンシュタイナー",
+   "シュロンブルガー"
+  ],
+  "brands": [
+   {
+    "name": "下北ワイン（Shimokita Wine）",
+    "type": "赤・白・ロゼ・スパークリング",
+    "specs": "",
+    "grapes": ""
+   }
+  ],
+  "features": [
+   "本州最北のワイナリー",
+   "下北半島産ブドウ",
+   "ブルゴーニュと類似した気候"
+  ],
+  "nearest_station": "",
+  "source": "https://www.sunmamoru.com/",
+  "lat": 41.0678,
+  "lng": 141.1478,
+  "name_en": "Sunmamoru Winery (Shimokita Wine)",
+  "nearest_station_calc": {
+   "station": "陸奥横浜",
+   "line": "JR大湊線",
+   "distance_m": 8810,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ },
+ {
+  "id": "fattoria-da-sasino",
+  "name": "ファットリア ダ・サスィーノ",
+  "company": "Fattoria da Sasino（運営者：笹森通彰）",
+  "brand": "Fattoria da Sasino",
+  "winery_type": "estate",
+  "founded": "2010",
+  "founded_era": "平成22年（醸造免許取得）",
+  "address": "青森県弘前市大字高屋字安田185",
+  "tel": "0172-26-6368",
+  "url": "https://dasasino.com/",
+  "area": "弘前市",
+  "desc": "霊峰岩木山を臨む畑でネッビオーロ、マルヴァジア、シャルドネなどを中心に栽培・醸造を行う施設。地産地消にこだわるイタリアンレストランの経営者が自身で栽培するブドウからワイン製造を開始しました。",
+  "visit": "営業日・レストラン営業は事前確認推奨。",
+  "wine_style": "mixed",
+  "main_grape": "nebbiolo",
+  "gi": "",
+  "grapes": [
+   "ネッビオーロ",
+   "マルヴァジア",
+   "シャルドネ"
+  ],
+  "brands": [
+   {
+    "name": "Fattoria da Sasino",
+    "type": "赤・白",
+    "specs": "",
+    "grapes": ""
+   }
+  ],
+  "features": [
+   "岩木山を臨む畑",
+   "イタリアン品種特化",
+   "イタリアンレストラン併設"
+  ],
+  "nearest_station": "",
+  "source": "https://www.winery.or.jp/winery-map/12685/",
+  "lat": 40.6067,
+  "lng": 140.4078,
+  "name_en": "Fattoria da Sasino",
+  "nearest_station_calc": {
+   "station": "弘高下",
+   "line": "弘南鉄道大鰐線",
+   "distance_m": 5330,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "hachinohe-winery",
+  "name": "はちのへワイナリー",
+  "company": "",
+  "brand": "",
+  "winery_type": "estate",
+  "founded": "2017",
+  "founded_era": "",
+  "address": "青森県八戸市南郷大字中野字志民長根23-1",
+  "tel": "0178-44-7655",
+  "url": "http://www.h-winery.com/",
+  "area": "八戸市",
+  "desc": "八戸市南郷の自然の中でぶどう栽培と醸造を行う地域密着型の小規模ワイナリー。",
+  "visit": "営業日・見学対応は事前確認推奨。",
+  "wine_style": "mixed",
+  "main_grape": "yamabudou",
+  "gi": "",
+  "grapes": [
+   "山ぶどう",
+   "キャンベル・アーリー"
+  ],
+  "brands": [
+   "はちのへワイン"
+  ],
+  "features": [
+   "八戸市南郷のワイナリー"
+  ],
+  "nearest_station": "",
+  "source": "https://nippon.wine/winery/12020010345/",
+  "lat": 40.5017,
+  "lng": 141.5078,
+  "name_en": "Hachinohe Winery",
+  "nearest_station_calc": {
+   "station": "小中野",
+   "line": "JR八戸線",
+   "distance_m": 1910,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "nikka-cidre-hirosaki",
+  "name": "ニッカシードル弘前工場",
+  "company": "ニッカウヰスキー株式会社",
+  "brand": "ニッカシードル",
+  "winery_type": "large",
+  "founded": "1969",
+  "founded_era": "",
+  "address": "青森県弘前市大字栄町2-1-1",
+  "tel": "0172-35-2511",
+  "url": "https://www.nikka.com/company/facility.html",
+  "area": "弘前市",
+  "desc": "国産リンゴ100％のスパークリングワイン「ニッカシードル」を製造しております。",
+  "visit": "工場見学は受け付けていない",
+  "wine_style": "sparkling",
+  "main_grape": "apple",
+  "gi": "",
+  "grapes": [
+   "りんご"
+  ],
+  "brands": [
+   {
+    "name": "ニッカシードル",
+    "type": "スパークリングワイン（シードル）",
+    "specs": "",
+    "grapes": "国産りんご100%"
+   }
+  ],
+  "features": [
+   "国産りんご100%シードル",
+   "ニッカウヰスキー系列",
+   "弘前市"
+  ],
+  "nearest_station": "",
+  "source": "https://www.winery.or.jp/winery-map/487/",
+  "lat": 40.6067,
+  "lng": 140.4642,
+  "name_en": "Nikka Cidre Hirosaki Factory",
+  "nearest_station_calc": {
+   "station": "中央弘前",
+   "line": "弘南鉄道大鰐線",
+   "distance_m": 1080,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "sawauchi-jozo",
+  "name": "澤内醸造",
+  "company": "株式会社サンワーズ",
+  "brand": "",
+  "winery_type": "small",
+  "founded": "2017",
+  "founded_era": "平成29年",
+  "address": "青森県八戸市柏崎2-10-4",
+  "tel": "0178-22-7638",
+  "url": "http://www.sawauchi.info/",
+  "area": "八戸市（醸造所は柏崎、原料ぶどうは南郷地区産）",
+  "desc": "2017年11月21日より醸造開始。イタリアンレストランのシェフである澤内昭宏氏が営むワイナリーで、八戸市南郷地区産ぶどうを使用した「八戸ワイン」、南部町産や山形県高畠町産ぶどうを使用した「日本ワイン」、県南産りんごを使用したシードルを醸造している。",
+  "visit": "併設のワインショップ「ブロンズグリル」でテイスティング・販売を実施（営業時間11:00〜17:00、定休日月曜）",
+  "wine_style": "white",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "シャルドネ"
+  ],
+  "brands": [
+   {
+    "name": "Ga Chardonnay 2021",
+    "type": "白ワイン",
+    "specs": "",
+    "grapes": "シャルドネ（八戸市南郷産）"
+   }
+  ],
+  "features": [
+   "イタリアンレストランのシェフが営む自社醸造ワイナリー",
+   "八戸市南郷地区産ぶどうを使用した「八戸ワイン」を製造",
+   "県南産りんごを使用したシードルも製造"
+  ],
+  "nearest_station": "",
+  "source": "https://nihonwine.jp/winery_intro/sawauchi_jozo/",
+  "lat": 40.503,
+  "lng": 141.495,
+  "name_en": "Sawauchi Jozo",
+  "nearest_station_calc": {
+   "station": "本八戸",
+   "line": "JR八戸線",
+   "distance_m": 1570,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ }
 ]

@@ -85,6 +85,13 @@
    "url": "https://kodawari.cc/",
    "reason": "kodawari.cc から移転",
    "checked": "2026-07-27"
+  },
+  "nearest_station_calc": {
+   "station": "下菅谷",
+   "line": "JR水郡線",
+   "distance_m": 550,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
  },
  {
@@ -123,7 +130,14 @@
   "source": "https://hiyama.hitachiota.jp/",
   "lat": 36.5399,
   "lng": 140.532,
-  "name_en": "Hiyama Shuzou (Hitachi Wine)"
+  "name_en": "Hiyama Shuzou (Hitachi Wine)",
+  "nearest_station_calc": {
+   "station": "常陸太田",
+   "line": "JR水郡線",
+   "distance_m": 1040,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "tsukuba-winery",
@@ -168,7 +182,14 @@
   "source": "https://tsukuba-winery.kadoya-company.com/",
   "lat": 36.1098,
   "lng": 140.1252,
-  "name_en": "Tsukuba Winery"
+  "name_en": "Tsukuba Winery",
+  "nearest_station_calc": {
+   "station": "つくば",
+   "line": "つくばエクスプレス線",
+   "distance_m": 3310,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "bees-knees-vineyards",
@@ -204,7 +225,14 @@
   "source": "https://beesknees.co.jp/",
   "lat": 36.1688,
   "lng": 140.1188,
-  "name_en": "Bee's Knees Vineyards"
+  "name_en": "Bee's Knees Vineyards",
+  "nearest_station_calc": {
+   "station": "宮脇",
+   "line": "筑波山鋼索鉄道線",
+   "distance_m": 5320,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "domaine-mito",
@@ -273,7 +301,14 @@
   "source": "https://www.winery.or.jp/winery-map/15066/",
   "lat": 36.569,
   "lng": 140.557,
-  "name_en": "Buryu Winery"
+  "name_en": "Buryu Winery",
+  "nearest_station_calc": {
+   "station": "常陸太田",
+   "line": "JR水郡線",
+   "distance_m": 4950,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "raifuku-shuzou-wine",
@@ -308,7 +343,14 @@
   "source": "https://www.winery.or.jp/winery-map/8379/",
   "lat": 36.281,
   "lng": 139.983,
-  "name_en": "Raifuku Shuzou"
+  "name_en": "Raifuku Shuzou",
+  "nearest_station_calc": {
+   "station": "大田郷",
+   "line": "関東鉄道常総線",
+   "distance_m": 2110,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  },
  {
   "id": "tsukuba-vineyard-kurihara",
@@ -359,6 +401,13 @@
   "source": "https://nihonwine.jp/winery_intro/tsukuba-vineyard/",
   "lat": 36.216,
   "lng": 140.132,
-  "name_en": "Tsukuba Vineyard Kurihara Winery"
+  "name_en": "Tsukuba Vineyard Kurihara Winery",
+  "nearest_station_calc": {
+   "station": "宮脇",
+   "line": "筑波山鋼索鉄道線",
+   "distance_m": 2910,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
  }
 ]

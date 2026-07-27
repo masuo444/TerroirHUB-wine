@@ -1,181 +1,202 @@
 [
-  {
-    "id": "kumamoto-wine",
-    "name": "熊本ワイン",
-    "company": "熊本ワイン株式会社",
-    "brand": "菊鹿",
-    "winery_type": "winery",
-    "founded": "1999",
-    "founded_era": "平成11年",
-    "address": "熊本県熊本市北区和泉町168-17",
-    "tel": "096-275-2277",
-    "url": "https://www.kumamotowine.co.jp/",
-    "area": "熊本市北区",
-    "desc": "熊本県産ぶどうにこだわり、菊鹿や熊本県内各地の契約農家と連携してテロワールを映すワインを造る県内中核ワイナリー。",
-    "visit": "ショップ・試飲対応あり。見学やイベント開催は事前確認推奨。",
-    "wine_style": "red,white",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "シャルドネ",
-      "メルロー"
-    ],
-    "brands": [
-      "菊鹿"
-    ],
-    "features": [
-      "熊本県内の山鹿・植木・菊池・益城・不知火・熊本市内と広範囲の産地からぶどうを調達",
-      "「Kumamoto Terroir」として国際的にも認知"
-    ],
-    "nearest_station": "",
-    "source": "https://nippon.wine/winery/19430010294/",
-    "lat": 32.862,
-    "lng": 130.722,
-    "name_en": "Kumamoto Wine"
-  },
-  {
-    "id": "kikuka-winery",
-    "name": "菊鹿ワイナリー",
-    "company": "熊本ワインファーム株式会社",
-    "brand": "菊鹿ワイン",
-    "winery_type": "estate",
-    "founded": "2018",
-    "founded_era": "平成30年",
-    "address": "熊本県山鹿市菊鹿町相良559-2",
-    "tel": "0968-41-8585",
-    "url": "https://kumamotowinefarm.co.jp/",
-    "area": "山鹿市菊鹿町",
-    "desc": "山鹿市菊鹿町の自社畑・契約畑のぶどうだけを使い、熊本の冷涼産地を表現するエステート型ワイナリー。",
-    "visit": "試飲カウンター・ワインショップ・カフェ・ピザ・パスタのイートインあり。",
-    "wine_style": "red,white",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "シャルドネ",
-      "マスカット・ベーリーA",
-      "メルロー"
-    ],
-    "brands": [
-      "菊鹿ワイン"
-    ],
-    "features": [
-      "2018年オープン",
-      "国内外のコンクールで多数受賞",
-      "山鹿市菊鹿町産ぶどうのみ使用",
-      "阿蘇山西側に位置"
-    ],
-    "nearest_station": "",
-    "source": "https://nippon.wine/winery/19430010341/",
-    "lat": 33.001,
-    "lng": 130.76,
-    "name_en": "Kikuka Winery"
-  },
-  {
-    "id": "aozora-wine",
-    "name": "青空ワイン",
-    "company": "青空ワイン",
-    "brand": "",
-    "winery_type": "small",
-    "founded": "2006",
-    "founded_era": "平成18年",
-    "address": "熊本県荒尾市増永2000-15",
-    "tel": "0968-62-3446",
-    "url": "https://www.instagram.com/aoken.2005/",
-    "area": "荒尾市",
-    "desc": "荒尾市で営む小規模ワイナリー。地元で育てたぶどうや果実を生かし、親しみやすい少量生産のワインを手がける。",
-    "visit": "営業日・見学対応は事前確認推奨。",
-    "wine_style": "red,white",
-    "main_grape": "delaware",
-    "gi": "",
-    "grapes": [
-      "デラウェア",
-      "巨峰"
-    ],
-    "brands": [
-      "青空ワイン"
-    ],
-    "features": [
-      "荒尾市の小規模ワイナリー",
-      "少量仕込みで地域密着型の展開"
-    ],
-    "nearest_station": "",
-    "source": "https://nippon.wine/winery/19430010297/",
-    "lat": 32.997,
-    "lng": 130.594,
-    "name_en": "Aozora Wine"
-  },
-  {
-    "id": "mercian-yatsushiro",
-    "name": "メルシャン　八代工場",
-    "company": "メルシャン株式会社",
-    "brand": "",
-    "winery_type": "winery",
-    "founded": "1939",
-    "founded_era": "昭和14年",
-    "address": "熊本県八代市三楽町3-1",
-    "tel": "0965-32-5121",
-    "url": "https://www.mercian.co.jp/",
-    "area": "八代市",
-    "desc": "熊本県八代市にあるメルシャンの製造拠点。国内向けワイン製品を支える大規模工場の一つ。",
-    "visit": "一般向け見学なし。",
-    "wine_style": "red,white",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "シャルドネ",
-      "メルロー"
-    ],
-    "brands": [
-      "おいしい酸化防止剤無添加ワイン",
-      "ビストロ"
-    ],
-    "features": [
-      "メルシャンの国内生産拠点",
-      "八代市の大規模製造工場"
-    ],
-    "nearest_station": "",
-    "source": "https://nippon.wine/winery/19430010295/",
-    "lat": 32.505,
-    "lng": 130.598,
-    "name_en": "Mercian Yatsushiro Factory"
-  },
-  {
-    "id": "takahama-wine",
-    "name": "高浜ワイン",
-    "company": "高浜ぶどう会（天草市天草町高浜地区振興会）",
-    "brand": "高浜ワイン",
-    "winery_type": "small",
-    "founded": "2017",
-    "founded_era": "平成29年",
-    "address": "熊本県天草市天草町高浜南501-1（高浜地区コミュニティセンター内）",
-    "tel": "0969-42-1125",
-    "url": "http://takahamabudou.amakusa-web.jp/",
-    "area": "天草市天草町高浜",
-    "desc": "明治12年頃から地域で栽培される「高浜ぶどう」（甲州に近い品種）を使用したワイン。2015年に山梨県の大和酒造の協力で試作を開始し、2017年から高浜ぶどう会の自主事業として同酒造への委託醸造で本格製造を開始した。生産量が少なく、毎年予約で完売する希少なワイン。",
-    "visit": "ワイナリー・醸造施設の見学は不可（委託醸造のため）。ホテルアレグリアガーデンズ天草や五足のくつ等での期間限定・予約制販売。",
-    "wine_style": "white",
-    "main_grape": "koshu",
-    "gi": "",
-    "grapes": [
-      "高浜ぶどう（甲州系）"
-    ],
-    "brands": [
-      {
-        "name": "天草高濱甲州ワイン",
-        "type": "白ワイン",
-        "specs": "委託醸造（山梨県 大和酒造）",
-        "grapes": "高浜ぶどう（甲州系）"
-      }
-    ],
-    "features": [
-      "明治12年頃から続く地域特産「高浜ぶどう」を使用",
-      "2017年から大和酒造（山梨）への委託醸造で本格製造を開始",
-      "生産量が少なく毎年予約で完売する希少なワイン"
-    ],
-    "nearest_station": "",
-    "source": "https://kumanichi.com/articles/856845",
-    "lat": 32.428,
-    "lng": 130.007,
-    "name_en": "Takahama Wine"
+ {
+  "id": "kumamoto-wine",
+  "name": "熊本ワイン",
+  "company": "熊本ワイン株式会社",
+  "brand": "菊鹿",
+  "winery_type": "winery",
+  "founded": "1999",
+  "founded_era": "平成11年",
+  "address": "熊本県熊本市北区和泉町168-17",
+  "tel": "096-275-2277",
+  "url": "https://www.kumamotowine.co.jp/",
+  "area": "熊本市北区",
+  "desc": "熊本県産ぶどうにこだわり、菊鹿や熊本県内各地の契約農家と連携してテロワールを映すワインを造る県内中核ワイナリー。",
+  "visit": "ショップ・試飲対応あり。見学やイベント開催は事前確認推奨。",
+  "wine_style": "red,white",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "シャルドネ",
+   "メルロー"
+  ],
+  "brands": [
+   "菊鹿"
+  ],
+  "features": [
+   "熊本県内の山鹿・植木・菊池・益城・不知火・熊本市内と広範囲の産地からぶどうを調達",
+   "「Kumamoto Terroir」として国際的にも認知"
+  ],
+  "nearest_station": "",
+  "source": "https://nippon.wine/winery/19430010294/",
+  "lat": 32.862,
+  "lng": 130.722,
+  "name_en": "Kumamoto Wine",
+  "nearest_station_calc": {
+   "station": "新須屋",
+   "line": "熊本電鉄菊池線",
+   "distance_m": 1240,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ },
+ {
+  "id": "kikuka-winery",
+  "name": "菊鹿ワイナリー",
+  "company": "熊本ワインファーム株式会社",
+  "brand": "菊鹿ワイン",
+  "winery_type": "estate",
+  "founded": "2018",
+  "founded_era": "平成30年",
+  "address": "熊本県山鹿市菊鹿町相良559-2",
+  "tel": "0968-41-8585",
+  "url": "https://kumamotowinefarm.co.jp/",
+  "area": "山鹿市菊鹿町",
+  "desc": "山鹿市菊鹿町の自社畑・契約畑のぶどうだけを使い、熊本の冷涼産地を表現するエステート型ワイナリー。",
+  "visit": "試飲カウンター・ワインショップ・カフェ・ピザ・パスタのイートインあり。",
+  "wine_style": "red,white",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "シャルドネ",
+   "マスカット・ベーリーA",
+   "メルロー"
+  ],
+  "brands": [
+   "菊鹿ワイン"
+  ],
+  "features": [
+   "2018年オープン",
+   "国内外のコンクールで多数受賞",
+   "山鹿市菊鹿町産ぶどうのみ使用",
+   "阿蘇山西側に位置"
+  ],
+  "nearest_station": "",
+  "source": "https://nippon.wine/winery/19430010341/",
+  "lat": 33.001,
+  "lng": 130.76,
+  "name_en": "Kikuka Winery"
+ },
+ {
+  "id": "aozora-wine",
+  "name": "青空ワイン",
+  "company": "青空ワイン",
+  "brand": "",
+  "winery_type": "small",
+  "founded": "2006",
+  "founded_era": "平成18年",
+  "address": "熊本県荒尾市増永2000-15",
+  "tel": "0968-62-3446",
+  "url": "https://www.instagram.com/aoken.2005/",
+  "area": "荒尾市",
+  "desc": "荒尾市で営む小規模ワイナリー。地元で育てたぶどうや果実を生かし、親しみやすい少量生産のワインを手がける。",
+  "visit": "営業日・見学対応は事前確認推奨。",
+  "wine_style": "red,white",
+  "main_grape": "delaware",
+  "gi": "",
+  "grapes": [
+   "デラウェア",
+   "巨峰"
+  ],
+  "brands": [
+   "青空ワイン"
+  ],
+  "features": [
+   "荒尾市の小規模ワイナリー",
+   "少量仕込みで地域密着型の展開"
+  ],
+  "nearest_station": "",
+  "source": "https://nippon.wine/winery/19430010297/",
+  "lat": 32.997,
+  "lng": 130.594,
+  "name_en": "Aozora Wine",
+  "nearest_station_calc": {
+   "station": "新玉名",
+   "line": "九州新幹線",
+   "distance_m": 6360,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "mercian-yatsushiro",
+  "name": "メルシャン　八代工場",
+  "company": "メルシャン株式会社",
+  "brand": "",
+  "winery_type": "winery",
+  "founded": "1939",
+  "founded_era": "昭和14年",
+  "address": "熊本県八代市三楽町3-1",
+  "tel": "0965-32-5121",
+  "url": "https://www.mercian.co.jp/",
+  "area": "八代市",
+  "desc": "熊本県八代市にあるメルシャンの製造拠点。国内向けワイン製品を支える大規模工場の一つ。",
+  "visit": "一般向け見学なし。",
+  "wine_style": "red,white",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "シャルドネ",
+   "メルロー"
+  ],
+  "brands": [
+   "おいしい酸化防止剤無添加ワイン",
+   "ビストロ"
+  ],
+  "features": [
+   "メルシャンの国内生産拠点",
+   "八代市の大規模製造工場"
+  ],
+  "nearest_station": "",
+  "source": "https://nippon.wine/winery/19430010295/",
+  "lat": 32.505,
+  "lng": 130.598,
+  "name_en": "Mercian Yatsushiro Factory",
+  "nearest_station_calc": {
+   "station": "八代",
+   "line": "JR鹿児島本線",
+   "distance_m": 2220,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "takahama-wine",
+  "name": "高浜ワイン",
+  "company": "高浜ぶどう会（天草市天草町高浜地区振興会）",
+  "brand": "高浜ワイン",
+  "winery_type": "small",
+  "founded": "2017",
+  "founded_era": "平成29年",
+  "address": "熊本県天草市天草町高浜南501-1（高浜地区コミュニティセンター内）",
+  "tel": "0969-42-1125",
+  "url": "http://takahamabudou.amakusa-web.jp/",
+  "area": "天草市天草町高浜",
+  "desc": "明治12年頃から地域で栽培される「高浜ぶどう」（甲州に近い品種）を使用したワイン。2015年に山梨県の大和酒造の協力で試作を開始し、2017年から高浜ぶどう会の自主事業として同酒造への委託醸造で本格製造を開始した。生産量が少なく、毎年予約で完売する希少なワイン。",
+  "visit": "ワイナリー・醸造施設の見学は不可（委託醸造のため）。ホテルアレグリアガーデンズ天草や五足のくつ等での期間限定・予約制販売。",
+  "wine_style": "white",
+  "main_grape": "koshu",
+  "gi": "",
+  "grapes": [
+   "高浜ぶどう（甲州系）"
+  ],
+  "brands": [
+   {
+    "name": "天草高濱甲州ワイン",
+    "type": "白ワイン",
+    "specs": "委託醸造（山梨県 大和酒造）",
+    "grapes": "高浜ぶどう（甲州系）"
+   }
+  ],
+  "features": [
+   "明治12年頃から続く地域特産「高浜ぶどう」を使用",
+   "2017年から大和酒造（山梨）への委託醸造で本格製造を開始",
+   "生産量が少なく毎年予約で完売する希少なワイン"
+  ],
+  "nearest_station": "",
+  "source": "https://kumanichi.com/articles/856845",
+  "lat": 32.428,
+  "lng": 130.007,
+  "name_en": "Takahama Wine"
+ }
 ]

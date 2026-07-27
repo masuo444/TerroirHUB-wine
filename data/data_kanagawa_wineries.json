@@ -1,266 +1,280 @@
 [
-  {
-    "id": "yokohama-winery",
-    "name": "横濱ワイナリー",
-    "company": "横濱ワイナリー株式会社",
-    "brand": "横濱ワイナリー",
-    "winery_type": "urban",
-    "founded": "2016",
-    "founded_era": "平成28年",
-    "address": "神奈川県横浜市中区新山下1-3-12",
-    "tel": "045-228-9713",
-    "url": "https://yokohamawinery.com/",
-    "area": "横浜市中区",
-    "desc": "山下埠頭の袂にある、横浜初のクラフトワイン醸造所。日本で一番小さく一番海に近いワイナリーを掲げ、自然派の“ハマワイン”を造る。",
-    "visit": "完全予約制の見学プログラムあり。試飲有料、ショップ営業は金曜・土日祝中心。",
-    "wine_style": "red,white,rose,sparkling",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "シャルドネ",
-      "ピノ・ノワール"
-    ],
-    "brands": [
-      {
-        "name": "hama wine",
-        "type": "赤・白・ロゼ・泡",
-        "specs": "自然酵母発酵・無濾過を基本とする主力シリーズ。",
-        "grapes": ""
-      }
-    ],
-    "features": [
-      "2016年9月設立の都市型ワイナリー",
-      "2019年に横浜市内でワインぶどう畑を開設",
-      "自然酵母・無濾過を重視したハマワインを展開"
-    ],
-    "nearest_station": "みなとみらい線元町・中華街駅（徒歩3分）",
-    "source": "https://www.winery.or.jp/winery-map/10691/",
-    "lat": 35.4384,
-    "lng": 139.6571,
-    "name_en": "Yokohama Winery"
-  },
-  {
-    "id": "oppama-verny-wine",
-    "name": "追浜ワイナリー（VERNY WINE）",
-    "company": "追浜商盛会",
-    "brand": "VERNY WINE",
-    "winery_type": "urban",
-    "founded": "2005",
-    "founded_era": "平成17年",
-    "address": "神奈川県横須賀市追浜町2-13",
-    "tel": "",
-    "url": "https://oppama-town.com/wine/",
-    "area": "横須賀市",
-    "desc": "追浜商盛会が地域活性化を目的に立ち上げた、追浜駅近くのコミュニティ型ワイナリー。横須賀の地名にちなむVERNY WINEを展開。",
-    "visit": "追浜こみゅに亭内のワイナリー兼コミュニティスペース。",
-    "wine_style": "red,white",
-    "main_grape": "cabernet-sauvignon",
-    "gi": "",
-    "grapes": [
-      "カベルネ・ソーヴィニヨン",
-      "ムールヴェードル",
-      "コンコード",
-      "マスカット・ゴールド",
-      "シャルドネ"
-    ],
-    "brands": [
-      "VERNY WINE"
-    ],
-    "features": [
-      "2005年2月醸造免許取得",
-      "追浜商盛会が地域活性化のために設立",
-      "2019年12月にVERNY WINEへ名称変更"
-    ],
-    "nearest_station": "京急本線追浜駅",
-    "source": "https://oppama-town.com/wine/",
-    "lat": 35.3891,
-    "lng": 139.6521,
-    "name_en": "Oppama Winery (VERNY WINE)"
-  },
-  {
-    "id": "mercian-fujisawa",
-    "name": "メルシャン　藤沢工場",
-    "company": "メルシャン株式会社",
-    "brand": "メルシャン",
-    "winery_type": "large",
-    "founded": "1973",
-    "founded_era": "",
-    "address": "神奈川県藤沢市城南4-9-1",
-    "tel": "0466-35-1093",
-    "url": "https://www.kirinholdings.com/jp/company/group/mercian/office/",
-    "area": "藤沢市",
-    "desc": "神奈川県藤沢市にある大規模ワイン製造拠点。日本有数の生産規模を持ち、メルシャンの中核工場として多様な製品を製造する。",
-    "visit": "施設見学なし。",
-    "wine_style": "red,white,rose,sparkling",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "シャルドネ",
-      "メルロー",
-      "カベルネ・ソーヴィニヨン"
-    ],
-    "brands": [
-      "おいしい酸化防止剤無添加ワイン",
-      "ボン・ルージュ"
-    ],
-    "features": [
-      "国内最大級のワイン製造設備",
-      "メルシャンの中核生産拠点",
-      "藤沢市の主要ワイン生産施設"
-    ],
-    "nearest_station": "小田急江ノ島線藤沢本町駅",
-    "source": "https://www.wine-info.jp/portal/winery/detail/?id=61",
-    "lat": 35.3518,
-    "lng": 139.4688,
-    "name_en": "Mercian Fujisawa Plant"
-  },
-  {
-    "id": "yokohama-kajitsu-jozo",
-    "name": "横浜果実醸造",
-    "company": "社会福祉法人中川徳生会",
-    "brand": "HAMANASHI",
-    "winery_type": "small",
-    "founded": "2026",
-    "founded_era": "令和8年",
-    "address": "神奈川県横浜市都筑区南山田",
-    "tel": "",
-    "url": "",
-    "area": "横浜市都筑区南山田",
-    "desc": "社会福祉法人中川徳生会が令和8年（2026年）7月2日付で酒類製造免許を取得し開業した横浜発のワイナリー。これまで十分に活用されてこなかった「浜なし」（横浜産梨の規格外品）や横浜産ブドウを原料に、地域資源を循環させる取り組みとして立ち上げられた。秋口の販売開始を予定している。",
-    "visit": "",
-    "wine_style": "white,sparkling,red",
-    "main_grape": "cabernet_sauvignon",
-    "gi": "",
-    "grapes": [
-      "カベルネ・ソーヴィニヨン"
-    ],
-    "brands": [
-      {
-        "name": "HAMANASHI PETILLANT 2025",
-        "type": "スパークリング（微発泡・梨使用）",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "HAMANASHI BLANC 2026",
-        "type": "白ワイン（やや辛口・梨使用）",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "Cabernet Sauvignon \"Clairet\" 2025",
-        "type": "赤ワイン（クレレスタイル）",
-        "specs": "",
-        "grapes": "カベルネ・ソーヴィニヨン"
-      }
-    ],
-    "features": [
-      "社会福祉法人が運営し、2026年7月2日に酒類製造免許を取得した横浜発の新規ワイナリー",
-      "規格外品の「浜なし」（横浜産梨）や横浜産ブドウを活用し、地域資源を循環させる取り組み"
-    ],
-    "nearest_station": "",
-    "source": "https://nihonwine.jp/nihonwine-news/yokohamahatu/",
-    "lat": 35.556,
-    "lng": 139.586,
-    "name_en": "Yokohama Kajitsu Jozo (Yokohama Fruit Winery)"
-  },
-  {
-    "id": "kentoku-winery",
-    "name": "ケントクワイナリー（Kentoku Winery）",
-    "company": "農業法人八咲生農園株式会社（大森産業株式会社グループ）",
-    "brand": "相模原ワイン",
-    "winery_type": "estate",
-    "founded": "2023",
-    "founded_era": "令和5年",
-    "address": "神奈川県相模原市中央区上溝349-2",
-    "tel": "046-245-0808",
-    "url": "https://www.kentokuestate-winery.com/",
-    "area": "相模原市中央区上溝",
-    "desc": "産業廃棄物リサイクル業を営む大森産業株式会社が、高齢従業員の再雇用の場として2014年に農業法人八咲生農園株式会社を設立しブドウ栽培を開始。相模原市「さがみはらのめぐみワイン特区」の認定を受け、2023年1月に果実酒製造免許を取得し自社醸造をスタート。それ以前は委託醸造で「神奈川ワイン」として販売していた。相模原市唯一のワイナリーで、自社畑のぶどうのみを使用する単一品種ワイン「相模原ワイン」を展開している。",
-    "visit": "オンラインショップ・取扱店舗での購入可",
-    "wine_style": "red,white",
-    "main_grape": "",
-    "gi": "",
-    "grapes": [
-      "カベルネ・ソーヴィニヨン",
-      "カベルネ・フラン",
-      "メルロー",
-      "ピノ・ノワール",
-      "シャルドネ",
-      "ソーヴィニヨン・ブラン",
-      "マスカット・ベーリーA",
-      "ブラック・クイーン",
-      "アルバリーニョ",
-      "プティ・マンサン"
-    ],
-    "brands": [
-      {
-        "name": "MEGUMI",
-        "type": "白ワイン",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "TSUNAGU",
-        "type": "白ワイン",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "TSUDOI",
-        "type": "白ワイン",
-        "specs": "",
-        "grapes": ""
-      },
-      {
-        "name": "SAGAMI",
-        "type": "白ワイン",
-        "specs": "",
-        "grapes": ""
-      }
-    ],
-    "features": [
-      "相模原市唯一のワイナリー。「さがみはらのめぐみワイン特区」認定を受け2023年1月に自社醸造免許取得",
-      "産業廃棄物リサイクル業の大森産業グループが高齢従業員の再雇用の場として立ち上げた農業法人が母体",
-      "自社畑のぶどうのみを使用した単一品種ワイン「相模原ワイン」を製造"
-    ],
-    "nearest_station": "",
-    "source": "https://terroir.media/?p=1852",
-    "lat": 35.586,
-    "lng": 139.374,
-    "name_en": "Kentoku Winery"
-  },
-  {
-    "id": "kuratei-winery-domaine-yamada",
-    "name": "蔵邸ワイナリー Domaine Yamada",
-    "company": "農業生産法人株式会社カルナエスト",
-    "brand": "Domaine Yamada",
-    "winery_type": "small",
-    "founded": "2020",
-    "founded_era": "令和2年",
-    "address": "神奈川県川崎市麻生区岡上2-14-2",
-    "tel": "",
-    "url": "https://carnaest.jp/domaine_yamada/",
-    "area": "川崎市麻生区岡上",
-    "desc": "農業生産法人株式会社カルナエストが2014年からブドウ栽培を開始し、2020年にワイナリー「蔵邸ワイナリー Domaine Yamada」を誕生させた。東京都心から約25km圏内、川崎市麻生区岡上の丘陵地にあり、築130年の蔵を改築した施設でピノ・ノワールやシャルドネを中心に栽培・醸造している。ワインスクールやワインバー・ショップ、自社農家レストラン「Lilly's. by promety」も併設。川崎市の「ハウスワイン特区」制度により、施設内でのグラス提供のみが許可されボトル販売はできない。",
-    "visit": "見学可（ワインスクール・ワインバー併設）。ハウスワイン特区のためボトル販売不可、グラス提供のみ",
-    "wine_style": "red,white",
-    "main_grape": "pinot_noir",
-    "gi": "",
-    "grapes": [
-      "ピノ・ノワール",
-      "シャルドネ"
-    ],
-    "brands": [],
-    "features": [
-      "2014年から栽培開始、2020年にワイナリー誕生。築130年の蔵を改築した施設を利用",
-      "川崎市「ハウスワイン特区」制度によりボトル販売不可・グラス提供のみの限定的なワイナリー",
-      "ワインスクール・ワインバー・自社農家レストラン「Lilly's. by promety」を併設"
-    ],
-    "nearest_station": "小田急線 新百合ヶ丘駅",
-    "source": "https://carnaest.jp/domaine_yamada/",
-    "lat": 35.607,
-    "lng": 139.497,
-    "name_en": "Kuratei Winery Domaine Yamada"
+ {
+  "id": "yokohama-winery",
+  "name": "横濱ワイナリー",
+  "company": "横濱ワイナリー株式会社",
+  "brand": "横濱ワイナリー",
+  "winery_type": "urban",
+  "founded": "2016",
+  "founded_era": "平成28年",
+  "address": "神奈川県横浜市中区新山下1-3-12",
+  "tel": "045-228-9713",
+  "url": "https://yokohamawinery.com/",
+  "area": "横浜市中区",
+  "desc": "山下埠頭の袂にある、横浜初のクラフトワイン醸造所。日本で一番小さく一番海に近いワイナリーを掲げ、自然派の“ハマワイン”を造る。",
+  "visit": "完全予約制の見学プログラムあり。試飲有料、ショップ営業は金曜・土日祝中心。",
+  "wine_style": "red,white,rose,sparkling",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "シャルドネ",
+   "ピノ・ノワール"
+  ],
+  "brands": [
+   {
+    "name": "hama wine",
+    "type": "赤・白・ロゼ・泡",
+    "specs": "自然酵母発酵・無濾過を基本とする主力シリーズ。",
+    "grapes": ""
+   }
+  ],
+  "features": [
+   "2016年9月設立の都市型ワイナリー",
+   "2019年に横浜市内でワインぶどう畑を開設",
+   "自然酵母・無濾過を重視したハマワインを展開"
+  ],
+  "nearest_station": "みなとみらい線元町・中華街駅（徒歩3分）",
+  "source": "https://www.winery.or.jp/winery-map/10691/",
+  "lat": 35.4384,
+  "lng": 139.6571,
+  "name_en": "Yokohama Winery"
+ },
+ {
+  "id": "oppama-verny-wine",
+  "name": "追浜ワイナリー（VERNY WINE）",
+  "company": "追浜商盛会",
+  "brand": "VERNY WINE",
+  "winery_type": "urban",
+  "founded": "2005",
+  "founded_era": "平成17年",
+  "address": "神奈川県横須賀市追浜町2-13",
+  "tel": "",
+  "url": "https://oppama-town.com/wine/",
+  "area": "横須賀市",
+  "desc": "追浜商盛会が地域活性化を目的に立ち上げた、追浜駅近くのコミュニティ型ワイナリー。横須賀の地名にちなむVERNY WINEを展開。",
+  "visit": "追浜こみゅに亭内のワイナリー兼コミュニティスペース。",
+  "wine_style": "red,white",
+  "main_grape": "cabernet-sauvignon",
+  "gi": "",
+  "grapes": [
+   "カベルネ・ソーヴィニヨン",
+   "ムールヴェードル",
+   "コンコード",
+   "マスカット・ゴールド",
+   "シャルドネ"
+  ],
+  "brands": [
+   "VERNY WINE"
+  ],
+  "features": [
+   "2005年2月醸造免許取得",
+   "追浜商盛会が地域活性化のために設立",
+   "2019年12月にVERNY WINEへ名称変更"
+  ],
+  "nearest_station": "京急本線追浜駅",
+  "source": "https://oppama-town.com/wine/",
+  "lat": 35.3891,
+  "lng": 139.6521,
+  "name_en": "Oppama Winery (VERNY WINE)"
+ },
+ {
+  "id": "mercian-fujisawa",
+  "name": "メルシャン　藤沢工場",
+  "company": "メルシャン株式会社",
+  "brand": "メルシャン",
+  "winery_type": "large",
+  "founded": "1973",
+  "founded_era": "",
+  "address": "神奈川県藤沢市城南4-9-1",
+  "tel": "0466-35-1093",
+  "url": "https://www.kirinholdings.com/jp/company/group/mercian/office/",
+  "area": "藤沢市",
+  "desc": "神奈川県藤沢市にある大規模ワイン製造拠点。日本有数の生産規模を持ち、メルシャンの中核工場として多様な製品を製造する。",
+  "visit": "施設見学なし。",
+  "wine_style": "red,white,rose,sparkling",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "シャルドネ",
+   "メルロー",
+   "カベルネ・ソーヴィニヨン"
+  ],
+  "brands": [
+   "おいしい酸化防止剤無添加ワイン",
+   "ボン・ルージュ"
+  ],
+  "features": [
+   "国内最大級のワイン製造設備",
+   "メルシャンの中核生産拠点",
+   "藤沢市の主要ワイン生産施設"
+  ],
+  "nearest_station": "小田急江ノ島線藤沢本町駅",
+  "source": "https://www.wine-info.jp/portal/winery/detail/?id=61",
+  "lat": 35.3518,
+  "lng": 139.4688,
+  "name_en": "Mercian Fujisawa Plant"
+ },
+ {
+  "id": "yokohama-kajitsu-jozo",
+  "name": "横浜果実醸造",
+  "company": "社会福祉法人中川徳生会",
+  "brand": "HAMANASHI",
+  "winery_type": "small",
+  "founded": "2026",
+  "founded_era": "令和8年",
+  "address": "神奈川県横浜市都筑区南山田",
+  "tel": "",
+  "url": "",
+  "area": "横浜市都筑区南山田",
+  "desc": "社会福祉法人中川徳生会が令和8年（2026年）7月2日付で酒類製造免許を取得し開業した横浜発のワイナリー。これまで十分に活用されてこなかった「浜なし」（横浜産梨の規格外品）や横浜産ブドウを原料に、地域資源を循環させる取り組みとして立ち上げられた。秋口の販売開始を予定している。",
+  "visit": "",
+  "wine_style": "white,sparkling,red",
+  "main_grape": "cabernet_sauvignon",
+  "gi": "",
+  "grapes": [
+   "カベルネ・ソーヴィニヨン"
+  ],
+  "brands": [
+   {
+    "name": "HAMANASHI PETILLANT 2025",
+    "type": "スパークリング（微発泡・梨使用）",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "HAMANASHI BLANC 2026",
+    "type": "白ワイン（やや辛口・梨使用）",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "Cabernet Sauvignon \"Clairet\" 2025",
+    "type": "赤ワイン（クレレスタイル）",
+    "specs": "",
+    "grapes": "カベルネ・ソーヴィニヨン"
+   }
+  ],
+  "features": [
+   "社会福祉法人が運営し、2026年7月2日に酒類製造免許を取得した横浜発の新規ワイナリー",
+   "規格外品の「浜なし」（横浜産梨）や横浜産ブドウを活用し、地域資源を循環させる取り組み"
+  ],
+  "nearest_station": "",
+  "source": "https://nihonwine.jp/nihonwine-news/yokohamahatu/",
+  "lat": 35.556,
+  "lng": 139.586,
+  "name_en": "Yokohama Kajitsu Jozo (Yokohama Fruit Winery)",
+  "nearest_station_calc": {
+   "station": "センター北",
+   "line": "横浜市ブルーライン",
+   "distance_m": 740,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ },
+ {
+  "id": "kentoku-winery",
+  "name": "ケントクワイナリー（Kentoku Winery）",
+  "company": "農業法人八咲生農園株式会社（大森産業株式会社グループ）",
+  "brand": "相模原ワイン",
+  "winery_type": "estate",
+  "founded": "2023",
+  "founded_era": "令和5年",
+  "address": "神奈川県相模原市中央区上溝349-2",
+  "tel": "046-245-0808",
+  "url": "https://www.kentokuestate-winery.com/",
+  "area": "相模原市中央区上溝",
+  "desc": "産業廃棄物リサイクル業を営む大森産業株式会社が、高齢従業員の再雇用の場として2014年に農業法人八咲生農園株式会社を設立しブドウ栽培を開始。相模原市「さがみはらのめぐみワイン特区」の認定を受け、2023年1月に果実酒製造免許を取得し自社醸造をスタート。それ以前は委託醸造で「神奈川ワイン」として販売していた。相模原市唯一のワイナリーで、自社畑のぶどうのみを使用する単一品種ワイン「相模原ワイン」を展開している。",
+  "visit": "オンラインショップ・取扱店舗での購入可",
+  "wine_style": "red,white",
+  "main_grape": "",
+  "gi": "",
+  "grapes": [
+   "カベルネ・ソーヴィニヨン",
+   "カベルネ・フラン",
+   "メルロー",
+   "ピノ・ノワール",
+   "シャルドネ",
+   "ソーヴィニヨン・ブラン",
+   "マスカット・ベーリーA",
+   "ブラック・クイーン",
+   "アルバリーニョ",
+   "プティ・マンサン"
+  ],
+  "brands": [
+   {
+    "name": "MEGUMI",
+    "type": "白ワイン",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "TSUNAGU",
+    "type": "白ワイン",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "TSUDOI",
+    "type": "白ワイン",
+    "specs": "",
+    "grapes": ""
+   },
+   {
+    "name": "SAGAMI",
+    "type": "白ワイン",
+    "specs": "",
+    "grapes": ""
+   }
+  ],
+  "features": [
+   "相模原市唯一のワイナリー。「さがみはらのめぐみワイン特区」認定を受け2023年1月に自社醸造免許取得",
+   "産業廃棄物リサイクル業の大森産業グループが高齢従業員の再雇用の場として立ち上げた農業法人が母体",
+   "自社畑のぶどうのみを使用した単一品種ワイン「相模原ワイン」を製造"
+  ],
+  "nearest_station": "",
+  "source": "https://terroir.media/?p=1852",
+  "lat": 35.586,
+  "lng": 139.374,
+  "name_en": "Kentoku Winery",
+  "nearest_station_calc": {
+   "station": "相模原",
+   "line": "JR横浜線",
+   "distance_m": 610,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "kuratei-winery-domaine-yamada",
+  "name": "蔵邸ワイナリー Domaine Yamada",
+  "company": "農業生産法人株式会社カルナエスト",
+  "brand": "Domaine Yamada",
+  "winery_type": "small",
+  "founded": "2020",
+  "founded_era": "令和2年",
+  "address": "神奈川県川崎市麻生区岡上2-14-2",
+  "tel": "",
+  "url": "https://carnaest.jp/domaine_yamada/",
+  "area": "川崎市麻生区岡上",
+  "desc": "農業生産法人株式会社カルナエストが2014年からブドウ栽培を開始し、2020年にワイナリー「蔵邸ワイナリー Domaine Yamada」を誕生させた。東京都心から約25km圏内、川崎市麻生区岡上の丘陵地にあり、築130年の蔵を改築した施設でピノ・ノワールやシャルドネを中心に栽培・醸造している。ワインスクールやワインバー・ショップ、自社農家レストラン「Lilly's. by promety」も併設。川崎市の「ハウスワイン特区」制度により、施設内でのグラス提供のみが許可されボトル販売はできない。",
+  "visit": "見学可（ワインスクール・ワインバー併設）。ハウスワイン特区のためボトル販売不可、グラス提供のみ",
+  "wine_style": "red,white",
+  "main_grape": "pinot_noir",
+  "gi": "",
+  "grapes": [
+   "ピノ・ノワール",
+   "シャルドネ"
+  ],
+  "brands": [],
+  "features": [
+   "2014年から栽培開始、2020年にワイナリー誕生。築130年の蔵を改築した施設を利用",
+   "川崎市「ハウスワイン特区」制度によりボトル販売不可・グラス提供のみの限定的なワイナリー",
+   "ワインスクール・ワインバー・自社農家レストラン「Lilly's. by promety」を併設"
+  ],
+  "nearest_station": "小田急線 新百合ヶ丘駅",
+  "source": "https://carnaest.jp/domaine_yamada/",
+  "lat": 35.607,
+  "lng": 139.497,
+  "name_en": "Kuratei Winery Domaine Yamada"
+ }
 ]

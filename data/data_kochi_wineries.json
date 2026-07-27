@@ -1,114 +1,128 @@
 [
-  {
-    "id": "inoue-winery",
-    "name": "井上ワイナリー",
-    "company": "井上ワイナリー株式会社",
-    "brand": "TOSAワイン",
-    "winery_type": "small",
-    "founded": "2016",
-    "founded_era": "平成28年",
-    "address": "高知県香南市野市町大谷1424番地31",
-    "tel": "0887-50-6694",
-    "url": "https://www.inoue-winery.co.jp/",
-    "area": "香南市野市町",
-    "desc": "高知県内各地のぶどうを活かし、太平洋を望む高台で土佐の食文化に寄り添うワインを造るワイナリー。",
-    "visit": "のいち醸造所併設のショップあり。高知産ワインの販売・試飲、グロサリー・スウィーツ等も販売。",
-    "wine_style": "red,dry_white,rose,sparkling",
-    "main_grape": "mba",
-    "gi": "",
-    "grapes": [
-      "マスカット・ベーリーA",
-      "シャルドネ"
-    ],
-    "brands": [
-      "TOSAワイン"
-    ],
-    "features": [
-      "高知県内7市町で栽培したブドウを使用した高知県産ワイン",
-      "太平洋が一望できる高台に立地",
-      "みかんワインなど地元食材を活かした商品も展開"
-    ],
-    "nearest_station": "",
-    "source": "https://www.inoue-winery.co.jp/company.htm",
-    "lat": 33.5627,
-    "lng": 133.6945,
-    "name_en": "Inoue Winery"
-  },
-  {
-    "id": "yosakoi-winery",
-    "name": "よさ来いワイナリー",
-    "company": "よさ来いワイナリー",
-    "brand": "よさ来い",
-    "winery_type": "natural",
-    "founded": "2021",
-    "founded_era": "令和3年",
-    "address": "高知県高知市廿代町1-21 1F",
-    "tel": "080-4034-8462",
-    "url": "https://yosakoi-winery.com/",
-    "area": "高知市",
-    "desc": "高知市中心部で生食用ぶどうを原料に自然派ワインを造る四国初の都市型ワイナリー。高知の新しいワイン文化を発信する。",
-    "visit": "営業：金・土曜日16:00〜20:00（月〜木・日曜定休）。",
-    "wine_style": "natural",
-    "main_grape": "fujiminori",
-    "gi": "",
-    "grapes": [
-      "藤稔（ふじみのり）",
-      "雄宝（ゆうほう）",
-      "シャイニング"
-    ],
-    "brands": [
-      "よさ来い"
-    ],
-    "features": [
-      "四国初の都市型ワイナリー（2024年3月オープン）",
-      "化学肥料・農薬不使用の生食用ぶどうから製造する自然派ワイン",
-      "高知市廿代町に醸造所"
-    ],
-    "nearest_station": "",
-    "source": "https://yosakoi-winery.com/",
-    "lat": 33.5597,
-    "lng": 133.535,
-    "name_en": "Yosakoi Winery"
-  },
-  {
-    "id": "mishima-farm-winery",
-    "name": "ミシマファームワイナリー",
-    "company": "ミシマファーム（代表：山中敏雄）",
-    "brand": "ミシマファーム",
-    "winery_type": "small",
-    "founded": "2018",
-    "founded_era": "平成30年",
-    "address": "高知県土佐郡土佐町446-2",
-    "tel": "",
-    "url": "https://www.mishimafarm.com/",
-    "area": "土佐郡土佐町",
-    "desc": "1960年創設のぶどう園を母体に、2016年12月に土佐町が「ワイン特区」の認定を取得。2017年6月に高知県初となる果実酒製造免許を取得し、2018年からワイン醸造を開始した。化学農薬不使用で栽培する生食用ぶどうと、メルローやピノ・ノワールなどのワイン専用品種を用いてワインを製造している。",
-    "visit": "醸造所見学のページあり（詳細は公式サイトで要確認）",
-    "wine_style": "red,white",
-    "main_grape": "merlot",
-    "gi": "",
-    "grapes": [
-      "メルロー",
-      "ナイアガラ",
-      "ピノ・ノワール",
-      "甲州",
-      "マスカット・ベーリーA",
-      "シュナン・ブラン",
-      "モンドブリエ",
-      "巨峰系4倍体",
-      "安芸クイーン",
-      "デラウェア"
-    ],
-    "brands": [],
-    "features": [
-      "2017年6月、高知県初となる果実酒製造免許を取得",
-      "化学農薬不使用の生食用ぶどう栽培にこだわる",
-      "生食用品種とワイン専用品種の両方を用いてワインを醸造"
-    ],
-    "nearest_station": "",
-    "source": "https://terroir.media/?p=2599",
-    "lat": 33.698,
-    "lng": 133.398,
-    "name_en": "Mishima Farm Winery"
+ {
+  "id": "inoue-winery",
+  "name": "井上ワイナリー",
+  "company": "井上ワイナリー株式会社",
+  "brand": "TOSAワイン",
+  "winery_type": "small",
+  "founded": "2016",
+  "founded_era": "平成28年",
+  "address": "高知県香南市野市町大谷1424番地31",
+  "tel": "0887-50-6694",
+  "url": "https://www.inoue-winery.co.jp/",
+  "area": "香南市野市町",
+  "desc": "高知県内各地のぶどうを活かし、太平洋を望む高台で土佐の食文化に寄り添うワインを造るワイナリー。",
+  "visit": "のいち醸造所併設のショップあり。高知産ワインの販売・試飲、グロサリー・スウィーツ等も販売。",
+  "wine_style": "red,dry_white,rose,sparkling",
+  "main_grape": "mba",
+  "gi": "",
+  "grapes": [
+   "マスカット・ベーリーA",
+   "シャルドネ"
+  ],
+  "brands": [
+   "TOSAワイン"
+  ],
+  "features": [
+   "高知県内7市町で栽培したブドウを使用した高知県産ワイン",
+   "太平洋が一望できる高台に立地",
+   "みかんワインなど地元食材を活かした商品も展開"
+  ],
+  "nearest_station": "",
+  "source": "https://www.inoue-winery.co.jp/company.htm",
+  "lat": 33.5627,
+  "lng": 133.6945,
+  "name_en": "Inoue Winery",
+  "nearest_station_calc": {
+   "station": "のいち",
+   "line": "土佐くろしお鉄道阿佐線",
+   "distance_m": 380,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ },
+ {
+  "id": "yosakoi-winery",
+  "name": "よさ来いワイナリー",
+  "company": "よさ来いワイナリー",
+  "brand": "よさ来い",
+  "winery_type": "natural",
+  "founded": "2021",
+  "founded_era": "令和3年",
+  "address": "高知県高知市廿代町1-21 1F",
+  "tel": "080-4034-8462",
+  "url": "https://yosakoi-winery.com/",
+  "area": "高知市",
+  "desc": "高知市中心部で生食用ぶどうを原料に自然派ワインを造る四国初の都市型ワイナリー。高知の新しいワイン文化を発信する。",
+  "visit": "営業：金・土曜日16:00〜20:00（月〜木・日曜定休）。",
+  "wine_style": "natural",
+  "main_grape": "fujiminori",
+  "gi": "",
+  "grapes": [
+   "藤稔（ふじみのり）",
+   "雄宝（ゆうほう）",
+   "シャイニング"
+  ],
+  "brands": [
+   "よさ来い"
+  ],
+  "features": [
+   "四国初の都市型ワイナリー（2024年3月オープン）",
+   "化学肥料・農薬不使用の生食用ぶどうから製造する自然派ワイン",
+   "高知市廿代町に醸造所"
+  ],
+  "nearest_station": "",
+  "source": "https://yosakoi-winery.com/",
+  "lat": 33.5597,
+  "lng": 133.535,
+  "name_en": "Yosakoi Winery",
+  "nearest_station_calc": {
+   "station": "高知城前",
+   "line": "土佐電伊野線",
+   "distance_m": 150,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "mishima-farm-winery",
+  "name": "ミシマファームワイナリー",
+  "company": "ミシマファーム（代表：山中敏雄）",
+  "brand": "ミシマファーム",
+  "winery_type": "small",
+  "founded": "2018",
+  "founded_era": "平成30年",
+  "address": "高知県土佐郡土佐町446-2",
+  "tel": "",
+  "url": "https://www.mishimafarm.com/",
+  "area": "土佐郡土佐町",
+  "desc": "1960年創設のぶどう園を母体に、2016年12月に土佐町が「ワイン特区」の認定を取得。2017年6月に高知県初となる果実酒製造免許を取得し、2018年からワイン醸造を開始した。化学農薬不使用で栽培する生食用ぶどうと、メルローやピノ・ノワールなどのワイン専用品種を用いてワインを製造している。",
+  "visit": "醸造所見学のページあり（詳細は公式サイトで要確認）",
+  "wine_style": "red,white",
+  "main_grape": "merlot",
+  "gi": "",
+  "grapes": [
+   "メルロー",
+   "ナイアガラ",
+   "ピノ・ノワール",
+   "甲州",
+   "マスカット・ベーリーA",
+   "シュナン・ブラン",
+   "モンドブリエ",
+   "巨峰系4倍体",
+   "安芸クイーン",
+   "デラウェア"
+  ],
+  "brands": [],
+  "features": [
+   "2017年6月、高知県初となる果実酒製造免許を取得",
+   "化学農薬不使用の生食用ぶどう栽培にこだわる",
+   "生食用品種とワイン専用品種の両方を用いてワインを醸造"
+  ],
+  "nearest_station": "",
+  "source": "https://terroir.media/?p=2599",
+  "lat": 33.698,
+  "lng": 133.398,
+  "name_en": "Mishima Farm Winery"
+ }
 ]

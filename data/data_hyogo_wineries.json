@@ -1,112 +1,126 @@
 [
-  {
-    "id": "kobe-winery",
-    "name": "こうべアグリパーク（旧神戸ワイナリー）",
-    "company": "神戸ワイナリー（農業公園）",
-    "brand": "神戸ワイン",
-    "winery_type": "winery",
-    "founded": "1983",
-    "founded_era": "昭和58年",
-    "address": "兵庫県神戸市西区押部谷町高和1557-1",
-    "tel": "078-991-3911",
-    "url": "https://kobeagripark.jp/",
-    "area": "神戸市西区",
-    "desc": "神戸市西区の農業公園として長年親しまれた「神戸ワイナリー」が、2025年4月12日に民間運営の「こうべアグリパーク」としてリニューアルオープン。神戸ワインの製造・販売事業は白鶴酒造株式会社が継承しており、園内でのワイン購入・体験も継続している。",
-    "visit": "営業時間9:00〜17:00。見学可・無料。バーベキュー場・パターゴルフ・ゴーカート場あり。入園・駐車無料。",
-    "wine_style": "red,white",
-    "main_grape": "chardonnay",
-    "gi": "",
-    "grapes": [
-      "カベルネ・ソーヴィニヨン",
-      "メルロー",
-      "シャルドネ",
-      "リースリング"
-    ],
-    "brands": [
-      "神戸ワイン",
-      "みのり",
-      "ベネディクシオン"
-    ],
-    "features": [
-      "1983年初仕込み",
-      "神戸市産原料のみ使用",
-      "広大な農業公園内にショップやBBQ施設を併設"
-    ],
-    "nearest_station": "",
-    "source": "https://www.lmaga.jp/news/2025/03/893657/",
-    "lat": 34.713,
-    "lng": 134.969,
-    "name_en": "Kobe Agri Park (former Kobe Winery)"
-  },
-  {
-    "id": "tanba-aogaki-winery",
-    "name": "丹波青垣ワイナリー",
-    "company": "丹波青垣ワイナリー",
-    "brand": "",
-    "winery_type": "small",
-    "founded": "",
-    "founded_era": "",
-    "address": "兵庫県丹波市青垣町西芦田1071-1",
-    "tel": "0795-87-2088",
-    "url": "",
-    "area": "丹波市青垣町",
-    "desc": "丹波市青垣町で家族経営により営まれる小規模ワイナリー。丹波の里山の気候を生かしてワインを造る。",
-    "visit": "訪問前に営業確認推奨。西芦田バス停から徒歩約3分。",
-    "wine_style": "red,white",
-    "main_grape": "mba",
-    "gi": "",
-    "grapes": [
-      "マスカット・ベーリーA"
-    ],
-    "brands": [
-      "丹波・青垣ワイン"
-    ],
-    "features": [
-      "家族経営の小規模ワイナリー",
-      "丹波市青垣町の里山立地",
-      "訪問しやすい路線バスアクセスあり"
-    ],
-    "nearest_station": "",
-    "source": "https://www.wine-info.jp/portal/winery/detail/?id=189",
-    "lat": 35.166,
-    "lng": 135.129,
-    "name_en": "Tanba Aogaki Winery"
-  },
-  {
-    "id": "kiraka-budoshu-jozo",
-    "name": "きら香ぶどう酒醸造",
-    "company": "きら香ぶどう酒醸造",
-    "brand": "coucou",
-    "winery_type": "urban",
-    "founded": "2024",
-    "founded_era": "令和6年",
-    "address": "兵庫県神戸市中央区神若通1-4-18-1",
-    "tel": "",
-    "url": "https://www.kiraka.jp/",
-    "area": "神戸市中央区",
-    "desc": "神戸・春日野道にあるアーバンワイナリー。100%神戸産ぶどうを使い、ロゼを軸に街なかで少量醸造を行う。",
-    "visit": "ワイナリーツアー再開。阪急春日野道駅徒歩約3分。",
-    "wine_style": "rose",
-    "main_grape": "merlot",
-    "gi": "",
-    "grapes": [
-      "メルロー",
-      "カベルネ・ソーヴィニヨン"
-    ],
-    "brands": [
-      "coucou",
-      "doudou",
-      "Buono Buona"
-    ],
-    "features": [
-      "2024年に醸造開始",
-      "100%神戸産ぶどうを使用",
-      "ロゼを軸にした都市型ワイナリー"
-    ],
-    "nearest_station": "阪急春日野道駅",
-    "source": "https://nippon.wine/winery/16280010353/",
-    "lat": 34.701,
-    "lng": 135.198,
-    "name_en": "Kiraka Budoshu Jozo"
+ {
+  "id": "kobe-winery",
+  "name": "こうべアグリパーク（旧神戸ワイナリー）",
+  "company": "神戸ワイナリー（農業公園）",
+  "brand": "神戸ワイン",
+  "winery_type": "winery",
+  "founded": "1983",
+  "founded_era": "昭和58年",
+  "address": "兵庫県神戸市西区押部谷町高和1557-1",
+  "tel": "078-991-3911",
+  "url": "https://kobeagripark.jp/",
+  "area": "神戸市西区",
+  "desc": "神戸市西区の農業公園として長年親しまれた「神戸ワイナリー」が、2025年4月12日に民間運営の「こうべアグリパーク」としてリニューアルオープン。神戸ワインの製造・販売事業は白鶴酒造株式会社が継承しており、園内でのワイン購入・体験も継続している。",
+  "visit": "営業時間9:00〜17:00。見学可・無料。バーベキュー場・パターゴルフ・ゴーカート場あり。入園・駐車無料。",
+  "wine_style": "red,white",
+  "main_grape": "chardonnay",
+  "gi": "",
+  "grapes": [
+   "カベルネ・ソーヴィニヨン",
+   "メルロー",
+   "シャルドネ",
+   "リースリング"
+  ],
+  "brands": [
+   "神戸ワイン",
+   "みのり",
+   "ベネディクシオン"
+  ],
+  "features": [
+   "1983年初仕込み",
+   "神戸市産原料のみ使用",
+   "広大な農業公園内にショップやBBQ施設を併設"
+  ],
+  "nearest_station": "",
+  "source": "https://www.lmaga.jp/news/2025/03/893657/",
+  "lat": 34.713,
+  "lng": 134.969,
+  "name_en": "Kobe Agri Park (former Kobe Winery)",
+  "nearest_station_calc": {
+   "station": "大久保",
+   "line": "JR神戸線",
+   "distance_m": 4410,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
   }
+ },
+ {
+  "id": "tanba-aogaki-winery",
+  "name": "丹波青垣ワイナリー",
+  "company": "丹波青垣ワイナリー",
+  "brand": "",
+  "winery_type": "small",
+  "founded": "",
+  "founded_era": "",
+  "address": "兵庫県丹波市青垣町西芦田1071-1",
+  "tel": "0795-87-2088",
+  "url": "",
+  "area": "丹波市青垣町",
+  "desc": "丹波市青垣町で家族経営により営まれる小規模ワイナリー。丹波の里山の気候を生かしてワインを造る。",
+  "visit": "訪問前に営業確認推奨。西芦田バス停から徒歩約3分。",
+  "wine_style": "red,white",
+  "main_grape": "mba",
+  "gi": "",
+  "grapes": [
+   "マスカット・ベーリーA"
+  ],
+  "brands": [
+   "丹波・青垣ワイン"
+  ],
+  "features": [
+   "家族経営の小規模ワイナリー",
+   "丹波市青垣町の里山立地",
+   "訪問しやすい路線バスアクセスあり"
+  ],
+  "nearest_station": "",
+  "source": "https://www.wine-info.jp/portal/winery/detail/?id=189",
+  "lat": 35.166,
+  "lng": 135.129,
+  "name_en": "Tanba Aogaki Winery",
+  "nearest_station_calc": {
+   "station": "黒井",
+   "line": "JR福知山線",
+   "distance_m": 2900,
+   "by": "HeartRails Express API（座標からの直線距離）",
+   "checked": "2026-07-27"
+  }
+ },
+ {
+  "id": "kiraka-budoshu-jozo",
+  "name": "きら香ぶどう酒醸造",
+  "company": "きら香ぶどう酒醸造",
+  "brand": "coucou",
+  "winery_type": "urban",
+  "founded": "2024",
+  "founded_era": "令和6年",
+  "address": "兵庫県神戸市中央区神若通1-4-18-1",
+  "tel": "",
+  "url": "https://www.kiraka.jp/",
+  "area": "神戸市中央区",
+  "desc": "神戸・春日野道にあるアーバンワイナリー。100%神戸産ぶどうを使い、ロゼを軸に街なかで少量醸造を行う。",
+  "visit": "ワイナリーツアー再開。阪急春日野道駅徒歩約3分。",
+  "wine_style": "rose",
+  "main_grape": "merlot",
+  "gi": "",
+  "grapes": [
+   "メルロー",
+   "カベルネ・ソーヴィニヨン"
+  ],
+  "brands": [
+   "coucou",
+   "doudou",
+   "Buono Buona"
+  ],
+  "features": [
+   "2024年に醸造開始",
+   "100%神戸産ぶどうを使用",
+   "ロゼを軸にした都市型ワイナリー"
+  ],
+  "nearest_station": "阪急春日野道駅",
+  "source": "https://nippon.wine/winery/16280010353/",
+  "lat": 34.701,
+  "lng": 135.198,
+  "name_en": "Kiraka Budoshu Jozo"
+ }
 ]
