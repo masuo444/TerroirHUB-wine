@@ -25,7 +25,7 @@ from wine_filter import is_wine_item   # ワイン以外（服飾・他カテゴ
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(BASE, 'scripts', 'rakuten_config.json'), encoding='utf-8'))
-ENDPOINT = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601'
+ENDPOINT = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701'
 OUT_PATH = os.path.join(BASE, 'wine', 'rakuten_items.json')
 
 GRID_ITEMS = 6
@@ -108,11 +108,19 @@ def items_from(data):
         name = it.get('itemName', '').strip()
         if not is_wine_item(name):   # ワイン以外（服飾・雑貨・書籍・他カテゴリ酒類）は除外
             continue
-        out.append({
+        rec = {
             'name': it.get('itemName', '').strip(),
             'image': img,
             'url': it.get('affiliateUrl') or it.get('itemUrl'),
-        })
+        }
+        # ふるさと納税は寄付金額で選ぶ行動が支配的。取得できた場合のみ price を持たせる
+        try:
+            pr = int(it.get('itemPrice') or 0)
+            if pr > 0:
+                rec['price'] = pr
+        except (TypeError, ValueError):
+            pass
+        out.append(rec)
     return out
 
 

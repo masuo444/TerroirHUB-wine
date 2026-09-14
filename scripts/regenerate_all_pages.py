@@ -5,6 +5,7 @@ SEO/AIO強化版: Winery JSON-LD, FAQPage, GeoCoordinates, パンくずリスト
 """
 
 import json
+import re
 import glob
 import os
 import sys
@@ -109,6 +110,12 @@ PNAV_SPY_JS = '''
 
 # ── 楽天商品データ（fetch_rakuten_items.py が生成）
 RAKUTEN_DB = {}
+_fl_path = os.path.join(BASE, 'wine', 'furusato_links.json')
+try:
+    FURUSATO_LINKS = json.load(open(_fl_path, encoding='utf-8'))
+except Exception:
+    FURUSATO_LINKS = {}
+
 _rk_path = os.path.join(BASE, 'wine', 'rakuten_items.json')
 if os.path.exists(_rk_path):
     try:
@@ -158,6 +165,11 @@ EXTRA_CSS = '''
 .bb-r{background:#BF0000;color:#fff;}.bb-r:hover{background:#a00000;}
 .bb-a{background:#FF9900;color:#1a1a1a;}.bb-a:hover{background:#e88a00;}
 /* このワイナリーのワイン（楽天商品グリッド） */
+.fz-lead{font-size:15px;line-height:2;margin-bottom:22px;max-width:760px;}
+.fz-price{font-family:'Shippori Mincho',serif;font-size:13.5px;color:#7a2a18;margin:6px 0 2px;}
+.fz-price b{font-size:17px;font-weight:700;}
+.fz-more{margin-top:20px;font-size:14px;}
+.fz-more a{color:var(--accent);text-decoration:none;font-weight:500;}
 .buy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
 .buy-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .22s,transform .22s;}
 .buy-card:hover{box-shadow:0 8px 24px rgba(42,32,24,.10);transform:translateY(-2px);}
@@ -628,8 +640,48 @@ def generate_page(b, pref_slug, siblings=None):
 </section>'''
 
     # ── Shop section（このワイナリーのワイン・楽天商品グリッド） ──
+    # ふるさと納税の返礼品は購入意図が異なるため、通常商品と分けて専用セクションに出す
+    _all_items = [it for it in rk.get('items', []) if isinstance(it, dict) and it.get('image') and is_wine_item(it.get('name', ''))]
+    furusato_items = [it for it in _all_items if 'ふるさと納税' in it.get('name', '')]
+    rk_items = [it for it in _all_items if 'ふるさと納税' not in it.get('name', '')]
+
+    # ── ふるさと納税セクション（自治体ページへの内部リンクを兼ねる）──
+    furusato_section = ''
+    _fl = FURUSATO_LINKS.get(b.get('id')) if b.get('id') else None
+    if furusato_items and _fl:
+        _fcards = ''
+        for it in furusato_items[:3]:
+            iname, iimg, iurl = it.get('name', ''), it.get('image', ''), it.get('url', '')
+            _price = it.get('price')
+            _pl = f'<div class="fz-price">寄付 <b>{_price:,}</b>円</div>' if _price else ''
+            _clean = re.sub(r'^[【\[]?\s*ふるさと納税\s*[】\]]?\s*', '', iname)
+            _fcards += f'''
+      <div class="buy-card">
+        <a href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener"><img class="buy-card-img" src="{esc(iimg)}" alt="{esc(_clean)}" loading="lazy"></a>
+        <div class="buy-card-body">
+          <div class="buy-card-name">{esc(_clean)}</div>{_pl}
+          <div class="buy-btns">
+            <a class="bb bb-r" href="{esc(iurl)}" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄付</a>
+          </div>
+        </div>
+      </div>'''
+        _muni = esc(_fl['pref'] + _fl['city'])
+        furusato_section = f'''
+<section class="section buy-section" style="background:#fff;" id="furusato">
+  <div class="sec-inner">
+    <label class="sec-label">FURUSATO TAX</label>
+    <h2 class="sec-title">ふるさと納税で選ぶ</h2>
+    <div class="sec-divider"></div>
+    <p class="fz-lead">このワイナリーのワインは、<b>{_muni}</b>のふるさと納税返礼品として提供されています（{_fl['count']}件）。
+    自己負担2,000円を除いた分が所得税・住民税から控除されます（控除上限は年収と家族構成で変わります）。</p>
+    <div class="buy-grid">{_fcards}
+    </div>
+    <p class="fz-more"><a href="{esc(_fl['url'])}">{_muni}のふるさと納税をすべて見る →</a></p>
+    <p class="buy-note">【PR】本セクションはアフィリエイト広告（楽天）を含みます。<br>※ 寄付金額・在庫・提供事業者は変動します。寄付前に各返礼品ページでご確認ください。</p>
+  </div>
+</section>'''
+
     shop_section = ''
-    rk_items = [it for it in rk.get('items', []) if isinstance(it, dict) and it.get('image') and is_wine_item(it.get('name', ''))]
     if rk_items:
         cards = ''
         for it in rk_items[:6]:
@@ -977,6 +1029,7 @@ def generate_page(b, pref_slug, siblings=None):
 {brands_section}
 
 {shop_section}
+{furusato_section}
 {furusato_cta}
 {related_html}
 

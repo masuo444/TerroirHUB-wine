@@ -28,7 +28,7 @@
       "url": "https://wine.terroirhub.com/wine/yamanashi/shigei-jozo.html",
       "name": "紫藝醸造 - 山梨県のワイナリー",
       "description": "令和4年創業。山梨県北杜市明野町のナチュラルワイナリー「紫藝醸造」。2022年創業。ドメーヌ・オヤマダでの研修経験を持つ原田純氏が営む自然派ワイナリー。自社畑計2.4ha（明野・穂坂・一宮）で欧州系ワイン用品種を中心に栽培し、化",
-      "dateModified": "2026-07-27",
+      "dateModified": "2026-09-14",
       "inLanguage": "ja",
       "isPartOf": {
         "@type": "WebSite",
@@ -208,6 +208,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "主に甲州、デラウェア、シャルドネ、マスカット・ベーリーA、プティ・マンサン、ルーサンヌ、ソーヴィニヨン・ブラン、カベルネ・フラン、ガメイを使用しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "紫藝醸造のワインはどこで購入できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "紫藝醸造のワインは楽天市場やAmazonで取り扱いがあります。本ページの「このワイナリーのワイン」から各商品ページをご確認いただけます（在庫・価格は変動します）。"
           }
         },
         {
@@ -540,6 +548,11 @@ section[id]{scroll-margin-top:104px;}
 .bb-r{background:#BF0000;color:#fff;}.bb-r:hover{background:#a00000;}
 .bb-a{background:#FF9900;color:#1a1a1a;}.bb-a:hover{background:#e88a00;}
 /* このワイナリーのワイン（楽天商品グリッド） */
+.fz-lead{font-size:15px;line-height:2;margin-bottom:22px;max-width:760px;}
+.fz-price{font-family:'Shippori Mincho',serif;font-size:13.5px;color:#7a2a18;margin:6px 0 2px;}
+.fz-price b{font-size:17px;font-weight:700;}
+.fz-more{margin-top:20px;font-size:14px;}
+.fz-more a{color:var(--accent);text-decoration:none;font-weight:500;}
 .buy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
 .buy-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .22s,transform .22s;}
 .buy-card:hover{box-shadow:0 8px 24px rgba(42,32,24,.10);transform:translateY(-2px);}
@@ -611,7 +624,7 @@ section[id]{scroll-margin-top:104px;}
     <div class="qf-actions"><a class="qf-btn" href="#brands">代表銘柄</a><a class="qf-btn" href="#access">アクセス・地図</a><a class="qf-btn primary" href="javascript:openPanel()">サクラに聞く</a></div>
   </div>
 </div>
-<nav class="pnav"><div class="pnav-inner"><a href="#story">物語</a><a href="#features">特徴</a><a href="#grapes">品種</a><a href="#brands">銘柄</a><a href="#access">アクセス</a></div></nav>
+<nav class="pnav"><div class="pnav-inner"><a href="#story">物語</a><a href="#features">特徴</a><a href="#grapes">品種</a><a href="#brands">銘柄</a><a href="#buy">購入</a><a href="#access">アクセス</a></div></nav>
 
 <section class="section story-redesign" id="story">
   <div class="sec-inner">
@@ -676,13 +689,13 @@ section[id]{scroll-margin-top:104px;}
     <div class="sec-divider"></div>
     <div class="brands-grid">
     <div class="brand-card">
-      <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">翠翠 スズ・ブラン</span></div>
+      <div class="brand-img-wrap"><img class="brand-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shinkawa/cabinet/05677916/imgrc0102536713.jpg?_ex=500x500" alt="翠翠 スズ・ブラン" loading="lazy"></div>
       <div class="wine-badge white">白ワイン</div>
       <div class="grape-tag">甲州主体にデラウェア、シャルドネ少量ブレンド</div>
       <h3 class="brand-name">翠翠 スズ・ブラン</h3>
       <p class="brand-type">白ワイン</p>
 
-      <div class="buy-btns"></div>
+      <div class="buy-btns"><a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00q16xn.krtu463c.g00q16xn.krtu55d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshinkawa%2F10003761%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fshinkawa%2Fi%2F10003761%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a></div>
     </div>
     <div class="brand-card">
       <div class="brand-img-wrap brand-noimg"><span class="brand-noimg-name">翠翠 スズ・ルージュ</span></div>
@@ -706,6 +719,53 @@ section[id]{scroll-margin-top:104px;}
   </div>
 </section>
 
+
+<section class="section buy-section" style="background:var(--surface-warm);" id="buy">
+  <div class="sec-inner">
+    <label class="sec-label">BUY</label>
+    <h2 class="sec-title">このワイナリーのワイン</h2>
+    <div class="sec-divider"></div>
+    <div class="buy-grid">
+      <div class="buy-card">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/g00q16xn.krtu463c.g00q16xn.krtu55d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshinkawa%2F10003761%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fshinkawa%2Fi%2F10003761%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener"><img class="buy-card-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shinkawa/cabinet/05677916/imgrc0102536713.jpg?_ex=500x500" alt="翠翠　赤　2025（赤）スズ・ルージュ 紫藝醸造" loading="lazy"></a>
+        <div class="buy-card-body">
+          <div class="buy-card-name">翠翠　赤　2025（赤）スズ・ルージュ 紫藝醸造</div>
+          <div class="buy-btns">
+            <a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00q16xn.krtu463c.g00q16xn.krtu55d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshinkawa%2F10003761%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fshinkawa%2Fi%2F10003761%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天</a>
+          </div>
+        </div>
+      </div>
+      <div class="buy-card">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/g00plxnn.krtu434d.g00plxnn.krtu5d1c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falar%2F20220331-13%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Falar%2Fi%2F10005162%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener"><img class="buy-card-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/alar/cabinet/01497630/imgrc0093707329.jpg?_ex=500x500" alt="紫藝醸造／原田純翠翠・赤（すず・ルージュ）2025" loading="lazy"></a>
+        <div class="buy-card-body">
+          <div class="buy-card-name">紫藝醸造／原田純翠翠・赤（すず・ルージュ）2025</div>
+          <div class="buy-btns">
+            <a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00plxnn.krtu434d.g00plxnn.krtu5d1c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falar%2F20220331-13%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Falar%2Fi%2F10005162%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天</a>
+          </div>
+        </div>
+      </div>
+      <div class="buy-card">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/g00piqyn.krtu418d.g00piqyn.krtu5d1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorisawa%2Fa0012640%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorisawa%2Fi%2F10017549%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener"><img class="buy-card-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/morisawa/cabinet/shohin18/suzuro.jpg?_ex=500x500" alt="翠翠 赤(スズ ルージュ／サンスフル)[2025]紫藝醸造(原田純) Suzu Rouge SHIGEI" loading="lazy"></a>
+        <div class="buy-card-body">
+          <div class="buy-card-name">翠翠 赤(スズ ルージュ／サンスフル)[2025]紫藝醸造(原田純) Suzu Rouge SHIGEI</div>
+          <div class="buy-btns">
+            <a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00piqyn.krtu418d.g00piqyn.krtu5d1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorisawa%2Fa0012640%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorisawa%2Fi%2F10017549%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天</a>
+          </div>
+        </div>
+      </div>
+      <div class="buy-card">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/g00piqyn.krtu418d.g00piqyn.krtu5d1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorisawa%2Fa0012829%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorisawa%2Fi%2F10017771%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener"><img class="buy-card-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/morisawa/cabinet/set/hajimete-2609.jpg?_ex=500x500" alt="初めてのナチュールお試し2本セット★9月★●翠翠 赤[2025]紫藝醸造〇グリューナー ヴェルトリーナー[2023]ベルンハルト リスト（クール便指定は別途400円）" loading="lazy"></a>
+        <div class="buy-card-body">
+          <div class="buy-card-name">初めてのナチュールお試し2本セット★9月★●翠翠 赤[2025]紫藝醸造〇グリューナー ヴェルトリーナー[2023]ベルンハルト リスト（クール便指定は別途400円）</div>
+          <div class="buy-btns">
+            <a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00piqyn.krtu418d.g00piqyn.krtu5d1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorisawa%2Fa0012829%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fmorisawa%2Fi%2F10017771%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="buy-note">【PR】本セクションはアフィリエイト広告（楽天）を含みます。<br>※ 商品・価格は楽天市場の検索結果です（時点により変動）。Terroir HUB はワインの販売を行っていません。<br>価格・在庫・送料は各ストアでご確認ください。20歳未満の飲酒は法律で禁止されています。</p>
+  </div>
+</section>
 
 
 <section class="section" style="background:var(--bg);">
@@ -820,10 +880,18 @@ section[id]{scroll-margin-top:104px;}
     <div class="faq-item" id="faq-5">
       <div class="faq-q" onclick="toggleFaq(5)">
         <span class="faq-q-q">Q</span>
-        <span class="faq-q-text">紫藝醸造のワインはふるさと納税で受け取れますか？</span>
+        <span class="faq-q-text">紫藝醸造のワインはどこで購入できますか？</span>
         <span class="faq-q-icon" id="faq-icon-5">▼</span>
       </div>
-      <div class="faq-a" id="faq-a-5">山梨県のワイナリーの一部はふるさと納税の返礼品として日本ワインを提供しています。山梨県のふるさと納税特集ページで対象の返礼品をご確認ください。</div>
+      <div class="faq-a" id="faq-a-5">紫藝醸造のワインは楽天市場やAmazonで取り扱いがあります。本ページの「このワイナリーのワイン」から各商品ページをご確認いただけます（在庫・価格は変動します）。</div>
+    </div>
+    <div class="faq-item" id="faq-6">
+      <div class="faq-q" onclick="toggleFaq(6)">
+        <span class="faq-q-q">Q</span>
+        <span class="faq-q-text">紫藝醸造のワインはふるさと納税で受け取れますか？</span>
+        <span class="faq-q-icon" id="faq-icon-6">▼</span>
+      </div>
+      <div class="faq-a" id="faq-a-6">山梨県のワイナリーの一部はふるさと納税の返礼品として日本ワインを提供しています。山梨県のふるさと納税特集ページで対象の返礼品をご確認ください。</div>
     </div>
     </div>
   </div>

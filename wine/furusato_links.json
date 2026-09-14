@@ -1,0 +1,962 @@
+{
+ "winery-konohana": {
+  "city": "鹿角市",
+  "pref": "秋田県",
+  "url": "https://www.terroirhub.com/furusato/akita/kazuno/",
+  "count": 3
+ },
+ "hakusan-winery": {
+  "city": "大野市",
+  "pref": "福井県",
+  "url": "https://www.terroirhub.com/furusato/fukui/ono/",
+  "count": 1
+ },
+ "kyoho-wine": {
+  "city": "久留米市",
+  "pref": "福岡県",
+  "url": "https://www.terroirhub.com/furusato/fukuoka/kurume/",
+  "count": 1
+ },
+ "watarise-farm-winery": {
+  "city": "北九州市",
+  "pref": "福岡県",
+  "url": "https://www.terroirhub.com/furusato/fukuoka/kitakyushu/",
+  "count": 2
+ },
+ "hiroshima-miyoshi-winery": {
+  "city": "三次市",
+  "pref": "広島県",
+  "url": "https://www.terroirhub.com/furusato/hiroshima/miyoshi/",
+  "count": 4
+ },
+ "arcanvigne": {
+  "city": "東御市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/tomi/",
+  "count": 3
+ },
+ "villadest": {
+  "city": "東御市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/tomi/",
+  "count": 2
+ },
+ "bonjour-farm": {
+  "city": "東御市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/tomi/",
+  "count": 1
+ },
+ "cave-hatano": {
+  "city": "東御市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/tomi/",
+  "count": 2
+ },
+ "matsubara-wine": {
+  "city": "蘭越町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/rankoshi/",
+  "count": 4
+ },
+ "kamisato-vineyard": {
+  "city": "蘭越町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/rankoshi/",
+  "count": 1
+ },
+ "tada-winery": {
+  "city": "上富良野町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/kamifurano/",
+  "count": 6
+ },
+ "hakkenzan-winery": {
+  "city": "札幌市",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/sapporo/",
+  "count": 5
+ },
+ "sapporo-wine": {
+  "city": "札幌市",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/sapporo/",
+  "count": 5
+ },
+ "kiraka-budoshu-jozo": {
+  "city": "神戸市",
+  "pref": "兵庫県",
+  "url": "https://www.terroirhub.com/furusato/hyogo/kobe/",
+  "count": 2
+ },
+ "unkai-grape-wine": {
+  "city": "綾町",
+  "pref": "宮崎県",
+  "url": "https://www.terroirhub.com/furusato/miyazaki/aya/",
+  "count": 1
+ },
+ "edelwein": {
+  "city": "花巻市",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/hanamaki/",
+  "count": 1
+ },
+ "kamegamori-winery": {
+  "city": "花巻市",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/hanamaki/",
+  "count": 1
+ },
+ "art-paysan-winery": {
+  "city": "花巻市",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/hanamaki/",
+  "count": 2
+ },
+ "takahashi-vineyard": {
+  "city": "花巻市",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/hanamaki/",
+  "count": 1
+ },
+ "ohsama-sato-vineyard": {
+  "city": "花巻市",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/hanamaki/",
+  "count": 6
+ },
+ "kido-winery": {
+  "city": "紫波町",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/shiwa/",
+  "count": 1
+ },
+ "sanuki-winery": {
+  "city": "東かがわ市",
+  "pref": "香川県",
+  "url": "https://www.terroirhub.com/furusato/kagawa/higashikagawa/",
+  "count": 6
+ },
+ "yosakoi-winery": {
+  "city": "高知市",
+  "pref": "高知県",
+  "url": "https://www.terroirhub.com/furusato/kochi/kochi/",
+  "count": 1
+ },
+ "kumamoto-wine": {
+  "city": "山鹿市",
+  "pref": "熊本県",
+  "url": "https://www.terroirhub.com/furusato/kumamoto/yamaga/",
+  "count": 3
+ },
+ "kikuka-winery": {
+  "city": "山鹿市",
+  "pref": "熊本県",
+  "url": "https://www.terroirhub.com/furusato/kumamoto/yamaga/",
+  "count": 1
+ },
+ "charmant-wine": {
+  "city": "北杜市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/hokuto/",
+  "count": 2
+ },
+ "komaki-vineyard": {
+  "city": "北杜市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/hokuto/",
+  "count": 2
+ },
+ "grandvert-vineyard": {
+  "city": "北杜市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/hokuto/",
+  "count": 1
+ },
+ "ogasawara-farm": {
+  "city": "北杜市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/hokuto/",
+  "count": 2
+ },
+ "midaigawa-winery": {
+  "city": "北杜市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/hokuto/",
+  "count": 2
+ },
+ "amanohashidate-winery": {
+  "city": "京丹後市",
+  "pref": "京都府",
+  "url": "https://www.terroirhub.com/furusato/kyoto/kyotango/",
+  "count": 4
+ },
+ "style-winery": {
+  "city": "伊賀市",
+  "pref": "三重県",
+  "url": "https://www.terroirhub.com/furusato/mie/iga/",
+  "count": 1
+ },
+ "hiraizumi-winery": {
+  "city": "明和町",
+  "pref": "三重県",
+  "url": "https://www.terroirhub.com/furusato/mie/meiwa/",
+  "count": 1
+ },
+ "iseshima-winery": {
+  "city": "伊勢市",
+  "pref": "三重県",
+  "url": "https://www.terroirhub.com/furusato/mie/ise/",
+  "count": 1
+ },
+ "ryomi-winery": {
+  "city": "大和町",
+  "pref": "宮城県",
+  "url": "https://www.terroirhub.com/furusato/miyagi/taiwa/",
+  "count": 5
+ },
+ "miyakonojo-winery": {
+  "city": "都城市",
+  "pref": "宮崎県",
+  "url": "https://www.terroirhub.com/furusato/miyazaki/miyakonojo/",
+  "count": 2
+ },
+ "budoyabu": {
+  "city": "長野市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/nagano/",
+  "count": 1
+ },
+ "hase-de-kodawaar": {
+  "city": "松本市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/matsumoto/",
+  "count": 2
+ },
+ "suntory-shiojiri": {
+  "city": "塩尻市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/shiojiri/",
+  "count": 1
+ },
+ "sunsun-winery": {
+  "city": "塩尻市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/shiojiri/",
+  "count": 1
+ },
+ "domaine-hiroki": {
+  "city": "池田町",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/ikeda/",
+  "count": 6
+ },
+ "manns-wine-komoro": {
+  "city": "小諸市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/komoro/",
+  "count": 5
+ },
+ "terre-de-ciel": {
+  "city": "小諸市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/komoro/",
+  "count": 3
+ },
+ "komorokko-farm-winery": {
+  "city": "小諸市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/komoro/",
+  "count": 6
+ },
+ "mercian-fujisawa": {
+  "city": "上田市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/ueda/",
+  "count": 2
+ },
+ "chateau-mercian-mariko": {
+  "city": "上田市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/ueda/",
+  "count": 3
+ },
+ "chateau-mercian": {
+  "city": "上田市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/ueda/",
+  "count": 3
+ },
+ "echigo-winery": {
+  "city": "南魚沼市",
+  "pref": "新潟県",
+  "url": "https://www.terroirhub.com/furusato/niigata/minamiuonuma/",
+  "count": 1
+ },
+ "lescargot": {
+  "city": "弥彦村",
+  "pref": "新潟県",
+  "url": "https://www.terroirhub.com/furusato/niigata/yahiko/",
+  "count": 3
+ },
+ "kuju-winery": {
+  "city": "竹田市",
+  "pref": "大分県",
+  "url": "https://www.terroirhub.com/furusato/oita/taketa/",
+  "count": 2
+ },
+ "ajimu-chiisana-wine-kobo": {
+  "city": "宇佐市",
+  "pref": "大分県",
+  "url": "https://www.terroirhub.com/furusato/oita/usa/",
+  "count": 2
+ },
+ "kurokamiyama-budoen": {
+  "city": "新見市",
+  "pref": "岡山県",
+  "url": "https://www.terroirhub.com/furusato/okayama/niimi/",
+  "count": 3
+ },
+ "okayama-wine-valley": {
+  "city": "新見市",
+  "pref": "岡山県",
+  "url": "https://www.terroirhub.com/furusato/okayama/niimi/",
+  "count": 4
+ },
+ "tokyo-winery": {
+  "city": "新見市",
+  "pref": "岡山県",
+  "url": "https://www.terroirhub.com/furusato/okayama/niimi/",
+  "count": 4
+ },
+ "fujisan-winery": {
+  "city": "富士宮市",
+  "pref": "静岡県",
+  "url": "https://www.terroirhub.com/furusato/shizuoka/fujinomiya/",
+  "count": 1
+ },
+ "fujisan-kitayama-wine": {
+  "city": "富士宮市",
+  "pref": "静岡県",
+  "url": "https://www.terroirhub.com/furusato/shizuoka/fujinomiya/",
+  "count": 2
+ },
+ "iwami-winery": {
+  "city": "大田市",
+  "pref": "島根県",
+  "url": "https://www.terroirhub.com/furusato/shimane/oda/",
+  "count": 2
+ },
+ "okuizumo-budoen": {
+  "city": "雲南市",
+  "pref": "島根県",
+  "url": "https://www.terroirhub.com/furusato/shimane/unnan/",
+  "count": 5
+ },
+ "natan-wine": {
+  "city": "三好市",
+  "pref": "徳島県",
+  "url": "https://www.terroirhub.com/furusato/tokushima/miyoshi/",
+  "count": 1
+ },
+ "takahata-winery": {
+  "city": "高畠町",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/takahata/",
+  "count": 3
+ },
+ "domaine-kelos": {
+  "city": "高畠町",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/takahata/",
+  "count": 1
+ },
+ "domaine-mie-ikeno": {
+  "city": "高畠町",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/takahata/",
+  "count": 1
+ },
+ "gassan-wine": {
+  "city": "鶴岡市",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/tsuruoka/",
+  "count": 2
+ },
+ "pino-collina-matsugaoka": {
+  "city": "鶴岡市",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/tsuruoka/",
+  "count": 3
+ },
+ "tendo-wine": {
+  "city": "天童市",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/tendo/",
+  "count": 1
+ },
+ "lumiere": {
+  "city": "富士河口湖町",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/fujikawagutiko/",
+  "count": 2
+ },
+ "sasaichi-winery": {
+  "city": "大月市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/otsuki/",
+  "count": 6
+ },
+ "sainte-neige": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 1
+ },
+ "cantina-hiro": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 5
+ },
+ "higashi-shin-yoshu": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 3
+ },
+ "sanyo-jozo": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 1
+ },
+ "yamanashi-hakko": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 1
+ },
+ "yawata-yosyu": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 6
+ },
+ "mirai-yume-winery": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 4
+ },
+ "wine-labo": {
+  "city": "山梨市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/yamanashi/",
+  "count": 1
+ },
+ "domaine-kayagatake": {
+  "city": "韮崎市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/nirasaki/",
+  "count": 1
+ },
+ "kanai-jozo": {
+  "city": "韮崎市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/nirasaki/",
+  "count": 1
+ },
+ "mars-hosaka": {
+  "city": "韮崎市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/nirasaki/",
+  "count": 1
+ },
+ "kawanishi-winery": {
+  "city": "韮崎市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/nirasaki/",
+  "count": 1
+ },
+ "creation-farm": {
+  "city": "韮崎市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/nirasaki/",
+  "count": 5
+ },
+ "sanfoods-nirasaki": {
+  "city": "韮崎市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/nirasaki/",
+  "count": 6
+ },
+ "grace-wine": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 1
+ },
+ "marufuji-winery": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 1
+ },
+ "haramo-wine": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 1
+ },
+ "hojo-wine": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 3
+ },
+ "mgvs-winery": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 2
+ },
+ "soryuwine": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 1
+ },
+ "asaya-winery": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 1
+ },
+ "hishiyama-chuo-jozo": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 3
+ },
+ "ohizumi-wine": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 1
+ },
+ "ikeda-winery": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 2
+ },
+ "marusan-budoushu": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 1
+ },
+ "katsunuma-winery": {
+  "city": "甲州市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/koshu/",
+  "count": 2
+ },
+ "komaki-winery": {
+  "city": "小牧市",
+  "pref": "愛知県",
+  "url": "https://www.terroirhub.com/furusato/aichi/komaki/",
+  "count": 1
+ },
+ "kosaka-nanataki-winery": {
+  "city": "小坂町",
+  "pref": "秋田県",
+  "url": "https://www.terroirhub.com/furusato/akita/kosaka/",
+  "count": 6
+ },
+ "akitano-winery": {
+  "city": "北秋田市",
+  "pref": "秋田県",
+  "url": "https://www.terroirhub.com/furusato/akita/kitaakita/",
+  "count": 1
+ },
+ "nikka-cidre-hirosaki": {
+  "city": "弘前市",
+  "pref": "青森県",
+  "url": "https://www.terroirhub.com/furusato/aomori/hirosaki/",
+  "count": 1
+ },
+ "funakoshi-winery": {
+  "city": "多古町",
+  "pref": "千葉県",
+  "url": "https://www.terroirhub.com/furusato/chiba/tako/",
+  "count": 4
+ },
+ "uchiko-winery": {
+  "city": "内子町",
+  "pref": "愛媛県",
+  "url": "https://www.terroirhub.com/furusato/ehime/uchiko/",
+  "count": 1
+ },
+ "omishima-minna-winery": {
+  "city": "今治市",
+  "pref": "愛媛県",
+  "url": "https://www.terroirhub.com/furusato/ehime/imabari/",
+  "count": 1
+ },
+ "shintou-winery": {
+  "city": "榛東村",
+  "pref": "群馬県",
+  "url": "https://www.terroirhub.com/furusato/gunma/shinto/",
+  "count": 4
+ },
+ "sera-winery": {
+  "city": "世羅町",
+  "pref": "広島県",
+  "url": "https://www.terroirhub.com/furusato/hiroshima/sera/",
+  "count": 2
+ },
+ "yamano-winery": {
+  "city": "福山市",
+  "pref": "広島県",
+  "url": "https://www.terroirhub.com/furusato/hiroshima/fukuyama/",
+  "count": 1
+ },
+ "occigabi": {
+  "city": "余市町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/yoichi/",
+  "count": 6
+ },
+ "camel-farm": {
+  "city": "余市町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/yoichi/",
+  "count": 1
+ },
+ "hirakawa-winery": {
+  "city": "余市町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/yoichi/",
+  "count": 4
+ },
+ "winery-yumenomori": {
+  "city": "余市町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/yoichi/",
+  "count": 4
+ },
+ "furano-wine": {
+  "city": "富良野市",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/furano/",
+  "count": 3
+ },
+ "tokachi-wine": {
+  "city": "池田町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/ikeda/",
+  "count": 1
+ },
+ "niki-hills": {
+  "city": "仁木町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/niki/",
+  "count": 3
+ },
+ "domaine-bless": {
+  "city": "仁木町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/niki/",
+  "count": 2
+ },
+ "north-creek-farm": {
+  "city": "仁木町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/niki/",
+  "count": 4
+ },
+ "tomapu-farm": {
+  "city": "仁木町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/niki/",
+  "count": 6
+ },
+ "kiis-open-field": {
+  "city": "仁木町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/niki/",
+  "count": 1
+ },
+ "naritaya-winery": {
+  "city": "仁木町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/niki/",
+  "count": 4
+ },
+ "yamazaki-winery": {
+  "city": "三笠市",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/mikasa/",
+  "count": 2
+ },
+ "okushiri-winery": {
+  "city": "奥尻町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/okushiri/",
+  "count": 1
+ },
+ "yoka-winery": {
+  "city": "五ヶ瀬町",
+  "pref": "宮崎県",
+  "url": "https://www.terroirhub.com/furusato/miyazaki/gokase/",
+  "count": 2
+ },
+ "tsurunuma-winery": {
+  "city": "浦臼町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/urausu/",
+  "count": 3
+ },
+ "kaminokuni-winery": {
+  "city": "上ノ国町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/kaminokuni/",
+  "count": 2
+ },
+ "ebeotsu-wein": {
+  "city": "滝川市",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/takikawa/",
+  "count": 1
+ },
+ "hokkaido-space-winery": {
+  "city": "長沼町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/naganuma/",
+  "count": 2
+ },
+ "memuro-winery": {
+  "city": "芽室町",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/memuro/",
+  "count": 1
+ },
+ "boss-agri-winery": {
+  "city": "北見市",
+  "pref": "北海道",
+  "url": "https://www.terroirhub.com/furusato/hokkaido/kitami/",
+  "count": 2
+ },
+ "ushiku-chateau": {
+  "city": "牛久市",
+  "pref": "茨城県",
+  "url": "https://www.terroirhub.com/furusato/ibaraki/ushiku/",
+  "count": 6
+ },
+ "hiyama-shuzou-hitachi-wine": {
+  "city": "常陸太田市",
+  "pref": "茨城県",
+  "url": "https://www.terroirhub.com/furusato/ibaraki/hitachiota/",
+  "count": 4
+ },
+ "tsukuba-winery": {
+  "city": "つくば市",
+  "pref": "茨城県",
+  "url": "https://www.terroirhub.com/furusato/ibaraki/tsukuba/",
+  "count": 4
+ },
+ "raifuku-shuzou-wine": {
+  "city": "下妻市",
+  "pref": "茨城県",
+  "url": "https://www.terroirhub.com/furusato/ibaraki/shimotsuma/",
+  "count": 1
+ },
+ "noto-wine": {
+  "city": "穴水町",
+  "pref": "石川県",
+  "url": "https://www.terroirhub.com/furusato/ishikawa/anamizu/",
+  "count": 3
+ },
+ "kanazawa-winery": {
+  "city": "珠洲市",
+  "pref": "石川県",
+  "url": "https://www.terroirhub.com/furusato/ishikawa/suzu/",
+  "count": 1
+ },
+ "vineyard-tama": {
+  "city": "珠洲市",
+  "pref": "石川県",
+  "url": "https://www.terroirhub.com/furusato/ishikawa/suzu/",
+  "count": 1
+ },
+ "gomaibashi-winery": {
+  "city": "盛岡市",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/morioka/",
+  "count": 3
+ },
+ "three-peaks": {
+  "city": "大船渡市",
+  "pref": "岩手県",
+  "url": "https://www.terroirhub.com/furusato/iwate/ofunato/",
+  "count": 1
+ },
+ "tsuno-wine": {
+  "city": "都農町",
+  "pref": "宮崎県",
+  "url": "https://www.terroirhub.com/furusato/miyazaki/tsuno/",
+  "count": 2
+ },
+ "kobayashi-ikoma-kogen-wine": {
+  "city": "小林市",
+  "pref": "宮崎県",
+  "url": "https://www.terroirhub.com/furusato/miyazaki/kobayashi/",
+  "count": 1
+ },
+ "saint-cousair": {
+  "city": "飯綱町",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/iizuna/",
+  "count": 1
+ },
+ "mashino-wine": {
+  "city": "高森町",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/takamori/",
+  "count": 3
+ },
+ "shinshu-takayama-winery": {
+  "city": "高山村",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/takayama/",
+  "count": 2
+ },
+ "cantina-riezo": {
+  "city": "高山村",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/takayama/",
+  "count": 1
+ },
+ "vinvie": {
+  "city": "松川町",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/matsukawa/",
+  "count": 1
+ },
+ "ina-wine-kobo": {
+  "city": "伊那市",
+  "pref": "長野県",
+  "url": "https://www.terroirhub.com/furusato/nagano/ina/",
+  "count": 3
+ },
+ "goto-winery": {
+  "city": "五島市",
+  "pref": "長崎県",
+  "url": "https://www.terroirhub.com/furusato/nagasaki/goto/",
+  "count": 3
+ },
+ "tainai-winery": {
+  "city": "胎内市",
+  "pref": "新潟県",
+  "url": "https://www.terroirhub.com/furusato/niigata/tainai/",
+  "count": 2
+ },
+ "yufuin-winery": {
+  "city": "由布市",
+  "pref": "大分県",
+  "url": "https://www.terroirhub.com/furusato/oita/yufu/",
+  "count": 6
+ },
+ "asuka-wine": {
+  "city": "羽曳野市",
+  "pref": "大阪府",
+  "url": "https://www.terroirhub.com/furusato/osaka/habikino/",
+  "count": 1
+ },
+ "kawachi-wine": {
+  "city": "羽曳野市",
+  "pref": "大阪府",
+  "url": "https://www.terroirhub.com/furusato/osaka/habikino/",
+  "count": 1
+ },
+ "shibuya-winery-tokyo": {
+  "city": "渋谷区",
+  "pref": "東京都",
+  "url": "https://www.terroirhub.com/furusato/tokyo/shibuya/",
+  "count": 5
+ },
+ "says-farm": {
+  "city": "氷見市",
+  "pref": "富山県",
+  "url": "https://www.terroirhub.com/furusato/toyama/himi/",
+  "count": 1
+ },
+ "takeda-winery": {
+  "city": "上山市",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/kaminoyama/",
+  "count": 2
+ },
+ "voyage-de-yuuai": {
+  "city": "上山市",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/kaminoyama/",
+  "count": 3
+ },
+ "gassan-toraya-winery": {
+  "city": "西川町",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/nishikawa/",
+  "count": 2
+ },
+ "grape-republic": {
+  "city": "南陽市",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/nanyo/",
+  "count": 2
+ },
+ "sudo-budo-wine": {
+  "city": "南陽市",
+  "pref": "山形県",
+  "url": "https://www.terroirhub.com/furusato/yamagata/nanyo/",
+  "count": 2
+ },
+ "kitanoro-jozo": {
+  "city": "笛吹市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/fuefuki/",
+  "count": 2
+ },
+ "fuefuki-wine": {
+  "city": "笛吹市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/fuefuki/",
+  "count": 6
+ },
+ "suntory-tominooka": {
+  "city": "甲斐市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/kai/",
+  "count": 2
+ },
+ "spring-wine": {
+  "city": "甲府市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/kofu/",
+  "count": 1
+ },
+ "sadoya": {
+  "city": "甲府市",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/kofu/",
+  "count": 3
+ },
+ "rakuen-winery": {
+  "city": "市川三郷町",
+  "pref": "山梨県",
+  "url": "https://www.terroirhub.com/furusato/yamanashi/ichikawamisato/",
+  "count": 2
+ }
+}
