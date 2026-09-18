@@ -2940,7 +2940,7 @@
   "url": "https://www.c-hatano.com/",
   "area": "東御市",
   "desc": "代表の波田野信孝氏が「仮説に基づき実験と検証」を重ねながら、「おいしいぶどうづくり」に注力するワイナリー。顔が見えるお客様へ自信をもって届けるワインを標榜し、雨よけ栽培の導入や農薬削減を実験しながら栽培から醸造・販売まで一貫して行う。",
-  "visit": "要問合せ",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white",
   "main_grape": "chardonnay,merlot",
   "gi": "GI長野",
@@ -2983,7 +2983,13 @@
   "source": "https://www.nagano-wine.jp/special/winery/vol76cavehatano.html",
   "lat": 36.372,
   "lng": 138.235,
-  "name_en": "Cave Hatano"
+  "name_en": "Cave Hatano",
+  "visit_legacy": "要問合せ",
+  "visit_checked": {
+   "url": "https://www.c-hatano.com/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "aperture-farm-winery",
@@ -3117,7 +3123,7 @@
   "url": "https://www.deux-montagnes.jp/",
   "area": "立科町",
   "desc": "蓼科山麓（立科町）と浅間山麓（小諸市）の二人の醸造家による共同醸造所。「ドゥ モンターニュ」はフランス語で「二つの山」を意味し、それぞれの畑のぶどうを別々に醸造することで、異なるテロワールを表現する。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white",
   "main_grape": "pinot_noir,chardonnay",
   "gi": "GI長野",
@@ -3160,7 +3166,13 @@
   "source": "https://www.nagano-wine.jp/special/winery/Vol90.html",
   "lat": 36.235,
   "lng": 138.3,
-  "name_en": "Deux Montagnes Tateshina"
+  "name_en": "Deux Montagnes Tateshina",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://www.deux-montagnes.jp/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "domaine-de-yunohara",
@@ -3291,7 +3303,7 @@
   "url": "https://gakufarm.jp/",
   "area": "松本市",
   "desc": "北アルプスなどの3000m級の山々に取り囲まれた信州松本平のガレージワイナリー。昼夜の気温差が大きく雨量が少ない内陸性気候と標高700mの環境を活かし、その土地らしさを重視したワイン造りを実践している。",
-  "visit": "要問合せ",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white,sparkling",
   "main_grape": "chardonnay,merlot",
   "gi": "GI長野",
@@ -3344,7 +3356,13 @@
   "source": "https://www.winery.or.jp/winery-map/14177/",
   "lat": 36.25,
   "lng": 137.975,
-  "name_en": "Gaku Farm & Winery"
+  "name_en": "Gaku Farm & Winery",
+  "visit_legacy": "要問合せ",
+  "visit_checked": {
+   "url": "https://gakufarm.jp/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "vinvie",
@@ -3619,7 +3637,7 @@
   "url": "https://karuizawawinery.com/",
   "area": "軽井沢町",
   "desc": "2015年から標高870mの小諸市糠地地区で栽培を開始し、2018年に小諸城下町でワイナリー（アンワイナリー）を開設。2023年10月に軽井沢の歴史的建造物（旧大日向教会・聖ヨゼフ保育園）を再活用し、軽井沢初のワイナリーを開設した。",
-  "visit": "ひなたのテラス 軽井沢アンワイナリー（直売所あり）",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white,sparkling",
   "main_grape": "pinot_noir,chardonnay",
   "gi": "GI長野",
@@ -3651,7 +3669,13 @@
   "source": "https://www.nagano-wine.jp/special/winery/vol65anwinery-matsumurakiyomi.html",
   "lat": 36.355,
   "lng": 138.6,
-  "name_en": "Karuizawa Anne Winery"
+  "name_en": "Karuizawa Anne Winery",
+  "visit_legacy": "ひなたのテラス 軽井沢アンワイナリー（直売所あり）",
+  "visit_checked": {
+   "url": "https://karuizawawinery.com/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "budoyabu",
@@ -3666,7 +3690,7 @@
   "url": "https://budoyabu.official.ec/",
   "area": "長野市（信州新町）",
   "desc": "夫婦でワインぶどうの栽培をする長野市信州新町の山奥のワイナリー。2020年より開園し約2haに11品種のぶどうを栽培。複数品種を同日に収穫してブレンドするユニークなアプローチで、白・赤・ロゼの3スタイルを展開する。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white,rose",
   "main_grape": "chardonnay,merlot",
   "gi": "GI長野",
@@ -3718,6 +3742,12 @@
    "distance_m": 7260,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://budoyabu.official.ec/",
+   "date": "2026-09-18",
+   "result": "no_mention"
   }
  },
  {
@@ -3733,7 +3763,7 @@
   "url": "https://hasedekodawaar.jp/",
   "area": "松本市",
   "desc": "2022年7月に醸造所が完成し、9月より醸造を開始した松本市のエステートワイナリー。「草は友達」をモットーに草生栽培による土壌管理を行い、Lyre仕立てV字型垣根を採用した小規模醸造。松本産リンゴを原料としたシードル醸造も実施する。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white",
   "main_grape": "chardonnay,merlot",
   "gi": "GI長野",
@@ -3765,7 +3795,13 @@
   "source": "https://hasedekodawaar.jp/",
   "lat": 36.08,
   "lng": 137.97,
-  "name_en": "Hase de Kodawaar"
+  "name_en": "Hase de Kodawaar",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://hasedekodawaar.jp/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "atelier-du-vin-tomi",
@@ -4241,7 +4277,7 @@
   "url": "https://le-milieu.co.jp/",
   "area": "安曇野市（明科七貴）",
   "desc": "塩瀬豪氏と斎藤翔氏が2018年3月に設立し、同年11月に醸造免許を取得。「北アルプス・安曇野ワイン特区」第一号ワイナリーとして、栽培から醸造、ラベル貼りまで手作業で行う。シャルドネ、メルロー、竜眼などを使用し、2019年秋から本格的な醸造を開始した。",
-  "visit": "オンラインストアでワイン購入可（安曇野ICから車で約10分）",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white,orange",
   "main_grape": "chardonnay",
   "gi": "GI長野",
@@ -4286,6 +4322,12 @@
    "distance_m": 2750,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_legacy": "オンラインストアでワイン購入可（安曇野ICから車で約10分）",
+  "visit_checked": {
+   "url": "https://le-milieu.co.jp/",
+   "date": "2026-09-18",
+   "result": "no_mention"
   }
  }
 ]

@@ -797,7 +797,7 @@
   "url": "https://mongakuwinery.com/",
   "area": "余市町",
   "desc": "7品種の醸造用ブドウを出来る限り自然に栽培している北海道の家族経営ワイナリー。ブドウ栽培からワイン醸造まで一貫して行う。フィールド・ブレンド（一つの畑に様々なブドウを混植し混醸）に特化し、無濾過・無清澄、野生酵母による自然なワインを造っています。",
-  "visit": "通常は一般公開なし。リリース時の案内は事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red",
   "main_grape": "pinot_noir",
   "gi": "GI北海道",
@@ -844,7 +844,13 @@
   "source": "https://mongakuwinery.com/",
   "lat": 43.21,
   "lng": 140.8,
-  "name_en": "Mongaku Valley Winery"
+  "name_en": "Mongaku Valley Winery",
+  "visit_legacy": "通常は一般公開なし。リリース時の案内は事前確認推奨。",
+  "visit_checked": {
+   "url": "https://mongakuwinery.com/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "domaine-yui",
@@ -971,7 +977,7 @@
   "url": "https://www.enoteca.co.jp/producer/detail/1122",
   "area": "三笠市",
   "desc": "2004年にワインづくりを志し、北海道三笠市達布地区の南向斜面約1haを開墾したのが始まり。葡萄畑はできるだけ無農薬にこだわり、葡萄そのものが本来持っている自然の酵母を使って発酵させるワイン造りにこだわっています。",
-  "visit": "営業日・見学対応は事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "white",
   "main_grape": "kerner",
   "gi": "GI北海道",
@@ -1011,7 +1017,13 @@
   "source": "https://www.enoteca.co.jp/producer/detail/1122",
   "lat": 43.4,
   "lng": 141.95,
-  "name_en": "Takizawa Winery"
+  "name_en": "Takizawa Winery",
+  "visit_legacy": "営業日・見学対応は事前確認推奨。",
+  "visit_checked": {
+   "url": "https://www.enoteca.co.jp/producer/detail/1122",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "10r-winery",
@@ -1262,7 +1274,7 @@
   "url": "https://domainemont.com/",
   "area": "余市町",
   "desc": "余市町は北海道の日本海側に突き出た積丹半島の付け根の北緯43度に位置する地域で、漁業と果樹農業が盛んな地。約3ha（栽培面積1.8ha）の自社畑で栽培。山中敦生がドメーヌ・タカヒコの曽我貴彦氏のもとで2年間研修後に独立。",
-  "visit": "通常は一般公開なし。販売やリリース案内は事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red",
   "main_grape": "pinot_noir",
   "gi": "GI北海道",
@@ -1282,7 +1294,13 @@
   "source": "https://domainemont.com/",
   "lat": 43.2,
   "lng": 140.8,
-  "name_en": "Domaine Mont"
+  "name_en": "Domaine Mont",
+  "visit_legacy": "通常は一般公開なし。販売やリリース案内は事前確認推奨。",
+  "visit_checked": {
+   "url": "https://domainemont.com/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "winery-yumenomori",
@@ -1422,7 +1440,7 @@
   "url": "https://yamadado.jp/",
   "area": "余市町",
   "desc": "日常に楽しんで頂けるテーブルワインを造ること。食事の邪魔をしないが、個性的で、日々の食卓が華やかになるワイン造りを目指しています。農家から受け継いだ納屋をワイナリーに改修。2.3ヘクタールの畑を保有。",
-  "visit": "営業日・見学対応は事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red",
   "main_grape": "pinot_noir",
   "gi": "GI北海道",
@@ -1460,7 +1478,13 @@
   "source": "https://yamadado.jp/",
   "lat": 43.2,
   "lng": 140.8,
-  "name_en": "Yamadado"
+  "name_en": "Yamadado",
+  "visit_legacy": "営業日・見学対応は事前確認推奨。",
+  "visit_checked": {
+   "url": "https://yamadado.jp/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "lowbrow-craft",
@@ -3261,7 +3285,7 @@
   "url": "https://toroccostore.com/",
   "area": "北斗市",
   "desc": "2021年始動。函館山を臨む北斗市でフロンティア果樹園を引き継ぎ、10品種のワイン葡萄を栽培。「ワインを通して想いを届けるトロッコ列車のように」という理念を持つ。亜硫酸塩無添加・無清澄・無濾過のナチュラルワイン製造。2024年9月に醸造免許取得。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "white",
   "main_grape": "other",
   "gi": "GI北海道",
@@ -3306,7 +3330,13 @@
   "source": "https://toroccostore.com/pages/about",
   "lat": 41.88,
   "lng": 140.62,
-  "name_en": "torocco winery"
+  "name_en": "torocco winery",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://toroccostore.com/pages/about",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "cenavino-teshikaga",
@@ -3321,7 +3351,7 @@
   "url": "https://www.cenavino.com/",
   "area": "弟子屈町",
   "desc": "北海道独自品種「山幸」「清舞」を中心とした醸造に特化。屈斜路湖・摩周湖に囲まれた弟子屈テロワールを生かし、温泉水を活用した独自製法も取り入れる。無農薬・無添加・天然酵母・無清澄・無濾過のナチュラルスタイルで釧路管内初の民間ワイナリー。2024年6月に醸造免許取得。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red",
   "main_grape": "other",
   "gi": "GI北海道",
@@ -3364,7 +3394,13 @@
   "source": "https://www.cenavino.com/",
   "lat": 43.52,
   "lng": 144.47,
-  "name_en": "Teshikaga Winery (CENAVINO)"
+  "name_en": "Teshikaga Winery (CENAVINO)",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://www.cenavino.com/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "kussharo-caldera-winery",
@@ -3418,7 +3454,7 @@
   "url": "https://alomwinery.com/",
   "area": "安平町",
   "desc": "ハンガリー語で「夢」を意味する「álom（アーロム）」を冠したワイナリー。ハンガリーのブドウ園にインスパイアされた株式会社ダイナックスが北海道安平町で展開。ピノ・ノワール・シャルドネ・ツヴァイゲルトを栽培し、ぶどうがワインになるまでの全工程を体験できる場を目指す。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "white",
   "main_grape": "chardonnay",
   "gi": "GI北海道",
@@ -3450,7 +3486,13 @@
   "source": "https://alomwinery.com/",
   "lat": 42.72,
   "lng": 141.93,
-  "name_en": "Alom Winery (Dynax)"
+  "name_en": "Alom Winery (Dynax)",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://alomwinery.com/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "libera-wine-terrace",
@@ -3622,7 +3664,7 @@
   "url": "https://tomapufarm.com/",
   "area": "仁木町",
   "desc": "代表の高橋ひかり氏が100年続く農家を引き継ぎ、2019年に仁木町でスタート。ツヴァイゲルト・ケルナー・ミュラー・トゥルガウを栽培し、ワイン・チェリー・コーンなど多彩な農産物を生産。「冬」シリーズなど季節感のあるワイン名でも知られる。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "white",
   "main_grape": "kerner",
   "gi": "GI北海道",
@@ -3654,7 +3696,13 @@
   "source": "https://tomapufarm.com/",
   "lat": 43.27,
   "lng": 140.73,
-  "name_en": "TOMAPU FARM"
+  "name_en": "TOMAPU FARM",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://tomapufarm.com/pages/contact",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "kiis-open-field",
@@ -3669,7 +3717,7 @@
   "url": "https://sites.google.com/view/kiisopenfield/",
   "area": "仁木町",
   "desc": "喜井夫妻が営む果樹園兼ワイナリー。サクランボ・ブルーベリーなどの果物とワイン用ぶどうを複合栽培。「ぶどう本来の香りや特徴を活かすため」除草剤・殺虫剤をできるだけ使わない栽培を実践。年間約1,000本の生産。樽熟成を行わずフレッシュな風味を重視。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "white",
   "main_grape": "sauvignon_blanc",
   "gi": "GI北海道",
@@ -3700,7 +3748,13 @@
   "source": "https://niki-wine-tourism.com/winery/01/",
   "lat": 43.24,
   "lng": 140.74,
-  "name_en": "Kii's Open Field"
+  "name_en": "Kii's Open Field",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://sites.google.com/view/kiisopenfield/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "naritaya-winery",
@@ -3814,7 +3868,7 @@
   "url": "https://694.base.shop/",
   "area": "歌志内市",
   "desc": "2016年に地域おこし協力隊の遠藤真人氏が畑の復興に着手。2017年・2018年に市民とボランティアが5,500本・6品種のぶどうの木を植栽。空知の廃れた炭鉱の街・歌志内市に新たなワイン産業を創出。2025年9月に醸造免許を取得した道内最新鋭のワイナリーの一つ。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "white",
   "main_grape": "other",
   "gi": "GI北海道",
@@ -3849,7 +3903,13 @@
   "source": "https://www.pref.hokkaido.lg.jp/fs/1/3/0/3/2/9/4/9/_/01_%E7%A9%BA%E7%9F%A5%E3%82%A8%E3%83%AA%E3%82%A2%E3%80%90R8.2%E7%8F%BE%E5%9C%A8%E3%80%91.pdf",
   "lat": 43.5,
   "lng": 141.99,
-  "name_en": "Kamiuta Vineyard"
+  "name_en": "Kamiuta Vineyard",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://694.base.shop/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "pur-winery",
@@ -3864,7 +3924,7 @@
   "url": "https://niki-wine-tourism.com/winery/11/",
   "area": "仁木町",
   "desc": "2015年にぶどう園を開園。仁木町で最も標高の高い畑（130〜150m）、余市川右岸の東町高台に位置する。シャルドネ（45%）・ピノ・ノワール（35%）を中心に多品種を栽培。ベーカリーと連携したワイナリー施設を計画中。フランス語で「純粋」を意味するブランド名が示すとおり、ぶどう本来の個性を追求する。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red",
   "main_grape": "chardonnay",
   "gi": "GI北海道",
@@ -3899,7 +3959,13 @@
   "source": "https://niki-wine-tourism.com/winery/11/",
   "lat": 43.25,
   "lng": 140.76,
-  "name_en": "Pur."
+  "name_en": "Pur.",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://niki-wine-tourism.com/winery/11/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "nakazawa-vineyard",
@@ -4005,7 +4071,7 @@
   "url": "https://hamadavineyard.com/",
   "area": "三笠市達布",
   "desc": "三笠市達布の丘に葡萄畑を持つ家族経営の小規模生産者。夫婦（濱田氏、東京大学医学部卒）が2013年の退職後、三笠市の山崎ワイナリーで約1年間研修したのち自らの葡萄栽培を開始。2018年秋に初収穫、2019年秋に醸造・熟成・瓶詰めを経て初リリース。2021年からは宮本ヴィンヤードと共同設立した「ドメーヌ・タプコリーヌ」で委託醸造している。",
-  "visit": "",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "white,red",
   "main_grape": "other",
   "gi": "GI北海道",
@@ -4043,6 +4109,11 @@
    "distance_m": 6110,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_checked": {
+   "url": "https://hamadavineyard.com/wine",
+   "date": "2026-09-18",
+   "result": "no_mention"
   }
  },
  {

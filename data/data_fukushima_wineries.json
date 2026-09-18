@@ -336,7 +336,7 @@
   "url": "https://kawauchi-wine.com/",
   "area": "川内村",
   "desc": "阿武隈高地中央部、標高約750mに位置する川内村で2015年からぶどう栽培を開始し、2021年に醸造施設が完成。村産ぶどうを使用する「ヴィラージュ」シリーズと、購入ぶどう（北海道余市産等）を使用する「リベル」シリーズを展開し、2022年3月に初ヴィンテージを発売した。",
-  "visit": "",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red,white",
   "main_grape": "merlot",
   "gi": "",
@@ -391,6 +391,11 @@
    "distance_m": 9290,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_checked": {
+   "url": "https://kawauchi-wine.com/pages/about",
+   "date": "2026-09-18",
+   "result": "no_mention"
   }
  }
 ]

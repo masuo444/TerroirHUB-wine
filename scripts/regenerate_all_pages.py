@@ -14,6 +14,7 @@ import datetime
 _TODAY = datetime.date.today().isoformat()
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from visit_info import visit_info_rows, visit_faq_text   # 見学情報の構造化表示（出典・確認日つき。sakeと共通）
 from wine_filter import is_wine_item   # ワイン以外の楽天商品を表示しないための共通フィルタ
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -297,6 +298,9 @@ def generate_page(b, pref_slug, siblings=None):
     url       = b.get('url','')
     area      = b.get('area','')
     visit     = b.get('visit','')
+    # 公式サイトで確認した構造化データがあればそちらを使う（出典・確認日つき）
+    visit_rows_html = visit_info_rows(b, 'ja')
+    visit_summary = visit_faq_text(b, 'ja') or visit
     station   = b.get('nearest_station','')
     source    = b.get('source','')
     features  = b.get('features', [])
@@ -334,7 +338,7 @@ def generate_page(b, pref_slug, siblings=None):
     meta_desc = meta_desc[:160]
 
     # ── FAQ data ──
-    faqs = build_faqs(name, brand, founded, founded_era, visit, address, station, brands, pref_name, grapes)
+    faqs = build_faqs(name, brand, founded, founded_era, visit_summary, address, station, brands, pref_name, grapes)
     # 購入・ふるさと納税の意図に答えるFAQ（AIO/被引用強化）
     if any(is_wine_item(it.get('name', '')) for it in rk.get('items', []) if isinstance(it, dict)):
         faqs.append((f"{name}のワインはどこで購入できますか？",
@@ -760,7 +764,9 @@ def generate_page(b, pref_slug, siblings=None):
         visit_items += f'<div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">📞</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">電話</div><div style="font-size:15px;color:var(--text-body);">{esc(tel)}</div></div></div>'
     if url:
         visit_items += f'<div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🌐</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">ウェブサイト</div><div style="font-size:15px;"><a href="{esc(url)}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">{esc(url)}</a></div></div></div>'
-    if visit:
+    if visit_rows_html:
+        visit_items += visit_rows_html
+    elif visit:
         visit_items += f'<div style="display:flex;gap:14px;align-items:flex-start;"><span style="font-size:20px;">🏠</span><div><div style="font-size:14px;font-weight:500;margin-bottom:3px;">見学・試飲</div><div style="font-size:15px;color:var(--text-body);">{esc(visit)}</div></div></div>'
 
     # ── 地図（lat/lngがあればOpenStreetMap埋め込み・キー不要） ──
@@ -789,8 +795,8 @@ def generate_page(b, pref_slug, siblings=None):
         _f_main = f'{esc(founded_era)}（{esc(founded)}年）' if founded_era else f'{esc(founded)}年'
         _f_sub = f'<small>創業{years}年</small>' if years else ''
         qf_cells.append(f'<div class="qf-item"><span class="qf-lbl">FOUNDED</span><span class="qf-val">{_f_main}{_f_sub}</span></div>')
-    if visit:
-        qf_cells.append(f'<div class="qf-item"><span class="qf-lbl">VISIT</span><span class="qf-note">{esc(visit[:64])}</span></div>')
+    if visit_summary:
+        qf_cells.append(f'<div class="qf-item"><span class="qf-lbl">VISIT</span><span class="qf-note">{esc(visit_summary[:64])}</span></div>')
     else:
         qf_cells.append('<div class="qf-item"><span class="qf-lbl">VISIT</span><span class="qf-note">見学情報は公式サイトでご確認ください</span></div>')
     _terroir_sub = f'<small>{esc(station)}</small>' if station else ''
@@ -827,10 +833,29 @@ def generate_page(b, pref_slug, siblings=None):
         _anchors.append(('brands', '銘柄'))
     if rk_items:
         _anchors.append(('buy', '購入'))
+    if visit_rows_html:
+        _anchors.append(('visit', '見学'))
     _anchors.append(('access', 'アクセス'))
     pnav = ('<nav class="pnav"><div class="pnav-inner">'
             + ''.join(f'<a href="#{a}">{lb}</a>' for a, lb in _anchors)
             + '</div></nav>')
+
+    # ══ 見学・試飲セクション（公式サイトで確認できた蔵のみ）══
+    # visit_info_rows が出典URLと最終確認日、予約ボタンまで含めて描画する。
+    # 記載を確認できなかった項目は出さない（推測で埋めない）。
+    visit_section = ''
+    if visit_rows_html:
+        visit_section = f'''
+<section class="section" id="visit" style="background:var(--surface);">
+  <div class="sec-inner">
+    <label class="sec-label">VISIT</label>
+    <h2 class="sec-title">見学・試飲</h2>
+    <div class="sec-divider"></div>
+    <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
+      {visit_rows_html}
+    </div>
+  </div>
+</section>'''
 
     # ══ V2: アクセス・基本情報セクション ══
     _amap = ''
@@ -869,8 +894,8 @@ def generate_page(b, pref_slug, siblings=None):
             _txt += f"（直線 約{_d:,}m）"
         _arows.append(('最寄駅<small style="display:block;font-size:9px;opacity:.75;">直線距離</small>',
                        esc(_txt.strip())))
-    if visit:
-        _arows.append(('見学・試飲', esc(visit)))
+    if visit_summary:
+        _arows.append(('見学・試飲', esc(visit_summary)))
     if url:
         _u = url.replace('https://', '').replace('http://', '').rstrip('/')
         _arows.append(('公式サイト', f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(_u)}</a>'))
@@ -1033,6 +1058,7 @@ def generate_page(b, pref_slug, siblings=None):
 {furusato_cta}
 {related_html}
 
+{visit_section}
 {access_section}
 
 {faq_section}

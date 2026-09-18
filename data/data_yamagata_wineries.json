@@ -840,7 +840,7 @@
   "url": "https://www.h-fruitwine.com/",
   "area": "天童市",
   "desc": "さくらんぼや西洋梨など山形の特産果実を使い、濃縮還元汁や甘味料を使わず、果実と酵母のみで醸造したフルーツワインを製造・販売。ブドウワインも手掛け、さくらんぼワインではJAPAN Wine Challenge銅賞を受賞しています。",
-  "visit": "工場見学は事前連絡要。営業時間：9:00〜17:00（土日・休日は不定休）。試飲無料",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "mixed",
   "main_grape": "mba",
   "gi": "GI山形",
@@ -882,6 +882,12 @@
    "distance_m": 770,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_legacy": "工場見学は事前連絡要。営業時間：9:00〜17:00（土日・休日は不定休）。試飲無料",
+  "visit_checked": {
+   "url": "https://www.h-fruitwine.com/",
+   "date": "2026-09-18",
+   "result": "no_mention"
   }
  },
  {
@@ -1231,7 +1237,7 @@
   "url": "https://agricoeur.base.shop/",
   "area": "上山市",
   "desc": "「Agri Cœur」とはAgri＝agriculture（農業）とCœur＝心の2つの単語を合わせた造語。海外・国内での葡萄栽培と醸造経験を活かし、その土地と人に由来する芸術的なワイン製造に注力しています。2022年設立。2025年より自社ワイナリーで醸造開始。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "red",
   "main_grape": "cabernet_sauvignon",
   "gi": "GI山形",
@@ -1263,7 +1269,13 @@
   "source": "https://giyamagata-wine.jp/maker/agri/",
   "lat": 38.1478,
   "lng": 140.2688,
-  "name_en": "Agri-Coeur"
+  "name_en": "Agri-Coeur",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://agricoeur.base.shop/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  },
  {
   "id": "hocca-winery",
@@ -1278,7 +1290,7 @@
   "url": "https://hocca.jp/",
   "area": "鶴岡市",
   "desc": "日本酒蔵「奥羽自慢」が手掛けるワイナリー。酒造りの技術と哲学をワイン醸造に注ぎ込み、「食事に寄り添い、葡萄本来の個性を素直に表現する」ワイン造りを目指しています。HOCCAという名はかつて農家が着用した頭巾「ほっかむり」に由来します。",
-  "visit": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit": "公式サイトでは見学の受付に関する記載を確認できませんでした（2026-09-18時点）。見学を希望される場合は、公式サイトまたは直接お問い合わせください。",
   "wine_style": "mixed",
   "main_grape": "chardonnay",
   "gi": "GI山形",
@@ -1309,6 +1321,12 @@
   "source": "https://giyamagata-wine.jp/maker/hocca/",
   "lat": 38.7278,
   "lng": 139.8278,
-  "name_en": "HOCCA WINERY"
+  "name_en": "HOCCA WINERY",
+  "visit_legacy": "公開情報では一般見学・訪問条件を確認できません。訪問前に公式窓口または販売元へ事前確認推奨。",
+  "visit_checked": {
+   "url": "https://hocca.jp/",
+   "date": "2026-09-18",
+   "result": "no_mention"
+  }
  }
 ]
