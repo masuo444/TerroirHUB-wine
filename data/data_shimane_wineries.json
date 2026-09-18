@@ -171,6 +171,15 @@
   "source": "https://iwami.wine/",
   "lat": 35.113,
   "lng": 132.636,
-  "name_en": "Iwami Winery"
+  "name_en": "Iwami Winery",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "石見ワイナリー",
+   "notes_ja": "「ワインのテイスティングや、お食事や休憩に、ゆったりと流れる時間をお楽しみください」。定休日は「毎週火曜日（変更になる場合もあります）」。営業時間・料金の明記なし。駐車場：普通車110台、バス10台。",
+   "source": "https://iwami.wine/",
+   "last_checked": "2026-09-18"
+  }
  }
 ]

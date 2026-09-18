@@ -98,7 +98,17 @@
   "source": "https://www.occigabi.net/",
   "lat": 43.2,
   "lng": 140.75,
-  "name_en": "OcciGabi Winery"
+  "name_en": "OcciGabi Winery",
+  "visit_info": {
+   "status": "open",
+   "tasting": "paid",
+   "fee": "お好きなワイン3種類 550円（税込）、グラスワイン550円（税込）、ガーデン試飲（おつまみ3品+グラスワイン1杯）1980円（税込）、ガーデン試飲（おつまみ5品+グラスワイン1杯）2530円（税込）",
+   "shop": true,
+   "facility": "OcciGabi Winery ショップ／レストラン",
+   "notes_ja": "ショップ11:00〜17:00、レストランランチ11:00〜15:00（LO14:00）、ディナー17:00〜20:00（LO18:00）。レストランは要予約（4名以上、来店1週間前までにメールまたは電話）。コース料金5500円／7700円／11000円。定休日：12月から2月まで毎週火曜日、年末年始12/29〜1/3。試飲はカウンターにて申し付け。",
+   "source": "https://www.occigabi.net/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "hokkaido-wine",
@@ -158,7 +168,20 @@
   "source": "https://www.hokkaidowine.com/",
   "lat": 43.17,
   "lng": 141.06,
-  "name_en": "Hokkaido Wine Co., Ltd."
+  "name_en": "Hokkaido Wine Co., Ltd.",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://hokkaidowine.rsvsys.jp/",
+   "tasting": "paid",
+   "fee": "北海道ワイナリーツアー 7,700円(税込)/1名様につき、ご近所寿司ペアリングツアー 13,200円(税込)/1名様につき、テクニカルコース 13,200円(税込)/1名様につき、団体プランA 3,850円(税込)/1名様につき、団体プランB 1,100円(税込)/1名様につき",
+   "duration": "北海道ワイナリーツアー約90分（お買い物時間除く）、ご近所寿司ペアリングツアー約110分（お買い物時間除く）、テクニカルコース約150分（お買い物時間は除く）、団体プランA約45分（お買い物時間除く）、団体プランB 30分程度（お買い物時間除く）",
+   "shop": true,
+   "facility": "おたるワインギャラリー",
+   "notes_ja": "営業時間9:00〜17:00、年中無休（年末・年始を除く）。入場無料。全ツアーで試飲が含まれる。ワインショップでも試飲可能。",
+   "source": "https://www.hokkaidowine.com/tours/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "hakodate-wine",
@@ -525,7 +548,18 @@
   "source": "https://nikihills.co.jp/winery/",
   "lat": 43.25,
   "lng": 140.72,
-  "name_en": "NIKI Hills Winery"
+  "name_en": "NIKI Hills Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "fee": "3種のテイスティング付・ノンアルコール2種 4,180円／1名、6種のテイスティング付 6,380円／1名（小学生以下は無料、ドリンク代別）",
+   "duration": "約75分（見学＋試飲）",
+   "facility": "NIKI Hills Winery",
+   "notes_ja": "営業時間10:00〜16:00（1・2月は〜15:00、不定休）。開催時間10:30〜、13:30〜、14:45〜（1・2月は14:45〜の回なし）。定員1〜8名。予約はメールまたは電話（電話予約のみ当日予約可能な場合あり）。",
+   "source": "https://nikihills.co.jp/tour_activity/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "camel-farm",
@@ -1367,7 +1401,13 @@
   "source": "https://misono-vineyard.com/",
   "lat": 43.19,
   "lng": 140.79,
-  "name_en": "Misono Vineyard"
+  "name_en": "Misono Vineyard",
+  "visit_info": {
+   "status": "closed",
+   "notes_ja": "「ご訪問は受け付けておりません。」と明記。",
+   "source": "https://misono-vineyard.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "yamadado",
@@ -1504,7 +1544,13 @@
   "source": "https://harada-sake.jp/yoka.html",
   "lat": 43.21,
   "lng": 140.79,
-  "name_en": "YOKA WINERY"
+  "name_en": "YOKA WINERY",
+  "visit_info": {
+   "status": "closed",
+   "notes_ja": "「家族経営の小さなワイナリーです。栽培と醸造に専念するため見学や直接販売等は行っておりません。」",
+   "source": "https://www.yoka-winery.com/winery",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "domaine-bless",
@@ -1563,7 +1609,19 @@
   "source": "https://domaine-bless.com/",
   "lat": 43.26,
   "lng": 140.73,
-  "name_en": "Domaine Bless"
+  "name_en": "Domaine Bless",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "fee": "4000円(テイスティング4種(各40ml)) ※運転手は2500円",
+   "duration": "テイスティング含め1時間程度",
+   "shop": true,
+   "facility": "Domaine Bless",
+   "notes_ja": "ワイナリーツアーは「ぶどう畑とワイン醸造所の見学、そして新鮮なワインのテイスティングをお楽しみいただけるワイナリーツアーを開催しています」。開催は「カフェ営業期間中の土曜・日曜日 15時〜」、定員10名まで。「予約のみの対応となります」、申込は「電話・メール・SNSでご連絡をお願いいたします」。カフェ営業期間は5月〜9月（10月〜4月冬季休業）、営業時間「土日 11：00〜14：30」、グラスワイン¥800〜、テイスティングセット(3種)¥1500。オンラインショップあり(lerevewinery.base.shop)。",
+   "source": "https://domaine-bless.com/service/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "domaine-ichi",
@@ -2064,7 +2122,17 @@
   "source": "https://domaine-raison.com/",
   "lat": 43.41,
   "lng": 142.4,
-  "name_en": "Domaine Raison"
+  "name_en": "Domaine Raison",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "fee": "お１人様 550円（税込み）※10名未満の場合は10名様分の料金",
+   "shop": true,
+   "facility": "ドメーヌレゾン",
+   "notes_ja": "ワイナリー見学ツアーは「北海道の広大な自然に広がる自社圃場を見学していただけるドメーヌレゾンこだわりのワイナリー見学ツアー」。開催日時は「月・木・金：10:00～16:00」、「GW期間中の土日祝は開催可能」。「基本的にご予約いただいた場合のみの開催」で、予約締切は「一週間前まで」、定員「10～20名」。申込は「お電話かFAXにて」（電話0167-44-3035／FAX0167-44-3036）。ブティック横にカフェも併設、絶景の十勝岳を望むテラス席あり。宿泊はホテル&コンドミニアム一花『HITOHANA』（https://hotel-hitohana.com/）。やぎとのふれあいや果実の収穫などのアクティビティ案内あり。",
+   "source": "https://domaine-raison.com/tour.html",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "ebeotsu-wein",
@@ -2343,7 +2411,16 @@
   "source": "https://aizawanouen.com/about/",
   "lat": 42.92,
   "lng": 143.21,
-  "name_en": "Aizawa Noen (Aizawa Winery)"
+  "name_en": "Aizawa Noen (Aizawa Winery)",
+  "visit_info": {
+   "status": "open",
+   "tasting": "free",
+   "shop": true,
+   "facility": "あいざわ農園 直営ショップ",
+   "notes_ja": "ショップ営業日は限定的で告知制。例：「7/4(土)ショップ営業 10:00～15:00」「7/25(土)ショップ営業 10:00～15:00」。営業日以外の訪問時には「事前にご連絡をお願いいたします」との記載あり。「ワイン無料試飲販売会」がイベントとして複数回開催されている記載あり。",
+   "source": "https://aizawanouen.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "de-montille-hokkaido",
@@ -2391,7 +2468,14 @@
   "source": "https://www.demontille-hokkaido.com/",
   "lat": 41.87,
   "lng": 140.72,
-  "name_en": "de Montille & Hokkaido"
+  "name_en": "de Montille & Hokkaido",
+  "visit_info": {
+   "status": "open",
+   "facility": "ビストロ・ベルヴュ ド・モンティーユ&北海道",
+   "notes_ja": "公式サイトのナビゲーションに「レストラン・ご見学」の項目があり、「レストラン、送迎、ご見学についてはこちらのページをご覧ください。」と案内（リンク先: bistro-bellevue.com）。リンク先ページにも見学ツアーの具体的な時間・料金の記載は確認できず、問い合わせ先（bistro-bellevue@demontille-hokkaido.co.jp）のみ確認できた。",
+   "source": "https://www.demontille-hokkaido.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "vina-de-oro-bodega",
@@ -2868,7 +2952,15 @@
   "source": "https://miraifarm.co.jp/wine/",
   "lat": 43.81,
   "lng": 143.89,
-  "name_en": "Infield Winery"
+  "name_en": "Infield Winery",
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "facility": "ワイナリーショップ",
+   "notes_ja": "ワインの購入は「ワイナリーショップまたはオンラインショップにて」と記載。見学予約や来訪の詳細記載はなし。「ただいま、ワイナリー内部を公開中！360°画像をリモートからでも見られます」として360°ワイナリー体験ページ（https://miraifarm.co.jp/r360/）へのリンクあり。",
+   "source": "https://miraifarm.co.jp/wine/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "wine-hatake-uramoto",
@@ -3056,7 +3148,17 @@
   "source": "https://winery.yoichidreams.com/",
   "lat": 43.27,
   "lng": 140.72,
-  "name_en": "Domaine Harbiose"
+  "name_en": "Domaine Harbiose",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "available",
+   "shop": true,
+   "facility": "ドメーヌ・アルビオーズ",
+   "notes_ja": "「テイスティング付きワイナリー見学ツアー」を実施。予約は電話のみ（TEL.0135-48-5224）、「ご予約はご希望の日程の3日前までにお願いいたします」。ただし「5月・8〜11月は受付を停止」との記載あり。",
+   "source": "https://winery.yoichidreams.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "north-creek-farm",
@@ -3434,7 +3536,16 @@
   "source": "http://tokachigaoka-w.jp/",
   "lat": 43.03,
   "lng": 143.22,
-  "name_en": "Tokachigaoka Winery"
+  "name_en": "Tokachigaoka Winery",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "十勝が丘ワイナリー",
+   "notes_ja": "「ぶどう畑に隣接する醸造施設の見学が可能」。「ワイナリー内には試飲用のワインサーバーを設置しており、おつまみチーズとともに、気軽にワインの味わいをお楽しみいただけます」。オリジナルソフトクリームと隣接施設のチーズも販売。営業時間「9:00-16:00」、お休み「火曜日・水曜日(但し祝日等は営業)」。予約に関する記載は確認できず。",
+   "source": "http://tokachigaoka-w.jp/about/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "bankei-winery",
@@ -3487,7 +3598,16 @@
   "source": "https://sapporo-bankei-winery.jimdofree.com/",
   "lat": 43.07,
   "lng": 141.27,
-  "name_en": "Bankei Winery"
+  "name_en": "Bankei Winery",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "ばんけい峠のワイナリー",
+   "notes_ja": "「開店日にはワインの無料試飲ができます」（ただし「一部限定商品のみ有料」）。ショップ営業時間は夏季(4〜10月)10:00〜17:00、冬季(11〜3月)10:00〜16:00、水曜・木曜定休。併設のテラスカフェ「峠の茶屋」は土日祝のみ営業・事前予約必須（電話011-618-0522またはメール）、ランチ11:00〜16:00(L.O.15:00)、ディナー19:00〜21:00。見学専用プログラムの記載はなし。",
+   "source": "https://sapporo-bankei-winery.jimdofree.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "tomapu-farm",
@@ -3975,6 +4095,14 @@
    "distance_m": 1740,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "inquire",
+   "reservation": "required",
+   "tasting": "none",
+   "notes_ja": "畑のご見学、収穫ボランティアをご希望の方は、メールにてご連絡いただけると嬉しいです。（メール：nagai@irenka.co.jp、電話：080-5528-6936）",
+   "source": "https://irenka.co.jp/",
+   "last_checked": "2026-09-18"
   }
  },
  {

@@ -1104,6 +1104,17 @@
    "distance_m": 4570,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "tasting": "paid",
+   "fee": "無料ワイナリーツアー：無料／テイスティング付きツアー：1名様あたり¥2,200（税込）／ガーデンランチ付きツアー：1名様あたり￥4,400〜（税込）／レストランランチ付き半日満喫ツアー：1名様あたり￥6,000〜（税込）",
+   "duration": "無料ワイナリーツアー：想定所要時間15分／テイスティング付きツアー：約1時間／ガーデンランチ付きツアー：約2時間／レストランランチ付き半日満喫ツアー：約3時間30分",
+   "shop": true,
+   "facility": "サンクゼールの丘（本店）",
+   "notes_ja": "無料ワイナリーツアーは「1日3回、11:00～/13:30～/15:00～各回想定所要時間15分で開催」「無料ツアーは各回上限10名様」「ご予約不要」。テイスティング付きツアーは「開催時間：11:30～/15:00～」「ご予約制」。ガーデンランチ付きツアーは「開催時間：11:30～」「ご予約制」。本店ショップ営業時間「平日 9:00～17:00／土日祝 9:00～18:00」。",
+   "source": "https://www.stcousair.co.jp/valley/wine/tour",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3084,7 +3095,14 @@
   "source": "https://www.nagano-wine.jp/special/winery/vol61veraisonnote.html",
   "lat": 36.39,
   "lng": 138.25,
-  "name_en": "Veraison Note"
+  "name_en": "Veraison Note",
+  "visit_info": {
+   "status": "closed",
+   "facility": "ヴェレゾン・ノート",
+   "notes_ja": "ワイナリーツアーページには「私たちの夢がつまったワイナリーや圃場を、様々な映像でご案内いたします」とありバーチャルツアー（3D映像・動画）の紹介のみで、「一般公開はしておりません」と明記。会員制度（Veraison Note Club）の特典として「ご希望に合わせて収穫体験等の作業体験をしていただけます。その際、送迎、宿泊手配などできる範囲でお手伝いいたします」との記載があるが、料金・予約方法は明記されておらず会員向けの案内。",
+   "source": "https://www.veraison-note.com/winery_tour/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "deux-montagnes-tateshina",
@@ -3190,7 +3208,19 @@
   "source": "https://www.nagano-wine.jp/special/winery/vol93.html",
   "lat": 36.198,
   "lng": 137.99,
-  "name_en": "Domaine de Yunohara"
+  "name_en": "Domaine de Yunohara",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://shop.oiwakeya.com/pages/special",
+   "tasting": "paid",
+   "fee": "有料：お一人様2,500円/所要時間約90分※テイスティング3種付",
+   "duration": "約90分",
+   "facility": "ドメーヌ・ド・ユノハラ",
+   "notes_ja": "「3つの時間帯(11:00～/13:00～/15:00～)で開催」。「ワイナリースタッフがご案内する見学ツアー」。ご希望の方はお問い合わせフォームより申込。「原則として3営業日以内に、ご予約完了のご連絡を差し上げます」「当日のご予約はお受けしておりません」「葡萄収穫準備から醸造作業の期間（8月～11月）は、繁忙期につきツアーは休止致します」。",
+   "source": "https://shop.oiwakeya.com/pages/special",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "venus-line-jozo",
@@ -3239,7 +3269,14 @@
   "source": "https://www.winery.or.jp/winery-map/16823/",
   "lat": 35.995,
   "lng": 138.16,
-  "name_en": "Venus Line Winery"
+  "name_en": "Venus Line Winery",
+  "visit_info": {
+   "status": "paused",
+   "tasting": "none",
+   "notes_ja": "「ただいま畑作業が忙しいため、ワイナリーでの試飲、販売は行っておりません。」1月3日（土）・4日（日）に限定でショップをオープン予定で、「種類限定ですが弊社ワインを直販しておりますので、ぜひお立ち寄りくださいませ。ワイナリーの見学も(暖房効いてないので寒いですが)ご案内可能です。」との記載あり（期間限定のイベント）。",
+   "source": "https://www.odcwine.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "gaku-farm-winery",
@@ -3364,7 +3401,20 @@
   "source": "https://vinvie.jp/",
   "lat": 35.57,
   "lng": 137.895,
-  "name_en": "VinVie"
+  "name_en": "VinVie",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://vinvie.jp/reservation",
+   "tasting": "available",
+   "fee": "お一人様1,000円",
+   "duration": "約30分",
+   "shop": true,
+   "facility": "テイスティングスペース／直営ショップ",
+   "notes_ja": "営業日 毎週金・土・日・月曜日、祝日（年末年始除く）営業時間 10:00～17:00。ワイナリー見学ツアーは要予約、開催時間は11:00～/13:00～/15:00～の3枠。原則として3営業日以内に予約完了の連絡。醸造期間（8月下旬～2月頃）は施設内への入場ができません。",
+   "source": "https://vinvie.jp/reservation",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "oike-winery",
@@ -3425,7 +3475,14 @@
   "source": "https://www.nagano-wine.jp/winery/alps/oike-winery/",
   "lat": 36.15,
   "lng": 137.95,
-  "name_en": "Oike Winery"
+  "name_en": "Oike Winery",
+  "visit_info": {
+   "status": "inquire",
+   "facility": "Camarade（畑作業・醸造体験プログラム）",
+   "notes_ja": "「小さいワイナリーだからこそ枝の剪定やぶどうの収穫、醸造など、『こうやってワインができるんだぁ！』と体験していただけるものと思っています」。LINE公式アカウント登録で体験機会の情報が配信される。営業時間・料金・所要時間の記載なし。TEL 0263-55-6100（電話受付時間：平日10:00～17:00）。",
+   "source": "https://www.taikewine.jp/vtour",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "ina-wine-kobo",
@@ -3482,7 +3539,15 @@
   "source": "https://www.winery.or.jp/winery-map/7599/",
   "lat": 35.85,
   "lng": 137.95,
-  "name_en": "Ina Wine Kobo"
+  "name_en": "Ina Wine Kobo",
+  "visit_info": {
+   "status": "open",
+   "tasting": "free",
+   "shop": true,
+   "notes_ja": "営業時間：9：00～17：00。水曜/木曜 定休。試飲はランダムで毎日4種類を無料でご用意（運転される方には提供いたしません）。",
+   "source": "http://inawine.net",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "komorokko-farm-winery",
@@ -3781,7 +3846,15 @@
   "source": "https://sakaki.wine/",
   "lat": 36.455,
   "lng": 138.18,
-  "name_en": "Vino della Gatta Sakaki"
+  "name_en": "Vino della Gatta Sakaki",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "facility": "レストラン・直営店舗「ネコノワイン」",
+   "notes_ja": "「フォームでのレストラン予約は受け付けておりません。ご予約はお電話／予約専用メールでお願いいたします。」直営店舗「ネコノワイン」では「長野県のお酒をお楽しめる」との記載あり。TEL 0268-82-2208。営業時間・料金の記載なし。",
+   "source": "https://sakaki.wine/contact/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "vin-domachi-ferme36",
@@ -3879,6 +3952,14 @@
    "distance_m": 550,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "facility": "ワイナリーショップ＆レストラン「Bottega」",
+   "notes_ja": "「ワイナリーショップ＆レストラン『Bottega』を併設し、ワインの購入が可能」。営業時間・定休日・料金の記載なし。TEL 0263-51-8011。",
+   "source": "https://sun-vision.or.jp/activity/winery/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3996,6 +4077,15 @@
    "distance_m": 730,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://kaze-nukaji.com/winerytour/",
+   "facility": "試飲スペース",
+   "notes_ja": "「大人１０名以上のグループでお申込みいただけます」。「その時々の農作業や仕込み作業が優先となります。時期によっては対応が難しいこともあります」。2024年3月にワイナリー隣接の家屋をリフォームして試飲スペースを整備。料金・所要時間の記載なし。",
+   "source": "https://kaze-nukaji.com/winerytour/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4056,7 +4146,16 @@
   "source": "https://www.nagano-wine.jp/special/winery/bellybeads.html",
   "lat": 36.128,
   "lng": 137.96,
-  "name_en": "Belly Beads Winery"
+  "name_en": "Belly Beads Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "tasting": "available",
+   "facility": "直売所（王滝ケータリングサービス内）",
+   "notes_ja": "「試飲も可能な直売所＆自然にあふれた農園の様子をご紹介します！」。農園については「事前にご連絡をいただければ、農園周辺の散策やご案内も可能です」との記載あり。営業時間・定休日・料金の明記なし。",
+   "source": "https://bellybeadswinery.com/pages/farm/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "minakata-jozo",

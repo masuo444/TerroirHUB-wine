@@ -151,6 +151,15 @@
    "distance_m": 3630,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "tasting": "free",
+   "shop": true,
+   "facility": "ゴッツォナーレ高畠（ワイナリーショップ＋テイスティングエリア）",
+   "notes_ja": "「ワイナリーショップと軽食や有料グラスワインが楽しめるテイスティングエリアを備えた『ゴッツォナーレ高畠』」。「甘口から辛口のワインを常時4～5種類の無料試飲を準備」。営業時間「（4月〜11月）平日10：00〜17：00　土日祝 9：00～17：00　（12月～3月）10:00～16:30」。団体見学の予約要否についての明記はサイト内に見当たらず。",
+   "source": "https://www.takahata-winery.jp/facility/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -935,6 +944,15 @@
    "distance_m": 1520,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "reservation_url": "https://pinocollina.com/reserve/",
+   "facility": "ピノ・コッリーナファームガーデン＆ワイナリー松ケ岡",
+   "notes_ja": "営業時間「10:00～17:00 CLOSE LUNCH 11:00～14:00 L.O CAFE 14:30～16:00 L.O」。ショップは「2020年から販売を開始した自社醸造ワインや種類豊富なノンアルコールワインまで幅広く取り揃えています」。レストランは「レストラン予約はこちら」のページあり。ワイナリー見学・試飲そのものについての明記はサイト内に見当たらず。",
+   "source": "https://pinocollina.com/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -988,6 +1006,18 @@
    "distance_m": 770,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "fee": "おひとり 1,100円（税込）",
+   "duration": "約50分",
+   "shop": true,
+   "facility": "ワイナリーショップ（見学は1階醸造室）",
+   "notes_ja": "見学は「土曜日　11時スタート」。「ぶどう栽培、ワイン醸造などの概要説明後、１階の醸造室をご案内します。ワイン、またはぶどうジュースの試飲付き。」「事前のご予約が必要です。お問合せフォームにてご連絡ください。」8月～10月は繁忙期のため見学が休止されることがある旨の記載あり。ワイナリーショップの営業は「土曜日の１２時～１７時」。",
+   "source": "https://www.kelos.co.jp/kengaku",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -1079,7 +1109,16 @@
   "source": "https://giyamagata-wine.jp/maker/drop/",
   "lat": 38.1478,
   "lng": 140.2688,
-  "name_en": "DROP"
+  "name_en": "DROP",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "ワインスタンド（併設）",
+   "notes_ja": "週末限定でオープンする併設のワインスタンドではDROPの限定ワインをはじめ、グラス一杯からボトルの購入まで楽しむことが出来る",
+   "source": "https://giyamagata-wine.jp/maker/drop/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "voyage-de-yuuai",
@@ -1129,7 +1168,16 @@
   "source": "https://giyamagata-wine.jp/maker/yuuai/",
   "lat": 38.1478,
   "lng": 140.2688,
-  "name_en": "Voyage de YUUAI"
+  "name_en": "Voyage de YUUAI",
+  "visit_info": {
+   "status": "open",
+   "tasting": "free",
+   "shop": true,
+   "facility": "ショップ",
+   "notes_ja": "毎週金曜・土曜11:00～15:00まで営業（日～木は定休）。すべてのワインの試飲はもちろん、コーヒーやぶどうジュース、ワインに合うおつまみなどもご用意。ワイン購入は2,200円～3,500円、ギフト包装は別途150～250円。",
+   "source": "https://yuuai-kai.or.jp/wine",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "ringorillappa",

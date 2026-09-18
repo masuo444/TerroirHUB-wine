@@ -39,6 +39,10 @@ _ja_root, _en_root = f'{DOMAIN}/', f'{DOMAIN}/en/'
 add(_ja_root,                   '1.0', 'weekly', hreflang_pair(_ja_root, _en_root))
 add(_en_root,                   '0.9', 'weekly', hreflang_pair(_ja_root, _en_root))
 add(f'{DOMAIN}/wine/guide/',    '0.9', 'monthly')
+# 見学ガイド（2026-09-18追加）。実在するページだけを載せる
+for _vp in sorted(glob.glob(os.path.join(BASE, 'wine', 'visit', '**', 'index.html'), recursive=True)):
+    _rel = os.path.relpath(_vp, BASE).replace(os.sep, '/')[:-len('index.html')]
+    add(f'{DOMAIN}/{_rel}', '0.9', 'monthly')
 add(f'{DOMAIN}/wine/mypage/',   '0.7', 'monthly')
 add(f'{DOMAIN}/wine/search/',   '0.8', 'weekly')
 add(f'{DOMAIN}/wine/plans/',    '0.8', 'monthly')

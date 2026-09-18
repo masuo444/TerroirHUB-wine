@@ -328,6 +328,14 @@
   "source": "https://www.hokkoh-farm.jp/",
   "lat": 34.75,
   "lng": 132.361,
-  "name_en": "Hokkoh Winery"
+  "name_en": "Hokkoh Winery",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "facility": "オンラインショップ（thebase.in）",
+   "notes_ja": "オンラインショップ（https://hokkohfarm.thebase.in/）およびフレスタの日本ワインコーナー等で販売。ルッソダイニング等での試飲会実施実績あり（例：12月5日 広島市 ルッソダイニングで試飲会）。ワイナリー自体の見学に関する記載は確認できず。",
+   "source": "https://www.hokkoh-farm.jp/",
+   "last_checked": "2026-09-18"
+  }
  }
 ]

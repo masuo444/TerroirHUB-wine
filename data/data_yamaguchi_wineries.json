@@ -109,6 +109,15 @@
   "source": "https://www.domaine-pinot-livre.com/",
   "lat": 33.73,
   "lng": 132.23,
-  "name_en": "Domaine Pinot Livre (Suo Oshima Winery)"
+  "name_en": "Domaine Pinot Livre (Suo Oshima Winery)",
+  "visit_info": {
+   "status": "paused",
+   "reservation": "required",
+   "shop": true,
+   "facility": "醸造所SHOP",
+   "notes_ja": "醸造所Shopは予約制。前々日までに【ご予約フォーム】よりご連絡ください。ご来店時刻は①11:30か②13:30からお選びください。※収穫仕込みのため今期は終了。Web SHOPは期間や商品を限定してOPENしており、メンバー以外でも購入可能。2026年は会員(メンバーシップ)の少枠募集を秋ごろ予定。",
+   "source": "https://www.domaine-pinot-livre.com/",
+   "last_checked": "2026-09-18"
+  }
  }
 ]

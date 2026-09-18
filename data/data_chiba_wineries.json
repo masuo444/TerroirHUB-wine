@@ -238,6 +238,16 @@
    "distance_m": 620,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://www.hotpepper.jp/strJ000987858/course_cnod08/",
+   "tasting": "available",
+   "facility": "FUNABASHI COQ WINERY",
+   "notes_ja": "「ワイナリー集合！ワイナリー見学後お店でワインを楽しむプラン」（8名様以上、日曜日限定）のみ実施。予約はホットペッパーから。",
+   "source": "https://fcw.theshop.jp/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -300,6 +310,14 @@
    "distance_m": 490,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "facility": "千葉ワイナリー ショップ（tomio village高品内）",
+   "notes_ja": "ショップ営業時間10:00-18:00、定休日:水曜日。見学・試飲に関する記載は確認できず。",
+   "source": "https://chibawinery.com/",
+   "last_checked": "2026-09-18"
   }
  }
 ]

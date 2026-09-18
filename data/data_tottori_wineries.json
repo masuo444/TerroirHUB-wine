@@ -198,6 +198,15 @@
    "distance_m": 3770,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "倉吉ワイナリー（1階ショップ・2階ワインバー、改修された町屋）",
+   "notes_ja": "「カフェやショップ、試飲コーナーなど『日本ワイン』を愉しんでいただく施設をご用意しています。（カフェ、ショップ、試飲コーナー）」。営業時間・定休日・料金の明記なし。",
+   "source": "https://www.kurayoshi-winery.com/施設紹介/",
+   "last_checked": "2026-09-18"
   }
  }
 ]

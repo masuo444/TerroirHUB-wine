@@ -63,7 +63,16 @@
   "source": "https://www.grace-wine.com/",
   "lat": 35.6797,
   "lng": 138.7218,
-  "name_en": "Grace Wine (Chuo Budoshu)"
+  "name_en": "Grace Wine (Chuo Budoshu)",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "ワインショップ",
+   "notes_ja": "ぶどう畑（勝沼、明野）や醸造所のご案内は行っていません。バスの乗り入れもお断りしています。ワインショップ2階で着席でのテイスティングが可能（エノマティックによる適温提供、甲州産地別テイスティングあり）。座席に限りがあり、満席時はウェイティング対応。営業時間：9:00～12:00（ラストオーダー11:30）、13:00～16:30（ラストオーダー16:00）。定休日：日曜日（1～7月）、水曜日（8月～12月）、及び年末年始。",
+   "source": "https://www.grace-wine.com/winery/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "chateau-mercian",
@@ -184,7 +193,18 @@
   "source": "https://www.lumiere.jp/company",
   "lat": 35.6455,
   "lng": 138.6868,
-  "name_en": "Lumière"
+  "name_en": "Lumière",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "fee": "40分コース：￥800（税込）、学生￥400／1時間コース：￥1,300（税込）、学生￥900（試飲付き）／団体（15名以上）：見学のみ￥600、見学＋試飲￥1,100",
+   "duration": "40分コース／1時間コース（1時間コースは試飲3種類20分を含む）",
+   "facility": "ルミエール",
+   "notes_ja": "自社農園→醸造棟→石蔵発酵槽→地下セラーを見学するガイドツアー。予約は電話のみ（0553-47-0207）、見学希望日の前日15時までに要予約（2名以上）。営業時間9:30～17:30（電話受付）。",
+   "source": "https://www.lumiere.jp/tour",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "mannswines-katsunuma",
@@ -236,7 +256,20 @@
   "source": "https://www.mannswines.com/winery/katsunuma/",
   "lat": 35.6898,
   "lng": 138.7156,
-  "name_en": "Manns Wines Katsunuma Winery"
+  "name_en": "Manns Wines Katsunuma Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://mannswines.com/winery/katsunuma/tour/",
+   "tasting": "paid",
+   "fee": "スタンダードツアー（平日）：¥500(税込)／1人。プレミアムツアー（土日祝）：¥1,500(税込)／1人（ワイン3種付き）またはジュース2種付き¥1,000(税込)/1人",
+   "duration": "スタンダードツアーは約30～40分、プレミアムツアーは約60分",
+   "shop": true,
+   "facility": "マンズワイン 勝沼ワイナリー",
+   "notes_ja": "ワインスタッフが通常非公開の地下セラーを案内し、映像鑑賞とプレミアム日本ワイン「ソラリス」の試飲を含むツアー。予約はご来場日の3カ月前から2日前まで専用フォームで受付（フォーム送付のみでは予約確定とならず、受付確認メールをもって完了）。キャンセルは営業日3日前まで、前日キャンセルは100％のキャンセル料。ショップ内では常時約20種類の有料テイスティングが可能。団体（13名以上）・旅行会社向けは別ページ（group_tour/）で受付。営業時間：4月～11月9:30～16:30、12月～3月10:00～16:00、年中無休（臨時休業日あり）。",
+   "source": "https://mannswines.com/winery/katsunuma/tour/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "yamatowine",
@@ -290,7 +323,17 @@
   "source": "http://www.yamatowine.com/contents/corporate/",
   "lat": 35.6789,
   "lng": 138.7209,
-  "name_en": "Yamato Budoshu (Huggy Wine)"
+  "name_en": "Yamato Budoshu (Huggy Wine)",
+  "visit_info": {
+   "status": "open",
+   "tasting": "paid",
+   "fee": "ワイン試飲：一部有料（420円／杯）、ビール試飲：有料（580円／杯）",
+   "shop": true,
+   "facility": "売店",
+   "notes_ja": "工場見学はおこなっておりません。団体でのご来場を検討されている場合は事前にご予約くださいますようお願いいたします、とのこと。売店営業時間：10:00〜16:30。定休日：8月お盆期間、年末年始（その他に臨時休業する場合があります）。",
+   "source": "http://www.yamatowine.com/contents/winery/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "chateau-katsunuma",
@@ -512,7 +555,16 @@
   "source": "https://kurambon.com/about",
   "lat": 35.6838,
   "lng": 138.7202,
-  "name_en": "Kurambon Wine"
+  "name_en": "Kurambon Wine",
+  "visit_info": {
+   "status": "paused",
+   "tasting": "available",
+   "shop": true,
+   "facility": "くらむぼんワイン 売店",
+   "notes_ja": "「現在、人員不足のためワイナリーツアーは中止しております。再開は未定です。」と公式サイトに明記。通常時は自社畑〜樽貯蔵庫・ワインセラー〜資料室見学（30～40分）＋テイスティングで、月・金14時、土・日・祝11時開催、定員15名（1組8名まで）、電話（0553-44-0111）または申込みフォーム（目安10営業日前まで）で要予約とのこと。売店での試飲・購入は現在も可能。営業時間：平日13:00～16:00（試飲受付15:30まで）、土日祝10:00～12:00/13:00～16:00（試飲受付11:30まで）。定休日：水曜日／年末年始（仕込み期間など臨時休業もあり）。",
+   "source": "https://www.kurambon.com/tour",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "katsunuma-winery",
@@ -621,7 +673,19 @@
   "source": "https://www.shirayuriwine.com/",
   "lat": 35.6796,
   "lng": 138.7216,
-  "name_en": "Shirayuri Jozo (Lorian Wine)"
+  "name_en": "Shirayuri Jozo (Lorian Wine)",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "fee": "Aコース（ベーシックコース）：2,200円（税込）／2,000円（税抜）、対応：ショップスタッフ、実施日：平日のみ。Bコース（造り手コース）：5,500円（税込）／5,000円（税抜）、対応：醸造家、実施日：2月下旬～6月の平日のみ。Cコース（オーナーズコース）：5,500円（税込）／5,000円（税抜）、対応：社長・常務、実施日：スケジュール要確認",
+   "duration": "60分程度",
+   "shop": true,
+   "facility": "白百合醸造（ロリアンワイン）",
+   "notes_ja": "葡萄畑の散策・ワイナリーの見学とグラスでの数種類のテイスティングを含む「スペシャルワインツアー」を通年実施。要予約。申込みには@shirayuriwine.comドメインの受信設定が必須。",
+   "source": "https://www.shirayuriwine.com/tour.html",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "maruki-wine",
@@ -679,7 +743,19 @@
   "source": "http://www.marukiwine.co.jp/",
   "lat": 35.6842,
   "lng": 138.7201,
-  "name_en": "Maruki Wine"
+  "name_en": "Maruki Wine",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://marukiwine.co.jp/tour/winery-tour/",
+   "fee": "無料",
+   "duration": "30分",
+   "shop": true,
+   "facility": "まるき葡萄酒",
+   "notes_ja": "立ち並ぶタンクの中を歩いたり、静かに眠る樽をのぞいたりできるワイナリーツアー。開催時間10:30、14:00（定員15名・先着順）。予約締切は前日16:00まで。電話受付8時30分～17時30分、オンライン申込フォームからも予約可能。変更・キャンセルは2日前までに連絡が必要。",
+   "source": "http://www.marukiwine.co.jp/tour.html",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "sadoya",
@@ -727,7 +803,19 @@
   "source": "https://www.sadoya.co.jp/",
   "lat": 35.6657,
   "lng": 138.5692,
-  "name_en": "Sadoya Winery"
+  "name_en": "Sadoya Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://reserva.be/sadoyayoyaku",
+   "tasting": "paid",
+   "fee": "お一人様1,000円（中学生以下無料）",
+   "duration": "40分程度",
+   "facility": "サドヤ地下セラー",
+   "notes_ja": "約700坪の地下セラーを見学するツアー。予約専用カレンダーからの事前予約が必須（予約システム：reserva.be/sadoyayoyaku）。ツアー内でその時期おすすめのワインを1杯テイスティング（ワインが飲めない方はノンアルコールのぶどう液を選択可）。営業時間：平日10:00～17:00、土日祝10:00～18:00。定休日：火曜日。",
+   "source": "https://www.sadoya.co.jp/winery/tour_info.html",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "chateau-sakaori",
@@ -852,7 +940,20 @@
   "source": "https://www.mondewinery.co.jp/",
   "lat": 35.6362,
   "lng": 138.6489,
-  "name_en": "Monde Winery"
+  "name_en": "Monde Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "reservation_url": "https://www.mondewinery.co.jp/tour_private",
+   "tasting": "available",
+   "fee": "1人500円（20歳未満無料）",
+   "duration": "約30分",
+   "shop": true,
+   "facility": "モンデ酒造",
+   "notes_ja": "個人向けワイナリーツアーは1日2回（10:30～、14:30～）、各回開始15分前までに売店へお越しください。土日祝日を除く平日のみ実施、年末年始はワイナリーツアーのご案内を休止。見学希望日の2日前までに電話（070-4816-1978）またはメールで予約。参加者限定でオリジナルミニワイン（無濾過）をプレゼント。ショップでは常時10種類以上のワインを無料でご試飲いただけ、一杯から楽しめる限定ワインの有料試飲もあり。",
+   "source": "https://www.mondewinery.co.jp/tour_private",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "mars-yamanashi",
@@ -1008,7 +1109,15 @@
   "source": "https://www.kizan.co.jp/",
   "lat": 35.7136,
   "lng": 138.7016,
-  "name_en": "Kizan Wine"
+  "name_en": "Kizan Wine",
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "facility": "機山洋酒工業",
+   "notes_ja": "営業時間は9:00～17:00。定休日はありませんが、作業等の都合により休業となる場合があります。8月24日から10月中旬までの醸造期間は売店を休業します（別ページでは「9月、10月の醸造期は売店は休業致します」との記載）。見学・試飲についての具体的な記載はなく、詳細は電話（0553-33-3024）またはメールで問い合わせが必要。",
+   "source": "https://www.kizan.co.jp/access/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "chateau-jun",
@@ -1076,7 +1185,15 @@
   "source": "https://www.chateaujun.com/",
   "lat": 35.6721,
   "lng": 138.7302,
-  "name_en": "Chateau Jun"
+  "name_en": "Chateau Jun",
+  "visit_info": {
+   "status": "inquire",
+   "shop": true,
+   "facility": "直売所",
+   "notes_ja": "「直売所の営業状況は、当日お電話にて随時ご確認ください」との記載のみで、見学・試飲・予約に関する具体的な情報はサイト上に掲載されていない。電話：0553-44-2501。",
+   "source": "https://www.chateaujun.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "hojo-wine",
@@ -1135,7 +1252,16 @@
   "source": "https://www.iwasaki-jozo.com/",
   "lat": 35.6831,
   "lng": 138.7194,
-  "name_en": "Honjo Wine (Iwasaki Jozo)"
+  "name_en": "Honjo Wine (Iwasaki Jozo)",
+  "visit_info": {
+   "status": "open",
+   "reservation_url": "https://www.iwasaki-jozo.com/blog/2019/12/31/winerytour/",
+   "shop": true,
+   "facility": "岩崎醸造",
+   "notes_ja": "ワイナリー見学は9:00～17:00。ワイナリーショップの営業時間は8:30～17:00（日曜・祝日は9:00～17:00）。ワイナリー見学専用ページへのリンクがあるが、当該ページはアクセス障害（502エラー）のため料金・所要時間・試飲の詳細は本調査では確認できなかった。問い合わせ先：0553-44-0020。",
+   "source": "https://www.iwasaki-jozo.com/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "mgvs-winery",
@@ -1181,7 +1307,15 @@
   "source": "https://mgvs.jp/",
   "lat": 35.6793,
   "lng": 138.7215,
-  "name_en": "MGVs Winery"
+  "name_en": "MGVs Winery",
+  "visit_info": {
+   "status": "open",
+   "tasting": "paid",
+   "facility": "MGVsワイナリー",
+   "notes_ja": "「ガラス越しにタンク室、ビン詰室などを自由にご覧いただけます」（無料見学）。テイスティングは有料。ドライバー・未成年者・妊娠中・授乳中の方には提供不可。営業時間は10:00～12:00、13:00～16:00（土日祝は12:00～13:00も営業）。定休日は（4月～11月）火曜日、（12月～3月）火・水曜日、年末年始、他臨時休業あり。",
+   "source": "https://mgvs.jp/winery/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "fujiclair-wine",
@@ -1240,7 +1374,19 @@
   "source": "https://www.fujiclairwine.jp/",
   "lat": 35.6851,
   "lng": 138.7196,
-  "name_en": "Fujiclair Winery"
+  "name_en": "Fujiclair Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "fee": "一般2,000円、学割1,000円（学生証提示必須）",
+   "duration": "60分",
+   "shop": true,
+   "facility": "フジクレールワイナリー",
+   "notes_ja": "ワイナリー内の施設をスタッフが案内し、3～4種類のワインテイスティングも用意。毎週土曜日・日曜日・祝日開催、開催時間は①11:00～ ②14:00～。Googleフォームでの申し込みが必要。ワインショップ営業時間は10:00～16:00、定休日なし（年末年始を除く）。イベントなどの関係で予告なく営業時間の変更が起こる場合もある。電話：0120-583-181。",
+   "source": "https://www.fujiclairwine.jp/winery/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "sainte-neige",
@@ -1289,7 +1435,15 @@
   "source": "https://www.sainteneige.co.jp/",
   "lat": 35.6922,
   "lng": 138.6819,
-  "name_en": "Sainte Neige Wine"
+  "name_en": "Sainte Neige Wine",
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "facility": "サントネージュワイン",
+   "notes_ja": "工場見学は前日までにお電話にてご予約（来訪予定時間・人数・代表者様のお名前等を連絡、予約電話0553-22-1511）。営業時間は月曜から金曜9:00～12:00、13:00～15:00まで（土日祝、年末年始他除く）。2026年は9月～11月に限り土日祝日も受付可能。見学箇所は地下樽貯蔵庫・ウィスキー製造場・生産ライン（専用通路にて見学）他。",
+   "source": "https://www.sainteneige.co.jp/access",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "shion-winery",
@@ -1505,7 +1659,15 @@
   "source": "https://98wines.jp/",
   "lat": 35.7218,
   "lng": 138.7012,
-  "name_en": "98WINEs"
+  "name_en": "98WINEs",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "facility": "木の棟",
+   "notes_ja": "「木の棟」について「ワインの販売・試飲など、地域の内外から集まった人たちが交流するためのスペース」と記載。営業時間・予約方法・料金についての記載はない。",
+   "source": "https://98wines.jp/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "soryuwine",
@@ -1629,7 +1791,15 @@
   "source": "http://www.alpswine.co.jp/",
   "lat": 35.6517,
   "lng": 138.6876,
-  "name_en": "Alps Wine"
+  "name_en": "Alps Wine",
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "facility": "サロン（直営店）",
+   "notes_ja": "サロンについて「ワインや果汁の試飲も行っております。」、営業時間は「午前１０時から午後４時」。試飲料金の記載はない。醸造所見学に関する記載はトップページ・サロンページともに見当たらなかった。",
+   "source": "https://www.alpswine.co.jp/salon/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "kisvin-winery",
@@ -1703,7 +1873,14 @@
   "source": "http://www.kisvin.co.jp/",
   "lat": 35.7148,
   "lng": 138.7028,
-  "name_en": "Kisvin Winery"
+  "name_en": "Kisvin Winery",
+  "visit_info": {
+   "status": "paused",
+   "tasting": "none",
+   "notes_ja": "「本年のワイナリー見学ツアーは休止いたします。」「ワイナリーでの試飲や販売は現在行なっておりません。見学も休止しております。」酒販店やオンラインショップでの購入を案内。予約方法・料金・所要時間の記載はない。",
+   "source": "https://www.kisvin.co.jp/?page_id=360",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "cantina-hiro",
@@ -2418,6 +2595,15 @@
    "distance_m": 380,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "reservation_url": "http://budoubatake.net/reservation/",
+   "tasting": "available",
+   "notes_ja": "「2026年　ぶどう狩り・店頭販売　11月3日まで毎日営業します　予約優先いたします」「店頭の試食もとても人気でございます。」営業時間・試食料金の具体的な記載はない。",
+   "source": "http://budoubatake.net",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -2610,6 +2796,17 @@
    "distance_m": 2220,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "not_required",
+   "tasting": "paid",
+   "fee": "試飲チケット購入（4枚綴りで550円）。試飲チケット1枚（限定品は2枚）で1種類のワインを試飲できます。試飲チケットには550円値引クーポンが付いてきます。",
+   "shop": true,
+   "facility": "盛田甲州ワイナリー",
+   "notes_ja": "見学時間：10:00～16:00（7/20～10/31は10:00～16:30）。定休日／年末年始。年2回指定日。「10名未満は予約の必要はありません。当日売店での受付となります。」「10名様以上の場合は、ご予約下さい。TEL：0553-44-2003」。10名様以上の団体はアテンド付きセミナーツアーもございます。",
+   "source": "https://www.chanmoris.co.jp/%e3%83%af%e3%82%a4%e3%83%8a%e3%83%aa%e3%83%bc%e8%a6%8b%e5%ad%a6/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -2936,6 +3133,15 @@
    "distance_m": 5100,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "7c store&lounge",
+   "notes_ja": "storeの営業時間：「open 10:00 close 14:00」。「7Cワインをグラス一杯から楽しめます」（契約栽培者ごとの7Cワインをラウンジで提供）。coffee・tea・juice・light meal（ジビエホットドッグ等）も提供。ワイナリー見学（施設見学ツアー）に関する記載はサイト内に見当たらない。",
+   "source": "https://www.7cwinery.com/store.html",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3000,6 +3206,14 @@
    "distance_m": 1120,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "facility": "金井醸造場",
+   "notes_ja": "「営業定休　火曜日　及び　ワインが完売中は、ショップを閉鎖しております」と記載。見学・試飲の受付方法や料金についての具体的な記載はサイト内に見当たらない。",
+   "source": "http://www.fruits.jp/~caney/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3066,6 +3280,15 @@
    "distance_m": 330,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "展望ハウス（試飲コーナー）／売店",
+   "notes_ja": "「現在、工場見学は休止しております」「現在、ローマンガラス美術館の入場、工場見学を休止しております」（工場改装に伴う中止）。「売店は通常通り営業しております」。展望ハウスの案内として「景色を眺めながら、ワインの試飲やジュースの試飲を楽しもう！白、赤、ロゼ･･･それから季節のオススメワイン！ドライバーとお子様にはジュースの試飲もあるよ！」との記載あり。「チーズケーキの販売を休止しております」。営業案内：「9:00～17:00（16:30最終入場）」定休日なし、年末年始休業（12/29～1/4）。団体見学（観光バス15名以上）については「現在、工場見学の受付を中止しております」。",
+   "source": "http://www.belle-foret.co.jp/belleforet/winery/sugosikata/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3131,6 +3354,13 @@
    "distance_m": 5630,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "paused",
+   "facility": "敷島醸造",
+   "notes_ja": "「※現在コロナ影響が続いており、下記内容については開催を見送らせていただいております。」との注記のもと、「敷島醸造では、ワイン工場見学や試飲を常時行っております。ワイナリーに遊びにいらした際は、お気軽にお声かけください。」と案内。同様の注記のもとワイン勉強会（「敷島醸造では、定期的にワイン勉強会を開催しております。」）およびバーベキュー場（1人500円、鉄板・炭代700円・要予約、TEL:055-277-2805）の案内もあるが、いずれも開催見送り中と明記されている。",
+   "source": "https://mountwine.jp/winery",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3188,6 +3418,15 @@
    "distance_m": 5990,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "月晴れる（ワイナリーカフェ）",
+   "notes_ja": "「ドメーヌヒデは、醸造所での直販は行っておりません。直営カフェ「月晴れる」（木～月11時半～16時半）のみの直販となります。」カフェページの営業案内では「営業時間　カフェ 14:00~16:30 (L.O. 16:00)　ランチ 11:30~14:00 (L.O. 13:30)」「営業日　金・土・日・月」（ページ間で営業日の表記に相違あり）。カフェでは米粉むしパンとワインのマリアージュ等を提供。工場見学や試飲予約に関する専用の記載はサイト内に見当たらない。",
+   "source": "https://www.domainehide.com/cafe",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3253,6 +3492,14 @@
    "distance_m": 2520,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "notes_ja": "試飲（有料）はご予約の方のみとさせて頂きます（食品衛生法に基づく飲食店営業許可を取得しているため）。イベント・農作業で臨時休業することがあります。カレンダーに予定の入ってる日は、試飲・販売はお休みです。訪問前にメールまたは電話でのご連絡が必要です。",
+   "source": "https://yn-sunriver.jimdofree.com/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3439,6 +3686,18 @@
    "url": "http://www.okunota.com/",
    "reason": "okunota.com から web. サブドメインへ移転",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "tasting": "paid",
+   "fee": "1アイテム300円～です。（おすすめワイン3～4種のテイスティング）／ワイナリー満喫コース：おひとり様1,500円／奥野田ワイナリースペシャルコース：おひとり様3,000円",
+   "duration": "約40分（ワイナリー満喫コース）／約80分（奥野田ワイナリースペシャルコース）",
+   "shop": true,
+   "facility": "奥野田ワイナリーショップ＆サロン",
+   "notes_ja": "営業時間10：00～12：00／13：00～17：00。毎週水曜日は休業。小さなワイナリーですので、お越しいただく際には前もってご連絡をお願いいたします。ワイナリー満喫コース（約40分・完全予約制・2名以上、10:15～11:00/13:15～14:00/15:00～15:45）、奥野田ワイナリースペシャルコース（約80分・完全予約制・2名以上、10:15～11:45のみ）。ご予約フォーム・お電話(0553-33-9988)・E-MAILにてご予約をお願い致します。",
+   "source": "https://web.okunota.com/winery/tour/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3762,6 +4021,15 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市塩山牛奥",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "inquire",
+   "reservation": "required",
+   "tasting": "free",
+   "fee": "見学：無料（要予約）／試飲：無料（要予約）",
+   "notes_ja": "このページは牛奥第一葡萄酒の独自公式サイトではなく、日本ワイナリー協会サイト内の紹介ページです。独自の公式サイトは確認できませんでした。",
+   "source": "https://www.winery.or.jp/winery-map/2680/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -3820,6 +4088,14 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県山梨市小原東８５７番地",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "available",
+   "notes_ja": "営業時間は「午前10時～午後5時」。「試飲をご希望の方はご予約下さい。（その日の作業によってご提供できない場合もあります）」。「一回のご入店は5名様まで、体調に不安のある方は来店をお控えください。」「農作業等で不在にする事がありますので、お出かけの際はお問い合わせ下さい。」",
+   "source": "https://soleilwine.jp/info",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4261,6 +4537,19 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県韮崎市穂坂町上今井",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "reservation_url": "https://www.hombo.co.jp/winery/hosaka/reserve-hosaka/",
+   "tasting": "paid",
+   "fee": "入館無料（試飲は全て有料）",
+   "duration": "見学時間 約30分程度 ※自由見学",
+   "shop": true,
+   "facility": "マルス穂坂ワイナリー",
+   "notes_ja": "営業時間「9:00～16:30 ※最終受付15:30」。定休日「12/29～1/3 ※臨時休業有り」。10名様以上の場合は5日前までにご予約下さい。予約なしでも来場可能だが混雑時は予約客が優先。製造期間中（7月下旬～10月下旬）は実際の醸造現場を観覧可能。ショップでは30～40種類のワインを販売。",
+   "source": "https://www.hombo.co.jp/winery/hosaka/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4311,6 +4600,14 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県韮崎市穴山町",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "inquire",
+   "tasting": "available",
+   "facility": "能見園 河西ワイナリー",
+   "notes_ja": "本情報は蔵独自の公式サイトが確認できず、日本ワイナリー協会の蔵元紹介ページに基づく（この蔵の独自公式サイトへのリンクとして掲載されていたsip-shinwakai.jpは接続不能だった）。同ページ記載：見学「可（要事前確認）」、試飲「あり（要事前確認）」。",
+   "source": "https://www.winery.or.jp/winery-map/2772/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4411,6 +4708,13 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県北杜市明野町下神取",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "closed",
+   "facility": "ドメーヌ・ド・ラ・アケノ・ヴェニュス",
+   "notes_ja": "「VISIT」欄に \"CLOSED\" \"不定休\" と表示。見学受付を行っていない状態と考えられる。ウェブ検索でも独自の公式サイトは見つからず、日本ワイナリー協会・日本ワイン事典等の紹介ページのみ確認できたため、本タスクで指定された業界サイト内の紹介ページ(nihonwine.jp)を参照した。訪問希望の場合は事前の直接問い合わせが必要と考えられる。",
+   "source": "https://nihonwine.jp/winery_intro/akenovenus/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4462,6 +4766,19 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県北杜市小淵沢町",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "reservation_url": "https://komaki-vineyard.com/contact/",
+   "tasting": "paid",
+   "fee": "ヴィンヤード見学ツアー(約60分)：¥3,000（ランチ付¥6,500、ディナー付¥9,000）",
+   "duration": "約60分",
+   "shop": true,
+   "facility": "小牧ヴィンヤード",
+   "notes_ja": "見学ツアーは複数コースあり。「ヴィンヤード見学ツアー」約60分¥3,000（ブドウ畑のご案内、ワインテイスティング(3種)）、「プレミアムヴィンヤード見学ツアー」約90分¥5,500（ミニテイスティングセミナー、ワインテイスティング4種+おつまみ）、「ワイナリー見学ツアー」約120分¥7,500。見学ツアーは「ご予約優先」、ランチコース・その他アクティビティは「2日前までの予約制」。営業時間／11:00～18:00（予約優先）、営業日／ショップカフェ：金・土・日・祝、宿泊：通年。",
+   "source": "https://komaki-vineyard.com/seminar/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4520,6 +4837,18 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県北杜市小淵沢町",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "reservation_url": "https://www.grandvertvineyard.jp/tour/",
+   "tasting": "paid",
+   "fee": "エントリーフライト：500～1,000円、プライベートフライト：1,000～2,500円、グラスワイン：500～1,500円（すべて税込価格）",
+   "shop": true,
+   "facility": "八ヶ岳グランヴェールヴィンヤード",
+   "notes_ja": "スタッフによるガイド付きワイナリーツアーあり。「ツアーの最後には、赤・白ワインのテイスティングもご用意しております。」ツアー申し込みは専用フォーム（https://forms.gle/QqkBwEwSGPaA3n8p6）。テイスティングは「予約優先制となっております。ご予約のお客様を優先してご案内いたします。」ワイン購入のみの場合は予約不要。予約は参加希望日の3日前までに必要。予約方法は「テイスティング予約フォーム」または電話（0551-36-6611、受付時間10:00～16:00）。営業時間：10:00～16:00（ラストオーダー15:30）。定休日：火・水曜日、年末年始、夏季休暇。2025年3月21日にカフェテリアがオープン、ワイナリー直売所も併設。",
+   "source": "https://www.grandvertvineyard.jp/tour/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4683,6 +5012,14 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲府市桜井町４７番地",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "facility": "甲府ワインポート ワイナリー",
+   "notes_ja": "「ワイナリー見学のご予約は一週間前までにお問合せお願いいたします」（メールフォームまたは電話055-233-4427）。「醸造作業の都合上、お受けできない事もございます」と明記。ワイナリー営業時間「11：00〜17：00」、定休日：火曜日。併設レストラン「ボルドー」営業時間：open 11：00～close 15：00（LO.14：00）／open 16：30～最終入店19：30（close 21：00）。",
+   "source": "https://www.kofuwineport.jp/wine/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4796,6 +5133,14 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県市川三郷町市川大門５１７３番地",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "facility": "楽園葡萄酒醸造場",
+   "notes_ja": "営業時間「朝8時～日没頃まで（元日休業）」。「支払方法：店頭は現金またはPayPay」と記載があり店頭での購入が可能。オリジナルラベルを1本より無料で作成するサービスあり。見学・試飲に関する明示的な記載はサイト内に見当たらなかった。",
+   "source": "https://wine1940.securesite.jp/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -4956,6 +5301,15 @@
    "by": "国土地理院 住所検索API",
    "matched": "山梨県甲州市勝沼町勝沼３１１１番地",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "tasting": "available",
+   "shop": true,
+   "facility": "若尾果樹園",
+   "notes_ja": "営業時間「8:30～17:00／不定休」。観光農園「若尾果樹園」でぶどう狩りを受け入れ、マルサン葡萄酒のワイン販売も行っている。ぶどう狩り・ワインに関する問い合わせは電話番号より受付。",
+   "source": "https://marusan-wakao.com/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -5352,6 +5706,12 @@
    "distance_m": 1620,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "closed",
+   "notes_ja": "FAQページに「少人数で作業していることもあり一般の方、ワイン業界のみなさまを含め通常非公開で運営しています」と明記。見学対応はイベント開催時のみで、最新情報はホームページやFacebookで案内。旅行会社のツアーにも対応していない。",
+   "source": "https://www.mieikeno.com/faq",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -5414,6 +5774,14 @@
    "distance_m": 1460,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "paid",
+   "notes_ja": "サイトタイトル・フッターに「販売は４月・11月の第1土曜日と予約時のみ」と明記。ワイナリーにてワインの販売を行い、一部試飲（基本有料）も行う予定と案内されている。",
+   "source": "https://vykikushima.greater.jp/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -5584,6 +5952,13 @@
    "distance_m": 2490,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "closed",
+   "shop": false,
+   "notes_ja": "「ワイナリーを立ち上げて間もないため、限られた原資の中で少人数で運営しています。そのため年間を通して休みなく畑仕事やワイン造りに全精力を傾けています。」と明記し、現在は見学を受け付けていない。体制が整った際はサイト上で案内予定。ワインの直販・オンライン販売は行っておらず、新田商店・久保酒店・いまでや・WINE SHOP nico等の取引酒販店でのみ販売。",
+   "source": "https://yov.co.jp/",
+   "last_checked": "2026-09-18"
   }
  }
 ]

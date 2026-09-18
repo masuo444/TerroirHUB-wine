@@ -91,7 +91,15 @@
   "source": "http://ryomi-wine.jp/",
   "lat": 38.4278,
   "lng": 140.8878,
-  "name_en": "Ryomi Vineyard & Winery"
+  "name_en": "Ryomi Vineyard & Winery",
+  "visit_info": {
+   "status": "open",
+   "shop": true,
+   "facility": "了美ヴィンヤード＆ワイナリー ショップ・レストラン",
+   "notes_ja": "レストラン営業時間「11:00〜15:00(LO 14:30)」、定休日「火曜日(臨時休業有り)、年末年始」。ショップ営業時間「10:00〜17:00(冬季は16:00まで)」、定休日「無し(臨時休業有り)、年末年始」。※以前の記録にあった醸造所見学バスツアーの記載は公式サイト上では確認できませんでした。",
+   "source": "https://ryomi-wine.jp/winery",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "fattoria-al-fiore",
@@ -220,6 +228,18 @@
    "distance_m": 1030,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "tasting": "available",
+   "fee": "1人1,000円（約40分）",
+   "duration": "約40分",
+   "shop": true,
+   "facility": "南三陸ワイナリー（醸造棟・展望テラス・Shop & Kitchen）",
+   "notes_ja": "ワイナリーツアーの内容：「醸造棟、展望テラス、Shop & Kitchenを見学しながら、ワイナリースタッフが南三陸ワイナリーができるまでの経緯、これからのワイナリーの取り組みなどをご紹介」。「小学生以下無料」「グラスワインまたはソフトドリンク1杯付き」。「前日までの事前予約」が必要（電話：0226-48-5519）。「醸造作業状況およびイベントなどでツアー開催ができない日もあります」。",
+   "source": "https://www.msr-wine.com/view/page/experience",
+   "last_checked": "2026-09-18"
   }
  },
  {

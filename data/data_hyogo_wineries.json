@@ -43,6 +43,17 @@
    "distance_m": 4410,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "not_required",
+   "tasting": "none",
+   "fee": "公園として開放しておりますので、全日無料でご入場いただけます",
+   "shop": true,
+   "facility": "こうべアグリパーク ショップ",
+   "notes_ja": "公園8:00～18:30（年中無休、年末年始除く）。ショップ・カフェ&レストランは水曜定休。ショップ営業時間10:00～16:00、カフェ&レストランは平日11:00～16:00（LO.15:30）、土日祝10:00～16:00。ワイナリー見学・試飲プログラムについての具体的な記載はなし。",
+   "source": "https://kobeagripark.jp/",
+   "last_checked": "2026-09-18"
   }
  },
  {

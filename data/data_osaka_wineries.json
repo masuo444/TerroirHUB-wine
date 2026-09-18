@@ -491,6 +491,17 @@
   "source": "https://www.satoyamasouken.co.jp/winery",
   "lat": 34.938,
   "lng": 135.474,
-  "name_en": "Toyono Takayama Winery"
+  "name_en": "Toyono Takayama Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "tasting": "none",
+   "fee": "無料",
+   "duration": "30〜60分",
+   "facility": "とよの高山ワイナリー（里山創建 農泊体験）",
+   "notes_ja": "体験メニューに「ワイナリー見学：30〜60分、無料」「ぶどう畑のお手伝い：1〜2時間、無料」、モデルコースに「ワイナリーコース　ぶどう畑の作業→ワイナリー見学：午前中、無料」との記載あり（宿泊者向け里山体験の一環）。ワインについては「ワイン特区制度により、ワインはオーベルジュ ヤマガミおよび豊能町内のイベントでお楽しみいただけます」との記載。",
+   "source": "https://www.satoyamasouken.co.jp/",
+   "last_checked": "2026-09-18"
+  }
  }
 ]

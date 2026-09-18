@@ -67,7 +67,19 @@
   "source": "https://www.winery.or.jp/winery-map/2570/",
   "lat": 39.4867,
   "lng": 141.1778,
-  "name_en": "Edelwein"
+  "name_en": "Edelwein",
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "english": "tour",
+   "tasting": "free",
+   "duration": "10:00～15:00",
+   "shop": true,
+   "facility": "ワインシャトー大迫",
+   "notes_ja": "見学可能時間は10:00～15:00、平日・土日祝日すべて可。休館日は年末年始（12月31日～1月3日）。10名以上の団体は電話（0198-48-3200）またはFAXでの予約が必須、小人数は予約不要で自由に見学可。ワインシャトー大迫店の営業時間は9:00～16:30、定休日は年末年始・冬季定休日。試飲は無料で試飲も楽しめます（8種類無料、10種類有料）。",
+   "source": "https://edelwein.co.jp/factory/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "kuzumaki-wine",
@@ -190,7 +202,18 @@
   "source": "https://www.shiwa-fruitspark.co.jp/winery/",
   "lat": 39.5678,
   "lng": 141.1267,
-  "name_en": "Shiwa Fruits Park Winery"
+  "name_en": "Shiwa Fruits Park Winery",
+  "visit_info": {
+   "status": "open",
+   "reservation": "not_required",
+   "tasting": "free",
+   "fee": "試飲・工場見学無料[大型バス乗り入れ可]",
+   "shop": true,
+   "facility": "紫波ワイン 直売所",
+   "notes_ja": "直売所営業時間9:00～17:00、定休日は年末年始。工場見学、試飲・販売をおこなっています。",
+   "source": "https://www.shiwa-fruitspark.co.jp/winery/",
+   "last_checked": "2026-09-18"
+  }
  },
  {
   "id": "hiraizumi-winery",
@@ -304,6 +327,17 @@
    "distance_m": 190,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "tasting": "paid",
+   "fee": "ワイン試飲 20ml ¥100、80ml ¥300、樽のワイン ¥500",
+   "shop": true,
+   "facility": "神田葡萄園 直売ショップ",
+   "notes_ja": "営業時間は9:00〜12:00、13:00〜17:00。見学のみご来園いただく場合、ご来園前にお電話またはメールでの確認が推奨。10名以上の場合、団体のご予約はお承りできません。",
+   "source": "https://riaswine.com/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -471,6 +505,14 @@
    "distance_m": 2700,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "inquire",
+   "reservation": "required",
+   "facility": "亀ヶ森醸造所",
+   "notes_ja": "営業時間・定休日不定。お越しの際には、お電話などでご連絡をお願いいたします。（電話：090-2873-6939、メール：kamegamori55@gmail.com）",
+   "source": "http://www.kamegamori.com/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -526,6 +568,15 @@
    "distance_m": 530,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "inquire",
+   "reservation": "required",
+   "shop": true,
+   "facility": "五枚橋ワイナリー 営業所",
+   "notes_ja": "営業時間 AM11:00～PM6:00。営業所までお気軽にお立ち寄りください。試飲・直売・見学のご相談もお気軽にお電話でお問い合わせください。",
+   "source": "https://www.gomaibashi.com/",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -580,6 +631,15 @@
    "distance_m": 2700,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "required",
+   "shop": true,
+   "facility": "アールペイザンワイナリー",
+   "notes_ja": "ワイナリー、ブドウ畑の見学も随時お受けしております。（要予約）。ショップ営業時間：月〜金 10:00〜16:00、土日休業日。",
+   "source": "https://artpaysanwinery.wixsite.com/website",
+   "last_checked": "2026-09-18"
   }
  },
  {
@@ -692,6 +752,15 @@
    "distance_m": 240,
    "by": "HeartRails Express API（座標からの直線距離）",
    "checked": "2026-07-27"
+  },
+  "visit_info": {
+   "status": "open",
+   "reservation": "recommended",
+   "tasting": "available",
+   "facility": "THREE PEAKS 角打ちバル（テイスティングバー）",
+   "notes_ja": "9月は毎週末の土日、シルバーウィーク期間中は角打ちバル毎日オープン。9月の週末15:00〜20:00には「角打ちバル」がオープン。ワインをグラス1杯から気軽に楽しめる。ジェラート×ワイン（シードル）のペアリングも提供。詳しい営業時間・料金・予約要否についてはサイト内「ショップ営業時間」ページまたは「お問い合わせ」で要確認とのスケジュール確認案内あり。",
+   "source": "https://3peaks.jp/",
+   "last_checked": "2026-09-18"
   }
  },
  {
