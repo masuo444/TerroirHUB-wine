@@ -1,12 +1,29 @@
 #!/usr/bin/env python3
-"""sitemap.xml 自動生成 — 全ワイナリーページ + 固定ページを含む"""
+"""sitemap.xml 自動生成 — 中身の厚いワイナリーページ + 固定ページ
 
-import json, glob, os
+2026-09-18: 「core方式」に変更。URL検査APIで wine は全セクション 0/35 が未登録
+（Crawled - currently not indexed）と判明。薄いページにクロール予算を食われているため、
+サイトマップを中身の厚いワイナリーに絞ってクロールを集中させる。
+ページ自体は消さない（内部リンクからは従来どおり辿れる）。
+全件版が要るときは --all を付ける。
+"""
+
+import json, glob, os, sys
 from datetime import date
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = 'https://wine.terroirhub.com'
 TODAY = date.today().isoformat()
+
+CORE_ONLY = '--all' not in sys.argv
+skipped = [0]
+
+
+def is_rich(b):
+    """説明文100字以上・公式サイトあり・代表銘柄2つ以上 = 独自の中身があるとみなす"""
+    return (len(b.get('desc') or '') >= 100
+            and (b.get('url') or '').startswith('http')
+            and len(b.get('brands') or []) >= 2)
 
 urls = []
 
@@ -59,6 +76,9 @@ for jf in json_files:
         wineries = json.load(f)
     for b in wineries:
         if not b.get('id'): continue
+        if CORE_ONLY and not is_rich(b):
+            skipped[0] += 1
+            continue
         # Aランク相当は優先度高め
         is_a = bool(b.get('url') and b.get('founded') and
                     len(b.get('brands',[])) >= 1 and len(b.get('features',[])) >= 2)
@@ -99,4 +119,5 @@ out = os.path.join(BASE, 'sitemap.xml')
 with open(out, 'w', encoding='utf-8') as f:
     f.write('\n'.join(lines))
 
-print(f'sitemap.xml: {len(urls)} URLs を出力')
+print(f'sitemap.xml: {len(urls)} URLs を出力'
+      + (f'（core方式: 中身の薄いワイナリー {skipped[0]}者を除外）' if CORE_ONLY else '（--all: 全件）'))
