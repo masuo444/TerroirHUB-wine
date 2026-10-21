@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <script src="/thub-analytics.js" defer></script>
+<meta name="robots" content="noindex,follow" data-thub="thin">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>山口ワイナリー — 山口県のワイナリー | Terroir HUB WINE</title>
@@ -600,7 +601,7 @@ section[id]{scroll-margin-top:104px;}
     <p class="hero-en">Since 1999 — 山陽小野田市, 山口県</p>
 
     <div class="hero-actions">
-      <button class="btn-p" onclick="openPanel()">サクラに聞く</button>
+      
       <a class="btn-s" href="http://www.yamanosake.com/products/list.php?category_id=6" target="_blank" rel="noopener noreferrer">公式サイト</a>
     </div>
   </div>
@@ -613,7 +614,7 @@ section[id]{scroll-margin-top:104px;}
 <div class="qf-wrap">
   <div class="qf-card">
     <div class="qf-grid"><div class="qf-item"><span class="qf-lbl">FOUNDED</span><span class="qf-val">平成11年（1999年）<small>創業27年</small></span></div><div class="qf-item"><span class="qf-lbl">VISIT</span><span class="qf-note">売店あり。見学は事前確認推奨。</span></div><div class="qf-item"><span class="qf-lbl">TERROIR</span><span class="qf-val">山口県 山陽小野田市</span></div><div class="qf-item"><span class="qf-lbl">GRAPES</span><span class="qf-val">マスカット・ベーリーA・カベルネ・ソーヴィニヨン<small>ほか2品種</small></span></div></div>
-    <div class="qf-actions"><a class="qf-btn" href="http://www.yamanosake.com/products/list.php?category_id=6" target="_blank" rel="noopener">公式サイト ↗</a><a class="qf-btn" href="#brands">代表銘柄</a><a class="qf-btn" href="#access">アクセス・地図</a><a class="qf-btn primary" href="javascript:openPanel()">サクラに聞く</a></div>
+    <div class="qf-actions"><a class="qf-btn" href="http://www.yamanosake.com/products/list.php?category_id=6" target="_blank" rel="noopener">公式サイト ↗</a><a class="qf-btn" href="#brands">代表銘柄</a><a class="qf-btn" href="#access">アクセス・地図</a></div>
   </div>
 </div>
 <nav class="pnav"><div class="pnav-inner"><a href="#story">物語</a><a href="#features">特徴</a><a href="#grapes">品種</a><a href="#brands">銘柄</a><a href="#buy">購入</a><a href="#visit">見学</a><a href="#access">アクセス</a></div></nav>
@@ -681,7 +682,7 @@ section[id]{scroll-margin-top:104px;}
     <div class="sec-divider"></div>
     <div class="brands-grid">
     <div class="brand-card">
-      <div class="brand-img-wrap"><img class="brand-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamaguchikaiseidou/cabinet/03208972/img59444356.jpg?_ex=500x500" alt="シャトーヤマグチ カベルネソーヴィニヨン" loading="lazy"></div>
+      
       <div class="wine-badge red">赤ワイン</div>
       <div class="grape-tag">カベルネ・ソーヴィニヨン</div>
       <h3 class="brand-name">シャトーヤマグチ カベルネソーヴィニヨン</h3>
@@ -690,7 +691,7 @@ section[id]{scroll-margin-top:104px;}
       <div class="buy-btns"><a class="bb bb-r" href="https://hb.afl.rakuten.co.jp/hgc/g00rfydn.krtu47a0.g00rfydn.krtu55b6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamaguchikaiseidou%2F10000776%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamaguchikaiseidou%2Fi%2F10000776%2F&amp;rafcid=wsc_i_is_b6fc5d27-f754-48f8-bf11-5e55f3d0d1e9" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a></div>
     </div>
     <div class="brand-card">
-      <div class="brand-img-wrap"><img class="brand-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamaguchikaiseidou/cabinet/03208972/img59444420.jpg?_ex=500x500" alt="シャトーヤマグチ シャルドネ" loading="lazy"></div>
+      
       <div class="wine-badge white">白ワイン</div>
       <div class="grape-tag">シャルドネ</div>
       <h3 class="brand-name">シャトーヤマグチ シャルドネ</h3>
@@ -906,38 +907,6 @@ section[id]{scroll-margin-top:104px;}
   </nav>
   <p class="footer-copy">© 2025 Terroir HUB WINE — wine.terroirhub.com</p>
 </footer>
-
-<!-- FAB -->
-<button class="fab" onclick="openPanel()" id="fab">
-  <span class="fab-pulse"></span>
-  <span>🌸</span>
-  <span id="fab-txt">サクラに聞く</span>
-</button>
-
-<!-- SAKURA PANEL -->
-<div class="overlay" id="overlay" onclick="if(event.target===this)closePanel()">
-  <div class="panel">
-    <div class="p-handle"></div>
-    <div class="p-hdr">
-      <div class="p-hdr-l">
-        <div class="p-av"><img src="/img/sakura-fullbody.png" alt="サクラ" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
-        <div>
-          <div class="p-title">サクラ <span id="p-plan-tag" style="font-size:10px;background:rgba(255,255,255,0.25);border-radius:6px;padding:1px 7px;font-weight:400;">Free</span></div>
-          <div class="p-status"><div class="p-dot"></div><span>AIソムリエ · オンライン</span></div>
-        </div>
-      </div>
-      <div style="display:flex;align-items:center;gap:7px;">
-        <button class="p-close" onclick="closePanel()">✕</button>
-      </div>
-    </div>
-    <div class="chat" id="chat"></div>
-    <div class="sugs" id="sugs"></div>
-    <div class="inp-row">
-      <textarea id="chat-inp" rows="1" placeholder="山口ワイナリーについて何でもどうぞ…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMsg();}"></textarea>
-      <button id="chat-send" onclick="sendMsg()">↑</button>
-    </div>
-  </div>
-</div>
 
 <script>
 function toggleFaq(i){
