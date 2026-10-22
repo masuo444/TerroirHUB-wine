@@ -59,10 +59,11 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP','Inter',s
 .nav-logo{font-family:'Shippori Mincho',serif;font-size:18px;font-weight:700;color:#1a1a1a;text-decoration:none;letter-spacing:0.04em;}
 .nav-logo em{font-style:normal;color:#722F37;}
 .nav-links{display:flex;align-items:center;gap:20px;margin-left:32px;flex:1;}
-.nav-links a{font-size:14px;color:#444;text-decoration:none;transition:color 0.15s;}
+.nav-links a{font-size:14px;color:#444;text-decoration:none;transition:color 0.15s;white-space:nowrap;}
 .nav-links a:hover{color:#722F37;}
 .nav-search-link{color:#722F37 !important;background:rgba(114,47,55,0.08) !important;padding:5px 14px;border-radius:20px;}
-.nav-lang{display:flex;align-items:center;gap:6px;font-size:12px;letter-spacing:0.06em;margin-right:14px;}
+.nav-lang{display:flex;align-items:center;gap:6px;font-size:12px;letter-spacing:0.06em;margin-right:14px;margin-left:auto;padding-left:16px;}
+.nav-logo{white-space:nowrap}
 .nav-lang a{color:#999;text-decoration:none;transition:color 0.15s;}
 .nav-lang a.active{color:#1a1a1a;font-weight:600;}
 .nav-lang span{color:#ddd;}
@@ -73,7 +74,7 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP','Inter',s
 .nav-signup-btn:hover{background:#333;}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;}
 .nav-hamburger span{display:block;width:22px;height:1.5px;background:#1a1a1a;transition:all 0.2s;}
-@media(max-width:768px){.nav-links,.nav-auth{display:none;}.nav-hamburger{display:flex;}}
+@media(max-width:1199px){.nav-links,.nav-auth{display:none;}.nav-hamburger{display:flex;}}
 
 /* ── HERO ── */
 .hero{margin-top:54px;display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 54px);}
