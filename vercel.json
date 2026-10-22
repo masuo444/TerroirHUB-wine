@@ -94,6 +94,36 @@
       "source": "/wine/yamagata/higashine-fruit-winery.html",
       "destination": "/wine/yamagata/fruit-winery-esprit.html",
       "permanent": true
+    },
+    {
+      "source": "/wine/plans",
+      "destination": "/wine/",
+      "permanent": true
+    },
+    {
+      "source": "/wine/plans/(.*)",
+      "destination": "/wine/",
+      "permanent": true
+    },
+    {
+      "source": "/wine/en/plans",
+      "destination": "/wine/en/",
+      "permanent": true
+    },
+    {
+      "source": "/wine/en/plans/(.*)",
+      "destination": "/wine/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/wine/plans",
+      "destination": "/en/wine/",
+      "permanent": true
+    },
+    {
+      "source": "/en/wine/plans/(.*)",
+      "destination": "/en/wine/",
+      "permanent": true
     }
   ]
 }
