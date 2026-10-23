@@ -76,6 +76,17 @@
   ],
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "terroir-hub-wine.vercel.app"
+        }
+      ],
+      "destination": "https://wine.terroirhub.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/wine/fr/:path*",
       "destination": "/wine/en/:path*",
       "permanent": true
